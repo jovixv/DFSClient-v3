@@ -44,7 +44,7 @@ class DFSClient
             $this->application->setConfig($config);
         }
 
-        $loader = require __DIR__. '../../../vendor/autoload.php';
+        $loader = require __DIR__. '../../../../../../vendor/autoload.php';
 
         $loader->setPsr4('DFSClient\\Entity\\Custom\\', $this->application->getConfig()['modelsPath']);
 
