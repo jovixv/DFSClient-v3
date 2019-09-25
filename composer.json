@@ -1,0 +1,25 @@
+{
+    "name": "jovix/dataforseo-clientv3",
+    "description": "Materials for the PhpStorm workshop. Check https://github.com/jetbrains/phpstorm-workshop/ for more info.",
+    "minimum-stability": "dev",
+    "license": "Apache-2.0",
+    "type": "project",
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/var-dumper": "^4.1",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Vitaliy Lyabakh",
+            "email": "igrolan@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "DFSClient\\": "src/DFSClient/"
+        }
+    }
+}
