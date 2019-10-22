@@ -63,15 +63,19 @@ class DataMapper
         $decodedResponse = json_decode($json);
         $nameSpace = 'DFSClient\Entity\Custom';
 
-        if (!$classSuffix){
-            $classNameWithNameSpace = $nameSpace.'\\'.$this->className.'EntityMain';
-            $model = new $classNameWithNameSpace($this->requestStatus, $this->pathToMainData);
-        }
 
-        if ($classSuffix){
+        if ($classSuffix !== null){
             $classNameWithNameSpace = $nameSpace.'\\'.$this->className.$classSuffix;
             $model = new $classNameWithNameSpace();
+
         }
+
+        if ($classSuffix === null){
+            $classNameWithNameSpace = $nameSpace.'\\'.$this->className.'EntityMain';
+            $model = new $classNameWithNameSpace($this->requestStatus, $this->pathToMainData);
+            $classSuffix = 'EntityMain';
+        }
+
 
         $arrayWithResults = [];
 
@@ -79,17 +83,17 @@ class DataMapper
         {
 
             if ($mustbeAsCollection){
-                $arrayWithResults[$key] = $this->paveData(json_encode($value), $classSuffix,$resultCanBeTransformedToArray);
-            } elseif (property_exists($model, $key)){
+                $arrayWithResults[$key] = $this->paveData(json_encode($value), $classSuffix, $resultCanBeTransformedToArray);
+            } elseif (class_exists($classNameWithNameSpace) && property_exists($model, ClassGenerator::validateClassField($key))){
                 // kostyl
                 if ($key == 'tasks' or $key == 'result' && $resultCanBeTransformedToArray)
                     $value = (array)$value;
 
                 if (is_object($value) || is_array($value) && $obj = ClassGenerator::arrayContainObject($value)) {
                     if (is_object($value)) {
-                       $model->$key = $this->paveData(json_encode($value), 'Entity'.ucfirst($key), $resultCanBeTransformedToArray);
+                       $model->$key = $this->paveData(json_encode($value), $classSuffix.ucfirst($key), $resultCanBeTransformedToArray);
                     } elseif (is_array($value) && $obj = ClassGenerator::arrayContainObject($value)) {
-                       $model->$key = $this->paveData(json_encode($value), 'Entity'.ucfirst($key), $resultCanBeTransformedToArray, true);
+                       $model->$key = $this->paveData(json_encode($value), $classSuffix.ucfirst($key), $resultCanBeTransformedToArray, true);
                     }
                 }else {
                     $model->$key = $value;

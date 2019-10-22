@@ -51,17 +51,20 @@ class ClassGenerator
      */
     public function recursiveCreator(string $json, string $path, string $className = 'TestModel', string $sufix = 'Main', ?bool $resultCanBeTransformedToArray = true, bool $fileIsNotRequired = false)
     {
+        static $concatenateSuffix = '';
         $decodedJson = json_decode($json);
         $arrayWithClassProperty = [];
         $arrayWithNameSpacesForEntities = [];
 
+        dump($sufix);
         if ($sufix)
             $nameForMainFile = $className.'Entity'.$sufix;
 
         if (is_array($decodedJson) or is_object($decodedJson)){
 
-            if (!$fileIsNotRequired)
+            if (!$fileIsNotRequired){
                 $file = $this->createClass($nameForMainFile, $path); //create file
+            }
 
             foreach ($decodedJson as $key=>$value) {
 
@@ -72,12 +75,12 @@ class ClassGenerator
                 if (is_object($value) || is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
 
-                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'Result'){
+                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult'){
                         $arrayWithNameSpacesForEntities = ClassGenerator::generateNameSpaceForAdvancedResult($this->availableTypes, $className);
                     }else{
 
                         if ($className !== 'GetAdvancedSerpResultsById' && $key !== 'items')
-                         $arrayWithNameSpacesForEntities[] = 'use DFSClient\Entity\Custom\\'.$className.'Entity'.ucfirst($key).';';
+                         $arrayWithNameSpacesForEntities[] = 'use DFSClient\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
                     }
 
 
@@ -87,7 +90,7 @@ class ClassGenerator
                     // if array contain object, we must write generic type
                     if (is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
-                        if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'Result')
+                        if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult')
                         {
                             $arrayWithClassProperty[$key] = ClassGenerator::generateTypesForAdvanced($this->availableTypes, $className);
 
@@ -97,7 +100,7 @@ class ClassGenerator
                             $arrayWithNameSpacesForEntities[] = 'use DFSClient\Entity\Custom\\'.$className.'EntityItems'.ucfirst($value[0]->type).';';
                         }
                         else{
-                            $arrayWithClassProperty[$key] = $className.'Entity'.ucfirst($key).'[]';
+                            $arrayWithClassProperty[$key] = $className.'Entity'.$sufix.ucfirst($key).'[]';
                         }
 
                         ##########################################
@@ -108,7 +111,7 @@ class ClassGenerator
                         }
 
                     }else{
-                            $arrayWithClassProperty[$key] = $className.'Entity'.ucfirst($key);
+                            $arrayWithClassProperty[$key] = $className.'Entity'.$sufix.ucfirst($key);
                     }
 
                     // first items in json.
@@ -124,7 +127,7 @@ class ClassGenerator
                     elseif ($className == 'GetAdvancedSerpResultsById' && $sufix === 'Items') {
                         $this->recursiveCreator(json_encode($res), $path, $className, "Items".ucfirst($value->type),$resultCanBeTransformedToArray);
                     }else{
-                        $this->recursiveCreator(json_encode($res), $path, $className, ucfirst($key),$resultCanBeTransformedToArray);
+                        $this->recursiveCreator(json_encode($res), $path, $className, $sufix.ucfirst($key),$resultCanBeTransformedToArray);
                     }
 
 
@@ -135,7 +138,7 @@ class ClassGenerator
             }
 
             if (!$fileIsNotRequired)
-            $this->createClassContent($file, json_encode($res), $nameForMainFile, $arrayWithNameSpacesForEntities, $arrayWithClassProperty, $resultCanBeTransformedToArray);
+                $this->createClassContent($file, json_encode($res), $sufix, $nameForMainFile, $arrayWithNameSpacesForEntities, $arrayWithClassProperty, $resultCanBeTransformedToArray);
           //  dump($arrayWithClassProperty);
         }
     }
@@ -146,7 +149,7 @@ class ClassGenerator
      * @param string $fileName
      * @param bool $isRecursion
      */
-    public function createClassContent($file, string $json, string $fileName, array $arrayWithNameSpace, array $arrayWithProporties, ?bool $resultIsArray = true,  bool $isRecursion = false)
+    public function createClassContent($file, string $json, string $suffix, string $fileName, array $arrayWithNameSpace, array $arrayWithProporties, ?bool $resultIsArray = true,  bool $isRecursion = false)
     {
 
         $array = json_decode($json);
@@ -170,9 +173,9 @@ class ClassGenerator
         }
 
         // if main model we do extends
-        if (strpos($fileName, 'EntityMain') !== false)
+        if ($suffix === 'Main')
         {
-            $functionString = $this->generateMainFunctionsString(str_replace('EntityMain', '', $fileName), $resultIsArray);
+            $functionString = $this->generateMainFunctionsString($fileName.'Tasks', $resultIsArray);
 
             $resultForInsert = sprintf("<?php".
                 PHP_EOL.
@@ -227,6 +230,7 @@ class ClassGenerator
     public static function generateTypesForAdvanced(array $types, string $className): string
     {
         $resultString = '';
+        $types = ClassGenerator::validateClassField($types);
 
         foreach ($types as $type)
         {
@@ -245,7 +249,7 @@ class ClassGenerator
     public static function generateNameSpaceForAdvancedResult(array $types, string $className): array
     {
         $tempArray = [];
-
+        $types = ClassGenerator::validateClassField($types);
         foreach ($types as $type){
             $tempArray[]= 'use DFSClient\Entity\Custom\\'.$className.'EntityItems'.ucfirst($type).';';
         }
@@ -264,9 +268,9 @@ class ClassGenerator
 
         if ($resultIsArray !== null){
             $functionString = PHP_EOL."\t/**
-\t* @return ".($resultIsArray ? '\DFSClient\Entity\Custom\\'.$filePrefix.'EntityResult[]|null' : '\DFSClient\Entity\Custom\\'.$filePrefix.'EntityResult|null')."
+\t* @return ".($resultIsArray ? '\DFSClient\Entity\Custom\\'.$filePrefix.'Result[]|null' : '\DFSClient\Entity\Custom\\'.$filePrefix.'Result|null')."
 \t*/
-\tpublic function getResultsByPostID(\$postID): ".($resultIsArray ? '?array' : '?\DFSClient\Entity\Custom\\'.$filePrefix.'EntityResult')." {
+\tpublic function getResultsByPostID(\$postID): ".($resultIsArray ? '?array' : '?\DFSClient\Entity\Custom\\'.$filePrefix.'Result')." {
 \t\treturn parent::getResultsByPostID(\$postID);
 \t}";
         }
@@ -275,9 +279,36 @@ class ClassGenerator
 
     private function generateResultFunctionString(string $filePrefix, bool $resultIsArray): string
     {
-        $functionString = PHP_EOL."\tpublic function getResultByIndex(\$postID): \DFSClient\Entity\Custom\\".$filePrefix."EntityResult".($resultIsArray ? '[]' : '') ." {
+        $functionString = PHP_EOL."\tpublic function getResultByIndex(\$postID): \DFSClient\Entity\Custom\\".$filePrefix."Result".($resultIsArray ? '[]' : '') ." {
 \t\treturn parent::getResultsByPostID(\$postID);
 \t}";
         return $functionString;
     }
+
+    /**
+     * @param array|string $fields
+     *
+     * @return array|string|null
+     */
+    public static function validateClassField($fields)
+    {
+        $forbiddenSymbols = ['/', '-'];
+        $replaceOnSymbols = ['_', '_'];
+
+        if (is_array($fields)){
+            $replacedArray = [];
+
+            foreach ($fields as $field){
+                $replacedArray[] = str_replace($forbiddenSymbols, $replaceOnSymbols, $field);
+            }
+            return $replacedArray;
+        }
+
+        if (is_string($fields))
+            return str_replace($forbiddenSymbols, $replaceOnSymbols, $fields);
+
+
+        return null;
+    }
+
 }
