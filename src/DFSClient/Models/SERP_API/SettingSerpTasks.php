@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\SERP_API;
+namespace DFSClientV3\Models\SERP_API;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class SettingSerpTasks extends AbstractModel
 {
@@ -81,15 +81,15 @@ class SettingSerpTasks extends AbstractModel
     }
 
     /**
-     * @return \DFSClient\Entity\Custom\SettingSerpTasksEntityMain
+     * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
      */
-    public function get(): \DFSClient\Entity\Custom\SettingSerpTasksEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @return \DFSClient\Entity\Custom\SettingSerpTasksEntityMain
+     * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
      */
     public static function getAfterMerge(array $modelPool)
     {

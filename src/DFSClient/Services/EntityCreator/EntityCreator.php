@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Services\EntityCreator;
+namespace DFSClientV3\Services\EntityCreator;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class EntityCreator
 {

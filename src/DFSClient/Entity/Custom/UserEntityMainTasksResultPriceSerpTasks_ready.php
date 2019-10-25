@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_readyPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_readyPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_readyPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_readyPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_readyPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_readyPriority_high;
 
 class UserEntityMainTasksResultPriceSerpTasks_ready 
 {    

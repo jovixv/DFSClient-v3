@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtmlPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtmlPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtmlPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtmlPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtmlPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtmlPriority_high;
 
 class UserEntityMainTasksResultPriceSerpTask_getHtml 
 {    

@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsFinderApi\Suggested_Keywords;
+namespace DFSClientV3\Models\KeywordsFinderApi\Suggested_Keywords;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class SuggestedKeywordsGetResultsByTaskId extends AbstractModel
 {

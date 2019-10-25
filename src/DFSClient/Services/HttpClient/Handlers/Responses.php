@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Services\HttpClient\Handlers;
+namespace DFSClientV3\Services\HttpClient\Handlers;
 
 class Responses
 {

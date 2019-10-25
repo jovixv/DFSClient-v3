@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasks;
+use DFSClientV3\Entity\Custom\UserEntityMainTasks;
 
-class UserEntityMain extends \DFSClient\Models\ResponseModel 
+class UserEntityMain extends \DFSClientV3\Models\ResponseModel
 {    
     /**
     * @var null|string host;
@@ -83,7 +83,7 @@ class UserEntityMain extends \DFSClient\Models\ResponseModel
      
 
 	/**
-	* @return \DFSClient\Entity\Custom\UserEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\UserEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

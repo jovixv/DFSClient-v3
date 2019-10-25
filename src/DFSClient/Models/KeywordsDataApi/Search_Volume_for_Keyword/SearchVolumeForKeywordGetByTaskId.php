@@ -6,9 +6,9 @@
  * Time: 12:40.
  */
 
-namespace DFSClient\Models\KeywordsDataApi\Search_Volume_for_Keyword;
+namespace DFSClientV3\Models\KeywordsDataApi\Search_Volume_for_Keyword;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class SearchVolumeForKeywordGetByTaskId extends AbstractModel
 {

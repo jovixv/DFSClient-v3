@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
 
 class UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_normal 

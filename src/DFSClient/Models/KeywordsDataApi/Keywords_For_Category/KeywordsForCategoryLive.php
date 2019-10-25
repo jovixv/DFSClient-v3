@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsDataApi\Keywords_For_Category;
+namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Category;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class KeywordsForCategoryLive extends AbstractModel
 {

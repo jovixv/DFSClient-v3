@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinatePriority_high;
 
 class UserEntityMainTasksResultPriceCommonLocation_country_by_coordinate 
 {    

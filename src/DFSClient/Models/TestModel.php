@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models;
+namespace DFSClientV3\Models;
 
-use DFSClient\Entity\Custom\TestModelEntityMain;
+use DFSClientV3\Entity\Custom\TestModelEntityMain;
 
 class TestModel extends AbstractModel
 {

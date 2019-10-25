@@ -6,7 +6,7 @@
  * Time: 11:19.
  */
 
-namespace DFSClient\Services\HttpClient\Contracts;
+namespace DFSClientV3\Services\HttpClient\Contracts;
 
 interface HttpContract
 {

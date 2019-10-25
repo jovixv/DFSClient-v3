@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsFinderApi\Related_Keywords;
+namespace DFSClientV3\Models\KeywordsFinderApi\Related_Keywords;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class RelatedKeywords extends AbstractModel
 {

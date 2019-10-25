@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
 
 class UserEntityMainTasksResultPriceCommonTestPriority_normal 

@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywordsPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywordsPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywordsPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywordsPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywordsPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywordsPriority_high;
 
 class UserEntityMainTasksResultPriceKeywords_finderLiveRelated_keywords 
 {    

@@ -1,9 +1,9 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCreditsLimitsDay;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCreditsLimitsMinute;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCreditsLimitsDay;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCreditsLimitsMinute;
 
 class UserEntityMainTasksResultCreditsLimits 
 {    

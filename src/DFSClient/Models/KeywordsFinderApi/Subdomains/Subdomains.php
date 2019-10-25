@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsFinderApi\Subdomains;
+namespace DFSClientV3\Models\KeywordsFinderApi\Subdomains;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class Subdomains extends AbstractModel
 {

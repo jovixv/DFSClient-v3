@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
 
 class UserEntityMainTasksResultPriceKeywords_dataTask_getAd_traffic_by_keywordsPriority_normal 

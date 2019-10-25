@@ -1,12 +1,12 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommon;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitor;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finder;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerp;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommon;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitor;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finder;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerp;
 
 class UserEntityMainTasksResultPrice 
 {    

@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Services;
+namespace DFSClientV3\Services;
 
 class Console
 {

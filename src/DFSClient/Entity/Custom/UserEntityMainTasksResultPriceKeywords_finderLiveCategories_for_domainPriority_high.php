@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
 
 class UserEntityMainTasksResultPriceKeywords_finderLiveCategories_for_domainPriority_high 

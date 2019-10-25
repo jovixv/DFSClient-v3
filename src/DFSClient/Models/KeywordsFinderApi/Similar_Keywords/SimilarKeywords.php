@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsFinderApi\Similar_Keywords;
+namespace DFSClientV3\Models\KeywordsFinderApi\Similar_Keywords;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class SimilarKeywords extends AbstractModel
 {

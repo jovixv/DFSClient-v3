@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultRates;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCredits;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPrice;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRates;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCredits;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPrice;
 
 class UserEntityMainTasksResult 
 {    

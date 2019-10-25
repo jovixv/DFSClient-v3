@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_postPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_postPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_postPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_postPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_postPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_postPriority_high;
 
 class UserEntityMainTasksResultPriceCompetitorTask_post 
 {    

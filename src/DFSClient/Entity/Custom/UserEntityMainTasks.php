@@ -1,9 +1,9 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksParams;
-use DFSClient\Entity\Custom\UserEntityMainTasksResult;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksParams;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResult;
 
 class UserEntityMainTasks 
 {    

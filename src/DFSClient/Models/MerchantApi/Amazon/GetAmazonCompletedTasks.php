@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\MerchantApi\Amazon;
+namespace DFSClientV3\Models\MerchantApi\Amazon;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class GetAmazonCompletedTasks extends AbstractModel
 {

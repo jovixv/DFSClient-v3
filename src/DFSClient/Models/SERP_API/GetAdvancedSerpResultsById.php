@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\SERP_API;
+namespace DFSClientV3\Models\SERP_API;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class GetAdvancedSerpResultsById extends AbstractModel
 {
@@ -43,9 +43,9 @@ class GetAdvancedSerpResultsById extends AbstractModel
     }
 
     /**
-     * @return \DFSClient\Entity\Custom\GetAdvancedSerpResultsByIdEntityMain
+     * @return \DFSClientV3\Entity\Custom\GetAdvancedSerpResultsByIdEntityMain
      */
-    public function get(): \DFSClient\Entity\Custom\GetAdvancedSerpResultsByIdEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\GetAdvancedSerpResultsByIdEntityMain
     {
         return parent::get();
     }

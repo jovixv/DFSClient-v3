@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsDataApi\Keywords_For_Keyword;
+namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keyword;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class KeywordsForKeywordLive extends AbstractModel
 {
@@ -56,9 +56,9 @@ class KeywordsForKeywordLive extends AbstractModel
     }
 
     /**
-     * @return \DFSClient\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain
+     * @return \DFSClientV3\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain
      */
-    public function get(): \DFSClient\Entity\Custom\KeywordsForKeywordLiveEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\KeywordsForKeywordLiveEntityMain
     {
         return parent::get();
     }

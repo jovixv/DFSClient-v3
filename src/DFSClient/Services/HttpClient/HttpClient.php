@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Services\HttpClient;
+namespace DFSClientV3\Services\HttpClient;
 
-use DFSClient\Bootstrap\Application;
-use DFSClient\Services\HttpClient\Contracts\HttpContract;
-use DFSClient\Services\HttpClient\Handlers\Responses;
+use DFSClientV3\Bootstrap\Application;
+use DFSClientV3\Services\HttpClient\Contracts\HttpContract;
+use DFSClientV3\Services\HttpClient\Handlers\Responses;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\GuzzleException;

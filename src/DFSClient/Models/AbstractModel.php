@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Models;
+namespace DFSClientV3\Models;
 
-use DFSClient\Bootstrap\Application;
-use DFSClient\Models\DataMapper;
-use DFSClient\Services\HttpClient\HttpClient;
+use DFSClientV3\Bootstrap\Application;
+use DFSClientV3\Models\DataMapper;
+use DFSClientV3\Services\HttpClient\HttpClient;
 
 abstract class AbstractModel
 {
@@ -233,7 +233,7 @@ abstract class AbstractModel
     }
 
     /**
-     * @return \DFSClient\Services\HttpClient\Handlers\Responses
+     * @return \DFSClientV3\Services\HttpClient\Handlers\Responses
      */
     public function process()
     {

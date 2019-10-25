@@ -1,13 +1,13 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguages;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpLive;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpLocations;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguages;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLive;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocations;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
 
 class UserEntityMainTasksResultPriceSerp 
 {    

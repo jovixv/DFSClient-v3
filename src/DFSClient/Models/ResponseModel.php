@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Models;
+namespace DFSClientV3\Models;
 
 class ResponseModel implements \IteratorAggregate
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\SERP_API;
+namespace DFSClientV3\Models\SERP_API;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 use function GuzzleHttp\Psr7\str;
 
 class GetSerpCompletedTasks extends AbstractModel
@@ -57,15 +57,15 @@ class GetSerpCompletedTasks extends AbstractModel
     }
 
     /**
-     * @return \DFSClient\Entity\Custom\GetSerpCompletedTasksEntityMain
+     * @return \DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMain
      */
-    public function get(): \DFSClient\Entity\Custom\GetSerpCompletedTasksEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @return \DFSClient\Services\HttpClient\Handlers\Responses
+     * @return \DFSClientV3\Services\HttpClient\Handlers\Responses
      */
     public function process()
     {

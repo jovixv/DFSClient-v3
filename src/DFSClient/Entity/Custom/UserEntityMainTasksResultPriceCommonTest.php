@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommonTestPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommonTestPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCommonTestPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonTestPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonTestPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonTestPriority_high;
 
 class UserEntityMainTasksResultPriceCommonTest 
 {    

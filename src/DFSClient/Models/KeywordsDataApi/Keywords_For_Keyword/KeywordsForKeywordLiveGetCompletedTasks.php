@@ -1,9 +1,9 @@
 <?php
 
 
-namespace DFSClient\Models\KeywordsDataApi\Keywords_For_Keyword;
+namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keyword;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class KeywordsForKeywordLiveGetCompletedTasks extends AbstractModel
 {

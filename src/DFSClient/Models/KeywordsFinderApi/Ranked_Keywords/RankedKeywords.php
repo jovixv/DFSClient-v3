@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsFinderApi\Ranked_Keywords;
+namespace DFSClientV3\Models\KeywordsFinderApi\Ranked_Keywords;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class RankedKeywords extends AbstractModel
 {

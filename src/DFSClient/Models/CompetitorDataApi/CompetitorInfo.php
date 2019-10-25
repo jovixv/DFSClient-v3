@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\CompetitorDataApi;
+namespace DFSClientV3\Models\CompetitorDataApi;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class CompetitorInfo extends AbstractModel
 {

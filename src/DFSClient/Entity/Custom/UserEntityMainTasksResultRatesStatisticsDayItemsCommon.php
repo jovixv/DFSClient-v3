@@ -1,18 +1,23 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
 
 class UserEntityMainTasksResultRatesStatisticsDayItemsCommon 
 {    
     /**
-    * @var null|integer total;
+    * @var null|integer location_country_by_coordinate;
     */
-    public $total = null;        
+    public $location_country_by_coordinate = null;        
     
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayItemsCommonItems items;
+    * @var null|integer test;
     */
-    public $items = null;        
+    public $test = null;        
+    
+    /**
+    * @var null|integer user;
+    */
+    public $user = null;        
      
 }

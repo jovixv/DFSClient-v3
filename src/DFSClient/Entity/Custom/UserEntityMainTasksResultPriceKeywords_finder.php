@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLive;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderTask_get;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderTask_post;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderLive;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderTask_get;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderTask_post;
 
 class UserEntityMainTasksResultPriceKeywords_finder 
 {    

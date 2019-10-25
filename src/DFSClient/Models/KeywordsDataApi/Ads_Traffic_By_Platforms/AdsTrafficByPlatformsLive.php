@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsDataApi\Ads_Traffic_By_Platforms;
+namespace DFSClientV3\Models\KeywordsDataApi\Ads_Traffic_By_Platforms;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class AdsTrafficByPlatformsLive extends AbstractModel
 {
@@ -57,9 +57,9 @@ class AdsTrafficByPlatformsLive extends AbstractModel
     }
 
     /**
-     * @return \DFSClient\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain
+     * @return \DFSClientV3\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain
      */
-    public function get(): \DFSClient\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain
     {
         return parent::get();
     }

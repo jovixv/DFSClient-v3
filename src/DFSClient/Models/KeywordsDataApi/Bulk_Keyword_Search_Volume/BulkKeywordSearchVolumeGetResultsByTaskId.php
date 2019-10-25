@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsDataApi\Bulk_Keyword_Search_Volume;
+namespace DFSClientV3\Models\KeywordsDataApi\Bulk_Keyword_Search_Volume;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class BulkKeywordSearchVolumeGetResultsByTaskId extends AbstractModel
 {

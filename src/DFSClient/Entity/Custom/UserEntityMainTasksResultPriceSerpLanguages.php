@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_high;
 
 class UserEntityMainTasksResultPriceSerpLanguages 
 {    

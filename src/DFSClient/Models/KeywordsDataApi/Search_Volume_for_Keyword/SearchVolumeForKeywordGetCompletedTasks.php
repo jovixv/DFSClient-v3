@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\KeywordsDataApi\Search_Volume_for_Keyword;
+namespace DFSClientV3\Models\KeywordsDataApi\Search_Volume_for_Keyword;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class SearchVolumeForKeywordGetCompletedTasks extends AbstractModel
 {

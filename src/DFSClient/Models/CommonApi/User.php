@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\CommonApi;
+namespace DFSClientV3\Models\CommonApi;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class User extends AbstractModel
 {
@@ -14,9 +14,9 @@ class User extends AbstractModel
 
 
     /**
-     * @return \DFSClient\Entity\Custom\UserEntityMain
+     * @return \DFSClientV3\Entity\Custom\UserEntityMain
      */
-    public function get(): \DFSClient\Entity\Custom\UserEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\UserEntityMain
     {
         return parent::get();
     }

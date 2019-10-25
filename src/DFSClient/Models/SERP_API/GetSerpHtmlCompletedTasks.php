@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\SERP_API;
+namespace DFSClientV3\Models\SERP_API;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class GetSerpHtmlCompletedTasks extends AbstractModel
 {

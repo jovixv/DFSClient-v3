@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models;
-use DFSClient\Bootstrap\Application;
-use DFSClient\Services\EntityCreator\ClassGenerator;
+namespace DFSClientV3\Models;
+use DFSClientV3\Bootstrap\Application;
+use DFSClientV3\Services\EntityCreator\ClassGenerator;
 
 class DataMapper
 {
@@ -56,25 +56,27 @@ class DataMapper
     public function paveData(string $json, ?string $classSuffix, ?bool $resultCanBeTransformedToArray = true, bool $mustbeAsCollection = false)
     {
 
+        $model = null;
+
         if ($this->className === 'GetAdvancedSerpResultsById')
             return $this->paveAdvancedData($json, $classSuffix, $resultCanBeTransformedToArray, $mustbeAsCollection);
 
         //$config = $this->applications->getConfig();
         $decodedResponse = json_decode($json);
-        $nameSpace = 'DFSClient\Entity\Custom';
+        $nameSpace = 'DFSClientV3\Entity\Custom';
 
 
-        if ($classSuffix !== null){
-            $classNameWithNameSpace = $nameSpace.'\\'.$this->className.$classSuffix;
-            $model = new $classNameWithNameSpace();
+            if ($classSuffix !== null && class_exists($nameSpace.'\\'.$this->className.$classSuffix) ){
+                $classNameWithNameSpace = $nameSpace.'\\'.$this->className.$classSuffix;
+                $model = new $classNameWithNameSpace();
+            }
 
-        }
+            if ($classSuffix === null && class_exists($nameSpace.'\\'.$this->className.'EntityMain')){
+                $classNameWithNameSpace = $nameSpace.'\\'.$this->className.'EntityMain';
+                $model = new $classNameWithNameSpace($this->requestStatus, $this->pathToMainData);
+                $classSuffix = 'EntityMain';
+            }
 
-        if ($classSuffix === null){
-            $classNameWithNameSpace = $nameSpace.'\\'.$this->className.'EntityMain';
-            $model = new $classNameWithNameSpace($this->requestStatus, $this->pathToMainData);
-            $classSuffix = 'EntityMain';
-        }
 
 
         $arrayWithResults = [];
@@ -84,7 +86,7 @@ class DataMapper
 
             if ($mustbeAsCollection){
                 $arrayWithResults[$key] = $this->paveData(json_encode($value), $classSuffix, $resultCanBeTransformedToArray);
-            } elseif (class_exists($classNameWithNameSpace) && property_exists($model, ClassGenerator::validateClassField($key))){
+            } elseif (is_object($model) && property_exists($model, ClassGenerator::validateClassField($key))){
                 // kostyl
                 if ($key == 'tasks' or $key == 'result' && $resultCanBeTransformedToArray)
                     $value = (array)$value;
@@ -117,7 +119,7 @@ class DataMapper
     public function paveAdvancedData(string $json, ?string $classSuffix, ?bool $resultCanBeTransformedToArray = true, bool $mustbeAsCollection = false)
     {
         $decodedResponse = json_decode($json);
-        $nameSpace = 'DFSClient\Entity\Custom';
+        $nameSpace = 'DFSClientV3\Entity\Custom';
 
         if (!$classSuffix){
             $classNameWithNameSpace = $nameSpace.'\\'.$this->className.'EntityMain';

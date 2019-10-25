@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\RankTrackerApi;
+namespace DFSClientV3\Models\RankTrackerApi;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class GetRankTasksResults extends AbstractModel
 {

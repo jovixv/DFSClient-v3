@@ -6,9 +6,9 @@
  * Time: 16:17.
  */
 
-namespace DFSClient\Models\KeywordsFinderApi\Relevant_Pages;
+namespace DFSClientV3\Models\KeywordsFinderApi\Relevant_Pages;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class RelevantPages extends AbstractModel
 {

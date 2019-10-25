@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\MerchantApi\Google_Shopping;
+namespace DFSClientV3\Models\MerchantApi\Google_Shopping;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class GetGoogleShoppingResultsByTaskId extends AbstractModel
 {

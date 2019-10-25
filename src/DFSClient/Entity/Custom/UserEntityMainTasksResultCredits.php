@@ -1,9 +1,9 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCreditsLimits;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCreditsStatistics;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCreditsLimits;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCreditsStatistics;
 
 class UserEntityMainTasksResultCredits 
 {    

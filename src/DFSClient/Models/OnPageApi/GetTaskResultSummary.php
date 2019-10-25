@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\OnPageApi;
+namespace DFSClientV3\Models\OnPageApi;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class GetTaskResultSummary extends AbstractModel
 {

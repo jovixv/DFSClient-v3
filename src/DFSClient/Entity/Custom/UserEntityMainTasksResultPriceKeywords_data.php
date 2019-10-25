@@ -1,12 +1,12 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguages;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLive;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocations;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTask_get;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTask_post;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguages;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLive;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocations;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTask_get;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTask_post;
 
 class UserEntityMainTasksResultPriceKeywords_data 
 {    

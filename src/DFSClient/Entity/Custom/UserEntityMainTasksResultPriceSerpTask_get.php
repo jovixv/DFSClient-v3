@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getAdvanced;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtml;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegular;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getAdvanced;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtml;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegular;
 
 class UserEntityMainTasksResultPriceSerpTask_get 
 {    

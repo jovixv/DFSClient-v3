@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClient\Bootstrap;
+namespace DFSClientV3\Bootstrap;
 
 use \Exception as ApplicationException;
 

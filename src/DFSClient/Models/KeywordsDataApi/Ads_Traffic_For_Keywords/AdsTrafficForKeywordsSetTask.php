@@ -1,10 +1,10 @@
 <?php
 
 
-namespace DFSClient\Models\KeywordsDataApi\Ads_Traffic_For_Keywords;
+namespace DFSClientV3\Models\KeywordsDataApi\Ads_Traffic_For_Keywords;
 
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class AdsTrafficForKeywordsSetTask extends AbstractModel
 {

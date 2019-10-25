@@ -1,9 +1,9 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCreditsStatisticsDay;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultCreditsStatisticsMinute;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCreditsStatisticsDay;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCreditsStatisticsMinute;
 
 class UserEntityMainTasksResultCreditsStatistics 
 {    

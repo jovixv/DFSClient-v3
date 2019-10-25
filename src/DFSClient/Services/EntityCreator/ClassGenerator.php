@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DFSClient\Services\EntityCreator;
+namespace DFSClientV3\Services\EntityCreator;
 
 
 class ClassGenerator
@@ -80,7 +80,7 @@ class ClassGenerator
                     }else{
 
                         if ($className !== 'GetAdvancedSerpResultsById' && $key !== 'items')
-                         $arrayWithNameSpacesForEntities[] = 'use DFSClient\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
+                         $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
                     }
 
 
@@ -97,7 +97,7 @@ class ClassGenerator
                         }else if ($className === 'GetAdvancedSerpResultsById' && $sufix !== 'Items' && $key === 'items') {
 
                             $arrayWithClassProperty[$key] = $className.'EntityItems'.ucfirst($value[0]->type).'[]';
-                            $arrayWithNameSpacesForEntities[] = 'use DFSClient\Entity\Custom\\'.$className.'EntityItems'.ucfirst($value[0]->type).';';
+                            $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'EntityItems'.ucfirst($value[0]->type).';';
                         }
                         else{
                             $arrayWithClassProperty[$key] = $className.'Entity'.$sufix.ucfirst($key).'[]';
@@ -179,17 +179,17 @@ class ClassGenerator
 
             $resultForInsert = sprintf("<?php".
                 PHP_EOL.
-                PHP_EOL."namespace DFSClient\Entity\Custom;".
+                PHP_EOL."namespace DFSClientV3\Entity\Custom;".
                 PHP_EOL.
                 PHP_EOL.'%s'.
-                PHP_EOL."class %s extends \DFSClient\Models\ResponseModel ".
+                PHP_EOL."class %s extends \DFSClientV3\Models\ResponseModel ".
                 PHP_EOL."{"."    %s ".
                 PHP_EOL."%s".
                 PHP_EOL."}", $stringNameSpaces, $fileName, $string, $functionString);
         }else{
             $resultForInsert = sprintf("<?php".
                 PHP_EOL.
-                PHP_EOL."namespace DFSClient\Entity\Custom;".
+                PHP_EOL."namespace DFSClientV3\Entity\Custom;".
                 PHP_EOL.
                 PHP_EOL.'%s'.
                 PHP_EOL."class %s ".
@@ -251,7 +251,7 @@ class ClassGenerator
         $tempArray = [];
         $types = ClassGenerator::validateClassField($types);
         foreach ($types as $type){
-            $tempArray[]= 'use DFSClient\Entity\Custom\\'.$className.'EntityItems'.ucfirst($type).';';
+            $tempArray[]= 'use DFSClientV3\Entity\Custom\\'.$className.'EntityItems'.ucfirst($type).';';
         }
 
         return $tempArray;
@@ -268,9 +268,9 @@ class ClassGenerator
 
         if ($resultIsArray !== null){
             $functionString = PHP_EOL."\t/**
-\t* @return ".($resultIsArray ? '\DFSClient\Entity\Custom\\'.$filePrefix.'Result[]|null' : '\DFSClient\Entity\Custom\\'.$filePrefix.'Result|null')."
+\t* @return ".($resultIsArray ? '\DFSClientV3\Entity\Custom\\'.$filePrefix.'Result[]|null' : '\DFSClientV3\Entity\Custom\\'.$filePrefix.'Result|null')."
 \t*/
-\tpublic function getResultsByPostID(\$postID): ".($resultIsArray ? '?array' : '?\DFSClient\Entity\Custom\\'.$filePrefix.'Result')." {
+\tpublic function getResultsByPostID(\$postID): ".($resultIsArray ? '?array' : '?\DFSClientV3\Entity\Custom\\'.$filePrefix.'Result')." {
 \t\treturn parent::getResultsByPostID(\$postID);
 \t}";
         }
@@ -279,7 +279,7 @@ class ClassGenerator
 
     private function generateResultFunctionString(string $filePrefix, bool $resultIsArray): string
     {
-        $functionString = PHP_EOL."\tpublic function getResultByIndex(\$postID): \DFSClient\Entity\Custom\\".$filePrefix."Result".($resultIsArray ? '[]' : '') ." {
+        $functionString = PHP_EOL."\tpublic function getResultByIndex(\$postID): \DFSClientV3\Entity\Custom\\".$filePrefix."Result".($resultIsArray ? '[]' : '') ." {
 \t\treturn parent::getResultsByPostID(\$postID);
 \t}";
         return $functionString;

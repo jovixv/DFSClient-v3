@@ -1,10 +1,10 @@
 <?php
 
 
-namespace DFSClient\Models\KeywordsDataApi\Ads_Traffic_By_Platforms;
+namespace DFSClientV3\Models\KeywordsDataApi\Ads_Traffic_By_Platforms;
 
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class AdsTrafficByPlatformsGetResultsByTaskId extends AbstractModel
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient;
+namespace DFSClientV3;
 
-use DFSClient\Bootstrap\Application;
+use DFSClientV3\Bootstrap\Application;
 use \Exception as DFSClientException;
 
 class DFSClient
@@ -44,9 +44,9 @@ class DFSClient
             $this->application->setConfig($config);
         }
 
-        $loader = require __DIR__. '../../../../../../vendor/autoload.php';
-
-        $loader->setPsr4('DFSClient\\Entity\\Custom\\', $this->application->getConfig()['modelsPath']);
+        $loader = require __DIR__. '../../../../../../vendor/autoload.php'; // path for package
+        //$loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
+        $loader->setPsr4('DFSClientV3\\Entity\\Custom\\', $this->application->getConfig()['modelsPath']);
 
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitorLive;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_get;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_post;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitorLive;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_get;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitorTask_post;
 
 class UserEntityMainTasksResultPriceCompetitor 
 {    

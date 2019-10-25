@@ -1,10 +1,10 @@
 <?php
 
-namespace DFSClient\Entity\Custom;
+namespace DFSClientV3\Entity\Custom;
 
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_low;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_normal;
-use DFSClient\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_low;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_normal;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_high;
 
 class UserEntityMainTasksResultPriceKeywords_dataLocations 
 {    

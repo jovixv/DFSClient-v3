@@ -1,8 +1,8 @@
 <?php
 
-namespace DFSClient\Models\CommonApi;
+namespace DFSClientV3\Models\CommonApi;
 
-use DFSClient\Models\AbstractModel;
+use DFSClientV3\Models\AbstractModel;
 
 class ListOfSearchEngines extends AbstractModel
 {
