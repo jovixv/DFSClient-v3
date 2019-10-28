@@ -271,20 +271,49 @@ abstract class AbstractModel
     }
 
     /**
-     *
-     */
-    public function setOpt()
-    {
-
-    }
-
-    /**
      * @return string|null
      */
     public function getPathToMainData()
     {
         return $this->pathToMainData;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCalledClass()
+    {
+        $calledClassNameWithNapeSpace = get_called_class();
+        $classNameArray = explode('\\', $calledClassNameWithNapeSpace);
+
+        //for php 7.3 can be use array_last_key
+        return $classNameArray[count($classNameArray ) -1];
+    }
+
+
+    /**
+     *
+     */
+    public function setOpt()
+    {
+
+    }
+    /**
+     * @param string $newLogin
+     */
+    public function setLogin(string $newLogin)
+    {
+        $this->DFSLogin = $newLogin;
+        return $this;
+    }
+
+
+    public function setPassword(string $newPassword)
+    {
+        $this->DFSPassword = $newPassword;
+        return $this;
+    }
+
 
     /**
      * @param string $json
@@ -299,17 +328,6 @@ abstract class AbstractModel
         return $mappedModel;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getCalledClass()
-    {
-        $calledClassNameWithNapeSpace = get_called_class();
-        $classNameArray = explode('\\', $calledClassNameWithNapeSpace);
-
-        //for php 7.3 can be use array_last_key
-        return $classNameArray[count($classNameArray ) -1];
-    }
 
     /**
      * @return bool
