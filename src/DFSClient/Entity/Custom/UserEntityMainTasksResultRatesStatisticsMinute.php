@@ -2,13 +2,19 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteCommon;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteCompetitor;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_finder;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteMap;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteSerp;
 
 class UserEntityMainTasksResultRatesStatisticsMinute 
 {    
     /**
-    * @var null|NULL items;
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteCommon common;
     */
-    public $items = null;        
+    public $common = null;        
     
     /**
     * @var null|integer total;
@@ -21,9 +27,19 @@ class UserEntityMainTasksResultRatesStatisticsMinute
     public $total_common = null;        
     
     /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteCompetitor competitor;
+    */
+    public $competitor = null;        
+    
+    /**
     * @var null|integer total_competitor;
     */
     public $total_competitor = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data keywords_data;
+    */
+    public $keywords_data = null;        
     
     /**
     * @var null|integer total_keywords_data;
@@ -31,9 +47,29 @@ class UserEntityMainTasksResultRatesStatisticsMinute
     public $total_keywords_data = null;        
     
     /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_finder keywords_finder;
+    */
+    public $keywords_finder = null;        
+    
+    /**
     * @var null|integer total_keywords_finder;
     */
     public $total_keywords_finder = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteMap map;
+    */
+    public $map = null;        
+    
+    /**
+    * @var null|integer total_map;
+    */
+    public $total_map = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerp serp;
+    */
+    public $serp = null;        
     
     /**
     * @var null|integer total_serp;

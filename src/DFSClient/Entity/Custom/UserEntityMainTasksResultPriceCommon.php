@@ -2,21 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonLocation_country_by_coordinate;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonTest;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonGeo;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommonUser;
 
 class UserEntityMainTasksResultPriceCommon 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceCommonLocation_country_by_coordinate location_country_by_coordinate;
+    * @var null|UserEntityMainTasksResultPriceCommonGeo geo;
     */
-    public $location_country_by_coordinate = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultPriceCommonTest test;
-    */
-    public $test = null;        
+    public $geo = null;        
     
     /**
     * @var null|UserEntityMainTasksResultPriceCommonUser user;

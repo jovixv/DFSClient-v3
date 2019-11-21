@@ -2,23 +2,46 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataAd_traffic_by_keywords;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataAd_traffic_by_platforms;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeywords_for_category;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeywords_for_keywords;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguages;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocations;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTask_get;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTask_post;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataSearch_volume;
 
 class UserEntityMainTasksResultPriceKeywords_data 
 {    
     /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataAd_traffic_by_keywords ad_traffic_by_keywords;
+    */
+    public $ad_traffic_by_keywords = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataAd_traffic_by_platforms ad_traffic_by_platforms;
+    */
+    public $ad_traffic_by_platforms = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_category keywords_for_category;
+    */
+    public $keywords_for_category = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_keywords keywords_for_keywords;
+    */
+    public $keywords_for_keywords = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_site keywords_for_site;
+    */
+    public $keywords_for_site = null;        
+    
+    /**
     * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguages languages;
     */
     public $languages = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLive live;
-    */
-    public $live = null;        
     
     /**
     * @var null|UserEntityMainTasksResultPriceKeywords_dataLocations locations;
@@ -26,13 +49,8 @@ class UserEntityMainTasksResultPriceKeywords_data
     public $locations = null;        
     
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataTask_get task_get;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataSearch_volume search_volume;
     */
-    public $task_get = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataTask_post task_post;
-    */
-    public $task_post = null;        
+    public $search_volume = null;        
      
 }

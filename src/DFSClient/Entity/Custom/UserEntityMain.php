@@ -4,7 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasks;
 
-class UserEntityMain extends \DFSClientV3\Models\ResponseModel
+class UserEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string host;

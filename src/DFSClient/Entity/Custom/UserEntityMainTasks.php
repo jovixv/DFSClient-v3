@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksData;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksParams;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResult;
 
@@ -48,7 +49,7 @@ class UserEntityMainTasks
     public $path = null;        
     
     /**
-    * @var null|array data;
+    * @var null|UserEntityMainTasksData data;
     */
     public $data = null;        
     

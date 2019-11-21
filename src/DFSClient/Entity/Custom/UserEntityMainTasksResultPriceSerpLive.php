@@ -2,25 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLivePriority_low;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLivePriority_normal;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLivePriority_high;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveRegular;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveHtml;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveAdvanced;
 
 class UserEntityMainTasksResultPriceSerpLive 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLivePriority_low priority_low;
+    * @var null|UserEntityMainTasksResultPriceSerpLiveRegular regular;
     */
-    public $priority_low = null;        
+    public $regular = null;        
     
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLivePriority_normal priority_normal;
+    * @var null|UserEntityMainTasksResultPriceSerpLiveHtml html;
     */
-    public $priority_normal = null;        
+    public $html = null;        
     
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLivePriority_high priority_high;
+    * @var null|UserEntityMainTasksResultPriceSerpLiveAdvanced advanced;
     */
-    public $priority_high = null;        
+    public $advanced = null;        
      
 }

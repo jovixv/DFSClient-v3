@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommon;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitor;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finder;
@@ -14,6 +15,11 @@ class UserEntityMainTasksResultPrice
     * @var null|UserEntityMainTasksResultPriceCommon common;
     */
     public $common = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceMap map;
+    */
+    public $map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultPriceCompetitor competitor;
