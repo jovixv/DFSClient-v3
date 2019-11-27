@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataAd_traffic_by_keywords;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataAd_traffic_by_platforms;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataGoogle;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataKeywords_for_category;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataKeywords_for_keywords;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataKeywords_for_site;
@@ -20,6 +21,11 @@ class UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data
     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataAd_traffic_by_platforms ad_traffic_by_platforms;
     */
     public $ad_traffic_by_platforms = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataGoogle google;
+    */
+    public $google = null;        
     
     /**
     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataKeywords_for_category keywords_for_category;
@@ -45,6 +51,11 @@ class UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data
     * @var null|integer locations;
     */
     public $locations = null;        
+    
+    /**
+    * @var null|integer map;
+    */
+    public $map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataSearch_volume search_volume;

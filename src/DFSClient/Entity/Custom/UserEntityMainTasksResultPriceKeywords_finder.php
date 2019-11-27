@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderCompe
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderDomain_intersection;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderKeywords_for_categories;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderKeywords_for_terms;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderRanked_domains_by_category;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderRanked_keywords;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderRelated_keywords;
@@ -15,6 +16,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderSerp_
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderSimilar_keywords;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderSubdomains;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderSuggested_keywords;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finderDomain_rank_overview;
 
 class UserEntityMainTasksResultPriceKeywords_finder 
 {    
@@ -42,6 +44,11 @@ class UserEntityMainTasksResultPriceKeywords_finder
     * @var null|UserEntityMainTasksResultPriceKeywords_finderKeywords_for_terms keywords_for_terms;
     */
     public $keywords_for_terms = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_finderMap map;
+    */
+    public $map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultPriceKeywords_finderRanked_domains_by_category ranked_domains_by_category;
@@ -82,5 +89,10 @@ class UserEntityMainTasksResultPriceKeywords_finder
     * @var null|UserEntityMainTasksResultPriceKeywords_finderSuggested_keywords suggested_keywords;
     */
     public $suggested_keywords = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_finderDomain_rank_overview domain_rank_overview;
+    */
+    public $domain_rank_overview = null;        
      
 }

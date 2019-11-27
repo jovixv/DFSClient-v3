@@ -11,6 +11,11 @@ class UserEntityMainTasksResultRatesStatisticsDayCompetitor
     public $live = null;        
     
     /**
+    * @var null|integer map;
+    */
+    public $map = null;        
+    
+    /**
     * @var null|integer task_get;
     */
     public $task_get = null;        

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRates;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultCredits;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoney;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPrice;
 
 class UserEntityMainTasksResult 
@@ -24,9 +24,9 @@ class UserEntityMainTasksResult
     public $rates = null;        
     
     /**
-    * @var null|UserEntityMainTasksResultCredits credits;
+    * @var null|UserEntityMainTasksResultMoney money;
     */
-    public $credits = null;        
+    public $money = null;        
     
     /**
     * @var null|UserEntityMainTasksResultPrice price;

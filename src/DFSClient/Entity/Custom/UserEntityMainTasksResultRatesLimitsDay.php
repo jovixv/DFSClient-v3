@@ -6,7 +6,6 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayCommon;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayCompetitor;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayKeywords_finder;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDaySerp;
 
 class UserEntityMainTasksResultRatesLimitsDay 
@@ -55,16 +54,6 @@ class UserEntityMainTasksResultRatesLimitsDay
     * @var null|integer total_keywords_finder;
     */
     public $total_keywords_finder = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDayMap map;
-    */
-    public $map = null;        
-    
-    /**
-    * @var null|integer total_map;
-    */
-    public $total_map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultRatesLimitsDaySerp serp;

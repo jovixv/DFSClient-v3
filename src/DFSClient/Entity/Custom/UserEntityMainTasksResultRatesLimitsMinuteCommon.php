@@ -2,14 +2,19 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteCommonGeo;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteCommonService;
 
 class UserEntityMainTasksResultRatesLimitsMinuteCommon 
 {    
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsMinuteCommonGeo geo;
+    * @var null|integer map;
     */
-    public $geo = null;        
+    public $map = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultRatesLimitsMinuteCommonService service;
+    */
+    public $service = null;        
     
     /**
     * @var null|integer user;

@@ -34,6 +34,11 @@ class UserEntityMainTasksResultRatesLimitsMinuteKeywords_finder
     public $domain_intersection = null;        
     
     /**
+    * @var null|integer domain_rank_overview;
+    */
+    public $domain_rank_overview = null;        
+    
+    /**
     * @var null|UserEntityMainTasksResultRatesLimitsMinuteKeywords_finderKeywords_for_categories keywords_for_categories;
     */
     public $keywords_for_categories = null;        
@@ -42,6 +47,11 @@ class UserEntityMainTasksResultRatesLimitsMinuteKeywords_finder
     * @var null|UserEntityMainTasksResultRatesLimitsMinuteKeywords_finderKeywords_for_terms keywords_for_terms;
     */
     public $keywords_for_terms = null;        
+    
+    /**
+    * @var null|integer map;
+    */
+    public $map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultRatesLimitsMinuteKeywords_finderRanked_domains_by_category ranked_domains_by_category;

@@ -6,7 +6,6 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteCommon;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteCompetitor;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords_finder;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteSerp;
 
 class UserEntityMainTasksResultRatesLimitsMinute 
@@ -55,16 +54,6 @@ class UserEntityMainTasksResultRatesLimitsMinute
     * @var null|integer total_keywords_finder;
     */
     public $total_keywords_finder = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultRatesLimitsMinuteMap map;
-    */
-    public $map = null;        
-    
-    /**
-    * @var null|integer total_map;
-    */
-    public $total_map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultRatesLimitsMinuteSerp serp;
