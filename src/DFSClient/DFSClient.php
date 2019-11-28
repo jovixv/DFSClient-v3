@@ -43,41 +43,48 @@ class DFSClient
 
             $this->application->setConfig($config);
         }
-
-        $loader = require __DIR__. '../../../../../../vendor/autoload.php'; // path for package
-        //$loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
-        $loader->setPsr4('DFSClientV3\\Entity\\Custom\\', $this->application->getConfig()['modelsPath']);
-
     }
 
     /**
-     * @param string|null $path
+     * @param string|array|null $path
      * @throws DFSClientException
      */
-    public function setConfig(?string $path = null)
+    public function setConfig($path = null)
     {
-
+        $loader = require __DIR__. '../../../../../../vendor/autoload.php'; // path for package
+        //$loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
         $configFile = [];
 
-        if ($path)
-        {
-            if (!file_exists($path))
-                throw new DFSClientException('Config file not found, check your path, current path: '.__DIR__);
+        if ($this->isLaravelInstalled()) {
 
-            if ($this->isLaravelInstalled())
-            {
-                if (function_exists('config'))
-                    $configFile = config('dfsConfig');
-            }else{
+            if (function_exists('config')){
+                if (is_array($path))
+                    $configFile = $path;
+                if(is_string($path))
+                    $configFile = config($path);
+            }
+
+        }else{
+            if ($path) {
+                if (!file_exists($path))
+                    throw new DFSClientException('Config file not found, check your path, current path: '.__DIR__);
+
                 $configFile = include $path;
             }
 
+            if (!$path)
+                $configFile = include 'Config/dfsConfig.php';
+
         }
 
-        if (!$path)
-            $configFile = include 'Config/dfsConfig.php';
-
         $this->application->setConfig($configFile);
+
+        // add extra psr path.
+        $extraPaths = $this->application->getConfig()['extraEntitiesPaths'];
+        foreach ($extraPaths as $path) {
+            $loader->addPsr4('DFSClientV3\\Entity\\Custom\\', $path);
+        }
+
     }
 
     /**

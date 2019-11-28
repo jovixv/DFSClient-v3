@@ -1,6 +1,6 @@
 {
     "name": "jovix/dataforseo-clientv3",
-    "description": "Materials for the PhpStorm workshop. Check https://github.com/jetbrains/phpstorm-workshop/ for more info.",
+    "description": "PHP Client for DataForSeo",
     "minimum-stability": "dev",
     "license": "Apache-2.0",
     "require": {

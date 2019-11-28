@@ -9,14 +9,18 @@ use DFSClientV3\Models\KeywordsDataApi\Ads_Traffic_By_Platforms\AdsTrafficByPlat
 use DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keyword\KeywordsForKeywordLive;
 use DFSClientV3\Models\SERP_API\GetAdvancedSerpResultsById;
 use \DFSClientV3\Models\SERP_API\GetSerpHtmlResultsByTaskId;
+use DFSClientV3\Entity\Custom\UserEntityMain;
+use DFSClientV3\Entity\Custom\UserEntityMainTasks;
 use DFSClientV3\Models\CommonApi\User;
+
+
 
 $client = new DFSClient();
 $client->setConfig('C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\public\config.php');
 $model = new User();
 
-$res = $model->get();//->setTaskId('10111513-2974-0066-0000-26927c31ec39')->setSeType('organic')->setSe('google');
 
+//$res = $model->get();//->setTaskId('10111513-2974-0066-0000-26927c31ec39')->setSeType('organic')->setSe('google');
 
 
 
@@ -36,7 +40,7 @@ $res = $model->get();//->setTaskId('10111513-2974-0066-0000-26927c31ec39')->setS
 
 
 
-dd($res);
+//dd($res);
 
 
 
@@ -83,9 +87,9 @@ dd($res);
 //
 //
 //
-$cr = new EntityCreator('C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\src\DFSClientV3\Entity\Custom');
+$cr = new EntityCreator('C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\src\DFSClient\Entity\Custom');
 
-$cr->generateByModel($res);
+$cr->generateByModel($model);
 //$json = $model->getAsJson();
 
 //$mapper = new \DFSClientV3\Models\DataMapper('TestModel',$json);
