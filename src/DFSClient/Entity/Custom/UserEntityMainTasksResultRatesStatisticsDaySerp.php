@@ -23,6 +23,11 @@ class UserEntityMainTasksResultRatesStatisticsDaySerp
     public $locations = null;        
     
     /**
+    * @var null|integer map;
+    */
+    public $map = null;        
+    
+    /**
     * @var null|UserEntityMainTasksResultRatesStatisticsDaySerpTask_get task_get;
     */
     public $task_get = null;        

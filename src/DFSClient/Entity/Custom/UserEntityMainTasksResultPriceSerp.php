@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguages;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocations;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
@@ -25,6 +26,11 @@ class UserEntityMainTasksResultPriceSerp
     * @var null|UserEntityMainTasksResultPriceSerpLocations locations;
     */
     public $locations = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceSerpMap map;
+    */
+    public $map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultPriceSerpTask_get task_get;

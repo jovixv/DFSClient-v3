@@ -9,7 +9,9 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeyword
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguages;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocations;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataSearch_volume;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle;
 
 class UserEntityMainTasksResultPriceKeywords_data 
 {    
@@ -49,8 +51,18 @@ class UserEntityMainTasksResultPriceKeywords_data
     public $locations = null;        
     
     /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataMap map;
+    */
+    public $map = null;        
+    
+    /**
     * @var null|UserEntityMainTasksResultPriceKeywords_dataSearch_volume search_volume;
     */
     public $search_volume = null;        
+    
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle google;
+    */
+    public $google = null;        
      
 }

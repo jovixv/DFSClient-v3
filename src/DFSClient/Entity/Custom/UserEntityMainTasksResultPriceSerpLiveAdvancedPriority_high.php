@@ -6,13 +6,13 @@ namespace DFSClientV3\Entity\Custom;
 class UserEntityMainTasksResultPriceSerpLiveAdvancedPriority_high 
 {    
     /**
-    * @var null|string price_type;
+    * @var null|string cost_type;
     */
-    public $price_type = null;        
+    public $cost_type = null;        
     
     /**
-    * @var null|integer price;
+    * @var null|integer cost;
     */
-    public $price = null;        
+    public $cost = null;        
      
 }

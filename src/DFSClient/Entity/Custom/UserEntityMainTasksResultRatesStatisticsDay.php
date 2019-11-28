@@ -6,7 +6,6 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayCommon;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayCompetitor;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayKeywords_finder;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayMap;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDaySerp;
 
 class UserEntityMainTasksResultRatesStatisticsDay 
@@ -55,16 +54,6 @@ class UserEntityMainTasksResultRatesStatisticsDay
     * @var null|integer total_keywords_finder;
     */
     public $total_keywords_finder = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayMap map;
-    */
-    public $map = null;        
-    
-    /**
-    * @var null|integer total_map;
-    */
-    public $total_map = null;        
     
     /**
     * @var null|UserEntityMainTasksResultRatesStatisticsDaySerp serp;
