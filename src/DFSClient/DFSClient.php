@@ -44,7 +44,6 @@ class DFSClient
             $this->application->setConfig($config);
         }
     }
-
     
     /**
      * @param string|array|null $path
@@ -63,7 +62,7 @@ class DFSClient
                     $configFile = $path;
                 if(is_string($path))
                     $configFile = config($path);
-                if (is_numeric($path))
+                if (is_null($path))
                     $configFile = include 'Config/dfsConfig.php';
             }
 
