@@ -45,6 +45,7 @@ class DFSClient
         }
     }
 
+    
     /**
      * @param string|array|null $path
      * @throws DFSClientException
@@ -62,6 +63,8 @@ class DFSClient
                     $configFile = $path;
                 if(is_string($path))
                     $configFile = config($path);
+                if (is_numeric($path))
+                    $configFile = include 'Config/dfsConfig.php';
             }
 
         }else{
