@@ -66,6 +66,7 @@ class ClassGenerator
                 $file = $this->createClass($nameForMainFile, $path); //create file
             }
 
+            $res = null;
             foreach ($decodedJson as $key=>$value) {
 
                 if ($key === 'tasks' or $key === 'result' && $resultCanBeTransformedToArray){
@@ -139,7 +140,7 @@ class ClassGenerator
 
             if (!$fileIsNotRequired)
                 $this->createClassContent($file, json_encode($res), $sufix, $nameForMainFile, $arrayWithNameSpacesForEntities, $arrayWithClassProperty, $resultCanBeTransformedToArray);
-          //  dump($arrayWithClassProperty);
+
         }
     }
 
