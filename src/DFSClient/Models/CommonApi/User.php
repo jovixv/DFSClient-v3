@@ -9,7 +9,7 @@ class User extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'appendix/user';
+    protected $requestToFunction = 'appendix/user_data';
     protected $resultShouldBeTransformedToArray = true;
 
 
