@@ -9,28 +9,28 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPrice;
 class UserEntityMainTasksResult 
 {    
     /**
-    * @var null|string login;
+    * @var null|string $login;
     */
-    public $login = null;        
-    
+    public $login = null;
+
     /**
-    * @var null|string timezone;
+    * @var null|string $timezone;
     */
-    public $timezone = null;        
-    
+    public $timezone = null;
+
     /**
-    * @var null|UserEntityMainTasksResultRates rates;
+    * @var null|UserEntityMainTasksResultRates $rates;
     */
-    public $rates = null;        
-    
+    public $rates = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoney money;
+    * @var null|UserEntityMainTasksResultMoney $money;
     */
-    public $money = null;        
-    
+    public $money = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPrice price;
+    * @var null|UserEntityMainTasksResultPrice $price;
     */
-    public $price = null;        
-     
+    public $price = null;
+ 
 }

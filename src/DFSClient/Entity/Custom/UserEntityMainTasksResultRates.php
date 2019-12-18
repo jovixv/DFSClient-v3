@@ -8,13 +8,13 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatistics;
 class UserEntityMainTasksResultRates 
 {    
     /**
-    * @var null|UserEntityMainTasksResultRatesLimits limits;
+    * @var null|UserEntityMainTasksResultRatesLimits $limits;
     */
-    public $limits = null;        
-    
+    public $limits = null;
+
     /**
-    * @var null|UserEntityMainTasksResultRatesStatistics statistics;
+    * @var null|UserEntityMainTasksResultRatesStatistics $statistics;
     */
-    public $statistics = null;        
-     
+    public $statistics = null;
+ 
 }

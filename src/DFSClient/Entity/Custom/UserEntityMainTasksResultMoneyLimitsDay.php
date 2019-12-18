@@ -2,67 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsDayCommon;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsDayCompetitor;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsDayAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsDayKeywords_data;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsDayKeywords_finder;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsDaySerp;
 
 class UserEntityMainTasksResultMoneyLimitsDay 
 {    
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsDayCommon common;
+    * @var null|UserEntityMainTasksResultMoneyLimitsDayAppendix $appendix;
     */
-    public $common = null;        
-    
+    public $appendix = null;
+
     /**
-    * @var null|integer total;
+    * @var null|integer $total;
     */
-    public $total = null;        
-    
+    public $total = null;
+
     /**
-    * @var null|integer total_common;
+    * @var null|integer $total_appendix;
     */
-    public $total_common = null;        
-    
+    public $total_appendix = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsDayCompetitor competitor;
+    * @var null|UserEntityMainTasksResultMoneyLimitsDayKeywords_data $keywords_data;
     */
-    public $competitor = null;        
-    
+    public $keywords_data = null;
+
     /**
-    * @var null|integer total_competitor;
+    * @var null|integer $total_keywords_data;
     */
-    public $total_competitor = null;        
-    
+    public $total_keywords_data = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsDayKeywords_data keywords_data;
+    * @var null|UserEntityMainTasksResultMoneyLimitsDaySerp $serp;
     */
-    public $keywords_data = null;        
-    
+    public $serp = null;
+
     /**
-    * @var null|integer total_keywords_data;
+    * @var null|integer $total_serp;
     */
-    public $total_keywords_data = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsDayKeywords_finder keywords_finder;
-    */
-    public $keywords_finder = null;        
-    
-    /**
-    * @var null|integer total_keywords_finder;
-    */
-    public $total_keywords_finder = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsDaySerp serp;
-    */
-    public $serp = null;        
-    
-    /**
-    * @var null|integer total_serp;
-    */
-    public $total_serp = null;        
-     
+    public $total_serp = null;
+ 
 }

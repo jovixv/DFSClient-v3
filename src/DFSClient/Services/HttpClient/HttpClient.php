@@ -79,7 +79,7 @@ class HttpClient implements HttpContract
         } catch (BadResponseException $e) {
             $result = new Responses(false, $e->getMessage(), $e->getResponse()->getBody()->getContents(), null);
         } catch (GuzzleException $er) {
-            $result = new Responses(false, $er->getMessage(), json_encode(['message'=>'timeout error, you must change timeout limit in your config file or model']), null);
+            $result = new Responses(false, $er->getMessage(), json_encode(['status_message'=>$er->getMessage(), 'status_code' => 50000]), null);
         }
 
         unset($content);

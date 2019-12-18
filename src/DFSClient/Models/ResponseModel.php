@@ -54,12 +54,15 @@ class ResponseModel implements \IteratorAggregate
 
         foreach ($pathDataSegments as $segment){
 
-            if ($tempData !== null){
-                if (is_numeric($segment))
-                    $tempData = $tempData[$segment];
+            $segment = trim($segment);
 
-                if (!is_numeric($segment))
+            if ($tempData !== null){
+
+                if (is_array($tempData)){
+                    $tempData = $tempData[$segment];
+                }else{
                     $tempData = $tempData->{$segment};
+                }
             }
 
             if ($tempData === null)

@@ -7,8 +7,8 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleA
 class UserEntityMainTasksResultPriceKeywords_dataGoogle 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAdwords_status adwords_status;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAdwords_status $adwords_status;
     */
-    public $adwords_status = null;        
-     
+    public $adwords_status = null;
+ 
 }

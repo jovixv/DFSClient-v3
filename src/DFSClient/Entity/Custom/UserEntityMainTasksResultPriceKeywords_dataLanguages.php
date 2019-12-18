@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguag
 class UserEntityMainTasksResultPriceKeywords_dataLanguages 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_low priority_low;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_low $priority_low;
     */
-    public $priority_low = null;        
-    
+    public $priority_low = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_normal priority_normal;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_normal $priority_normal;
     */
-    public $priority_normal = null;        
-    
+    public $priority_normal = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_high priority_high;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_high $priority_high;
     */
-    public $priority_high = null;        
-     
+    public $priority_high = null;
+ 
 }

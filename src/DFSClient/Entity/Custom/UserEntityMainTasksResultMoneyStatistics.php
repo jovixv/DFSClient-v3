@@ -8,13 +8,13 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinute;
 class UserEntityMainTasksResultMoneyStatistics 
 {    
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsDay day;
+    * @var null|UserEntityMainTasksResultMoneyStatisticsDay $day;
     */
-    public $day = null;        
-    
+    public $day = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinute minute;
+    * @var null|UserEntityMainTasksResultMoneyStatisticsMinute $minute;
     */
-    public $minute = null;        
-     
+    public $minute = null;
+ 
 }

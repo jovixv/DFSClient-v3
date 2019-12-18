@@ -7,80 +7,45 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasks;
 class UserEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
-    * @var null|string host;
+    * @var null|string $version;
     */
-    public $host = null;        
-    
+    public $version = '0.0.20191212';
+
     /**
-    * @var null|string user_ip;
+    * @var null|integer $status_code;
     */
-    public $user_ip = null;        
-    
+    public $status_code = null;
+
     /**
-    * @var null|integer DFS_ID;
+    * @var null|string $status_message;
     */
-    public $DFS_ID = null;        
-    
+    public $status_message = null;
+
     /**
-    * @var null|integer DFS_CF_INT;
+    * @var null|string $time;
     */
-    public $DFS_CF_INT = null;        
-    
+    public $time = null;
+
     /**
-    * @var null|integer DFS_CONTROLLER_INT;
+    * @var null|integer $cost;
     */
-    public $DFS_CONTROLLER_INT = null;        
-    
+    public $cost = null;
+
     /**
-    * @var null|string DFS_CONTROLLER;
+    * @var null|integer $tasks_count;
     */
-    public $DFS_CONTROLLER = null;        
-    
+    public $tasks_count = null;
+
     /**
-    * @var null|integer DFS_FUNCTION_INT;
+    * @var null|integer $tasks_error;
     */
-    public $DFS_FUNCTION_INT = null;        
-    
+    public $tasks_error = null;
+
     /**
-    * @var null|string DFS_FUNCTION;
+    * array|UserEntityMainTasks[] $tasks;
     */
-    public $DFS_FUNCTION = null;        
-    
-    /**
-    * @var null|integer status_code;
-    */
-    public $status_code = null;        
-    
-    /**
-    * @var null|string status_message;
-    */
-    public $status_message = null;        
-    
-    /**
-    * @var null|string time;
-    */
-    public $time = null;        
-    
-    /**
-    * @var null|integer cost;
-    */
-    public $cost = null;        
-    
-    /**
-    * @var null|integer tasks_count;
-    */
-    public $tasks_count = null;        
-    
-    /**
-    * @var null|integer tasks_error;
-    */
-    public $tasks_error = null;        
-    
-    /**
-    * @var null|UserEntityMainTasks[] tasks;
-    */
-    public $tasks = null;        
-     
+    public $tasks = [];
+ 
 
 	/**
 	* @return \DFSClientV3\Entity\Custom\UserEntityMainTasksResult[]|null

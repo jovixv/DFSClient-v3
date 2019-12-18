@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeyword
 class UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLive 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLivePriority_low priority_low;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLivePriority_low $priority_low;
     */
-    public $priority_low = null;        
-    
+    public $priority_low = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLivePriority_normal priority_normal;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLivePriority_normal $priority_normal;
     */
-    public $priority_normal = null;        
-    
+    public $priority_normal = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLivePriority_high priority_high;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLivePriority_high $priority_high;
     */
-    public $priority_high = null;        
-     
+    public $priority_high = null;
+ 
 }

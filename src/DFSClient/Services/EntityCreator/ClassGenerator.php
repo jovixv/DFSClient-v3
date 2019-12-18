@@ -47,14 +47,14 @@ class ClassGenerator
      * @param string $className - Main prefix for class.
      * @param string $sufix - suffix for class,
      * @param bool $resultCanBeTransformedToArray - this variable only for DFS response, see to 55 row
-     * @param bool $isRecursion
+     * @param bool $fileIsNotRequired
      */
     public function recursiveCreator(string $json, string $path, string $className = 'TestModel', string $sufix = 'Main', ?bool $resultCanBeTransformedToArray = true, bool $fileIsNotRequired = false)
     {
-        static $concatenateSuffix = '';
         $decodedJson = json_decode($json);
         $arrayWithClassProperty = [];
         $arrayWithNameSpacesForEntities = [];
+        $fileShouldBeCreatedAdvancedKostyl = true;
 
         dump($sufix);
         if ($sufix)
@@ -75,13 +75,15 @@ class ClassGenerator
 
                 if (is_object($value) || is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
-
-                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult'){
+                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult' && $key === 'items'){
                         $arrayWithNameSpacesForEntities = ClassGenerator::generateNameSpaceForAdvancedResult($this->availableTypes, $className);
                     }else{
 
                         if ($className !== 'GetAdvancedSerpResultsById' && $key !== 'items')
                          $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
+
+                        if ($className === 'GetAdvancedSerpResultsById' && $key !== 'items')
+                            $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
                     }
 
 
@@ -91,14 +93,14 @@ class ClassGenerator
                     // if array contain object, we must write generic type
                     if (is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
-                        if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult')
+                        if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult' && $key === 'items')
                         {
                             $arrayWithClassProperty[$key] = ClassGenerator::generateTypesForAdvanced($this->availableTypes, $className);
 
-                        }else if ($className === 'GetAdvancedSerpResultsById' && $sufix !== 'Items' && $key === 'items') {
+                        }else if ($className === 'GetAdvancedSerpResultsById' && $sufix !== 'MainTasksResultItems' && $key === 'items') {
 
-                            $arrayWithClassProperty[$key] = $className.'EntityItems'.ucfirst($value[0]->type).'[]';
-                            $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'EntityItems'.ucfirst($value[0]->type).';';
+                            $arrayWithClassProperty[$key] = $className.'Entity'.$sufix.'Items'.ucfirst($value[0]->type).'[]';
+                            $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.'Items'.ucfirst($value[0]->type).';';
                         }
                         else{
                             $arrayWithClassProperty[$key] = $className.'Entity'.$sufix.ucfirst($key).'[]';
@@ -107,6 +109,8 @@ class ClassGenerator
                         ##########################################
                         if ($className === 'GetAdvancedSerpResultsById' && $key === 'items') {
                             $res = $value;
+                            $fileShouldBeCreatedAdvancedKostyl = false;
+
                         }else{
                             $res = $obj;
                         }
@@ -116,25 +120,24 @@ class ClassGenerator
                     }
 
                     // first items in json.
-                    if ($className == 'GetAdvancedSerpResultsById' && $sufix !== 'Items' && $key === 'items') {
-                       // dump($res);
-                        $this->recursiveCreator(json_encode($res), $path, $className, "Items",$resultCanBeTransformedToArray, true);
-                    }
-
-                    elseif ($className === 'GetAdvancedSerpResultsById' && $sufix === 'Result') {
-                        $this->recursiveCreator(json_encode($res), $path, $className, "Items",$resultCanBeTransformedToArray, true);
-                    }
-
-                    elseif ($className == 'GetAdvancedSerpResultsById' && $sufix === 'Items') {
-                        $this->recursiveCreator(json_encode($res), $path, $className, "Items".ucfirst($value->type),$resultCanBeTransformedToArray);
+//
+//
+//                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult') {
+//                        $this->recursiveCreator(json_encode($res), $path, $className, "MainTasksResultItems",$resultCanBeTransformedToArray, true);
+//                    }
+                    if ($className == 'GetAdvancedSerpResultsById' && (is_object($value) && property_exists($value, 'type'))) {
+                        $this->recursiveCreator(json_encode($res), $path, $className, $sufix.ucfirst($value->type),$resultCanBeTransformedToArray);
                     }else{
-                        $this->recursiveCreator(json_encode($res), $path, $className, $sufix.ucfirst($key),$resultCanBeTransformedToArray);
+                        $this->recursiveCreator(json_encode($res), $path, $className, $sufix.ucfirst($key),$resultCanBeTransformedToArray, ($fileShouldBeCreatedAdvancedKostyl === false) ? true : $fileIsNotRequired);
                     }
 
 
                 }else{
-
-                    $arrayWithClassProperty[$key] = gettype($value);
+                    if ($key === 'version'){
+                        $arrayWithClassProperty[$key] = $value;
+                    }else{
+                        $arrayWithClassProperty[$key] = gettype($value);
+                    }
                 }
             }
 
@@ -157,15 +160,22 @@ class ClassGenerator
         $string = '';
         $stringNameSpaces = '';
 
+        $templateOfProperty = file_get_contents(realpath(__DIR__.'../../../Stubs/templateOfProperty.stub'));
+
         foreach ($arrayWithProporties as $key => $res)
         {
 
-            $string .= '
-    /**
-    * @var null|'.$res.' '.$key.';
-    */
-    public $'.$key.' = null;        
-    ';
+            if ($key === 'version'){
+                $string .= str_replace(['$type','$varName', '$definedValue'], [gettype($res), $key, "'$res'"], $templateOfProperty);
+            }else{
+
+                if (strpos($res, '[]') === false){ // check if type is not collection
+                    $string .= str_replace(['$type','$varName', '$definedValue'], [$res, $key, 'null'], $templateOfProperty);
+                }else{
+                    $string .= str_replace(['@var null', '$type','$varName', '$definedValue'], ['array', $res, $key, '[]'], $templateOfProperty);
+                }
+            }
+
         }
 
         foreach ($arrayWithNameSpace as $key => $res)
@@ -235,7 +245,7 @@ class ClassGenerator
 
         foreach ($types as $type)
         {
-            $resultString .= $className.'EntityItems'.ucfirst($type).'[]|';
+            $resultString .= $className.'EntityMainTasksResultItems'.ucfirst($type).'[]|';
         }
 
 
@@ -252,7 +262,7 @@ class ClassGenerator
         $tempArray = [];
         $types = ClassGenerator::validateClassField($types);
         foreach ($types as $type){
-            $tempArray[]= 'use DFSClientV3\Entity\Custom\\'.$className.'EntityItems'.ucfirst($type).';';
+            $tempArray[]= 'use DFSClientV3\Entity\Custom\\'.$className.'EntityMainTasksResultItems'.ucfirst($type).';';
         }
 
         return $tempArray;

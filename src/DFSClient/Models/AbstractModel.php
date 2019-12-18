@@ -4,6 +4,7 @@ namespace DFSClientV3\Models;
 
 use DFSClientV3\Bootstrap\Application;
 use DFSClientV3\Models\DataMapper;
+use DFSClientV3\Services\HttpClient\Handlers\Responses;
 use DFSClientV3\Services\HttpClient\HttpClient;
 
 abstract class AbstractModel
@@ -159,8 +160,9 @@ abstract class AbstractModel
 
 
     /**
-     * @param $modelPool AbstractModel[]
-     * @return mixed
+     * @param array $modelPool
+     * @return array
+     * @throws \Exception
      */
     public static function getAfterMerge(array $modelPool)
     {
@@ -317,7 +319,8 @@ abstract class AbstractModel
 
     /**
      * @param string $json
-     * @return mixed
+     * @param bool $isSuccesful
+     * @return array
      */
     protected function mapData(string $json, bool $isSuccesful = false)
     {

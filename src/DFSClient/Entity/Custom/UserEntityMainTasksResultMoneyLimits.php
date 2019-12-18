@@ -8,13 +8,13 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinute;
 class UserEntityMainTasksResultMoneyLimits 
 {    
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsDay day;
+    * @var null|UserEntityMainTasksResultMoneyLimitsDay $day;
     */
-    public $day = null;        
-    
+    public $day = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinute minute;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinute $minute;
     */
-    public $minute = null;        
-     
+    public $minute = null;
+ 
 }

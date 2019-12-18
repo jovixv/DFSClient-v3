@@ -39,6 +39,7 @@ class EntityCreator
 
     public function generateByModel(object $model)
     {
+
         if ($model instanceof AbstractModel)
         {
            $pathToMainEntityData = $model->getPathToMainData();

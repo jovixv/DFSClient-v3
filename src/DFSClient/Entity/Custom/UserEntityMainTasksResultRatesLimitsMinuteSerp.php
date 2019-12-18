@@ -8,38 +8,43 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteSerpTask
 class UserEntityMainTasksResultRatesLimitsMinuteSerp 
 {    
     /**
-    * @var null|integer languages;
+    * @var null|integer $endpoints;
     */
-    public $languages = null;        
-    
+    public $endpoints = null;
+
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsMinuteSerpLive live;
+    * @var null|integer $languages;
     */
-    public $live = null;        
-    
+    public $languages = null;
+
     /**
-    * @var null|integer locations;
+    * @var null|UserEntityMainTasksResultRatesLimitsMinuteSerpLive $live;
     */
-    public $locations = null;        
-    
+    public $live = null;
+
     /**
-    * @var null|integer map;
+    * @var null|integer $locations;
     */
-    public $map = null;        
-    
+    public $locations = null;
+
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsMinuteSerpTask_get task_get;
+    * @var null|integer $queue;
     */
-    public $task_get = null;        
-    
+    public $queue = null;
+
     /**
-    * @var null|integer task_post;
+    * @var null|UserEntityMainTasksResultRatesLimitsMinuteSerpTask_get $task_get;
     */
-    public $task_post = null;        
-    
+    public $task_get = null;
+
     /**
-    * @var null|integer tasks_ready;
+    * @var null|integer $task_post;
     */
-    public $tasks_ready = null;        
-     
+    public $task_post = null;
+
+    /**
+    * @var null|integer $tasks_ready;
+    */
+    public $tasks_ready = null;
+ 
 }

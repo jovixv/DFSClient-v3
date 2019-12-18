@@ -8,23 +8,23 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatistics;
 class UserEntityMainTasksResultMoney 
 {    
     /**
-    * @var null|integer total;
+    * @var null|integer $total;
     */
-    public $total = null;        
-    
+    public $total = null;
+
     /**
-    * @var null|double balance;
+    * @var null|double $balance;
     */
-    public $balance = null;        
-    
+    public $balance = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimits limits;
+    * @var null|UserEntityMainTasksResultMoneyLimits $limits;
     */
-    public $limits = null;        
-    
+    public $limits = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatistics statistics;
+    * @var null|UserEntityMainTasksResultMoneyStatistics $statistics;
     */
-    public $statistics = null;        
-     
+    public $statistics = null;
+ 
 }

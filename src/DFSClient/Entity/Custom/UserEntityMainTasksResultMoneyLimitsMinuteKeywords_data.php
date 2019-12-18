@@ -13,53 +13,53 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinuteKeywords
 class UserEntityMainTasksResultMoneyLimitsMinuteKeywords_data 
 {    
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataAd_traffic_by_keywords ad_traffic_by_keywords;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataAd_traffic_by_keywords $ad_traffic_by_keywords;
     */
-    public $ad_traffic_by_keywords = null;        
-    
+    public $ad_traffic_by_keywords = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataAd_traffic_by_platforms ad_traffic_by_platforms;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataAd_traffic_by_platforms $ad_traffic_by_platforms;
     */
-    public $ad_traffic_by_platforms = null;        
-    
+    public $ad_traffic_by_platforms = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataGoogle google;
+    * @var null|integer $endpoints;
     */
-    public $google = null;        
-    
+    public $endpoints = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataKeywords_for_category keywords_for_category;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataGoogle $google;
     */
-    public $keywords_for_category = null;        
-    
+    public $google = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataKeywords_for_keywords keywords_for_keywords;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataKeywords_for_category $keywords_for_category;
     */
-    public $keywords_for_keywords = null;        
-    
+    public $keywords_for_category = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataKeywords_for_site keywords_for_site;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataKeywords_for_keywords $keywords_for_keywords;
     */
-    public $keywords_for_site = null;        
-    
+    public $keywords_for_keywords = null;
+
     /**
-    * @var null|integer languages;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataKeywords_for_site $keywords_for_site;
     */
-    public $languages = null;        
-    
+    public $keywords_for_site = null;
+
     /**
-    * @var null|integer locations;
+    * @var null|integer $languages;
     */
-    public $locations = null;        
-    
+    public $languages = null;
+
     /**
-    * @var null|integer map;
+    * @var null|integer $locations;
     */
-    public $map = null;        
-    
+    public $locations = null;
+
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataSearch_volume search_volume;
+    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataSearch_volume $search_volume;
     */
-    public $search_volume = null;        
-     
+    public $search_volume = null;
+ 
 }

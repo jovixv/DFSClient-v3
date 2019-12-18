@@ -3,64 +3,58 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksData;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksParams;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResult;
 
 class UserEntityMainTasks 
 {    
     /**
-    * @var null|string id;
+    * @var null|string $id;
     */
-    public $id = null;        
-    
+    public $id = null;
+
     /**
-    * @var null|string post_id;
+    * @var null|string $post_id;
     */
-    public $post_id = null;        
-    
+    public $post_id = null;
+
     /**
-    * @var null|integer status_code;
+    * @var null|integer $status_code;
     */
-    public $status_code = null;        
-    
+    public $status_code = null;
+
     /**
-    * @var null|string status_message;
+    * @var null|string $status_message;
     */
-    public $status_message = null;        
-    
+    public $status_message = null;
+
     /**
-    * @var null|string time;
+    * @var null|string $time;
     */
-    public $time = null;        
-    
+    public $time = null;
+
     /**
-    * @var null|integer cost;
+    * @var null|integer $cost;
     */
-    public $cost = null;        
-    
+    public $cost = null;
+
     /**
-    * @var null|integer result_count;
+    * @var null|integer $result_count;
     */
-    public $result_count = null;        
-    
+    public $result_count = null;
+
     /**
-    * @var null|array path;
+    * @var null|array $path;
     */
-    public $path = null;        
-    
+    public $path = null;
+
     /**
-    * @var null|UserEntityMainTasksData data;
+    * @var null|UserEntityMainTasksData $data;
     */
-    public $data = null;        
-    
+    public $data = null;
+
     /**
-    * @var null|UserEntityMainTasksParams params;
+    * array|UserEntityMainTasksResult[] $result;
     */
-    public $params = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResult[] result;
-    */
-    public $result = null;        
-     
+    public $result = [];
+ 
 }

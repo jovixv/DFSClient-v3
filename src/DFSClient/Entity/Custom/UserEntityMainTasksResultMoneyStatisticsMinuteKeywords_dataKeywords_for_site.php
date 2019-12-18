@@ -6,23 +6,23 @@ namespace DFSClientV3\Entity\Custom;
 class UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataKeywords_for_site 
 {    
     /**
-    * @var null|integer live;
+    * @var null|integer $live;
     */
-    public $live = null;        
-    
+    public $live = null;
+
     /**
-    * @var null|integer task_get;
+    * @var null|integer $task_get;
     */
-    public $task_get = null;        
-    
+    public $task_get = null;
+
     /**
-    * @var null|integer task_post;
+    * @var null|integer $task_post;
     */
-    public $task_post = null;        
-    
+    public $task_post = null;
+
     /**
-    * @var null|integer tasks_ready;
+    * @var null|integer $tasks_ready;
     */
-    public $tasks_ready = null;        
-     
+    public $tasks_ready = null;
+ 
 }

@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegular;
 class UserEntityMainTasksResultPriceSerpTask_get 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_getAdvanced advanced;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_getAdvanced $advanced;
     */
-    public $advanced = null;        
-    
+    public $advanced = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_getHtml html;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_getHtml $html;
     */
-    public $html = null;        
-    
+    public $html = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_getRegular regular;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_getRegular $regular;
     */
-    public $regular = null;        
-     
+    public $regular = null;
+ 
 }

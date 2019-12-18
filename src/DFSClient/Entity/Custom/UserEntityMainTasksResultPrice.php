@@ -2,37 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCommon;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceCompetitor;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_finder;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerp;
 
 class UserEntityMainTasksResultPrice 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceCommon common;
+    * @var null|UserEntityMainTasksResultPriceAppendix $appendix;
     */
-    public $common = null;        
-    
+    public $appendix = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceCompetitor competitor;
+    * @var null|UserEntityMainTasksResultPriceKeywords_data $keywords_data;
     */
-    public $competitor = null;        
-    
+    public $keywords_data = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_data keywords_data;
+    * @var null|UserEntityMainTasksResultPriceSerp $serp;
     */
-    public $keywords_data = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_finder keywords_finder;
-    */
-    public $keywords_finder = null;        
-    
-    /**
-    * @var null|UserEntityMainTasksResultPriceSerp serp;
-    */
-    public $serp = null;        
-     
+    public $serp = null;
+ 
 }

@@ -44,7 +44,7 @@ class DFSClient
             $this->application->setConfig($config);
         }
     }
-    
+
     /**
      * @param string|array|null $path
      * @throws DFSClientException
@@ -52,7 +52,7 @@ class DFSClient
     public function setConfig($path = null)
     {
         $loader = require __DIR__. '../../../../../../vendor/autoload.php'; // path for package
-        //$loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
+       // $loader = require __DIR__. '../../../vendor/autoload.php'; // path for local development
         $configFile = [];
 
         if ($this->isLaravelInstalled()) {

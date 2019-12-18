@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocatio
 class UserEntityMainTasksResultPriceKeywords_dataLocations 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_low priority_low;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_low $priority_low;
     */
-    public $priority_low = null;        
-    
+    public $priority_low = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_normal priority_normal;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_normal $priority_normal;
     */
-    public $priority_normal = null;        
-    
+    public $priority_normal = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_high priority_high;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_high $priority_high;
     */
-    public $priority_high = null;        
-     
+    public $priority_high = null;
+ 
 }

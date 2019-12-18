@@ -2,10 +2,11 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpEndpoints;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguages;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocations;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpMap;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpQueue;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
@@ -13,38 +14,43 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
 class UserEntityMainTasksResultPriceSerp 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLanguages languages;
+    * @var null|UserEntityMainTasksResultPriceSerpEndpoints $endpoints;
     */
-    public $languages = null;        
-    
+    public $endpoints = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLive live;
+    * @var null|UserEntityMainTasksResultPriceSerpLanguages $languages;
     */
-    public $live = null;        
-    
+    public $languages = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLocations locations;
+    * @var null|UserEntityMainTasksResultPriceSerpLive $live;
     */
-    public $locations = null;        
-    
+    public $live = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpMap map;
+    * @var null|UserEntityMainTasksResultPriceSerpLocations $locations;
     */
-    public $map = null;        
-    
+    public $locations = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_get task_get;
+    * @var null|UserEntityMainTasksResultPriceSerpQueue $queue;
     */
-    public $task_get = null;        
-    
+    public $queue = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_post task_post;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_get $task_get;
     */
-    public $task_post = null;        
-    
+    public $task_get = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTasks_ready tasks_ready;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_post $task_post;
     */
-    public $tasks_ready = null;        
-     
+    public $task_post = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultPriceSerpTasks_ready $tasks_ready;
+    */
+    public $tasks_ready = null;
+ 
 }

@@ -27,4 +27,20 @@ return $config = [
         'your full path to extra entity',
         'your full path to extra entity'
     ],
+
+
+    // Logger, will write errors, warnings or info related with the DFS API
+    // At now available two drivers
+    'logger' => [
+        'run' => false, // switch_on = true, switch_off = false
+
+        // driver for laravel queue system - LaravelQueueDriver::class
+        'driver' => \DFSClientV3\Services\Logger\Drivers\InternalDriver::class,
+        'notificationDrivers' => [
+            \DFSClientV3\Services\Logger\Notifications\FileNotification::class,
+          //  \DFSClientV3\Services\Logger\Informers\SlackNotification::class
+        ],
+        'messageClass' => \DFSClientV3\Services\Logger\Message\LoggerMessage::class,
+        'logFilePath'  => 'C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\public\testLog'
+    ]
 ];

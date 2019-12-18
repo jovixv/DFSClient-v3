@@ -1,0 +1,5 @@
+
+    /**
+    * @var null|$type $$varName;
+    */
+    public $$varName = $definedValue;

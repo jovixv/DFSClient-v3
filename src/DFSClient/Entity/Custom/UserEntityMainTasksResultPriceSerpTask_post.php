@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_postPriorit
 class UserEntityMainTasksResultPriceSerpTask_post 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_postPriority_low priority_low;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_postPriority_low $priority_low;
     */
-    public $priority_low = null;        
-    
+    public $priority_low = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_postPriority_normal priority_normal;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_postPriority_normal $priority_normal;
     */
-    public $priority_normal = null;        
-    
+    public $priority_normal = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_postPriority_high priority_high;
+    * @var null|UserEntityMainTasksResultPriceSerpTask_postPriority_high $priority_high;
     */
-    public $priority_high = null;        
-     
+    public $priority_high = null;
+ 
 }

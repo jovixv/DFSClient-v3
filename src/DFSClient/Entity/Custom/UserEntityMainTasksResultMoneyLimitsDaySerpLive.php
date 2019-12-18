@@ -6,18 +6,18 @@ namespace DFSClientV3\Entity\Custom;
 class UserEntityMainTasksResultMoneyLimitsDaySerpLive 
 {    
     /**
-    * @var null|integer advanced;
+    * @var null|integer $advanced;
     */
-    public $advanced = null;        
-    
+    public $advanced = null;
+
     /**
-    * @var null|integer html;
+    * @var null|integer $html;
     */
-    public $html = null;        
-    
+    public $html = null;
+
     /**
-    * @var null|integer regular;
+    * @var null|integer $regular;
     */
-    public $regular = null;        
-     
+    public $regular = null;
+ 
 }

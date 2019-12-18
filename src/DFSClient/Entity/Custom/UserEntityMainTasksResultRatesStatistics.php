@@ -8,13 +8,13 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinute;
 class UserEntityMainTasksResultRatesStatistics 
 {    
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDay day;
+    * @var null|UserEntityMainTasksResultRatesStatisticsDay $day;
     */
-    public $day = null;        
-    
+    public $day = null;
+
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinute minute;
+    * @var null|UserEntityMainTasksResultRatesStatisticsMinute $minute;
     */
-    public $minute = null;        
-     
+    public $minute = null;
+ 
 }

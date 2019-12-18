@@ -10,23 +10,23 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeyword
 class UserEntityMainTasksResultPriceKeywords_dataKeywords_for_site 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLive live;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteLive $live;
     */
-    public $live = null;        
-    
+    public $live = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteTask_get task_get;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteTask_get $task_get;
     */
-    public $task_get = null;        
-    
+    public $task_get = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteTask_post task_post;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteTask_post $task_post;
     */
-    public $task_post = null;        
-    
+    public $task_post = null;
+
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteTasks_ready tasks_ready;
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataKeywords_for_siteTasks_ready $tasks_ready;
     */
-    public $tasks_ready = null;        
-     
+    public $tasks_ready = null;
+ 
 }
