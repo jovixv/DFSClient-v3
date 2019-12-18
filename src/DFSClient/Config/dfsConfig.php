@@ -7,7 +7,7 @@ return $config = [
 
     'timeoutForEachRequests' => 10,
     'apiVersion'             => '/v3/',
-    'url'                    => 'https://devapi3.dataforseo.com',
+    'url'                    => 'https://api.dataforseo.com',
     'headers'                => ['Content-Type' => 'application/json', 'Connection' => 'close', 'Accept-Encoding'=>'gzip', 'User-Agent'=>'DFSV3-serp'],
 
     //schema for payload
