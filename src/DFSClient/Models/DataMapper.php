@@ -335,6 +335,7 @@ class DataMapper
 
         $decodedResponse = json_decode($json);
         $nameSpace = 'DFSClientV3\Entity\Custom';
+        $classNameWithNameSpace = null;
         $arrayWithResults = [];
         $model = null;
 
@@ -351,10 +352,9 @@ class DataMapper
             }
         }
 
+        $notMappedObjectVars = ($mustbeAsCollection === true) ? [] : get_class_vars($classNameWithNameSpace);
 
         foreach ($decodedResponse as $key => $value){
-
-
             // execute if json is collection type
             if ($mustbeAsCollection === true){
 
@@ -400,14 +400,16 @@ class DataMapper
 
         }
 
+        if ($classNameWithNameSpace !== null)
+            $returnModel = $this->paveDummyData($classNameWithNameSpace, $notMappedObjectVars, $model);
 
         if ($classSuffix === 'EntityMain' && $this->logger !== false){
-            $this->logChanges($model, $decodedResponse, $classNameWithNameSpace);
+            $this->logChanges($returnModel, $decodedResponse, $classNameWithNameSpace);
         }
 
         if ($mustbeAsCollection) return $arrayWithResults;
 
-        if (!$mustbeAsCollection) return $model;
+        if (!$mustbeAsCollection) return $returnModel;
     }
 
 }
