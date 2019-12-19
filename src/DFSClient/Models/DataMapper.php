@@ -331,13 +331,14 @@ class DataMapper
      */
     public function paveAdvancedData(string $json, ?string $classSuffix, ?bool $resultCanBeTransformedToArray = true, bool $mustbeAsCollection = false)
     {
-       // dump($classSuffix);
+        // dump($classSuffix);
 
         $decodedResponse = json_decode($json);
-        $nameSpace = 'DFSClientV3\Entity\Custom';
+        $nameSpace = '\DFSClientV3\Entity\Custom';
         $classNameWithNameSpace = null;
         $arrayWithResults = [];
         $model = null;
+        $returnModel = null;
 
         // init model if json type is not collection
         if ($mustbeAsCollection === false){
@@ -347,8 +348,14 @@ class DataMapper
                 $classSuffix = 'EntityMain';
             }else{
                 $classNameWithNameSpace = $nameSpace . '\\' . $this->className . $classSuffix;
+
                 if (class_exists($classNameWithNameSpace))
                     $model = new $classNameWithNameSpace();
+
+                if ($classSuffix === 'EntityMainTasks'){
+                    unset($decodedResponse->main_data);
+                }
+
             }
         }
 
@@ -363,6 +370,7 @@ class DataMapper
                 }else{
                     $arrayWithResults[$key] = $this->paveAdvancedData(json_encode($value), $classSuffix, $resultCanBeTransformedToArray);
                 }
+                unset($notMappedObjectVars[ClassGenerator::validateClassField($key)]);
             }
 
             // processing not collection type
@@ -385,11 +393,14 @@ class DataMapper
                                 $model->$key = $this->paveAdvancedData(json_encode($value), $classSuffix.ucfirst($key), $resultCanBeTransformedToArray, true);
                             }
                         }
+
                     }else {
                         if ($key !== 'version')
                             $model->$key = $value;
                     }
+                    unset($notMappedObjectVars[ClassGenerator::validateClassField($key)]);
                 }else{
+
                     $this->notExistedField[$classNameWithNameSpace][$key]['file'] = $classNameWithNameSpace;
                     $this->notExistedField[$classNameWithNameSpace][$key]['field'] = $key;
                     $this->notExistedField[$classNameWithNameSpace][$key]['type'] = gettype($value);
@@ -400,8 +411,10 @@ class DataMapper
 
         }
 
-        if ($classNameWithNameSpace !== null)
+        if ($classNameWithNameSpace !== null){
             $returnModel = $this->paveDummyData($classNameWithNameSpace, $notMappedObjectVars, $model);
+        }
+
 
         if ($classSuffix === 'EntityMain' && $this->logger !== false){
             $this->logChanges($returnModel, $decodedResponse, $classNameWithNameSpace);
