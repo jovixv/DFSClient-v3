@@ -4,6 +4,8 @@
 namespace DFSClientV3\Services\Logger\Message;
 
 
+use DFSClientV3\Services\Logger\LoggerMessageEntity;
+
 class LoggerMessage implements MessageInterface
 {
 
@@ -93,13 +95,50 @@ class LoggerMessage implements MessageInterface
 
     public function getStructuredMessageAsString()
     {
+
+
+        if ($this->messageBody instanceof LoggerMessageEntity){
+            $messageContent = '';
+
+            // Message list
+            foreach ($this->messageBody->messagesWithNewLine as $message)
+                $messageContent .= $message;
+
+            // Message with new fields list
+            if (!empty($this->messageBody->realizedNewFields)){
+                $messageContent .= PHP_EOL.'[ENTITY]: DFS API realized new field for your entity'.PHP_EOL.'==================== File ==============================|     New Field     |=======|'.PHP_EOL;
+                foreach ($this->messageBody->realizedNewFields as $fileName => $value){
+
+                    foreach ($value as $fielName => $fieldArr)
+                        $messageContent .= $fieldArr['file']."  ->->-> NEW FIELD: ".$fieldArr['field']." FIELD TYPE: ".$fieldArr['type'].PHP_EOL.
+                            '------------------------------------------------------------------------------------|'.PHP_EOL;
+                }
+            }
+
+
+            // Message with list of not existed fields
+            if (!empty($this->messageBody->notExistedFieldsInDFS)){
+                $messageContent = PHP_EOL.'[DFSClient]: List of fields not received from DFS API'.PHP_EOL.'==================== File ==============================|     New Field     |=======|'.PHP_EOL;
+                foreach ($this->messageBody->notExistedFieldsInDFS as $className => $fields){
+                    foreach ($fields as $fieldName)
+                        $messageContent .= $className."  ->->-> NOT RECEIVED: ".$fieldName.PHP_EOL.
+                            '------------------------------------------------------------------------------------|'.PHP_EOL;
+                }
+
+            }
+
+        }else{
+            $messageContent = $this->messageBody;
+        }
+
+
         $currentDateTime = date('Y-d-m h:i:s');
         $string = <<<MESSAGE
 ========[$this->level][$currentDateTime] $this->messageTitle ==========
 FILE: $this->file
 EntityVersion: $this->localVersion
 DFSVersion: $this->dfsVersion
-$this->messageBody
+$messageContent
 
 
 MESSAGE;

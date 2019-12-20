@@ -37,7 +37,7 @@ class Logger
                                 string $dfsVesrion = '', $localVesrion = '')
     {
         if ($messageClass = $this->application->getConfig()['logger']['run'] === true){
-            if (is_string($message)){
+            if (($message instanceof MessageInterface) === false){
                 $messageClass = $this->application->getConfig()['logger']['messageClass'];
 
                 if (!class_exists($messageClass))

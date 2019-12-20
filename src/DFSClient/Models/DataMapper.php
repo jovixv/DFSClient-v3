@@ -4,6 +4,7 @@ namespace DFSClientV3\Models;
 use DFSClientV3\Bootstrap\Application;
 use DFSClientV3\Services\EntityCreator\ClassGenerator;
 use DFSClientV3\Services\Logger\Logger;
+use DFSClientV3\Services\Logger\LoggerMessageEntity;
 
 class DataMapper
 {
@@ -207,7 +208,6 @@ class DataMapper
      */
     private function logChanges($model, $decodedResponse, string $classNameWithNameSpace)
     {
-
         if ($this->entityHasDifferentVersion($model, $decodedResponse) === true && (!empty($this->notExistedField) || !empty($this->rootNotReturnedFieldsFromDFS)) ){
 
             $changedVersion = $this->getDiffInSemanticVersion($model, $decodedResponse);
@@ -237,8 +237,12 @@ class DataMapper
 
                 switch ($versionsNameMask[$changedVersion]){
                     case 'minor':
+                        $messageEntity = new LoggerMessageEntity();
+                        $messageEntity->notExistedFieldsInDFS = $this->rootNotReturnedFieldsFromDFS;
+                        $messageEntity->realizedNewFields = $this->notExistedField;
+
                         $this->logger->pushMessage(
-                            PHP_EOL."ENTITY: DFS-API realized new fields for your entity:".PHP_EOL.PHP_EOL.$messageWithNotExistedField.PHP_EOL.$messageWithNotReturningFields,
+                            $messageEntity,
                             'Entity version is different than current DFSVersion. DFS released a new '.$versionsNameMask[$changedVersion].' version',
                             $classNameWithNameSpace,
                             'INFO',
@@ -247,12 +251,15 @@ class DataMapper
                         );
                         break;
                     case 'major':
-                        $this->logger->pushMessage(
-                            "ENTITY: DFS-API changed structure. IT IS VERY CRITICAL UPDATE.".
-                            PHP_EOL.'DFSCLIENT: AT NOW YOUR ENTITY WORKING NOT CORRECT'.
-                            PHP_EOL.'DFSCLIENT: PLEASE UPDATE YOUR CLIENT VIA COMPOSER, OR YOU MUST REGENERATE ENTITY by ENTITY_CREATOR'.
-                            PHP_EOL.PHP_EOL.$messageWithNotExistedField.PHP_EOL.$messageWithNotReturningFields,
+                        $messageEntity = new LoggerMessageEntity();
+                        $messageEntity->messagesWithNewLine[] = '[DFSClient]: DFS-API changed structure. IT IS VERY CRITICAL UPDATE'.PHP_EOL;
+                        $messageEntity->messagesWithNewLine[] = '[DFSClient]: AT NOW YOUR ENTITY WORKING NOT CORRECT'.PHP_EOL;
+                        $messageEntity->messagesWithNewLine[] = '[DFSClient]: PLEASE UPDATE YOUR CLIENT VIA COMPOSER, OR YOU MUST REGENERATE ENTITY by ENTITY_CREATOR'.PHP_EOL;
+                        $messageEntity->notExistedFieldsInDFS = $this->rootNotReturnedFieldsFromDFS;
+                        $messageEntity->realizedNewFields = $this->notExistedField;
 
+                        $this->logger->pushMessage(
+                            $messageEntity,
                             'CRITICAL UPDATE, ENTITY VERSION IS DIFFERENT. DFS released a new '.$versionsNameMask[$changedVersion].' version',
                             $classNameWithNameSpace,
                             'ERROR',
@@ -261,8 +268,11 @@ class DataMapper
                         );
                         break;
                     case 'path':
+                        $messageEntity = new LoggerMessageEntity();
+                        $messageEntity->messagesWithNewLine[] = '[DFSClient]: It is not critical, data has not be changed.'.PHP_EOL;
                         $this->logger->pushMessage(
-                            "ENTITY: It is not critical, data has not be changed.",
+
+                            $messageEntity,
                             'Entity version is different. DFS released a new '.$versionsNameMask[$changedVersion].' version',
                             $classNameWithNameSpace,
                             'INFO',
