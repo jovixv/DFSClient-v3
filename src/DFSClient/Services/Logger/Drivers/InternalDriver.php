@@ -11,7 +11,7 @@ use DFSClientV3\Services\Logger\Message\MessageInterface;
 class InternalDriver implements LoggerDriverContract
 {
 
-    public const DFS_PATH_TO_SYSTEM_FILE = __DIR__.'../../SystemLogNotifications.txt';
+    public const DFS_PATH_TO_SYSTEM_FILE = __DIR__.'/../SystemLogNotifications.txt';
     /**
      * @param MessageInterface $message
      * @param Application $application
