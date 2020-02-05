@@ -110,7 +110,7 @@ abstract class AbstractModel
 
     protected $mappedMainModel;
 
-    protected $seTypes = ['organic', 'maps', 'local', 'news', 'images'];
+    protected $seTypes = ['organic', 'maps', 'local_pack', 'news', 'images'];
 
     /**
      * new version of DataForSeo has two variations of result
@@ -155,6 +155,8 @@ abstract class AbstractModel
                 $validResponse = ['status_code' => 50000, 'status_message' => 'error.'];
             }
 
+          
+            
         return $this->mapData(json_encode($validResponse), $response->getStatus());
     }
 
