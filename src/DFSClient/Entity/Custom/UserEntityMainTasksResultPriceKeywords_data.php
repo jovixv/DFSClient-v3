@@ -12,6 +12,8 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataKeyword
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguages;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocations;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataSearch_volume;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_trends;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTasks_ready;
 
 class UserEntityMainTasksResultPriceKeywords_data 
 {    
@@ -64,5 +66,15 @@ class UserEntityMainTasksResultPriceKeywords_data
     * @var null|UserEntityMainTasksResultPriceKeywords_dataSearch_volume $search_volume;
     */
     public $search_volume = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trends $google_trends;
+    */
+    public $google_trends = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultPriceKeywords_dataTasks_ready $tasks_ready;
+    */
+    public $tasks_ready = null;
  
 }

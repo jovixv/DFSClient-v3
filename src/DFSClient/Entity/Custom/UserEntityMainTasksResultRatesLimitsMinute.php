@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteSerp;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteTraffic_analytics;
 
 class UserEntityMainTasksResultRatesLimitsMinute 
 {    
@@ -42,5 +43,15 @@ class UserEntityMainTasksResultRatesLimitsMinute
     * @var null|integer $total_serp;
     */
     public $total_serp = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultRatesLimitsMinuteTraffic_analytics $traffic_analytics;
+    */
+    public $traffic_analytics = null;
+
+    /**
+    * @var null|integer $total_traffic_analytics;
+    */
+    public $total_traffic_analytics = null;
  
 }

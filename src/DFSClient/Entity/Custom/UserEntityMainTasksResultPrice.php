@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerp;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analytics;
 
 class UserEntityMainTasksResultPrice 
 {    
@@ -22,5 +23,10 @@ class UserEntityMainTasksResultPrice
     * @var null|UserEntityMainTasksResultPriceSerp $serp;
     */
     public $serp = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultPriceTraffic_analytics $traffic_analytics;
+    */
+    public $traffic_analytics = null;
  
 }

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDaySerp;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayTraffic_analytics;
 
 class UserEntityMainTasksResultMoneyStatisticsDay 
 {    
@@ -42,6 +43,16 @@ class UserEntityMainTasksResultMoneyStatisticsDay
     * @var null|integer $total_serp;
     */
     public $total_serp = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultMoneyStatisticsDayTraffic_analytics $traffic_analytics;
+    */
+    public $traffic_analytics = null;
+
+    /**
+    * @var null|integer $total_traffic_analytics;
+    */
+    public $total_traffic_analytics = null;
 
     /**
     * @var null|string $value;

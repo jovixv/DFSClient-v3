@@ -11,7 +11,7 @@ class UserEntityMainTasksResultPriceKeywords_dataSearch_volumeTask_postPriority_
     public $cost_type = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
  

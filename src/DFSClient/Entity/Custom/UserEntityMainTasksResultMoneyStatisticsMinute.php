@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteSerp;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteTraffic_analytics;
 
 class UserEntityMainTasksResultMoneyStatisticsMinute 
 {    
@@ -42,6 +43,16 @@ class UserEntityMainTasksResultMoneyStatisticsMinute
     * @var null|integer $total_serp;
     */
     public $total_serp = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteTraffic_analytics $traffic_analytics;
+    */
+    public $traffic_analytics = null;
+
+    /**
+    * @var null|integer $total_traffic_analytics;
+    */
+    public $total_traffic_analytics = null;
 
     /**
     * @var null|string $value;

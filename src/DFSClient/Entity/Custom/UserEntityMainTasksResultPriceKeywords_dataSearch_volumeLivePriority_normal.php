@@ -11,7 +11,7 @@ class UserEntityMainTasksResultPriceKeywords_dataSearch_volumeLivePriority_norma
     public $cost_type = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
  

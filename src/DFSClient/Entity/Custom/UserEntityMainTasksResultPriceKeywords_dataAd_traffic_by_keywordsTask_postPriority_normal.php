@@ -11,7 +11,7 @@ class UserEntityMainTasksResultPriceKeywords_dataAd_traffic_by_keywordsTask_post
     public $cost_type = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
  

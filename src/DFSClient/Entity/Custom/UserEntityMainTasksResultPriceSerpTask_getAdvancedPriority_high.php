@@ -11,7 +11,7 @@ class UserEntityMainTasksResultPriceSerpTask_getAdvancedPriority_high
     public $cost_type = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
  

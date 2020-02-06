@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayAppendix;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDaySerp;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayTraffic_analytics;
 
 class UserEntityMainTasksResultRatesStatisticsDay 
 {    
@@ -42,6 +43,16 @@ class UserEntityMainTasksResultRatesStatisticsDay
     * @var null|integer $total_serp;
     */
     public $total_serp = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsDayTraffic_analytics $traffic_analytics;
+    */
+    public $traffic_analytics = null;
+
+    /**
+    * @var null|integer $total_traffic_analytics;
+    */
+    public $total_traffic_analytics = null;
 
     /**
     * @var null|string $value;

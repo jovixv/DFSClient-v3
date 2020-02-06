@@ -1,15 +1,15 @@
 <?php
 
-namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Site;
+namespace DFSClientV3\Models\KeywordsDataApi\Search_Volume;
 
 use DFSClientV3\Models\AbstractModel;
 
-class KeywordsForSiteGetResultsById extends AbstractModel
+class SearchVolumeGetResultsByIdModel extends AbstractModel
 {
 	protected $method = 'GET';
 	protected $isSupportedMerge = false;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'keywords_data/google/keywords_for_site/task_get/{$taskUUID}';
+	protected $requestToFunction = 'keywords_data/google/search_volume/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
 	
 	public function setTaskId(string $taskUUID)
@@ -19,9 +19,9 @@ class KeywordsForSiteGetResultsById extends AbstractModel
 	}
 	
 	/**
-	 * @return \DFSClientV3\Entity\Custom\KeywordsForSiteGetResultsByIdEntityMain
+	 * @return \DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\KeywordsForSiteGetResultsByIdEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMain
 	{
 		return parent::get();
 	}

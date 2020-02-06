@@ -1,15 +1,17 @@
 <?php
 
-namespace DFSClientV3\Models\KeywordsDataApi\Search_Volume;
+
+namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Category;
+
 
 use DFSClientV3\Models\AbstractModel;
 
-class SearchVolumeGetResultsById extends AbstractModel
+class KeywordsForCategoryGetResultsByIdModel extends AbstractModel
 {
 	protected $method = 'GET';
 	protected $isSupportedMerge = false;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'keywords_data/google/search_volume/task_get/{$taskUUID}';
+	protected $requestToFunction = 'keywords_data/google/keywords_for_category/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
 	
 	public function setTaskId(string $taskUUID)
@@ -19,9 +21,9 @@ class SearchVolumeGetResultsById extends AbstractModel
 	}
 	
 	/**
-	 * @return \DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMain
+	 * @return \DFSClientV3\Entity\Custom\KeywordsForCategoryGetResultsByIdEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\KeywordsForCategoryGetResultsByIdEntityMain
 	{
 		return parent::get();
 	}

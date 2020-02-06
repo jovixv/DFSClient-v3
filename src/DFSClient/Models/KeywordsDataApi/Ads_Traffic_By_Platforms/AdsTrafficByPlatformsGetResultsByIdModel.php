@@ -6,7 +6,7 @@ namespace DFSClientV3\Models\KeywordsDataApi\Ads_Traffic_By_Platforms;
 
 use DFSClientV3\Models\AbstractModel;
 
-class AdsTrafficByPlatformsGetResultsById extends AbstractModel
+class AdsTrafficByPlatformsGetResultsByIdModel extends AbstractModel
 {
 	protected $method = 'GET';
 	protected $isSupportedMerge = false;

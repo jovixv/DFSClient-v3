@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogle_trends;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataAd_traffic_by_keywords;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataAd_traffic_by_platforms;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogle;
@@ -12,6 +13,11 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeyw
 
 class UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_data 
 {    
+    /**
+    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogle_trends $google_trends;
+    */
+    public $google_trends = null;
+
     /**
     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataAd_traffic_by_keywords $ad_traffic_by_keywords;
     */
@@ -61,5 +67,10 @@ class UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_data
     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataSearch_volume $search_volume;
     */
     public $search_volume = null;
+
+    /**
+    * @var null|integer $tasks_ready;
+    */
+    public $tasks_ready = null;
  
 }

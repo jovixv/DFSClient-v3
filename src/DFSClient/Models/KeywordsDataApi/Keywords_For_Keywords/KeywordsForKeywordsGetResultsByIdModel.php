@@ -1,17 +1,17 @@
 <?php
 
 
-namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Category;
+namespace DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keywords;
 
 
 use DFSClientV3\Models\AbstractModel;
 
-class KeywordsForCategoryGetResultsById extends AbstractModel
+class KeywordsForKeywordsGetResultsByIdModel extends AbstractModel
 {
 	protected $method = 'GET';
 	protected $isSupportedMerge = false;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'keywords_data/google/keywords_for_category/task_get/{$taskUUID}';
+	protected $requestToFunction = 'keywords_data/google/keywords_for_keywords/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
 	
 	public function setTaskId(string $taskUUID)
@@ -21,9 +21,9 @@ class KeywordsForCategoryGetResultsById extends AbstractModel
 	}
 	
 	/**
-	 * @return \DFSClientV3\Entity\Custom\KeywordsForCategoryGetResultsByIdEntityMain
+	 * @return \DFSClientV3\Entity\Custom\KeywordsForKeywordsGetResultsByIdEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\KeywordsForCategoryGetResultsByIdEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\KeywordsForKeywordsGetResultsByIdEntityMain
 	{
 		return parent::get();
 	}

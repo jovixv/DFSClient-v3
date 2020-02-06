@@ -13,11 +13,6 @@ class UserEntityMainTasks
     public $id = null;
 
     /**
-    * @var null|string $post_id;
-    */
-    public $post_id = null;
-
-    /**
     * @var null|integer $status_code;
     */
     public $status_code = null;

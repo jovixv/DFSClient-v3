@@ -11,7 +11,7 @@ class UserEntityMainTasksResultPriceKeywords_dataKeywords_for_keywordsLivePriori
     public $cost_type = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
  

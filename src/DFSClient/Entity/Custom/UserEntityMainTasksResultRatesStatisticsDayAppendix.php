@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayAppendixService;
 
 class UserEntityMainTasksResultRatesStatisticsDayAppendix 
 {    
@@ -14,6 +15,11 @@ class UserEntityMainTasksResultRatesStatisticsDayAppendix
     * @var null|integer $errors;
     */
     public $errors = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultRatesStatisticsDayAppendixService $service;
+    */
+    public $service = null;
 
     /**
     * @var null|integer $user_data;

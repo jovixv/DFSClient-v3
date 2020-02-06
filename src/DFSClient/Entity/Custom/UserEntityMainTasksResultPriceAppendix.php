@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixEndpoints;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrors;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixService;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_data;
 
 class UserEntityMainTasksResultPriceAppendix 
@@ -17,6 +18,11 @@ class UserEntityMainTasksResultPriceAppendix
     * @var null|UserEntityMainTasksResultPriceAppendixErrors $errors;
     */
     public $errors = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultPriceAppendixService $service;
+    */
+    public $service = null;
 
     /**
     * @var null|UserEntityMainTasksResultPriceAppendixUser_data $user_data;
