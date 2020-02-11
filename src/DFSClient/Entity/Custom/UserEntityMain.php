@@ -9,7 +9,7 @@ class UserEntityMain extends \DFSClientV3\Models\ResponseModel
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200205';
+    public $version = '0.1.20200210';
 
     /**
     * @var null|integer $status_code;

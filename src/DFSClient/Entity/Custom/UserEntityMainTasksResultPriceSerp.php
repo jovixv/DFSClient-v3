@@ -2,22 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpEndpoints;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguages;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocations;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpQueue;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
 
 class UserEntityMainTasksResultPriceSerp 
 {    
-    /**
-    * @var null|UserEntityMainTasksResultPriceSerpEndpoints $endpoints;
-    */
-    public $endpoints = null;
-
     /**
     * @var null|UserEntityMainTasksResultPriceSerpLanguages $languages;
     */
@@ -32,11 +25,6 @@ class UserEntityMainTasksResultPriceSerp
     * @var null|UserEntityMainTasksResultPriceSerpLocations $locations;
     */
     public $locations = null;
-
-    /**
-    * @var null|UserEntityMainTasksResultPriceSerpQueue $queue;
-    */
-    public $queue = null;
 
     /**
     * @var null|UserEntityMainTasksResultPriceSerpTask_get $task_get;

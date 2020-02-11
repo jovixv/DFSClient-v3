@@ -8,11 +8,6 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteSerpTask
 class UserEntityMainTasksResultRatesLimitsMinuteSerp 
 {    
     /**
-    * @var null|integer $endpoints;
-    */
-    public $endpoints = null;
-
-    /**
     * @var null|integer $languages;
     */
     public $languages = null;
@@ -26,11 +21,6 @@ class UserEntityMainTasksResultRatesLimitsMinuteSerp
     * @var null|integer $locations;
     */
     public $locations = null;
-
-    /**
-    * @var null|integer $queue;
-    */
-    public $queue = null;
 
     /**
     * @var null|UserEntityMainTasksResultRatesLimitsMinuteSerpTask_get $task_get;

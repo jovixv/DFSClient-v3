@@ -8,7 +8,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatistics;
 class UserEntityMainTasksResultMoney 
 {    
     /**
-    * @var null|double $total;
+    * @var null|integer $total;
     */
     public $total = null;
 
