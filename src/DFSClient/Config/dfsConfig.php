@@ -8,6 +8,7 @@ return $config = [
     'timeoutForEachRequests' => 10,
     'apiVersion'             => '/v3/',
     'url'                    => 'https://api.dataforseo.com',
+    'sandboxUrl'             => 'https://sandbox.dataforseo.com',
     'headers'                => ['Content-Type' => 'application/json', 'Connection' => 'close', 'Accept-Encoding'=>'gzip', 'User-Agent'=>'DFSV3-serp'],
 
     //schema for payload

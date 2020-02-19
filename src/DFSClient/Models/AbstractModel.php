@@ -341,6 +341,11 @@ abstract class AbstractModel
     {
         return $this->resultShouldBeTransformedToArray;
     }
+    
+    public function useSandbox(string $url = null)
+    {
+    	$this->url = $this->config['sandboxUrl'];
+    }
 
 
 
