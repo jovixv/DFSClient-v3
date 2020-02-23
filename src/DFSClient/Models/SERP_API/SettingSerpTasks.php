@@ -22,9 +22,20 @@ class SettingSerpTasks extends AbstractModel
 
         return $this;
     }
-
+    
     /**
-     * @param string $keys
+     * @param string $langName
+     * @return $this
+     */
+    public function setLanguageName(string $langName)
+    {
+        $this->payload['language_name'] = $langName;
+        
+        return $this;
+    }
+    
+    /**
+     * @param string $key
      * @return $this
      */
     public function setKey(string $key)
@@ -52,6 +63,51 @@ class SettingSerpTasks extends AbstractModel
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+        
+        return $this;
+    }
+    
+    /**
+     * @param string $postBackUrl
+     * @return $this
+     */
+    public function setPostBackUrl(string $postBackUrl)
+    {
+        $this->payload['postback_url'] = $postBackUrl;
+        
+        return $this;
+    }
+    
+    /**
+     * @param string $postBackData
+     * @return $this
+     */
+    public function setPostBackData(string $postBackData)
+    {
+        $this->payload['postback_data'] = $postBackData;
+        
+        return $this;
+    }
+    
+    /**
+     * @param string $device
+     * @return $this
+     */
+    public function setDevice(string $device)
+    {
+        $this->payload['device'] = $device;
+        
+        return $this;
+    }
+    
+    /**
+     * @param int $priority
+     * @return $this
+     */
+    public function setPriority(int $priority)
+    {
+        $this->payload['priority'] = $priority;
+        
         return $this;
     }
 
