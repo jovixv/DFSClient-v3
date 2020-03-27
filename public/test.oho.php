@@ -3,10 +3,13 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include_once '../vendor/autoload.php';
 
 use DFSClientV3\DFSClient;
+use DFSClientV3\Models\SERP_API\GetSerpCompletedTasks;
+use DFSClientV3\Models\SERP_API\GetSerpResultsByTaskId;
+use DFSClientV3\Models\SERP_API\Languages;
+use DFSClientV3\Models\SERP_API\SettingSerpTasks;
 use DFSClientV3\Models\TestModel;
 use DFSClientV3\Services\EntityCreator\EntityCreator;
 use DFSClientV3\Models\KeywordsDataApi\Ads_Traffic_By_Platforms\AdsTrafficByPlatformsLive;
-use DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keyword\KeywordsForKeywordLive;
 use DFSClientV3\Models\SERP_API\GetAdvancedSerpResultsById;
 use \DFSClientV3\Models\SERP_API\GetSerpHtmlResultsByTaskId;
 use DFSClientV3\Entity\Custom\UserEntityMain;
@@ -17,14 +20,15 @@ use DFSClientV3\Services\Logger\Logger;
 
 
 $client = new DFSClient();
-$client->setConfig('C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\public\config.php');
-$model = new GetAdvancedSerpResultsById();
+$client->setConfig('C:\OSPanel\domains\dfs-v3\public\config.php');
+$model = new GetSerpHtmlResultsByTaskId();
 //$logger = new Logger();
 
 
-$res = $model->setSe('google')->setSeType('organic')->setTaskId('12181334-2974-0066-0000-2cb121bb949f')->get();
+$res = $model->setSe('google');
+//$res = $model->setSe('google')->setSeType('organic')->setTaskId('12181334-2974-0066-0000-2cb121bb949f')->get();
 
-dd($res);
+//dd($res);
 //foreach ($res->getResultsByPostID('post ID 99')[0]->items as $item){
 //    if ($item instanceof \DFSClientV3\Entity\Custom\GetAdvancedSerpResultsByIdEntityMainTasksResultItemsPeople_also_ask)
 //    dd($item);
@@ -101,9 +105,9 @@ dd($res);
 //
 //
 //
-$cr = new EntityCreator('C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\src\DFSClient\Entity\Custom');
+$cr = new EntityCreator('C:\OSPanel\domains\dfs-v3\src\DFSClient\Entity\Custom');
 
-$cr->generateByModel($model);
+$cr->generateByModel($res);
 //$json = $model->getAsJson();
 
 //$mapper = new \DFSClientV3\Models\DataMapper('TestModel',$json);

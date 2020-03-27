@@ -13,6 +13,17 @@ class SettingSerpTasks extends AbstractModel
     protected $resultShouldBeTransformedToArray = true;
 
     /**
+     * @param string $url
+     * @return $this
+     */
+    public function setUrl(string $url)
+    {
+        $this->payload['url'] = $url;
+
+        return $this;
+    }
+
+    /**
      * @param string $langCode
      * @return $this
      */
@@ -24,12 +35,23 @@ class SettingSerpTasks extends AbstractModel
     }
 
     /**
-     * @param string $keys
+     * @param string $key
      * @return $this
      */
     public function setKey(string $key)
     {
         $this->payload['keyword'] = $key;
+
+        return $this;
+    }
+
+    /**
+     * @param string $priority
+     * @return $this
+     */
+    public function setPriority(string $priority)
+    {
+        $this->payload['priority'] = $priority;
 
         return $this;
     }
@@ -52,6 +74,116 @@ class SettingSerpTasks extends AbstractModel
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+        return $this;
+    }
+
+    /**
+     * @param string $locationCoordinate
+     * @return $this
+     */
+    public function setLocationCoordinate(string $locationCoordinate)
+    {
+        $this->payload['location_coordinate'] = $locationCoordinate;
+        return $this;
+    }
+
+    /**
+     * @param string $languageName
+     * @return $this
+     */
+    public function setLanguageName(string $languageName)
+    {
+        $this->payload['language_name'] = $languageName;
+        return $this;
+    }
+
+    /**
+     * @param string $device
+     * @return $this
+     */
+    public function setDevice(string $device)
+    {
+        $this->payload['device'] = $device;
+        return $this;
+    }
+
+    /**
+     * @param string $os
+     * @return $this
+     */
+    public function setOs(string $os)
+    {
+        $this->payload['os'] = $os;
+        return $this;
+    }
+
+    /**
+     * @param string $seDomain
+     * @return $this
+     */
+    public function setSeDomain(string $seDomain)
+    {
+        $this->payload['se_domain'] = $seDomain;
+        return $this;
+    }
+
+    /**
+     * @param int $depth
+     * @return $this
+     */
+    public function setDepth(int $depth)
+    {
+        $this->payload['depth'] = $depth;
+        return $this;
+    }
+
+    /**
+     * @param string $searchParam
+     * @return $this
+     */
+    public function setSearchParam(string $searchParam)
+    {
+        $this->payload['search_param'] = $searchParam;
+        return $this;
+    }
+
+    /**
+     * @param string $tag
+     * @return $this
+     */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+        return $this;
+    }
+
+    /**
+     * @param string $postbackUrl
+     * @return $this
+     */
+    public function setPostbackUrl(string $postbackUrl)
+    {
+        $this->payload['postback_url'] = $postbackUrl;
+        return $this;
+    }
+
+    /**
+     * @param string $postbackData
+     * @return $this
+     */
+    public function setPostbackData(string $postbackData)
+    {
+        $this->payload['postback_data'] = $postbackData;
+        return $this;
+    }
+
+    /**
+     * @param string $pingbackUrl
+     * @return $this
+     */
+    public function setPingbackUrl(string $pingbackUrl)
+    {
+        $this->payload['pingback_url'] = $pingbackUrl;
         return $this;
     }
 
@@ -89,7 +221,9 @@ class SettingSerpTasks extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
+     * @param array $modelPool
+     * @return array
+     * @throws \Exception
      */
     public static function getAfterMerge(array $modelPool)
     {

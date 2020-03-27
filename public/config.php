@@ -41,6 +41,6 @@ return $config = [
             //  \DFSClientV3\Services\Logger\Informers\SlackNotification::class
         ],
         'messageClass' => \DFSClientV3\Services\Logger\Message\LoggerMessage::class,
-        'logFilePath'  => 'C:\Users\01\Desktop\Chage NoteBook\OSPanel_premium\OSPanel\domains\dfs-v3\public\testLog'
+        'logFilePath'  => 'C:\OSPanel\domains\dfs-v3\public\testLog'
     ]
 ];
