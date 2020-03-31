@@ -9,7 +9,7 @@ class KeywordsForKeywordsGetResultsByIdEntityMain extends \DFSClientV3\Models\Re
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200205';
+    public $version = '0.1.20200325';
 
     /**
     * @var null|integer $status_code;

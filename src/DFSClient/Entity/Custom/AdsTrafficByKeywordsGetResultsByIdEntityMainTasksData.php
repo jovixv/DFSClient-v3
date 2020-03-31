@@ -21,19 +21,9 @@ class AdsTrafficByKeywordsGetResultsByIdEntityMainTasksData
     public $se = null;
 
     /**
-    * @var null|string $id;
+    * @var null|array $keywords;
     */
-    public $id = null;
-
-    /**
-    * @var null|string $language_code;
-    */
-    public $language_code = null;
-
-    /**
-    * @var null|integer $location_code;
-    */
-    public $location_code = null;
+    public $keywords = null;
 
     /**
     * @var null|integer $bid;
@@ -46,8 +36,13 @@ class AdsTrafficByKeywordsGetResultsByIdEntityMainTasksData
     public $match = null;
 
     /**
-    * @var null|array $keywords;
+    * @var null|string $language_code;
     */
-    public $keywords = null;
+    public $language_code = null;
+
+    /**
+    * @var null|integer $location_code;
+    */
+    public $location_code = null;
  
 }

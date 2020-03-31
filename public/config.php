@@ -2,13 +2,19 @@
 
 return $config = [
 
-    'DATAFORSEO_LOGIN'       => 'Your Login',
-    'DATAFORSEO_PASSWORD'    => 'You password',
+    'DATAFORSEO_LOGIN'       => 'YOUR_LOGIN',
+    'DATAFORSEO_PASSWORD'    => 'YOUR_DATAFORSEO_PASSWORD',
 
-    'timeoutForEachRequests' => 10,
+    'timeoutForEachRequests' => 30,
     'apiVersion'             => '/v3/',
     'url'                    => 'https://api.dataforseo.com',
-    'headers'                => ['Content-Type' => 'application/json', 'Connection' => 'close', 'Accept-Encoding'=>'gzip', 'User-Agent'=>'DFSV3-serp'],
+    'headers'                => [
+        'Content-Type' => 'application/json',
+        'Connection' => 'close',
+        'Accept-Encoding'=>'gzip',
+        'User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
+//        'User-Agent'=>'DFSV3-serp'
+    ],
 
     //schema for payload
     'payloadData'=> [ // keys: payloadData and json are required for script. "data" need for DFSApi

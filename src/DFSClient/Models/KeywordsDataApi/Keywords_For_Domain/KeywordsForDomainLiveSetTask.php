@@ -6,8 +6,9 @@ use DFSClientV3\Models\AbstractModel;
 
 class KeywordsForDomainLiveSetTask extends AbstractModel
 {
-    protected $requestToFunction = 'kwrd_for_domain_tasks_post';
-    protected $pathToMainData    = 'results';
-    protected $method            = 'POST';
-    protected $isSupportedMerge  = true;
+    protected $method = 'POST';
+    protected $isSupportedMerge = true;
+    protected $pathToMainData = 'tasks->{$postID}->result';
+    protected $requestToFunction = 'keywords_data/{$se}/keywords_for_site/task_post';
+    protected $resultShouldBeTransformedToArray = true;
 }

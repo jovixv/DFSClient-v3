@@ -3,7 +3,6 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordsForCategoryGetResultsByIdEntityMainTasksData;
-use DFSClientV3\Entity\Custom\KeywordsForCategoryGetResultsByIdEntityMainTasksResult;
 
 class KeywordsForCategoryGetResultsByIdEntityMainTasks 
 {    
@@ -48,8 +47,8 @@ class KeywordsForCategoryGetResultsByIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|KeywordsForCategoryGetResultsByIdEntityMainTasksResult[] $result;
+    * @var null|array $result;
     */
-    public $result = [];
+    public $result = null;
  
 }

@@ -3,7 +3,6 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordsForSiteGetResultsByIdEntityMainTasksData;
-use DFSClientV3\Entity\Custom\KeywordsForSiteGetResultsByIdEntityMainTasksResult;
 
 class KeywordsForSiteGetResultsByIdEntityMainTasks 
 {    
@@ -48,8 +47,8 @@ class KeywordsForSiteGetResultsByIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|KeywordsForSiteGetResultsByIdEntityMainTasksResult[] $result;
+    * @var null|array $result;
     */
-    public $result = [];
+    public $result = null;
  
 }

@@ -9,22 +9,12 @@ class TrafficAnalyticsGetResultsById extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'traffic_analytics/{$se}/task_get/{$taskUUID}';
+    protected $requestToFunction = 'traffic_analytics/similarweb/task_get/{$taskUUID}';
     protected $resultShouldBeTransformedToArray = true;
 
     public function setTaskId(string $taskUUID)
     {
         $this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);
-        return $this;
-    }
-    
-    /**
-     * @param string $seName
-     * @return $this
-     */
-    public function setSe(string $seName)
-    {
-        $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
         return $this;
     }
 

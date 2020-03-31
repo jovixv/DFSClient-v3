@@ -12,12 +12,12 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResul
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResult 
 {    
     /**
-    * @var null|string $site_url;
+    * @var null|NULL $site_url;
     */
     public $site_url = null;
 
     /**
-    * @var null|string $site_description;
+    * @var null|NULL $site_description;
     */
     public $site_description = null;
 

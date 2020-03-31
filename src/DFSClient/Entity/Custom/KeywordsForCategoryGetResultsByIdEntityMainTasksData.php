@@ -21,6 +21,21 @@ class KeywordsForCategoryGetResultsByIdEntityMainTasksData
     public $se = null;
 
     /**
+    * @var null|array $keywords;
+    */
+    public $keywords = null;
+
+    /**
+    * @var null|integer $bid;
+    */
+    public $bid = null;
+
+    /**
+    * @var null|string $match;
+    */
+    public $match = null;
+
+    /**
     * @var null|string $language_code;
     */
     public $language_code = null;
@@ -29,10 +44,5 @@ class KeywordsForCategoryGetResultsByIdEntityMainTasksData
     * @var null|integer $location_code;
     */
     public $location_code = null;
-
-    /**
-    * @var null|integer $category;
-    */
-    public $category = null;
  
 }

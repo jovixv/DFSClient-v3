@@ -35,12 +35,12 @@ class SettingSerpTasks extends AbstractModel
     }
 
     /**
-     * @param string $key
+     * @param string $keyword
      * @return $this
      */
-    public function setKey(string $key)
+    public function setKeyword(string $keyword)
     {
-        $this->payload['keyword'] = $key;
+        $this->payload['keyword'] = $keyword;
 
         return $this;
     }

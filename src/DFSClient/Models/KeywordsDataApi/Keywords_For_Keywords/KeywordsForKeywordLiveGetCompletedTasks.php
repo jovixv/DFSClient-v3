@@ -7,8 +7,27 @@ use DFSClientV3\Models\AbstractModel;
 
 class KeywordsForKeywordLiveGetCompletedTasks extends AbstractModel
 {
-    protected $requestToFunction = 'kwrd_for_keywords_tasks_get';
-    protected $pathToMainData    = 'results';
-    protected $method            = 'GET';
-    protected $isSupportedMerge  =  false;
+    protected $method = 'GET';
+    protected $isSupportedMerge = false;
+    protected $pathToMainData = 'tasks->{$postID}->result';
+    protected $requestToFunction = 'keywords_data/{$se}/keywords_for_keywords/tasks_ready';
+    protected $resultShouldBeTransformedToArray = true;
+
+    /**
+     * @param string $seName
+     * @return $this
+     */
+    public function setSe(string $seName)
+    {
+        $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
+        return $this;
+    }
+
+    /**
+     * @return \DFSClientV3\Entity\Custom\KeywordsForKeywordLiveGetCompletedTasksEntityMain
+     */
+    public function get(): \DFSClientV3\Entity\Custom\KeywordsForKeywordLiveGetCompletedTasksEntityMain
+    {
+        return parent::get();
+    }
 }

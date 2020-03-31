@@ -11,7 +11,7 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesMail
     public $value = null;
 
     /**
-    * @var null|double $percent;
+    * @var null|integer $percent;
     */
     public $percent = null;
  

@@ -2,7 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesReferringTop_referring;
 
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesReferring 
 {    
@@ -12,13 +11,13 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesReferring
     public $value = null;
 
     /**
-    * @var null|double $percent;
+    * @var null|integer $percent;
     */
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesReferringTop_referring[] $top_referring;
+    * @var null|NULL $top_referring;
     */
-    public $top_referring = [];
+    public $top_referring = null;
  
 }

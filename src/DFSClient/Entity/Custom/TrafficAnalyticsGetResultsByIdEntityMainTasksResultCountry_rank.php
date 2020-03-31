@@ -11,7 +11,7 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultCountry_rank
     public $rank = null;
 
     /**
-    * @var null|string $country;
+    * @var null|NULL $country;
     */
     public $country = null;
  

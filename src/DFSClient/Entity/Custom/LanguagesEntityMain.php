@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\LanguagesEntityMainTasks;
 
 class LanguagesEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
@@ -41,9 +42,9 @@ class LanguagesEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * @var null|array $tasks;
+    * array|LanguagesEntityMainTasks[] $tasks;
     */
-    public $tasks = null;
+    public $tasks = [];
  
 
 	/**

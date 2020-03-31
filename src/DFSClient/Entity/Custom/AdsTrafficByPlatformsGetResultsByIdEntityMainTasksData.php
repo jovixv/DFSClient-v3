@@ -26,14 +26,9 @@ class AdsTrafficByPlatformsGetResultsByIdEntityMainTasksData
     public $id = null;
 
     /**
-    * @var null|string $language_code;
+    * @var null|array $keywords;
     */
-    public $language_code = null;
-
-    /**
-    * @var null|integer $location_code;
-    */
-    public $location_code = null;
+    public $keywords = null;
 
     /**
     * @var null|integer $bid;
@@ -46,8 +41,13 @@ class AdsTrafficByPlatformsGetResultsByIdEntityMainTasksData
     public $match = null;
 
     /**
-    * @var null|array $keywords;
+    * @var null|string $language_code;
     */
-    public $keywords = null;
+    public $language_code = null;
+
+    /**
+    * @var null|integer $location_code;
+    */
+    public $location_code = null;
  
 }

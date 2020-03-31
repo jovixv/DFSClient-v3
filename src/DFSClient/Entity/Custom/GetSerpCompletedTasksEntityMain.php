@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasks;
 
 class GetSerpCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
@@ -41,15 +42,15 @@ class GetSerpCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * @var null|array $tasks;
+    * array|GetSerpCompletedTasksEntityMainTasks[] $tasks;
     */
-    public $tasks = null;
+    public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasksResult|null
+	* @return \DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasksResult[]|null
 	*/
-	public function getResultsByPostID($postID): ?\DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasksResult {
+	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);
 	}
 }
