@@ -3,9 +3,11 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayAppendix;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayDataforseo_labs;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDaySerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayTraffic_analytics;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayReviews;
 
 class UserEntityMainTasksResultMoneyStatisticsDay 
 {    
@@ -15,7 +17,7 @@ class UserEntityMainTasksResultMoneyStatisticsDay
     public $appendix = null;
 
     /**
-    * @var null|integer $total;
+    * @var null|double $total;
     */
     public $total = null;
 
@@ -23,6 +25,16 @@ class UserEntityMainTasksResultMoneyStatisticsDay
     * @var null|integer $total_appendix;
     */
     public $total_appendix = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultMoneyStatisticsDayDataforseo_labs $dataforseo_labs;
+    */
+    public $dataforseo_labs = null;
+
+    /**
+    * @var null|double $total_dataforseo_labs;
+    */
+    public $total_dataforseo_labs = null;
 
     /**
     * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_data $keywords_data;
@@ -58,5 +70,15 @@ class UserEntityMainTasksResultMoneyStatisticsDay
     * @var null|string $value;
     */
     public $value = null;
+
+    /**
+    * @var null|double $total_reviews;
+    */
+    public $total_reviews = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultMoneyStatisticsDayReviews $reviews;
+    */
+    public $reviews = null;
  
 }

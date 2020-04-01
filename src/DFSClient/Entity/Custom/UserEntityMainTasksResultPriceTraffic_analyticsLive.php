@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsLiv
 class UserEntityMainTasksResultPriceTraffic_analyticsLive 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceTraffic_analyticsLivePriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceTraffic_analyticsLivePriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceTraffic_analyticsLivePriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceTraffic_analyticsLivePriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceTraffic_analyticsLivePriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceTraffic_analyticsLivePriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }

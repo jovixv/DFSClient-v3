@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayAppendix;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayDataforseo_labs;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDaySerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayTraffic_analytics;
@@ -23,6 +24,16 @@ class UserEntityMainTasksResultRatesLimitsDay
     * @var null|integer $total_appendix;
     */
     public $total_appendix = null;
+
+    /**
+    * @var null|UserEntityMainTasksResultRatesLimitsDayDataforseo_labs $dataforseo_labs;
+    */
+    public $dataforseo_labs = null;
+
+    /**
+    * @var null|integer $total_dataforseo_labs;
+    */
+    public $total_dataforseo_labs = null;
 
     /**
     * @var null|UserEntityMainTasksResultRatesLimitsDayKeywords_data $keywords_data;

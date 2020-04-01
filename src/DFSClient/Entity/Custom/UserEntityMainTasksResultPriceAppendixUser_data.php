@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_dataPri
 class UserEntityMainTasksResultPriceAppendixUser_data 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixUser_dataPriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceAppendixUser_dataPriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixUser_dataPriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceAppendixUser_dataPriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixUser_dataPriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceAppendixUser_dataPriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }

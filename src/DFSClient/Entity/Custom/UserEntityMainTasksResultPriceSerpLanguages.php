@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriorit
 class UserEntityMainTasksResultPriceSerpLanguages 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLanguagesPriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceSerpLanguagesPriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLanguagesPriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceSerpLanguagesPriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLanguagesPriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceSerpLanguagesPriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }

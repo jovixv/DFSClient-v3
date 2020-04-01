@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrorsPriori
 class UserEntityMainTasksResultPriceAppendixErrors 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixErrorsPriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceAppendixErrorsPriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixErrorsPriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceAppendixErrorsPriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixErrorsPriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceAppendixErrorsPriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }
