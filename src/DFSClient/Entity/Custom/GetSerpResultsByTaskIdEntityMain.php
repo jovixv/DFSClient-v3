@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GetSerpResultsByTaskIdEntityMainTasks;
 
 class GetSerpResultsByTaskIdEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
@@ -41,9 +42,9 @@ class GetSerpResultsByTaskIdEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * @var null|array $tasks;
+    * array|GetSerpResultsByTaskIdEntityMainTasks[] $tasks;
     */
-    public $tasks = null;
+    public $tasks = [];
  
 
 	/**

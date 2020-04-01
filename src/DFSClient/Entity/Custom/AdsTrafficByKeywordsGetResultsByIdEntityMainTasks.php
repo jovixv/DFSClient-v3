@@ -3,7 +3,6 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdsTrafficByKeywordsGetResultsByIdEntityMainTasksData;
-use DFSClientV3\Entity\Custom\AdsTrafficByKeywordsGetResultsByIdEntityMainTasksResult;
 
 class AdsTrafficByKeywordsGetResultsByIdEntityMainTasks 
 {    
@@ -48,8 +47,8 @@ class AdsTrafficByKeywordsGetResultsByIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|AdsTrafficByKeywordsGetResultsByIdEntityMainTasksResult[] $result;
+    * @var null|array $result;
     */
-    public $result = [];
+    public $result = null;
  
 }

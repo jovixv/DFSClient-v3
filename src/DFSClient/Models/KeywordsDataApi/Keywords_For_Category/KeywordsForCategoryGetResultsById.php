@@ -11,7 +11,7 @@ class KeywordsForCategoryGetResultsById extends AbstractModel
 	protected $method = 'GET';
 	protected $isSupportedMerge = false;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'keywords_data/google/keywords_for_category/task_get/{$taskUUID}';
+	protected $requestToFunction = 'keywords_data/{$se}/keywords_for_category/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
 	
 	public function setTaskId(string $taskUUID)
@@ -27,4 +27,14 @@ class KeywordsForCategoryGetResultsById extends AbstractModel
 	{
 		return parent::get();
 	}
+
+    /**
+     * @param string $seName
+     * @return $this
+     */
+    public function setSe(string $seName = 'google')
+    {
+        $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
+        return $this;
+    }
 }

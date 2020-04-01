@@ -11,7 +11,7 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience
     public $visits = null;
 
     /**
-    * @var null|string $time_on_site_avg;
+    * @var null|NULL $time_on_site_avg;
     */
     public $time_on_site_avg = null;
 

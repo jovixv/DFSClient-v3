@@ -11,7 +11,7 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultCategory_rank
     public $rank = null;
 
     /**
-    * @var null|string $category;
+    * @var null|NULL $category;
     */
     public $category = null;
  

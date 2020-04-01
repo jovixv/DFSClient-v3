@@ -3,7 +3,6 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMainTasksData;
-use DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMainTasksResult;
 
 class SearchVolumeGetResultsByIdEntityMainTasks 
 {    
@@ -48,8 +47,8 @@ class SearchVolumeGetResultsByIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|SearchVolumeGetResultsByIdEntityMainTasksResult[] $result;
+    * @var null|array $result;
     */
-    public $result = [];
+    public $result = null;
  
 }

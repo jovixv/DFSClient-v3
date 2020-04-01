@@ -21,18 +21,28 @@ class SearchVolumeGetResultsByIdEntityMainTasksData
     public $se = null;
 
     /**
+    * @var null|array $keywords;
+    */
+    public $keywords = null;
+
+    /**
+    * @var null|integer $bid;
+    */
+    public $bid = null;
+
+    /**
+    * @var null|string $match;
+    */
+    public $match = null;
+
+    /**
     * @var null|string $language_code;
     */
     public $language_code = null;
 
     /**
-    * @var null|string $location_name;
+    * @var null|integer $location_code;
     */
-    public $location_name = null;
-
-    /**
-    * @var null|array $keywords;
-    */
-    public $keywords = null;
+    public $location_code = null;
  
 }

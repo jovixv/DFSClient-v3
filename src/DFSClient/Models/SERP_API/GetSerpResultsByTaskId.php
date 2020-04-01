@@ -3,6 +3,7 @@
 namespace DFSClientV3\Models\SERP_API;
 
 use DFSClientV3\Models\AbstractModel;
+use DFSClientV3\Models\SERP_API\Reviews\ReviewsGetResultsByTaskId;
 
 class GetSerpResultsByTaskId extends AbstractModel
 {
@@ -12,6 +13,10 @@ class GetSerpResultsByTaskId extends AbstractModel
     protected $requestToFunction = 'serp/{$se}/{$seType}/task_get/regular/{$taskUID}';
     protected $resultShouldBeTransformedToArray = true;
 
+    /**
+     * @param string $taskUID
+     * @return $this
+     */
     public function setTaskId(string $taskUID)
     {
         $this->requestToFunction = str_replace('{$taskUID}', $taskUID, $this->requestToFunction);

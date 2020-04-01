@@ -10,7 +10,7 @@ class Languages extends AbstractModel
 {
     protected $method = 'GET';
     protected $isSupportedMerge = false;
-    protected $pathToMainData = 'result';
+    protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'serp/{$se}/languages';
     protected $resultShouldBeTransformedToArray = true;
 

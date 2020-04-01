@@ -37,7 +37,7 @@ class SearchVolumeGetResultsByIdEntityMainTasksResult
     public $search_volume = null;
 
     /**
-    * @var null|array $categories;
+    * @var null|NULL $categories;
     */
     public $categories = null;
 

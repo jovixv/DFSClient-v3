@@ -141,7 +141,8 @@ class DataMapper
         }
 
 
-        $returnModel = $this->paveDummyData($classNameWithNameSpace, $notMappedObjectVars, $model);
+        if ($classNameWithNameSpace !== null)
+            $returnModel = $this->paveDummyData($classNameWithNameSpace, $notMappedObjectVars, $model);
 
         if ($classSuffix === 'EntityMain' && $this->logger !== false){
             $this->logChanges($returnModel, $decodedResponse, $classNameWithNameSpace);
