@@ -19,8 +19,8 @@ $client = new DFSClient();
 $client->setConfig('C:\OSPanel\domains\dfs-v3\public\config.php');
 //$model = new \DFSClientV3\Models\SERP_API\SettingSerpTasks();
 
-$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\KeywordSuggestionsLive();
-//$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\RelatedKeywordsLive();
+//$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\KeywordSuggestionsLive();
+$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\RelatedKeywordsLive();
 //$logger = new Logger();
 //$res = $model->setKeywords(['indian pale ale'])->setLanguageCode('en')->setLocationCode(2840)
 //    ->setLimit(50);

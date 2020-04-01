@@ -21,7 +21,7 @@ class RelatedKeywordsLiveEntityMainTasksResult
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
+    * @var null|NULL $total_count;
     */
     public $total_count = null;
 
@@ -31,8 +31,8 @@ class RelatedKeywordsLiveEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|RelatedKeywordsLiveEntityMainTasksResultItems[] $items;
+    * @var null|NULL $items;
     */
-    public $items = [];
+    public $items = null;
  
 }

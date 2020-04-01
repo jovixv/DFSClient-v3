@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info;
+use DFSClientV3\Entity\Custom\KeywordSuggestionsLiveEntityMainTasksResultItemsImpressions_info;
 
 class KeywordSuggestionsLiveEntityMainTasksResultItems 
 {    
@@ -27,7 +28,7 @@ class KeywordSuggestionsLiveEntityMainTasksResultItems
     public $keyword_info = null;
 
     /**
-    * @var null|NULL $impressions_info;
+    * @var null|KeywordSuggestionsLiveEntityMainTasksResultItemsImpressions_info $impressions_info;
     */
     public $impressions_info = null;
  
