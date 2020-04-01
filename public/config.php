@@ -2,8 +2,8 @@
 
 return $config = [
 
-    'DATAFORSEO_LOGIN'       => 'YOUR_LOGIN',
-    'DATAFORSEO_PASSWORD'    => 'YOUR_DATAFORSEO_PASSWORD',
+    'DATAFORSEO_LOGIN'       => 'login',
+    'DATAFORSEO_PASSWORD'    => 'password',
 
     'timeoutForEachRequests' => 30,
     'apiVersion'             => '/v3/',

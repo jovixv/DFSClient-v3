@@ -17,16 +17,22 @@ use DFSClientV3\Services\Logger\Logger;
 
 $client = new DFSClient();
 $client->setConfig('C:\OSPanel\domains\dfs-v3\public\config.php');
-//$model = new \DFSClientV3\Models\SERP_API\Locations();
+//$model = new \DFSClientV3\Models\SERP_API\SettingSerpTasks();
 
-$model = new \DFSClientV3\Models\KeywordsDataApi\Google_Trends\Explore\GoogleTrendsLive();
+$model = new \DFSClientV3\Models\SERP_API\Reviews\ReviewsGetResultsByTaskId();
 //$logger = new Logger();
-$res = $model->setKeywords(['indian pale ale'])->setDateFrom('2019-12-30')->setDateTo('2020-02-10')->get();
+//$res = $model->setKeywords(['indian pale ale'])->setLanguageCode('en')->setLocationCode(2840)
+//    ->setLimit(50);
+//$res = $model->setKeyword('isolation')->setLanguageCode('en')->setLocationCode(2840)->get();
+//$res = $model->setSe('google')->setKeyword('albert einstein science')
+//    ->setLanguageCode('en')->setLocationCode(2840)->get();
 
-////
+// 04011430-2081-0199-0000-67a7cab35d5a reviews task
+
 //dd($res->tasks[0]->result[10]);
 //$res = $model->setSe('google')->setKeywords(['защитная маска'])->setBid(1.00)->setMatch('exact')->setLanguageCode('ru')
 //    ->setLocationCode(2840)->get();
+$res = $model->setSe('google')->setTaskId('04011430-2081-0199-0000-67a7cab35d5a')->get();
 dd($res);
 $cr = new EntityCreator('C:\OSPanel\domains\dfs-v3\src\DFSClient\Entity\Custom');
 //

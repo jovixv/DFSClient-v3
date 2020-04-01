@@ -1,17 +1,17 @@
 <?php
 
 
-namespace DFSClientV3\Models\SERP_API;
+namespace DFSClientV3\Models\SERP_API\Reviews;
 
 
 use DFSClientV3\Models\AbstractModel;
 
-class Languages extends AbstractModel
+class ReviewsLocations extends AbstractModel
 {
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'serp/{$se}/languages';
+    protected $requestToFunction = 'reviews/{$se}/locations';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
@@ -25,10 +25,11 @@ class Languages extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\LanguagesEntityMain
+     * @return \DFSClientV3\Entity\Custom\ReviewsLocationsEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\LanguagesEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\ReviewsLocationsEntityMain
     {
         return parent::get();
     }
+
 }

@@ -1,17 +1,17 @@
 <?php
 
 
-namespace DFSClientV3\Models\SERP_API;
+namespace DFSClientV3\Models\SERP_API\Reviews;
 
 
 use DFSClientV3\Models\AbstractModel;
 
-class Locations extends AbstractModel
+class ReviewsGetResultsByTaskId extends AbstractModel
 {
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'serp/{$se}/locations/{$country}';
+    protected $requestToFunction = 'reviews/{$se}/task_get/{$taskUID}';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
@@ -25,20 +25,21 @@ class Locations extends AbstractModel
     }
 
     /**
-     * @param string $country
+     * @param string $taskUID
      * @return $this
      */
-    public function setCountry(string $country)
+    public function setTaskId(string $taskUID)
     {
-        $this->requestToFunction = str_replace('{$country}', $country, $this->requestToFunction);
+        $this->requestToFunction = str_replace('{$taskUID}', $taskUID, $this->requestToFunction);
         return $this;
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\LocationsEntityMain
+     * @return \DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\LocationsEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMain
     {
         return parent::get();
     }
+
 }
