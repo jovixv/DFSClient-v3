@@ -5,31 +5,30 @@ namespace DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch;
 
 
 use DFSClientV3\Models\AbstractModel;
-use DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keywords\KeywordsForKeywordLive;
 
-class KeywordIdeas extends AbstractModel
+class RelatedKeywordsLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/keyword_ideas/live';
+    protected $requestToFunction = 'dataforseo_labs/related_keywords/live';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\KeywordIdeasEntityMain
+     * @return \DFSClientV3\Entity\Custom\RelatedKeywordsLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\KeywordIdeasEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\RelatedKeywordsLiveEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @param array $keywords
+     * @param string $keyword
      * @return $this
      */
-    public function setKeywords(array $keywords)
+    public function setKeyword(string $keyword)
     {
-        $this->payload['keywords'] = $keywords;
+        $this->payload['keyword'] = $keyword;
 
         return $this;
     }
@@ -77,12 +76,12 @@ class KeywordIdeas extends AbstractModel
     }
 
     /**
-     * @param bool $closelyVariants
+     * @param int $depth
      * @return $this
      */
-    public function setCloselyVariants(bool $closelyVariants)
+    public function setDepth(int $depth)
     {
-        $this->payload['closely_variants'] = $closelyVariants;
+        $this->payload['depth'] = $depth;
 
         return $this;
     }
@@ -116,6 +115,17 @@ class KeywordIdeas extends AbstractModel
     public function setLimit(int $limit)
     {
         $this->payload['limit'] = $limit;
+
+        return $this;
+    }
+
+    /**
+     * @param int $offset
+     * @return $this
+     */
+    public function setOffset(int $offset)
+    {
+        $this->payload['offset'] = $offset;
 
         return $this;
     }

@@ -5,9 +5,8 @@ namespace DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch;
 
 
 use DFSClientV3\Models\AbstractModel;
-use DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keywords\KeywordsForKeywordLive;
 
-class KeywordSuggestions extends AbstractModel
+class KeywordSuggestionsLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
@@ -16,9 +15,9 @@ class KeywordSuggestions extends AbstractModel
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\KeywordSuggestionsEntityMain
+     * @return \DFSClientV3\Entity\Custom\KeywordSuggestionsLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\KeywordSuggestionsEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\KeywordSuggestionsLiveEntityMain
     {
         return parent::get();
     }

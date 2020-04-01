@@ -19,11 +19,13 @@ $client = new DFSClient();
 $client->setConfig('C:\OSPanel\domains\dfs-v3\public\config.php');
 //$model = new \DFSClientV3\Models\SERP_API\SettingSerpTasks();
 
-$model = new \DFSClientV3\Models\SERP_API\Reviews\ReviewsGetResultsByTaskId();
+$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\KeywordSuggestionsLive();
+//$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\RelatedKeywordsLive();
 //$logger = new Logger();
 //$res = $model->setKeywords(['indian pale ale'])->setLanguageCode('en')->setLocationCode(2840)
 //    ->setLimit(50);
-//$res = $model->setKeyword('isolation')->setLanguageCode('en')->setLocationCode(2840)->get();
+$res = $model->setKeyword('isolation fear')->setLanguageCode('en')
+    ->setLocationCode(2840)->setLimit(5)->get();
 //$res = $model->setSe('google')->setKeyword('albert einstein science')
 //    ->setLanguageCode('en')->setLocationCode(2840)->get();
 
@@ -32,7 +34,7 @@ $model = new \DFSClientV3\Models\SERP_API\Reviews\ReviewsGetResultsByTaskId();
 //dd($res->tasks[0]->result[10]);
 //$res = $model->setSe('google')->setKeywords(['защитная маска'])->setBid(1.00)->setMatch('exact')->setLanguageCode('ru')
 //    ->setLocationCode(2840)->get();
-$res = $model->setSe('google')->setTaskId('04011430-2081-0199-0000-67a7cab35d5a')->get();
+//$res = $model->setSe('google')->setTaskId('04011430-2081-0199-0000-67a7cab35d5a')->get();
 dd($res);
 $cr = new EntityCreator('C:\OSPanel\domains\dfs-v3\src\DFSClient\Entity\Custom');
 //

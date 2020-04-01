@@ -5,31 +5,30 @@ namespace DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch;
 
 
 use DFSClientV3\Models\AbstractModel;
-use DFSClientV3\Models\KeywordsDataApi\Keywords_For_Keywords\KeywordsForKeywordLive;
 
-class RelatedKeywords extends AbstractModel
+class KeywordIdeasLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/related_keywords/live';
+    protected $requestToFunction = 'dataforseo_labs/keyword_ideas/live';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\RelatedKeywordsEntityMain
+     * @return \DFSClientV3\Entity\Custom\KeywordIdeasLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\RelatedKeywordsEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\KeywordIdeasLiveEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @param string $keyword
+     * @param array $keywords
      * @return $this
      */
-    public function setKeyword(string $keyword)
+    public function setKeywords(array $keywords)
     {
-        $this->payload['keyword'] = $keyword;
+        $this->payload['keywords'] = $keywords;
 
         return $this;
     }
@@ -77,12 +76,12 @@ class RelatedKeywords extends AbstractModel
     }
 
     /**
-     * @param int $depth
+     * @param bool $closelyVariants
      * @return $this
      */
-    public function setDepth(int $depth)
+    public function setCloselyVariants(bool $closelyVariants)
     {
-        $this->payload['depth'] = $depth;
+        $this->payload['closely_variants'] = $closelyVariants;
 
         return $this;
     }
@@ -116,17 +115,6 @@ class RelatedKeywords extends AbstractModel
     public function setLimit(int $limit)
     {
         $this->payload['limit'] = $limit;
-
-        return $this;
-    }
-
-    /**
-     * @param int $offset
-     * @return $this
-     */
-    public function setOffset(int $offset)
-    {
-        $this->payload['offset'] = $offset;
 
         return $this;
     }
