@@ -17,7 +17,7 @@ class RelatedKeywordsLiveEntityMainTasksResultItems
     public $depth = null;
 
     /**
-    * @var null|array $related_keywords;
+    * @var null|NULL $related_keywords;
     */
     public $related_keywords = null;
  

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class KeywordSuggestionsLiveEntityMainTasksResultItemsImpressions_info 
+class RelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info 
 {    
     /**
     * @var null|string $last_updated_time;
