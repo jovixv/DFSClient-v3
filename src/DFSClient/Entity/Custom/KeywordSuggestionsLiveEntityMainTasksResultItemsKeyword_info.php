@@ -12,12 +12,12 @@ class KeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info
     public $last_updated_time = null;
 
     /**
-    * @var null|NULL $competition;
+    * @var null|double $competition;
     */
     public $competition = null;
 
     /**
-    * @var null|NULL $cpc;
+    * @var null|double $cpc;
     */
     public $cpc = null;
 
