@@ -19,15 +19,14 @@ $client = new DFSClient();
 $client->setConfig('C:\OSPanel\domains\dfs-v3\public\config.php');
 //$model = new \DFSClientV3\Models\SERP_API\SettingSerpTasks();
 
-$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\KeywordIdeasLive();
+$model = new \DFSClientV3\Models\DataForSeoLabsApi\MarketSpecificAnalysis\RankedDomainsByCategoryLive();
 //$model = new \DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch\RelatedKeywordsLive();
 //$logger = new Logger();
-$res = $model->setKeywords(['covid'])->setLanguageCode('en')->setLocationCode(2840)
-    ->setLimit(50)->get();
+//$res = $model->setKeywords(['covid'])->setLanguageCode('en')->setLocationCode(2840)
+//    ->setLimit(50)->get();
 //$res = $model->setKeyword('covid')->setLanguageCode('en')
 //    ->setLocationCode(2840);
-//$res = $model->setSe('google')->setKeyword('albert einstein science')
-//    ->setLanguageCode('en')->setLocationCode(2840)->get();
+$res = $model->setCategoryCodes([12191, 12193])->setLanguageCode('en')->setLocationCode(2840)->get();
 
 // 04011430-2081-0199-0000-67a7cab35d5a reviews task
 
