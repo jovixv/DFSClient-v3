@@ -1,4 +1,5 @@
 /vendor
 /.idea
 /workshop
-/public
+/public/config.php
+/public/test.oho.php
