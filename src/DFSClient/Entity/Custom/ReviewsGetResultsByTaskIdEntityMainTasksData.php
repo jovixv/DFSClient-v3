@@ -21,11 +21,6 @@ class ReviewsGetResultsByTaskIdEntityMainTasksData
     public $se = null;
 
     /**
-    * @var null|string $keyword;
-    */
-    public $keyword = null;
-
-    /**
     * @var null|string $language_code;
     */
     public $language_code = null;
@@ -34,6 +29,16 @@ class ReviewsGetResultsByTaskIdEntityMainTasksData
     * @var null|integer $location_code;
     */
     public $location_code = null;
+
+    /**
+    * @var null|string $keyword;
+    */
+    public $keyword = null;
+
+    /**
+    * @var null|integer $depth;
+    */
+    public $depth = null;
 
     /**
     * @var null|string $device;
