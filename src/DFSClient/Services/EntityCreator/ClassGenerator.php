@@ -73,6 +73,10 @@ class ClassGenerator
                     $value = (array)$value;
                 }
 
+                // kostyl
+                if ($key == 'estimated' && $sufix === 'MainTasksResultTraffic')
+                    $value = (array)$value;
+
                 if (is_object($value) || is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
                     if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult' && $key === 'items'){

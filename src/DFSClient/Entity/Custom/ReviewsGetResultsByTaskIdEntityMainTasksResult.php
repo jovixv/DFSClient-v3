@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResultRating;
 
 class ReviewsGetResultsByTaskIdEntityMainTasksResult 
 {    
@@ -41,32 +42,32 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResult
     public $datetime = null;
 
     /**
-    * @var null|NULL $title;
+    * @var null|string $title;
     */
     public $title = null;
 
     /**
-    * @var null|NULL $sub_title;
+    * @var null|string $sub_title;
     */
     public $sub_title = null;
 
     /**
-    * @var null|NULL $rating;
+    * @var null|ReviewsGetResultsByTaskIdEntityMainTasksResultRating $rating;
     */
     public $rating = null;
 
     /**
-    * @var null|NULL $feature_id;
+    * @var null|string $feature_id;
     */
     public $feature_id = null;
 
     /**
-    * @var null|NULL $place_id;
+    * @var null|string $place_id;
     */
     public $place_id = null;
 
     /**
-    * @var null|NULL $reviews_count;
+    * @var null|integer $reviews_count;
     */
     public $reviews_count = null;
 
@@ -76,8 +77,8 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var null|NULL $items;
+    * array|ReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
     */
-    public $items = null;
+    public $items = [];
  
 }
