@@ -4,7 +4,6 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficCountries;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSources;
-use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated;
 
 class TrafficAnalyticsLiveEntityMainTasksResultTraffic 
 {    
@@ -29,7 +28,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTraffic
     public $sources = null;
 
     /**
-    * @var null|TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated $estimated;
+    * @var null|array $estimated;
     */
     public $estimated = null;
  

@@ -66,12 +66,12 @@ class RankedKeywordsLiveEntityMainTasksResultMetricsPaid
     public $pos_91_100 = null;
 
     /**
-    * @var null|integer $etv;
+    * @var null|double $etv;
     */
     public $etv = null;
 
     /**
-    * @var null|integer $impressions_etv;
+    * @var null|double $impressions_etv;
     */
     public $impressions_etv = null;
 
@@ -81,7 +81,7 @@ class RankedKeywordsLiveEntityMainTasksResultMetricsPaid
     public $count = null;
 
     /**
-    * @var null|integer $estimated_paid_traffic_cost;
+    * @var null|double $estimated_paid_traffic_cost;
     */
     public $estimated_paid_traffic_cost = null;
  

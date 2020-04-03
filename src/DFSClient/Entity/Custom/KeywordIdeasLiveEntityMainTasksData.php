@@ -29,10 +29,5 @@ class KeywordIdeasLiveEntityMainTasksData
     * @var null|integer $location_code;
     */
     public $location_code = null;
-
-    /**
-    * @var null|integer $limit;
-    */
-    public $limit = null;
  
 }

@@ -76,7 +76,7 @@ class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
     public $description = null;
 
     /**
-    * @var null|NULL $pre_snippet;
+    * @var null|string $pre_snippet;
     */
     public $pre_snippet = null;
 
@@ -96,7 +96,7 @@ class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
     public $rating = null;
 
     /**
-    * @var null|array $highlighted;
+    * @var null|NULL $highlighted;
     */
     public $highlighted = null;
 
@@ -121,7 +121,7 @@ class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
     public $etv = null;
 
     /**
-    * @var null|NULL $impressions_etv;
+    * @var null|double $impressions_etv;
     */
     public $impressions_etv = null;
 

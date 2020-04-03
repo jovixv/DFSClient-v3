@@ -21,6 +21,11 @@ class RankedDomainsByCategoryLiveEntityMainTasksData
     public $category_codes = null;
 
     /**
+    * @var null|integer $limit;
+    */
+    public $limit = null;
+
+    /**
     * @var null|string $language_code;
     */
     public $language_code = null;

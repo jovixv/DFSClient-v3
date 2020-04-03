@@ -2,7 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMainTasksResultItemsKeywords_positions;
 
 class SerpCompetitorsLiveEntityMainTasksResultItems 
 {    
@@ -37,7 +36,7 @@ class SerpCompetitorsLiveEntityMainTasksResultItems
     public $keywords_count = null;
 
     /**
-    * @var null|double $visibility;
+    * @var null|integer $visibility;
     */
     public $visibility = null;
 
@@ -47,7 +46,7 @@ class SerpCompetitorsLiveEntityMainTasksResultItems
     public $relevant_serp_items = null;
 
     /**
-    * @var null|SerpCompetitorsLiveEntityMainTasksResultItemsKeywords_positions $keywords_positions;
+    * @var null|array $keywords_positions;
     */
     public $keywords_positions = null;
  
