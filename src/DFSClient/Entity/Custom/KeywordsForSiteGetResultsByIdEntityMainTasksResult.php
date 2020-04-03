@@ -22,7 +22,7 @@ class KeywordsForSiteGetResultsByIdEntityMainTasksResult
     public $language_code = null;
 
     /**
-    * @var null|double $competition;
+    * @var null|integer $competition;
     */
     public $competition = null;
 
@@ -37,7 +37,7 @@ class KeywordsForSiteGetResultsByIdEntityMainTasksResult
     public $search_volume = null;
 
     /**
-    * @var null|array $categories;
+    * @var null|NULL $categories;
     */
     public $categories = null;
 

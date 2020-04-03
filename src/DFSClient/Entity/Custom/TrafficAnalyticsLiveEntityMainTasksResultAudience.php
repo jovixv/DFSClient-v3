@@ -16,12 +16,12 @@ class TrafficAnalyticsLiveEntityMainTasksResultAudience
     public $time_on_site_avg = null;
 
     /**
-    * @var null|integer $page_views_avg;
+    * @var null|double $page_views_avg;
     */
     public $page_views_avg = null;
 
     /**
-    * @var null|integer $bounce_rate;
+    * @var null|double $bounce_rate;
     */
     public $bounce_rate = null;
  

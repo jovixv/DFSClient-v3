@@ -16,7 +16,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTrafficCountries
     public $value = null;
 
     /**
-    * @var null|integer $percent;
+    * @var null|double $percent;
     */
     public $percent = null;
  

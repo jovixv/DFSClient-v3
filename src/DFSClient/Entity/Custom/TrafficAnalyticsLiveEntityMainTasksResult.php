@@ -50,5 +50,10 @@ class TrafficAnalyticsLiveEntityMainTasksResult
     * @var null|TrafficAnalyticsLiveEntityMainTasksResultSites $sites;
     */
     public $sites = null;
+
+    /**
+    * @var null|string $date;
+    */
+    public $date = null;
  
 }

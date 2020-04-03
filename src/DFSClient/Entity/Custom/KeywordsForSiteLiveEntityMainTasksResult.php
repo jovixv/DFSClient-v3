@@ -12,17 +12,17 @@ class KeywordsForSiteLiveEntityMainTasksResult
     public $keyword = null;
 
     /**
-    * @var null|NULL $location_code;
+    * @var null|integer $location_code;
     */
     public $location_code = null;
 
     /**
-    * @var null|NULL $language_code;
+    * @var null|string $language_code;
     */
     public $language_code = null;
 
     /**
-    * @var null|double $competition;
+    * @var null|integer $competition;
     */
     public $competition = null;
 
@@ -37,7 +37,7 @@ class KeywordsForSiteLiveEntityMainTasksResult
     public $search_volume = null;
 
     /**
-    * @var null|array $categories;
+    * @var null|NULL $categories;
     */
     public $categories = null;
 

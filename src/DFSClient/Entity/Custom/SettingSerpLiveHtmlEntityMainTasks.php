@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveHtmlEntityMainTasksData;
+use DFSClientV3\Entity\Custom\SettingSerpLiveHtmlEntityMainTasksResult;
 
 class SettingSerpLiveHtmlEntityMainTasks 
 {    
@@ -27,7 +28,7 @@ class SettingSerpLiveHtmlEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 
@@ -47,8 +48,8 @@ class SettingSerpLiveHtmlEntityMainTasks
     public $data = null;
 
     /**
-    * @var null|array $result;
+    * array|SettingSerpLiveHtmlEntityMainTasksResult[] $result;
     */
-    public $result = null;
+    public $result = [];
  
 }

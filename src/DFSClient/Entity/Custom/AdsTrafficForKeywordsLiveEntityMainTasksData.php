@@ -26,6 +26,11 @@ class AdsTrafficForKeywordsLiveEntityMainTasksData
     public $keywords = null;
 
     /**
+    * @var null|string $language_code;
+    */
+    public $language_code = null;
+
+    /**
     * @var null|integer $bid;
     */
     public $bid = null;
@@ -34,11 +39,6 @@ class AdsTrafficForKeywordsLiveEntityMainTasksData
     * @var null|string $match;
     */
     public $match = null;
-
-    /**
-    * @var null|string $language_code;
-    */
-    public $language_code = null;
 
     /**
     * @var null|integer $location_code;

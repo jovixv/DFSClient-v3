@@ -6,17 +6,17 @@ namespace DFSClientV3\Entity\Custom;
 class KeywordsForCategoriesLiveEntityMainTasksResultItemsImpressions_info 
 {    
     /**
-    * @var null|NULL $last_updated_time;
+    * @var null|string $last_updated_time;
     */
     public $last_updated_time = null;
 
     /**
-    * @var null|NULL $bid;
+    * @var null|integer $bid;
     */
     public $bid = null;
 
     /**
-    * @var null|NULL $match_type;
+    * @var null|string $match_type;
     */
     public $match_type = null;
 

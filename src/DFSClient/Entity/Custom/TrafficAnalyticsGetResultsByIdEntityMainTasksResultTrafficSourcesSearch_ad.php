@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_adTop_keywords;
 
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_ad 
 {    
@@ -11,13 +12,13 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_ad
     public $value = null;
 
     /**
-    * @var null|integer $percent;
+    * @var null|double $percent;
     */
     public $percent = null;
 
     /**
-    * @var null|NULL $top_keywords;
+    * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_adTop_keywords[] $top_keywords;
     */
-    public $top_keywords = null;
+    public $top_keywords = [];
  
 }

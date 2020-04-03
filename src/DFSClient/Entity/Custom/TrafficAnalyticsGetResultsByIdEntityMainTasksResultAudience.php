@@ -11,17 +11,17 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience
     public $visits = null;
 
     /**
-    * @var null|NULL $time_on_site_avg;
+    * @var null|string $time_on_site_avg;
     */
     public $time_on_site_avg = null;
 
     /**
-    * @var null|integer $page_views_avg;
+    * @var null|double $page_views_avg;
     */
     public $page_views_avg = null;
 
     /**
-    * @var null|integer $bounce_rate;
+    * @var null|double $bounce_rate;
     */
     public $bounce_rate = null;
  

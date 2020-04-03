@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficCountries;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSources;
 
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic 
@@ -17,9 +18,9 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic
     public $percent = null;
 
     /**
-    * @var null|NULL $countries;
+    * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficCountries[] $countries;
     */
-    public $countries = null;
+    public $countries = [];
 
     /**
     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSources $sources;
@@ -27,7 +28,7 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic
     public $sources = null;
 
     /**
-    * @var null|NULL $estimated;
+    * @var null|array $estimated;
     */
     public $estimated = null;
  

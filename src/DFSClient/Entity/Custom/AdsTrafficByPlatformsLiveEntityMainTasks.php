@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsLiveEntityMainTasksData;
+use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsLiveEntityMainTasksResult;
 
 class AdsTrafficByPlatformsLiveEntityMainTasks 
 {    
@@ -27,7 +28,7 @@ class AdsTrafficByPlatformsLiveEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 
@@ -47,8 +48,8 @@ class AdsTrafficByPlatformsLiveEntityMainTasks
     public $data = null;
 
     /**
-    * @var null|array $result;
+    * array|AdsTrafficByPlatformsLiveEntityMainTasksResult[] $result;
     */
-    public $result = null;
+    public $result = [];
  
 }

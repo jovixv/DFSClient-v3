@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials;
 
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocial 
 {    
@@ -11,13 +12,13 @@ class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocial
     public $value = null;
 
     /**
-    * @var null|integer $percent;
+    * @var null|double $percent;
     */
     public $percent = null;
 
     /**
-    * @var null|NULL $top_socials;
+    * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials[] $top_socials;
     */
-    public $top_socials = null;
+    public $top_socials = [];
  
 }

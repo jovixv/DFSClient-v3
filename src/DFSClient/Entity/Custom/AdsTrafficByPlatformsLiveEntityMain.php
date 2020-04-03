@@ -27,7 +27,7 @@ class AdsTrafficByPlatformsLiveEntityMain extends \DFSClientV3\Models\ResponseMo
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 
