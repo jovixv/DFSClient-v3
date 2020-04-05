@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating;
+use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementLinks;
 
 class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element 
 {    
@@ -76,12 +78,12 @@ class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element
     public $description = null;
 
     /**
-    * @var null|NULL $pre_snippet;
+    * @var null|string $pre_snippet;
     */
     public $pre_snippet = null;
 
     /**
-    * @var null|NULL $extended_snippet;
+    * @var null|string $extended_snippet;
     */
     public $extended_snippet = null;
 
@@ -91,7 +93,7 @@ class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element
     public $amp_version = null;
 
     /**
-    * @var null|NULL $rating;
+    * @var null|DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating $rating;
     */
     public $rating = null;
 
@@ -101,7 +103,7 @@ class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element
     public $highlighted = null;
 
     /**
-    * @var null|NULL $links;
+    * @var null|DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementLinks $links;
     */
     public $links = null;
 
@@ -121,7 +123,7 @@ class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element
     public $etv = null;
 
     /**
-    * @var null|NULL $impressions_etv;
+    * @var null|double $impressions_etv;
     */
     public $impressions_etv = null;
 

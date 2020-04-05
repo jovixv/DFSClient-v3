@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating;
+use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemLinks;
 
 class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item 
 {    
@@ -81,7 +83,7 @@ class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
     public $pre_snippet = null;
 
     /**
-    * @var null|NULL $extended_snippet;
+    * @var null|string $extended_snippet;
     */
     public $extended_snippet = null;
 
@@ -91,17 +93,17 @@ class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
     public $amp_version = null;
 
     /**
-    * @var null|NULL $rating;
+    * @var null|RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating $rating;
     */
     public $rating = null;
 
     /**
-    * @var null|NULL $highlighted;
+    * @var null|array $highlighted;
     */
     public $highlighted = null;
 
     /**
-    * @var null|NULL $links;
+    * @var null|RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemLinks $links;
     */
     public $links = null;
 
@@ -116,7 +118,7 @@ class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
     public $relative_url = null;
 
     /**
-    * @var null|integer $etv;
+    * @var null|double $etv;
     */
     public $etv = null;
 

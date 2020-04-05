@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\KeywordIdeasEntityMainTasks;
+use DFSClientV3\Entity\Custom\ErrorsEntityMainTasks;
 
-class KeywordIdeasEntityMain extends \DFSClientV3\Models\ResponseModel 
+class ErrorsEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string $version;
@@ -27,7 +27,7 @@ class KeywordIdeasEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,13 +42,13 @@ class KeywordIdeasEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * array|KeywordIdeasEntityMainTasks[] $tasks;
+    * array|ErrorsEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\KeywordIdeasEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\ErrorsEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

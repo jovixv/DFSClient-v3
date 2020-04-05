@@ -71,7 +71,7 @@ class DomainRankOverviewLiveEntityMainTasksResultItemsMetricsPaid
     public $etv = null;
 
     /**
-    * @var null|integer $impressions_etv;
+    * @var null|double $impressions_etv;
     */
     public $impressions_etv = null;
 

@@ -41,7 +41,7 @@ class KeywordIdeasLiveEntityMainTasksResultItemsImpressions_info
     public $cpc_min = null;
 
     /**
-    * @var null|double $cpc_max;
+    * @var null|integer $cpc_max;
     */
     public $cpc_max = null;
 

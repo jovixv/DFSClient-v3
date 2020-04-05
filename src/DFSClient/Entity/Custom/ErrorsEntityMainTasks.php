@@ -2,10 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\KeywordIdeasEntityMainTasksData;
-use DFSClientV3\Entity\Custom\KeywordIdeasEntityMainTasksResult;
+use DFSClientV3\Entity\Custom\ErrorsEntityMainTasksData;
+use DFSClientV3\Entity\Custom\ErrorsEntityMainTasksResult;
 
-class KeywordIdeasEntityMainTasks 
+class ErrorsEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -28,7 +28,7 @@ class KeywordIdeasEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -43,12 +43,12 @@ class KeywordIdeasEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|KeywordIdeasEntityMainTasksData $data;
+    * @var null|ErrorsEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * array|KeywordIdeasEntityMainTasksResult[] $result;
+    * array|ErrorsEntityMainTasksResult[] $result;
     */
     public $result = [];
  

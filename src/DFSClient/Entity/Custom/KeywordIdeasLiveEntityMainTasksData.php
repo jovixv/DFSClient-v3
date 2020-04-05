@@ -21,6 +21,11 @@ class KeywordIdeasLiveEntityMainTasksData
     public $keywords = null;
 
     /**
+    * @var null|integer $limit;
+    */
+    public $limit = null;
+
+    /**
     * @var null|string $language_code;
     */
     public $language_code = null;

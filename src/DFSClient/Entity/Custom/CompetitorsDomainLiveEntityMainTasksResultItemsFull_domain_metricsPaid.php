@@ -66,7 +66,7 @@ class CompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsPaid
     public $pos_91_100 = null;
 
     /**
-    * @var null|integer $etv;
+    * @var null|double $etv;
     */
     public $etv = null;
 
@@ -81,7 +81,7 @@ class CompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsPaid
     public $count = null;
 
     /**
-    * @var null|integer $estimated_paid_traffic_cost;
+    * @var null|double $estimated_paid_traffic_cost;
     */
     public $estimated_paid_traffic_cost = null;
  

@@ -27,7 +27,7 @@ class KeywordSuggestionsEntityMainTasksResultItems
     public $keyword_info = null;
 
     /**
-    * @var null|NULL $impressions_info;
+    * @var null|KeywordSuggestionsEntityMainTasksResultItemsImpressions_info $impressions_info;
     */
     public $impressions_info = null;
  

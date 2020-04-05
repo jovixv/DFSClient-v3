@@ -12,7 +12,7 @@ class RelatedKeywordsEntityMainTasksResultItems
     public $keyword_data = null;
 
     /**
-    * @var null|NULL $depth;
+    * @var null|integer $depth;
     */
     public $depth = null;
 

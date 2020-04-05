@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
+class RankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating 
 {    
     /**
     * @var null|string $rating_type;
@@ -11,7 +11,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating
     public $rating_type = null;
 
     /**
-    * @var null|integer $value;
+    * @var null|double $value;
     */
     public $value = null;
 

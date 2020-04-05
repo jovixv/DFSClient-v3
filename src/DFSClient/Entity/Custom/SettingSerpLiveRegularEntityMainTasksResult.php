@@ -41,7 +41,7 @@ class SettingSerpLiveRegularEntityMainTasksResult
     public $datetime = null;
 
     /**
-    * @var null|NULL $spell;
+    * @var null|SettingSerpLiveRegularEntityMainTasksResultSpell $spell;
     */
     public $spell = null;
 

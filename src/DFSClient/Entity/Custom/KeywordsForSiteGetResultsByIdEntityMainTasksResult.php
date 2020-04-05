@@ -37,7 +37,7 @@ class KeywordsForSiteGetResultsByIdEntityMainTasksResult
     public $search_volume = null;
 
     /**
-    * @var null|NULL $categories;
+    * @var null|array $categories;
     */
     public $categories = null;
 
