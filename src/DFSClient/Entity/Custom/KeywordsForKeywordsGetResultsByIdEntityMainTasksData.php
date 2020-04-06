@@ -26,16 +26,6 @@ class KeywordsForKeywordsGetResultsByIdEntityMainTasksData
     public $keywords = null;
 
     /**
-    * @var null|integer $bid;
-    */
-    public $bid = null;
-
-    /**
-    * @var null|string $match;
-    */
-    public $match = null;
-
-    /**
     * @var null|string $language_code;
     */
     public $language_code = null;

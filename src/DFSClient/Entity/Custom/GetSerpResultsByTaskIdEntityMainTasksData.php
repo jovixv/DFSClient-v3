@@ -26,9 +26,9 @@ class GetSerpResultsByTaskIdEntityMainTasksData
     public $se_type = null;
 
     /**
-    * @var null|integer $location_code;
+    * @var null|string $keyword;
     */
-    public $location_code = null;
+    public $keyword = null;
 
     /**
     * @var null|string $language_code;
@@ -36,9 +36,9 @@ class GetSerpResultsByTaskIdEntityMainTasksData
     public $language_code = null;
 
     /**
-    * @var null|string $keyword;
+    * @var null|integer $location_code;
     */
-    public $keyword = null;
+    public $location_code = null;
 
     /**
     * @var null|string $device;

@@ -21,19 +21,9 @@ class KeywordsForSiteGetResultsByIdEntityMainTasksData
     public $se = null;
 
     /**
-    * @var null|array $keywords;
+    * @var null|string $target;
     */
-    public $keywords = null;
-
-    /**
-    * @var null|integer $bid;
-    */
-    public $bid = null;
-
-    /**
-    * @var null|string $match;
-    */
-    public $match = null;
+    public $target = null;
 
     /**
     * @var null|string $language_code;

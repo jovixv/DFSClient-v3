@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleK
 class UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLive 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLivePriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLivePriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLivePriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLivePriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLivePriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_categoryLivePriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }

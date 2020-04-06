@@ -41,7 +41,7 @@ class GetSerpResultsByTaskIdEntityMainTasksResult
     public $datetime = null;
 
     /**
-    * @var null|NULL $spell;
+    * @var null|GetSerpResultsByTaskIdEntityMainTasksResultSpell $spell;
     */
     public $spell = null;
 

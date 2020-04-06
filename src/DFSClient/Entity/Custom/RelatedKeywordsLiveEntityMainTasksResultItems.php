@@ -12,12 +12,12 @@ class RelatedKeywordsLiveEntityMainTasksResultItems
     public $keyword_data = null;
 
     /**
-    * @var null|NULL $depth;
+    * @var null|integer $depth;
     */
     public $depth = null;
 
     /**
-    * @var null|NULL $related_keywords;
+    * @var null|array $related_keywords;
     */
     public $related_keywords = null;
  

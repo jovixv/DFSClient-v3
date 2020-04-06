@@ -183,9 +183,9 @@ class SettingSerpLiveRegular extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
+     * @return \DFSClientV3\Entity\Custom\SettingSerpLiveRegularEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\SettingSerpLiveRegularEntityMain
     {
         return parent::get();
     }

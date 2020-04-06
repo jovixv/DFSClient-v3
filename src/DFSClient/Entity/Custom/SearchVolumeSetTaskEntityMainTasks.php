@@ -47,7 +47,7 @@ class SearchVolumeSetTaskEntityMainTasks
     public $data = null;
 
     /**
-    * @var null|NULL $result;
+    * @var null|array $result;
     */
     public $result = null;
  

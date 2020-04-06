@@ -16,7 +16,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating
     public $value = null;
 
     /**
-    * @var null|NULL $votes_count;
+    * @var null|integer $votes_count;
     */
     public $votes_count = null;
 

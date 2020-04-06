@@ -16,7 +16,7 @@ class ReviewsLocationsEntityMainTasksResult
     public $location_name = null;
 
     /**
-    * @var null|NULL $location_code_parent;
+    * @var null|integer $location_code_parent;
     */
     public $location_code_parent = null;
 

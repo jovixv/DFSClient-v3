@@ -22,7 +22,7 @@ class KeywordsForSiteGetResultsByIdEntityMainTasksResult
     public $language_code = null;
 
     /**
-    * @var null|double $competition;
+    * @var null|integer $competition;
     */
     public $competition = null;
 

@@ -140,9 +140,9 @@ class SearchVolumeLive extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\SearchVolumeSetTaskEntityMain
+     * @return \DFSClientV3\Entity\Custom\SearchVolumeLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\SearchVolumeSetTaskEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\SearchVolumeLiveEntityMain
     {
         return parent::get();
     }

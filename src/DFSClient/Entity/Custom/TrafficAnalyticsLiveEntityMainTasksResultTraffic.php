@@ -28,7 +28,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTraffic
     public $sources = null;
 
     /**
-    * @var null|NULL $estimated;
+    * @var null|array $estimated;
     */
     public $estimated = null;
  

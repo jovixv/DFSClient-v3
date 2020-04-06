@@ -27,7 +27,7 @@ class KeywordsForSiteSetTaskEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 

@@ -27,7 +27,7 @@ class KeywordsForSiteSetTaskEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 

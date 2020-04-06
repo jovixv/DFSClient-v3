@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleS
 class UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_post 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_postPriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_postPriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_postPriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_postPriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_postPriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volumeTask_postPriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }

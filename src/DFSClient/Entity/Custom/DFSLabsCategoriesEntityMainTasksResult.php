@@ -16,7 +16,7 @@ class DFSLabsCategoriesEntityMainTasksResult
     public $category_name = null;
 
     /**
-    * @var null|NULL $category_code_parent;
+    * @var null|integer $category_code_parent;
     */
     public $category_code_parent = null;
  

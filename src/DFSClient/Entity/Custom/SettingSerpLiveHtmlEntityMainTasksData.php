@@ -39,5 +39,15 @@ class SettingSerpLiveHtmlEntityMainTasksData
     * @var null|integer $location_code;
     */
     public $location_code = null;
+
+    /**
+    * @var null|string $device;
+    */
+    public $device = null;
+
+    /**
+    * @var null|string $os;
+    */
+    public $os = null;
  
 }

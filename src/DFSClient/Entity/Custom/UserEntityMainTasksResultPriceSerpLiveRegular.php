@@ -9,18 +9,18 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveRegularPrior
 class UserEntityMainTasksResultPriceSerpLiveRegular 
 {    
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLiveRegularPriority_low $priority_low;
+    * array|UserEntityMainTasksResultPriceSerpLiveRegularPriority_low[] $priority_low;
     */
-    public $priority_low = null;
+    public $priority_low = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLiveRegularPriority_normal $priority_normal;
+    * array|UserEntityMainTasksResultPriceSerpLiveRegularPriority_normal[] $priority_normal;
     */
-    public $priority_normal = null;
+    public $priority_normal = [];
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLiveRegularPriority_high $priority_high;
+    * array|UserEntityMainTasksResultPriceSerpLiveRegularPriority_high[] $priority_high;
     */
-    public $priority_high = null;
+    public $priority_high = [];
  
 }
