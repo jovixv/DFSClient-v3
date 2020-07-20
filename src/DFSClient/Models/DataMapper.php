@@ -126,6 +126,9 @@ class DataMapper
                 if ($classSuffix === 'EntityMainTasksResultTraffic' and $key  === 'estimated')
                     $value = (array)$value;
 
+                if ($key === 'keywords_positions' && $classSuffix === 'EntityMainTasksResultItems')
+                    $value = (array)$value;
+
                 if (is_object($value) || is_array($value) && $obj = ClassGenerator::arrayContainObject($value)) {
                     if (is_object($value)) {
                        $model->$key = $this->paveData(json_encode($value), $classSuffix.ucfirst($key), $resultCanBeTransformedToArray);
