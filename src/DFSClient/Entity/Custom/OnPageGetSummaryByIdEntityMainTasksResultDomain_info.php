@@ -58,9 +58,9 @@ class OnPageGetSummaryByIdEntityMainTasksResultDomain_info
     public $total_pages = null;
 
     /**
-    * @var null|integer $404_page_status_code;
+    * @var null|integer $page_not_found_status_code;
     */
-    public $404_page_status_code = null;
+    public $page_not_found_status_code = null;
 
     /**
     * @var null|integer $canonicalization_status_code;
