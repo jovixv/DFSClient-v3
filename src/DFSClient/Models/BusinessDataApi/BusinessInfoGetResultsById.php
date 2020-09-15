@@ -34,9 +34,9 @@ class BusinessInfoGetResultsById extends AbstractModel
 	}
 	
 	/**
-	 * @return \DFSClientV3\Entity\Custom\BusinessDataGetResultsByIdEntityMain
+	 * @return \DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\BusinessDataGetResultsByIdEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMain
 	{
 		return parent::get();
 	}
