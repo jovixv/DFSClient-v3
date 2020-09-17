@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsChecks;
+use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsAttributes;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsRating;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsPeople_also_search;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_time;
@@ -38,6 +38,16 @@ class BusinessInfoGetResultsByIdEntityMainTasksResultItems
     * @var null|string $description;
     */
     public $description = null;
+
+    /**
+    * @var null|string $category;
+    */
+    public $category = null;
+
+    /**
+    * @var null|array $additional_categories;
+    */
+    public $additional_categories = null;
 
     /**
     * @var null|string $cid;
@@ -80,9 +90,9 @@ class BusinessInfoGetResultsByIdEntityMainTasksResultItems
     public $snippet = null;
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsChecks $checks;
+    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsAttributes $attributes;
     */
-    public $checks = null;
+    public $attributes = null;
 
     /**
     * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsRating $rating;
@@ -98,10 +108,5 @@ class BusinessInfoGetResultsByIdEntityMainTasksResultItems
     * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_time $work_time;
     */
     public $work_time = null;
-
-    /**
-    * @var null|NULL $popular_times;
-    */
-    public $popular_times = null;
  
 }

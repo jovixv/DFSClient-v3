@@ -41,6 +41,11 @@ class BusinessInfoGetResultsByIdEntityMainTasksData
     public $keyword = null;
 
     /**
+    * @var null|integer $priority;
+    */
+    public $priority = null;
+
+    /**
     * @var null|string $device;
     */
     public $device = null;
