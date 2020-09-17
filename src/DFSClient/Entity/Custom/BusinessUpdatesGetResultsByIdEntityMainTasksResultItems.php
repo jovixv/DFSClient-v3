@@ -64,10 +64,4 @@ class BusinessUpdatesGetResultsByIdEntityMainTasksResultItems
     * @var null|string $timestamp;
     */
     public $timestamp = null;
-
-    /**
-    * @var null|NULL $links;
-    */
-    public $links = null;
- 
 }
