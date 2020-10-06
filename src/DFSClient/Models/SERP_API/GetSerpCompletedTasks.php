@@ -12,6 +12,8 @@ class GetSerpCompletedTasks extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'serp/{$se}/{$seType}/tasks_ready';
     protected $resultShouldBeTransformedToArray = true;
+    public $seType;
+    public $se;
 
     /**
      * @param string $seType
