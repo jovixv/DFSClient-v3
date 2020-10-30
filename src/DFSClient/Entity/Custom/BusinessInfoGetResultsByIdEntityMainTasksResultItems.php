@@ -108,5 +108,9 @@ class BusinessInfoGetResultsByIdEntityMainTasksResultItems
     * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_time $work_time;
     */
     public $work_time = null;
- 
+    /**
+    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_times $popular_times;
+    */
+    public $popular_times = null;
+
 }
