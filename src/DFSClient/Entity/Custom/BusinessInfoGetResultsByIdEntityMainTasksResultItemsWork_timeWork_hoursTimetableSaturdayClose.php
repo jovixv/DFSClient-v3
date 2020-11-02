@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetableSuturdayClose
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetableSaturdayClose
 {    
     /**
     * @var null|integer $hour;
