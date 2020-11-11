@@ -149,14 +149,13 @@ abstract class AbstractModel
     {
         $response = $this->process();
         // check if response contain valid json
+
             $validResponse = json_decode($response->getResponse());
 
             if (json_last_error() !== JSON_ERROR_NONE ) {
                 $validResponse = ['status_code' => 50000, 'status_message' => 'error.'];
             }
 
-          
-            
         return $this->mapData(json_encode($validResponse), $response->getStatus());
     }
 
@@ -322,7 +321,8 @@ abstract class AbstractModel
     /**
      * @param string $json
      * @param bool $isSuccesful
-     * @return array
+     *
+     * return mixed;
      */
     protected function mapData(string $json, bool $isSuccesful = false)
     {
