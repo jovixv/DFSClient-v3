@@ -55,6 +55,16 @@ class SettingOnPageTasks extends AbstractModel
     }
 
     /**
+     * @param int $maxCrawlDepth
+     * @return $this
+     */
+    public function setMaxCrawlDepth(int $maxCrawlDepth)
+    {
+        $this->payload['max_crawl_depth'] = $maxCrawlDepth;
+        return $this;
+    }
+
+    /**
      * @param bool $storeRawHtml
      * @return $this
      */
