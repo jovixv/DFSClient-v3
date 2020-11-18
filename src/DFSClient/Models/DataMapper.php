@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Models;
 use DFSClientV3\Bootstrap\Application;
+use DFSClientV3\Entity\Custom\TagsData;
 use DFSClientV3\Services\EntityCreator\ClassGenerator;
 use DFSClientV3\Services\Logger\Logger;
 use DFSClientV3\Services\Logger\LoggerMessageEntity;
@@ -96,14 +97,12 @@ class DataMapper
         $decodedResponse = json_decode($json);
         $nameSpace = 'DFSClientV3\Entity\Custom';
 
-
             if ($classSuffix !== null && class_exists($nameSpace.'\\'.$this->className.$classSuffix) ){
                 $classNameWithNameSpace = $nameSpace.'\\'.$this->className.$classSuffix;
                 $model = new $classNameWithNameSpace();
             }
 
             if ($classSuffix === null && class_exists($nameSpace.'\\'.$this->className.'EntityMain')){
-
                 $classNameWithNameSpace = $nameSpace.'\\'.$this->className.'EntityMain';
                 $model = new $classNameWithNameSpace($this->requestStatus, $this->pathToMainData);
                 $classSuffix = 'EntityMain';
@@ -115,6 +114,13 @@ class DataMapper
 
         foreach ($decodedResponse as $key => $value)
         {
+
+            // costyl for tags
+            if ($key === 'tag') {
+                $model->key = $this->paveTagData($value);
+                continue 1;
+            }
+
             if ($mustbeAsCollection){
                 $arrayWithResults[$key] = $this->paveData(json_encode($value), $classSuffix, $resultCanBeTransformedToArray);
             } elseif (is_object($model) && property_exists($model, ClassGenerator::validateClassField($key))){
@@ -158,6 +164,11 @@ class DataMapper
         if ($mustbeAsCollection) return $arrayWithResults;
 
         if (!$mustbeAsCollection) return $returnModel;
+    }
+
+    private function paveTagData($tagData)
+    {
+        return new TagsData($tagData);
     }
 
 

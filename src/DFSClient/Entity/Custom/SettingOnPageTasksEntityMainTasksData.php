@@ -24,5 +24,10 @@ class SettingOnPageTasksEntityMainTasksData
     * @var null|integer $max_crawl_pages;
     */
     public $max_crawl_pages = null;
+
+    /**
+     * @var TagsData
+     */
+    public $tag = null;
  
 }
