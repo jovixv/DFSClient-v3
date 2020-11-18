@@ -179,7 +179,7 @@ class ClassGenerator
                 if (strpos($res, '[]') === false){ // check if type is not collection
                     $string .= str_replace(['$type','$varName', '$definedValue'], [$res, $key, 'null'], $templateOfProperty);
                 }else{
-                    $string .= str_replace(['@var null', '$type','$varName', '$definedValue'], ['array', $res, $key, '[]'], $templateOfProperty);
+                    $string .= str_replace(['@var null', '$type','$varName', '$definedValue'], ['@var array', $res, $key, '[]'], $templateOfProperty);
                 }
             }
 
