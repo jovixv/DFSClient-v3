@@ -204,10 +204,10 @@ class SettingOnPageTasks extends AbstractModel
     }
 
     /**
-     * @param string $tag
+     * @param string|array|object $tag
      * @return $this
      */
-    public function setTag(string $tag)
+    public function setTag($tag)
     {
         $this->payload['tag'] = $tag;
         return $this;
