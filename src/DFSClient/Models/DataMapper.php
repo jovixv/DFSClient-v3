@@ -117,7 +117,7 @@ class DataMapper
 
             // costyl for tags
             if ($key === 'tag') {
-                $model->key = $this->paveTagData($value);
+                $model->$key = $this->paveTagData($value);
                 continue 1;
             }
 
@@ -166,6 +166,10 @@ class DataMapper
         if (!$mustbeAsCollection) return $returnModel;
     }
 
+    /**
+     * @param $tagData
+     * @return TagsData
+     */
     private function paveTagData($tagData)
     {
         return new TagsData($tagData);
