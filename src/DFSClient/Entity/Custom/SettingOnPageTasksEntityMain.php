@@ -42,7 +42,7 @@ class SettingOnPageTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * array|SettingOnPageTasksEntityMainTasks[] $tasks;
+    * @var array|SettingOnPageTasksEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
