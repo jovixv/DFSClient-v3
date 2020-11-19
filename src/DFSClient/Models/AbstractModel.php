@@ -140,6 +140,18 @@ abstract class AbstractModel
         return $this;
     }
 
+	/**
+	 * @param $headers array
+	 */
+	public function setHeaders($headers)
+	{
+		if (count($headers) > 0) {
+			foreach ($headers as $key => $value) {
+				$this->config['headers'][$key] = $value;
+			}
+		}
+	}
+
     /**
      * This method will run request to api.
      *
