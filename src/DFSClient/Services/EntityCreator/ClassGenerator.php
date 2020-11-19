@@ -82,14 +82,14 @@ class ClassGenerator
 
                 if (is_object($value) || is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
-                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult' && $key === 'items'){
+                    if (($className === 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && $sufix === 'MainTasksResult' && $key === 'items'){
                         $arrayWithNameSpacesForEntities = ClassGenerator::generateNameSpaceForAdvancedResult($this->availableTypes, $className);
                     }else{
 
-                        if ($className !== 'GetAdvancedSerpResultsById' && $key !== 'items')
+                        if (($className !== 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && $key !== 'items')
                          $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
 
-                        if ($className === 'GetAdvancedSerpResultsById' && $key !== 'items')
+                        if (($className === 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && $key !== 'items')
                             $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.ucfirst($key).';';
                     }
 
@@ -100,11 +100,11 @@ class ClassGenerator
                     // if array contain object, we must write generic type
                     if (is_array($value) && $obj = ClassGenerator::arrayContainObject($value)){
 
-                        if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult' && $key === 'items')
+                        if (($className === 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && $sufix === 'MainTasksResult' && $key === 'items')
                         {
                             $arrayWithClassProperty[$key] = ClassGenerator::generateTypesForAdvanced($this->availableTypes, $className);
 
-                        }else if ($className === 'GetAdvancedSerpResultsById' && $sufix !== 'MainTasksResultItems' && $key === 'items') {
+                        }else if (($className === 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && $sufix !== 'MainTasksResultItems' && $key === 'items') {
 
                             $arrayWithClassProperty[$key] = $className.'Entity'.$sufix.'Items'.ucfirst($value[0]->type).'[]';
                             $arrayWithNameSpacesForEntities[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$sufix.'Items'.ucfirst($value[0]->type).';';
@@ -114,7 +114,7 @@ class ClassGenerator
                         }
 
                         ##########################################
-                        if ($className === 'GetAdvancedSerpResultsById' && $key === 'items') {
+                        if (($className === 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && $key === 'items') {
                             $res = $value;
                             $fileShouldBeCreatedAdvancedKostyl = false;
 
@@ -132,7 +132,7 @@ class ClassGenerator
 //                    if ($className === 'GetAdvancedSerpResultsById' && $sufix === 'MainTasksResult') {
 //                        $this->recursiveCreator(json_encode($res), $path, $className, "MainTasksResultItems",$resultCanBeTransformedToArray, true);
 //                    }
-                    if ($className == 'GetAdvancedSerpResultsById' && (is_object($value) && property_exists($value, 'type'))) {
+                    if (($className == 'GetAdvancedSerpResultsById' || $className === 'SettingSerpLiveAdvanced') && (is_object($value) && property_exists($value, 'type'))) {
                         $this->recursiveCreator(json_encode($res), $path, $className, $sufix.ucfirst($value->type),$resultCanBeTransformedToArray);
                     }else{
                         $this->recursiveCreator(json_encode($res), $path, $className, $sufix.ucfirst($key),$resultCanBeTransformedToArray, ($fileShouldBeCreatedAdvancedKostyl === false) ? true : $fileIsNotRequired);
