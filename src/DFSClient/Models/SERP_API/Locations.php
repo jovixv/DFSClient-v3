@@ -11,7 +11,7 @@ class Locations extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'serp/{$se}/locations/{$country}';
+    protected $requestToFunction = 'serp/{$se}/locations';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
@@ -30,7 +30,7 @@ class Locations extends AbstractModel
      */
     public function setCountry(string $country)
     {
-        $this->requestToFunction = str_replace('{$country}', $country, $this->requestToFunction);
+	    $this->requestToFunction .= "/" . $country;
         return $this;
     }
 
