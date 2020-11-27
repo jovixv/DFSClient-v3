@@ -359,7 +359,13 @@ abstract class AbstractModel
     	$this->url = $this->config['sandboxUrl'];
     }
 
-
-
+	/**
+	 * @param $timeOut int
+	 */
+	public function setTimeOut(int $timeOut)
+	{
+		$this->timeOut = $timeOut;
+		return $this;
+	}
 
 }
