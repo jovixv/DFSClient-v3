@@ -6,9 +6,9 @@ namespace DFSClientV3\Entity\Custom;
 class OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks 
 {    
     /**
-    * @var null|integer $canonical_tag;
+    * @var null|integer $canonical;
     */
-    public $canonical_tag = null;
+    public $canonical = null;
 
     /**
     * @var null|integer $duplicate_meta_tags;
@@ -66,9 +66,14 @@ class OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks
     public $small_page_size = null;
 
     /**
-    * @var null|NULL $no_h1_tag;
+    * @var null|integer $no_h1_tag;
     */
     public $no_h1_tag = null;
+
+    /**
+    * @var null|integer $recursive_canonical;
+    */
+    public $recursive_canonical = null;
 
     /**
     * @var null|integer $no_favicon;
