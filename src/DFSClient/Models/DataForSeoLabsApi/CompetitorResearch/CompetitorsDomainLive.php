@@ -130,6 +130,26 @@ class CompetitorsDomainLive extends AbstractModel
     }
 
     /**
+     * @param int $maxRankGroup
+     * @return $this
+     */
+    public function setMaxRankGroup(int $maxRankGroup)
+    {
+        $this->payload['max_rank_group'] = $maxRankGroup;
+        return $this;
+    }
+
+    /**
+     * @param bool $excludeTopDomains
+     * @return $this
+     */
+    public function setExcludeTopDomains(bool $excludeTopDomains)
+    {
+        $this->payload['exclude_top_domains'] = $excludeTopDomains;
+        return $this;
+    }
+
+    /**
      * @param array $modelPool
      * @return array
      * @throws \Exception
