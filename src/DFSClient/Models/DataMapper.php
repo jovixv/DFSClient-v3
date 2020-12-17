@@ -61,6 +61,12 @@ class DataMapper
     private $rootNotReturnedFieldsFromDFS = [];
 
     /**
+     * @var string
+     */
+    private $currentIterationPath = '';
+
+
+    /**
      * DataMapper constructor.
      * @param string $className
      * @param bool $requestStatus
@@ -78,11 +84,91 @@ class DataMapper
     }
 
     /**
+     * @param PaveDataOptions $paveDataOptions
+     * @return mixed
+     */
+    public function paveDataNew(PaveDataOptions $paveDataOptions)
+    {
+        $content                    = json_decode($paveDataOptions->getJson());
+        $nameSpace                  = 'DFSClientV3\Entity\Custom\\';
+        $fullClassName              = $nameSpace.$this->className.$paveDataOptions->getClassSuffix();
+        $entity                     = null;
+        $variadicTypes              = $paveDataOptions->getPathsToVariadicTypesAndValue();
+        $this->currentIterationPath = $this->prepareStructurePath($paveDataOptions->getPrevPath());
+
+        // root of json. Use main entity
+        if (class_exists($fullClassName) && empty($paveDataOptions->getPrevPath()))
+            $entity = new $fullClassName($this->requestStatus, $this->pathToMainData);
+
+        if (class_exists($fullClassName) && !empty($paveDataOptions->getPrevPath()))
+            $entity = new $fullClassName();
+
+        foreach ($content as $key => $value){
+
+            $this->currentIterationPath = $this->prepareStructurePath($paveDataOptions->getPrevPath().$key);
+
+            if ($customFunction = $paveDataOptions->getCustomFunctionForPath($this->currentIterationPath))
+                $value = call_user_func($customFunction, $key, $value);
+
+            if (!$this->isValueFinalized($value)){
+
+                $options = clone $paveDataOptions;
+                $options->setJson(json_encode($value));;
+                $options->setPrevPath( $paveDataOptions->getPrevPath().$key.'->');
+
+                // json has variadic types, it means some value, has array with different objects
+                // check if the current iteration path equal some variadic type
+                // for iteration array with variadic type
+                if ($paveDataOptions->isJsonContainVariadicType() && isset($variadicTypes[$this->currentIterationPath])) {
+                    $fieldNameWithType = $variadicTypes[$this->currentIterationPath];
+                    $options->setClassSuffix($options->getClassSuffix().ucfirst($value->$fieldNameWithType));
+                    $options->setIsCollection(false);
+                        $result[$key] = $this->paveDataNew($options);
+                }
+                // variable contain object
+                elseif (!is_int($key) && is_object($value)){
+                    $options->setClassSuffix($options->getClassSuffix().ucfirst($key));
+                    $options->setIsCollection(false);
+                    if ($entity !== null)
+                        $entity->$key = $this->paveDataNew($options);
+                }
+                // for iteration array with objects
+                elseif(is_int($key) && is_object($value)){
+                    $options->setClassSuffix($options->getClassSuffix());
+                    $options->setIsCollection(false);
+                    $result[$key] = $this->paveDataNew($options);
+                }
+                // variable contain array with object
+                elseif (!is_int($key) && is_array($value)) {
+                    $options->setIsCollection(true);
+                    $options->setClassSuffix($options->getClassSuffix().ucfirst($key));
+                    if ($entity !== null)
+                        $entity->$key = $this->paveDataNew($options);
+                }
+
+            }
+
+            if ($this->isValueFinalized($value)){
+                if ($entity !== null)
+                     $entity->$key = $value;
+            }
+
+        }
+
+        if ($paveDataOptions->isCollection())
+           return $result;
+
+        return $entity;
+
+    }
+
+    /**
      * @param string $json
      * @param string|null $classSuffix
-     * @param bool $resultCanBeTransformedToArray
+     * @param bool|null $resultCanBeTransformedToArray
      * @param bool $mustbeAsCollection
-     * @return array
+     * @return array|mixed
+     * @throws \ReflectionException
      */
     public function paveData(string $json, ?string $classSuffix, ?bool $resultCanBeTransformedToArray = true, bool $mustbeAsCollection = false)
     {
@@ -107,6 +193,7 @@ class DataMapper
                 $model = new $classNameWithNameSpace($this->requestStatus, $this->pathToMainData);
                 $classSuffix = 'EntityMain';
                 $this->notExistedField = []; // this variable will be contain persist data, from all recursion iteration.
+
             }
 
         $arrayWithResults = [];
@@ -456,6 +543,58 @@ class DataMapper
         if ($mustbeAsCollection) return $arrayWithResults;
 
         if (!$mustbeAsCollection) return $returnModel;
+    }
+
+
+    /**
+     *
+     * Function return true if value is object or array
+     *
+     * @param  mixed $value
+     */
+    private function isIterable($value): bool
+    {
+        return is_object($value) || is_array($value);
+    }
+
+    /**
+     * @param $value
+     * @return bool
+     */
+    private function isValueFinalized($value): bool
+    {
+        if (!$this->isIterable($value))
+            return true;
+
+        if (is_array($value) && !ClassGenerator::arrayContainObject($value))
+            return true;
+
+        return false;
+
+    }
+
+    /**
+     * @param string $value
+     * @return string
+     */
+    private function prepareStructurePath(string $value): string
+    {
+        $explodedPath = explode('->', $value);
+
+        $result = array_map(function($value){
+            if (is_numeric($value)){
+                return '(:number)';
+            }else{
+                return $value;
+            }
+        }, $explodedPath);
+
+        // delete last element if it is empty. It can ba empty if last element was ->
+        $result = array_filter($result, function ($value){
+            return !empty($value) ? true : false;
+        });
+
+        return implode('->', $result);
     }
 
 }
