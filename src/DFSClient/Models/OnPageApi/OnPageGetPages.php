@@ -30,6 +30,56 @@ class OnPageGetPages extends AbstractModel
     }
 
     /**
+     * @param int $limit
+     * @return $this
+     */
+    public function setLimit(int $limit)
+    {
+        $this->payload['limit'] = $limit;
+        return $this;
+    }
+
+    /**
+     * @param int $offset
+     * @return $this
+     */
+    public function setOffset(int $offset)
+    {
+        $this->payload['offset'] = $offset;
+        return $this;
+    }
+
+    /**
+     * @param array $filter
+     * @return $this
+     */
+    public function setFilter(array $filter)
+    {
+        $this->payload['filters'] = $filter;
+        return $this;
+    }
+
+    /**
+     * @param array $orderBy
+     * @return $this
+     */
+    public function setOrderBy(array $orderBy)
+    {
+        $this->payload['order_by'] = $orderBy;
+        return $this;
+    }
+
+    /**
+     * @param string $tag
+     * @return $this
+     */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+        return $this;
+    }
+
+    /**
      * @return \DFSClientV3\Entity\Custom\OnPageGetPagesEntityMain
      */
     public function get(): \DFSClientV3\Entity\Custom\OnPageGetPagesEntityMain
