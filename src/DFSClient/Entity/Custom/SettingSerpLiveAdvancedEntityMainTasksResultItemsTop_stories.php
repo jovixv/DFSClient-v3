@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesItemsTop_stories_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_stories 
 {    
@@ -32,8 +32,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_stories
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesItemsTop_stories_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

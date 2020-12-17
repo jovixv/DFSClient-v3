@@ -2,7 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetTable;
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippet 

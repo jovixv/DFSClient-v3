@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sightsItemsTop_sights_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sightsRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sights 
 {    
@@ -37,8 +37,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sights
     public $title = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sightsItemsTop_sights_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sightsItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_sightsRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

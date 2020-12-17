@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsItemsJobs_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsJobs 
 {    
@@ -42,8 +42,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsJobs
     public $url = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsItemsJobs_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }
