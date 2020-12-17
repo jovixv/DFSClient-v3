@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsShoppingItemsShopping_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsShoppingRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsShopping 
 {    
@@ -37,8 +37,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsShopping
     public $title = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsShoppingItemsShopping_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsShoppingItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsShoppingRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

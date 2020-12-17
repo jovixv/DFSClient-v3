@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_productsItemsPopular_products_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_productsRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_products
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_products 
 {    
     /**
     * @var null|string $type;
@@ -32,8 +32,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_products
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_productsItemsPopular_products_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_productsItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_productsRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

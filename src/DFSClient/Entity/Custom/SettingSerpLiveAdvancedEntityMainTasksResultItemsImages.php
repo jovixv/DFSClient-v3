@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsImagesItemsImages_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsImagesRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsImages 
 {    
@@ -42,8 +42,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsImages
     public $url = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsImagesItemsImages_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsImagesItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsImagesRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

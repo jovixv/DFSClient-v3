@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitterItemsTwitter_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitterRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitter 
 {    
@@ -42,8 +42,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitter
     public $url = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitterItemsTwitter_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitterItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsTwitterRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

@@ -15,6 +15,7 @@ class ClassGenerator
      */
     private $availableTypes = ["top_stories","organic","people_also_ask","video","images","local_pack","people_also_search","twitter","knowledge_graph","related_searches","google_reviews","carousel","paid","shopping","featured_snippet", "jobs", "map"];
 
+    private $currentIterationPath = '';
     /**
      * ClassGenerator constructor.
      */
@@ -40,6 +41,189 @@ class ClassGenerator
     {
         mkdir($path,'777', true);
     }
+
+
+    /**
+     * @param array $items
+     * @param string $fieldName
+     * @return array Associative array with key as type
+     */
+    private function findUniqVariadicTypes(array $items, string $fieldName):array
+    {
+        $result = [];
+
+        foreach ($items as $item) {
+            if (isset($item->$fieldName))
+                $result[$item->$fieldName] = true;
+        }
+
+        return $result;
+    }
+
+    /**
+     * @param array $types
+     * @param string $className
+     * @param string $suffix
+     * @return bool|string
+     */
+    private function generateVariadicTypesForDocBlock(array $types, string $className, string $suffix)
+    {
+        $types = array_flip(ClassGenerator::validateClassField(array_keys($types)));
+
+        $string = '';
+
+        foreach ($types as $type => $availability)
+            $string .= $className.'Entity'.$suffix.ucfirst($type).'[]|';
+
+        return substr($string, 0, -1);
+    }
+
+    /**
+     * @param string $className
+     * @param string $suffix
+     * @param bool $isCollection
+     * @return string
+     */
+    private function generateTypeForDocBlock(string $className, string $suffix, bool $isCollection = false)
+    {
+        if ($isCollection)
+            return $className.'Entity'.$suffix;
+
+        return $className.'Entity'.$suffix.'[]';
+    }
+
+    /**
+     * @param string $className
+     * @param string $suffix
+     * @param array|null $types
+     * @return array
+     */
+    private function generateNameSpaces(string $className, string $suffix, ?array $types = null)
+    {
+        if ($types){
+            $nameSpaces = [];
+            $types = array_flip(ClassGenerator::validateClassField(array_keys($types)));
+
+            foreach ($types as $type => $availability){
+                $nameSpaces[] = 'use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$suffix.ucfirst($type).';';
+            }
+
+            return $nameSpaces;
+        }
+
+        return ['use DFSClientV3\Entity\Custom\\'.$className.'Entity'.$suffix.';'];
+    }
+
+
+    /**
+     * @param ClassCreatorOptions $classCreatorOptions
+     */
+    public function newRecursiveCreator(ClassCreatorOptions $classCreatorOptions)
+    {
+        $content                    = json_decode($classCreatorOptions->getJson());
+        $fileName                   = $classCreatorOptions->getClassName().'Entity'.$classCreatorOptions->getSuffix();
+        $variadicTypes              = $classCreatorOptions->getPathsToVariadicTypesAndValue();
+        $classProperty              = [];
+        $classNameSpaces            = [];
+        // previous iteration path, this variable contain path from previous recursive execution
+        $this->currentIterationPath = $this->prepareStructurePath($classCreatorOptions->prevPath);
+
+
+        if ($classCreatorOptions->isFileRequired())
+            $file = $this->createClass($fileName, $classCreatorOptions->getFilePath());
+
+        if ($this->isIterable($content)){
+            foreach ($content as $key => $value){
+                // current iteration path
+                $this->currentIterationPath = $this->prepareStructurePath($classCreatorOptions->prevPath.$key);
+
+                if ($customFunction = $classCreatorOptions->getCustomFunctionForPath($this->currentIterationPath))
+                    $value = call_user_func($customFunction, $key, $value);
+
+                if (!$this->isValueFinalized($value)){
+
+                    $options = clone $classCreatorOptions;
+                    $options->setJson(json_encode($value));;
+                    $options->prevPath = $classCreatorOptions->prevPath.$key.'->';
+                        // json has variadic types, it means some value, has array with different objects
+                        // check if the current iteration path equal some variadic type
+                        if ($classCreatorOptions->isJsonContainVariadicType() && isset($variadicTypes[$this->currentIterationPath])) {
+                            $fieldNameWithType = $variadicTypes[$this->currentIterationPath];
+                            $options->setSuffix($classCreatorOptions->getSuffix() . ucfirst($value->$fieldNameWithType));
+                            $options->setIsFileRequired(true);
+                        }
+                        // variable contain object
+                        elseif (!is_int($key) && is_object($value)){
+
+                            $options->setIsFileRequired(true);
+                            $options->setSuffix($classCreatorOptions->getSuffix().ucfirst($key));
+                            $classProperty[$key] = $this->generateTypeForDocBlock(
+                                $options->getClassName(),
+                                $options->getSuffix(),
+                                true
+                            );
+                            $classNameSpaces = $this->generateNameSpaces($options->getClassName(), $options->getSuffix());
+                        }
+                        // for iteration array with objects
+                        elseif(is_int($key) && is_object($value)){
+                            $options->setIsFileRequired(true);
+                            $options->setSuffix($classCreatorOptions->getSuffix());
+                        }
+                        // variable contain array with object
+                        elseif (!is_int($key) && is_array($value)) {
+
+                            $emulateNextPathLevel = $this->currentIterationPath.'->(:number)';
+                            $options->setIsFileRequired(false);
+                            $options->setSuffix($classCreatorOptions->getSuffix().ucfirst($key));
+
+                            // value has variadic types
+                            if (isset($variadicTypes[$emulateNextPathLevel])) {
+                                $filedName = $variadicTypes[$emulateNextPathLevel];
+                                $types = $this->findUniqVariadicTypes($value, $filedName);
+
+                                $classProperty[$key] = $this->generateVariadicTypesForDocBlock(
+                                    $types,
+                                    $options->getClassName(),
+                                    $options->getSuffix()
+                                );
+
+                                $classNameSpaces = $this->generateNameSpaces($options->getClassName(), $options->getSuffix(), $types);
+                            }
+
+                            // value does not have variadic types
+                            if (!isset($variadicTypes[$emulateNextPathLevel])){
+                                $classProperty[$key] = $this->generateTypeForDocBlock(
+                                    $options->getClassName(),
+                                    $options->getSuffix()
+                                );
+                                $classNameSpaces = $this->generateNameSpaces($options->getClassName(), $options->getSuffix());
+                            }
+
+                        }
+                    // handle next nesting payload. recursion
+                    $this->newRecursiveCreator($options);
+                }
+
+                if ($this->isValueFinalized($value)){
+                    $classProperty[$key] = gettype($value);
+                }
+            }
+
+            if ($classCreatorOptions->isFileRequired())
+                $this->createClassContent(
+                    $file,
+                    $classCreatorOptions->getJson(),
+                    $classCreatorOptions->getSuffix(),
+                    $fileName,
+                    $classNameSpaces,
+                    $classProperty
+                );
+
+        }
+
+    }
+
+
 
     /**
      * @param string $json - json schema for transform to Class Entity
@@ -319,6 +503,7 @@ class ClassGenerator
             foreach ($fields as $field){
                 $replacedArray[] = str_replace($forbiddenSymbols, $replaceOnSymbols, $field);
             }
+
             return $replacedArray;
         }
 
@@ -329,4 +514,54 @@ class ClassGenerator
         return null;
     }
 
+    /**
+     *
+     * Function return true if value is object or array
+     *
+     * @param  mixed $value
+     */
+    private function isIterable($value): bool
+    {
+        return is_object($value) || is_array($value);
+    }
+
+    /**
+     * @param $value
+     * @return bool
+     */
+    private function isValueFinalized($value): bool
+    {
+        if (!$this->isIterable($value))
+            return true;
+
+        if (is_array($value) && !ClassGenerator::arrayContainObject($value))
+            return true;
+
+        return false;
+
+    }
+
+    /**
+     * @param string $value
+     * @return string
+     */
+    private function prepareStructurePath(string $value): string
+    {
+        $explodedPath = explode('->', $value);
+
+        $result = array_map(function($value){
+            if (is_numeric($value)){
+                return '(:number)';
+            }else{
+                return $value;
+            }
+        }, $explodedPath);
+
+        // delete last element if it is empty. It can ba empty if last element was ->
+        $result = array_filter($result, function ($value){
+           return !empty($value) ? true : false;
+        });
+
+        return implode('->', $result);
+    }
 }

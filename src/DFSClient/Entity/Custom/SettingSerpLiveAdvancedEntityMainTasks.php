@@ -2,10 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResult;
 
-class SettingSerpLiveAdvancedEntityMainTasks
+class SettingSerpLiveAdvancedEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -28,7 +27,7 @@ class SettingSerpLiveAdvancedEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 

@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItemsPeople_also_ask_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_ask 
 {    
@@ -32,8 +32,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_ask
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItemsPeople_also_ask_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

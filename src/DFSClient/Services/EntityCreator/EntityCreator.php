@@ -28,6 +28,40 @@ class EntityCreator
     }
 
     /**
+     * @param string $json
+     * @param string $className
+     */
+    public function createEntityByJsonNew(ClassCreatorOptions $options)
+    {
+        $options->setFilePath($this->path);
+        $this->classGenerator->newRecursiveCreator($options);
+    }
+
+    /**
+     * @param object $model
+     * @return void
+     */
+    public function generateByModelNew(object $model): void
+    {
+        if ($model instanceof AbstractModel){
+            $pathToMainEntityData = $model->getPathToMainData();
+            $modelName = $model->getCalledClass();
+            $json = $model->getAsJson();
+
+            $classCreatorOptions = new ClassCreatorOptions();
+            $classCreatorOptions->setClassName($modelName);
+            $classCreatorOptions->setFilePath($this->path);
+            $classCreatorOptions->setJson($json);
+            $classCreatorOptions->setIsFileRequired(true);
+            $classCreatorOptions->setPathsToVariadicTypesAndValue($model->getPathsToVariadicTypesAndValue());
+            $classCreatorOptions->setJsonContainVariadicType($model->isJsonContainVariadicType());
+            $classCreatorOptions->setCustomFunctionForPaths($model->getCustomFunctionForPaths());
+
+            $this->classGenerator->newRecursiveCreator($classCreatorOptions);
+        }
+    }
+
+    /**
      * @param $json
      */
     public function createEntityByJson(string $json, string $className, ?bool $resultCanBeTransformedToArray)

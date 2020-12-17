@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcastsItemsPodcasts_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcastsRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcasts 
 {    
@@ -32,8 +32,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcasts
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcastsItemsPodcasts_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcastsItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcastsRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

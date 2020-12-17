@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flightsItemsGoogle_flights_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flightsRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flights 
 {    
@@ -42,8 +42,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flights
     public $url = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flightsItemsGoogle_flights_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flightsItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flightsRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

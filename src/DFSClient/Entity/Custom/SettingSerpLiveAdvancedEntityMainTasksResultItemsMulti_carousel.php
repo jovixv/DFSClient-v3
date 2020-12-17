@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carouselItemsMulti_carousel_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carouselRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carousel 
 {    
@@ -32,8 +32,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carousel
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carouselItemsMulti_carousel_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carouselItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsMulti_carouselRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }
