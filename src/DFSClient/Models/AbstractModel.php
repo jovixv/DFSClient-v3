@@ -446,6 +446,7 @@ abstract class AbstractModel
     public function addCustomFunctionForPath(array $customFunction)
     {
         $this->customFunctionForPaths = array_merge($this->customFunctionForPaths, $customFunction);
+        return $this;
     }
 
     /**
