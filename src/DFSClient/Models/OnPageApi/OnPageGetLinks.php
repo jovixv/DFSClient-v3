@@ -4,6 +4,7 @@
 namespace DFSClientV3\Models\OnPageApi;
 
 
+use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class OnPageGetLinks extends AbstractModel
@@ -100,12 +101,12 @@ class OnPageGetLinks extends AbstractModel
         return $this;
     }
 
-//    /**
-//     * @return OnPageGetResourcesEntityMain
-//     */
-//    public function get(): OnPageGetResourcesEntityMain
-//    {
-//        return parent::get();
-//    }
+    /**
+     * @return OnPageGetLinksEntityMain
+     */
+    public function get(): OnPageGetLinksEntityMain
+    {
+        return parent::get();
+    }
 
 }
