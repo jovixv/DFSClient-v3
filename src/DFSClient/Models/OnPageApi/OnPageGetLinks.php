@@ -12,7 +12,7 @@ class OnPageGetLinks extends AbstractModel
     protected $method = 'POST';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->0->result';
-    protected $requestToFunction = 'on_page/resources';
+    protected $requestToFunction = 'on_page/links';
     protected $resultShouldBeTransformedToArray = true;
     protected $jsonContainVariadicType = true;
     protected $pathsToVariadicTypesAndValue = [
