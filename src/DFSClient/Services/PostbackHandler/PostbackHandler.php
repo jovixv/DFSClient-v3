@@ -11,10 +11,12 @@ use DFSClientV3\Models\PaveDataOptions;
 class PostbackHandler
 {
     protected $model;
+    protected $status;
 
-    public function __construct(AbstractModel $model)
+    public function __construct(AbstractModel $model, $status = true)
     {
         $this->model = $model;
+        $this->status = $status;
     }
 
     public function mapPostbackPayload ($postbackPayload)
@@ -27,7 +29,7 @@ class PostbackHandler
         $pathsToVariadicTypesAndValue  = $this->model->getPathsToVariadicTypesAndValue();
         $customFunctionForPaths = $this->model->getCustomFunctionForPaths();
 
-        $mapper = new DataMapper($calledClass, $status, $pathToMainData);
+        $mapper = new DataMapper($calledClass, $this->status, $pathToMainData);
 
         $paveDataOptions = new PaveDataOptions();
         $paveDataOptions->setJson($postbackPayload);
