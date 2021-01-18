@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpTasksEntityMainTasks;
+use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasks;
 
-class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
+class AdvancedSerpGetResultsByIdEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string $version;
@@ -27,7 +27,7 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,13 +42,13 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * @var array|SettingSerpTasksEntityMainTasks[] $tasks;
+    * @var array|AdvancedSerpGetResultsByIdEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

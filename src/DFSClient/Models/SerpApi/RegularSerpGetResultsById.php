@@ -12,6 +12,8 @@ class RegularSerpGetResultsById extends AbstractModel
     protected $requestToFunction = 'serp/{$se}/{$seType}/task_get/regular/{$taskUUID}';
     protected $resultShouldBeTransformedToArray = true;
 
+    protected $useNewMapper = true;
+
     public function setTaskId(string $taskUUID)
     {
         $this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);
@@ -43,9 +45,9 @@ class RegularSerpGetResultsById extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\RegularSerpResultsGetByIdEntityMain
+     * @return \DFSClientV3\Entity\Custom\RegularSerpGetResultsByIdEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\RegularSerpResultsGetByIdEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\RegularSerpGetResultsByIdEntityMain
     {
         return parent::get();
     }
