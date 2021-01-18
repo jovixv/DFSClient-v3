@@ -12,6 +12,14 @@ class AdvancedSerpGetResultsById extends AbstractModel
     protected $requestToFunction = 'serp/{$se}/{$seType}/task_get/advanced/{$taskUUID}';
     protected $resultShouldBeTransformedToArray = true;
 
+    protected $jsonContainVariadicType = true;
+
+    protected $pathsToVariadicTypesAndValue = [
+        'tasks->(:number)->result->(:number)->items->(:number)' => 'type'
+    ];
+
+    protected $useNewMapper = true;
+
     public function setTaskId(string $taskUUID)
     {
         $this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);

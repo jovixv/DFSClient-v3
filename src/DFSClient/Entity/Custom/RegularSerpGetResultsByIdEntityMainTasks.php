@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpTasksEntityMainTasksData;
+use DFSClientV3\Entity\Custom\RegularSerpGetResultsByIdEntityMainTasksResult;
 
-class SettingSerpTasksEntityMainTasks 
+class RegularSerpGetResultsByIdEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -27,7 +27,7 @@ class SettingSerpTasksEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,13 +42,13 @@ class SettingSerpTasksEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|SettingSerpTasksEntityMainTasksData $data;
+    * @var null|RegularSerpGetResultsByIdEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * @var null|NULL $result;
+    * @var array|RegularSerpGetResultsByIdEntityMainTasksResult[] $result;
     */
-    public $result = null;
+    public $result = [];
  
 }

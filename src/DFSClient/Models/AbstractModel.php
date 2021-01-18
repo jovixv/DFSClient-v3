@@ -172,6 +172,8 @@ abstract class AbstractModel
 				$this->config['headers'][$key] = $value;
 			}
 		}
+
+		return $this;
 	}
 
     /**
