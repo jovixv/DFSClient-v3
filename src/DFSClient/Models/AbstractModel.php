@@ -198,7 +198,7 @@ abstract class AbstractModel
 
     /**
      * @param array $modelPool
-     * @return array
+     * @return mixed
      * @throws \Exception
      */
     public static function getAfterMerge(array $modelPool)
