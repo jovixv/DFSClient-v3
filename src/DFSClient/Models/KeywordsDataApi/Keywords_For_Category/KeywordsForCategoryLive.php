@@ -125,6 +125,48 @@ class KeywordsForCategoryLive extends AbstractModel
         return $this;
     }
 
+	/**
+	 * For 'bing' se only!
+	 * @param string $device
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setDevice(string $device, string $se)
+	{
+		if ($se === 'bing') {
+			$this->payload['device'] = $device;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'bing' se only!
+	 * @param string $date_from
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setDateFrom(string $date_from, string $se)
+	{
+		if ($se === 'bing') {
+			$this->payload['date_from'] = $date_from;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'bing' se only!
+	 * @param string $date_to
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setDateTo(string $date_to, string $se)
+	{
+		if ($se === 'bing') {
+			$this->payload['date_to'] = $date_to;
+		}
+		return $this;
+	}
+
     /**
      * @param string $seName
      * @return $this

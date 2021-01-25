@@ -119,6 +119,28 @@ class GoogleTrendsSetTask extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param string $timeRange
+	 * @return $this
+	 */
+	public function setTimeRange(string $timeRange)
+	{
+		$this->payload['time_range'] = $timeRange;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $itemTypes
+	 * @return $this
+	 */
+	public function setItemTypes(string $itemTypes)
+	{
+		$this->payload['item_types'] = $itemTypes;
+
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
