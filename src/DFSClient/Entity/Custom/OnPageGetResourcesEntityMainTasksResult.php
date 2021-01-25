@@ -7,12 +7,17 @@ use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsScript
 use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsImage;
 use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsBroken;
 
-class OnPageGetResourcesEntityMainTasksResult 
-{    
+class OnPageGetResourcesEntityMainTasksResult
+{
     /**
     * @var null|string $crawl_progress;
     */
     public $crawl_progress = null;
+
+    /**
+     * @var null|integer $total_items_count;
+     */
+    public $total_items_count = null;
 
     /**
     * @var null|integer $items_count;
@@ -23,5 +28,5 @@ class OnPageGetResourcesEntityMainTasksResult
     * @var array|OnPageGetResourcesEntityMainTasksResultItemsStylesheet[]|OnPageGetResourcesEntityMainTasksResultItemsScript[]|OnPageGetResourcesEntityMainTasksResultItemsImage[]|OnPageGetResourcesEntityMainTasksResultItemsBroken[] $items;
     */
     public $items = [];
- 
+
 }
