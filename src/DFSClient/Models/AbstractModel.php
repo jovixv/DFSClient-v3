@@ -113,6 +113,27 @@ abstract class AbstractModel
     protected $seTypes = ['organic', 'maps', 'local_pack', 'news', 'images'];
 
     /**
+     * @var bool
+     */
+    protected $jsonContainVariadicType = false;
+
+    /**
+     * @var array
+     */
+    protected $pathsToVariadicTypesAndValue = [];
+
+    /**
+     * @var array
+     */
+    protected $customFunctionForPaths = [];
+
+    /**
+     * @var bool $useNewMapper Temp variable, for detect when use new mapper
+     */
+    protected $useNewMapper = false;
+
+
+    /**
      * new version of DataForSeo has two variations of result
      * 1. Object contains other objects for response.
      * 2. Object contains other objects, but they is iterable.
@@ -123,11 +144,12 @@ abstract class AbstractModel
      */
     protected $resultShouldBeTransformedToArray = false;
 
-
     public function __construct()
     {
         $this->application = Application::getInstance();
         $this->config = $this->application->getConfig();
+        $this->initDefaultMethods();
+
     }
 
 
@@ -150,6 +172,8 @@ abstract class AbstractModel
 				$this->config['headers'][$key] = $value;
 			}
 		}
+
+		return $this;
 	}
 
     /**
@@ -174,7 +198,7 @@ abstract class AbstractModel
 
     /**
      * @param array $modelPool
-     * @return array
+     * @return mixed
      * @throws \Exception
      */
     public static function getAfterMerge(array $modelPool)
@@ -194,6 +218,11 @@ abstract class AbstractModel
         $config = Application::getInstance()->getConfig();
         $pathToMainData = null;
         $resultShouldTransformedToArray = false;
+        $useNewMapper = false;
+        $isJsonContainVariadicType = false;
+        $pathsToVariadicTypesAndValue  = [];
+        $customFunctionForPaths = [];
+
 
         foreach ($modelPool as $key => $model){
 
@@ -208,6 +237,10 @@ abstract class AbstractModel
             $requestToFunction = $model->requestToFunction;
             $pathToMainData = $model->pathToMainData;
             $resultShouldTransformedToArray = $model->resultShouldBeTransformedToArray;
+            $useNewMapper = $model->isUseNewMapper();
+            $isJsonContainVariadicType = $model->isJsonContainVariadicType();
+            $pathsToVariadicTypesAndValue  = $model->getPathsToVariadicTypesAndValue();
+            $customFunctionForPaths = $model->getCustomFunctionForPaths();
 
             if ($model->isSupportedMerge){
                 if ($model->postId === null)
@@ -223,7 +256,6 @@ abstract class AbstractModel
         $payload['headers'] = $config['headers'];
 
         $http = new HttpClient($url, $apiVersion, $timeOut, $login, $password);
-
 
         $res = $http->sendSingleRequest($method, $requestToFunction, $payload);
         // check if response contain valid json
@@ -241,6 +273,19 @@ abstract class AbstractModel
          $classNameArray[count($classNameArray ) -1];
 
         $mapper = new DataMapper($classNameArray[count($classNameArray ) -1], $res->getStatus(), $pathToMainData);
+
+        if ($useNewMapper){
+            $paveDataOptions = new PaveDataOptions();
+            $paveDataOptions->setJson(json_encode($validResponse));
+            $paveDataOptions->setJsonContainVariadicType($isJsonContainVariadicType);
+            $paveDataOptions->setPathsToVariadicTypesAndValue($pathsToVariadicTypesAndValue);
+            $paveDataOptions->setCustomFunctionForPaths($customFunctionForPaths);
+
+            $mappedModel = $mapper->paveDataNew($paveDataOptions);
+
+            return $mappedModel;
+        }
+
         $mappedModel = $mapper->paveData(json_encode($validResponse), null, $resultShouldTransformedToArray);
 
         return $mappedModel;
@@ -338,7 +383,19 @@ abstract class AbstractModel
      */
     protected function mapData(string $json, bool $isSuccesful = false)
     {
+
         $mapper = new DataMapper($this->getCalledClass(), $isSuccesful, $this->pathToMainData);
+
+        if ($this->useNewMapper){
+            $paveDataOptions = new PaveDataOptions();
+            $paveDataOptions->setJson($json);
+            $paveDataOptions->setJsonContainVariadicType($this->isJsonContainVariadicType());
+            $paveDataOptions->setPathsToVariadicTypesAndValue($this->getPathsToVariadicTypesAndValue());
+            $paveDataOptions->setCustomFunctionForPaths($this->getCustomFunctionForPaths());
+
+            $mappedModel = $mapper->paveDataNew($paveDataOptions);
+            return $mappedModel;
+        }
 
         $mappedModel = $mapper->paveData($json, null, $this->resultShouldBeTransformedToArray);
 
@@ -367,5 +424,63 @@ abstract class AbstractModel
 		$this->timeOut = $timeOut;
 		return $this;
 	}
+
+
+    /**
+     * @return bool
+     */
+    public function isJsonContainVariadicType(): bool
+    {
+        return $this->jsonContainVariadicType;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPathsToVariadicTypesAndValue(): array
+    {
+        return $this->pathsToVariadicTypesAndValue;
+    }
+
+    /**
+     * @param array $customFunction
+     */
+    public function addCustomFunctionForPath(array $customFunction)
+    {
+        $this->customFunctionForPaths = array_merge($this->customFunctionForPaths, $customFunction);
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getCustomFunctionForPaths(): array
+    {
+        return $this->customFunctionForPaths;
+    }
+ 
+    /**
+     *
+     */
+    private function initDefaultMethods()
+    {
+        $this->initCustomFunctionForPaths();
+    }
+
+    /**
+     * @return array
+     */
+    protected function initCustomFunctionForPaths(): array
+    {
+        return [];
+    }
+
+    /**
+     * @return bool
+     */
+    public function isUseNewMapper(): bool
+    {
+        return $this->useNewMapper;
+    }
 
 }

@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesItemsScholarly_articles_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articles 
 {    
@@ -42,8 +42,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articles
     public $url = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesItemsScholarly_articles_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMention_carousel_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carousel 
 {    
@@ -37,8 +37,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carousel
     public $title = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMention_carousel_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

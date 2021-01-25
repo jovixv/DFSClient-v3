@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoItemsVideo_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsVideo 
 {    
@@ -32,8 +32,13 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsVideo
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoItemsVideo_element[] $items;
+    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoItems[] $items;
     */
     public $items = [];
 
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

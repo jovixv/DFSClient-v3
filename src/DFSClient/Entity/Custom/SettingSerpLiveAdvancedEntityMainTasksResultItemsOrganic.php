@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRating;
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicLinks;
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganic 
@@ -79,6 +77,11 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganic
     public $is_malicious = null;
 
     /**
+    * @var null|boolean $is_web_story;
+    */
+    public $is_web_story = null;
+
+    /**
     * @var null|string $description;
     */
     public $description = null;
@@ -112,6 +115,11 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganic
     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicLinks[] $links;
     */
     public $links = [];
+
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq $faq;
+    */
+    public $faq = null;
 
     /**
     * @var null|string $timestamp;

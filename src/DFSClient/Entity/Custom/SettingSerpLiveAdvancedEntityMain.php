@@ -9,7 +9,7 @@ class SettingSerpLiveAdvancedEntityMain extends \DFSClientV3\Models\ResponseMode
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20201117';
+    public $version = 'string';
 
     /**
     * @var null|integer $status_code;
@@ -27,7 +27,7 @@ class SettingSerpLiveAdvancedEntityMain extends \DFSClientV3\Models\ResponseMode
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 

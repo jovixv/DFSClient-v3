@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graphItemsKnowledge_graph_part_element;
+use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graphRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graph 
 {    
@@ -62,8 +62,18 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graph
     public $image_url = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graphItemsKnowledge_graph_part_element[] $items;
+    * @var null|NULL $cid;
     */
-    public $items = [];
+    public $cid = null;
 
+    /**
+    * @var null|NULL $items;
+    */
+    public $items = null;
+
+    /**
+    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graphRectangle $rectangle;
+    */
+    public $rectangle = null;
+ 
 }

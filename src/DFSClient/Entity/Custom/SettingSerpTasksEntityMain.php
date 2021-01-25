@@ -9,7 +9,7 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200325';
+    public $version = 'string';
 
     /**
     * @var null|integer $status_code;
@@ -27,7 +27,7 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 
@@ -42,7 +42,7 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * array|SettingSerpTasksEntityMainTasks[] $tasks;
+    * @var array|SettingSerpTasksEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  

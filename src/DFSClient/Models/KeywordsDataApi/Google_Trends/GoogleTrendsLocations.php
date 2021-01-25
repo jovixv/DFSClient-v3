@@ -11,16 +11,16 @@ class GoogleTrendsLocations extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'keywords_data/google_trends/locations/{$country}';
+    protected $requestToFunction = 'keywords_data/google_trends/locations';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
      * @param string $country
      * @return $this
      */
-    public function setCountry(string $country)
+    public function setCountry(string $country = null)
     {
-        $this->requestToFunction = str_replace('{$country}', $country, $this->requestToFunction);
+        $this->requestToFunction = $country ? $this->requestToFunction .'/'.$country : $this->requestToFunction;
         return $this;
     }
 

@@ -36,8 +36,18 @@ class SettingSerpTasksEntityMainTasksData
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
+    * @var null|string $location_name;
     */
-    public $location_code = null;
+    public $location_name = null;
+
+    /**
+    * @var null|string $device;
+    */
+    public $device = null;
+
+    /**
+    * @var null|string $os;
+    */
+    public $os = null;
  
 }

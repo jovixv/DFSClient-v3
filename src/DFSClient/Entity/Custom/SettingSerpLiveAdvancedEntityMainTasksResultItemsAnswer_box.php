@@ -2,7 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxLinks;
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxRectangle;
 
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_box 

@@ -27,7 +27,7 @@ class SettingSerpTasksEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 
@@ -47,7 +47,7 @@ class SettingSerpTasksEntityMainTasks
     public $data = null;
 
     /**
-    * @var null|array $result;
+    * @var null|NULL $result;
     */
     public $result = null;
  
