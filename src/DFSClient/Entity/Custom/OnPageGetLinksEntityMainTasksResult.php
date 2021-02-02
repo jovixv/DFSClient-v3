@@ -6,6 +6,9 @@ use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsImage;
 use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsAnchor;
 use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsAlternate;
 use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsRedirect;
+use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsCanonical;
+use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsMeta;
+use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsLink;
 
 class OnPageGetLinksEntityMainTasksResult
 {
@@ -25,7 +28,7 @@ class OnPageGetLinksEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var array|OnPageGetLinksEntityMainTasksResultItemsImage[]|OnPageGetLinksEntityMainTasksResultItemsAnchor[]|OnPageGetLinksEntityMainTasksResultItemsAlternate[]|OnPageGetLinksEntityMainTasksResultItemsRedirect[] $items;
+    * @var array|OnPageGetLinksEntityMainTasksResultItemsImage[]|OnPageGetLinksEntityMainTasksResultItemsAnchor[]|OnPageGetLinksEntityMainTasksResultItemsAlternate[]|OnPageGetLinksEntityMainTasksResultItemsRedirect[]|OnPageGetLinksEntityMainTasksResultItemsCanonical[]|OnPageGetLinksEntityMainTasksResultItemsMeta[]|OnPageGetLinksEntityMainTasksResultItemsLink[] $items;
     */
     public $items = [];
 
