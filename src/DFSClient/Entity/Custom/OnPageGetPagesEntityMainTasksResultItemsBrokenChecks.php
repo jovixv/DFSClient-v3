@@ -21,6 +21,16 @@ class OnPageGetPagesEntityMainTasksResultItemsBrokenChecks
     public $is_redirect = null;
 
     /**
+     * @var null|boolean $is_4xx_code;
+     */
+    public $is_4xx_code = null;
+
+    /**
+     * @var null|boolean $is_5xx_code;
+     */
+    public $is_5xx_code = null;
+
+    /**
     * @var null|boolean $is_broken;
     */
     public $is_broken = null;

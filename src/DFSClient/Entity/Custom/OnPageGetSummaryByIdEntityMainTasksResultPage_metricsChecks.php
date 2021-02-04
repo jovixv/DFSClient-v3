@@ -146,6 +146,16 @@ class OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks
     public $is_broken = null;
 
     /**
+     * @var null|integer $is_4xx_code;
+     */
+    public $is_4xx_code = null;
+
+    /**
+     * @var null|integer $is_5xx_code;
+     */
+    public $is_5xx_code = null;
+
+    /**
     * @var null|integer $is_www;
     */
     public $is_www = null;
