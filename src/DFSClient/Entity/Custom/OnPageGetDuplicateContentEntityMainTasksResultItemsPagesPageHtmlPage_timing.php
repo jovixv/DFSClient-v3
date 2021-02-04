@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPagePage_timing 
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlPage_timing 
 {    
     /**
     * @var null|integer $time_to_interactive;

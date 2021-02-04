@@ -12,6 +12,10 @@ class OnPageGetDuplicateContent extends AbstractModel
     protected $pathToMainData = 'tasks->0->result';
     protected $requestToFunction = 'on_page/duplicate_content';
     protected $resultShouldBeTransformedToArray = true;
+    protected $jsonContainVariadicType = true;
+    protected $pathsToVariadicTypesAndValue = [
+        'tasks->(:number)->result->(:number)->items->(:number)->pages->(:number)->page->(:number)' => 'resource_type'
+    ];
 
     protected $useNewMapper = true;
 

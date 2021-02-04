@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPage;
+use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtml;
 
 class OnPageGetDuplicateContentEntityMainTasksResultItemsPages 
 {    
@@ -12,8 +12,8 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPages
     public $similarity = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPage $page;
+    * @var array|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtml[] $page;
     */
-    public $page = null;
+    public $page = [];
  
 }

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageChecks 
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlChecks 
 {    
     /**
     * @var null|boolean $no_content_encoding;
@@ -184,25 +184,5 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageChecks
     * @var null|boolean $lorem_ipsum;
     */
     public $lorem_ipsum = null;
-
-    /**
-    * @var null|boolean $seo_friendly_url_characters_check;
-    */
-    public $seo_friendly_url_characters_check = null;
-
-    /**
-    * @var null|boolean $seo_friendly_url_dynamic_check;
-    */
-    public $seo_friendly_url_dynamic_check = null;
-
-    /**
-    * @var null|boolean $seo_friendly_url_keywords_check;
-    */
-    public $seo_friendly_url_keywords_check = null;
-
-    /**
-    * @var null|boolean $seo_friendly_url_relative_length_check;
-    */
-    public $seo_friendly_url_relative_length_check = null;
  
 }
