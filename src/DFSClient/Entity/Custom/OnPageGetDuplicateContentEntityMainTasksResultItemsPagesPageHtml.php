@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageChecks;
+use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlChecks;
 
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPage 
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtml 
 {    
     /**
     * @var null|string $resource_type;
@@ -27,12 +27,12 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPage
     public $url = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMeta $meta;
+    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlMeta $meta;
     */
     public $meta = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPagePage_timing $page_timing;
+    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlPage_timing $page_timing;
     */
     public $page_timing = null;
 
@@ -97,12 +97,12 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPage
     public $fetch_time = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageCache_control $cache_control;
+    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlCache_control $cache_control;
     */
     public $cache_control = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageChecks $checks;
+    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlChecks $checks;
     */
     public $checks = null;
 

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMetaContent 
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlMetaContent 
 {    
     /**
     * @var null|integer $plain_text_size;
@@ -46,7 +46,7 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMetaContent
     public $smog_readability_index = null;
 
     /**
-    * @var null|NULL $description_to_content_consistency;
+    * @var null|double $description_to_content_consistency;
     */
     public $description_to_content_consistency = null;
 

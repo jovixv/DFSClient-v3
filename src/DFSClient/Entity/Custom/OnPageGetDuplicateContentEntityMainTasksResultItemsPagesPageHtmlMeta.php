@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMetaContent;
+use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlMetaContent;
 
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMeta 
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlMeta 
 {    
     /**
     * @var null|string $title;
@@ -22,17 +22,17 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMeta
     public $follow = null;
 
     /**
-    * @var null|string $generator;
+    * @var null|NULL $generator;
     */
     public $generator = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMetaHtags $htags;
+    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlMetaHtags $htags;
     */
     public $htags = null;
 
     /**
-    * @var null|NULL $description;
+    * @var null|string $description;
     */
     public $description = null;
 
@@ -107,7 +107,7 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMeta
     public $description_length = null;
 
     /**
-    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMetaContent $content;
+    * @var null|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlMetaContent $content;
     */
     public $content = null;
 
@@ -117,7 +117,7 @@ class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageMeta
     public $deprecated_tags = null;
 
     /**
-    * @var null|array $duplicate_meta_tags;
+    * @var null|NULL $duplicate_meta_tags;
     */
     public $duplicate_meta_tags = null;
 

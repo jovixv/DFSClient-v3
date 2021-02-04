@@ -12,6 +12,10 @@ class OnPageGetDuplicateContent extends AbstractModel
     protected $pathToMainData = 'tasks->0->result';
     protected $requestToFunction = 'on_page/duplicate_content';
     protected $resultShouldBeTransformedToArray = true;
+    protected $jsonContainVariadicType = true;
+    protected $pathsToVariadicTypesAndValue = [
+        'tasks->(:number)->result->(:number)->items->(:number)->pages->(:number)->page->(:number)' => 'resource_type'
+    ];
 
     protected $useNewMapper = true;
 
@@ -72,6 +76,16 @@ class OnPageGetDuplicateContent extends AbstractModel
     public function setSimilarity(int $similarity)
     {
         $this->payload['similarity'] = $similarity;
+        return $this;
+    }
+
+    /**
+     * @param array $filter
+     * @return $this
+     */
+    public function setFilter(array $filter)
+    {
+        $this->payload['filters'] = $filter;
         return $this;
     }
 
