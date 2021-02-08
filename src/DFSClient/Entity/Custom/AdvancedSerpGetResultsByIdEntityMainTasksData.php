@@ -26,9 +26,9 @@ class AdvancedSerpGetResultsByIdEntityMainTasksData
     public $se_type = null;
 
     /**
-    * @var null|string $language_code;
+    * @var null|string $keyword;
     */
-    public $language_code = null;
+    public $keyword = null;
 
     /**
     * @var null|integer $location_code;
@@ -36,14 +36,24 @@ class AdvancedSerpGetResultsByIdEntityMainTasksData
     public $location_code = null;
 
     /**
-    * @var null|string $keyword;
+    * @var null|string $language_name;
     */
-    public $keyword = null;
+    public $language_name = null;
+
+    /**
+    * @var null|string $pingback_url;
+    */
+    public $pingback_url = null;
 
     /**
     * @var null|string $postback_data;
     */
     public $postback_data = null;
+
+    /**
+    * @var null|string $priority;
+    */
+    public $priority = null;
 
     /**
     * @var null|string $device;
