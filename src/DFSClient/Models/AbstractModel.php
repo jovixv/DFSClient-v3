@@ -203,7 +203,6 @@ abstract class AbstractModel
      */
     public static function getAfterMerge(array $modelPool)
     {
-
         if (empty($modelPool))
             throw new \Exception('Model pool can not be empty');
 
@@ -222,7 +221,6 @@ abstract class AbstractModel
         $isJsonContainVariadicType = false;
         $pathsToVariadicTypesAndValue  = [];
         $customFunctionForPaths = [];
-
 
         foreach ($modelPool as $key => $model){
 

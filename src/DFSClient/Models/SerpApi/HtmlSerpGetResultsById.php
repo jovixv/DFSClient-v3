@@ -12,6 +12,8 @@ class HtmlSerpGetResultsById extends AbstractModel
     protected $requestToFunction = 'serp/{$se}/{$seType}/task_get/html/{$taskUUID}';
     protected $resultShouldBeTransformedToArray = true;
 
+    protected $useNewMapper = true;
+
     public function setTaskId(string $taskUUID)
     {
         $this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);
