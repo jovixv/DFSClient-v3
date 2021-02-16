@@ -9,7 +9,7 @@ use DFSClientV3\Models\AbstractModel;
 class OnPageInstantPages extends AbstractModel
 {
     protected $method = 'POST';
-    protected $isSupportedMerge = false;
+    protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->0->result';
     protected $requestToFunction = 'on_page/instant_pages';
     protected $resultShouldBeTransformedToArray = true;
