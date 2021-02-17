@@ -104,6 +104,9 @@ abstract class AbstractModel
 
     protected $config;
 
+    /**
+     * @var array
+     */
     protected $payload;
 
     protected $isProcessed;
@@ -288,6 +291,96 @@ abstract class AbstractModel
 
         return $mappedModel;
 
+    }
+
+    /**
+     * @param array|AbstractModel[] $modelPool
+     * @param int $timeout
+     * @return null
+     */
+    public static function getAsync(array $modelPool, int $timeout = 100)
+    {
+
+        if (count($modelPool) > 100)
+            return null;
+
+        $requestsPool = [];
+        $results      = [];
+
+        $payload = [];
+        $url = null;
+        $apiVersion = null;
+        $timeOut = null;
+        $login = null;
+        $password = null;
+
+        $config = Application::getInstance()->getConfig();
+        $pathToMainData = null;
+        $resultShouldTransformedToArray = false;
+        $useNewMapper = false;
+        $isJsonContainVariadicType = false;
+        $pathsToVariadicTypesAndValue  = [];
+        $customFunctionForPaths = [];
+
+        foreach ($modelPool as $key => $model){
+
+            // kostyl, all variable will be rewrite every iteration
+            $url = $model->url;
+            $apiVersion = $model->apiVersion;
+            $login = $model->DFSLogin;
+            $password = $model->DFSPassword;
+
+            $pathToMainData = $model->pathToMainData;
+            $resultShouldTransformedToArray = $model->resultShouldBeTransformedToArray;
+            $useNewMapper = $model->isUseNewMapper();
+            $isJsonContainVariadicType = $model->isJsonContainVariadicType();
+            $pathsToVariadicTypesAndValue  = $model->getPathsToVariadicTypesAndValue();
+            $customFunctionForPaths = $model->getCustomFunctionForPaths();
+
+            $payload['json'][] = $model->getPayload();
+            $payload['headers'] = $config['headers'];
+
+            $requestsPool[$key]['method'] = $model->getHttpMethod();
+            $requestsPool[$key]['url'] = $model->getRequestToFunction();
+            $requestsPool[$key]['params'] = $payload;
+            $requestsPool[$key]['pathToMainData'] = $model->getPathToMainData();
+        }
+
+
+        $http = new HttpClient($url, $apiVersion, $timeout, $login, $password);
+        $responses = $http->sendAsyncRequests($requestsPool, null);
+
+        foreach ($responses as $response){
+
+            /**
+             * @var Responses $response
+             */
+
+            //get called class.
+            $calledClassNameWithNapeSpace = get_called_class();
+            $classNameArray = explode('\\', $calledClassNameWithNapeSpace);
+            //for php 7.3 can be use array_last_key
+            $classNameArray[count($classNameArray ) -1];
+
+            $mapper = new DataMapper($classNameArray[count($classNameArray ) -1], $response->getStatus(), $pathToMainData);
+
+            if ($useNewMapper){
+                $paveDataOptions = new PaveDataOptions();
+                $paveDataOptions->setJson($response->getResponse());
+                $paveDataOptions->setJsonContainVariadicType($isJsonContainVariadicType);
+                $paveDataOptions->setPathsToVariadicTypesAndValue($pathsToVariadicTypesAndValue);
+                $paveDataOptions->setCustomFunctionForPaths($customFunctionForPaths);
+
+                $mappedModel = $mapper->paveDataNew($paveDataOptions);
+
+                $results[] = $mappedModel;
+            }
+
+            if (!$useNewMapper)
+                $results[] = $mapper->paveData($response->getResponse(), null, $resultShouldTransformedToArray);
+        }
+
+        return $results;
     }
 
     /**
@@ -481,4 +574,28 @@ abstract class AbstractModel
         return $this->useNewMapper;
     }
 
+    /**
+     * @return string
+     */
+    public function getHttpMethod()
+    {
+        return $this->method;
+    }
+
+
+    /**
+     * @return string|null
+     */
+    public function getRequestToFunction()
+    {
+        return $this->requestToFunction;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPayload(): array
+    {
+        return $this->payload ?? [];
+    }
 }
