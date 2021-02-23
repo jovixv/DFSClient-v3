@@ -296,7 +296,7 @@ abstract class AbstractModel
     /**
      * @param array|AbstractModel[] $modelPool
      * @param int $timeout
-     * @return null
+     * @return array|null
      */
     public static function getAsync(array $modelPool, int $timeout = 100)
     {

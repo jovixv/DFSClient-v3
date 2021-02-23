@@ -41,9 +41,9 @@ class AdvancedSerpGetResultsByIdEntityMainTasksData
     public $language_name = null;
 
     /**
-    * @var null|string $pingback_url;
+    * @var null|string $postback_url;
     */
-    public $pingback_url = null;
+    public $postback_url = null;
 
     /**
     * @var null|string $postback_data;
@@ -51,14 +51,14 @@ class AdvancedSerpGetResultsByIdEntityMainTasksData
     public $postback_data = null;
 
     /**
-    * @var null|string $priority;
-    */
-    public $priority = null;
-
-    /**
     * @var null|string $device;
     */
     public $device = null;
+
+    /**
+    * @var null|string $priority;
+    */
+    public $priority = null;
 
     /**
     * @var null|string $os;

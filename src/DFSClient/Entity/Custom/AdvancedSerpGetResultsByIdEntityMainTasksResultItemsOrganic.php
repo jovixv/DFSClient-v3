@@ -122,6 +122,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganic
     public $faq = null;
 
     /**
+    * @var null|array $extended_people_also_search;
+    */
+    public $extended_people_also_search = null;
+
+    /**
     * @var null|string $timestamp;
     */
     public $timestamp = null;

@@ -31,6 +31,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesItems
     public $date = null;
 
     /**
+    * @var null|boolean $amp_version;
+    */
+    public $amp_version = null;
+
+    /**
     * @var null|string $timestamp;
     */
     public $timestamp = null;

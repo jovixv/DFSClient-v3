@@ -37,6 +37,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_stories
     public $items = [];
 
     /**
+    * @var null|boolean $amp_version;
+    */
+    public $amp_version = null;
+
+    /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesRectangle $rectangle;
     */
     public $rectangle = null;
