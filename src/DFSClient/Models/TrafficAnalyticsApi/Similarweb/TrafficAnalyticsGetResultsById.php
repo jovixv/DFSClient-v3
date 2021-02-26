@@ -12,6 +12,8 @@ class TrafficAnalyticsGetResultsById extends AbstractModel
     protected $requestToFunction = 'traffic_analytics/similarweb/task_get/{$taskUUID}';
     protected $resultShouldBeTransformedToArray = true;
 
+    protected $useNewMapper = true;
+
     public function setTaskId(string $taskUUID)
     {
         $this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);
