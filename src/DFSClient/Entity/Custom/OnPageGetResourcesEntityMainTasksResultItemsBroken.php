@@ -77,6 +77,11 @@ class OnPageGetResourcesEntityMainTasksResultItemsBroken
     public $media_type = null;
 
     /**
+     * @var null|string $accept_type;
+     */
+    public $accept_type = null;
+
+    /**
     * @var null|string $server;
     */
     public $server = null;
