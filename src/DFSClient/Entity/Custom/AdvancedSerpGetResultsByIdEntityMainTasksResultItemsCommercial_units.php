@@ -3,10 +3,8 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsRectangle;
-use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItems;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_units
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_units 
 {    
     /**
     * @var null|string $type;
@@ -27,6 +25,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_units
     * @var null|string $position;
     */
     public $position = null;
+
+    /**
+    * @var null|string $xpath;
+    */
+    public $xpath = null;
+
+    /**
+    * @var null|string $title;
+    */
+    public $title = null;
 
     /**
     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItems[] $items;

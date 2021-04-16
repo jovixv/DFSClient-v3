@@ -2,9 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItemsRating;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItems 
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemItems 
 {    
     /**
     * @var null|string $type;
@@ -37,8 +36,18 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItems
     public $source = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItemsRating $rating;
+    * @var null|string $snippet;
     */
-    public $rating = null;
+    public $snippet = null;
+
+    /**
+    * @var null|string $marketplace;
+    */
+    public $marketplace = null;
+
+    /**
+    * @var null|string $marketplace_url;
+    */
+    public $marketplace_url = null;
  
 }

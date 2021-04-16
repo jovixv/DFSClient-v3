@@ -2,10 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesItems;
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_stories
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_stories 
 {    
     /**
     * @var null|string $type;
@@ -26,6 +25,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_stories
     * @var null|string $position;
     */
     public $position = null;
+
+    /**
+    * @var null|string $xpath;
+    */
+    public $xpath = null;
 
     /**
     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesItems[] $items;

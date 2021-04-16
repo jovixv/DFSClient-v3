@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsRectangle;
+use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems 
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_services 
 {    
     /**
     * @var null|string $type;
@@ -37,17 +37,22 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems
     public $title = null;
 
     /**
-    * @var null|string $data_attrid;
+    * @var null|string $url;
     */
-    public $data_attrid = null;
+    public $url = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems[] $items;
+    * @var null|string $domain;
+    */
+    public $domain = null;
+
+    /**
+    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItems[] $items;
     */
     public $items = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsRectangle $rectangle;
+    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesRectangle $rectangle;
     */
     public $rectangle = null;
  

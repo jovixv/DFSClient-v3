@@ -3,26 +3,26 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesItems
-{
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesItems 
+{    
     /**
-     * @var null|string $type;
-     */
+    * @var null|string $type;
+    */
     public $type = null;
 
     /**
-     * @var null|string $title;
-     */
+    * @var null|string $title;
+    */
     public $title = null;
 
     /**
-     * @var null|string $url;
-     */
+    * @var null|string $url;
+    */
     public $url = null;
 
     /**
-     * @var null|string $domain;
-     */
+    * @var null|string $domain;
+    */
     public $domain = null;
  
 }

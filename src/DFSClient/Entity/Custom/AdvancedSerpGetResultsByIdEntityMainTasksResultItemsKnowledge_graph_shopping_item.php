@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsRectangle;
+use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems 
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_item 
 {    
     /**
     * @var null|string $type;
@@ -42,12 +42,12 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems
     public $data_attrid = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems[] $items;
+    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemItems[] $items;
     */
     public $items = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsRectangle $rectangle;
+    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemRectangle $rectangle;
     */
     public $rectangle = null;
  

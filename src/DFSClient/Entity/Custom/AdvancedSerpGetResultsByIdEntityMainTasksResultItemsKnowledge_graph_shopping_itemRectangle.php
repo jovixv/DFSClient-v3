@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsRectangle 
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemRectangle 
 {    
     /**
     * @var null|integer $x;
