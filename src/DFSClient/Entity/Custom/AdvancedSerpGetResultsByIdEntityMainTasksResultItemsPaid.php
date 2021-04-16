@@ -77,6 +77,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPaid
     public $links = [];
 
     /**
+    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPaidPrice $price;
+    */
+    public $price = null;
+
+    /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPaidRectangle $rectangle;
     */
     public $rectangle = null;

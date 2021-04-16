@@ -107,6 +107,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganic
     public $rating = null;
 
     /**
+    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicPrice $price;
+    */
+    public $price = null;
+
+    /**
     * @var null|array $highlighted;
     */
     public $highlighted = null;

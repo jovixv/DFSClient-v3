@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsCommercial_unitsItemsRating 
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItemsRating 
 {    
     /**
     * @var null|string $rating_type;

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesRectangle
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsVisual_storiesRectangle 
 {    
     /**
     * @var null|integer $x;
