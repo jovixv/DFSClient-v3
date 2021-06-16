@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\RefferingDomainsLiveEntityMainTasksResult;
+use DFSClientV3\Entity\Custom\BacklinksDomainPagesLiveEntityMainTasksResult;
 
-class RefferingDomainsLiveEntityMainTasks 
+class BacklinksDomainPagesLiveEntityMainTasks
 {    
     /**
     * @var null|string $id;
@@ -42,12 +42,12 @@ class RefferingDomainsLiveEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|RefferingDomainsLiveEntityMainTasksData $data;
+    * @var null|BacklinksDomainPagesLiveEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * @var array|RefferingDomainsLiveEntityMainTasksResult[] $result;
+    * @var array|BacklinksDomainPagesLiveEntityMainTasksResult[] $result;
     */
     public $result = [];
  

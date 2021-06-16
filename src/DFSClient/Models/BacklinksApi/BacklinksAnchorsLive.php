@@ -2,18 +2,17 @@
 
 namespace DFSClientV3\Models\BacklinksApi;
 
-use DFSClientV3\Entity\Custom\DomainPagesLiveEntityMain;
+use DFSClientV3\Entity\Custom\BacklinksAnchorsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
-class DomainPagesLive extends AbstractModel
+class BacklinksAnchorsLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'backlinks/domain_pages/live';
+    protected $requestToFunction = 'backlinks/anchors/live';
     protected $resultShouldBeTransformedToArray = true;
-    protected $jsonContainVariadicType = true;
-    protected $pathsToVariadicTypesAndValue = ['tasks->(:number)->result->(:number)->items->(:number)' => 'type'];
+    protected $jsonContainVariadicType = false;
     protected $useNewMapper = true;
 
     /**
@@ -94,23 +93,34 @@ class DomainPagesLive extends AbstractModel
     }
 
     /**
-     * @param array $backlinksFilters
-     * @return $this
-     */
-    public function setBacklinksFilters(array $backlinksFilters)
-    {
-        $this->payload['backlinks_filters'] = $backlinksFilters;
-
-        return $this;
-    }
-
-    /**
      * @param bool $includeSubdomains
      * @return $this
      */
     public function setIncludeSubdomains(bool $includeSubdomains)
     {
         $this->payload['include_subdomains'] = $includeSubdomains;
+
+        return $this;
+    }
+
+    /**
+     * @param bool $excludeInternalBacklinks
+     * @return $this
+     */
+    public function setExcludeInternalBacklinks(bool $excludeInternalBacklinks)
+    {
+        $this->payload['exclude_internal_backlinks'] = $excludeInternalBacklinks;
+
+        return $this;
+    }
+
+    /**
+     * @param array $backlinksFilters
+     * @return $this
+     */
+    public function setBacklinksFilters(array $backlinksFilters)
+    {
+        $this->payload['backlinks_filters'] = $backlinksFilters;
 
         return $this;
     }
@@ -129,25 +139,25 @@ class DomainPagesLive extends AbstractModel
     protected function initCustomFunctionForPaths(): array
     {
         return [
-            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_tld' => function($key, $value){
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_tld' => function($key, $value){
                 return (array) $value;
             },
-            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_flags' => function($key, $value){
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_flags' => function($key, $value){
                 return (array) $value;
             },
-            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_platform_types' => function($key, $value){
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_platform_types' => function($key, $value){
                 return (array) $value;
             },
-            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_semantic_locations' => function($key, $value){
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_semantic_locations' => function($key, $value){
                 return (array) $value;
             },
         ];
     }
 
     /**
-     * @return DomainPagesLiveEntityMain
+     * @return BacklinksAnchorsLiveEntityMain
      */
-    public function get(): DomainPagesLiveEntityMain
+    public function get(): BacklinksAnchorsLiveEntityMain
     {
         return parent::get();
     }

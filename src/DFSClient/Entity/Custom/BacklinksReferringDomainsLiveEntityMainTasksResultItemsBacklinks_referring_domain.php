@@ -2,18 +2,19 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\BacklinksReferringDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domainReferring_links_types;
 
-class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary 
+class BacklinksReferringDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domain
 {    
     /**
-    * @var null|string $first_seen;
+    * @var null|string $type;
     */
-    public $first_seen = null;
+    public $type = null;
 
     /**
-    * @var null|string $lost_date;
+    * @var null|string $domain;
     */
-    public $lost_date = null;
+    public $domain = null;
 
     /**
     * @var null|integer $rank;
@@ -24,6 +25,16 @@ class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary
     * @var null|integer $backlinks;
     */
     public $backlinks = null;
+
+    /**
+    * @var null|string $first_seen;
+    */
+    public $first_seen = null;
+
+    /**
+    * @var null|string $lost_date;
+    */
+    public $lost_date = null;
 
     /**
     * @var null|integer $broken_backlinks;
@@ -66,8 +77,8 @@ class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary
     public $referring_links_tld = null;
 
     /**
-     * @var null|DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summaryReferring_links_types $referring_links_types;
-     */
+    * @var null|BacklinksReferringDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domainReferring_links_types $referring_links_types;
+    */
     public $referring_links_types = null;
 
     /**

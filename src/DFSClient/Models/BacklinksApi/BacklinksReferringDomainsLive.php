@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Models\BacklinksApi;
 
-use DFSClientV3\Entity\Custom\RefferingDomainsLiveEntityMain;
+use DFSClientV3\Entity\Custom\BacklinksReferringDomainsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class RefferingDomainsLive extends AbstractModel
@@ -156,9 +156,9 @@ class RefferingDomainsLive extends AbstractModel
     }
 
     /**
-     * @return RefferingDomainsLiveEntityMain
+     * @return BacklinksReferringDomainsLiveEntityMain
      */
-    public function get(): RefferingDomainsLiveEntityMain
+    public function get(): BacklinksReferringDomainsLiveEntityMain
     {
         return parent::get();
     }

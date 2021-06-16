@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AnchorsLiveEntityMainTasksResultItems;
+use DFSClientV3\Entity\Custom\BacklinksReferringDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domain;
 
-class AnchorsLiveEntityMainTasksResult 
+class BacklinksReferringDomainsLiveEntityMainTasksResult
 {    
     /**
     * @var null|string $target;
@@ -22,7 +22,7 @@ class AnchorsLiveEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var array|AnchorsLiveEntityMainTasksResultItems[] $items;
+    * @var array|BacklinksReferringDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domain[] $items;
     */
     public $items = [];
  

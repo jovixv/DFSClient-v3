@@ -2,19 +2,18 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AnchorsLiveEntityMainTasksResultItemsReferring_links_types;
 
-class AnchorsLiveEntityMainTasksResultItems 
+class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary
 {    
     /**
-    * @var null|string $type;
+    * @var null|string $first_seen;
     */
-    public $type = null;
+    public $first_seen = null;
 
     /**
-    * @var null|string $anchor;
+    * @var null|string $lost_date;
     */
-    public $anchor = null;
+    public $lost_date = null;
 
     /**
     * @var null|integer $rank;
@@ -25,16 +24,6 @@ class AnchorsLiveEntityMainTasksResultItems
     * @var null|integer $backlinks;
     */
     public $backlinks = null;
-
-    /**
-    * @var null|string $first_seen;
-    */
-    public $first_seen = null;
-
-    /**
-    * @var null|string $lost_date;
-    */
-    public $lost_date = null;
 
     /**
     * @var null|integer $broken_backlinks;
@@ -77,8 +66,8 @@ class AnchorsLiveEntityMainTasksResultItems
     public $referring_links_tld = null;
 
     /**
-    * @var null|AnchorsLiveEntityMainTasksResultItemsReferring_links_types $referring_links_types;
-    */
+     * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summaryReferring_links_types $referring_links_types;
+     */
     public $referring_links_types = null;
 
     /**

@@ -2,14 +2,14 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DomainPagesLiveEntityMainTasks;
+use DFSClientV3\Entity\Custom\BacklinksDomainPagesLiveEntityMainTasks;
 
-class DomainPagesLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
+class BacklinksDomainPagesLiveEntityMain extends \DFSClientV3\Models\ResponseModel
 {    
     /**
     * @var null|string $version;
     */
-    public $version = 'string';
+    public $version = '0.1.20210615';
 
     /**
     * @var null|integer $status_code;
@@ -42,13 +42,13 @@ class DomainPagesLiveEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * @var array|DomainPagesLiveEntityMainTasks[] $tasks;
+    * @var array|BacklinksDomainPagesLiveEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\DomainPagesLiveEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\BacklinksDomainPagesLiveEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

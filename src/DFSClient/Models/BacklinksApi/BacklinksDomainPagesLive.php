@@ -2,18 +2,18 @@
 
 namespace DFSClientV3\Models\BacklinksApi;
 
-
-use DFSClientV3\Entity\Custom\BacklinksLiveEntityMain;
+use DFSClientV3\Entity\Custom\BacklinksDomainPagesLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
-class BacklinksLive extends AbstractModel
+class BacklinksDomainPagesLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'backlinks/backlinks/live';
+    protected $requestToFunction = 'backlinks/domain_pages/live';
     protected $resultShouldBeTransformedToArray = true;
-    protected $jsonContainVariadicType = false;
+    protected $jsonContainVariadicType = true;
+    protected $pathsToVariadicTypesAndValue = ['tasks->(:number)->result->(:number)->items->(:number)' => 'type'];
     protected $useNewMapper = true;
 
     /**
@@ -23,17 +23,6 @@ class BacklinksLive extends AbstractModel
     public function setTarget(string $target)
     {
         $this->payload['target'] = $target;
-
-        return $this;
-    }
-
-    /**
-     * @param string $mode
-     * @return $this
-     */
-    public function setMode(string $mode)
-    {
-        $this->payload['mode'] = $mode;
 
         return $this;
     }
@@ -105,6 +94,17 @@ class BacklinksLive extends AbstractModel
     }
 
     /**
+     * @param array $backlinksFilters
+     * @return $this
+     */
+    public function setBacklinksFilters(array $backlinksFilters)
+    {
+        $this->payload['backlinks_filters'] = $backlinksFilters;
+
+        return $this;
+    }
+
+    /**
      * @param bool $includeSubdomains
      * @return $this
      */
@@ -126,11 +126,28 @@ class BacklinksLive extends AbstractModel
         return $this;
     }
 
+    protected function initCustomFunctionForPaths(): array
+    {
+        return [
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_tld' => function($key, $value){
+                return (array) $value;
+            },
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_flags' => function($key, $value){
+                return (array) $value;
+            },
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_platform_types' => function($key, $value){
+                return (array) $value;
+            },
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_semantic_locations' => function($key, $value){
+                return (array) $value;
+            },
+        ];
+    }
 
     /**
-     * @return BacklinksLiveEntityMain
+     * @return BacklinksDomainPagesLiveEntityMain
      */
-    public function get(): BacklinksLiveEntityMain
+    public function get(): BacklinksDomainPagesLiveEntityMain
     {
         return parent::get();
     }
