@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Models\BacklinksApi;
 
+use DFSClientV3\Entity\Custom\DomainPagesLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class DomainPagesLive extends AbstractModel
@@ -144,9 +145,9 @@ class DomainPagesLive extends AbstractModel
     }
 
     /**
-     * @return
+     * @return DomainPagesLiveEntityMain
      */
-    public function get()
+    public function get(): DomainPagesLiveEntityMain
     {
         return parent::get();
     }
