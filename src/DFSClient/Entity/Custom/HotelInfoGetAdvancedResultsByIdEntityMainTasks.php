@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResult;
+use DFSClientV3\Entity\Custom\HotelInfoGetAdvancedResultsByIdEntityMainTasksResult;
 
-class ReviewsGetResultsByTaskIdEntityMainTasks 
+class HotelInfoGetAdvancedResultsByIdEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -42,12 +42,12 @@ class ReviewsGetResultsByTaskIdEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|ReviewsGetResultsByTaskIdEntityMainTasksData $data;
+    * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * @var array|ReviewsGetResultsByTaskIdEntityMainTasksResult[] $result;
+    * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResult[] $result;
     */
     public $result = [];
  

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ReviewsGetResultsByTaskIdEntityMainTasksData 
+class YelpReviewsGetResultsByTaskIdEntityMainTasksData 
 {    
     /**
     * @var null|string $se_type;
@@ -26,24 +26,24 @@ class ReviewsGetResultsByTaskIdEntityMainTasksData
     public $function = null;
 
     /**
-    * @var null|string $location_name;
-    */
-    public $location_name = null;
-
-    /**
     * @var null|string $language_name;
     */
     public $language_name = null;
 
     /**
-    * @var null|string $keyword;
+    * @var null|string $alias;
     */
-    public $keyword = null;
+    public $alias = null;
 
     /**
     * @var null|integer $depth;
     */
     public $depth = null;
+
+    /**
+    * @var null|string $sort_by;
+    */
+    public $sort_by = null;
 
     /**
     * @var null|integer $priority;

@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
+class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
 {    
     /**
     * @var null|string $rating_type;
@@ -21,7 +21,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating
     public $votes_count = null;
 
     /**
-    * @var null|integer $rating_max;
+    * @var null|NULL $rating_max;
     */
     public $rating_max = null;
  

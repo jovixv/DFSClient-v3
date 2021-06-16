@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsOther_sites_reviewsRating 
 {    
     /**
     * @var null|string $rating_type;
@@ -11,17 +11,17 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating
     public $rating_type = null;
 
     /**
-    * @var null|integer $value;
+    * @var null|double $value;
     */
     public $value = null;
 
     /**
-    * @var null|NULL $votes_count;
+    * @var null|integer $votes_count;
     */
     public $votes_count = null;
 
     /**
-    * @var null|integer $rating_max;
+    * @var null|NULL $rating_max;
     */
     public $rating_max = null;
  

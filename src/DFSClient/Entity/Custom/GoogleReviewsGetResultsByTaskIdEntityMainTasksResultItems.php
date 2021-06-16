@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
+use DFSClientV3\Entity\Custom\GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResultItems 
+class GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItems 
 {    
     /**
     * @var null|string $type;
@@ -47,7 +47,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResultItems
     public $timestamp = null;
 
     /**
-    * @var null|ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
+    * @var null|GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
     */
     public $rating = null;
 

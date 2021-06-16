@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
+class GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
 {    
     /**
     * @var null|string $rating_type;

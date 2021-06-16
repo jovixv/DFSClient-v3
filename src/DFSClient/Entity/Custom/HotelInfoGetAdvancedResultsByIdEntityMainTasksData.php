@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ReviewsGetResultsByTaskIdEntityMainTasksData 
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksData 
 {    
     /**
     * @var null|string $se_type;
@@ -36,14 +36,9 @@ class ReviewsGetResultsByTaskIdEntityMainTasksData
     public $language_name = null;
 
     /**
-    * @var null|string $keyword;
+    * @var null|string $hotel_identifier;
     */
-    public $keyword = null;
-
-    /**
-    * @var null|integer $depth;
-    */
-    public $depth = null;
+    public $hotel_identifier = null;
 
     /**
     * @var null|integer $priority;

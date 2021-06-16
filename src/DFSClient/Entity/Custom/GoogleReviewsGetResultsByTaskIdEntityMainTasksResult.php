@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResultItems;
+use DFSClientV3\Entity\Custom\GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItems;
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResult 
+class GoogleReviewsGetResultsByTaskIdEntityMainTasksResult 
 {    
     /**
     * @var null|string $keyword;
@@ -52,7 +52,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResult
     public $sub_title = null;
 
     /**
-    * @var null|ReviewsGetResultsByTaskIdEntityMainTasksResultRating $rating;
+    * @var null|GoogleReviewsGetResultsByTaskIdEntityMainTasksResultRating $rating;
     */
     public $rating = null;
 
@@ -82,7 +82,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var array|ReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
+    * @var array|GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  
