@@ -2,14 +2,19 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_page;
+use DFSClientV3\Entity\Custom\BacklinksBacklinksLiveEntityMainTasksResultItemsBacklink;
 
-class DomainPagesLiveEntityMainTasksResult 
+class BacklinksBacklinksLiveEntityMainTasksResult
 {    
     /**
     * @var null|string $target;
     */
     public $target = null;
+
+    /**
+    * @var null|string $mode;
+    */
+    public $mode = null;
 
     /**
     * @var null|integer $total_count;
@@ -22,7 +27,7 @@ class DomainPagesLiveEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var array|DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_page[] $items;
+    * @var array|BacklinksBacklinksLiveEntityMainTasksResultItemsBacklink[] $items;
     */
     public $items = [];
  

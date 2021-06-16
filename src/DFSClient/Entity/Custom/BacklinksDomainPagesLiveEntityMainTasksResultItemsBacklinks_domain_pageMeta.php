@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta 
+class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta
 {    
     /**
     * @var null|string $title;

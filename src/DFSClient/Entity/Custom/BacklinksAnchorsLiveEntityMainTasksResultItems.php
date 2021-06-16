@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\RefferingDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domainReferring_links_types;
+use DFSClientV3\Entity\Custom\BacklinksAnchorsLiveEntityMainTasksResultItemsReferring_links_types;
 
-class RefferingDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domain 
+class BacklinksAnchorsLiveEntityMainTasksResultItems
 {    
     /**
     * @var null|string $type;
@@ -12,9 +12,9 @@ class RefferingDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domain
     public $type = null;
 
     /**
-    * @var null|string $domain;
+    * @var null|string $anchor;
     */
-    public $domain = null;
+    public $anchor = null;
 
     /**
     * @var null|integer $rank;
@@ -77,7 +77,7 @@ class RefferingDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domain
     public $referring_links_tld = null;
 
     /**
-    * @var null|RefferingDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domainReferring_links_types $referring_links_types;
+    * @var null|BacklinksAnchorsLiveEntityMainTasksResultItemsReferring_links_types $referring_links_types;
     */
     public $referring_links_types = null;
 

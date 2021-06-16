@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class BacklinksLiveEntityMainTasksResultItemsBacklink 
+class BacklinksBacklinksLiveEntityMainTasksResultItemsBacklink
 {    
     /**
     * @var null|string $type;

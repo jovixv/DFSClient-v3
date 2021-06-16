@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class DomainPagesLiveEntityMainTasksData 
+class BacklinksAnchorsLiveEntityMainTasksData
 {    
     /**
     * @var null|string $api;
@@ -24,5 +24,15 @@ class DomainPagesLiveEntityMainTasksData
     * @var null|integer $limit;
     */
     public $limit = null;
+
+    /**
+    * @var null|array $order_by;
+    */
+    public $order_by = null;
+
+    /**
+    * @var null|integer $offset;
+    */
+    public $offset = null;
  
 }

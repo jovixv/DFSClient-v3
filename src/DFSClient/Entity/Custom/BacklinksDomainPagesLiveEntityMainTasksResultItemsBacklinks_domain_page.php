@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary;
+use DFSClientV3\Entity\Custom\BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary;
 
-class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_page 
+class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_page
 {    
     /**
     * @var null|string $type;
@@ -87,12 +87,12 @@ class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_page
     public $server = null;
 
     /**
-    * @var null|DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta $meta;
+    * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta $meta;
     */
     public $meta = null;
 
     /**
-    * @var null|DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary $page_summary;
+    * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary $page_summary;
     */
     public $page_summary = null;
  

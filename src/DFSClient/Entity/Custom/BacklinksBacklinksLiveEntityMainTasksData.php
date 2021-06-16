@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class BacklinksLiveEntityMainTasksData 
+class BacklinksBacklinksLiveEntityMainTasksData
 {    
     /**
     * @var null|string $api;

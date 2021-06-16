@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class DomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summaryReferring_links_types
+class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summaryReferring_links_types
 {    
     /**
     * @var null|integer $anchor;
