@@ -5,7 +5,7 @@ namespace DFSClientV3\Models\BacklinksApi;
 use DFSClientV3\Entity\Custom\BacklinksReferringDomainsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
-class RefferingDomainsLive extends AbstractModel
+class BacklinksReferringDomainsLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
