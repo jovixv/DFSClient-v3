@@ -555,7 +555,8 @@ abstract class AbstractModel
      */
     private function initDefaultMethods()
     {
-        $this->initCustomFunctionForPaths();
+        $this->addCustomFunctionForPath($this->initCustomFunctionForPaths());
+
     }
 
     /**
