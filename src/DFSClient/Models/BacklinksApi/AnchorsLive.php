@@ -13,7 +13,6 @@ class AnchorsLive extends AbstractModel
     protected $requestToFunction = 'backlinks/anchors/live';
     protected $resultShouldBeTransformedToArray = true;
     protected $jsonContainVariadicType = false;
-//    protected $pathsToVariadicTypesAndValue = ['tasks->(:number)->result->(:number)->items->(:number)' => 'referring_links_tld'];
     protected $useNewMapper = true;
 
     /**
@@ -116,10 +115,10 @@ class AnchorsLive extends AbstractModel
     }
 
     /**
-     * @param string $backlinksFilters
+     * @param array $backlinksFilters
      * @return $this
      */
-    public function setBacklinksFilters(string $backlinksFilters)
+    public function setBacklinksFilters(array $backlinksFilters)
     {
         $this->payload['backlinks_filters'] = $backlinksFilters;
 
@@ -139,7 +138,7 @@ class AnchorsLive extends AbstractModel
 
     protected function initCustomFunctionForPaths(): array
     {
-        $this->addCustomFunctionForPath([
+        return [
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_tld' => function($key, $value){
                 return (array) $value;
             },
@@ -152,20 +151,14 @@ class AnchorsLive extends AbstractModel
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_semantic_locations' => function($key, $value){
                 return (array) $value;
             },
-        ]);
-
-        return [];
+        ];
     }
 
     /**
-     * @return
+     * @return AnchorsLiveEntityMain
      */
-    public function get()
+    public function get(): AnchorsLiveEntityMain
     {
-//        $this->addCustomFunctionForPath(['tasks->(:number)->result->(:number)->items->(:number)->referring_links_tld' => function($key, $value){
-//
-//            return (array) $value;
-//        }]);
         return parent::get();
     }
 

@@ -71,6 +71,79 @@ class DomainPagesLive extends AbstractModel
     }
 
     /**
+     * @param int $internalListLimit
+     * @return $this
+     */
+    public function setInternalListLimit(int $internalListLimit)
+    {
+        $this->payload['internal_list_limit'] = $internalListLimit;
+
+        return $this;
+    }
+
+    /**
+     * @param string $backlinksStatusType
+     * @return $this
+     */
+    public function setBacklinksStatusType(string $backlinksStatusType)
+    {
+        $this->payload['backlinks_status_type'] = $backlinksStatusType;
+
+        return $this;
+    }
+
+    /**
+     * @param array $backlinksFilters
+     * @return $this
+     */
+    public function setBacklinksFilters(array $backlinksFilters)
+    {
+        $this->payload['backlinks_filters'] = $backlinksFilters;
+
+        return $this;
+    }
+
+    /**
+     * @param bool $includeSubdomains
+     * @return $this
+     */
+    public function setIncludeSubdomains(bool $includeSubdomains)
+    {
+        $this->payload['include_subdomains'] = $includeSubdomains;
+
+        return $this;
+    }
+
+    /**
+     * @param string $tag
+     * @return $this
+     */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+
+        return $this;
+    }
+
+    protected function initCustomFunctionForPaths(): array
+    {
+        return [
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_tld' => function($key, $value){
+                return (array) $value;
+            },
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_flags' => function($key, $value){
+                return (array) $value;
+            },
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_platform_types' => function($key, $value){
+                return (array) $value;
+            },
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_semantic_locations' => function($key, $value){
+                return (array) $value;
+            },
+        ];
+    }
+
+    /**
      * @return
      */
     public function get()
