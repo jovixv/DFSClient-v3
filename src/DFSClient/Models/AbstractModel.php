@@ -131,6 +131,11 @@ abstract class AbstractModel
     protected $customFunctionForPaths = [];
 
     /**
+     * @var array
+     */
+    protected $pathsToDictionary = [];
+
+    /**
      * @var bool $useNewMapper Temp variable, for detect when use new mapper
      */
     protected $useNewMapper = false;
@@ -321,6 +326,7 @@ abstract class AbstractModel
         $isJsonContainVariadicType = false;
         $pathsToVariadicTypesAndValue  = [];
         $customFunctionForPaths = [];
+        $pathsToDictionary = [];
 
         foreach ($modelPool as $key => $model){
 
@@ -336,6 +342,7 @@ abstract class AbstractModel
             $isJsonContainVariadicType = $model->isJsonContainVariadicType();
             $pathsToVariadicTypesAndValue  = $model->getPathsToVariadicTypesAndValue();
             $customFunctionForPaths = $model->getCustomFunctionForPaths();
+            $pathsToDictionary = $model->getPathsToDictionary();
 
             $payload['json'][] = $model->getPayload();
             $payload['headers'] = $config['headers'];
@@ -368,6 +375,7 @@ abstract class AbstractModel
                 $paveDataOptions = new PaveDataOptions();
                 $paveDataOptions->setJson($response->getResponse());
                 $paveDataOptions->setJsonContainVariadicType($isJsonContainVariadicType);
+                $paveDataOptions->setPathsToDictionary($pathsToDictionary);
                 $paveDataOptions->setPathsToVariadicTypesAndValue($pathsToVariadicTypesAndValue);
                 $paveDataOptions->setCustomFunctionForPaths($customFunctionForPaths);
 
@@ -482,6 +490,7 @@ abstract class AbstractModel
             $paveDataOptions->setJson($json);
             $paveDataOptions->setJsonContainVariadicType($this->isJsonContainVariadicType());
             $paveDataOptions->setPathsToVariadicTypesAndValue($this->getPathsToVariadicTypesAndValue());
+            $paveDataOptions->setPathsToDictionary($this->getPathsToDictionary());
             $paveDataOptions->setCustomFunctionForPaths($this->getCustomFunctionForPaths());
 
             $mappedModel = $mapper->paveDataNew($paveDataOptions);
@@ -501,7 +510,7 @@ abstract class AbstractModel
     {
         return $this->resultShouldBeTransformedToArray;
     }
-    
+
     public function useSandbox(string $url = null)
     {
     	$this->url = $this->config['sandboxUrl'];
@@ -534,6 +543,13 @@ abstract class AbstractModel
     }
 
     /**
+     * @return array
+     */
+    public function getPathsToDictionary(): array
+    {
+        return $this->pathsToDictionary;
+    }
+    /**
      * @param array $customFunction
      */
     public function addCustomFunctionForPath(array $customFunction)
@@ -549,7 +565,7 @@ abstract class AbstractModel
     {
         return $this->customFunctionForPaths;
     }
- 
+
     /**
      *
      */
