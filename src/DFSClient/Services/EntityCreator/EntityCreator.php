@@ -52,7 +52,6 @@ class EntityCreator
             $classCreatorOptions->setClassName($modelName);
             $classCreatorOptions->setFilePath($this->path);
             $classCreatorOptions->setJson($json);
-            $classCreatorOptions->setPathsToDictionary($model->getPathsToDictionary());
             $classCreatorOptions->setIsFileRequired(true);
             $classCreatorOptions->setPathsToVariadicTypesAndValue($model->getPathsToVariadicTypesAndValue());
             $classCreatorOptions->setJsonContainVariadicType($model->isJsonContainVariadicType());

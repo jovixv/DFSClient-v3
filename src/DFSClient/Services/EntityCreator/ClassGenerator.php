@@ -1,8 +1,8 @@
 <?php
 
+
 namespace DFSClientV3\Services\EntityCreator;
 
-use DFSClientV3\Entity\Custom\DictionaryEntity;
 
 class ClassGenerator
 {
@@ -125,7 +125,6 @@ class ClassGenerator
         $variadicTypes              = $classCreatorOptions->getPathsToVariadicTypesAndValue();
         $classProperty              = [];
         $classNameSpaces            = [];
-        $dictionaries               = $classCreatorOptions->getPathsToDictionary();
         // previous iteration path, this variable contain path from previous recursive execution
         $this->currentIterationPath = $this->prepareStructurePath($classCreatorOptions->prevPath);
 
@@ -144,17 +143,7 @@ class ClassGenerator
                 if (!$this->isValueFinalized($value)){
 
                     $options = clone $classCreatorOptions;
-                    $options->setJson(json_encode($value));
-
-                    if(isset($dictionaries[$this->currentIterationPath])){
-                        /**
-                         * @var DictionaryEntity $dictionaryName
-                         */
-                        $dictionaryName = $dictionaries[$this->currentIterationPath];
-                        $value = new $dictionaryName((array)$value);
-                        $options->setJson(json_encode($value->getAny()));
-                    }
-
+                    $options->setJson(json_encode($value));;
                     $options->prevPath = $classCreatorOptions->prevPath.$key.'->';
                         // json has variadic types, it means some value, has array with different objects
                         // check if the current iteration path equal some variadic type
@@ -165,6 +154,7 @@ class ClassGenerator
                         }
                         // variable contain object
                         elseif (!is_int($key) && is_object($value)){
+
                             $options->setIsFileRequired(true);
                             $options->setSuffix($classCreatorOptions->getSuffix().ucfirst($key));
                             $classProperty[$key] = $this->generateTypeForDocBlock(
@@ -173,13 +163,6 @@ class ClassGenerator
                                 true
                             );
                             $classNameSpaces = $this->generateNameSpaces($options->getClassName(), $options->getSuffix());
-                        }
-                        elseif (is_int($key) && $value instanceof DictionaryEntity){
-                            $dictionaryNameSpaceArray = explode('\\', get_class($value));
-                            $dictionaryName = $dictionaryNameSpaceArray[count($dictionaryNameSpaceArray) - 1];
-
-                            $options->setIsFileRequired(false);
-                            $options->setSuffix($classCreatorOptions->getSuffix().$dictionaryName.'Item');
                         }
                         // for iteration array with objects
                         elseif(is_int($key) && is_object($value)){
@@ -209,18 +192,11 @@ class ClassGenerator
 
                             // value does not have variadic types
                             if (!isset($variadicTypes[$emulateNextPathLevel])){
-
-                                if (isset($dictionaries[$emulateNextPathLevel])){
-                                    $classProperty[$key] = '\\'.$dictionaries[$emulateNextPathLevel].'[]';
-                                    $classNameSpaces[] = 'use '.$dictionaries[$emulateNextPathLevel]. ';';
-                                }else{
-                                    $classProperty[$key] = $this->generateTypeForDocBlock(
-                                        $options->getClassName(),
-                                        $options->getSuffix()
-                                    );
-                                    $classNameSpaces = $this->generateNameSpaces($options->getClassName(), $options->getSuffix());
-                                }
-
+                                $classProperty[$key] = $this->generateTypeForDocBlock(
+                                    $options->getClassName(),
+                                    $options->getSuffix()
+                                );
+                                $classNameSpaces = $this->generateNameSpaces($options->getClassName(), $options->getSuffix());
                             }
 
                         }
