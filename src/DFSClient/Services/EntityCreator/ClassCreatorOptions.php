@@ -4,6 +4,8 @@
 namespace DFSClientV3\Services\EntityCreator;
 
 
+use DFSClientV3\Entity\Custom\DictionaryEntity;
+
 class ClassCreatorOptions
 {
     /**
@@ -71,6 +73,10 @@ class ClassCreatorOptions
 //        }
     ];
 
+    protected $pathsToDictionary = [
+        'tasks->(:number)->result->(:number)->items->number' => DictionaryEntity::class
+    ];
+
 
     /**
      * @param bool $jsonContainVariadicType
@@ -96,6 +102,22 @@ class ClassCreatorOptions
         $this->pathsToVariadicTypesAndValue = $pathsToVariadicTypesAndValue;
     }
 
+    /**
+     * @param array $pathsToDictionary
+     */
+    public function setPathsToDictionary(array $pathsToDictionary): void
+    {
+        $this->pathsToDictionary = $pathsToDictionary;
+    }
+
+
+    /**
+     * @return array
+     */
+    public function getPathsToDictionary():array
+    {
+        return $this->pathsToDictionary;
+    }
     /**
      * @return string
      */

@@ -29,6 +29,10 @@ class PaveDataOptions
         'tasks->(:number)->result->(:number)->items' => 'fieldName'
     ];
 
+    protected $pathsToDictionary = [
+
+    ];
+
     /**
      * @var array
      */
@@ -118,6 +122,22 @@ class PaveDataOptions
     public function getPathsToVariadicTypesAndValue(): array
     {
         return $this->pathsToVariadicTypesAndValue;
+    }
+
+    /**
+     * @param array $pathsToDictionary
+     */
+    public function setPathsToDictionary(array $pathsToDictionary): void
+    {
+        $this->pathsToDictionary = $pathsToDictionary;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPathsToDictionary():array
+    {
+        return $this->pathsToDictionary;
     }
 
     /**
