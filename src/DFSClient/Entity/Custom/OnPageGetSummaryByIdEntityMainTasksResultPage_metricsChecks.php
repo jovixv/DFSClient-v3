@@ -219,5 +219,10 @@ class OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks
     * @var null|integer $lorem_ipsum;
     */
     public $lorem_ipsum = null;
+
+    /**
+     * @var null|integer $has_misspelling;
+     */
+    public $has_misspelling = null;
  
 }
