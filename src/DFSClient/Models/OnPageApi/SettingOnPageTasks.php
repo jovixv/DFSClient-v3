@@ -194,6 +194,16 @@ class SettingOnPageTasks extends AbstractModel
     }
 
     /**
+     * @param array $checkSpellExceptions
+     * @return $this
+     */
+    public function setCheckSpellExceptions(array $checkSpellExceptions)
+    {
+        $this->payload['check_spell_exceptions'] = $checkSpellExceptions;
+        return $this;
+    }
+
+    /**
      * @param array $checkThreshold
      * @return $this
      */
