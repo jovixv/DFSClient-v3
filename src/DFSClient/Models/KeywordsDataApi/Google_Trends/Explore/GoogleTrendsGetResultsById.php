@@ -13,6 +13,7 @@ class GoogleTrendsGetResultsById extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/google_trends/explore/task_get/{$taskUUID}';
     protected $resultShouldBeTransformedToArray = true;
+    protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleTrendsGetResultsByIdEntityMain

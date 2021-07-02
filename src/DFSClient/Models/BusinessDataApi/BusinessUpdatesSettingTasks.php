@@ -11,6 +11,7 @@ class BusinessUpdatesSettingTasks extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'business_data/{$se}/my_business_updates/task_post';
     protected $resultShouldBeTransformedToArray = true;
+    protected $useNewMapper = true;
 
 	/**
 	 * @param string $keyword

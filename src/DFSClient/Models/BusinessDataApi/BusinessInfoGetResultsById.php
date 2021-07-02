@@ -12,6 +12,7 @@ class BusinessInfoGetResultsById extends AbstractModel
 	protected $pathToMainData = 'tasks->0->result';
 	protected $requestToFunction = 'business_data/{$se}/my_business_info/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
+    protected $useNewMapper = true;
 	
 	/**
 	 * @param string $taskUUID
