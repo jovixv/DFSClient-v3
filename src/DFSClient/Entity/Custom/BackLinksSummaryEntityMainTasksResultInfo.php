@@ -6,17 +6,17 @@ namespace DFSClientV3\Entity\Custom;
 class BackLinksSummaryEntityMainTasksResultInfo 
 {    
     /**
-    * @var null|NULL $server;
+    * @var null|string $server;
     */
     public $server = null;
 
     /**
-    * @var null|NULL $cms;
+    * @var null|string $cms;
     */
     public $cms = null;
 
     /**
-    * @var null|NULL $platform_type;
+    * @var null|array $platform_type;
     */
     public $platform_type = null;
 

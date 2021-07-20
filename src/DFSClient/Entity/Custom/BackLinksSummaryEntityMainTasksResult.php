@@ -4,8 +4,8 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BackLinksSummaryEntityMainTasksResultInfo;
 
-class BackLinksSummaryEntityMainTasksResult
-{
+class BackLinksSummaryEntityMainTasksResult 
+{    
     /**
     * @var null|string $target;
     */
@@ -17,7 +17,7 @@ class BackLinksSummaryEntityMainTasksResult
     public $first_seen = null;
 
     /**
-    * @var null|string $lost_date;
+    * @var null|NULL $lost_date;
     */
     public $lost_date = null;
 
@@ -97,9 +97,9 @@ class BackLinksSummaryEntityMainTasksResult
     public $referring_links_types = null;
 
     /**
-    * @var null|array $referring_links_flags;
+    * @var null|array $referring_links_attributes;
     */
-    public $referring_links_flags = null;
+    public $referring_links_attributes = null;
 
     /**
     * @var null|array $referring_links_platform_types;
@@ -110,5 +110,5 @@ class BackLinksSummaryEntityMainTasksResult
     * @var null|array $referring_links_semantic_locations;
     */
     public $referring_links_semantic_locations = null;
-
+ 
 }
