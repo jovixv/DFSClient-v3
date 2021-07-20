@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Models;
 use DFSClientV3\Bootstrap\Application;
+use DFSClientV3\Entity\Custom\DictionaryEntity;
 use DFSClientV3\Entity\Custom\TagsData;
 use DFSClientV3\Services\EntityCreator\ClassGenerator;
 use DFSClientV3\Services\Logger\Logger;
@@ -95,6 +96,7 @@ class DataMapper
         $entity                     = null;
         $variadicTypes              = $paveDataOptions->getPathsToVariadicTypesAndValue();
         $this->currentIterationPath = $this->prepareStructurePath($paveDataOptions->getPrevPath());
+        $dictionaryPaths = $paveDataOptions->getPathsToDictionary();
 
         // root of json. Use main entity
         if (class_exists($fullClassName) && empty($paveDataOptions->getPrevPath()))
@@ -102,6 +104,12 @@ class DataMapper
 
         if (class_exists($fullClassName) && !empty($paveDataOptions->getPrevPath()))
             $entity = new $fullClassName();
+
+        if (isset($dictionaryPaths[$this->currentIterationPath])){
+            $dictionaryName = $dictionaryPaths[$this->currentIterationPath];
+            $content = (array)$content;
+            $entity = new $dictionaryName($content);
+        }
 
         foreach ($content as $key => $value){
 
@@ -113,8 +121,12 @@ class DataMapper
             if (!$this->isValueFinalized($value)){
 
                 $options = clone $paveDataOptions;
-                $options->setJson(json_encode($value));;
+                $options->setJson(json_encode($value));
                 $options->setPrevPath( $paveDataOptions->getPrevPath().$key.'->');
+
+                if (isset($dictionaryPaths[$this->currentIterationPath])){
+                    $dictionaryName = $dictionaryPaths[$this->currentIterationPath];
+                }
 
                 // json has variadic types, it means some value, has array with different objects
                 // check if the current iteration path equal some variadic type
@@ -124,6 +136,14 @@ class DataMapper
                     $options->setClassSuffix($options->getClassSuffix().ucfirst($value->$fieldNameWithType));
                     $options->setIsCollection(false);
                         $result[$key] = $this->paveDataNew($options);
+                }
+                elseif($entity instanceof DictionaryEntity) {
+                    $dictionaryNameSpaceArray = explode('\\', get_class($entity));
+                    $dictionaryName = $dictionaryNameSpaceArray[count($dictionaryNameSpaceArray) - 1];
+
+                    $options->setIsCollection(true);
+                    $options->setClassSuffix($options->getClassSuffix().$dictionaryName.'Item');
+                    $entity->setByKey($key, $this->paveDataNew($options));
                 }
                 // variable contain object
                 elseif (!is_int($key) && is_object($value)){
@@ -142,6 +162,7 @@ class DataMapper
                 elseif (!is_int($key) && is_array($value)) {
                     $options->setIsCollection(true);
                     $options->setClassSuffix($options->getClassSuffix().ucfirst($key));
+
                     if ($entity !== null)
                         $entity->$key = $this->paveDataNew($options);
                 }
