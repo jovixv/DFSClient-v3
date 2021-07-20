@@ -27,7 +27,7 @@ class BackLinksSummaryEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 

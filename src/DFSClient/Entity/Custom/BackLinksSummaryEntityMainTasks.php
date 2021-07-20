@@ -27,7 +27,7 @@ class BackLinksSummaryEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|integer $cost;
+    * @var null|double $cost;
     */
     public $cost = null;
 
