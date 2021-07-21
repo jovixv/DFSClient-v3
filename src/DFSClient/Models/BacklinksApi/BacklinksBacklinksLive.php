@@ -13,7 +13,10 @@ class BacklinksBacklinksLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'backlinks/backlinks/live';
     protected $resultShouldBeTransformedToArray = true;
-    protected $jsonContainVariadicType = false;
+    protected $jsonContainVariadicType = true;
+    protected $pathsToVariadicTypesAndValue = [
+        'tasks->(:number)->result->(:number)->items->(:number)' => 'type'
+    ];
     protected $useNewMapper = true;
 
     /**
