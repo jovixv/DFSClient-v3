@@ -68,7 +68,7 @@ class BackLinksHistory extends AbstractModel
         return [
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_tld' => function ($key, $value){return (array)$value;},
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_types' => function ($key, $value){return (array)$value;},
-            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_flags' => function ($key, $value){return (array)$value;},
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_attributes' => function ($key, $value){return (array)$value;},
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_platform_types' => function ($key, $value){return (array)$value;},
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_semantic_locations' => function ($key, $value){return (array)$value;}
         ];

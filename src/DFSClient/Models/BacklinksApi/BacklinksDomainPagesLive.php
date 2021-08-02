@@ -132,7 +132,7 @@ class BacklinksDomainPagesLive extends AbstractModel
             'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_tld' => function($key, $value){
                 return (array) $value;
             },
-            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_flags' => function($key, $value){
+            'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_attributes' => function($key, $value){
                 return (array) $value;
             },
             'tasks->(:number)->result->(:number)->items->(:number)->page_summary->referring_links_platform_types' => function($key, $value){

@@ -5,7 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BacklinksAnchorsLiveEntityMainTasksResultItemsReferring_links_types;
 
 class BacklinksAnchorsLiveEntityMainTasksResultItems
-{    
+{
     /**
     * @var null|string $type;
     */
@@ -82,9 +82,9 @@ class BacklinksAnchorsLiveEntityMainTasksResultItems
     public $referring_links_types = null;
 
     /**
-    * @var null|array $referring_links_flags;
+    * @var null|array $referring_links_attributes;
     */
-    public $referring_links_flags = null;
+    public $referring_links_attributes = null;
 
     /**
     * @var null|array $referring_links_platform_types;
@@ -95,5 +95,5 @@ class BacklinksAnchorsLiveEntityMainTasksResultItems
     * @var null|array $referring_links_semantic_locations;
     */
     public $referring_links_semantic_locations = null;
- 
+
 }

@@ -4,7 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 
 class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary
-{    
+{
     /**
     * @var null|string $first_seen;
     */
@@ -71,9 +71,9 @@ class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePag
     public $referring_links_types = null;
 
     /**
-    * @var null|array $referring_links_flags;
+    * @var null|array $referring_links_attributes;
     */
-    public $referring_links_flags = null;
+    public $referring_links_attributes = null;
 
     /**
     * @var null|array $referring_links_platform_types;
@@ -84,5 +84,5 @@ class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePag
     * @var null|array $referring_links_semantic_locations;
     */
     public $referring_links_semantic_locations = null;
- 
+
 }
