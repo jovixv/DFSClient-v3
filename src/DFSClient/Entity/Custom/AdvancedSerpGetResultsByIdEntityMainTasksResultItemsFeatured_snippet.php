@@ -62,6 +62,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsFeatured_snippet
     public $url = null;
 
     /**
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsFeatured_snippetImages $images;
+     */
+    public $images = null;
+
+    /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsFeatured_snippetTable $table;
     */
     public $table = null;

@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResultRating;
+use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResultItems;
 
 class ReviewsGetResultsByTaskIdEntityMainTasksResult 
 {    
@@ -67,6 +67,11 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResult
     public $place_id = null;
 
     /**
+    * @var null|string $cid;
+    */
+    public $cid = null;
+
+    /**
     * @var null|integer $reviews_count;
     */
     public $reviews_count = null;
@@ -77,7 +82,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|ReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
+    * @var array|ReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  

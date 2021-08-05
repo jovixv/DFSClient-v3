@@ -122,8 +122,8 @@ class OnPageGetPagesEntityMainTasksResultItemsHtmlMeta
     public $duplicate_meta_tags = null;
 
     /**
-    * @var null|NULL $spell;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaSpell $spell;
+     */
     public $spell = null;
  
 }

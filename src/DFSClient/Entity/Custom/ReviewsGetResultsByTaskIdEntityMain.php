@@ -9,7 +9,7 @@ class ReviewsGetResultsByTaskIdEntityMain extends \DFSClientV3\Models\ResponseMo
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200325';
+    public $version = 'string';
 
     /**
     * @var null|integer $status_code;
@@ -42,7 +42,7 @@ class ReviewsGetResultsByTaskIdEntityMain extends \DFSClientV3\Models\ResponseMo
     public $tasks_error = null;
 
     /**
-    * array|ReviewsGetResultsByTaskIdEntityMainTasks[] $tasks;
+    * @var array|ReviewsGetResultsByTaskIdEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  

@@ -6,6 +6,16 @@ namespace DFSClientV3\Entity\Custom;
 class ReviewsGetResultsByTaskIdEntityMainTasksData 
 {    
     /**
+    * @var null|string $se_type;
+    */
+    public $se_type = null;
+
+    /**
+    * @var null|string $se;
+    */
+    public $se = null;
+
+    /**
     * @var null|string $api;
     */
     public $api = null;
@@ -16,19 +26,14 @@ class ReviewsGetResultsByTaskIdEntityMainTasksData
     public $function = null;
 
     /**
-    * @var null|string $se;
+    * @var null|string $location_name;
     */
-    public $se = null;
+    public $location_name = null;
 
     /**
-    * @var null|string $language_code;
+    * @var null|string $language_name;
     */
-    public $language_code = null;
-
-    /**
-    * @var null|integer $location_code;
-    */
-    public $location_code = null;
+    public $language_name = null;
 
     /**
     * @var null|string $keyword;
@@ -39,6 +44,11 @@ class ReviewsGetResultsByTaskIdEntityMainTasksData
     * @var null|integer $depth;
     */
     public $depth = null;
+
+    /**
+    * @var null|integer $priority;
+    */
+    public $priority = null;
 
     /**
     * @var null|string $device;

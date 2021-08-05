@@ -42,14 +42,9 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems
     public $data_attrid = null;
 
     /**
-    * @var null|string $text;
+    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems[] $items;
     */
-    public $text = null;
-
-    /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsLinks[] $links;
-    */
-    public $links = [];
+    public $items = [];
 
     /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsRectangle $rectangle;

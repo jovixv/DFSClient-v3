@@ -2,7 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResult;
 
 class ReviewsGetResultsByTaskIdEntityMainTasks 
@@ -48,7 +47,7 @@ class ReviewsGetResultsByTaskIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|ReviewsGetResultsByTaskIdEntityMainTasksResult[] $result;
+    * @var array|ReviewsGetResultsByTaskIdEntityMainTasksResult[] $result;
     */
     public $result = [];
  

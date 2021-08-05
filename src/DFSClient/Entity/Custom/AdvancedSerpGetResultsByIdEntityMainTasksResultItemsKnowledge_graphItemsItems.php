@@ -16,11 +16,6 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsIt
     public $title = null;
 
     /**
-    * @var null|string $subtitle;
-    */
-    public $subtitle = null;
-
-    /**
     * @var null|string $url;
     */
     public $url = null;
@@ -31,13 +26,28 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsIt
     public $domain = null;
 
     /**
-    * @var null|string $image_url;
+    * @var null|string $price;
     */
-    public $image_url = null;
+    public $price = null;
 
     /**
-    * @var null|string $xpath;
+    * @var null|string $source;
     */
-    public $xpath = null;
+    public $source = null;
+
+    /**
+    * @var null|string $snippet;
+    */
+    public $snippet = null;
+
+    /**
+    * @var null|string $marketplace;
+    */
+    public $marketplace = null;
+
+    /**
+    * @var null|string $marketplace_url;
+    */
+    public $marketplace_url = null;
  
 }

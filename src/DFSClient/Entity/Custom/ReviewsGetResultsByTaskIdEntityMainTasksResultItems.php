@@ -42,6 +42,11 @@ class ReviewsGetResultsByTaskIdEntityMainTasksResultItems
     public $time_ago = null;
 
     /**
+    * @var null|string $timestamp;
+    */
+    public $timestamp = null;
+
+    /**
     * @var null|ReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
     */
     public $rating = null;

@@ -102,9 +102,19 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganic
     public $amp_version = null;
 
     /**
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicImages $images;
+     */
+    public $images = null;
+
+    /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicRating $rating;
     */
     public $rating = null;
+
+    /**
+    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicPrice $price;
+    */
+    public $price = null;
 
     /**
     * @var null|array $highlighted;

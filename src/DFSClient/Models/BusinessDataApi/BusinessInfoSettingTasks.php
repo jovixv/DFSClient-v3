@@ -10,6 +10,7 @@ class BusinessInfoSettingTasks extends AbstractModel {
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'business_data/{$se}/my_business_info/task_post';
 	protected $resultShouldBeTransformedToArray = true;
+    protected $useNewMapper = true;
 
 	/**
 	 * @param string $keyword

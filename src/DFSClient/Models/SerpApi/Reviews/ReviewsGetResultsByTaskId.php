@@ -13,6 +13,7 @@ class ReviewsGetResultsByTaskId extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'reviews/{$se}/task_get/{$taskUID}';
     protected $resultShouldBeTransformedToArray = true;
+    protected $useNewMapper = true;
 
     /**
      * @param string $seName

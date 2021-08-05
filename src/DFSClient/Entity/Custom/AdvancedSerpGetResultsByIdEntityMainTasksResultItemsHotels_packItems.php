@@ -12,8 +12,8 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItems
     public $type = null;
 
     /**
-    * @var null|string $price;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsPrice $rating;
+     */
     public $price = null;
 
     /**
@@ -25,6 +25,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItems
     * @var null|string $description;
     */
     public $description = null;
+
+    /**
+     * @var null|string $hotel_identifier;
+     */
+    public $hotel_identifier = null;
 
     /**
     * @var null|string $domain;
