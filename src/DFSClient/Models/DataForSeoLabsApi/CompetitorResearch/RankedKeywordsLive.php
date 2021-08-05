@@ -65,15 +65,37 @@ class RankedKeywordsLive extends AbstractModel
     }
 
     /**
-     * @param string $langCode
+     * @param string $languageCode
      * @return $this
      */
-    public function setLanguageCode(string $langCode)
+    public function setLanguageCode(string $languageCode)
     {
-        $this->payload['language_code'] = $langCode;
+        $this->payload['language_code'] = $languageCode;
 
         return $this;
     }
+
+	/**
+	 * @param array $itemTypes
+	 * @return $this
+	 */
+	public function setItemTypes(array $itemTypes)
+	{
+		$this->payload['item_types'] = $itemTypes;
+
+		return $this;
+	}
+
+	/**
+	 * @param bool $loadRankAbsolute
+	 * @return $this
+	 */
+	public function setLoadRankAbsolute(bool $loadRankAbsolute)
+	{
+		$this->payload['load_rank_absolute'] = $loadRankAbsolute;
+
+		return $this;
+	}
 
     /**
      * @param array $filters

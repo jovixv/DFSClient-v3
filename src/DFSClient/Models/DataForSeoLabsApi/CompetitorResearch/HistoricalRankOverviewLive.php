@@ -6,29 +6,29 @@ namespace DFSClientV3\Models\DataForSeoLabsApi\CompetitorResearch;
 
 use DFSClientV3\Models\AbstractModel;
 
-class SerpCompetitorsLive extends AbstractModel
+class HistoricalRankOverviewLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/serp_competitors/live';
+    protected $requestToFunction = 'dataforseo_labs/historical_rank_overview/live';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMain
+     * @return \DFSClientV3\Entity\Custom\HistoricalRankOverviewLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\HistoricalRankOverviewLiveEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @param array $keywords
+     * @param string $target
      * @return $this
      */
-    public function setKeywords(array $keywords)
+    public function setTarget(string $target)
     {
-        $this->payload['keywords'] = $keywords;
+        $this->payload['target'] = $target;
 
         return $this;
     }
@@ -75,40 +75,40 @@ class SerpCompetitorsLive extends AbstractModel
         return $this;
     }
 
-    /**
-     * @param bool $includeSubdomains
-     * @return $this
-     */
-    public function setIncludeSubdomains(bool $includeSubdomains)
-    {
-        $this->payload['include_subdomains'] = $includeSubdomains;
-
-        return $this;
-    }
-
 	/**
-	 * @param array $itemTypes
+	 * @param string $dateFrom
 	 * @return $this
 	 */
-	public function setItemTypes(array $itemTypes)
+	public function setDateFrom(string $dateFrom)
 	{
-		$this->payload['item_types'] = $itemTypes;
+		$this->payload['date_from'] = $dateFrom;
 
 		return $this;
 	}
 
-    /**
-     * @param string $type
-     * @return $this
-     * Deprecated
-     */
-    public function setType(string $type)
-    {
-        $this->payload['type'] = $type;
-        return $this;
-    }
+	/**
+	 * @param string $dateTo
+	 * @return $this
+	 */
+	public function setDateTo(string $dateTo)
+	{
+		$this->payload['date_to'] = $dateTo;
 
-    /**
+		return $this;
+	}
+
+	/**
+	 * @param bool $correlate
+	 * @return $this
+	 */
+	public function setCorrelate(bool $correlate)
+	{
+		$this->payload['correlate'] = $correlate;
+
+		return $this;
+	}
+
+	/**
      * @param array $filters
      * @return $this
      */
@@ -159,6 +159,26 @@ class SerpCompetitorsLive extends AbstractModel
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+        return $this;
+    }
+
+    /**
+     * @param int $maxRankGroup
+     * @return $this
+     */
+    public function setMaxRankGroup(int $maxRankGroup)
+    {
+        $this->payload['max_rank_group'] = $maxRankGroup;
+        return $this;
+    }
+
+    /**
+     * @param bool $excludeTopDomains
+     * @return $this
+     */
+    public function setExcludeTopDomains(bool $excludeTopDomains)
+    {
+        $this->payload['exclude_top_domains'] = $excludeTopDomains;
         return $this;
     }
 

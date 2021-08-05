@@ -65,12 +65,12 @@ class DomainRankOverviewLive extends AbstractModel
     }
 
     /**
-     * @param string $langCode
+     * @param string $languageCode
      * @return $this
      */
-    public function setLanguageCode(string $langCode)
+    public function setLanguageCode(string $languageCode)
     {
-        $this->payload['language_code'] = $langCode;
+        $this->payload['language_code'] = $languageCode;
 
         return $this;
     }

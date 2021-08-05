@@ -6,29 +6,29 @@ namespace DFSClientV3\Models\DataForSeoLabsApi\CompetitorResearch;
 
 use DFSClientV3\Models\AbstractModel;
 
-class SerpCompetitorsLive extends AbstractModel
+class PageIntersectionLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/serp_competitors/live';
+    protected $requestToFunction = 'dataforseo_labs/page_intersection/live';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMain
+     * @return \DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @param array $keywords
+     * @param array $pages
      * @return $this
      */
-    public function setKeywords(array $keywords)
+    public function setPages(array $pages)
     {
-        $this->payload['keywords'] = $keywords;
+        $this->payload['pages'] = $pages;
 
         return $this;
     }
@@ -75,16 +75,16 @@ class SerpCompetitorsLive extends AbstractModel
         return $this;
     }
 
-    /**
-     * @param bool $includeSubdomains
-     * @return $this
-     */
-    public function setIncludeSubdomains(bool $includeSubdomains)
-    {
-        $this->payload['include_subdomains'] = $includeSubdomains;
+	/**
+	 * @param array $excludePages
+	 * @return $this
+	 */
+	public function setExcludePages(array $excludePages)
+	{
+		$this->payload['exclude_pages'] = $excludePages;
 
-        return $this;
-    }
+		return $this;
+	}
 
 	/**
 	 * @param array $itemTypes
@@ -97,18 +97,40 @@ class SerpCompetitorsLive extends AbstractModel
 		return $this;
 	}
 
-    /**
-     * @param string $type
-     * @return $this
-     * Deprecated
-     */
-    public function setType(string $type)
-    {
-        $this->payload['type'] = $type;
-        return $this;
-    }
+	/**
+	 * @param bool $includeSubdomains
+	 * @return $this
+	 */
+	public function setIncludeSubdomains(bool $includeSubdomains)
+	{
+		$this->payload['include_subdomains'] = $includeSubdomains;
 
-    /**
+		return $this;
+	}
+
+	/**
+	 * @param string $intersectionMode
+	 * @return $this
+	 */
+	public function setIntersectionMode(string $intersectionMode)
+	{
+		$this->payload['intersection_mode'] = $intersectionMode;
+
+		return $this;
+	}
+
+	/**
+	 * @param bool $includeSerpInfo
+	 * @return $this
+	 */
+	public function setIncludeSerpInfo(bool $includeSerpInfo)
+	{
+		$this->payload['include_serp_info'] = $includeSerpInfo;
+
+		return $this;
+	}
+
+	/**
      * @param array $filters
      * @return $this
      */

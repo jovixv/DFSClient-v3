@@ -65,15 +65,46 @@ class CompetitorsDomainLive extends AbstractModel
     }
 
     /**
-     * @param string $langCode
+     * @param string $languageCode
      * @return $this
      */
-    public function setLanguageCode(string $langCode)
+    public function setLanguageCode(string $languageCode)
     {
-        $this->payload['language_code'] = $langCode;
+        $this->payload['language_code'] = $languageCode;
 
         return $this;
     }
+
+	/**
+	 * @param int $maxRankGroup
+	 * @return $this
+	 */
+	public function setMaxRankGroup(int $maxRankGroup)
+	{
+		$this->payload['max_rank_group'] = $maxRankGroup;
+		return $this;
+	}
+
+	/**
+	 * @param bool $excludeTopDomains
+	 * @return $this
+	 */
+	public function setExcludeTopDomains(bool $excludeTopDomains)
+	{
+		$this->payload['exclude_top_domains'] = $excludeTopDomains;
+		return $this;
+	}
+
+	/**
+	 * @param array $itemTypes
+	 * @return $this
+	 */
+	public function setItemTypes(array $itemTypes)
+	{
+		$this->payload['item_types'] = $itemTypes;
+
+		return $this;
+	}
 
     /**
      * @param array $filters
@@ -126,26 +157,6 @@ class CompetitorsDomainLive extends AbstractModel
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
-        return $this;
-    }
-
-    /**
-     * @param int $maxRankGroup
-     * @return $this
-     */
-    public function setMaxRankGroup(int $maxRankGroup)
-    {
-        $this->payload['max_rank_group'] = $maxRankGroup;
-        return $this;
-    }
-
-    /**
-     * @param bool $excludeTopDomains
-     * @return $this
-     */
-    public function setExcludeTopDomains(bool $excludeTopDomains)
-    {
-        $this->payload['exclude_top_domains'] = $excludeTopDomains;
         return $this;
     }
 

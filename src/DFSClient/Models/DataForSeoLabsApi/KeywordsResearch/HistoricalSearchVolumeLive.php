@@ -1,29 +1,29 @@
 <?php
 
 
-namespace DFSClientV3\Models\DataForSeoLabsApi\CompetitorResearch;
+namespace DFSClientV3\Models\DataForSeoLabsApi\KeywordsResearch;
 
 
 use DFSClientV3\Models\AbstractModel;
 
-class SerpCompetitorsLive extends AbstractModel
+class HistoricalSearchVolumeLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/serp_competitors/live';
+    protected $requestToFunction = 'dataforseo_labs/historical_search_volume/live';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMain
+     * @return \DFSClientV3\Entity\Custom\HistoricalSearchVolumeLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\HistoricalSearchVolumeLiveEntityMain
     {
         return parent::get();
     }
 
     /**
-     * @param array $keywords
+     * @param array $keyword
      * @return $this
      */
     public function setKeywords(array $keywords)
@@ -71,83 +71,6 @@ class SerpCompetitorsLive extends AbstractModel
     public function setLanguageCode(string $languageCode)
     {
         $this->payload['language_code'] = $languageCode;
-
-        return $this;
-    }
-
-    /**
-     * @param bool $includeSubdomains
-     * @return $this
-     */
-    public function setIncludeSubdomains(bool $includeSubdomains)
-    {
-        $this->payload['include_subdomains'] = $includeSubdomains;
-
-        return $this;
-    }
-
-	/**
-	 * @param array $itemTypes
-	 * @return $this
-	 */
-	public function setItemTypes(array $itemTypes)
-	{
-		$this->payload['item_types'] = $itemTypes;
-
-		return $this;
-	}
-
-    /**
-     * @param string $type
-     * @return $this
-     * Deprecated
-     */
-    public function setType(string $type)
-    {
-        $this->payload['type'] = $type;
-        return $this;
-    }
-
-    /**
-     * @param array $filters
-     * @return $this
-     */
-    public function setFilters(array $filters)
-    {
-        $this->payload['filters'] = $filters;
-
-        return $this;
-    }
-
-    /**
-     * @param array $orderBy
-     * @return $this
-     */
-    public function setOrderBy(array $orderBy)
-    {
-        $this->payload['order_by'] = $orderBy;
-
-        return $this;
-    }
-
-    /**
-     * @param int $limit
-     * @return $this
-     */
-    public function setLimit(int $limit)
-    {
-        $this->payload['limit'] = $limit;
-
-        return $this;
-    }
-
-    /**
-     * @param int $offset
-     * @return $this
-     */
-    public function setOffset(int $offset)
-    {
-        $this->payload['offset'] = $offset;
 
         return $this;
     }

@@ -65,12 +65,12 @@ class KeywordsForCategoriesLive extends AbstractModel
     }
 
     /**
-     * @param string $langCode
+     * @param string $languageCode
      * @return $this
      */
-    public function setLanguageCode(string $langCode)
+    public function setLanguageCode(string $languageCode)
     {
-        $this->payload['language_code'] = $langCode;
+        $this->payload['language_code'] = $languageCode;
 
         return $this;
     }
@@ -78,6 +78,7 @@ class KeywordsForCategoriesLive extends AbstractModel
     /**
      * @param bool $intersections
      * @return $this
+     * Deprecated
      */
     public function setIntersections(bool $intersections)
     {
@@ -85,6 +86,28 @@ class KeywordsForCategoriesLive extends AbstractModel
 
         return $this;
     }
+
+	/**
+	 * @param bool $categoryIntersection
+	 * @return $this
+	 */
+	public function setCategoryIntersection(bool $categoryIntersection)
+	{
+		$this->payload['category_intersection'] = $categoryIntersection;
+
+		return $this;
+	}
+
+	/**
+	 * @param bool $includeSerpInfo
+	 * @return $this
+	 */
+	public function setIncludeSerpInfo(bool $includeSerpInfo)
+	{
+		$this->payload['include_serp_info'] = $includeSerpInfo;
+
+		return $this;
+	}
 
     /**
      * @param array $filters
