@@ -47,8 +47,8 @@ class OnPageForceStopEntityMainTasks
     public $data = null;
 
     /**
-    * @var array|OnPageForceStopEntityMainTasksResult[] $result;
+    * @var null $result;
     */
-    public $result = [];
+    public $result = null;
  
 }
