@@ -212,6 +212,46 @@ class SettingSerpTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param bool $calculateRectangles
+	 * @return $this
+	 */
+    public function setCalculateRectangles(bool $calculateRectangles)
+    {
+	    $this->payload['calculate_rectangles'] = $calculateRectangles;
+	    return $this;
+    }
+
+	/**
+	 * @param int $browserScreenWidth
+	 * @return $this
+	 */
+    public function setBrowserScreenWidth(int $browserScreenWidth)
+    {
+	    $this->payload['browser_screen_width'] = $browserScreenWidth;
+	    return $this;
+    }
+
+	/**
+	 * @param int $browserScreenHeight
+	 * @return $this
+	 */
+    public function setBrowserScreenHeight(int $browserScreenHeight)
+    {
+	    $this->payload['browser_screen_height'] = $browserScreenHeight;
+	    return $this;
+    }
+
+	/**
+	 * @param int $browserScreenResolutionRatio
+	 * @return $this
+	 */
+    public function setBrowserScreenResolutionRatio(int $browserScreenResolutionRatio)
+    {
+	    $this->payload['browser_screen_resolution_ratio'] = $browserScreenResolutionRatio;
+	    return $this;
+    }
+
     /**
      * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
      */

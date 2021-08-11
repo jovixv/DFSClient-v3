@@ -96,6 +96,39 @@ class ReviewsSetTask extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param string $sortBy
+	 * @return $this
+	 */
+    public function setSortBy(string $sortBy)
+    {
+        $this->payload['sort_by'] = $sortBy;
+
+        return $this;
+    }
+
+	/**
+	 * @param int $priority
+	 * @return $this
+	 */
+    public function setPriority(int $priority)
+    {
+        $this->payload['priority'] = $priority;
+
+        return $this;
+    }
+
+	/**
+	 * @param string $locationCoordinate
+	 * @return $this
+	 */
+    public function setLocationCoordinate(string $locationCoordinate)
+    {
+        $this->payload['location_coordinate'] = $locationCoordinate;
+
+        return $this;
+    }
+
     /**
      * @param array $modelPool
      * @return array

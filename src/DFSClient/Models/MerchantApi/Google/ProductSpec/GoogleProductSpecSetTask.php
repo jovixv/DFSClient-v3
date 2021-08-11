@@ -21,7 +21,47 @@ class GoogleProductSpecSetTask extends AbstractModel
     {
         return parent::get();
     }
-    
+
+	/**
+	 * @param string $url
+	 * @return $this
+	 */
+	public function setProductId(string $productId)
+	{
+		$this->payload['product_id'] = $productId;
+		return $this;
+	}
+
+	/**
+	 * @param int $priority
+	 * @return $this
+	 */
+	public function setPriority(int $priority)
+	{
+		$this->payload['priority'] = $priority;
+		return $this;
+	}
+
+	/**
+	 * @param string $seDomain
+	 * @return $this
+	 */
+	public function setSeDomain(string $seDomain)
+	{
+		$this->payload['se_domain'] = $seDomain;
+		return $this;
+	}
+
+    /**
+	 * @param string $seDomain
+	 * @return $this
+	 */
+	public function setAdditionalSpecifications(string $additionalSpecifications)
+	{
+		$this->payload['additional_specifications'] = $additionalSpecifications;
+		return $this;
+	}
+
     /**
      * @param string $locationName
      * @return $this

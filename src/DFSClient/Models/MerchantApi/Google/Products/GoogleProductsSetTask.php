@@ -21,7 +21,97 @@ class GoogleProductsSetTask extends AbstractModel
     {
         return parent::get();
     }
-    
+
+	/**
+	 * @param string $keyword
+	 * @return $this
+	 */
+	public function setKeyword(string $keyword)
+	{
+		$this->payload['keyword'] = $keyword;
+		return $this;
+	}
+
+	/**
+	 * @param string $url
+	 * @return $this
+	 */
+	public function setUrl(string $url)
+	{
+		$this->payload['url'] = $url;
+		return $this;
+	}
+
+	/**
+	 * @param int $priority
+	 * @return $this
+	 */
+	public function setPriority(int $priority)
+	{
+		$this->payload['priority'] = $priority;
+		return $this;
+	}
+
+	/**
+	 * @param string $seDomain
+	 * @return $this
+	 */
+	public function setSeDomain(string $seDomain)
+	{
+		$this->payload['se_domain'] = $seDomain;
+		return $this;
+	}
+
+	/**
+	 * @param int $depth
+	 * @return $this
+	 */
+	public function setDepth(int $depth)
+	{
+		$this->payload['depth'] = $depth;
+		return $this;
+	}
+
+	/**
+	 * @param string $searchParam
+	 * @return $this
+	 */
+	public function setSearchParam(string $searchParam)
+	{
+		$this->payload['search_param'] = $searchParam;
+		return $this;
+	}
+
+	/**
+	 * @param int $priceMin
+	 * @return $this
+	 */
+	public function setPriceMin(int $priceMin)
+	{
+		$this->payload['price_min'] = $priceMin;
+		return $this;
+	}
+
+	/**
+	 * @param int $priceMin
+	 * @return $this
+	 */
+	public function setPriceMax(int $priceMax)
+	{
+		$this->payload['price_max'] = $priceMax;
+		return $this;
+	}
+
+	/**
+	 * @param string $sortBy
+	 * @return $this
+	 */
+	public function setSortBy(string $sortBy)
+	{
+		$this->payload['sort_by'] = $sortBy;
+		return $this;
+	}
+
     /**
      * @param string $locationName
      * @return $this

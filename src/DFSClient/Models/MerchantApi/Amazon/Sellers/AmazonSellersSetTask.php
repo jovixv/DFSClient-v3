@@ -1,23 +1,23 @@
 <?php
 
 
-namespace DFSClientV3\Models\MerchantApi\Amazon\Asin;
+namespace DFSClientV3\Models\MerchantApi\Amazon\Sellers;
 
 
 use DFSClientV3\Models\AbstractModel;
 
-class AmazonAsinSetTask extends AbstractModel
+class AmazonSellersSetTask extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'merchant/amazon/asin/task_post';
+    protected $requestToFunction = 'merchant/amazon/products/task_post';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\AmazonAsinSetTaskEntityMain
+     * @return \DFSClientV3\Entity\Custom\AmazonSellersSetTaskEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\AmazonAsinSetTaskEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\AmazonSellersSetTaskEntityMain
     {
         return parent::get();
     }
@@ -26,31 +26,31 @@ class AmazonAsinSetTask extends AbstractModel
 	 * @param string $asin
 	 * @return $this
 	 */
-	public function setAsin(string $asin)
-	{
-		$this->payload['asin'] = $asin;
-		return $this;
-	}
+    public function setAsin(string $asin)
+    {
+        $this->payload['asin'] = $asin;
+        return $this;
+    }
 
 	/**
 	 * @param int $priority
 	 * @return $this
 	 */
-	public function setPriority(int $priority)
-	{
-		$this->payload['priority'] = $priority;
-		return $this;
-	}
+    public function setPriority(int $priority)
+    {
+        $this->payload['priority'] = $priority;
+        return $this;
+    }
 
 	/**
 	 * @param string $seDomain
 	 * @return $this
 	 */
-	public function setSeDomain(string $seDomain)
-	{
-		$this->payload['se_domain'] = $seDomain;
-		return $this;
-	}
+    public function setSeDomain(string $seDomain)
+    {
+        $this->payload['se_domain'] = $seDomain;
+        return $this;
+    }
 
 	/**
      * @param string $locationName
@@ -59,7 +59,6 @@ class AmazonAsinSetTask extends AbstractModel
     public function setLocationName(string $locationName)
     {
         $this->payload['location_name'] = $locationName;
-
         return $this;
     }
 
