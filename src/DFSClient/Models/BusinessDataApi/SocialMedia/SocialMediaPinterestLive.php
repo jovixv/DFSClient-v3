@@ -5,7 +5,7 @@ namespace DFSClientV3\Models\BusinessDataApi\SocialMedia;
 
 use DFSClientV3\Models\AbstractModel;
 
-class PinterestLive extends AbstractModel
+class SocialMediaPinterestLive extends AbstractModel
 {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
@@ -15,9 +15,9 @@ class PinterestLive extends AbstractModel
     protected $useNewMapper = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\PinterestLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\SocialMediaPinterestLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\PinterestLiveEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\SocialMediaPinterestLiveEntityMain
 	{
 		return parent::get();
 	}

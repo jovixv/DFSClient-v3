@@ -52,6 +52,16 @@ class BackLinksHistory extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param string $tag
+	 * @return $this
+	 */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+        return $this;
+    }
+
     /**
      * @return BackLinksHistoryEntityMain
      */

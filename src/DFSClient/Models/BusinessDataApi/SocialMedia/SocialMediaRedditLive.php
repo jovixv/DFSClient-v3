@@ -5,7 +5,7 @@ namespace DFSClientV3\Models\BusinessDataApi\SocialMedia;
 
 use DFSClientV3\Models\AbstractModel;
 
-class RedditLive extends AbstractModel
+class SocialMediaRedditLive extends AbstractModel
 {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
@@ -15,9 +15,9 @@ class RedditLive extends AbstractModel
     protected $useNewMapper = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\RedditLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\SocialMediaRedditLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\RedditLiveEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\SocialMediaRedditLiveEntityMain
 	{
 		return parent::get();
 	}

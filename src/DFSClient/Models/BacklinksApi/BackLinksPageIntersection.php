@@ -93,6 +93,16 @@ class BackLinksPageIntersection extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param string $tag
+	 * @return $this
+	 */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+        return $this;
+    }
+
     /**
      * @param array $backLinksFilter
      * @return $this
@@ -114,12 +124,12 @@ class BackLinksPageIntersection extends AbstractModel
     }
 
     /**
-     * @param bool $includeSubDomains
+     * @param bool $includeSubdomains
      * @return $this
      */
-    public function setIncludeSubDomains(bool $includeSubDomains)
+    public function setIncludeSubdomains(bool $includeSubdomains)
     {
-        $this->payload['include_subdomains'] = $includeSubDomains;
+        $this->payload['include_subdomains'] = $includeSubdomains;
         return $this;
     }
 

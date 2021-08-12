@@ -11,7 +11,7 @@ class BackLinksContentDuplicates extends AbstractModel
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'backlinks/history/live';
+    protected $requestToFunction = 'backlinks/content_duplicates/live';
     protected $resultShouldBeTransformedToArray = true;
 
     protected $jsonContainVariadicType = true;
@@ -96,7 +96,7 @@ class BackLinksContentDuplicates extends AbstractModel
      * @param array $filter
      * @return $this
      */
-    public function setBackLinksFilter(array $filter)
+    public function setBackLinksFilters(array $filter)
     {
         $this->payload['backlinks_filters'] = $filter;
         return $this;
@@ -113,12 +113,12 @@ class BackLinksContentDuplicates extends AbstractModel
     }
 
     /**
-     * @param bool $includeSubDomains
+     * @param bool $includeSubdomains
      * @return $this
      */
-    public function setIncludeSubDomains(bool $includeSubDomains)
+    public function setIncludeSubdomains(bool $includeSubdomains)
     {
-        $this->payload['include_subdomains'] = $includeSubDomains;
+        $this->payload['include_subdomains'] = $includeSubdomains;
         return $this;
     }
 

@@ -5,7 +5,7 @@ namespace DFSClientV3\Models\BusinessDataApi\SocialMedia;
 
 use DFSClientV3\Models\AbstractModel;
 
-class FacebookLive extends AbstractModel
+class SocialMediaFacebookLive extends AbstractModel
 {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
@@ -15,9 +15,9 @@ class FacebookLive extends AbstractModel
     protected $useNewMapper = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\FacebookLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\SocialMediaFacebookLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\FacebookLiveEntityMain
+	public function get(): \DFSClientV3\Entity\Custom\SocialMediaFacebookLiveEntityMain
 	{
 		return parent::get();
 	}

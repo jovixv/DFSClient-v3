@@ -27,12 +27,12 @@ class BackLinksSummary extends AbstractModel
     }
 
     /**
-     * @param bool $isIncludeSubDomains
+     * @param bool $isIncludeSubdomains
      * @return $this
      */
-    public function setIncludeSubDomains(bool $isIncludeSubDomains)
+    public function setIncludeSubdomains(bool $isIncludeSubdomains)
     {
-        $this->payload['include_subdomains'] = $isIncludeSubDomains;
+        $this->payload['include_subdomains'] = $isIncludeSubdomains;
         return $this;
     }
 
@@ -57,14 +57,25 @@ class BackLinksSummary extends AbstractModel
     }
 
     /**
-     * @param array $backLinksFilter
+     * @param array $backLinksFilters
      * @return $this
      */
-    public function setBackLinksFilter(array $backLinksFilter)
+    public function setBackLinksFilters(array $backLinksFilters)
     {
-        $this->payload['backlinks_filters'] = $backLinksFilter;
+        $this->payload['backlinks_filters'] = $backLinksFilters;
         return $this;
     }
+
+	/**
+	 * @param string $tag
+	 * @return $this
+	 */
+	public function setTag(string $tag)
+	{
+		$this->payload['tag'] = $tag;
+
+		return $this;
+	}
 
     /**
      * @return BackLinksSummaryEntityMain
