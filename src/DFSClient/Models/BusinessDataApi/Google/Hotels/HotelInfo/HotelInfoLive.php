@@ -174,36 +174,6 @@ class HotelInfoLive extends AbstractModel
 	}
 
 	/**
-	 * @param string $postbackUrl
-	 * @return $this
-	 */
-	public function setPostbackUrl(string $postbackUrl)
-	{
-		$this->payload['postback_url'] = $postbackUrl;
-		return $this;
-	}
-
-	/**
-	 * @param string $postbackUrl
-	 * @return $this
-	 */
-	public function setPostbackData(string $postbackData)
-	{
-		$this->payload['postback_data'] = $postbackData;
-		return $this;
-	}
-
-	/**
-	 * @param string $pingbackUrl
-	 * @return $this
-	 */
-	public function setPingbackUrl(string $pingbackUrl)
-	{
-		$this->payload['pingback_url'] = $pingbackUrl;
-		return $this;
-	}
-
-	/**
 	 * @param array $modelPool
 	 * @return array
 	 * @throws \Exception
