@@ -84,12 +84,12 @@ class SettingOnPageTasks extends AbstractModel
     }
 
     /**
-     * @param string $customRobotTxt
+     * @param string $customRobotsTxt
      * @return $this
      */
-    public function setCustomRobotTxt(string $customRobotTxt)
+    public function setCustomRobotsTxt(string $customRobotsTxt)
     {
-        $this->payload['custom_robot_txt'] = $customRobotTxt;
+        $this->payload['custom_robots_txt'] = $customRobotsTxt;
         return $this;
     }
 
@@ -114,22 +114,22 @@ class SettingOnPageTasks extends AbstractModel
     }
 
     /**
-     * @param bool $respectSiteMap
+     * @param bool $respectSitemap
      * @return $this
      */
-    public function setRespectSiteMap(bool $respectSiteMap)
+    public function setRespectSitemap(bool $respectSitemap)
     {
-        $this->payload['respect_sitemap'] = $respectSiteMap;
+        $this->payload['respect_sitemap'] = $respectSitemap;
         return $this;
     }
 
     /**
-     * @param string $customSiteMap
+     * @param string $customSitemap
      * @return $this
      */
-    public function setCustomSiteMap(string $customSiteMap)
+    public function setCustomSitemap(string $customSitemap)
     {
-        $this->payload['custom_sitemap'] = $customSiteMap;
+        $this->payload['custom_sitemap'] = $customSitemap;
         return $this;
     }
 
@@ -152,6 +152,26 @@ class SettingOnPageTasks extends AbstractModel
         $this->payload['enable_javascript'] = $enableJavascript;
         return $this;
     }
+
+    /**
+     * @param bool $enableJavascript
+     * @return $this
+     */
+    public function setEnableXhr(bool $enableXhr)
+    {
+        $this->payload['enable_xhr'] = $enableXhr;
+        return $this;
+    }
+
+	/**
+	 * @param bool $enableBrowserRendering
+	 * @return $this
+	 */
+	public function setEnableBrowserRendering(bool $enableBrowserRendering)
+	{
+		$this->payload['enable_browser_rendering'] = $enableBrowserRendering;
+		return $this;
+	}
 
     /**
      * @param string $customJs
@@ -200,6 +220,16 @@ class SettingOnPageTasks extends AbstractModel
     public function setCheckSpellExceptions(array $checkSpellExceptions)
     {
         $this->payload['check_spell_exceptions'] = $checkSpellExceptions;
+        return $this;
+    }
+
+	/**
+	 * @param array $checkSpellLanguage
+	 * @return $this
+	 */
+    public function setCheckSpellLanguage(array $checkSpellLanguage)
+    {
+        $this->payload['check_spell_language'] = $checkSpellLanguage;
         return $this;
     }
 
