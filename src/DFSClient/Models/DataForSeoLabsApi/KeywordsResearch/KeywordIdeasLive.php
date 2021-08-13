@@ -130,6 +130,17 @@ class KeywordIdeasLive extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param int $offset
+	 * @return $this
+	 */
+	public function setOffset(int $offset)
+	{
+		$this->payload['offset'] = $offset;
+
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
