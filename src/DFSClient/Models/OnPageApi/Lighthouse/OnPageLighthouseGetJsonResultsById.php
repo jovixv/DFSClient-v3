@@ -10,7 +10,7 @@ class OnPageLighthouseGetJsonResultsById extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'v3/on_page/lighthouse/task_get/json/{$id}';
+    protected $requestToFunction = 'on_page/lighthouse/task_get/json/{$id}';
     protected $resultShouldBeTransformedToArray = false;
 	protected $useNewMapper = true;
 

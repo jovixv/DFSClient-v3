@@ -49,7 +49,8 @@ class SettingOnPageTasks extends AbstractModel
      * @param int $crawlDelay
      * @return $this
      */
-    public function setCrawlDelay(int $crawlDelay){
+    public function setCrawlDelay(int $crawlDelay)
+    {
         $this->payload['crawl_delay'] = $crawlDelay;
         return $this;
     }
@@ -68,7 +69,8 @@ class SettingOnPageTasks extends AbstractModel
      * @param bool $storeRawHtml
      * @return $this
      */
-    public function setStoreRawHtml(bool $storeRawHtml){
+    public function setStoreRawHtml(bool $storeRawHtml)
+    {
         $this->payload['store_raw_html'] = $storeRawHtml;
         return $this;
     }

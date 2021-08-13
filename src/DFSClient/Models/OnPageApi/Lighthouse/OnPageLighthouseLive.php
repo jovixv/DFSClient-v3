@@ -10,7 +10,7 @@ class OnPageLighthouseLive extends AbstractModel
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->0->result';
-    protected $requestToFunction = 'v3/on_page/lighthouse/live/{$resultType}';
+    protected $requestToFunction = 'on_page/lighthouse/live/{$resultType}';
     protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 

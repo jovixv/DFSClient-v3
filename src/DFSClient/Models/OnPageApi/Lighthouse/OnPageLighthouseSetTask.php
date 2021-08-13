@@ -10,7 +10,7 @@ class OnPageLighthouseSetTask extends AbstractModel
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'v3/on_page/lighthouse/task_post';
+    protected $requestToFunction = 'on_page/lighthouse/task_post';
     protected $resultShouldBeTransformedToArray = false;
 	protected $useNewMapper = true;
 
