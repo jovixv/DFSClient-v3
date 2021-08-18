@@ -62,11 +62,11 @@ class GoogleSellersSetTask extends AbstractModel
 		return $this;
 	}
 
-	/**
-	 * @param string $seDomain
-	 * @return $this
-	 */
-	public function setAdditionalSpecifications(string $additionalSpecifications)
+    /**
+     * @param array $additionalSpecifications
+     * @return $this
+     */
+	public function setAdditionalSpecifications(array $additionalSpecifications)
 	{
 		$this->payload['additional_specifications'] = $additionalSpecifications;
 		return $this;
