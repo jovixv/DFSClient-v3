@@ -104,12 +104,12 @@ class BackLinksDomainIntersection extends AbstractModel
     }
 
     /**
-     * @param array $backLinksFilter
+     * @param array $backLinksFilters
      * @return $this
      */
-    public function setBackLinksFilter(array $backLinksFilter)
+    public function setBackLinksFilters(array $backLinksFilters)
     {
-        $this->payload['backlinks_filters'] = $backLinksFilter;
+        $this->payload['backlinks_filters'] = $backLinksFilters;
         return $this;
     }
 
