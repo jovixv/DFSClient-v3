@@ -11,7 +11,7 @@ class AmazonSellersSetTask extends AbstractModel
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'merchant/amazon/products/task_post';
+    protected $requestToFunction = 'merchant/amazon/sellers/task_post';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
