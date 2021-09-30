@@ -9,7 +9,7 @@ class DFSClient
 {
 
     /**
-     * @var Application|null
+     * @var Application|null $application
      */
     public $application = null;
 
