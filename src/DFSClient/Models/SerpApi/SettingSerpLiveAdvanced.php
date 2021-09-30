@@ -120,6 +120,17 @@ class SettingSerpLiveAdvanced extends AbstractModel
         return $this;
     }
 
+	/**
+	 * Function for events
+	 * @param string $dateRange
+	 * @return $this
+	 */
+	public function setDateRange(string $dateRange)
+	{
+		$this->payload['date_range'] = $dateRange;
+		return $this;
+	}
+
     /**
      * @param string $seDomain
      * @return $this
