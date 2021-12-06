@@ -156,29 +156,43 @@ class KeywordsForKeywordLive extends AbstractModel
 	}
 
 	/**
-	 * For 'bing' se only!
+	 * Can't use for 'google' se!
 	 * @param string $date_from
 	 * @param string $se
 	 * @return $this
 	 */
 	public function setDateFrom(string $date_from, string $se)
 	{
-		if ($se === 'bing') {
+		if ($se === 'bing' || $se === 'google_ads') {
 			$this->payload['date_from'] = $date_from;
 		}
 		return $this;
 	}
 
 	/**
-	 * For 'bing' se only!
+	 * Can't use for 'google' se!
 	 * @param string $date_to
 	 * @param string $se
 	 * @return $this
 	 */
 	public function setDateTo(string $date_to, string $se)
 	{
-		if ($se === 'bing') {
+		if ($se === 'bing' || $se === 'google_ads') {
 			$this->payload['date_to'] = $date_to;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'google_ads' se only!
+	 * @param bool $include_adult_keywords
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setIncludeAdultKeywords(bool $include_adult_keywords, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['include_adult_keywords'] = $include_adult_keywords;
 		}
 		return $this;
 	}

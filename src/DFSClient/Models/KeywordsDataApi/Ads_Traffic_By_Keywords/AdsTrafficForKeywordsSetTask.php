@@ -117,6 +117,76 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
         return $this;
     }
 
+	/**
+	 * For 'google_ads' se only!
+	 * @param bool $search_partners
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setSearchPartners(bool $search_partners, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['search_partners'] = $search_partners;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'google_ads' se only!
+	 * @param string $date_from
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setDateFrom(string $date_from, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['date_from'] = $date_from;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'google_ads' se only!
+	 * @param string $date_to
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setDateTo(string $date_to, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['date_to'] = $date_to;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'google_ads' se only!
+	 * @param string $date_interval
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setDateInterval(string $date_interval, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['date_interval'] = $date_interval;
+		}
+		return $this;
+	}
+
+	/**
+	 * For 'google_ads' se only!
+	 * @param string $sortBy
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setSortBy(string $sortBy, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['sort_by'] = $sortBy;
+		}
+		return $this;
+	}
+
     /**
      * @param string $postbackUrl
      * @return $this
