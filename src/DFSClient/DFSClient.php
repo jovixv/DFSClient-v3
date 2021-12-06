@@ -5,11 +5,14 @@ namespace DFSClientV3;
 use DFSClientV3\Bootstrap\Application;
 use \Exception as DFSClientException;
 
+/**
+ * DFSClient
+ */
 class DFSClient
 {
 
     /**
-     * @var Application|null
+     * @var Application|null $application
      */
     public $application = null;
 
