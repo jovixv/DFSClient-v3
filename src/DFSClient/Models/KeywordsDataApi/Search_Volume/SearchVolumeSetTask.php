@@ -158,28 +158,28 @@ class SearchVolumeSetTask extends AbstractModel
 	}
 
 	/**
-	 * For 'bing' se only!
+	 * Can't use for 'google' se!
 	 * @param string $date_from
 	 * @param string $se
 	 * @return $this
 	 */
 	public function setDateFrom(string $date_from, string $se)
 	{
-		if ($se === 'bing') {
+		if ($se === 'bing' || $se === 'google_ads') {
 			$this->payload['date_from'] = $date_from;
 		}
 		return $this;
 	}
 
 	/**
-	 * For 'bing' se only!
+	 * Can't use for 'google' se!
 	 * @param string $date_to
 	 * @param string $se
 	 * @return $this
 	 */
 	public function setDateTo(string $date_to, string $se)
 	{
-		if ($se === 'bing') {
+		if ($se === 'bing' || $se === 'google_ads') {
 			$this->payload['date_to'] = $date_to;
 		}
 		return $this;
