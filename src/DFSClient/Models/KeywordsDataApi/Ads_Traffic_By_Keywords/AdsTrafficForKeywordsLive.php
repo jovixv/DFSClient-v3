@@ -11,7 +11,7 @@ class AdsTrafficForKeywordsLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_keywords/live';
     protected $resultShouldBeTransformedToArray = true;
-	protected $se = '';
+    protected $se = '';
 
     /**
      * @return \DFSClientV3\Entity\Custom\AdsTrafficForKeywordsLiveEntityMain

@@ -13,7 +13,7 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_keywords/task_post';
     protected $resultShouldBeTransformedToArray = true;
-	protected $se = '';
+    protected $se = '';
 
     /**
      * @return \DFSClientV3\Entity\Custom\AdsTrafficForKeywordsSetTaskEntityMain
