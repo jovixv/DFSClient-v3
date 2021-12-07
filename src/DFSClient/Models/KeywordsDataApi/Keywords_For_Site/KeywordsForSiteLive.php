@@ -113,7 +113,7 @@ class KeywordsForSiteLive extends AbstractModel
 	 * @param bool $searchPartners
 	 * @return $this
 	 */
-	public function setSearchPartners(bool $searchPartners, string $se)
+	public function setSearchPartners(bool $searchPartners, string $se = "")
 	{
 		if ($se === 'bing' || $se === 'google_ads') {
 			$this->payload['search_partners'] = $searchPartners;
