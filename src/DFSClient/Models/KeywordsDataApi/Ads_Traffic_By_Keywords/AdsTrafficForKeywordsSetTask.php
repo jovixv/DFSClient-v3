@@ -13,6 +13,7 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_keywords/task_post';
     protected $resultShouldBeTransformedToArray = true;
+	protected $se = '';
 
     /**
      * @return \DFSClientV3\Entity\Custom\AdsTrafficForKeywordsSetTaskEntityMain
@@ -120,12 +121,11 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
 	/**
 	 * For 'google_ads' se only!
 	 * @param bool $search_partners
-	 * @param string $se
 	 * @return $this
 	 */
-	public function setSearchPartners(bool $search_partners, string $se)
+	public function setSearchPartners(bool $search_partners)
 	{
-		if ($se === 'google_ads') {
+		if ($this->se === 'google_ads') {
 			$this->payload['search_partners'] = $search_partners;
 		}
 		return $this;
@@ -162,12 +162,11 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
 	/**
 	 * For 'google_ads' se only!
 	 * @param string $date_interval
-	 * @param string $se
 	 * @return $this
 	 */
-	public function setDateInterval(string $date_interval, string $se)
+	public function setDateInterval(string $date_interval)
 	{
-		if ($se === 'google_ads') {
+		if ($this->se === 'google_ads') {
 			$this->payload['date_interval'] = $date_interval;
 		}
 		return $this;
@@ -176,12 +175,11 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
 	/**
 	 * For 'google_ads' se only!
 	 * @param string $sortBy
-	 * @param string $se
 	 * @return $this
 	 */
-	public function setSortBy(string $sortBy, string $se)
+	public function setSortBy(string $sortBy)
 	{
-		if ($se === 'google_ads') {
+		if ($this->se === 'google_ads') {
 			$this->payload['sort_by'] = $sortBy;
 		}
 		return $this;
@@ -213,6 +211,7 @@ class AdsTrafficForKeywordsSetTask extends AbstractModel
      */
     public function setSe(string $seName = 'google')
     {
+	    $this->se = $seName;
         $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
         return $this;
     }
