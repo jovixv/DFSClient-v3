@@ -80,16 +80,6 @@ class OnPageGetDuplicateContent extends AbstractModel
     }
 
     /**
-     * @param array $filter
-     * @return $this
-     */
-    public function setFilter(array $filter)
-    {
-        $this->payload['filters'] = $filter;
-        return $this;
-    }
-
-    /**
      * @return \DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMain;
      */
     public function get()
