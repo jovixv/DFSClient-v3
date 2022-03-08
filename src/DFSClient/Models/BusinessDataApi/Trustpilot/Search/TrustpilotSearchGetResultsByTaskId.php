@@ -15,6 +15,7 @@ class TrustpilotSearchGetResultsByTaskId extends AbstractModel
     protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 
+
 		/**
 		 * @param string $seName
 		 * @return $this
