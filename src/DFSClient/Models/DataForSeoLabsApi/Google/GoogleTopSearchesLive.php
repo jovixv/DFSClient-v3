@@ -110,6 +110,18 @@ class GoogleTopSearchesLive extends AbstractModel
     }
 
 	/**
+	 * @param int $offset
+	 * @return $this
+	 */
+	public function setOffset(int $offset)
+	{
+		$this->payload['offset'] = $offset;
+
+		return $this;
+	}
+
+
+	/**
 	 * @param string $offsetToken
 	 * @return $this
 	 */
