@@ -30,6 +30,17 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
+		/**
+		 * @param string $search_after_token
+		 * @return $this
+		 */
+		public function setSearchAfterToken(string $search_after_token)
+		{
+			$this->payload['search_after_token'] = $search_after_token;
+
+			return $this;
+		}
+
     /**
      * @param string $mode
      * @return $this
