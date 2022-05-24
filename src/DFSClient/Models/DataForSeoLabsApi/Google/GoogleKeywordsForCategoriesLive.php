@@ -13,6 +13,7 @@ class GoogleKeywordsForCategoriesLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'dataforseo_labs/google/keywords_for_categories/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMain

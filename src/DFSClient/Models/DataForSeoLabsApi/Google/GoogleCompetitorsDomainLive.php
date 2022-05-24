@@ -13,6 +13,7 @@ class GoogleCompetitorsDomainLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'dataforseo_labs/google/competitors_domain/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMain

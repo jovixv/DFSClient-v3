@@ -13,6 +13,7 @@ class GoogleCategoriesForDomainLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'dataforseo_labs/google/categories_for_domain/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMain
