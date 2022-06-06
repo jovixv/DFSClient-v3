@@ -9,10 +9,10 @@ use DFSClientV3\Models\AbstractModel;
 class GoogleDomainRankOverviewLive extends AbstractModel
 {
     protected $method = 'POST';
-    protected $isSupportedMerge = true;
-    protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/google/domain_rank_overview/live';
-    protected $resultShouldBeTransformedToArray = true;
+	protected $isSupportedMerge = true;
+	protected $pathToMainData = 'tasks->{$postID}->result';
+	protected $requestToFunction = 'dataforseo_labs/google/domain_rank_overview/live';
+	protected $resultShouldBeTransformedToArray = true;
 	protected $useNewMapper = true;
 
     /**

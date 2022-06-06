@@ -11,8 +11,8 @@ class GoogleKeywordsForSiteLive extends AbstractModel
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/google/keywords_for_site/live';
-    protected $resultShouldBeTransformedToArray = true;
+	protected $requestToFunction = 'dataforseo_labs/google/keywords_for_site/live';
+	protected $resultShouldBeTransformedToArray = true;
 	protected $useNewMapper = true;
 
     /**

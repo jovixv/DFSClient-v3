@@ -10,9 +10,9 @@ class GoogleHistoricalSERPsLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
-    protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/google/historical_serps/live';
-    protected $resultShouldBeTransformedToArray = true;
+	protected $pathToMainData = 'tasks->{$postID}->result';
+	protected $requestToFunction = 'dataforseo_labs/google/historical_serps/live';
+	protected $resultShouldBeTransformedToArray = true;
 	protected $useNewMapper = true;
 
     /**

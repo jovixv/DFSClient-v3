@@ -11,8 +11,9 @@ class SearchVolumeGetResultsById extends AbstractModel
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'keywords_data/{$se}/search_volume/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
-    /**
+	/**
      * @param string $taskUUID
      * @return $this
      */

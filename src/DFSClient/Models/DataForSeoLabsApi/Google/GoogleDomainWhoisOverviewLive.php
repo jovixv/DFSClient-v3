@@ -10,10 +10,10 @@ class GoogleDomainWhoisOverviewLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
-    protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/google/domain_whois_overview/live';
-    protected $resultShouldBeTransformedToArray = true;
-    protected $useNewMapper = true;
+	protected $pathToMainData = 'tasks->{$postID}->result';
+	protected $requestToFunction = 'dataforseo_labs/google/domain_whois_overview/live';
+	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMain

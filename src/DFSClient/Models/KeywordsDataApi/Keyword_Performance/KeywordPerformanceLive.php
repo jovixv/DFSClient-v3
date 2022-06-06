@@ -13,6 +13,7 @@ class KeywordPerformanceLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/keyword_performance/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param array $keywords

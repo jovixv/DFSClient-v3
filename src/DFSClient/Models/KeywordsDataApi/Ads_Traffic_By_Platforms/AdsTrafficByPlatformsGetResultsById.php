@@ -13,7 +13,8 @@ class AdsTrafficByPlatformsGetResultsById extends AbstractModel
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_platforms/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
-	
+	protected $useNewMapper = true;
+
 	public function setTaskId(string $taskUUID)
 	{
 		$this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);

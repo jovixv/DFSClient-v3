@@ -14,6 +14,7 @@ class BingAdsSearchVolumeLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/bing/search_volume/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param array $keywords

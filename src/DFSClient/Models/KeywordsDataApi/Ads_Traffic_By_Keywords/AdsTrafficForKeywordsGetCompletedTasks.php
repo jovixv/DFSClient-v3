@@ -12,6 +12,7 @@ class AdsTrafficForKeywordsGetCompletedTasks extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_keywords/tasks_ready';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param string $seName

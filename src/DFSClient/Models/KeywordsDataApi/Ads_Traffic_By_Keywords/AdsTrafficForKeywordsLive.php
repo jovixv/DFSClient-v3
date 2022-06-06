@@ -12,6 +12,7 @@ class AdsTrafficForKeywordsLive extends AbstractModel
     protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_keywords/live';
     protected $resultShouldBeTransformedToArray = true;
     protected $se = '';
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\AdsTrafficForKeywordsLiveEntityMain

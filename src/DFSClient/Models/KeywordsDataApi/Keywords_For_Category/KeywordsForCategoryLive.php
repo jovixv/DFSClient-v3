@@ -11,6 +11,7 @@ class KeywordsForCategoryLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/keywords_for_category/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\KeywordsForCategoryLiveEntityMain

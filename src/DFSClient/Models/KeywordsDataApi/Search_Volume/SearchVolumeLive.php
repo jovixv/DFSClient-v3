@@ -13,6 +13,7 @@ class SearchVolumeLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/search_volume/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param array $keywords

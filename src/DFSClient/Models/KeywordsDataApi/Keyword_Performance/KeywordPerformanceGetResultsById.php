@@ -11,6 +11,7 @@ class KeywordPerformanceGetResultsById extends AbstractModel
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'keywords_data/{$se}/keyword_performance/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param string $taskUUID

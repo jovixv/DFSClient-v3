@@ -12,6 +12,7 @@ class AdsTrafficByPlatformsLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/{$se}/ad_traffic_by_platforms/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\AdsTrafficByPlatformsLiveEntityMain

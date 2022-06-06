@@ -12,7 +12,7 @@ class GoogleSubdomainsLive extends AbstractModel
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'dataforseo_labs/google/subdomains/live';
-    protected $resultShouldBeTransformedToArray = true;
+	protected $resultShouldBeTransformedToArray = true;
 	protected $useNewMapper = true;
 
     /**

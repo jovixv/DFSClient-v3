@@ -13,6 +13,7 @@ class GoogleTrendsLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'keywords_data/google_trends/explore/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleTrendsLiveEntityMain

@@ -12,8 +12,8 @@ class GoogleTopSearchesLive extends AbstractModel
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'dataforseo_labs/google/top_searches/live';
-    protected $resultShouldBeTransformedToArray = true;
-    protected $useNewMapper = true;
+	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMain

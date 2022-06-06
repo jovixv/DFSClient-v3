@@ -10,9 +10,9 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
-    protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'dataforseo_labs/google/keyword_suggestions/live';
-    protected $resultShouldBeTransformedToArray = true;
+	protected $pathToMainData = 'tasks->{$postID}->result';
+	protected $requestToFunction = 'dataforseo_labs/google/keyword_suggestions/live';
+	protected $resultShouldBeTransformedToArray = true;
 	protected $useNewMapper = true;
 
     /**
