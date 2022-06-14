@@ -3,12 +3,12 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSearch_adTop_keywords 
+class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesDisplay_adTop_ad_networks 
 {    
     /**
-    * @var null|string $keyword;
+    * @var null|string $site;
     */
-    public $keyword = null;
+    public $site = null;
 
     /**
     * @var null|integer $value;

@@ -8,6 +8,7 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSo
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferring;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferral_destination;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSocial;
+use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesDisplay_ad;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_apps;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMail;
 
@@ -42,6 +43,11 @@ class TrafficAnalyticsLiveEntityMainTasksResultTrafficSources
     * @var null|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSocial $social;
     */
     public $social = null;
+
+    /**
+    * @var null|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesDisplay_ad $display_ad;
+    */
+    public $display_ad = null;
 
     /**
     * @var null|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_apps $mobile_apps;

@@ -28,7 +28,7 @@ class TrafficAnalyticsLiveEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -48,7 +48,7 @@ class TrafficAnalyticsLiveEntityMainTasks
     public $data = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResult[] $result;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResult[] $result;
     */
     public $result = [];
  

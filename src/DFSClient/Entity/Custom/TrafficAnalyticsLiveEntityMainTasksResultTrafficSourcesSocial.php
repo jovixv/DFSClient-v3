@@ -17,7 +17,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSocial
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSocialTop_socials[] $top_socials;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSocialTop_socials[] $top_socials;
     */
     public $top_socials = [];
  

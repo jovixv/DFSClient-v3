@@ -9,7 +9,7 @@ class TrafficAnalyticsLiveEntityMain extends \DFSClientV3\Models\ResponseModel
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200325';
+    public $version = '0.1.20220428';
 
     /**
     * @var null|integer $status_code;
@@ -27,7 +27,7 @@ class TrafficAnalyticsLiveEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,7 +42,7 @@ class TrafficAnalyticsLiveEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasks[] $tasks;
+    * @var array|TrafficAnalyticsLiveEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  

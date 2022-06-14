@@ -17,7 +17,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferring
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring[] $top_referring;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring[] $top_referring;
     */
     public $top_referring = [];
  
