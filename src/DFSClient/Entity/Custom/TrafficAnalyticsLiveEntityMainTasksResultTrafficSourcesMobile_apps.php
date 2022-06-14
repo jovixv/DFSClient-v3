@@ -2,19 +2,17 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_appsGoogle_play_store;
-use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_appsApp_store;
 
 class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_apps 
 {    
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_appsGoogle_play_store[] $google_play_store;
+    * @var null|NULL $google_play_store;
     */
-    public $google_play_store = [];
+    public $google_play_store = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesMobile_appsApp_store[] $app_store;
+    * @var null|NULL $app_store;
     */
-    public $app_store = [];
+    public $app_store = null;
  
 }

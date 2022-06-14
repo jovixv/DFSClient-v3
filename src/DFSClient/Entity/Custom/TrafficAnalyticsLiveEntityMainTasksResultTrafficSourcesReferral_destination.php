@@ -7,7 +7,7 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSo
 class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferral_destination 
 {    
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferral_destinationTop_destinations[] $top_destinations;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferral_destinationTop_destinations[] $top_destinations;
     */
     public $top_destinations = [];
  

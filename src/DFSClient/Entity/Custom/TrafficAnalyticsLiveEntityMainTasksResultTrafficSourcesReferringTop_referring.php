@@ -19,5 +19,10 @@ class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referr
     * @var null|double $percent;
     */
     public $percent = null;
+
+    /**
+    * @var null|integer $percentage_change;
+    */
+    public $percentage_change = null;
  
 }

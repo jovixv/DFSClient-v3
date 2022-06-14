@@ -17,7 +17,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSearch_organic
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSearch_organicTop_keywords[] $top_keywords;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSearch_organicTop_keywords[] $top_keywords;
     */
     public $top_keywords = [];
  

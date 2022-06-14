@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficCountries;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSources;
+use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated;
 
 class TrafficAnalyticsLiveEntityMainTasksResultTraffic 
 {    
@@ -18,7 +19,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultTraffic
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsLiveEntityMainTasksResultTrafficCountries[] $countries;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficCountries[] $countries;
     */
     public $countries = [];
 
@@ -28,8 +29,8 @@ class TrafficAnalyticsLiveEntityMainTasksResultTraffic
     public $sources = null;
 
     /**
-    * @var null|array $estimated;
+    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated[] $estimated;
     */
-    public $estimated = null;
+    public $estimated = [];
  
 }
