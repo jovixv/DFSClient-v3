@@ -11,7 +11,7 @@ class TrafficAnalyticsLiveEntityMainTasksResultRevenue
     public $revenue_min = null;
 
     /**
-    * @var null|NULL $revenue_max;
+    * @var null|integer $revenue_max;
     */
     public $revenue_max = null;
  
