@@ -12,7 +12,6 @@ class BackLinksSummary extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'backlinks/summary/live';
     protected $resultShouldBeTransformedToArray = true;
-
     protected $jsonContainVariadicType = false;
     protected $useNewMapper = true;
 

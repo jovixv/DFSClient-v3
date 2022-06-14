@@ -12,14 +12,6 @@ class BackLinksContentDuplicates extends AbstractModel
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'backlinks/content_duplicates/live';
-    protected $resultShouldBeTransformedToArray = true;
-
-    protected $jsonContainVariadicType = true;
-
-    protected $pathsToVariadicTypesAndValue = [
-        'tasks->(:number)->result->(:number)->items->(:number)' => 'type'
-    ];
-
     protected $useNewMapper = true;
 
     /**
