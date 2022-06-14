@@ -12,13 +12,6 @@ class BacklinksBulkNewLostReferringDomains extends AbstractModel {
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'backlinks/bulk_new_lost_referring_domains/live';
 	protected $resultShouldBeTransformedToArray = true;
-
-	protected $jsonContainVariadicType = true;
-
-	protected $pathsToVariadicTypesAndValue = [
-		'tasks->(:number)->result->(:number)->items->(:number)' => 'type'
-	];
-
 	protected $useNewMapper = true;
 
 	/**
