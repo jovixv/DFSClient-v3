@@ -156,7 +156,7 @@ class SettingOnPageTasks extends AbstractModel
     }
 
     /**
-     * @param bool $enableJavascript
+     * @param bool $enableXhr
      * @return $this
      */
     public function setEnableXhr(bool $enableXhr)
