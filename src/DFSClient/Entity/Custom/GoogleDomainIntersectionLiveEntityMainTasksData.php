@@ -41,18 +41,13 @@ class GoogleDomainIntersectionLiveEntityMainTasksData
     public $location_code = null;
 
     /**
+    * @var null|boolean $intersections;
+    */
+    public $intersections = null;
+
+    /**
     * @var null|boolean $include_serp_info;
     */
     public $include_serp_info = null;
-
-    /**
-    * @var null|array $item_types;
-    */
-    public $item_types = null;
-
-    /**
-    * @var null|integer $limit;
-    */
-    public $limit = null;
  
 }

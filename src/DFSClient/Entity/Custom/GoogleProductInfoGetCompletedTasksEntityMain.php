@@ -2,14 +2,14 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasks;
+use DFSClientV3\Entity\Custom\GoogleProductInfoGetCompletedTasksEntityMainTasks;
 
-class GoogleDomainIntersectionLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
+class GoogleProductInfoGetCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20220216';
+    public $version = '0.1.20220627';
 
     /**
     * @var null|integer $status_code;
@@ -27,7 +27,7 @@ class GoogleDomainIntersectionLiveEntityMain extends \DFSClientV3\Models\Respons
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,13 +42,13 @@ class GoogleDomainIntersectionLiveEntityMain extends \DFSClientV3\Models\Respons
     public $tasks_error = null;
 
     /**
-    * @var array|GoogleDomainIntersectionLiveEntityMainTasks[] $tasks;
+    * @var array|GoogleProductInfoGetCompletedTasksEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\GoogleProductInfoGetCompletedTasksEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

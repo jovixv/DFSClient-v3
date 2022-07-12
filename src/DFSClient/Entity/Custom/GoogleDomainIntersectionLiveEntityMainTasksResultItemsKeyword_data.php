@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
@@ -32,6 +33,11 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_data
     * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info $keyword_info;
     */
     public $keyword_info = null;
+
+    /**
+    * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties $keyword_properties;
+    */
+    public $keyword_properties = null;
 
     /**
     * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info $impressions_info;
