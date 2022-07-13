@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
-use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
 class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_data 

@@ -16,7 +16,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info
     public $check_url = null;
 
     /**
-    * @var null|array $serp_item_types;
+    * @var null|NULL $serp_item_types;
     */
     public $serp_item_types = null;
 

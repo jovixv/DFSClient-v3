@@ -3,7 +3,6 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_data;
-use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result;
 
 class GooglePageIntersectionLiveEntityMainTasksResultItems 
 {    
@@ -18,7 +17,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItems
     public $keyword_data = null;
 
     /**
-    * @var null|GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result $intersection_result;
+    * @var null|array $intersection_result;
     */
     public $intersection_result = null;
  
