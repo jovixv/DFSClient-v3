@@ -2,9 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResult;
+use DFSClientV3\Entity\Custom\BacklinksCompetitorsLiveEntityMainTasksData;
+use DFSClientV3\Entity\Custom\BacklinksCompetitorsLiveEntityMainTasksResult;
 
-class GooglePageIntersectionLiveEntityMainTasks 
+class BacklinksCompetitorsLiveEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -42,12 +43,12 @@ class GooglePageIntersectionLiveEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|GooglePageIntersectionLiveEntityMainTasksData $data;
+    * @var null|BacklinksCompetitorsLiveEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * @var array|GooglePageIntersectionLiveEntityMainTasksResult[] $result;
+    * @var array|BacklinksCompetitorsLiveEntityMainTasksResult[] $result;
     */
     public $result = [];
  

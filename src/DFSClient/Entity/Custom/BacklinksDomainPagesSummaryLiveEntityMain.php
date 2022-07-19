@@ -2,14 +2,14 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasks;
+use DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasks;
 
-class GooglePageIntersectionLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
+class BacklinksDomainPagesSummaryLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string $version;
     */
-    public $version = 'string';
+    public $version = '0.1.20220718';
 
     /**
     * @var null|integer $status_code;
@@ -42,13 +42,13 @@ class GooglePageIntersectionLiveEntityMain extends \DFSClientV3\Models\ResponseM
     public $tasks_error = null;
 
     /**
-    * @var array|GooglePageIntersectionLiveEntityMainTasks[] $tasks;
+    * @var array|BacklinksDomainPagesSummaryLiveEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);
