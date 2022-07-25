@@ -252,6 +252,26 @@ class SettingSerpTasks extends AbstractModel
 	    return $this;
     }
 
+	/**
+	 * @param string $employmentType
+	 * @return $this
+	 */
+	public function setEmploymentType(string $employmentType)
+	{
+		$this->payload['employment_type'] = $employmentType;
+		return $this;
+	}
+
+	/**
+	 * @param string $datePosted
+	 * @return $this
+	 */
+	public function setDatePosted(string $datePosted)
+	{
+		$this->payload['date_posted'] = $datePosted;
+		return $this;
+	}
+
     /**
      * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
      */
