@@ -253,10 +253,10 @@ class SettingSerpTasks extends AbstractModel
     }
 
 	/**
-	 * @param string $employmentType
+	 * @param array $employmentType
 	 * @return $this
 	 */
-	public function setEmploymentType(string $employmentType)
+	public function setEmploymentType(array $employmentType)
 	{
 		$this->payload['employment_type'] = $employmentType;
 		return $this;
