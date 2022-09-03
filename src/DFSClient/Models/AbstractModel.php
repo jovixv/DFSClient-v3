@@ -113,7 +113,7 @@ abstract class AbstractModel
 
     protected $mappedMainModel;
 
-    protected $seTypes = ['organic', 'maps', 'local_pack', 'news', 'images', 'search_by_image', 'events', 'jobs'];
+    protected $seTypes = ['organic', 'maps', 'local_pack', 'news', 'images', 'search_by_image', 'events', 'jobs', 'local_finder'];
 
     /**
      * @var bool
