@@ -2,7 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemLinks;
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes;
+use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info;
+use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info;
 
 class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item 
 {    
@@ -32,14 +35,9 @@ class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_it
     public $position = null;
 
     /**
-    * @var null|NULL $xpath;
+    * @var null|string $xpath;
     */
     public $xpath = null;
-
-    /**
-    * @var null|string $title;
-    */
-    public $title = null;
 
     /**
     * @var null|string $domain;
@@ -47,14 +45,9 @@ class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_it
     public $domain = null;
 
     /**
-    * @var null|string $description;
+    * @var null|string $title;
     */
-    public $description = null;
-
-    /**
-    * @var null|string $breadcrumb;
-    */
-    public $breadcrumb = null;
+    public $title = null;
 
     /**
     * @var null|string $url;
@@ -62,24 +55,69 @@ class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_it
     public $url = null;
 
     /**
-    * @var null|NULL $highlighted;
+    * @var null|string $breadcrumb;
+    */
+    public $breadcrumb = null;
+
+    /**
+    * @var null|boolean $is_image;
+    */
+    public $is_image = null;
+
+    /**
+    * @var null|boolean $is_video;
+    */
+    public $is_video = null;
+
+    /**
+    * @var null|boolean $is_featured_snippet;
+    */
+    public $is_featured_snippet = null;
+
+    /**
+    * @var null|boolean $is_malicious;
+    */
+    public $is_malicious = null;
+
+    /**
+    * @var null|string $description;
+    */
+    public $description = null;
+
+    /**
+    * @var null|NULL $pre_snippet;
+    */
+    public $pre_snippet = null;
+
+    /**
+    * @var null|NULL $extended_snippet;
+    */
+    public $extended_snippet = null;
+
+    /**
+    * @var null|boolean $amp_version;
+    */
+    public $amp_version = null;
+
+    /**
+    * @var null|NULL $rating;
+    */
+    public $rating = null;
+
+    /**
+    * @var null|array $highlighted;
     */
     public $highlighted = null;
 
     /**
-    * @var null|NULL $extra;
+    * @var array|BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemLinks[] $links;
     */
-    public $extra = null;
+    public $links = [];
 
     /**
-    * @var null|NULL $description_rows;
+    * @var null|NULL $about_this_result;
     */
-    public $description_rows = null;
-
-    /**
-    * @var null|NULL $links;
-    */
-    public $links = null;
+    public $about_this_result = null;
 
     /**
     * @var null|string $main_domain;
@@ -105,5 +143,15 @@ class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_it
     * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes $rank_changes;
     */
     public $rank_changes = null;
+
+    /**
+    * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info $backlinks_info;
+    */
+    public $backlinks_info = null;
+
+    /**
+    * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info $rank_info;
+    */
+    public $rank_info = null;
  
 }

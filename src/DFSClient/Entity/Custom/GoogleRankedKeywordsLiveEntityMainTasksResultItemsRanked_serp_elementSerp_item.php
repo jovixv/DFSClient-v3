@@ -4,6 +4,8 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemAbout_this_result;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info;
 
 class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item 
 {    
@@ -146,5 +148,15 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_
     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes $rank_changes;
     */
     public $rank_changes = null;
+
+    /**
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info $backlinks_info;
+    */
+    public $backlinks_info = null;
+
+    /**
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info $rank_info;
+    */
+    public $rank_info = null;
  
 }

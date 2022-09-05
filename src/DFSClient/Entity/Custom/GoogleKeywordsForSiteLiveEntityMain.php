@@ -9,7 +9,7 @@ class GoogleKeywordsForSiteLiveEntityMain extends \DFSClientV3\Models\ResponseMo
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20220216';
+    public $version = '0.1.20220819';
 
     /**
     * @var null|integer $status_code;
