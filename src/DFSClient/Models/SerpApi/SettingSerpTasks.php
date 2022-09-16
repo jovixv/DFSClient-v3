@@ -272,6 +272,26 @@ class SettingSerpTasks extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param float $minRating
+	 * @return $this
+	 */
+	public function setMinRating(float $minRating)
+	{
+		$this->payload['min_rating'] = $minRating;
+		return $this;
+	}
+
+	/**
+	 * @param string $timeFilter
+	 * @return $this
+	 */
+	public function setTimeFilter(string $timeFilter)
+	{
+		$this->payload['time_filter'] = $timeFilter;
+		return $this;
+	}
+
     /**
      * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
      */

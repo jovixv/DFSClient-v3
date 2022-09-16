@@ -37,6 +37,11 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_element
     public $keyword_difficulty = null;
 
     /**
+    * @var null|boolean $is_lost;
+    */
+    public $is_lost = null;
+
+    /**
     * @var null|string $last_updated_time;
     */
     public $last_updated_time = null;

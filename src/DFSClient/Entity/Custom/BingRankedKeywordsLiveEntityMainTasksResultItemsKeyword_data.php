@@ -36,5 +36,10 @@ class BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data
     * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info $serp_info;
     */
     public $serp_info = null;
+
+    /**
+    * @var null|NULL $avg_backlinks_info;
+    */
+    public $avg_backlinks_info = null;
  
 }

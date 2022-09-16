@@ -2,9 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasks;
+use DFSClientV3\Entity\Custom\BacklinksBulkSpamScoreEntityMainTasks;
 
-class GoogleKeywordsForSiteLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
+class BacklinksBulkSpamScoreEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string $version;
@@ -42,13 +42,13 @@ class GoogleKeywordsForSiteLiveEntityMain extends \DFSClientV3\Models\ResponseMo
     public $tasks_error = null;
 
     /**
-    * @var array|GoogleKeywordsForSiteLiveEntityMainTasks[] $tasks;
+    * @var array|BacklinksBulkSpamScoreEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\BacklinksBulkSpamScoreEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

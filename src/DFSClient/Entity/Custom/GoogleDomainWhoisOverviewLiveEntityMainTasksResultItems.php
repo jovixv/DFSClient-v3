@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics;
+use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsBacklinks_info;
 
 class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems 
 {    
@@ -57,8 +58,18 @@ class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems
     public $registered = null;
 
     /**
+    * @var null|NULL $registrar;
+    */
+    public $registrar = null;
+
+    /**
     * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics $metrics;
     */
     public $metrics = null;
+
+    /**
+    * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsBacklinks_info $backlinks_info;
+    */
+    public $backlinks_info = null;
  
 }

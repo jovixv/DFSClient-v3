@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasksResultItem
 use DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasksResultItemsImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasksResultItemsSerp_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordsForSiteLiveEntityMainTasksResultItemsAvg_backlinks_info;
 
 class GoogleKeywordsForSiteLiveEntityMainTasksResultItems 
 {    
@@ -48,5 +49,10 @@ class GoogleKeywordsForSiteLiveEntityMainTasksResultItems
     * @var null|GoogleKeywordsForSiteLiveEntityMainTasksResultItemsSerp_info $serp_info;
     */
     public $serp_info = null;
+
+    /**
+    * @var null|GoogleKeywordsForSiteLiveEntityMainTasksResultItemsAvg_backlinks_info $avg_backlinks_info;
+    */
+    public $avg_backlinks_info = null;
  
 }
