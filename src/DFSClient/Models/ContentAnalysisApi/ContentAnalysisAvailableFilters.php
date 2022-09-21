@@ -14,10 +14,9 @@ class ContentAnalysisAvailableFilters extends AbstractModel
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     *return \DFSClientV3\Entity\Custom\ContentAnalysisCategoriesEntityMain
+     * @return \DFSClientV3\Entity\Custom\ContentAnalysisAvailableFiltersEntityMain
      */
-    public function get() {
-    //: \DFSClientV3\Entity\Custom\ContentAnalysisCategoriesEntityMain {
+    public function get() : \DFSClientV3\Entity\Custom\ContentAnalysisAvailableFiltersEntityMain {
         return parent::get();
     }
 }
