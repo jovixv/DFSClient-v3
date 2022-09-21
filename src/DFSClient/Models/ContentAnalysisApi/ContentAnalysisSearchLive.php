@@ -51,15 +51,6 @@ class ContentAnalysisSearchLive extends AbstractModel {
 	}
 
 	/**
-	 * @param int $internalListLimit
-	 * @return $this
-	 */
-	public function setInternalListLimit(int $internalListLimit) {
-		$this->payload['internal_list_limit'] = $internalListLimit;
-		return $this;
-	}
-
-	/**
 	 * @param int $limit
 	 * @return $this
 	 */
