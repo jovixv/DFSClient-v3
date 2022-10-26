@@ -16,10 +16,6 @@ class BackLinksDomainIntersection extends AbstractModel
     protected $resultShouldBeTransformedToArray = true;
 
     protected $jsonContainVariadicType = false;
-//
-    protected $pathsToDictionary = [
-        'tasks->(:number)->result->(:number)->items->(:number)' => DomainIntersectionDictionary::class
-    ];
 
     protected $useNewMapper = true;
 
@@ -151,7 +147,10 @@ class BackLinksDomainIntersection extends AbstractModel
             },
             'tasks->(:number)->result->(:number)->targets' => function($key, $value) {
                 return (array)$value;
-            }
+            },
+		        'tasks->(:number)->result->(:number)->items' => function($key, $value) {
+			        return json_decode(json_encode($value), true);
+		        }
         ];
     }
 
