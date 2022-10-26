@@ -46,7 +46,7 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataImpressi
     public $cpc_min = null;
 
     /**
-    * @var null|integer $cpc_max;
+    * @var null|double $cpc_max;
     */
     public $cpc_max = null;
 

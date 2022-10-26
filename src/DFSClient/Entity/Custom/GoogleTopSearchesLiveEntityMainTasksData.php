@@ -36,11 +36,6 @@ class GoogleTopSearchesLiveEntityMainTasksData
     public $include_serp_info = null;
 
     /**
-    * @var null|array $filters;
-    */
-    public $filters = null;
-
-    /**
     * @var null|integer $limit;
     */
     public $limit = null;

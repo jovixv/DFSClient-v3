@@ -31,7 +31,7 @@ class GoogleKeywordsForSiteLiveEntityMainTasksResultItemsSerp_info
     public $last_updated_time = null;
 
     /**
-    * @var null|NULL $previous_updated_time;
+    * @var null|string $previous_updated_time;
     */
     public $previous_updated_time = null;
  

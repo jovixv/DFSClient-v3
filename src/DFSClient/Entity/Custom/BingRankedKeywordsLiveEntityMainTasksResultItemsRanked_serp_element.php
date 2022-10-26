@@ -32,9 +32,14 @@ class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_element
     public $se_results_count = null;
 
     /**
-    * @var null|NULL $keyword_difficulty;
+    * @var null|integer $keyword_difficulty;
     */
     public $keyword_difficulty = null;
+
+    /**
+    * @var null|boolean $is_lost;
+    */
+    public $is_lost = null;
 
     /**
     * @var null|string $last_updated_time;

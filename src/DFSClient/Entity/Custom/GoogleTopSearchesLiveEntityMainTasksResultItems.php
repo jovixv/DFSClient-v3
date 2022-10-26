@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKey
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsSerp_info;
+use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsAvg_backlinks_info;
 
 class GoogleTopSearchesLiveEntityMainTasksResultItems 
 {    
@@ -48,5 +49,10 @@ class GoogleTopSearchesLiveEntityMainTasksResultItems
     * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsSerp_info $serp_info;
     */
     public $serp_info = null;
+
+    /**
+    * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsAvg_backlinks_info $avg_backlinks_info;
+    */
+    public $avg_backlinks_info = null;
  
 }
