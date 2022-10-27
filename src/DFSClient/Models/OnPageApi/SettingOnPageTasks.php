@@ -245,6 +245,16 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param bool $enableContentParsing
+	 * @return $this
+	 */
+	public function setEnableContentParsing(bool $enableContentParsing)
+	{
+		$this->payload['enable_content_parsing'] = $enableContentParsing;
+		return $this;
+	}
+
     /**
      * @param string|array|object $tag
      * @return $this
