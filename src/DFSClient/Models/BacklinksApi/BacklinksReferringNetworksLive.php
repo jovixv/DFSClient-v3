@@ -12,7 +12,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'backlinks/referring_networks/live';
     protected $resultShouldBeTransformedToArray = true;
-    protected $jsonContainVariadicType = true;
+    protected $jsonContainVariadicType = false;
     protected $pathsToVariadicTypesAndValue = ['tasks->(:number)->result->(:number)->items->(:number)' => 'type'];
     protected $useNewMapper = true;
 
@@ -157,6 +157,9 @@ class BacklinksReferringNetworksLive extends AbstractModel
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_attributes' => function($key, $value){
                 return (array) $value;
             },
+		        'tasks->(:number)->result->(:number)->items->(:number)->referring_links_types' => function($key, $value){
+			        return (array) $value;
+		        },
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_platform_types' => function($key, $value){
                 return (array) $value;
             },
