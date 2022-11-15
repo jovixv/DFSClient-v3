@@ -187,6 +187,39 @@ class SettingSerpTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * for youtube
+	 * @param string $videoId
+	 * @return $this
+	 */
+	public function setVideoId(string $videoId)
+	{
+		$this->payload['video_id'] = $videoId;
+		return $this;
+	}
+
+	/**
+	 * for youtube/video_subtitles
+	 * @param string $subtitlesLanguage
+	 * @return $this
+	 */
+	public function setSubtitlesLanguage(string $subtitlesLanguage)
+	{
+		$this->payload['subtitles_language'] = $subtitlesLanguage;
+		return $this;
+	}
+
+	/**
+	 * for youtube/video_subtitles
+	 * @param string $subtitlesTranslateLanguage
+	 * @return $this
+	 */
+	public function setSubtitlesTranslateLanguage(string $subtitlesTranslateLanguage)
+	{
+		$this->payload['subtitles_translate_language'] = $subtitlesTranslateLanguage;
+		return $this;
+	}
+
     /**
      * @param string $seType
      * @return $this
