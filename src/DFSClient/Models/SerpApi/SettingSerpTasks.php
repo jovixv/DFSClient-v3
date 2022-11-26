@@ -220,6 +220,17 @@ class SettingSerpTasks extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * for youtube/organic
+	 * @param int $block_depth
+	 * @return $this
+	 */
+	public function setBlockDepth(int $block_depth)
+	{
+		$this->payload['block_depth'] = $block_depth;
+		return $this;
+	}
+
     /**
      * @param string $seType
      * @return $this
