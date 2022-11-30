@@ -225,6 +225,51 @@ class SettingSerpLiveAdvanced extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $last_updated
+	 * @return $this
+	 */
+	public function setLastUpdated(string $last_updated) {
+		$this->payload['last_updated'] = $last_updated;
+		return $this;
+	}
+
+	/**
+	 * @param array $file_formats
+	 * @return $this
+	 */
+	public function setFileFormats(array $file_formats) {
+		$this->payload['file_formats'] = $file_formats;
+		return $this;
+	}
+
+	/**
+	 * @param string $usage_rights
+	 * @return $this
+	 */
+	public function setUsageRights(string $usage_rights) {
+		$this->payload['usage_rights'] = $usage_rights;
+		return $this;
+	}
+
+	/**
+	 * @param bool $is_free
+	 * @return $this
+	 */
+	public function setIsFree(bool $is_free) {
+		$this->payload['is_free'] = $is_free;
+		return $this;
+	}
+
+	/**
+	 * @param array $topics
+	 * @return $this
+	 */
+	public function setTopics(array $topics) {
+		$this->payload['topics'] = $topics;
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
@@ -249,6 +294,15 @@ class SettingSerpLiveAdvanced extends AbstractModel
 
         return $this;
     }
+
+	/**
+	 * @param string $dataset_id
+	 * @return $this
+	 */
+		public function setDatasetId(string $dataset_id) {
+			$this->payload['dataset_id'] = $dataset_id;
+			return $this;
+		}
 
     /**
      * @param string $seName
