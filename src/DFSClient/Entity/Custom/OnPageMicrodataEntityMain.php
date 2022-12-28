@@ -2,14 +2,14 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpTasksEntityMainTasks;
+use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasks;
 
-class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
+class OnPageMicrodataEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
     * @var null|string $version;
     */
-    public $version = 'string';
+    public $version = '0.1.20221214';
 
     /**
     * @var null|integer $status_code;
@@ -27,7 +27,7 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,13 +42,13 @@ class SettingSerpTasksEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * @var array|SettingSerpTasksEntityMainTasks[] $tasks;
+    * @var array|OnPageMicrodataEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
 
 	/**
-	* @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMainTasksResult[]|null
+	* @return \DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksResult[]|null
 	*/
 	public function getResultsByPostID($postID): ?array {
 		return parent::getResultsByPostID($postID);

@@ -2,9 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\SettingSerpTasksEntityMainTasksData;
+use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksData;
+use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksResult;
 
-class SettingSerpTasksEntityMainTasks 
+class OnPageMicrodataEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -27,7 +28,7 @@ class SettingSerpTasksEntityMainTasks
     public $time = null;
 
     /**
-    * @var null|double $cost;
+    * @var null|integer $cost;
     */
     public $cost = null;
 
@@ -42,13 +43,13 @@ class SettingSerpTasksEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|SettingSerpTasksEntityMainTasksData $data;
+    * @var null|OnPageMicrodataEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * @var null|NULL $result;
+    * @var array|OnPageMicrodataEntityMainTasksResult[] $result;
     */
-    public $result = null;
+    public $result = [];
  
 }

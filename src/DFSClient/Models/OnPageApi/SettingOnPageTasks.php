@@ -255,6 +255,16 @@ class SettingOnPageTasks extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $validateMicromarkup
+	 * @return $this
+	 */
+	public function setValidateMicromarkup(bool $validateMicromarkup)
+	{
+		$this->payload['validate_micromarkup'] = $validateMicromarkup;
+		return $this;
+	}
+
     /**
      * @param string|array|object $tag
      * @return $this
