@@ -1,10 +1,8 @@
 <?php
 
-
 namespace DFSClientV3\Models\OnPageApi;
 
-
-use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMain;
+use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class OnPageMicrodata extends AbstractModel
@@ -48,11 +46,9 @@ class OnPageMicrodata extends AbstractModel
     }
 
     /**
-     * @return
-     * OnPageContentParsingEntityMain
+     * @return OnPageMicrodataEntityMain
      */
-    public function get()
-    //: OnPageContentParsingEntityMain
+    public function get() : OnPageMicrodataEntityMain
     {
         return parent::get();
     }
