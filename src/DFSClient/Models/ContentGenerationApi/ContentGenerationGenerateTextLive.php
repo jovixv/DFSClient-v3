@@ -36,6 +36,26 @@ class ContentGenerationGenerateTextLive extends AbstractModel {
 	}
 
 	/**
+	 * @param array $meta_keywords
+	 * @return $this
+	 */
+	public function setMetaKeywords(array $meta_keywords) {
+		$this->payload['meta_keywords'] = $meta_keywords;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $description
+	 * @return $this
+	 */
+	public function setDescription(string $description) {
+		$this->payload['description'] = $description;
+
+		return $this;
+	}
+
+	/**
 	 * @param float $creativity_index
 	 * @return $this
 	 */
