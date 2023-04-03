@@ -54,5 +54,10 @@ class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItems
     * @var null|GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsAvg_backlinks_info $avg_backlinks_info;
     */
     public $avg_backlinks_info = null;
- 
+
+	/**
+	 * @var null|GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsSearch_intent_info $search_intent_info;
+	 */
+	public $search_intent_info = null;
+
 }

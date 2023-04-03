@@ -2,10 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
 class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
 {    
@@ -48,5 +45,10 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data
     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
     */
     public $avg_backlinks_info = null;
+
+    /**
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
+    */
+    public $search_intent_info = null;
  
 }

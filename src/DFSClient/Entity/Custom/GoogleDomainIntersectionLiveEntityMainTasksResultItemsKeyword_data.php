@@ -48,5 +48,15 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_data
     * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info $serp_info;
     */
     public $serp_info = null;
+
+	/**
+	 * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
+	 */
+	public $avg_backlinks_info = null;
+
+	/**
+	 * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
+	 */
+	public $search_intent_info = null;
  
 }
