@@ -166,6 +166,9 @@ class BacklinksReferringNetworksLive extends AbstractModel
             'tasks->(:number)->result->(:number)->items->(:number)->referring_links_semantic_locations' => function($key, $value){
                 return (array) $value;
             },
+		        'tasks->(:number)->result->(:number)->items->(:number)->referring_links_countries' => function($key, $value){
+			        return (array) $value;
+		        },
         ];
     }
 

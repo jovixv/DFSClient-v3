@@ -120,4 +120,9 @@ class BackLinksHistoryEntityMainTasksResultItemsBacklinks_history
     */
     public $referring_links_semantic_locations = null;
 
+		/**
+		 * @var null|array $referring_links_countries;
+		 */
+		public $referring_links_countries = null;
+
 }
