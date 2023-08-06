@@ -21,13 +21,13 @@ class GoogleSearchIntentLiveEntityMainTasksData
     public $se_type = null;
 
     /**
-    * @var null|string $language_code;
-    */
-    public $language_code = null;
-
-    /**
     * @var null|array $keywords;
     */
     public $keywords = null;
+
+    /**
+    * @var null|string $language_code;
+    */
+    public $language_code = null;
  
 }

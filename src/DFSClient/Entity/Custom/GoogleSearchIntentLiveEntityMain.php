@@ -9,7 +9,7 @@ class GoogleSearchIntentLiveEntityMain extends \DFSClientV3\Models\ResponseModel
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20221214';
+    public $version = 'string';
 
     /**
     * @var null|integer $status_code;
