@@ -91,7 +91,8 @@ class BackLinksSummary extends AbstractModel
             'tasks->(:number)->result->(:number)->referring_links_types' => function ($key, $value){return (array)$value;},
             'tasks->(:number)->result->(:number)->referring_links_attributes' => function ($key, $value){return (array)$value;},
             'tasks->(:number)->result->(:number)->referring_links_platform_types' => function ($key, $value){return (array)$value;},
-            'tasks->(:number)->result->(:number)->referring_links_semantic_locations' => function ($key, $value){return (array)$value;}
+            'tasks->(:number)->result->(:number)->referring_links_semantic_locations' => function ($key, $value){return (array)$value;},
+            'tasks->(:number)->result->(:number)->referring_links_countries' => function ($key, $value){return (array)$value;}
         ];
     }
 

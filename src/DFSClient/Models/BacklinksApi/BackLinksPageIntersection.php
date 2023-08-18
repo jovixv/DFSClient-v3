@@ -18,7 +18,7 @@ class BackLinksPageIntersection extends AbstractModel
     protected $jsonContainVariadicType = false;
 //
     protected $pathsToDictionary = [
-        'tasks->(:number)->result->(:number)->items->(:number)' => PageIntersectionDictionary::class
+        'tasks->(:number)->result->(:number)->items->(:number)->page_intersection' => PageIntersectionDictionary::class
     ];
 
     protected $useNewMapper = true;

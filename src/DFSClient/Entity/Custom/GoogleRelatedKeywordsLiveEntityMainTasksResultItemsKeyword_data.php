@@ -48,5 +48,15 @@ class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data
     * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info $serp_info;
     */
     public $serp_info = null;
- 
+
+	/**
+	 * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
+	 */
+	public $avg_backlinks_info = null;
+
+	/**
+	 * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
+	 */
+	public $search_intent_info = null;
+
 }

@@ -2,12 +2,11 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\BackLinksDomainIntersectionEntityMainTasksResultTargets;
 
-class BackLinksDomainIntersectionEntityMainTasksResult 
+class BackLinksDomainIntersectionEntityMainTasksResult
 {    
     /**
-    * @var null|BackLinksDomainIntersectionEntityMainTasksResultTargets $targets;
+    * @var null|array $targets;
     */
     public $targets = null;
 
@@ -22,7 +21,7 @@ class BackLinksDomainIntersectionEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var array|BackLinksDomainIntersectionEntityMainTasksResultItems[] $items;
+    * @var null|array $items;
     */
     public $items = [];
  

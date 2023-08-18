@@ -2,9 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Models\BacklinksApi\Dictionaries\PageIntersectionDictionary;
-
-class BackLinksPageIntersectionEntityMainTasksResult 
+class BackLinksPageIntersectionEntityMainTasksResult
 {    
     /**
     * @var null|array $targets;
@@ -22,7 +20,7 @@ class BackLinksPageIntersectionEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * @var array|\DFSClientV3\Models\BacklinksApi\Dictionaries\PageIntersectionDictionary[] $items;
+    * @var array|BackLinksPageIntersectionEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  
