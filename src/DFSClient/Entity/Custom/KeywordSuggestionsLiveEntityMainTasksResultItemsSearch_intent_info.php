@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-class KeywordSuggestionsLiveEntityMainTasksResultItemsAvg_backlinks_info 
+class KeywordSuggestionsLiveEntityMainTasksResultItemsSearch_intent_info 
 {    
     /**
     * @var null|string $se_type;
