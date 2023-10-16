@@ -35,33 +35,53 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
-    /**
-     * @param string $startUrl
-     * @return $this
-     */
-    public function setStartUrl(string $startUrl)
-    {
-        $this->payload['start_url'] = $startUrl;
-        return $this;
-    }
+	/**
+	 * @param string $startUrl
+	 * @return $this
+	 */
+	public function setStartUrl(string $startUrl)
+	{
+		$this->payload['start_url'] = $startUrl;
+		return $this;
+	}
 
-    /**
+	/**
+	 * @param bool $forceSitewideChecks
+	 * @return $this
+	 */
+	public function setForceSitewideChecks(bool $forceSitewideChecks)
+	{
+		$this->payload['force_sitewide_checks'] = $forceSitewideChecks;
+		return $this;
+	}
+
+	/**
+	 * @param array $priorityUrls
+	 * @return $this
+	 */
+	public function setPriorityUrls(array $priorityUrls)
+	{
+		$this->payload['priority_urls'] = $priorityUrls;
+		return $this;
+	}
+
+	/**
+	 * @param int $maxCrawlDepth
+	 * @return $this
+	 */
+	public function setMaxCrawlDepth(int $maxCrawlDepth)
+	{
+		$this->payload['max_crawl_depth'] = $maxCrawlDepth;
+		return $this;
+	}
+
+	/**
      * @param int $crawlDelay
      * @return $this
      */
     public function setCrawlDelay(int $crawlDelay)
     {
         $this->payload['crawl_delay'] = $crawlDelay;
-        return $this;
-    }
-
-    /**
-     * @param int $maxCrawlDepth
-     * @return $this
-     */
-    public function setMaxCrawlDepth(int $maxCrawlDepth)
-    {
-        $this->payload['max_crawl_depth'] = $maxCrawlDepth;
         return $this;
     }
 
@@ -75,6 +95,16 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param bool $enableContentParsing
+	 * @return $this
+	 */
+	public function setEnableContentParsing(bool $enableContentParsing)
+	{
+		$this->payload['enable_content_parsing'] = $enableContentParsing;
+		return $this;
+	}
+
     /**
      * @param bool $supportCookies
      * @return $this
@@ -84,6 +114,16 @@ class SettingOnPageTasks extends AbstractModel
         $this->payload['support_cookies'] = $supportCookies;
         return $this;
     }
+
+	/**
+	 * @param string $acceptLanguage
+	 * @return $this
+	 */
+	public function setAcceptLanguage(string $acceptLanguage)
+	{
+		$this->payload['accept_language'] = $acceptLanguage;
+		return $this;
+	}
 
     /**
      * @param string $customRobotsTxt
@@ -115,6 +155,46 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param string $browserPreset
+	 * @return $this
+	 */
+	public function setBrowserPreset(string $browserPreset)
+	{
+		$this->payload['browser_preset'] = $browserPreset;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenWidth
+	 * @return $this
+	 */
+	public function setBrowserScreenWidth(int $browserScreenWidth)
+	{
+		$this->payload['browser_screen_width'] = $browserScreenWidth;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenHeight
+	 * @return $this
+	 */
+	public function setBrowserScreenHeight(int $browserScreenHeight)
+	{
+		$this->payload['browser_screen_height'] = $browserScreenHeight;
+		return $this;
+	}
+
+	/**
+	 * @param float $browserScreenScaleFactor
+	 * @return $this
+	 */
+	public function setBrowserScreenScaleFactor(float $browserScreenScaleFactor)
+	{
+		$this->payload['browser_screen_scale_factor'] = $browserScreenScaleFactor;
+		return $this;
+	}
+
     /**
      * @param bool $respectSitemap
      * @return $this
@@ -135,6 +215,16 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param bool $crawlSitemapOnly
+	 * @return $this
+	 */
+	public function setCrawlSitemapOnly(bool $crawlSitemapOnly)
+	{
+		$this->payload['crawl_sitemap_only'] = $crawlSitemapOnly;
+		return $this;
+	}
+
     /**
      * @param bool $loadResources
      * @return $this
@@ -144,6 +234,16 @@ class SettingOnPageTasks extends AbstractModel
         $this->payload['load_resources'] = $loadResources;
         return $this;
     }
+
+	/**
+	 * @param bool $enableWwwRedirectCheck
+	 * @return $this
+	 */
+	public function setEnableWwwRedirectCheck(bool $enableWwwRedirectCheck)
+	{
+		$this->payload['enable_www_redirect_check'] = $enableWwwRedirectCheck;
+		return $this;
+	}
 
     /**
      * @param bool $enableJavascript
@@ -175,6 +275,16 @@ class SettingOnPageTasks extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $disableCookiePopup
+	 * @return $this
+	 */
+	public function setDisableCookiePopup(bool $disableCookiePopup)
+	{
+		$this->payload['disable_cookie_popup'] = $disableCookiePopup;
+		return $this;
+	}
+
     /**
      * @param string $customJs
      * @return $this
@@ -185,15 +295,25 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
-    /**
-     * @param bool $allowSubdomains
-     * @return $this
-     */
-    public function setAllowSubdomains(bool $allowSubdomains)
-    {
-        $this->payload['allow_subdomains'] = $allowSubdomains;
-        return $this;
-    }
+	/**
+	 * @param bool $validateMicromarkup
+	 * @return $this
+	 */
+	public function setValidateMicromarkup(bool $validateMicromarkup)
+	{
+		$this->payload['validate_micromarkup'] = $validateMicromarkup;
+		return $this;
+	}
+
+	/**
+	 * @param bool $allowSubdomains
+	 * @return $this
+	 */
+	public function setAllowSubdomains(bool $allowSubdomains)
+	{
+		$this->payload['allow_subdomains'] = $allowSubdomains;
+		return $this;
+	}
 
     /**
      * @param array $allowedSubdomains
@@ -205,6 +325,16 @@ class SettingOnPageTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param array $disallowedSubdomains
+	 * @return $this
+	 */
+	public function setDisallowedSubdomains(array $disallowedSubdomains)
+	{
+		$this->payload['disallowed_subdomains'] = $disallowedSubdomains;
+		return $this;
+	}
+
     /**
      * @param bool $checkSpell
      * @return $this
@@ -214,6 +344,16 @@ class SettingOnPageTasks extends AbstractModel
         $this->payload['check_spell'] = $checkSpell;
         return $this;
     }
+
+	/**
+	 * @param array $checkSpellLanguage
+	 * @return $this
+	 */
+	public function setCheckSpellLanguage(array $checkSpellLanguage)
+	{
+		$this->payload['check_spell_language'] = $checkSpellLanguage;
+		return $this;
+	}
 
     /**
      * @param array $checkSpellExceptions
@@ -226,14 +366,14 @@ class SettingOnPageTasks extends AbstractModel
     }
 
 	/**
-	 * @param array $checkSpellLanguage
+	 * @param bool $calculateKeywordDensity
 	 * @return $this
 	 */
-    public function setCheckSpellLanguage(array $checkSpellLanguage)
-    {
-        $this->payload['check_spell_language'] = $checkSpellLanguage;
-        return $this;
-    }
+	public function setCalculateKeywordDensity(bool $calculateKeywordDensity)
+	{
+		$this->payload['calculate_keyword_density'] = $calculateKeywordDensity;
+		return $this;
+	}
 
     /**
      * @param array $checkThreshold
@@ -246,22 +386,42 @@ class SettingOnPageTasks extends AbstractModel
     }
 
 	/**
-	 * @param bool $enableContentParsing
+	 * @param array $disableSitewideChecks
 	 * @return $this
 	 */
-	public function setEnableContentParsing(bool $enableContentParsing)
+	public function setDisableSitewideChecks(array $disableSitewideChecks)
 	{
-		$this->payload['enable_content_parsing'] = $enableContentParsing;
+		$this->payload['disable_sitewide_checks'] = $disableSitewideChecks;
 		return $this;
 	}
 
 	/**
-	 * @param bool $validateMicromarkup
+	 * @param array $disablePageChecks
 	 * @return $this
 	 */
-	public function setValidateMicromarkup(bool $validateMicromarkup)
+	public function setDisablePageChecks(array $disablePageChecks)
 	{
-		$this->payload['validate_micromarkup'] = $validateMicromarkup;
+		$this->payload['disable_page_checks'] = $disablePageChecks;
+		return $this;
+	}
+
+	/**
+	 * @param bool $switchPool
+	 * @return $this
+	 */
+	public function setSwitchPool(bool $switchPool)
+	{
+		$this->payload['switch_pool'] = $switchPool;
+		return $this;
+	}
+
+	/**
+	 * @param bool $returnDespiteTimeout
+	 * @return $this
+	 */
+	public function setReturnDespiteTimeout(bool $returnDespiteTimeout)
+	{
+		$this->payload['return_despite_timeout'] = $returnDespiteTimeout;
 		return $this;
 	}
 
