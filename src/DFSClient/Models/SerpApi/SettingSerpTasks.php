@@ -390,6 +390,26 @@ class SettingSerpTasks extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $client
+	 * @return $this
+	 */
+	public function setClient(string $client)
+	{
+		$this->payload['client'] = $client;
+		return $this;
+	}
+
+	/**
+	 * @param int $cursorPointer
+	 * @return $this
+	 */
+	public function setCursorPointer(int $cursorPointer)
+	{
+		$this->payload['cursor_pointer'] = $cursorPointer;
+		return $this;
+	}
+
     /**
      * @return \DFSClientV3\Entity\Custom\SettingSerpTasksEntityMain
      */
