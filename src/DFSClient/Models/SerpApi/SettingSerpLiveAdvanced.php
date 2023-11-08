@@ -299,10 +299,30 @@ class SettingSerpLiveAdvanced extends AbstractModel
 	 * @param string $dataset_id
 	 * @return $this
 	 */
-		public function setDatasetId(string $dataset_id) {
-			$this->payload['dataset_id'] = $dataset_id;
-			return $this;
-		}
+	public function setDatasetId(string $dataset_id) {
+		$this->payload['dataset_id'] = $dataset_id;
+		return $this;
+	}
+
+	/**
+	 * @param string $client
+	 * @return $this
+	 */
+	public function setClient(string $client)
+	{
+		$this->payload['client'] = $client;
+		return $this;
+	}
+
+	/**
+	 * @param int $cursorPointer
+	 * @return $this
+	 */
+	public function setCursorPointer(int $cursorPointer)
+	{
+		$this->payload['cursor_pointer'] = $cursorPointer;
+		return $this;
+	}
 
     /**
      * @param string $seName
