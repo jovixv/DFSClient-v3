@@ -70,6 +70,15 @@ class OnPageGetResources extends AbstractModel
         $this->payload['filters'] = $filter;
         return $this;
     }
+	/**
+	* @param array $relevantPagesFilters
+	* @return $this
+	*/
+	public function setRelevantPagesFilters(array $relevantPagesFilters)
+	{
+		$this->payload['relevant_pages_filters'] = $relevantPagesFilters;
+		return $this;
+	}
 
     /**
      * @param array $orderBy
