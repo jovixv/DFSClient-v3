@@ -104,6 +104,17 @@ class AmazonReviewsSetTask extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param string $filterByKeyword
+	 * @return $this
+	 */
+	public function setFilterByKeyword(string $filterByKeyword)
+	{
+		$this->payload['filter_by_keyword'] = $filterByKeyword;
+
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
