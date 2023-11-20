@@ -94,12 +94,52 @@ class TripadvisorReviewsSetTask extends AbstractModel
 	}
 
 	/**
-	 * @param string $checkOut
+	 * @param string $sortBy
 	 * @return $this
 	 */
 	public function setSortBy(string $sortBy)
 	{
 		$this->payload['sort_by'] = $sortBy;
+		return $this;
+	}
+
+	/**
+	 * @param array $ratings
+	 * @return $this
+	 */
+	public function setRatings(array $ratings)
+	{
+		$this->payload['ratings'] = $ratings;
+		return $this;
+	}
+
+	/**
+	 * @param array $visitType
+	 * @return $this
+	 */
+	public function setVisitType(array $visitType)
+	{
+		$this->payload['visit_type'] = $visitType;
+		return $this;
+	}
+
+	/**
+	 * @param array $months
+	 * @return $this
+	 */
+	public function setMonths(array $months)
+	{
+		$this->payload['months'] = $months;
+		return $this;
+	}
+
+	/**
+	 * @param string $searchReviewsKeyword
+	 * @return $this
+	 */
+	public function setSearchReviewsKeyword(string $searchReviewsKeyword)
+	{
+		$this->payload['search_reviews_keyword'] = $searchReviewsKeyword;
 		return $this;
 	}
 
