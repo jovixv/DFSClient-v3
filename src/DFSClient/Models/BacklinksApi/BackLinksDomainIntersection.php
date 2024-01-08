@@ -139,6 +139,17 @@ class BackLinksDomainIntersection extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param bool $includeIndirectLinks
+	 * @return $this
+	 */
+	public function setIncludeIndirectLinks(bool $includeIndirectLinks)
+	{
+		$this->payload['include_indirect_links'] = $includeIndirectLinks;
+
+		return $this;
+	}
+
     public function initCustomFunctionForPaths(): array
     {
         return [

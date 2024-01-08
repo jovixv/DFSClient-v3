@@ -66,6 +66,17 @@ class BackLinksSummary extends AbstractModel
     }
 
 	/**
+	 * @param bool $includeIndirectLinks
+	 * @return $this
+	 */
+	public function setIncludeIndirectLinks(bool $includeIndirectLinks)
+	{
+		$this->payload['include_indirect_links'] = $includeIndirectLinks;
+
+		return $this;
+	}
+
+	/**
 	 * @param string $tag
 	 * @return $this
 	 */
