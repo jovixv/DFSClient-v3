@@ -2,10 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems;
+use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultRating;
 
 class YelpReviewsGetResultsByTaskIdEntityMainTasksResult 
 {    
+    /**
+    * @var null|string $keyword;
+    */
+    public $keyword = null;
+
     /**
     * @var null|string $alias;
     */
@@ -20,6 +25,11 @@ class YelpReviewsGetResultsByTaskIdEntityMainTasksResult
     * @var null|string $se_domain;
     */
     public $se_domain = null;
+
+    /**
+    * @var null|int $location_code;
+    */
+    public $location_code = null;
 
     /**
     * @var null|string $language_code;
@@ -40,6 +50,11 @@ class YelpReviewsGetResultsByTaskIdEntityMainTasksResult
     * @var null|string $title;
     */
     public $title = null;
+
+    /**
+    * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultRating $rating;
+    */
+    public $rating = null;
 
     /**
     * @var null|integer $reviews_count;

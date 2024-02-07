@@ -3,6 +3,8 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
+use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile;
+use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses;
 
 class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems 
 {    
@@ -37,9 +39,9 @@ class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems
     public $rating = null;
 
     /**
-    * @var null|string $time_ago;
+    * @var null|string $timestamp;
     */
-    public $time_ago = null;
+    public $timestamp = null;
 
     /**
     * @var null|string $review_text;
@@ -52,28 +54,13 @@ class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems
     public $review_images = null;
 
     /**
-    * @var null|string $profile_name;
+    * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile $user_profile;
     */
-    public $profile_name = null;
+    public $user_profile = null;
 
     /**
-    * @var null|string $profile_url;
+    * @var array|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses[] $responses;
     */
-    public $profile_url = null;
-
-    /**
-    * @var null|string $profile_image_url;
-    */
-    public $profile_image_url = null;
-
-    /**
-    * @var null|boolean $profile_elite;
-    */
-    public $profile_elite = null;
-
-    /**
-    * @var null|NULL $owner_answer;
-    */
-    public $owner_answer = null;
+    public $responses = [];
  
 }
