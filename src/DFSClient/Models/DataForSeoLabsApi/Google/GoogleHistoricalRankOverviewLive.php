@@ -172,6 +172,17 @@ class GoogleHistoricalRankOverviewLive extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param bool $ignoreSynonyms
+	 * @return $this
+	 */
+	public function setIgnoreSynonyms(bool $ignoreSynonyms)
+	{
+		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+
+		return $this;
+	}
+
     /**
      * @param array $modelPool
      * @return array

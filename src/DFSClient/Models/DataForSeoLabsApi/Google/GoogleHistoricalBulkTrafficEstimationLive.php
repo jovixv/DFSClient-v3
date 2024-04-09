@@ -78,6 +78,17 @@ class GoogleHistoricalBulkTrafficEstimationLive extends AbstractModel
 	}
 
 	/**
+	 * @param bool $ignoreSynonyms
+	 * @return $this
+	 */
+	public function setIgnoreSynonyms(bool $ignoreSynonyms)
+	{
+		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+
+		return $this;
+	}
+
+	/**
 	 * @return \DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMain
 	 */
 	public function get(): \DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMain
