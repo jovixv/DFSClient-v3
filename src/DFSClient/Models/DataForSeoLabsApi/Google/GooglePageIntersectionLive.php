@@ -190,7 +190,7 @@ class GooglePageIntersectionLive extends AbstractModel
 		return [
 			'tasks->(:number)->data->pages' => function($key, $value){return (array)$value;},
 			'tasks->(:number)->result->(:number)->pages' => function($key, $value){return (array)$value;},
-			'tasks->(:number)->result->(:number)->items->(:number)->intersection_result' => function($key, $value){return (array)$value;},
+			'tasks->(:number)->result->(:number)->items->(:number)->intersection_result' => function($key, $value){return json_decode(json_encode($value), true);},
 		];
 	}
 
