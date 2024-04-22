@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties 
+class GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_properties 
 {    
     /**
     * @var null|string $se_type;
