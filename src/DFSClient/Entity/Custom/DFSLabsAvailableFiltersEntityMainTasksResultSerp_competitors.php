@@ -2,47 +2,19 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultSerp_competitorsGoogle;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultSerp_competitorsBing;
 
 class DFSLabsAvailableFiltersEntityMainTasksResultSerp_competitors 
 {    
     /**
-    * @var null|string $domain;
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultSerp_competitorsGoogle $google;
     */
-    public $domain = null;
+    public $google = null;
 
     /**
-    * @var null|string $avg_position;
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultSerp_competitorsBing $bing;
     */
-    public $avg_position = null;
-
-    /**
-    * @var null|string $median_position;
-    */
-    public $median_position = null;
-
-    /**
-    * @var null|string $rating;
-    */
-    public $rating = null;
-
-    /**
-    * @var null|string $etv;
-    */
-    public $etv = null;
-
-    /**
-    * @var null|string $keywords_count;
-    */
-    public $keywords_count = null;
-
-    /**
-    * @var null|string $visibility;
-    */
-    public $visibility = null;
-
-    /**
-    * @var null|string $relevant_serp_items;
-    */
-    public $relevant_serp_items = null;
+    public $bing = null;
  
 }

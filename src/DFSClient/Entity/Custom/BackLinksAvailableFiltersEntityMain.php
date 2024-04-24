@@ -9,7 +9,7 @@ class BackLinksAvailableFiltersEntityMain extends \DFSClientV3\Models\ResponseMo
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20210818';
+    public $version = '0.1.20240422';
 
     /**
     * @var null|integer $status_code;

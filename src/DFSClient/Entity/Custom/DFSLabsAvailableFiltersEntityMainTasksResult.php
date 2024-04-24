@@ -15,7 +15,15 @@ use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultKeywor
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultDomain_intersection;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultPage_intersection;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultDomain_whois_overview;
-use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultTop_google_searches;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultTop_searches;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultDomain_metrics_by_categories;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_site;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitors;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultProduct_keyword_intersections;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultApp_intersection;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultApp_competitors;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_app;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultDatabase_rows_count;
 
 class DFSLabsAvailableFiltersEntityMainTasksResult 
 {    
@@ -85,8 +93,48 @@ class DFSLabsAvailableFiltersEntityMainTasksResult
     public $domain_whois_overview = null;
 
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultTop_google_searches $top_google_searches;
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultTop_searches $top_searches;
     */
-    public $top_google_searches = null;
+    public $top_searches = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultDomain_metrics_by_categories $domain_metrics_by_categories;
+    */
+    public $domain_metrics_by_categories = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_site $keywords_for_site;
+    */
+    public $keywords_for_site = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitors $product_competitors;
+    */
+    public $product_competitors = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultProduct_keyword_intersections $product_keyword_intersections;
+    */
+    public $product_keyword_intersections = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultApp_intersection $app_intersection;
+    */
+    public $app_intersection = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultApp_competitors $app_competitors;
+    */
+    public $app_competitors = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_app $keywords_for_app;
+    */
+    public $keywords_for_app = null;
+
+    /**
+    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultDatabase_rows_count $database_rows_count;
+    */
+    public $database_rows_count = null;
  
 }

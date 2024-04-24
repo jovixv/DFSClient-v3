@@ -13,6 +13,7 @@ class BackLinksAvailableFilters extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'backlinks/available_filters';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMain
