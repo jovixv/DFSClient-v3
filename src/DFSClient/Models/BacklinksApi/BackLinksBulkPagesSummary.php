@@ -27,6 +27,16 @@ class BackLinksBulkPagesSummary extends AbstractModel
     }
 
 	/**
+	 * @param bool $includeSubdomains
+	 * @return $this
+	 */
+	public function setIncludeSubdomains(bool $includeSubdomains)
+	{
+		$this->payload['include_subdomains'] = $includeSubdomains;
+		return $this;
+	}
+
+	/**
 	 * @param string $tag
 	 * @return $this
 	 */
