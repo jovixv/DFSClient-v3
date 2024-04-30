@@ -270,6 +270,15 @@ class SettingSerpLiveAdvanced extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $target
+	 * @return $this
+	 */
+	public function setTarget(string $target) {
+		$this->payload['target'] = $target;
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
