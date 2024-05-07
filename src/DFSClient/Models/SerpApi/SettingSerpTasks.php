@@ -147,6 +147,36 @@ class SettingSerpTasks extends AbstractModel
         return $this;
     }
 
+	/**
+	 * for google/organic
+	 * @param bool $group_organic_results
+	 * @return $this
+	 */
+	public function setGroupOrganicResults(bool $group_organic_results) {
+		$this->payload['group_organic_results'] = $group_organic_results;
+		return $this;
+	}
+
+	/**
+	 * for google/maps
+	 * @param bool $search_this_area
+	 * @return $this
+	 */
+	public function setSearchThisArea(bool $search_this_area) {
+		$this->payload['search_this_area'] = $search_this_area;
+		return $this;
+	}
+
+	/**
+	 * for google/maps
+	 * @param bool $search_places
+	 * @return $this
+	 */
+	public function setSearchPlaces(bool $search_places) {
+		$this->payload['search_places'] = $search_places;
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
@@ -231,84 +261,59 @@ class SettingSerpTasks extends AbstractModel
 		return $this;
 	}
 
-		/**
-		 * @param string $last_updated
-		 * @return $this
-		 */
-		public function setLastUpdated(string $last_updated) {
-			$this->payload['last_updated'] = $last_updated;
-			return $this;
-		}
+	/**
+	 * @param string $last_updated
+	 * @return $this
+	 */
+	public function setLastUpdated(string $last_updated) {
+		$this->payload['last_updated'] = $last_updated;
+		return $this;
+	}
 
-		/**
-		 * @param array $file_formats
-		 * @return $this
-		 */
-		public function setFileFormats(array $file_formats) {
-			$this->payload['file_formats'] = $file_formats;
-			return $this;
-		}
+	/**
+	 * @param array $file_formats
+	 * @return $this
+	 */
+	public function setFileFormats(array $file_formats) {
+		$this->payload['file_formats'] = $file_formats;
+		return $this;
+	}
 
-		/**
-		 * @param string $usage_rights
-		 * @return $this
-		 */
-		public function setUsageRights(string $usage_rights) {
-			$this->payload['usage_rights'] = $usage_rights;
-			return $this;
-		}
+	/**
+	 * @param string $usage_rights
+	 * @return $this
+	 */
+	public function setUsageRights(string $usage_rights) {
+		$this->payload['usage_rights'] = $usage_rights;
+		return $this;
+	}
 
-		/**
-		 * @param bool $is_free
-		 * @return $this
-		 */
-		public function setIsFree(bool $is_free) {
-			$this->payload['is_free'] = $is_free;
-			return $this;
-		}
+	/**
+	 * @param bool $is_free
+	 * @return $this
+	 */
+	public function setIsFree(bool $is_free) {
+		$this->payload['is_free'] = $is_free;
+		return $this;
+	}
 
-		/**
-		 * @param array $topics
-		 * @return $this
-		 */
-		public function setTopics(array $topics) {
-			$this->payload['topics'] = $topics;
-			return $this;
-		}
+	/**
+	 * @param array $topics
+	 * @return $this
+	 */
+	public function setTopics(array $topics) {
+		$this->payload['topics'] = $topics;
+		return $this;
+	}
 
-		/**
-		 * @param string $dataset_id
-		 * @return $this
-		 */
-		public function setDatasetId(string $dataset_id) {
-			$this->payload['dataset_id'] = $dataset_id;
-			return $this;
-		}
-
-    /**
-     * @param string $seType
-     * @return $this
-     * @throws \Exception
-     */
-    public function setSeType(string $seType)
-    {
-        if (!in_array($seType,$this->seTypes))
-            throw new \Exception('Provided se type not allowed');
-
-        $this->requestToFunction = str_replace('{$seType}', $seType, $this->requestToFunction);
-
-        return $this;
-    }
-
-    /**
-     * @param string $seName
-     * @return $this
-     */
-    public function setSe(string $seName)
-    {
-        $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
-        return $this;
-    }
+	/**
+	 * @param string $dataset_id
+	 * @return $this
+	 */
+	public function setDatasetId(string $dataset_id) {
+		$this->payload['dataset_id'] = $dataset_id;
+		return $this;
+	}
 
 	/**
 	 * @param bool $calculateRectangles
@@ -349,6 +354,16 @@ class SettingSerpTasks extends AbstractModel
 	    $this->payload['browser_screen_resolution_ratio'] = $browserScreenResolutionRatio;
 	    return $this;
     }
+
+	/**
+	 * @param int $peopleAlsoAskClickDepth
+	 * @return $this
+	 */
+	public function setPeopleAlsoAskClickDepth(int $peopleAlsoAskClickDepth)
+	{
+		$this->payload['people_also_ask_click_depth'] = $peopleAlsoAskClickDepth;
+		return $this;
+	}
 
 	/**
 	 * @param array $employmentType
@@ -407,6 +422,31 @@ class SettingSerpTasks extends AbstractModel
 	public function setCursorPointer(int $cursorPointer)
 	{
 		$this->payload['cursor_pointer'] = $cursorPointer;
+		return $this;
+	}
+
+	/**
+	 * @param string $seType
+	 * @return $this
+	 * @throws \Exception
+	 */
+	public function setSeType(string $seType)
+	{
+		if (!in_array($seType,$this->seTypes))
+			throw new \Exception('Provided se type not allowed');
+
+		$this->requestToFunction = str_replace('{$seType}', $seType, $this->requestToFunction);
+
+		return $this;
+	}
+
+	/**
+	 * @param string $seName
+	 * @return $this
+	 */
+	public function setSe(string $seName)
+	{
+		$this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
 		return $this;
 	}
 

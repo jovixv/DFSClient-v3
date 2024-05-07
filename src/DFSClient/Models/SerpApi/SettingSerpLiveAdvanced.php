@@ -271,6 +271,7 @@ class SettingSerpLiveAdvanced extends AbstractModel
 	}
 
 	/**
+	 * for google/organic/live
 	 * @param string $target
 	 * @return $this
 	 */
@@ -279,7 +280,88 @@ class SettingSerpLiveAdvanced extends AbstractModel
 		return $this;
 	}
 
-    /**
+	/**
+	 * for google/organic
+	 * @param bool $group_organic_results
+	 * @return $this
+	 */
+	public function setGroupOrganicResults(bool $group_organic_results) {
+		$this->payload['group_organic_results'] = $group_organic_results;
+		return $this;
+	}
+
+	/**
+	 * @param bool $calculateRectangles
+	 * @return $this
+	 */
+	public function setCalculateRectangles(bool $calculateRectangles)
+	{
+		$this->payload['calculate_rectangles'] = $calculateRectangles;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenWidth
+	 * @return $this
+	 */
+	public function setBrowserScreenWidth(int $browserScreenWidth)
+	{
+		$this->payload['browser_screen_width'] = $browserScreenWidth;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenHeight
+	 * @return $this
+	 */
+	public function setBrowserScreenHeight(int $browserScreenHeight)
+	{
+		$this->payload['browser_screen_height'] = $browserScreenHeight;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenResolutionRatio
+	 * @return $this
+	 */
+	public function setBrowserScreenResolutionRatio(int $browserScreenResolutionRatio)
+	{
+		$this->payload['browser_screen_resolution_ratio'] = $browserScreenResolutionRatio;
+		return $this;
+	}
+
+	/**
+	 * for google/organic
+	 * @param int $peopleAlsoAskClickDepth
+	 * @return $this
+	 */
+	public function setPeopleAlsoAskClickDepth(int $peopleAlsoAskClickDepth)
+	{
+		$this->payload['people_also_ask_click_depth'] = $peopleAlsoAskClickDepth;
+		return $this;
+	}
+
+	/**
+	 * for google/maps
+	 * @param bool $search_this_area
+	 * @return $this
+	 */
+	public function setSearchThisArea(bool $search_this_area) {
+		$this->payload['search_this_area'] = $search_this_area;
+		return $this;
+	}
+
+	/**
+	 * for google/maps
+	 * @param bool $search_places
+	 * @return $this
+	 */
+	public function setSearchPlaces(bool $search_places) {
+		$this->payload['search_places'] = $search_places;
+		return $this;
+	}
+
+	/**
      * @param string $tag
      * @return $this
      */

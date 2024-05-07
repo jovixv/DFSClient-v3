@@ -148,11 +148,22 @@ class SettingSerpLiveRegular extends AbstractModel
     }
 
 	/**
+	 * for google/organic/live
 	 * @param string $target
 	 * @return $this
 	 */
 	public function setTarget(string $target) {
 		$this->payload['target'] = $target;
+		return $this;
+	}
+
+	/**
+	 * for google/organic
+	 * @param bool $group_organic_results
+	 * @return $this
+	 */
+	public function setGroupOrganicResults(bool $group_organic_results) {
+		$this->payload['group_organic_results'] = $group_organic_results;
 		return $this;
 	}
 
