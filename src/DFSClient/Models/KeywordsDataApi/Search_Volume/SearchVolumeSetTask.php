@@ -185,6 +185,20 @@ class SearchVolumeSetTask extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * For 'google_ads' se only!
+	 * @param bool $include_adult_keywords
+	 * @param string $se
+	 * @return $this
+	 */
+	public function setIncludeAdultKeywords(bool $include_adult_keywords, string $se)
+	{
+		if ($se === 'google_ads') {
+			$this->payload['include_adult_keywords'] = $include_adult_keywords;
+		}
+		return $this;
+	}
+
     /**
      * @param string $seName
      * @return $this

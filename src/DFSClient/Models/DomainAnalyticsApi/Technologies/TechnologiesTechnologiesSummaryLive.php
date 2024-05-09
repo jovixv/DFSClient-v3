@@ -65,10 +65,10 @@ class TechnologiesTechnologiesSummaryLive extends AbstractModel {
 	}
 
 	/**
-	 * @param string $technologyPaths
+	 * @param array $technologyPaths
 	 * @return $this
 	 */
-	public function setTechnologyPaths(string $technologyPaths) {
+	public function setTechnologyPaths(array $technologyPaths) {
 		$this->payload['technology_paths'] = $technologyPaths;
 		return $this;
 	}

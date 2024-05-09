@@ -132,10 +132,10 @@ class GoogleTrendsLive extends AbstractModel
 	}
 
 	/**
-	 * @param string $itemTypes
+	 * @param array $itemTypes
 	 * @return $this
 	 */
-	public function setItemTypes(string $itemTypes)
+	public function setItemTypes(array $itemTypes)
 	{
 		$this->payload['item_types'] = $itemTypes;
 
