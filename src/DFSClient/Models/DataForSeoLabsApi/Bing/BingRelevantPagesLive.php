@@ -86,6 +86,17 @@ class BingRelevantPagesLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $historicalSerpMode
+	 * @return $this
+	 */
+	public function setHistoricalSerpMode(string $historicalSerpMode)
+	{
+		$this->payload['historical_serp_mode'] = $historicalSerpMode;
+
+		return $this;
+	}
+
     /**
      * @param array $filters
      * @return $this

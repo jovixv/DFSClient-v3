@@ -89,6 +89,28 @@ class GoogleHistoricalBulkTrafficEstimationLive extends AbstractModel
 	}
 
 	/**
+	 * @param string $dateFrom
+	 * @return $this
+	 */
+	public function setDateFrom(string $dateFrom)
+	{
+		$this->payload['date_from'] = $dateFrom;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $dateTo
+	 * @return $this
+	 */
+	public function setDateTo(string $dateTo)
+	{
+		$this->payload['date_to'] = $dateTo;
+
+		return $this;
+	}
+
+	/**
 	 * @return \DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMain
 	 */
 	public function get(): \DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMain

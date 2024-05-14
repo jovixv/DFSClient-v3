@@ -76,12 +76,25 @@ class AmazonRankedKeywordsLive extends AbstractModel
     }
 
 	/**
+	 * not supported for 'amazon'
+	 *
 	 * @param array $itemTypes
 	 * @return $this
 	 */
 	public function setItemTypes(array $itemTypes)
 	{
-		$this->payload['item_types'] = $itemTypes;
+		//$this->payload['item_types'] = $itemTypes;
+
+		return $this;
+	}
+
+	/**
+	 * @param bool $ignoreSynonyms
+	 * @return $this
+	 */
+	public function setIgnoreSynonyms(bool $ignoreSynonyms)
+	{
+		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
 		return $this;
 	}

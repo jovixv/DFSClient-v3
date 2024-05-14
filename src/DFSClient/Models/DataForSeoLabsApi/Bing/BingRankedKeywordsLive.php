@@ -97,6 +97,28 @@ class BingRankedKeywordsLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $ignoreSynonyms
+	 * @return $this
+	 */
+	public function setIgnoreSynonyms(bool $ignoreSynonyms)
+	{
+		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $historicalSerpMode
+	 * @return $this
+	 */
+	public function setHistoricalSerpMode(string $historicalSerpMode)
+	{
+		$this->payload['historical_serp_mode'] = $historicalSerpMode;
+
+		return $this;
+	}
+
     /**
      * @param array $filters
      * @return $this

@@ -98,12 +98,14 @@ class AmazonRelatedKeywordsLive extends AbstractModel
 	}
 
 	/**
+	 * not supported for 'amazon'
+	 *
 	 * @param bool $includeSerpInfo
 	 * @return $this
 	 */
 	public function setIncludeSerpInfo(bool $includeSerpInfo)
 	{
-		$this->payload['include_serp_info'] = $includeSerpInfo;
+		//$this->payload['include_serp_info'] = $includeSerpInfo;
 
 		return $this;
 	}
@@ -115,6 +117,17 @@ class AmazonRelatedKeywordsLive extends AbstractModel
 	public function setReplaceWithCoreKeyword(bool $replaceWithCoreKeyword)
 	{
 		$this->payload['replace_with_core_keyword'] = $replaceWithCoreKeyword;
+
+		return $this;
+	}
+
+	/**
+	 * @param bool $ignoreSynonyms
+	 * @return $this
+	 */
+	public function setIgnoreSynonyms(bool $ignoreSynonyms)
+	{
+		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
 		return $this;
 	}
