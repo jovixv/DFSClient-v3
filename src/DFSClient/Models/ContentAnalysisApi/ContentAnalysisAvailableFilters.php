@@ -12,6 +12,7 @@ class ContentAnalysisAvailableFilters extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'content_analysis/available_filters';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\ContentAnalysisAvailableFiltersEntityMain

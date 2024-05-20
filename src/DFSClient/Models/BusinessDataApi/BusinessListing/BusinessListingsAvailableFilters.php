@@ -11,6 +11,7 @@ class BusinessListingsAvailableFilters extends AbstractModel {
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'business_data/business_listings/available_filters';
 	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
 	/**
 	 * @return BusinessListingsAvailableFiltersEntityMain

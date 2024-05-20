@@ -13,6 +13,7 @@ class BingPageIntersectionLive extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'dataforseo_labs/bing/page_intersection/live';
     protected $resultShouldBeTransformedToArray = true;
+    protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\BingPageIntersectionLiveEntityMain

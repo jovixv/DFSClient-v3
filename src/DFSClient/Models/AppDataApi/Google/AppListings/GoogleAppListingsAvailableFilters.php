@@ -11,6 +11,7 @@ class GoogleAppListingsAvailableFilters extends AbstractModel {
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'app_data/google/app_listings/available_filters';
 	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
 	/**
 	 * @return GoogleAppListingsAvailableFiltersEntityMain

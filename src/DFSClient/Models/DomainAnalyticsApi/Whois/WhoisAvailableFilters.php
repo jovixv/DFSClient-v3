@@ -13,6 +13,7 @@ class WhoisAvailableFilters extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'domain_analytics/whois/available_filters';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\WhoisAvailableFiltersEntityMain

@@ -159,9 +159,9 @@ class BackLinksDomainIntersection extends AbstractModel
             'tasks->(:number)->result->(:number)->targets' => function($key, $value) {
                 return (array)$value;
             },
-		        'tasks->(:number)->result->(:number)->items' => function($key, $value) {
-			        return json_decode(json_encode($value), true);
-		        }
+	        'tasks->(:number)->result->(:number)->items' => function($key, $value) {
+		        return json_decode(json_encode($value), true);
+	        }
         ];
     }
 
