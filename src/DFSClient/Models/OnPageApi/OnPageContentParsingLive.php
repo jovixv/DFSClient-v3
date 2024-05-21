@@ -83,6 +83,66 @@ class OnPageContentParsingLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $disableCookiePopup
+	 * @return $this
+	 */
+	public function setDisableCookiePopup(bool $disableCookiePopup)
+	{
+		$this->payload['disable_cookie_popup'] = $disableCookiePopup;
+		return $this;
+	}
+
+	/**
+	 * @param string $browserPreset
+	 * @return $this
+	 */
+	public function setBrowserPreset(string $browserPreset)
+	{
+		$this->payload['browser_preset'] = $browserPreset;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenWidth
+	 * @return $this
+	 */
+	public function setBrowserScreenWidth(int $browserScreenWidth)
+	{
+		$this->payload['browser_screen_width'] = $browserScreenWidth;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenHeight
+	 * @return $this
+	 */
+	public function setBrowserScreenHeight(int $browserScreenHeight)
+	{
+		$this->payload['browser_screen_height'] = $browserScreenHeight;
+		return $this;
+	}
+
+	/**
+	 * @param float $browserScreenScaleFactor
+	 * @return $this
+	 */
+	public function setBrowserScreenScaleFactor(float $browserScreenScaleFactor)
+	{
+		$this->payload['browser_screen_scale_factor'] = $browserScreenScaleFactor;
+		return $this;
+	}
+
+	/**
+	 * @param string $acceptLanguage
+	 * @return $this
+	 */
+	public function setAcceptLanguage(string $acceptLanguage)
+	{
+		$this->payload['accept_language'] = $acceptLanguage;
+		return $this;
+	}
+
     /**
      * @return OnPageContentParsingLiveEntityMain
      */

@@ -63,6 +63,37 @@ class OnPageLighthouseLive extends AbstractModel
         $this->payload['audits'] = $audits;
         return $this;
     }
+
+	/**
+	 * @param string $version
+	 * @return $this
+	 */
+	public function setVersion(string $version)
+	{
+		$this->payload['version'] = $version;
+		return $this;
+	}
+
+	/**
+	 * @param string $language_name
+	 * @return $this
+	 */
+	public function setLanguageName(string $language_name)
+	{
+		$this->payload['language_name'] = $language_name;
+		return $this;
+	}
+
+	/**
+	 * @param string $language_code
+	 * @return $this
+	 */
+	public function setLanguageCode(string $language_code)
+	{
+		$this->payload['language_code'] = $language_code;
+		return $this;
+	}
+
 	/**
 	 * @param string $tag
 	 * @return $this

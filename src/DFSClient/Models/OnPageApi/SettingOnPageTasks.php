@@ -346,10 +346,10 @@ class SettingOnPageTasks extends AbstractModel
     }
 
 	/**
-	 * @param array $checkSpellLanguage
+	 * @param string $checkSpellLanguage
 	 * @return $this
 	 */
-	public function setCheckSpellLanguage(array $checkSpellLanguage)
+	public function setCheckSpellLanguage(string $checkSpellLanguage)
 	{
 		$this->payload['check_spell_language'] = $checkSpellLanguage;
 		return $this;
