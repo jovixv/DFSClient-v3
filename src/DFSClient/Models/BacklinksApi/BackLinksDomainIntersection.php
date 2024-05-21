@@ -150,6 +150,16 @@ class BackLinksDomainIntersection extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $intersectionMode
+	 * @return $this
+	 */
+	public function setIntersectionMode(string $intersectionMode)
+	{
+		$this->payload['intersection_mode'] = $intersectionMode;
+		return $this;
+	}
+
     public function initCustomFunctionForPaths(): array
     {
         return [

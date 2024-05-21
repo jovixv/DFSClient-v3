@@ -52,6 +52,39 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
+	/**
+	 * @param array $customMode
+	 * @return $this
+	 */
+	public function setCustomMode(array $customMode)
+	{
+		$this->payload['custom_mode'] = $customMode;
+
+		return $this;
+	}
+
+	/**
+	 * @param string $field
+	 * @return $this
+	 */
+	public function setField(string $field)
+	{
+		$this->payload['field'] = $field;
+
+		return $this;
+	}
+
+	/**
+	 * @param int $value
+	 * @return $this
+	 */
+	public function setValue(int $value)
+	{
+		$this->payload['value'] = $value;
+
+		return $this;
+	}
+
     /**
      * @param array $orderBy
      * @return $this
