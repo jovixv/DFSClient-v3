@@ -61,6 +61,16 @@ class OnPageInstantPages extends AbstractModel
 	}
 
 	/**
+	 * @param bool $loadResources
+	 * @return $this
+	 */
+	public function setLoadResources(bool $loadResources)
+	{
+		$this->payload['load_resources'] = $loadResources;
+		return $this;
+	}
+
+	/**
 	 * @param bool $enableBrowserRendering
 	 * @return $this
 	 */
