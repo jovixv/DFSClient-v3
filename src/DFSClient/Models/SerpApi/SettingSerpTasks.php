@@ -426,6 +426,17 @@ class SettingSerpTasks extends AbstractModel
 	}
 
 	/**
+	 * for Baidu
+	 * @param bool $getWebsiteUrl
+	 * @return $this
+	 */
+	public function setGetWebsiteUrl(bool $getWebsiteUrl)
+	{
+		$this->payload['get_website_url'] = $getWebsiteUrl;
+		return $this;
+	}
+
+	/**
 	 * @param string $seType
 	 * @return $this
 	 * @throws \Exception
