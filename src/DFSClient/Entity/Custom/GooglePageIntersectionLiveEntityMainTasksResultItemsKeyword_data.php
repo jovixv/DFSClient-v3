@@ -50,5 +50,10 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_data
 	 * @var null|GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
 	 */
 	public $search_intent_info = null;
+
+ /**
+	* @var null|GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties $keyword_properties;
+	*/
+ public $keyword_properties = null;
  
 }
