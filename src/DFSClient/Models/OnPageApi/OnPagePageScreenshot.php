@@ -36,14 +36,75 @@ class OnPagePageScreenshot extends AbstractModel
 	}
 
     /**
+     * always on
      * @param bool $enableJavascript
      * @return $this
      */
     public function setEnableJavascript(bool $enableJavascript)
     {
-        $this->payload['enable_javascript'] = $enableJavascript;
+        //$this->payload['enable_javascript'] = $enableJavascript;
         return $this;
     }
+
+	/**
+	 * @param string $browserPreset
+	 * @return $this
+	 */
+	public function setBrowserPreset(string $browserPreset)
+	{
+		$this->payload['browser_preset'] = $browserPreset;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenWidth
+	 * @return $this
+	 */
+	public function setBrowserScreenWidth(int $browserScreenWidth)
+	{
+		$this->payload['browser_screen_width'] = $browserScreenWidth;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenHeight
+	 * @return $this
+	 */
+	public function setBrowserScreenHeight(int $browserScreenHeight)
+	{
+		$this->payload['browser_screen_height'] = $browserScreenHeight;
+		return $this;
+	}
+
+	/**
+	 * @param float $browserScreenScaleFactor
+	 * @return $this
+	 */
+	public function setBrowserScreenScaleFactor(float $browserScreenScaleFactor)
+	{
+		$this->payload['browser_screen_scale_factor'] = $browserScreenScaleFactor;
+		return $this;
+	}
+
+	/**
+	 * @param bool $fullPageScreenshot
+	 * @return $this
+	 */
+	public function setFullPageScreenshot(bool $fullPageScreenshot)
+	{
+		$this->payload['full_page_screenshot'] = $fullPageScreenshot;
+		return $this;
+	}
+
+	/**
+	 * @param bool $disableCookiePopup
+	 * @return $this
+	 */
+	public function setDisableCookiePopup(bool $disableCookiePopup)
+	{
+		$this->payload['disable_cookie_popup'] = $disableCookiePopup;
+		return $this;
+	}
 
 	/**
 	 * @param string $customJs
@@ -52,6 +113,26 @@ class OnPagePageScreenshot extends AbstractModel
 	public function setCustomJs(string $customJs)
 	{
 		$this->payload['custom_js'] = $customJs;
+		return $this;
+	}
+
+	/**
+	 * @param bool $switchPool
+	 * @return $this
+	 */
+	public function setSwitchPool(bool $switchPool)
+	{
+		$this->payload['switch_pool'] = $switchPool;
+		return $this;
+	}
+
+	/**
+	 * @param string $ipPoolForScan
+	 * @return $this
+	 */
+	public function setIpPoolForScan(string $ipPoolForScan)
+	{
+		$this->payload['ip_pool_for_scan'] = $ipPoolForScan;
 		return $this;
 	}
 

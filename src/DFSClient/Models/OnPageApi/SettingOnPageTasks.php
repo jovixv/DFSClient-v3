@@ -416,6 +416,16 @@ class SettingOnPageTasks extends AbstractModel
 	}
 
 	/**
+	 * @param string $ipPoolForScan
+	 * @return $this
+	 */
+	public function setIpPoolForScan(string $ipPoolForScan)
+	{
+		$this->payload['ip_pool_for_scan'] = $ipPoolForScan;
+		return $this;
+	}
+
+	/**
 	 * @param bool $returnDespiteTimeout
 	 * @return $this
 	 */

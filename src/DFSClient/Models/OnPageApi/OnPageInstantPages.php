@@ -200,6 +200,26 @@ class OnPageInstantPages extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $switchPool
+	 * @return $this
+	 */
+	public function setSwitchPool(bool $switchPool)
+	{
+		$this->payload['switch_pool'] = $switchPool;
+		return $this;
+	}
+
+	/**
+	 * @param string $ipPoolForScan
+	 * @return $this
+	 */
+	public function setIpPoolForScan(string $ipPoolForScan)
+	{
+		$this->payload['ip_pool_for_scan'] = $ipPoolForScan;
+		return $this;
+	}
+
     /**
      * @return OnPageInstantPagesEntityMain
      */

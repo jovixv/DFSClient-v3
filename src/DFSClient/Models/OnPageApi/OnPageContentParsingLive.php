@@ -54,12 +54,13 @@ class OnPageContentParsingLive extends AbstractModel
 	}
 
 	/**
+	 * doesn't affect the result
 	 * @param bool $loadResources
 	 * @return $this
 	 */
 	public function setLoadResources(bool $loadResources)
 	{
-		$this->payload['load_resources'] = $loadResources;
+		//$this->payload['load_resources'] = $loadResources;
 		return $this;
 	}
 
@@ -150,6 +151,26 @@ class OnPageContentParsingLive extends AbstractModel
 	public function setAcceptLanguage(string $acceptLanguage)
 	{
 		$this->payload['accept_language'] = $acceptLanguage;
+		return $this;
+	}
+
+	/**
+	 * @param bool $switchPool
+	 * @return $this
+	 */
+	public function setSwitchPool(bool $switchPool)
+	{
+		$this->payload['switch_pool'] = $switchPool;
+		return $this;
+	}
+
+	/**
+	 * @param string $ipPoolForScan
+	 * @return $this
+	 */
+	public function setIpPoolForScan(string $ipPoolForScan)
+	{
+		$this->payload['ip_pool_for_scan'] = $ipPoolForScan;
 		return $this;
 	}
 
