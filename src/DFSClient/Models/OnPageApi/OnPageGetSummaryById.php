@@ -15,7 +15,7 @@ class OnPageGetSummaryById extends AbstractModel
 	
 	/**
 	 * @param string $taskUUID
-	 * @return $this
+	 * @return OnPageGetSummaryById
 	 */
 	public function setTaskId(string $taskUUID)
 	{
