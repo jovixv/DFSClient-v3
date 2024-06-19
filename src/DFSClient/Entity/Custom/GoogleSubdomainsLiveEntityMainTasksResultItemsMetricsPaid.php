@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaidClickstream_gender_distribution;
+use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaidClickstream_age_distribution;
 
 class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaid 
 {    
@@ -104,5 +106,20 @@ class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaid
     * @var null|integer $is_lost;
     */
     public $is_lost = null;
+
+    /**
+    * @var null|double $clickstream_etv;
+    */
+    public $clickstream_etv = null;
+
+    /**
+    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaidClickstream_gender_distribution $clickstream_gender_distribution;
+    */
+    public $clickstream_gender_distribution = null;
+
+    /**
+    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaidClickstream_age_distribution $clickstream_age_distribution;
+    */
+    public $clickstream_age_distribution = null;
  
 }

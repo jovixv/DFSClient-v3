@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_gender_distribution;
+use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_age_distribution;
 
 class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_pack 
 {    
@@ -104,5 +106,20 @@ class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_pack
     * @var null|integer $is_lost;
     */
     public $is_lost = null;
+
+    /**
+    * @var null|integer $clickstream_etv;
+    */
+    public $clickstream_etv = null;
+
+    /**
+    * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_gender_distribution $clickstream_gender_distribution;
+    */
+    public $clickstream_gender_distribution = null;
+
+    /**
+    * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_age_distribution $clickstream_age_distribution;
+    */
+    public $clickstream_age_distribution = null;
  
 }

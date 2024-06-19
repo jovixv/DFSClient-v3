@@ -3,8 +3,12 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataSerp_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_properties;
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataSearch_intent_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataAvg_backlinks_info;
 
 class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_data 
 {    
@@ -34,6 +38,11 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_data
     public $keyword_info = null;
 
     /**
+    * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
+
+    /**
     * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataImpressions_info $impressions_info;
     */
     public $impressions_info = null;
@@ -42,5 +51,20 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_data
     * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataSerp_info $serp_info;
     */
     public $serp_info = null;
+
+    /**
+    * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_properties $keyword_properties;
+    */
+    public $keyword_properties = null;
+
+    /**
+    * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataSearch_intent_info $search_intent_info;
+    */
+    public $search_intent_info = null;
+
+    /**
+    * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataAvg_backlinks_info $avg_backlinks_info;
+    */
+    public $avg_backlinks_info = null;
  
 }

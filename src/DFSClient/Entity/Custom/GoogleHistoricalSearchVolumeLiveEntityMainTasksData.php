@@ -39,5 +39,10 @@ class GoogleHistoricalSearchVolumeLiveEntityMainTasksData
     * @var null|boolean $include_serp_info;
     */
     public $include_serp_info = null;
+
+    /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
  
 }

@@ -49,5 +49,10 @@ class GoogleRelatedKeywordsLiveEntityMainTasksData
     * @var null|integer $limit;
     */
     public $limit = null;
+
+    /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
  
 }

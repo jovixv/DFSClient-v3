@@ -16,7 +16,7 @@ class GoogleKeywordIdeasLiveEntityMainTasksResultItemsAvg_backlinks_info
     public $backlinks = null;
 
     /**
-    * @var null|integer $dofollow;
+    * @var null|double $dofollow;
     */
     public $dofollow = null;
 

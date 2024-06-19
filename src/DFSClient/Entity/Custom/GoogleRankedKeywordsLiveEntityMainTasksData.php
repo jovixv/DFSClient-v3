@@ -41,9 +41,19 @@ class GoogleRankedKeywordsLiveEntityMainTasksData
     public $item_types = null;
 
     /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
+
+    /**
     * @var null|boolean $load_rank_absolute;
     */
     public $load_rank_absolute = null;
+
+    /**
+    * @var null|array $filters;
+    */
+    public $filters = null;
 
     /**
     * @var null|integer $limit;

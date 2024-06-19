@@ -2,7 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemAbout_this_result;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemExtra;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemLinks;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info;
@@ -40,44 +41,14 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
-    public $domain = null;
-
-    /**
     * @var null|string $title;
     */
     public $title = null;
 
     /**
-    * @var null|string $url;
+    * @var null|string $domain;
     */
-    public $url = null;
-
-    /**
-    * @var null|string $breadcrumb;
-    */
-    public $breadcrumb = null;
-
-    /**
-    * @var null|boolean $is_image;
-    */
-    public $is_image = null;
-
-    /**
-    * @var null|boolean $is_video;
-    */
-    public $is_video = null;
-
-    /**
-    * @var null|boolean $is_featured_snippet;
-    */
-    public $is_featured_snippet = null;
-
-    /**
-    * @var null|boolean $is_malicious;
-    */
-    public $is_malicious = null;
+    public $domain = null;
 
     /**
     * @var null|string $description;
@@ -85,39 +56,34 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_
     public $description = null;
 
     /**
-    * @var null|NULL $pre_snippet;
+    * @var null|string $breadcrumb;
     */
-    public $pre_snippet = null;
+    public $breadcrumb = null;
 
     /**
-    * @var null|NULL $extended_snippet;
+    * @var null|string $url;
     */
-    public $extended_snippet = null;
+    public $url = null;
 
     /**
-    * @var null|boolean $amp_version;
-    */
-    public $amp_version = null;
-
-    /**
-    * @var null|NULL $rating;
-    */
-    public $rating = null;
-
-    /**
-    * @var null|array $highlighted;
+    * @var null|NULL $highlighted;
     */
     public $highlighted = null;
 
     /**
-    * @var null|NULL $links;
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemExtra $extra;
     */
-    public $links = null;
+    public $extra = null;
 
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemAbout_this_result $about_this_result;
+    * @var null|NULL $description_rows;
     */
-    public $about_this_result = null;
+    public $description_rows = null;
+
+    /**
+    * @var array|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemLinks[] $links;
+    */
+    public $links = [];
 
     /**
     * @var null|string $main_domain;
@@ -143,6 +109,11 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_
     * @var null|double $estimated_paid_traffic_cost;
     */
     public $estimated_paid_traffic_cost = null;
+
+    /**
+    * @var null|double $clickstream_etv;
+    */
+    public $clickstream_etv = null;
 
     /**
     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes $rank_changes;

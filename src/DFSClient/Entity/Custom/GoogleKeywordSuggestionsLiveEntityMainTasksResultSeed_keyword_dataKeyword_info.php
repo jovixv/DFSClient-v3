@@ -27,7 +27,7 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_
     public $competition_level = null;
 
     /**
-    * @var null|integer $cpc;
+    * @var null|double $cpc;
     */
     public $cpc = null;
 
@@ -42,7 +42,7 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_
     public $low_top_of_page_bid = null;
 
     /**
-    * @var null|integer $high_top_of_page_bid;
+    * @var null|double $high_top_of_page_bid;
     */
     public $high_top_of_page_bid = null;
 

@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksDataPages;
 
 class GooglePageIntersectionLiveEntityMainTasksData 
 {    
@@ -21,24 +22,9 @@ class GooglePageIntersectionLiveEntityMainTasksData
     public $se_type = null;
 
     /**
-    * @var null|string $intersection_mode;
-    */
-    public $intersection_mode = null;
-
-    /**
-    * @var null|boolean $include_serp_info;
-    */
-    public $include_serp_info = null;
-
-    /**
-    * @var null|array $pages;
+    * @var null|GooglePageIntersectionLiveEntityMainTasksDataPages $pages;
     */
     public $pages = null;
-
-    /**
-    * @var null|integer $location_code;
-    */
-    public $location_code = null;
 
     /**
     * @var null|string $language_code;
@@ -46,13 +32,28 @@ class GooglePageIntersectionLiveEntityMainTasksData
     public $language_code = null;
 
     /**
+    * @var null|integer $location_code;
+    */
+    public $location_code = null;
+
+    /**
+    * @var null|boolean $include_subdomains;
+    */
+    public $include_subdomains = null;
+
+    /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
+
+    /**
+    * @var null|array $filters;
+    */
+    public $filters = null;
+
+    /**
     * @var null|integer $limit;
     */
     public $limit = null;
-
-    /**
-    * @var null|integer $offset;
-    */
-    public $offset = null;
  
 }

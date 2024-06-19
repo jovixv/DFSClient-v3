@@ -36,9 +36,19 @@ class GoogleSubdomainsLiveEntityMainTasksData
     public $location_code = null;
 
     /**
+    * @var null|array $filters;
+    */
+    public $filters = null;
+
+    /**
     * @var null|array $item_types;
     */
     public $item_types = null;
+
+    /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
 
     /**
     * @var null|integer $limit;

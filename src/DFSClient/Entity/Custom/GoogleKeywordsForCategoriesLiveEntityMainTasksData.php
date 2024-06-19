@@ -41,8 +41,18 @@ class GoogleKeywordsForCategoriesLiveEntityMainTasksData
     public $include_serp_info = null;
 
     /**
+    * @var null|array $filters;
+    */
+    public $filters = null;
+
+    /**
     * @var null|integer $limit;
     */
     public $limit = null;
+
+    /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
  
 }

@@ -9,7 +9,7 @@ class GoogleDomainIntersectionLiveEntityMain extends \DFSClientV3\Models\Respons
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20220216';
+    public $version = '0.1.20240514';
 
     /**
     * @var null|integer $status_code;

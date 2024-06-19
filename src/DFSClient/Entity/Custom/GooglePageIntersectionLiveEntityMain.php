@@ -9,7 +9,7 @@ class GooglePageIntersectionLiveEntityMain extends \DFSClientV3\Models\ResponseM
     /**
     * @var null|string $version;
     */
-    public $version = 'string';
+    public $version = '0.1.20240514';
 
     /**
     * @var null|integer $status_code;

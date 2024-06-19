@@ -31,12 +31,12 @@ class GoogleTopSearchesLiveEntityMainTasksResultItemsAvg_backlinks_info
     public $referring_domains = null;
 
     /**
-    * @var null|double $referring_main_domains;
+    * @var null|integer $referring_main_domains;
     */
     public $referring_main_domains = null;
 
     /**
-    * @var null|integer $rank;
+    * @var null|double $rank;
     */
     public $rank = null;
 

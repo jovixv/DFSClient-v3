@@ -3,9 +3,12 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
+use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
+use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
 class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
 {    
@@ -35,6 +38,11 @@ class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data
     public $keyword_info = null;
 
     /**
+    * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
+
+    /**
     * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties $keyword_properties;
     */
     public $keyword_properties = null;
@@ -49,14 +57,14 @@ class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data
     */
     public $serp_info = null;
 
-	/**
-	 * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
-	 */
-	public $avg_backlinks_info = null;
+    /**
+    * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
+    */
+    public $avg_backlinks_info = null;
 
-	/**
-	 * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
-	 */
-	public $search_intent_info = null;
-
+    /**
+    * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
+    */
+    public $search_intent_info = null;
+ 
 }

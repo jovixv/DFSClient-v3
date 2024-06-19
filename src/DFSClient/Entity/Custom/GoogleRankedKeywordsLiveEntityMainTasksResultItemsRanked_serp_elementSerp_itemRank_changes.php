@@ -6,7 +6,7 @@ namespace DFSClientV3\Entity\Custom;
 class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_changes 
 {    
     /**
-    * @var null|integer $previous_rank_absolute;
+    * @var null|NULL $previous_rank_absolute;
     */
     public $previous_rank_absolute = null;
 

@@ -17,7 +17,7 @@ class GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_inf
     public $last_updated_time = null;
 
     /**
-    * @var null|double $competition;
+    * @var null|integer $competition;
     */
     public $competition = null;
 

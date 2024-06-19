@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippetClickstream_gender_distribution;
+use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippetClickstream_age_distribution;
 
 class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet 
 {    
@@ -66,12 +68,12 @@ class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet
     public $pos_91_100 = null;
 
     /**
-    * @var null|integer $etv;
+    * @var null|double $etv;
     */
     public $etv = null;
 
     /**
-    * @var null|integer $impressions_etv;
+    * @var null|double $impressions_etv;
     */
     public $impressions_etv = null;
 
@@ -81,7 +83,7 @@ class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet
     public $count = null;
 
     /**
-    * @var null|integer $estimated_paid_traffic_cost;
+    * @var null|double $estimated_paid_traffic_cost;
     */
     public $estimated_paid_traffic_cost = null;
 
@@ -104,5 +106,20 @@ class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet
     * @var null|integer $is_lost;
     */
     public $is_lost = null;
+
+    /**
+    * @var null|double $clickstream_etv;
+    */
+    public $clickstream_etv = null;
+
+    /**
+    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippetClickstream_gender_distribution $clickstream_gender_distribution;
+    */
+    public $clickstream_gender_distribution = null;
+
+    /**
+    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippetClickstream_age_distribution $clickstream_age_distribution;
+    */
+    public $clickstream_age_distribution = null;
  
 }

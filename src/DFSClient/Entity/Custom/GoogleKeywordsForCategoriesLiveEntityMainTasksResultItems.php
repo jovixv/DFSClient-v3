@@ -3,10 +3,12 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsSerp_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsAvg_backlinks_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsSearch_intent_info;
 
 class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItems 
 {    
@@ -36,6 +38,11 @@ class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItems
     public $keyword_info = null;
 
     /**
+    * @var null|GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
+
+    /**
     * @var null|GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsKeyword_properties $keyword_properties;
     */
     public $keyword_properties = null;
@@ -55,9 +62,9 @@ class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItems
     */
     public $avg_backlinks_info = null;
 
-	/**
-	 * @var null|GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsSearch_intent_info $search_intent_info;
-	 */
-	public $search_intent_info = null;
-
+    /**
+    * @var null|GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsSearch_intent_info $search_intent_info;
+    */
+    public $search_intent_info = null;
+ 
 }

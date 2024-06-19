@@ -21,7 +21,7 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlink
     public $dofollow = null;
 
     /**
-    * @var null|double $referring_pages;
+    * @var null|integer $referring_pages;
     */
     public $referring_pages = null;
 

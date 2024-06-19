@@ -36,9 +36,19 @@ class GoogleKeywordIdeasLiveEntityMainTasksData
     public $location_code = null;
 
     /**
+    * @var null|array $order_by;
+    */
+    public $order_by = null;
+
+    /**
     * @var null|boolean $include_serp_info;
     */
     public $include_serp_info = null;
+
+    /**
+    * @var null|integer $limit;
+    */
+    public $limit = null;
 
     /**
     * @var null|array $filters;
@@ -46,8 +56,8 @@ class GoogleKeywordIdeasLiveEntityMainTasksData
     public $filters = null;
 
     /**
-    * @var null|integer $limit;
+    * @var null|boolean $include_clickstream_data;
     */
-    public $limit = null;
+    public $include_clickstream_data = null;
  
 }

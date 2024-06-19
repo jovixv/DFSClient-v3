@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFeatured_snippetClickstream_gender_distribution;
+use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFeatured_snippetClickstream_age_distribution;
 
 class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFeatured_snippet 
 {    
@@ -66,7 +68,7 @@ class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFe
     public $pos_91_100 = null;
 
     /**
-    * @var null|integer $etv;
+    * @var null|double $etv;
     */
     public $etv = null;
 
@@ -104,5 +106,20 @@ class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFe
     * @var null|integer $is_lost;
     */
     public $is_lost = null;
+
+    /**
+    * @var null|double $clickstream_etv;
+    */
+    public $clickstream_etv = null;
+
+    /**
+    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFeatured_snippetClickstream_gender_distribution $clickstream_gender_distribution;
+    */
+    public $clickstream_gender_distribution = null;
+
+    /**
+    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFeatured_snippetClickstream_age_distribution $clickstream_age_distribution;
+    */
+    public $clickstream_age_distribution = null;
  
 }

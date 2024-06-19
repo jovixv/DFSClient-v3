@@ -42,7 +42,7 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info
     public $low_top_of_page_bid = null;
 
     /**
-    * @var null|integer $high_top_of_page_bid;
+    * @var null|double $high_top_of_page_bid;
     */
     public $high_top_of_page_bid = null;
 

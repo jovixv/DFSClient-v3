@@ -109,6 +109,17 @@ class GoogleKeywordsForCategoriesLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $includeClickstreamData
+	 * @return $this
+	 */
+	public function setIncludeClickstreamData(bool $includeClickstreamData)
+	{
+		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+
+		return $this;
+	}
+
     /**
      * @param array $filters
      * @return $this

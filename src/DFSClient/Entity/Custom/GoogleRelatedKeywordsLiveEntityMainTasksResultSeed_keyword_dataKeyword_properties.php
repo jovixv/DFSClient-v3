@@ -11,7 +11,7 @@ class GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_pro
     public $se_type = null;
 
     /**
-    * @var null|string $core_keyword;
+    * @var null|NULL $core_keyword;
     */
     public $core_keyword = null;
 

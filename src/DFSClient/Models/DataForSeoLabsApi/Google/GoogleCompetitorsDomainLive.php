@@ -107,6 +107,17 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 	}
 
 	/**
+	 * @param bool $includeClickstreamData
+	 * @return $this
+	 */
+	public function setIncludeClickstreamData(bool $includeClickstreamData)
+	{
+		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+
+		return $this;
+	}
+
+	/**
 	 * @param array $itemTypes
 	 * @return $this
 	 */

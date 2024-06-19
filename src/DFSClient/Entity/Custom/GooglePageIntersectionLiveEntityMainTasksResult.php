@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItems;
+use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultPages;
 
 class GooglePageIntersectionLiveEntityMainTasksResult 
 {    
@@ -12,7 +12,7 @@ class GooglePageIntersectionLiveEntityMainTasksResult
     public $se_type = null;
 
     /**
-    * @var null|array $pages;
+    * @var null|GooglePageIntersectionLiveEntityMainTasksResultPages $pages;
     */
     public $pages = null;
 

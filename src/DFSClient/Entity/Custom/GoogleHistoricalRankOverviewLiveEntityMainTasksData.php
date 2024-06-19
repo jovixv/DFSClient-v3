@@ -34,5 +34,10 @@ class GoogleHistoricalRankOverviewLiveEntityMainTasksData
     * @var null|integer $location_code;
     */
     public $location_code = null;
+
+    /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
  
 }

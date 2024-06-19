@@ -3,9 +3,12 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
+use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
+use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
 class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
@@ -35,6 +38,11 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_data
     public $keyword_info = null;
 
     /**
+    * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
+
+    /**
     * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties $keyword_properties;
     */
     public $keyword_properties = null;
@@ -49,14 +57,14 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_data
     */
     public $serp_info = null;
 
-	/**
-	 * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
-	 */
-	public $avg_backlinks_info = null;
+    /**
+    * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info $avg_backlinks_info;
+    */
+    public $avg_backlinks_info = null;
 
-	/**
-	 * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
-	 */
-	public $search_intent_info = null;
+    /**
+    * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info $search_intent_info;
+    */
+    public $search_intent_info = null;
  
 }

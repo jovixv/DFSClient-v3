@@ -3,10 +3,12 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsSerp_info;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsAvg_backlinks_info;
+use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsSearch_intent_info;
 
 class GoogleTopSearchesLiveEntityMainTasksResultItems 
 {    
@@ -36,6 +38,11 @@ class GoogleTopSearchesLiveEntityMainTasksResultItems
     public $keyword_info = null;
 
     /**
+    * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
+
+    /**
     * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_properties $keyword_properties;
     */
     public $keyword_properties = null;
@@ -55,9 +62,9 @@ class GoogleTopSearchesLiveEntityMainTasksResultItems
     */
     public $avg_backlinks_info = null;
 
-	/**
-	 * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsSearch_intent_info $search_intent_info;
-	 */
-	public $search_intent_info = null;
-
+    /**
+    * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsSearch_intent_info $search_intent_info;
+    */
+    public $search_intent_info = null;
+ 
 }

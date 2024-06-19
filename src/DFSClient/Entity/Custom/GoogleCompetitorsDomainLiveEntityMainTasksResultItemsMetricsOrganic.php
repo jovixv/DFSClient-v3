@@ -2,6 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetricsOrganicClickstream_gender_distribution;
+use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetricsOrganicClickstream_age_distribution;
 
 class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetricsOrganic 
 {    
@@ -104,5 +106,20 @@ class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetricsOrganic
     * @var null|integer $is_lost;
     */
     public $is_lost = null;
+
+    /**
+    * @var null|integer $clickstream_etv;
+    */
+    public $clickstream_etv = null;
+
+    /**
+    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetricsOrganicClickstream_gender_distribution $clickstream_gender_distribution;
+    */
+    public $clickstream_gender_distribution = null;
+
+    /**
+    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetricsOrganicClickstream_age_distribution $clickstream_age_distribution;
+    */
+    public $clickstream_age_distribution = null;
  
 }

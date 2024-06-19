@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsSerp_info;
@@ -38,6 +39,11 @@ class GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItems
     * @var null|GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsKeyword_info $keyword_info;
     */
     public $keyword_info = null;
+
+    /**
+    * @var null|GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
 
     /**
     * @var null|GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsKeyword_properties $keyword_properties;

@@ -6,7 +6,7 @@ namespace DFSClientV3\Entity\Custom;
 class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_changes 
 {    
     /**
-    * @var null|integer $previous_rank_absolute;
+    * @var null|NULL $previous_rank_absolute;
     */
     public $previous_rank_absolute = null;
 

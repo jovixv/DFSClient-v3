@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataSerp_info;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_properties;
@@ -35,6 +36,11 @@ class GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_data
     * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info $keyword_info;
     */
     public $keyword_info = null;
+
+    /**
+    * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
 
     /**
     * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataImpressions_info $impressions_info;

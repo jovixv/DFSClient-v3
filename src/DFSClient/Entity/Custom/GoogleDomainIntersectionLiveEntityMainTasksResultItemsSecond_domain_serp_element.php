@@ -2,9 +2,8 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementLinks;
-use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementAbout_this_result;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_changes;
+use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_info;
 
 class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_element 
 {    
@@ -59,6 +58,11 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_e
     public $breadcrumb = null;
 
     /**
+    * @var null|string $website_name;
+    */
+    public $website_name = null;
+
+    /**
     * @var null|boolean $is_image;
     */
     public $is_image = null;
@@ -109,12 +113,12 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_e
     public $highlighted = null;
 
     /**
-    * @var array|GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementLinks[] $links;
+    * @var null|NULL $links;
     */
-    public $links = [];
+    public $links = null;
 
     /**
-    * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementAbout_this_result $about_this_result;
+    * @var null|NULL $about_this_result;
     */
     public $about_this_result = null;
 
@@ -134,18 +138,33 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_e
     public $etv = null;
 
     /**
-    * @var null|NULL $impressions_etv;
+    * @var null|double $impressions_etv;
     */
     public $impressions_etv = null;
 
     /**
-    * @var null|double $estimated_paid_traffic_cost;
+    * @var null|NULL $estimated_paid_traffic_cost;
     */
     public $estimated_paid_traffic_cost = null;
+
+    /**
+    * @var null|double $clickstream_etv;
+    */
+    public $clickstream_etv = null;
 
     /**
     * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_changes $rank_changes;
     */
     public $rank_changes = null;
+
+    /**
+    * @var null|NULL $backlinks_info;
+    */
+    public $backlinks_info = null;
+
+    /**
+    * @var null|GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_info $rank_info;
+    */
+    public $rank_info = null;
  
 }

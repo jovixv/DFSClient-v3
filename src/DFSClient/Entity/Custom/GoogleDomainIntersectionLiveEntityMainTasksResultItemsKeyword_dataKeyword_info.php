@@ -17,7 +17,7 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_
     public $last_updated_time = null;
 
     /**
-    * @var null|double $competition;
+    * @var null|NULL $competition;
     */
     public $competition = null;
 
@@ -27,7 +27,7 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_
     public $competition_level = null;
 
     /**
-    * @var null|double $cpc;
+    * @var null|NULL $cpc;
     */
     public $cpc = null;
 
@@ -37,12 +37,12 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_
     public $search_volume = null;
 
     /**
-    * @var null|double $low_top_of_page_bid;
+    * @var null|NULL $low_top_of_page_bid;
     */
     public $low_top_of_page_bid = null;
 
     /**
-    * @var null|double $high_top_of_page_bid;
+    * @var null|NULL $high_top_of_page_bid;
     */
     public $high_top_of_page_bid = null;
 

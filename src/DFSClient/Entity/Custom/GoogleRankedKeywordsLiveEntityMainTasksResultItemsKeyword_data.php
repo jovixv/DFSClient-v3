@@ -2,6 +2,12 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
 class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
@@ -30,6 +36,16 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data
     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info $keyword_info;
     */
     public $keyword_info = null;
+
+    /**
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info $clickstream_keyword_info;
+    */
+    public $clickstream_keyword_info = null;
+
+    /**
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties $keyword_properties;
+    */
+    public $keyword_properties = null;
 
     /**
     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info $impressions_info;

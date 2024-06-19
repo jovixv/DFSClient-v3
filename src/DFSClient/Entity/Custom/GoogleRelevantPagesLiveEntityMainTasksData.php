@@ -41,6 +41,11 @@ class GoogleRelevantPagesLiveEntityMainTasksData
     public $item_types = null;
 
     /**
+    * @var null|boolean $include_clickstream_data;
+    */
+    public $include_clickstream_data = null;
+
+    /**
     * @var null|integer $limit;
     */
     public $limit = null;
