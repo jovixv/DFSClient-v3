@@ -144,6 +144,16 @@ class BackLinksPageIntersection extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $excludeInternalBackLinks
+	 * @return $this
+	 */
+	public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
+	{
+		$this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
+		return $this;
+	}
+
     public function initCustomFunctionForPaths(): array
     {
         return [

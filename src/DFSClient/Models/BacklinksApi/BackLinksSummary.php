@@ -77,6 +77,16 @@ class BackLinksSummary extends AbstractModel
 	}
 
 	/**
+	 * @param bool $excludeInternalBackLinks
+	 * @return $this
+	 */
+	public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
+	{
+		$this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
+		return $this;
+	}
+
+	/**
 	 * @param string $tag
 	 * @return $this
 	 */

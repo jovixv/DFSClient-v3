@@ -91,6 +91,16 @@ class BacklinksCompetitorsLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $excludeInternalBackLinks
+	 * @return $this
+	 */
+	public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
+	{
+		$this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
+		return $this;
+	}
+
 
     /**
      * @param string $tag
