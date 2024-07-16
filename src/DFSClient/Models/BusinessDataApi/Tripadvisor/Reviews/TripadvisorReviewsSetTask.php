@@ -144,6 +144,16 @@ class TripadvisorReviewsSetTask extends AbstractModel
 	}
 
 	/**
+	 * @param bool $translateReviews
+	 * @return $this
+	 */
+	public function setTranslateReviews(bool $translateReviews)
+	{
+		$this->payload['translate_reviews'] = $translateReviews;
+		return $this;
+	}
+
+	/**
 	 * @param string $tag
 	 * @return $this
 	 */
