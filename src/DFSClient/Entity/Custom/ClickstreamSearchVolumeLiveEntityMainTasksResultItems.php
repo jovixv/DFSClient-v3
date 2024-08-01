@@ -22,11 +22,6 @@ class ClickstreamSearchVolumeLiveEntityMainTasksResultItems
     public $search_volume = null;
 
     /**
-    * @var null|integer $search_volume_last;
-    */
-    public $search_volume_last = null;
-
-    /**
     * @var array|ClickstreamSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches[] $monthly_searches;
     */
     public $monthly_searches = [];
