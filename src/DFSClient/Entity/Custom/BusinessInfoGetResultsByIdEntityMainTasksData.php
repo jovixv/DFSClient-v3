@@ -26,14 +26,14 @@ class BusinessInfoGetResultsByIdEntityMainTasksData
     public $function = null;
 
     /**
+    * @var null|integer $location_code;
+    */
+    public $location_code = null;
+
+    /**
     * @var null|string $language_code;
     */
     public $language_code = null;
-
-    /**
-    * @var null|string $location_name;
-    */
-    public $location_name = null;
 
     /**
     * @var null|string $keyword;

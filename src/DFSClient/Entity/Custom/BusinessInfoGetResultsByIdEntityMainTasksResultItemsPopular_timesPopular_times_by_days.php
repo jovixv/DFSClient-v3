@@ -10,41 +10,41 @@ use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysFriday;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysSaturday;
 
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_days
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_days 
 {    
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysSunday $sunday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysSunday[] $sunday;
     */
-    public $sunday = null;
+    public $sunday = [];
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMonday $monday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMonday[] $monday;
     */
-    public $monday = null;
+    public $monday = [];
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysTuesday $tuesday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysTuesday[] $tuesday;
     */
-    public $tuesday = null;
+    public $tuesday = [];
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysWednesday $wednesday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysWednesday[] $wednesday;
     */
-    public $wednesday = null;
+    public $wednesday = [];
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysThursday $thursday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysThursday[] $thursday;
     */
-    public $thursday = null;
+    public $thursday = [];
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysFriday $friday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysFriday[] $friday;
     */
-    public $friday = null;
+    public $friday = [];
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysSaturday $saturday;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysSaturday[] $saturday;
     */
-    public $saturday = null;
+    public $saturday = [];
  
 }

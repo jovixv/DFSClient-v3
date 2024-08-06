@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPeople_also_searchRating 
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsRating 
 {    
     /**
     * @var null|string $rating_type;
@@ -11,7 +11,7 @@ class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPeople_also_searchRati
     public $rating_type = null;
 
     /**
-    * @var null|integer $value;
+    * @var null|double $value;
     */
     public $value = null;
 

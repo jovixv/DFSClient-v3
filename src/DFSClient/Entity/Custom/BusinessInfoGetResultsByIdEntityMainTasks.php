@@ -48,7 +48,7 @@ class BusinessInfoGetResultsByIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|BusinessInfoGetResultsByIdEntityMainTasksResult[] $result;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResult[] $result;
     */
     public $result = [];
  

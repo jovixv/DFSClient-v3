@@ -9,7 +9,7 @@ class BusinessInfoGetResultsByIdEntityMain extends \DFSClientV3\Models\ResponseM
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200909';
+    public $version = '0.1.20240801';
 
     /**
     * @var null|integer $status_code;
@@ -42,7 +42,7 @@ class BusinessInfoGetResultsByIdEntityMain extends \DFSClientV3\Models\ResponseM
     public $tasks_error = null;
 
     /**
-    * array|BusinessInfoGetResultsByIdEntityMainTasks[] $tasks;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  

@@ -2,12 +2,11 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetable;
 
 class BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hours 
 {    
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetable $timetable;
+    * @var null|NULL $timetable;
     */
     public $timetable = null;
 

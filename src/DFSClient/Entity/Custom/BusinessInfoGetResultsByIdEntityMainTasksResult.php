@@ -46,7 +46,7 @@ class BusinessInfoGetResultsByIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|BusinessInfoGetResultsByIdEntityMainTasksResultItems[] $items;
+    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  

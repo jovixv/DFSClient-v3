@@ -19,5 +19,20 @@ class BusinessInfoGetResultsByIdEntityMainTasksResultItemsAttributesAvailable_at
     * @var null|array $amenities;
     */
     public $amenities = null;
+
+    /**
+    * @var null|array $crowd;
+    */
+    public $crowd = null;
+
+    /**
+    * @var null|array $children;
+    */
+    public $children = null;
+
+    /**
+    * @var null|array $parking;
+    */
+    public $parking = null;
  
 }
