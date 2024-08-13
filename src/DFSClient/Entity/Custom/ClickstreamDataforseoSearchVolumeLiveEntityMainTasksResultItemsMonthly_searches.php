@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ClickstreamSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches 
+class ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches 
 {    
     /**
     * @var null|integer $year;

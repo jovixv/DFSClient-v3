@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ClickstreamSearchVolumeLiveEntityMainTasksData 
+class ClickstreamDataforseoSearchVolumeLiveEntityMainTasksData 
 {    
     /**
     * @var null|string $api;

@@ -2,10 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ClickstreamSearchVolumeLiveEntityMainTasksData;
-use DFSClientV3\Entity\Custom\ClickstreamSearchVolumeLiveEntityMainTasksResult;
+use DFSClientV3\Entity\Custom\ClickstreamDataforseoSearchVolumeLiveEntityMainTasksData;
+use DFSClientV3\Entity\Custom\ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResult;
 
-class ClickstreamSearchVolumeLiveEntityMainTasks 
+class ClickstreamDataforseoSearchVolumeLiveEntityMainTasks 
 {    
     /**
     * @var null|string $id;
@@ -43,12 +43,12 @@ class ClickstreamSearchVolumeLiveEntityMainTasks
     public $path = null;
 
     /**
-    * @var null|ClickstreamSearchVolumeLiveEntityMainTasksData $data;
+    * @var null|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksData $data;
     */
     public $data = null;
 
     /**
-    * @var array|ClickstreamSearchVolumeLiveEntityMainTasksResult[] $result;
+    * @var array|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResult[] $result;
     */
     public $result = [];
  

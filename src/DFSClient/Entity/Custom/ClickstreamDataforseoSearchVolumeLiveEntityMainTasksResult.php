@@ -3,7 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class ClickstreamSearchVolumeLiveEntityMainTasksResult 
+class ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResult 
 {    
     /**
     * @var null|integer $location_code;
@@ -16,12 +16,17 @@ class ClickstreamSearchVolumeLiveEntityMainTasksResult
     public $language_code = null;
 
     /**
+    * @var null|boolean $use_clickstream;
+    */
+    public $use_clickstream = null;
+
+    /**
     * @var null|integer $items_count;
     */
     public $items_count = null;
 
     /**
-    * @var array|ClickstreamSearchVolumeLiveEntityMainTasksResultItems[] $items;
+    * @var array|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  

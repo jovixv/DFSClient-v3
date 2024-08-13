@@ -6,19 +6,19 @@ namespace DFSClientV3\Models\KeywordsDataApi\ClickstreamData;
 
 use DFSClientV3\Models\AbstractModel;
 
-class ClickstreamSearchVolumeLive extends AbstractModel
+class ClickstreamDataforseoSearchVolumeLive extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'keywords_data/clickstream_data/search_volume/live';
+	protected $requestToFunction = 'keywords_data/clickstream_data/dataforseo_search_volume/live';
 	protected $resultShouldBeTransformedToArray = true;
 	protected $useNewMapper = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\ClickstreamSearchVolumeLiveEntityMain
+     * @return \DFSClientV3\Entity\Custom\ClickstreamDataforseoSearchVolumeLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\ClickstreamSearchVolumeLiveEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\ClickstreamDataforseoSearchVolumeLiveEntityMain
     {
         return parent::get();
     }
