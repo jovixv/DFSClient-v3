@@ -415,6 +415,17 @@ class SettingSerpLiveAdvanced extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * for google/organic
+	 * @param bool $load_async_ai_overview
+	 * @return $this
+	 */
+	public function setLoadAsyncAiOverview(bool $load_async_ai_overview)
+	{
+		$this->payload['load_async_ai_overview'] = $load_async_ai_overview;
+		return $this;
+	}
+
     /**
      * @param string $seName
      * @return $this

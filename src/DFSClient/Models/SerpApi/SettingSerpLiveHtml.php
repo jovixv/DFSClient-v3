@@ -147,6 +147,28 @@ class SettingSerpLiveHtml extends AbstractModel
         return $this;
     }
 
+	/**
+	 * for google/organic
+	 * @param bool $load_async_ai_overview
+	 * @return $this
+	 */
+	public function setLoadAsyncAiOverview(bool $load_async_ai_overview)
+	{
+		$this->payload['load_async_ai_overview'] = $load_async_ai_overview;
+		return $this;
+	}
+
+	/**
+	 * for google/organic
+	 * @param bool $expand_ai_overview
+	 * @return $this
+	 */
+	public function setExpandAiOverview(bool $expand_ai_overview)
+	{
+		$this->payload['expand_ai_overview'] = $expand_ai_overview;
+		return $this;
+	}
+
     /**
      * @param string $tag
      * @return $this
