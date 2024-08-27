@@ -17,7 +17,7 @@ class GoogleKeywordsForSiteLiveEntityMainTasksResultItemsKeyword_info
     public $last_updated_time = null;
 
     /**
-    * @var null|integer $competition;
+    * @var null|double $competition;
     */
     public $competition = null;
 

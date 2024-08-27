@@ -11,12 +11,12 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_prop
     public $se_type = null;
 
     /**
-    * @var null|NULL $core_keyword;
+    * @var null|string $core_keyword;
     */
     public $core_keyword = null;
 
     /**
-    * @var null|NULL $synonym_clustering_algorithm;
+    * @var null|string $synonym_clustering_algorithm;
     */
     public $synonym_clustering_algorithm = null;
 
@@ -26,7 +26,7 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_prop
     public $keyword_difficulty = null;
 
     /**
-    * @var null|string $detected_language;
+    * @var null|NULL $detected_language;
     */
     public $detected_language = null;
 

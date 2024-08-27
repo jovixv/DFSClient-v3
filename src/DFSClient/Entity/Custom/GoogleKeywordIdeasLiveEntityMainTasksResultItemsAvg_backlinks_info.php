@@ -41,7 +41,7 @@ class GoogleKeywordIdeasLiveEntityMainTasksResultItemsAvg_backlinks_info
     public $rank = null;
 
     /**
-    * @var null|double $main_domain_rank;
+    * @var null|integer $main_domain_rank;
     */
     public $main_domain_rank = null;
 

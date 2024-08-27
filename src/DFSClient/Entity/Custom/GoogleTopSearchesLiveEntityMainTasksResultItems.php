@@ -3,6 +3,8 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info_normalized_with_bing;
+use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info_normalized_with_clickstream;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsImpressions_info;
@@ -36,6 +38,16 @@ class GoogleTopSearchesLiveEntityMainTasksResultItems
     * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info $keyword_info;
     */
     public $keyword_info = null;
+
+    /**
+    * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info_normalized_with_bing $keyword_info_normalized_with_bing;
+    */
+    public $keyword_info_normalized_with_bing = null;
+
+    /**
+    * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info_normalized_with_clickstream $keyword_info_normalized_with_clickstream;
+    */
+    public $keyword_info_normalized_with_clickstream = null;
 
     /**
     * @var null|GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_info $clickstream_keyword_info;

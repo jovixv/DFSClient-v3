@@ -16,7 +16,7 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataSearch_i
     public $main_intent = null;
 
     /**
-    * @var null|array $foreign_intent;
+    * @var null|NULL $foreign_intent;
     */
     public $foreign_intent = null;
 

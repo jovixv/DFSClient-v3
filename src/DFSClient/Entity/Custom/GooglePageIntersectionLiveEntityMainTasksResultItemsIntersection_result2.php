@@ -109,7 +109,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result2
     public $rating = null;
 
     /**
-    * @var null|array $highlighted;
+    * @var null|NULL $highlighted;
     */
     public $highlighted = null;
 

@@ -88,7 +88,7 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_el
     public $description = null;
 
     /**
-    * @var null|NULL $pre_snippet;
+    * @var null|string $pre_snippet;
     */
     public $pre_snippet = null;
 
@@ -138,7 +138,7 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_el
     public $etv = null;
 
     /**
-    * @var null|double $impressions_etv;
+    * @var null|NULL $impressions_etv;
     */
     public $impressions_etv = null;
 

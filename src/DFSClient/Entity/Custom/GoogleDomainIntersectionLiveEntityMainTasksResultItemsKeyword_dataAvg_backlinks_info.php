@@ -21,7 +21,7 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_back
     public $dofollow = null;
 
     /**
-    * @var null|integer $referring_pages;
+    * @var null|double $referring_pages;
     */
     public $referring_pages = null;
 

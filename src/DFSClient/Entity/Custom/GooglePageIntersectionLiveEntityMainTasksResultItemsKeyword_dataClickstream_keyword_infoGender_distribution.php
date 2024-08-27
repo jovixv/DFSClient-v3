@@ -11,7 +11,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataClickstrea
     public $female = null;
 
     /**
-    * @var null|NULL $male;
+    * @var null|integer $male;
     */
     public $male = null;
  

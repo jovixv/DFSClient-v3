@@ -11,92 +11,92 @@ class GoogleTopSearchesLiveEntityMainTasksResultItemsImpressions_info
     public $se_type = null;
 
     /**
-    * @var null|NULL $last_updated_time;
+    * @var null|string $last_updated_time;
     */
     public $last_updated_time = null;
 
     /**
-    * @var null|NULL $bid;
+    * @var null|integer $bid;
     */
     public $bid = null;
 
     /**
-    * @var null|NULL $match_type;
+    * @var null|string $match_type;
     */
     public $match_type = null;
 
     /**
-    * @var null|NULL $ad_position_min;
+    * @var null|double $ad_position_min;
     */
     public $ad_position_min = null;
 
     /**
-    * @var null|NULL $ad_position_max;
+    * @var null|integer $ad_position_max;
     */
     public $ad_position_max = null;
 
     /**
-    * @var null|NULL $ad_position_average;
+    * @var null|double $ad_position_average;
     */
     public $ad_position_average = null;
 
     /**
-    * @var null|NULL $cpc_min;
+    * @var null|double $cpc_min;
     */
     public $cpc_min = null;
 
     /**
-    * @var null|NULL $cpc_max;
+    * @var null|double $cpc_max;
     */
     public $cpc_max = null;
 
     /**
-    * @var null|NULL $cpc_average;
+    * @var null|double $cpc_average;
     */
     public $cpc_average = null;
 
     /**
-    * @var null|NULL $daily_impressions_min;
+    * @var null|double $daily_impressions_min;
     */
     public $daily_impressions_min = null;
 
     /**
-    * @var null|NULL $daily_impressions_max;
+    * @var null|double $daily_impressions_max;
     */
     public $daily_impressions_max = null;
 
     /**
-    * @var null|NULL $daily_impressions_average;
+    * @var null|double $daily_impressions_average;
     */
     public $daily_impressions_average = null;
 
     /**
-    * @var null|NULL $daily_clicks_min;
+    * @var null|double $daily_clicks_min;
     */
     public $daily_clicks_min = null;
 
     /**
-    * @var null|NULL $daily_clicks_max;
+    * @var null|double $daily_clicks_max;
     */
     public $daily_clicks_max = null;
 
     /**
-    * @var null|NULL $daily_clicks_average;
+    * @var null|double $daily_clicks_average;
     */
     public $daily_clicks_average = null;
 
     /**
-    * @var null|NULL $daily_cost_min;
+    * @var null|double $daily_cost_min;
     */
     public $daily_cost_min = null;
 
     /**
-    * @var null|NULL $daily_cost_max;
+    * @var null|double $daily_cost_max;
     */
     public $daily_cost_max = null;
 
     /**
-    * @var null|NULL $daily_cost_average;
+    * @var null|double $daily_cost_average;
     */
     public $daily_cost_average = null;
  

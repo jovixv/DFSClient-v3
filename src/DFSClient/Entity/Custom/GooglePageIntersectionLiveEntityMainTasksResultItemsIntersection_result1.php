@@ -89,7 +89,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result1
     public $description = null;
 
     /**
-    * @var null|NULL $pre_snippet;
+    * @var null|string $pre_snippet;
     */
     public $pre_snippet = null;
 
@@ -109,7 +109,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result1
     public $rating = null;
 
     /**
-    * @var null|NULL $highlighted;
+    * @var null|array $highlighted;
     */
     public $highlighted = null;
 

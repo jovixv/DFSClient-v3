@@ -11,7 +11,7 @@ class GoogleKeywordsForSiteLiveEntityMainTasksResultItemsAvg_backlinks_info
     public $se_type = null;
 
     /**
-    * @var null|double $backlinks;
+    * @var null|integer $backlinks;
     */
     public $backlinks = null;
 
@@ -26,12 +26,12 @@ class GoogleKeywordsForSiteLiveEntityMainTasksResultItemsAvg_backlinks_info
     public $referring_pages = null;
 
     /**
-    * @var null|double $referring_domains;
+    * @var null|integer $referring_domains;
     */
     public $referring_domains = null;
 
     /**
-    * @var null|integer $referring_main_domains;
+    * @var null|double $referring_main_domains;
     */
     public $referring_main_domains = null;
 

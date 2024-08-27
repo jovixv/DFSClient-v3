@@ -21,7 +21,7 @@ class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsAvg_backlinks_inf
     public $dofollow = null;
 
     /**
-    * @var null|double $referring_pages;
+    * @var null|integer $referring_pages;
     */
     public $referring_pages = null;
 
@@ -41,7 +41,7 @@ class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsAvg_backlinks_inf
     public $rank = null;
 
     /**
-    * @var null|double $main_domain_rank;
+    * @var null|integer $main_domain_rank;
     */
     public $main_domain_rank = null;
 

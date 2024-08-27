@@ -11,7 +11,7 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_
     public $female = null;
 
     /**
-    * @var null|NULL $male;
+    * @var null|integer $male;
     */
     public $male = null;
  

@@ -24,10 +24,5 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_
     * @var null|string $url;
     */
     public $url = null;
-
-    /**
-    * @var null|string $ad_aclk;
-    */
-    public $ad_aclk = null;
  
 }

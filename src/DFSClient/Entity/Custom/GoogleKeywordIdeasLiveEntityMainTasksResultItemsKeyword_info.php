@@ -22,7 +22,7 @@ class GoogleKeywordIdeasLiveEntityMainTasksResultItemsKeyword_info
     public $competition = null;
 
     /**
-    * @var null|string $competition_level;
+    * @var null|NULL $competition_level;
     */
     public $competition_level = null;
 
@@ -37,12 +37,12 @@ class GoogleKeywordIdeasLiveEntityMainTasksResultItemsKeyword_info
     public $search_volume = null;
 
     /**
-    * @var null|double $low_top_of_page_bid;
+    * @var null|NULL $low_top_of_page_bid;
     */
     public $low_top_of_page_bid = null;
 
     /**
-    * @var null|double $high_top_of_page_bid;
+    * @var null|NULL $high_top_of_page_bid;
     */
     public $high_top_of_page_bid = null;
 

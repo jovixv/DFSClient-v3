@@ -11,7 +11,7 @@ class GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_infoGen
     public $female = null;
 
     /**
-    * @var null|integer $male;
+    * @var null|NULL $male;
     */
     public $male = null;
  

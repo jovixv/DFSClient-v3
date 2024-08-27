@@ -3,6 +3,8 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info;
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info_normalized_with_bing;
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info_normalized_with_clickstream;
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsClickstream_keyword_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_properties;
 use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsImpressions_info;
@@ -36,6 +38,16 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultItems
     * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info $keyword_info;
     */
     public $keyword_info = null;
+
+    /**
+    * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info_normalized_with_bing $keyword_info_normalized_with_bing;
+    */
+    public $keyword_info_normalized_with_bing = null;
+
+    /**
+    * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info_normalized_with_clickstream $keyword_info_normalized_with_clickstream;
+    */
+    public $keyword_info_normalized_with_clickstream = null;
 
     /**
     * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsClickstream_keyword_info $clickstream_keyword_info;

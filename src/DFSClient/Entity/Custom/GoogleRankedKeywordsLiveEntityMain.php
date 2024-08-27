@@ -9,7 +9,7 @@ class GoogleRankedKeywordsLiveEntityMain extends \DFSClientV3\Models\ResponseMod
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20240514';
+    public $version = '0.1.20240801';
 
     /**
     * @var null|integer $status_code;

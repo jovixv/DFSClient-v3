@@ -26,7 +26,7 @@ class GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_properties
     public $keyword_difficulty = null;
 
     /**
-    * @var null|NULL $detected_language;
+    * @var null|string $detected_language;
     */
     public $detected_language = null;
 

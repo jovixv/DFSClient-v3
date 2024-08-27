@@ -138,7 +138,7 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_e
     public $etv = null;
 
     /**
-    * @var null|double $impressions_etv;
+    * @var null|NULL $impressions_etv;
     */
     public $impressions_etv = null;
 

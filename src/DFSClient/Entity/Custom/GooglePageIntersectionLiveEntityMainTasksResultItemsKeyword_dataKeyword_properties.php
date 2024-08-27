@@ -11,7 +11,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_pr
     public $se_type = null;
 
     /**
-    * @var null|string $core_keyword;
+    * @var null|NULL $core_keyword;
     */
     public $core_keyword = null;
 
@@ -26,7 +26,7 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_pr
     public $keyword_difficulty = null;
 
     /**
-    * @var null|string $detected_language;
+    * @var null|NULL $detected_language;
     */
     public $detected_language = null;
 

@@ -16,7 +16,7 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_inten
     public $main_intent = null;
 
     /**
-    * @var null|NULL $foreign_intent;
+    * @var null|array $foreign_intent;
     */
     public $foreign_intent = null;
 
