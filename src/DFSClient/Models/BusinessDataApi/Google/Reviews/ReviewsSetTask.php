@@ -6,15 +6,19 @@ namespace DFSClientV3\Models\BusinessDataApi\Google\Reviews;
 
 use DFSClientV3\Models\AbstractModel;
 
+/*
+ * @deprecated Use 'Models/BusinessDataApi/Google/Reviews/GoogleReviewsSetTask'.
+ */
 class ReviewsSetTask extends AbstractModel
 {
     protected $method = 'POST';
     protected $isSupportedMerge = true;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'reviews/{$se}/task_post';
+    protected $requestToFunction = 'business_data/google/reviews/task_post';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
+     * @deprecated This method is not necessary, only 'google'.
      * @param string $seName
      * @return $this
      */

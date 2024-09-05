@@ -11,10 +11,11 @@ class ReviewsGetCompletedTasks extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'reviews/{$se}/tasks_ready';
+    protected $requestToFunction = 'business_data/google/reviews/tasks_ready';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
+     * @deprecated This method is not necessary, only 'google'.
      * @param string $seName
      * @return $this
      */
@@ -25,9 +26,9 @@ class ReviewsGetCompletedTasks extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleReviewsGetCompletedTasksEntityMain
+     * @return \DFSClientV3\Entity\Custom\ReviewsGetCompletedTasksEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleReviewsGetCompletedTasksEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\ReviewsGetCompletedTasksEntityMain
     {
         return parent::get();
     }

@@ -48,7 +48,7 @@ class ReviewsLocationsEntityMainTasks
     public $data = null;
 
     /**
-    * array|ReviewsLocationsEntityMainTasksResult[] $result;
+    * @var array|ReviewsLocationsEntityMainTasksResult[] $result;
     */
     public $result = [];
  

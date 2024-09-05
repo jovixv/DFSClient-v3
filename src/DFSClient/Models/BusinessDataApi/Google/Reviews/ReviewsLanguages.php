@@ -11,10 +11,11 @@ class ReviewsLanguages extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'reviews/{$se}/languages';
+    protected $requestToFunction = 'business_data/google/languages';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
+     * @deprecated This method is not necessary, only 'google'.
      * @param string $seName
      * @return $this
      */
@@ -27,7 +28,7 @@ class ReviewsLanguages extends AbstractModel
     /**
      * @return \DFSClientV3\Entity\Custom\ReviewsLanguagesEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleReviewsLanguagesEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\ReviewsLanguagesEntityMain
     {
         return parent::get();
     }

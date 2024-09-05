@@ -11,10 +11,11 @@ class ReviewsLocations extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'reviews/{$se}/locations';
+    protected $requestToFunction = 'business_data/google/locations';
     protected $resultShouldBeTransformedToArray = true;
 
     /**
+     * @deprecated This method is not necessary, only 'google'.
      * @param string $seName
      * @return $this
      */
@@ -25,9 +26,9 @@ class ReviewsLocations extends AbstractModel
     }
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleReviewsLocationsEntityMain
+     * @return \DFSClientV3\Entity\Custom\ReviewsLocationsEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleReviewsLocationsEntityMain
+    public function get(): \DFSClientV3\Entity\Custom\ReviewsLocationsEntityMain
     {
         return parent::get();
     }

@@ -11,11 +11,12 @@ class GoogleReviewsGetResultsByTaskId extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'business_data/{$se}/reviews/task_get/{$taskUID}';
+    protected $requestToFunction = 'business_data/google/reviews/task_get/{$taskUID}';
     protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 
     /**
+     * @deprecated This method is not necessary, only 'google'.
      * @param string $seName
      * @return $this
      */

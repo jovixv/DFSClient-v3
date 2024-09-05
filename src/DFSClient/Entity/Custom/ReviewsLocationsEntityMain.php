@@ -9,7 +9,7 @@ class ReviewsLocationsEntityMain extends \DFSClientV3\Models\ResponseModel
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200325';
+    public $version = '0.1.20240801';
 
     /**
     * @var null|integer $status_code;
@@ -42,7 +42,7 @@ class ReviewsLocationsEntityMain extends \DFSClientV3\Models\ResponseModel
     public $tasks_error = null;
 
     /**
-    * array|ReviewsLocationsEntityMainTasks[] $tasks;
+    * @var array|ReviewsLocationsEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  
