@@ -44,5 +44,10 @@ class GoogleTrendsSetTaskEntityMainTasksData
     * @var null|string $date_from;
     */
     public $date_from = null;
+
+    /**
+    * @var null|array $item_types;
+    */
+    public $item_types = null;
  
 }
