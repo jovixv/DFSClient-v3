@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksBulkNewLostReferringDomainsEntityMainTasksData 
-{    
+class BacklinksBulkNewLostReferringDomainsEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|array $targets;
-    */
+     * @var null|array;
+     */
     public $targets = null;
 
     /**
-    * @var null|string $date_from;
-    */
+     * @var null|string;
+     */
     public $date_from = null;
- 
 }

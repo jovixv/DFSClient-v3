@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ClickstreamGlobalSearchVolumeLiveEntityMainTasksResult 
-{    
+class ClickstreamGlobalSearchVolumeLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

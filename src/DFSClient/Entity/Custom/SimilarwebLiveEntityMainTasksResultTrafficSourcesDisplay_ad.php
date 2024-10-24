@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebLiveEntityMainTasksResultTrafficSourcesDisplay_ad 
-{    
+class SimilarwebLiveEntityMainTasksResultTrafficSourcesDisplay_ad
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
 
     /**
-    * @var null|NULL $top_publishers;
-    */
+     * @var null|null;
+     */
     public $top_publishers = null;
 
     /**
-    * @var null|NULL $top_ad_networks;
-    */
+     * @var null|null;
+     */
     public $top_ad_networks = null;
- 
 }

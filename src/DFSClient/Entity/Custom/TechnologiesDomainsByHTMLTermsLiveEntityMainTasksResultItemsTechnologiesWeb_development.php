@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesWeb_development 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesWeb_development
+{
     /**
-    * @var null|array $javascript_frameworks;
-    */
+     * @var null|array;
+     */
     public $javascript_frameworks = null;
- 
 }

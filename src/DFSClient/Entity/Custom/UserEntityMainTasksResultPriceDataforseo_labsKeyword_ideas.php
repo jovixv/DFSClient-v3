@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeyword_ideasLive;
 
-class UserEntityMainTasksResultPriceDataforseo_labsKeyword_ideas 
-{    
+class UserEntityMainTasksResultPriceDataforseo_labsKeyword_ideas
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceDataforseo_labsKeyword_ideasLive $live;
-    */
+     * @var null|UserEntityMainTasksResultPriceDataforseo_labsKeyword_ideasLive;
+     */
     public $live = null;
- 
 }

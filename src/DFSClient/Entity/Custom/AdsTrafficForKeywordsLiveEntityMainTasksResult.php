@@ -2,107 +2,105 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdsTrafficForKeywordsLiveEntityMainTasksResult 
-{    
+class AdsTrafficForKeywordsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|integer $bid;
-    */
+     * @var null|integer;
+     */
     public $bid = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $match;
-    */
+     * @var null|string;
+     */
     public $match = null;
 
     /**
-    * @var null|double $ad_position_min;
-    */
+     * @var null|double;
+     */
     public $ad_position_min = null;
 
     /**
-    * @var null|double $ad_position_max;
-    */
+     * @var null|double;
+     */
     public $ad_position_max = null;
 
     /**
-    * @var null|double $ad_position_average;
-    */
+     * @var null|double;
+     */
     public $ad_position_average = null;
 
     /**
-    * @var null|double $cpc_min;
-    */
+     * @var null|double;
+     */
     public $cpc_min = null;
 
     /**
-    * @var null|double $cpc_max;
-    */
+     * @var null|double;
+     */
     public $cpc_max = null;
 
     /**
-    * @var null|double $cpc_average;
-    */
+     * @var null|double;
+     */
     public $cpc_average = null;
 
     /**
-    * @var null|double $daily_impressions_min;
-    */
+     * @var null|double;
+     */
     public $daily_impressions_min = null;
 
     /**
-    * @var null|double $daily_impressions_max;
-    */
+     * @var null|double;
+     */
     public $daily_impressions_max = null;
 
     /**
-    * @var null|double $daily_impressions_average;
-    */
+     * @var null|double;
+     */
     public $daily_impressions_average = null;
 
     /**
-    * @var null|double $daily_clicks_min;
-    */
+     * @var null|double;
+     */
     public $daily_clicks_min = null;
 
     /**
-    * @var null|double $daily_clicks_max;
-    */
+     * @var null|double;
+     */
     public $daily_clicks_max = null;
 
     /**
-    * @var null|double $daily_clicks_average;
-    */
+     * @var null|double;
+     */
     public $daily_clicks_average = null;
 
     /**
-    * @var null|double $daily_cost_min;
-    */
+     * @var null|double;
+     */
     public $daily_cost_min = null;
 
     /**
-    * @var null|double $daily_cost_max;
-    */
+     * @var null|double;
+     */
     public $daily_cost_max = null;
 
     /**
-    * @var null|double $daily_cost_average;
-    */
+     * @var null|double;
+     */
     public $daily_cost_average = null;
- 
 }

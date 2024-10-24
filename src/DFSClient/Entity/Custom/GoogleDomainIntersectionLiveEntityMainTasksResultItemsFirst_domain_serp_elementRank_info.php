@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRank_info 
-{    
+class GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRank_info
+{
     /**
-    * @var null|integer $page_rank;
-    */
+     * @var null|integer;
+     */
     public $page_rank = null;
 
     /**
-    * @var null|integer $main_domain_rank;
-    */
+     * @var null|integer;
+     */
     public $main_domain_rank = null;
- 
 }

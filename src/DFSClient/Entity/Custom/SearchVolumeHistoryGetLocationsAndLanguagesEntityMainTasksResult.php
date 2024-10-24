@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksResultAvailable_locations;
 
-class SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksResult 
-{    
+class SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksResult
+{
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var array|SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksResultAvailable_locations[] $available_locations;
-    */
+     * @var array|SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksResultAvailable_locations[];
+     */
     public $available_locations = [];
- 
 }

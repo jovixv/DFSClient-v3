@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HistoricalRankOverviewLiveEntityMainTasksResultItemsMetrics;
 
-class HistoricalRankOverviewLiveEntityMainTasksResultItems 
-{    
+class HistoricalRankOverviewLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|integer $year;
-    */
+     * @var null|integer;
+     */
     public $year = null;
 
     /**
-    * @var null|integer $month;
-    */
+     * @var null|integer;
+     */
     public $month = null;
 
     /**
-    * @var null|HistoricalRankOverviewLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|HistoricalRankOverviewLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

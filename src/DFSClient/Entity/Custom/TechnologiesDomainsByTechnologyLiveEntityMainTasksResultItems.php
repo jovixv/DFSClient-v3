@@ -4,76 +4,75 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologies;
 
-class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItems 
-{    
+class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|NULL $meta_keywords;
-    */
+     * @var null|null;
+     */
     public $meta_keywords = null;
 
     /**
-    * @var null|integer $domain_rank;
-    */
+     * @var null|integer;
+     */
     public $domain_rank = null;
 
     /**
-    * @var null|string $last_visited;
-    */
+     * @var null|string;
+     */
     public $last_visited = null;
 
     /**
-    * @var null|string $country_iso_code;
-    */
+     * @var null|string;
+     */
     public $country_iso_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $content_language_code;
-    */
+     * @var null|string;
+     */
     public $content_language_code = null;
 
     /**
-    * @var null|NULL $phone_numbers;
-    */
+     * @var null|null;
+     */
     public $phone_numbers = null;
 
     /**
-    * @var null|NULL $emails;
-    */
+     * @var null|null;
+     */
     public $emails = null;
 
     /**
-    * @var null|array $social_graph_urls;
-    */
+     * @var null|array;
+     */
     public $social_graph_urls = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologies $technologies;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologies;
+     */
     public $technologies = null;
- 
 }

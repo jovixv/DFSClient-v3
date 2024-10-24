@@ -5,51 +5,50 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ErrorsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ErrorsEntityMainTasksResult;
 
-class ErrorsEntityMainTasks 
-{    
+class ErrorsEntityMainTasks
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $result_count;
-    */
+     * @var null|integer;
+     */
     public $result_count = null;
 
     /**
-    * @var null|array $path;
-    */
+     * @var null|array;
+     */
     public $path = null;
 
     /**
-    * @var null|ErrorsEntityMainTasksData $data;
-    */
+     * @var null|ErrorsEntityMainTasksData;
+     */
     public $data = null;
 
     /**
-    * array|ErrorsEntityMainTasksResult[] $result;
-    */
+     * array|ErrorsEntityMainTasksResult[] $result;.
+     */
     public $result = [];
- 
 }

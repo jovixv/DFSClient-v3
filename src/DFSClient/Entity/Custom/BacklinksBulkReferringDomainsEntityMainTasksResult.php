@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BacklinksBulkReferringDomainsEntityMainTasksResultItems;
 
-class BacklinksBulkReferringDomainsEntityMainTasksResult 
-{    
+class BacklinksBulkReferringDomainsEntityMainTasksResult
+{
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var null| $items;
-    */
+     * @var null|;
+     */
     public $items = null;
- 
 }

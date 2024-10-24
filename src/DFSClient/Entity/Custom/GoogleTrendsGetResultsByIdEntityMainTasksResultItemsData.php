@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleTrendsGetResultsByIdEntityMainTasksResultItemsData 
-{    
+class GoogleTrendsGetResultsByIdEntityMainTasksResultItemsData
+{
     /**
-    * @var null|string $date_from;
-    */
+     * @var null|string;
+     */
     public $date_from = null;
 
     /**
-    * @var null|string $date_to;
-    */
+     * @var null|string;
+     */
     public $date_to = null;
 
     /**
-    * @var null|integer $timestamp;
-    */
+     * @var null|integer;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|array $values;
-    */
+     * @var null|array;
+     */
     public $values = null;
- 
 }

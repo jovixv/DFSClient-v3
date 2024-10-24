@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class WhoisOverviewLiveEntityMainTasksResult 
-{    
+class WhoisOverviewLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|WhoisOverviewLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|WhoisOverviewLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

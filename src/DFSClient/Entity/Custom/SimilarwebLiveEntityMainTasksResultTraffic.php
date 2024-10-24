@@ -3,34 +3,33 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficCountries;
-use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSources;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficEstimated;
+use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSources;
 
-class SimilarwebLiveEntityMainTasksResultTraffic 
-{    
+class SimilarwebLiveEntityMainTasksResultTraffic
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $percent;
-    */
+     * @var null|integer;
+     */
     public $percent = null;
 
     /**
-    * @var array|SimilarwebLiveEntityMainTasksResultTrafficCountries[] $countries;
-    */
+     * @var array|SimilarwebLiveEntityMainTasksResultTrafficCountries[];
+     */
     public $countries = [];
 
     /**
-    * @var null|SimilarwebLiveEntityMainTasksResultTrafficSources $sources;
-    */
+     * @var null|SimilarwebLiveEntityMainTasksResultTrafficSources;
+     */
     public $sources = null;
 
     /**
-    * @var array|SimilarwebLiveEntityMainTasksResultTrafficEstimated[] $estimated;
-    */
+     * @var array|SimilarwebLiveEntityMainTasksResultTrafficEstimated[];
+     */
     public $estimated = [];
- 
 }

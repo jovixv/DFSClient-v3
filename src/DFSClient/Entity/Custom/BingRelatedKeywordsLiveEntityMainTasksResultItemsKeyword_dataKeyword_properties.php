@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties 
-{    
+class BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $core_keyword;
-    */
+     * @var null|string;
+     */
     public $core_keyword = null;
 
     /**
-    * @var null|integer $keyword_difficulty;
-    */
+     * @var null|integer;
+     */
     public $keyword_difficulty = null;
- 
 }

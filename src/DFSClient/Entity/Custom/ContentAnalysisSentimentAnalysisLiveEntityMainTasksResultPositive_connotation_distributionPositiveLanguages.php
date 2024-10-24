@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionPositiveLanguages 
-{    
-
+class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionPositiveLanguages
+{
 }

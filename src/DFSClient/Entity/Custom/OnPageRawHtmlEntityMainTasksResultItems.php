@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageRawHtmlEntityMainTasksResultItems 
-{    
+class OnPageRawHtmlEntityMainTasksResultItems
+{
     /**
-    * @var null|string $html;
-    */
+     * @var null|string;
+     */
     public $html = null;
- 
 }

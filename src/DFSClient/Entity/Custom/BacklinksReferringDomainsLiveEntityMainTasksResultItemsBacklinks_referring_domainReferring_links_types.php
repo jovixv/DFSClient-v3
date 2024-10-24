@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class BacklinksReferringDomainsLiveEntityMainTasksResultItemsBacklinks_referring_domainReferring_links_types
 {
     /**
-     * @var null|integer $anchor;
+     * @var null|integer;
      */
     public $anchor = null;
 
     /**
-     * @var null|integer $image;
+     * @var null|integer;
      */
     public $image = null;
 
     /**
-     * @var null|integer $link;
+     * @var null|integer;
      */
     public $link = null;
 
     /**
-     * @var null|integer $meta;
+     * @var null|integer;
      */
     public $meta = null;
 
     /**
-     * @var null|integer $canonical;
+     * @var null|integer;
      */
     public $canonical = null;
 
     /**
-     * @var null|integer $alternate;
+     * @var null|integer;
      */
     public $alternate = null;
 
     /**
-     * @var null|integer $redirect;
+     * @var null|integer;
      */
     public $redirect = null;
- 
 }

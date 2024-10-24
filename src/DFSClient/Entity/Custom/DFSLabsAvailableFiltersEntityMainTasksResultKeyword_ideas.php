@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideasGoogle;
 
-class DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideas 
-{    
+class DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideas
+{
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideasGoogle $google;
-    */
+     * @var null|DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideasGoogle;
+     */
     public $google = null;
- 
 }

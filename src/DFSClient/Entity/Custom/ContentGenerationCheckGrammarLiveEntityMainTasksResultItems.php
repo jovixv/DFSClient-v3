@@ -2,62 +2,60 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationCheckGrammarLiveEntityMainTasksResultItems 
-{    
+class ContentGenerationCheckGrammarLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $message;
-    */
+     * @var null|string;
+     */
     public $message = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|array $suggestions;
-    */
+     * @var null|array;
+     */
     public $suggestions = null;
 
     /**
-    * @var null|integer $offset;
-    */
+     * @var null|integer;
+     */
     public $offset = null;
 
     /**
-    * @var null|integer $length;
-    */
+     * @var null|integer;
+     */
     public $length = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $rule_id;
-    */
+     * @var null|string;
+     */
     public $rule_id = null;
 
     /**
-    * @var null|string $rule_description;
-    */
+     * @var null|string;
+     */
     public $rule_description = null;
 
     /**
-    * @var null|string $rule_issue_type;
-    */
+     * @var null|string;
+     */
     public $rule_issue_type = null;
 
     /**
-    * @var null|string $rule_category_id;
-    */
+     * @var null|string;
+     */
     public $rule_category_id = null;
 
     /**
-    * @var null|string $rule_category_name;
-    */
+     * @var null|string;
+     */
     public $rule_category_name = null;
- 
 }

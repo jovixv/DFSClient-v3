@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetrics;
 
-class GoogleSubdomainsLiveEntityMainTasksResultItems 
-{    
+class GoogleSubdomainsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $subdomain;
-    */
+     * @var null|string;
+     */
     public $subdomain = null;
 
     /**
-    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

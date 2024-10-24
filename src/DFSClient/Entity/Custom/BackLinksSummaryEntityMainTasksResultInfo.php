@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksSummaryEntityMainTasksResultInfo 
-{    
+class BackLinksSummaryEntityMainTasksResultInfo
+{
     /**
-    * @var null|string $server;
-    */
+     * @var null|string;
+     */
     public $server = null;
 
     /**
-    * @var null|string $cms;
-    */
+     * @var null|string;
+     */
     public $cms = null;
 
     /**
-    * @var null|array $platform_type;
-    */
+     * @var null|array;
+     */
     public $platform_type = null;
 
     /**
-    * @var null|string $ip_address;
-    */
+     * @var null|string;
+     */
     public $ip_address = null;
 
     /**
-    * @var null|boolean $is_ip;
-    */
+     * @var null|boolean;
+     */
     public $is_ip = null;
- 
 }

@@ -2,87 +2,85 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta
-{    
+{
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $canonical;
-    */
+     * @var null|string;
+     */
     public $canonical = null;
 
     /**
-    * @var null|integer $internal_links_count;
-    */
+     * @var null|integer;
+     */
     public $internal_links_count = null;
 
     /**
-    * @var null|integer $external_links_count;
-    */
+     * @var null|integer;
+     */
     public $external_links_count = null;
 
     /**
-    * @var null|integer $images_count;
-    */
+     * @var null|integer;
+     */
     public $images_count = null;
 
     /**
-    * @var null|integer $words_count;
-    */
+     * @var null|integer;
+     */
     public $words_count = null;
 
     /**
-    * @var null|array $social_media_tags;
-    */
+     * @var null|array;
+     */
     public $social_media_tags = null;
 
     /**
-    * @var null|array $h1;
-    */
+     * @var null|array;
+     */
     public $h1 = null;
 
     /**
-    * @var null|array $h2;
-    */
+     * @var null|array;
+     */
     public $h2 = null;
 
     /**
-    * @var null|array $h3;
-    */
+     * @var null|array;
+     */
     public $h3 = null;
 
     /**
-    * @var null|array $images_alt;
-    */
+     * @var null|array;
+     */
     public $images_alt = null;
 
     /**
-    * @var null|array $powered_by;
-    */
+     * @var null|array;
+     */
     public $powered_by = null;
 
     /**
-    * @var null|string $language;
-    */
+     * @var null|string;
+     */
     public $language = null;
 
     /**
-    * @var null|string $charset;
-    */
+     * @var null|string;
+     */
     public $charset = null;
 
     /**
-    * @var null|array $platform_type;
-    */
+     * @var null|array;
+     */
     public $platform_type = null;
 
     /**
-    * @var null|array $technologies;
-    */
+     * @var null|array;
+     */
     public $technologies = null;
- 
 }

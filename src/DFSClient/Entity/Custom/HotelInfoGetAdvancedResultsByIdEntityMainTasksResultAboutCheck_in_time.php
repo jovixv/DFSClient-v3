@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutCheck_in_time 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutCheck_in_time
+{
     /**
-    * @var null|integer $hour;
-    */
+     * @var null|integer;
+     */
     public $hour = null;
 
     /**
-    * @var null|integer $minute;
-    */
+     * @var null|integer;
+     */
     public $minute = null;
- 
 }

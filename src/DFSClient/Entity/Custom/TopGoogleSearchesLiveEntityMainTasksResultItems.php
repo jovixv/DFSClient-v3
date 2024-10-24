@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TopGoogleSearchesLiveEntityMainTasksResultItemsImpressions_info;
 
-class TopGoogleSearchesLiveEntityMainTasksResultItems 
-{    
+class TopGoogleSearchesLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|TopGoogleSearchesLiveEntityMainTasksResultItemsKeyword_info $keyword_info;
-    */
+     * @var null|TopGoogleSearchesLiveEntityMainTasksResultItemsKeyword_info;
+     */
     public $keyword_info = null;
 
     /**
-    * @var null|NULL $keyword_properties;
-    */
+     * @var null|null;
+     */
     public $keyword_properties = null;
 
     /**
-    * @var null|TopGoogleSearchesLiveEntityMainTasksResultItemsImpressions_info $impressions_info;
-    */
+     * @var null|TopGoogleSearchesLiveEntityMainTasksResultItemsImpressions_info;
+     */
     public $impressions_info = null;
 
     /**
-    * @var null|NULL $bing_keyword_info;
-    */
+     * @var null|null;
+     */
     public $bing_keyword_info = null;
 
     /**
-    * @var null|NULL $serp_info;
-    */
+     * @var null|null;
+     */
     public $serp_info = null;
- 
 }

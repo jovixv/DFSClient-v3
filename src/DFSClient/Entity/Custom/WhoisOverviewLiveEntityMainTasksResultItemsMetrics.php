@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\WhoisOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\WhoisOverviewLiveEntityMainTasksResultItemsMetricsPaid;
 
-class WhoisOverviewLiveEntityMainTasksResultItemsMetrics 
-{    
+class WhoisOverviewLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|WhoisOverviewLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|WhoisOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|WhoisOverviewLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|WhoisOverviewLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
- 
 }

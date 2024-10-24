@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksAvailableFiltersEntityMainTasksResultDomain_intersection 
-{    
-
+class BackLinksAvailableFiltersEntityMainTasksResultDomain_intersection
+{
 }

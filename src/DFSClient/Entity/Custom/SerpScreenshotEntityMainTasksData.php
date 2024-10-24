@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpScreenshotEntityMainTasksData 
-{    
+class SerpScreenshotEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $task_id;
-    */
+     * @var null|string;
+     */
     public $task_id = null;
- 
 }

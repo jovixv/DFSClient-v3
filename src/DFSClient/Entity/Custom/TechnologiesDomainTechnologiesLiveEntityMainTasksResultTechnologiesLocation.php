@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesLocation 
-{    
+class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesLocation
+{
     /**
-    * @var null|array $maps;
-    */
+     * @var null|array;
+     */
     public $maps = null;
- 
 }

@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials;
 
-class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSocial 
-{    
+class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSocial
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $percent;
-    */
+     * @var null|integer;
+     */
     public $percent = null;
 
     /**
-    * @var array|SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials[] $top_socials;
-    */
+     * @var array|SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials[];
+     */
     public $top_socials = [];
- 
 }

@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageMicrodataEntityMainTasksResultTest_summary 
-{    
+class OnPageMicrodataEntityMainTasksResultTest_summary
+{
     /**
-    * @var null|integer $fatal;
-    */
+     * @var null|integer;
+     */
     public $fatal = null;
 
     /**
-    * @var null|integer $error;
-    */
+     * @var null|integer;
+     */
     public $error = null;
 
     /**
-    * @var null|integer $warning;
-    */
+     * @var null|integer;
+     */
     public $warning = null;
 
     /**
-    * @var null|integer $info;
-    */
+     * @var null|integer;
+     */
     public $info = null;
- 
 }

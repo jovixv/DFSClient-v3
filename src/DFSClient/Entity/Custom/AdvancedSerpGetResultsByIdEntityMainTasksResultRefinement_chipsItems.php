@@ -4,31 +4,30 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItemsOptions;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItems 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItemsOptions[] $options;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItemsOptions[];
+     */
     public $options = [];
- 
 }

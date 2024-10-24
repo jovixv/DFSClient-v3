@@ -5,36 +5,35 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDaySerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDaySerpTask_get;
 
-class UserEntityMainTasksResultRatesLimitsDaySerp 
-{    
+class UserEntityMainTasksResultRatesLimitsDaySerp
+{
     /**
-    * @var null|integer $languages;
-    */
+     * @var null|integer;
+     */
     public $languages = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDaySerpLive $live;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDaySerpLive;
+     */
     public $live = null;
 
     /**
-    * @var null|integer $locations;
-    */
+     * @var null|integer;
+     */
     public $locations = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDaySerpTask_get $task_get;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDaySerpTask_get;
+     */
     public $task_get = null;
 
     /**
-    * @var null|integer $task_post;
-    */
+     * @var null|integer;
+     */
     public $task_post = null;
 
     /**
-    * @var null|integer $tasks_ready;
-    */
+     * @var null|integer;
+     */
     public $tasks_ready = null;
- 
 }

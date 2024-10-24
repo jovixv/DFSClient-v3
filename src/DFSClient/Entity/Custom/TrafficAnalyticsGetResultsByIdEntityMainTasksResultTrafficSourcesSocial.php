@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials;
 
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocial 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocial
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials[] $top_socials;
-    */
+     * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSocialTop_socials[] $top_socials;.
+     */
     public $top_socials = [];
- 
 }

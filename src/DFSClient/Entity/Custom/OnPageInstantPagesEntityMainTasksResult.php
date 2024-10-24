@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class OnPageInstantPagesEntityMainTasksResult
 {
     /**
-    * @var null|string $crawl_progress;
-    */
+     * @var null|string;
+     */
     public $crawl_progress = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|OnPageInstantPagesEntityMainTasksResultItemsBroken[]|OnPageInstantPagesEntityMainTasksResultItemsRedirect[]|OnPageInstantPagesEntityMainTasksResultItemsHtml[] $items;
-    */
+     * @var array|OnPageInstantPagesEntityMainTasksResultItemsBroken[]|OnPageInstantPagesEntityMainTasksResultItemsRedirect[]|OnPageInstantPagesEntityMainTasksResultItemsHtml[];
+     */
     public $items = [];
-
 }

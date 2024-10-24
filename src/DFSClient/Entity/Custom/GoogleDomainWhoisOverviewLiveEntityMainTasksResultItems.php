@@ -2,74 +2,73 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsBacklinks_info;
+use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics;
 
-class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems 
-{    
+class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $created_datetime;
-    */
+     * @var null|string;
+     */
     public $created_datetime = null;
 
     /**
-    * @var null|string $changed_datetime;
-    */
+     * @var null|string;
+     */
     public $changed_datetime = null;
 
     /**
-    * @var null|string $expiration_datetime;
-    */
+     * @var null|string;
+     */
     public $expiration_datetime = null;
 
     /**
-    * @var null|string $updated_datetime;
-    */
+     * @var null|string;
+     */
     public $updated_datetime = null;
 
     /**
-    * @var null|string $first_seen;
-    */
+     * @var null|string;
+     */
     public $first_seen = null;
 
     /**
-    * @var null|array $epp_status_codes;
-    */
+     * @var null|array;
+     */
     public $epp_status_codes = null;
 
     /**
-    * @var null|string $tld;
-    */
+     * @var null|string;
+     */
     public $tld = null;
 
     /**
-    * @var null|boolean $registered;
-    */
+     * @var null|boolean;
+     */
     public $registered = null;
 
     /**
-    * @var null|NULL $registrar;
-    */
+     * @var null|null;
+     */
     public $registrar = null;
 
     /**
-    * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
 
     /**
-    * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsBacklinks_info $backlinks_info;
-    */
+     * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsBacklinks_info;
+     */
     public $backlinks_info = null;
- 
 }

@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HotelSearchesGetResultsByIdEntityMainTasksResultItems;
 
-class HotelSearchesGetResultsByIdEntityMainTasksResult 
-{    
+class HotelSearchesGetResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|HotelSearchesGetResultsByIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|HotelSearchesGetResultsByIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

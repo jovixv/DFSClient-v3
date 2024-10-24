@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordSuggestionsEntityMainTasksResult 
-{    
+class KeywordSuggestionsEntityMainTasksResult
+{
     /**
-    * @var null|string $seed_keyword;
-    */
+     * @var null|string;
+     */
     public $seed_keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * array|KeywordSuggestionsEntityMainTasksResultItems[] $items;
-    */
+     * array|KeywordSuggestionsEntityMainTasksResultItems[] $items;.
+     */
     public $items = [];
- 
 }

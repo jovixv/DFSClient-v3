@@ -2,50 +2,49 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics;
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metrics;
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetrics;
-use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics;
 
-class GoogleCompetitorsDomainLiveEntityMainTasksResultItems 
-{    
+class GoogleCompetitorsDomainLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|double $avg_position;
-    */
+     * @var null|double;
+     */
     public $avg_position = null;
 
     /**
-    * @var null|integer $sum_position;
-    */
+     * @var null|integer;
+     */
     public $sum_position = null;
 
     /**
-    * @var null|integer $intersections;
-    */
+     * @var null|integer;
+     */
     public $intersections = null;
 
     /**
-    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metrics $full_domain_metrics;
-    */
+     * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metrics;
+     */
     public $full_domain_metrics = null;
 
     /**
-    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
 
     /**
-    * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics $competitor_metrics;
-    */
+     * @var null|GoogleCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics;
+     */
     public $competitor_metrics = null;
- 
 }

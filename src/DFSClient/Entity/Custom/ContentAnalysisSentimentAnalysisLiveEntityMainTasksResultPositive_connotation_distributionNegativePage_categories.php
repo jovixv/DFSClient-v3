@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegativePage_categories 
-{    
+class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegativePage_categories
+{
     /**
-    * @var null|NULL $category;
-    */
+     * @var null|null;
+     */
     public $category = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

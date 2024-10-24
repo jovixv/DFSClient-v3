@@ -6,76 +6,75 @@ use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainT
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellers;
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsVariations;
 
-class GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItems 
-{    
+class GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $product_id;
-    */
+     * @var null|string;
+     */
     public $product_id = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|array $images;
-    */
+     * @var null|array;
+     */
     public $images = null;
 
     /**
-    * @var null|array $features;
-    */
+     * @var null|array;
+     */
     public $features = null;
 
     /**
-    * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|integer $seller_reviews_count;
-    */
+     * @var null|integer;
+     */
     public $seller_reviews_count = null;
 
     /**
-    * @var array|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellers[] $sellers;
-    */
+     * @var array|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellers[];
+     */
     public $sellers = [];
 
     /**
-    * @var array|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsVariations[] $variations;
-    */
+     * @var array|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsVariations[];
+     */
     public $variations = [];
- 
 }

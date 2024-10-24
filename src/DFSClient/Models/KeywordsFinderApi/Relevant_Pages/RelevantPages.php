@@ -13,7 +13,10 @@ use DFSClientV3\Models\AbstractModel;
 class RelevantPages extends AbstractModel
 {
     protected $requestToFunction = 'kwrd_finder_relevant_pages_get';
+
     protected $pathToMainData = 'results->0->relevant_pages';
+
     protected $method = 'POST';
+
     protected $isSupportedMerge = false;
 }

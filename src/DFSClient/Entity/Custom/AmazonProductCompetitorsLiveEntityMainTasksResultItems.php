@@ -5,41 +5,40 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonProductCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics;
 use DFSClientV3\Entity\Custom\AmazonProductCompetitorsLiveEntityMainTasksResultItemsFull_metrics;
 
-class AmazonProductCompetitorsLiveEntityMainTasksResultItems 
-{    
+class AmazonProductCompetitorsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $asin;
-    */
+     * @var null|string;
+     */
     public $asin = null;
 
     /**
-    * @var null|double $avg_position;
-    */
+     * @var null|double;
+     */
     public $avg_position = null;
 
     /**
-    * @var null|integer $sum_position;
-    */
+     * @var null|integer;
+     */
     public $sum_position = null;
 
     /**
-    * @var null|integer $intersections;
-    */
+     * @var null|integer;
+     */
     public $intersections = null;
 
     /**
-    * @var null|AmazonProductCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics $competitor_metrics;
-    */
+     * @var null|AmazonProductCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics;
+     */
     public $competitor_metrics = null;
 
     /**
-    * @var null|AmazonProductCompetitorsLiveEntityMainTasksResultItemsFull_metrics $full_metrics;
-    */
+     * @var null|AmazonProductCompetitorsLiveEntityMainTasksResultItemsFull_metrics;
+     */
     public $full_metrics = null;
- 
 }

@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsAttributesAvailable_attributes 
-{    
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsAttributesAvailable_attributes
+{
     /**
-    * @var null|array $service_options;
-    */
+     * @var null|array;
+     */
     public $service_options = null;
 
     /**
-    * @var null|array $accessibility;
-    */
+     * @var null|array;
+     */
     public $accessibility = null;
 
     /**
-    * @var null|array $amenities;
-    */
+     * @var null|array;
+     */
     public $amenities = null;
 
     /**
-    * @var null|array $crowd;
-    */
+     * @var null|array;
+     */
     public $crowd = null;
 
     /**
-    * @var null|array $children;
-    */
+     * @var null|array;
+     */
     public $children = null;
 
     /**
-    * @var null|array $parking;
-    */
+     * @var null|array;
+     */
     public $parking = null;
- 
 }

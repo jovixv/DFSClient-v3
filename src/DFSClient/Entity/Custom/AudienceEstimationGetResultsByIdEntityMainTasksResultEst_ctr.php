@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AudienceEstimationGetResultsByIdEntityMainTasksResultEst_ctr 
-{    
+class AudienceEstimationGetResultsByIdEntityMainTasksResultEst_ctr
+{
     /**
-    * @var null|double $high;
-    */
+     * @var null|double;
+     */
     public $high = null;
 
     /**
-    * @var null|double $low;
-    */
+     * @var null|double;
+     */
     public $low = null;
- 
 }

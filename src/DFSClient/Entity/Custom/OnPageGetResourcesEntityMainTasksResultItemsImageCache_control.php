@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetResourcesEntityMainTasksResultItemsImageCache_control 
-{    
+class OnPageGetResourcesEntityMainTasksResultItemsImageCache_control
+{
     /**
-    * @var null|boolean $cachable;
-    */
+     * @var null|boolean;
+     */
     public $cachable = null;
 
     /**
-    * @var null|integer $ttl;
-    */
+     * @var null|integer;
+     */
     public $ttl = null;
- 
 }

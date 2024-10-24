@@ -4,31 +4,30 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BackLinksHistoryEntityMainTasksResultItemsBacklinks_history;
 
-class BackLinksHistoryEntityMainTasksResult 
-{    
+class BackLinksHistoryEntityMainTasksResult
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|string $date_from;
-    */
+     * @var null|string;
+     */
     public $date_from = null;
 
     /**
-    * @var null|string $date_to;
-    */
+     * @var null|string;
+     */
     public $date_to = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BackLinksHistoryEntityMainTasksResultItemsBacklinks_history[] $items;
-    */
+     * @var array|BackLinksHistoryEntityMainTasksResultItemsBacklinks_history[];
+     */
     public $items = [];
- 
 }

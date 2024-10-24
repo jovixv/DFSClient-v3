@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TechnologiesTechnologiesEntityMainTasksResultGroupsCategories;
 
-class TechnologiesTechnologiesEntityMainTasksResultGroups 
-{    
+class TechnologiesTechnologiesEntityMainTasksResultGroups
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var array|TechnologiesTechnologiesEntityMainTasksResultGroupsCategories[] $categories;
-    */
+     * @var array|TechnologiesTechnologiesEntityMainTasksResultGroupsCategories[];
+     */
     public $categories = [];
- 
 }

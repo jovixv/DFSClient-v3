@@ -2,19 +2,18 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleAppListingsAvailableFiltersEntityMainTasksResultSearch;
 use DFSClientV3\Entity\Custom\GoogleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation;
+use DFSClientV3\Entity\Custom\GoogleAppListingsAvailableFiltersEntityMainTasksResultSearch;
 
-class GoogleAppListingsAvailableFiltersEntityMainTasksResult 
-{    
+class GoogleAppListingsAvailableFiltersEntityMainTasksResult
+{
     /**
-    * @var null|GoogleAppListingsAvailableFiltersEntityMainTasksResultSearch $search;
-    */
+     * @var null|GoogleAppListingsAvailableFiltersEntityMainTasksResultSearch;
+     */
     public $search = null;
 
     /**
-    * @var null|GoogleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation $categories_aggregation;
-    */
+     * @var null|GoogleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation;
+     */
     public $categories_aggregation = null;
- 
 }

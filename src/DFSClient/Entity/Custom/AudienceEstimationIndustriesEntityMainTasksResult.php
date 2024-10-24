@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AudienceEstimationIndustriesEntityMainTasksResult 
-{    
+class AudienceEstimationIndustriesEntityMainTasksResult
+{
     /**
-    * @var null|integer $industry_id;
-    */
+     * @var null|integer;
+     */
     public $industry_id = null;
 
     /**
-    * @var null|string $industry_name;
-    */
+     * @var null|string;
+     */
     public $industry_name = null;
- 
 }

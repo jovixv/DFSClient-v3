@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class BacklinksAnchorsLiveEntityMainTasksData
-{    
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|array $order_by;
-    */
+     * @var null|array;
+     */
     public $order_by = null;
 
     /**
-    * @var null|integer $offset;
-    */
+     * @var null|integer;
+     */
     public $offset = null;
- 
 }

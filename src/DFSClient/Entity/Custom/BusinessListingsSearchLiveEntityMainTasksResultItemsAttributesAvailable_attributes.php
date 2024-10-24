@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsSearchLiveEntityMainTasksResultItemsAttributesAvailable_attributes 
-{    
+class BusinessListingsSearchLiveEntityMainTasksResultItemsAttributesAvailable_attributes
+{
     /**
-    * @var null|array $service_options;
-    */
+     * @var null|array;
+     */
     public $service_options = null;
 
     /**
-    * @var null|array $accessibility;
-    */
+     * @var null|array;
+     */
     public $accessibility = null;
 
     /**
-    * @var null|array $offerings;
-    */
+     * @var null|array;
+     */
     public $offerings = null;
 
     /**
-    * @var null|array $dining_options;
-    */
+     * @var null|array;
+     */
     public $dining_options = null;
 
     /**
-    * @var null|array $amenities;
-    */
+     * @var null|array;
+     */
     public $amenities = null;
 
     /**
-    * @var null|array $atmosphere;
-    */
+     * @var null|array;
+     */
     public $atmosphere = null;
 
     /**
-    * @var null|array $crowd;
-    */
+     * @var null|array;
+     */
     public $crowd = null;
 
     /**
-    * @var null|array $planning;
-    */
+     * @var null|array;
+     */
     public $planning = null;
 
     /**
-    * @var null|array $payments;
-    */
+     * @var null|array;
+     */
     public $payments = null;
- 
 }

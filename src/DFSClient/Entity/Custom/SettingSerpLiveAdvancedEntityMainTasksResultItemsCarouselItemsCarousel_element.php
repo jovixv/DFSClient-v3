@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsCarouselItemsCarousel_element 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsCarouselItemsCarousel_element
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $sub_title;
-    */
+     * @var null|string;
+     */
     public $sub_title = null;
- 
 }

@@ -2,31 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteOrganic;
-use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolutePaid;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteLocal_pack;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteOrganic;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolutePaid;
 
-class GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolute 
-{    
+class GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolute
+{
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteOrganic $organic;
-    */
+     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolutePaid $paid;
-    */
+     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolutePaid;
+     */
     public $paid = null;
 
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteFeatured_snippet $featured_snippet;
-    */
+     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteFeatured_snippet;
+     */
     public $featured_snippet = null;
 
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteLocal_pack $local_pack;
-    */
+     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteLocal_pack;
+     */
     public $local_pack = null;
- 
 }

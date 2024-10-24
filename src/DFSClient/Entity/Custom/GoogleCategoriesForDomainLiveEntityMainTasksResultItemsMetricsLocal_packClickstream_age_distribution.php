@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_age_distribution 
-{    
-
+class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_age_distribution
+{
 }

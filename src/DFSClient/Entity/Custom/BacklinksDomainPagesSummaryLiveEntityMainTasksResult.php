@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksDomainPagesSummaryLiveEntityMainTasksResult 
-{    
+class BacklinksDomainPagesSummaryLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BacklinksDomainPagesSummaryLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BacklinksDomainPagesSummaryLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

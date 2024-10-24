@@ -4,51 +4,50 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_item 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_item
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $data_attrid;
-    */
+     * @var null|string;
+     */
     public $data_attrid = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_shopping_itemRectangle;
+     */
     public $rectangle = null;
- 
 }

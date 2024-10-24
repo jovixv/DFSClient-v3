@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class OnPageForceStopEntityMainTasksResult
 {
     /**
-    * @var null|string $status;
-    */
+     * @var null|string;
+     */
     public $status = null;
 
     /**
-     * @var null|string $elapsed;
+     * @var null|string;
      */
     public $elapsed = null;
-
 }

@@ -4,36 +4,35 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleTrendsLiveEntityMainTasksResultItemsData;
 
-class GoogleTrendsLiveEntityMainTasksResultItems 
-{    
+class GoogleTrendsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|integer $position;
-    */
+     * @var null|integer;
+     */
     public $position = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
 
     /**
-    * array|GoogleTrendsLiveEntityMainTasksResultItemsData[] $data;
-    */
+     * array|GoogleTrendsLiveEntityMainTasksResultItemsData[] $data;.
+     */
     public $data = [];
 
     /**
-    * @var null|array $averages;
-    */
+     * @var null|array;
+     */
     public $averages = null;
- 
 }

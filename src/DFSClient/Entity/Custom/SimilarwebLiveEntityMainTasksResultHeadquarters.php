@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebLiveEntityMainTasksResultHeadquarters 
-{    
+class SimilarwebLiveEntityMainTasksResultHeadquarters
+{
     /**
-    * @var null|string $country;
-    */
+     * @var null|string;
+     */
     public $country = null;
 
     /**
-    * @var null|NULL $state;
-    */
+     * @var null|null;
+     */
     public $state = null;
 
     /**
-    * @var null|string $city;
-    */
+     * @var null|string;
+     */
     public $city = null;
- 
 }

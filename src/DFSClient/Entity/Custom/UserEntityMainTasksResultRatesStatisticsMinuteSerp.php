@@ -5,36 +5,35 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteSerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteSerpTask_get;
 
-class UserEntityMainTasksResultRatesStatisticsMinuteSerp 
-{    
+class UserEntityMainTasksResultRatesStatisticsMinuteSerp
+{
     /**
-    * @var null|integer $languages;
-    */
+     * @var null|integer;
+     */
     public $languages = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerpLive $live;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerpLive;
+     */
     public $live = null;
 
     /**
-    * @var null|integer $locations;
-    */
+     * @var null|integer;
+     */
     public $locations = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerpTask_get $task_get;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerpTask_get;
+     */
     public $task_get = null;
 
     /**
-    * @var null|integer $task_post;
-    */
+     * @var null|integer;
+     */
     public $task_post = null;
 
     /**
-    * @var null|integer $tasks_ready;
-    */
+     * @var null|integer;
+     */
     public $tasks_ready = null;
- 
 }

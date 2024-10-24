@@ -5,41 +5,40 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics;
 use DFSClientV3\Entity\Custom\GoogleAppCompetitorsLiveEntityMainTasksResultItemsFull_metrics;
 
-class GoogleAppCompetitorsLiveEntityMainTasksResultItems 
-{    
+class GoogleAppCompetitorsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|double $avg_position;
-    */
+     * @var null|double;
+     */
     public $avg_position = null;
 
     /**
-    * @var null|integer $sum_position;
-    */
+     * @var null|integer;
+     */
     public $sum_position = null;
 
     /**
-    * @var null|integer $intersections;
-    */
+     * @var null|integer;
+     */
     public $intersections = null;
 
     /**
-    * @var null|GoogleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics $competitor_metrics;
-    */
+     * @var null|GoogleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics;
+     */
     public $competitor_metrics = null;
 
     /**
-    * @var null|GoogleAppCompetitorsLiveEntityMainTasksResultItemsFull_metrics $full_metrics;
-    */
+     * @var null|GoogleAppCompetitorsLiveEntityMainTasksResultItemsFull_metrics;
+     */
     public $full_metrics = null;
- 
 }

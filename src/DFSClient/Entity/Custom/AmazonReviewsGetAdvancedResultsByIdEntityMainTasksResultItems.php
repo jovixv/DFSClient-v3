@@ -2,89 +2,88 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile;
 use DFSClientV3\Entity\Custom\AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
+use DFSClientV3\Entity\Custom\AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile;
 
-class AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItems 
-{    
+class AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|boolean $verified;
-    */
+     * @var null|boolean;
+     */
     public $verified = null;
 
     /**
-    * @var null|string $subtitle;
-    */
+     * @var null|string;
+     */
     public $subtitle = null;
 
     /**
-    * @var null|integer $helpful_votes;
-    */
+     * @var null|integer;
+     */
     public $helpful_votes = null;
 
     /**
-    * @var null|NULL $images;
-    */
+     * @var null|null;
+     */
     public $images = null;
 
     /**
-    * @var null|NULL $videos;
-    */
+     * @var null|null;
+     */
     public $videos = null;
 
     /**
-    * @var null|AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile $user_profile;
-    */
+     * @var null|AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile;
+     */
     public $user_profile = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $review_text;
-    */
+     * @var null|string;
+     */
     public $review_text = null;
 
     /**
-    * @var null|string $publication_date;
-    */
+     * @var null|string;
+     */
     public $publication_date = null;
 
     /**
-    * @var null|AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
- 
 }

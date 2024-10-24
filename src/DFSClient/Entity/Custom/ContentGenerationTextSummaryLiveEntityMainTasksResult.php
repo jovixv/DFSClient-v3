@@ -4,86 +4,85 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ContentGenerationTextSummaryLiveEntityMainTasksResultKeyword_density;
 
-class ContentGenerationTextSummaryLiveEntityMainTasksResult 
-{    
+class ContentGenerationTextSummaryLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $sentences;
-    */
+     * @var null|integer;
+     */
     public $sentences = null;
 
     /**
-    * @var null|integer $paragraphs;
-    */
+     * @var null|integer;
+     */
     public $paragraphs = null;
 
     /**
-    * @var null|integer $words;
-    */
+     * @var null|integer;
+     */
     public $words = null;
 
     /**
-    * @var null|integer $characters_without_spaces;
-    */
+     * @var null|integer;
+     */
     public $characters_without_spaces = null;
 
     /**
-    * @var null|integer $characters_with_spaces;
-    */
+     * @var null|integer;
+     */
     public $characters_with_spaces = null;
 
     /**
-    * @var null|double $words_per_sentence;
-    */
+     * @var null|double;
+     */
     public $words_per_sentence = null;
 
     /**
-    * @var null|double $characters_per_word;
-    */
+     * @var null|double;
+     */
     public $characters_per_word = null;
 
     /**
-    * @var null|double $vocabulary_density;
-    */
+     * @var null|double;
+     */
     public $vocabulary_density = null;
 
     /**
-    * @var null|ContentGenerationTextSummaryLiveEntityMainTasksResultKeyword_density $keyword_density;
-    */
+     * @var null|ContentGenerationTextSummaryLiveEntityMainTasksResultKeyword_density;
+     */
     public $keyword_density = null;
 
     /**
-    * @var null|double $automated_readability_index;
-    */
+     * @var null|double;
+     */
     public $automated_readability_index = null;
 
     /**
-    * @var null|double $coleman_liau_index;
-    */
+     * @var null|double;
+     */
     public $coleman_liau_index = null;
 
     /**
-    * @var null|double $flesch_kincaid_grade_level;
-    */
+     * @var null|double;
+     */
     public $flesch_kincaid_grade_level = null;
 
     /**
-    * @var null|double $smog_readability_index;
-    */
+     * @var null|double;
+     */
     public $smog_readability_index = null;
 
     /**
-    * @var null|integer $spelling_errors;
-    */
+     * @var null|integer;
+     */
     public $spelling_errors = null;
 
     /**
-    * @var null|integer $grammar_errors;
-    */
+     * @var null|integer;
+     */
     public $grammar_errors = null;
 
     /**
-    * @var null|integer $score;
-    */
+     * @var null|integer;
+     */
     public $score = null;
- 
 }

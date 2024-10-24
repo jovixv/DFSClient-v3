@@ -1,30 +1,36 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Google;
 
-
+use DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class GoogleKeywordSuggestionsLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
-	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'dataforseo_labs/google/keyword_suggestions/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $useNewMapper = true;
+
+    protected $pathToMainData = 'tasks->{$postID}->result';
+
+    protected $requestToFunction = 'dataforseo_labs/google/keyword_suggestions/live';
+
+    protected $resultShouldBeTransformedToArray = true;
+
+    protected $useNewMapper = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMain
+     * @return GoogleKeywordSuggestionsLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleKeywordSuggestionsLiveEntityMain
+    #[\Override]
+    public function get(): GoogleKeywordSuggestionsLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $keyword
+     *
      * @return $this
      */
     public function setKeyword(string $keyword)
@@ -36,6 +42,7 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -47,26 +54,31 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -76,63 +88,69 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param bool $includeSeedKeyword
-	 * @return $this
-	 */
-	public function setIncludeSeedKeyword(bool $includeSeedKeyword)
-	{
-		$this->payload['include_seed_keyword'] = $includeSeedKeyword;
+    /**
+     * @param bool $includeSeedKeyword
+     *
+     * @return $this
+     */
+    public function setIncludeSeedKeyword(bool $includeSeedKeyword)
+    {
+        $this->payload['include_seed_keyword'] = $includeSeedKeyword;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $includeSerpInfo
-	 * @return $this
-	 */
-	public function setIncludeSerpInfo(bool $includeSerpInfo)
-	{
-		$this->payload['include_serp_info'] = $includeSerpInfo;
+    /**
+     * @param bool $includeSerpInfo
+     *
+     * @return $this
+     */
+    public function setIncludeSerpInfo(bool $includeSerpInfo)
+    {
+        $this->payload['include_serp_info'] = $includeSerpInfo;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $exactMatch
-	 * @return $this
-	 */
-	public function setExactMatch(bool $exactMatch)
-	{
-		$this->payload['exact_match'] = $exactMatch;
+    /**
+     * @param bool $exactMatch
+     *
+     * @return $this
+     */
+    public function setExactMatch(bool $exactMatch)
+    {
+        $this->payload['exact_match'] = $exactMatch;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $ignoreSynonyms
-	 * @return $this
-	 */
-	public function setIgnoreSynonyms(bool $ignoreSynonyms)
-	{
-		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+    /**
+     * @param bool $ignoreSynonyms
+     *
+     * @return $this
+     */
+    public function setIgnoreSynonyms(bool $ignoreSynonyms)
+    {
+        $this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $includeClickstreamData
-	 * @return $this
-	 */
-	public function setIncludeClickstreamData(bool $includeClickstreamData)
-	{
-		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+    /**
+     * @param bool $includeClickstreamData
+     *
+     * @return $this
+     */
+    public function setIncludeClickstreamData(bool $includeClickstreamData)
+    {
+        $this->payload['include_clickstream_data'] = $includeClickstreamData;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -144,6 +162,7 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -155,6 +174,7 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -166,6 +186,7 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -175,32 +196,38 @@ class GoogleKeywordSuggestionsLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param string $offsetToken
-	 * @return $this
-	 */
-	public function setOffsetToken(string $offsetToken)
-	{
-		$this->payload['offset_token'] = $offsetToken;
+    /**
+     * @param string $offsetToken
+     *
+     * @return $this
+     */
+    public function setOffsetToken(string $offsetToken)
+    {
+        $this->payload['offset_token'] = $offsetToken;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

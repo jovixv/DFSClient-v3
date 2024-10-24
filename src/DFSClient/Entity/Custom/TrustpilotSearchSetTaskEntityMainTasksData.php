@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrustpilotSearchSetTaskEntityMainTasksData 
-{    
+class TrustpilotSearchSetTaskEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $depth;
-    */
+     * @var null|integer;
+     */
     public $depth = null;
 
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $device;
-    */
+     * @var null|string;
+     */
     public $device = null;
 
     /**
-    * @var null|string $os;
-    */
+     * @var null|string;
+     */
     public $os = null;
- 
 }

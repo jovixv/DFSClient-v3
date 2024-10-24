@@ -4,86 +4,85 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_info;
 
-class ContentAnalysisSearchLiveEntityMainTasksResultItems 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $main_domain;
-    */
+     * @var null|string;
+     */
     public $main_domain = null;
 
     /**
-    * @var null|integer $url_rank;
-    */
+     * @var null|integer;
+     */
     public $url_rank = null;
 
     /**
-    * @var null|integer $spam_score;
-    */
+     * @var null|integer;
+     */
     public $spam_score = null;
 
     /**
-    * @var null|integer $domain_rank;
-    */
+     * @var null|integer;
+     */
     public $domain_rank = null;
 
     /**
-    * @var null|string $fetch_time;
-    */
+     * @var null|string;
+     */
     public $fetch_time = null;
 
     /**
-    * @var null|NULL $country;
-    */
+     * @var null|null;
+     */
     public $country = null;
 
     /**
-    * @var null|string $language;
-    */
+     * @var null|string;
+     */
     public $language = null;
 
     /**
-    * @var null|double $score;
-    */
+     * @var null|double;
+     */
     public $score = null;
 
     /**
-    * @var null|array $page_category;
-    */
+     * @var null|array;
+     */
     public $page_category = null;
 
     /**
-    * @var null|array $page_types;
-    */
+     * @var null|array;
+     */
     public $page_types = null;
 
     /**
-    * @var null|NULL $ratings;
-    */
+     * @var null|null;
+     */
     public $ratings = null;
 
     /**
-    * @var null|NULL $social_metrics;
-    */
+     * @var null|null;
+     */
     public $social_metrics = null;
 
     /**
-    * @var null|ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_info $content_info;
-    */
+     * @var null|ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_info;
+     */
     public $content_info = null;
- 
 }

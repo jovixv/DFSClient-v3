@@ -2,7 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class PageIntersectionLiveEntityMainTasksResultPages 
-{    
+class PageIntersectionLiveEntityMainTasksResultPages
+{
 }

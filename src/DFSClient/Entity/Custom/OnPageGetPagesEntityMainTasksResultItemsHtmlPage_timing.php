@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetPagesEntityMainTasksResultItemsHtmlPage_timing 
-{    
+class OnPageGetPagesEntityMainTasksResultItemsHtmlPage_timing
+{
     /**
-    * @var null|integer $time_to_interactive;
-    */
+     * @var null|integer;
+     */
     public $time_to_interactive = null;
 
     /**
-    * @var null|integer $dom_complete;
-    */
+     * @var null|integer;
+     */
     public $dom_complete = null;
 
     /**
-    * @var null|integer $connection_time;
-    */
+     * @var null|integer;
+     */
     public $connection_time = null;
 
     /**
-    * @var null|integer $time_to_secure_connection;
-    */
+     * @var null|integer;
+     */
     public $time_to_secure_connection = null;
 
     /**
-    * @var null|integer $request_sent_time;
-    */
+     * @var null|integer;
+     */
     public $request_sent_time = null;
 
     /**
-    * @var null|integer $waiting_time;
-    */
+     * @var null|integer;
+     */
     public $waiting_time = null;
 
     /**
-    * @var null|integer $download_time;
-    */
+     * @var null|integer;
+     */
     public $download_time = null;
 
     /**
-    * @var null|integer $duration_time;
-    */
+     * @var null|integer;
+     */
     public $duration_time = null;
 
     /**
-    * @var null|integer $fetch_start;
-    */
+     * @var null|integer;
+     */
     public $fetch_start = null;
 
     /**
-    * @var null|integer $fetch_end;
-    */
+     * @var null|integer;
+     */
     public $fetch_end = null;
- 
 }

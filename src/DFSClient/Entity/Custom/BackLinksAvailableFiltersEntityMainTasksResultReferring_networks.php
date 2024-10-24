@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksAvailableFiltersEntityMainTasksResultReferring_networks 
-{    
-
+class BackLinksAvailableFiltersEntityMainTasksResultReferring_networks
+{
 }

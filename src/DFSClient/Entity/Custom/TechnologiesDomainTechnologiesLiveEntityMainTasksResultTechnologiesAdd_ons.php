@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesAdd_ons 
-{    
+class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesAdd_ons
+{
     /**
-    * @var null|array $wordpress_plugins;
-    */
+     * @var null|array;
+     */
     public $wordpress_plugins = null;
- 
 }

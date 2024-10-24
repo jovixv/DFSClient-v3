@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksTimeseriesSummaryEntityMainTasksResult 
-{    
+class BackLinksTimeseriesSummaryEntityMainTasksResult
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|NULL $date_from;
-    */
+     * @var null|null;
+     */
     public $date_from = null;
 
     /**
-    * @var null|NULL $date_to;
-    */
+     * @var null|null;
+     */
     public $date_to = null;
 
     /**
-    * @var null|string $group_range;
-    */
+     * @var null|string;
+     */
     public $group_range = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BackLinksTimeseriesSummaryEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BackLinksTimeseriesSummaryEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageLighthouseAuditsEntityMainTasksResult 
-{    
+class OnPageLighthouseAuditsEntityMainTasksResult
+{
     /**
-    * @var null|array $audits;
-    */
+     * @var null|array;
+     */
     public $audits = null;
- 
 }

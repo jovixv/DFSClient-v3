@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Models\BacklinksApi\Dictionaries\PageIntersectionDictionary;
 
-class BackLinksPageIntersectionEntityMainTasksResultItems 
-{    
+class BackLinksPageIntersectionEntityMainTasksResultItems
+{
     /**
-    * @var null|PageIntersectionDictionary $page_intersection;
-    */
+     * @var null|PageIntersectionDictionary;
+     */
     public $page_intersection = null;
 
     /**
-    * @var null|BackLinksPageIntersectionEntityMainTasksResultItemsSummary $summary;
-    */
+     * @var null|BackLinksPageIntersectionEntityMainTasksResultItemsSummary;
+     */
     public $summary = null;
- 
 }

@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleTopSearchesLiveEntityMainTasksResult 
-{    
+class GoogleTopSearchesLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var null|integer $offset;
-    */
+     * @var null|integer;
+     */
     public $offset = null;
 
     /**
-    * @var null|string $offset_token;
-    */
+     * @var null|string;
+     */
     public $offset_token = null;
 
     /**
-    * @var array|GoogleTopSearchesLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleTopSearchesLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

@@ -6,21 +6,20 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleA
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_post;
 
-class UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platforms 
-{    
+class UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platforms
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsLive $live;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsLive;
+     */
     public $live = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_get $task_get;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_get;
+     */
     public $task_get = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_post $task_post;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_post;
+     */
     public $task_post = null;
- 
 }

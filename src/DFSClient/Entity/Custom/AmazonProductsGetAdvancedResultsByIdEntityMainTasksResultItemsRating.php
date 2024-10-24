@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItemsRating 
-{    
+class AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItemsRating
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $rating_type;
-    */
+     * @var null|string;
+     */
     public $rating_type = null;
 
     /**
-    * @var null|string $value;
-    */
+     * @var null|string;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $votes_count;
-    */
+     * @var null|integer;
+     */
     public $votes_count = null;
 
     /**
-    * @var null|string $rating_max;
-    */
+     * @var null|string;
+     */
     public $rating_max = null;
- 
 }

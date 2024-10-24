@@ -4,36 +4,35 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpi;
 
-class KeywordPerformanceGetResultsByIdEntityMainTasksResult 
-{    
+class KeywordPerformanceGetResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $year;
-    */
+     * @var null|integer;
+     */
     public $year = null;
 
     /**
-    * @var null|integer $month;
-    */
+     * @var null|integer;
+     */
     public $month = null;
 
     /**
-    * @var null|KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpi $keyword_kpi;
-    */
+     * @var null|KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpi;
+     */
     public $keyword_kpi = null;
- 
 }

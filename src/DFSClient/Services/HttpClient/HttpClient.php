@@ -10,14 +10,14 @@ use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Promise;
 
+use function GuzzleHttp\Promise\settle;
+
 class HttpClient implements HttpContract
 {
     /*
      * init new variable impemented Guzzle/
      */
     private $client;
-
-    public $typeResponse = '.gzip';
 
     /**
      * Create a new HttpClient instance
@@ -32,19 +32,17 @@ class HttpClient implements HttpContract
      *
      * @return void
      */
-    public function __construct($base_url, $apiVersion, $timeout, $login, $password, $typeResponse = null)
+    public function __construct($base_url, $apiVersion, $timeout, $login, $password, public $typeResponse = null)
     {
-        $config = Application::getInstance()->getConfig();
-
-        $this->typeResponse = $typeResponse;
+        $config       = Application::getInstance()->getConfig();
         $this->client = new GuzzleClient([
             // if env is exist use env variable,else ''
-            'base_uri'  => (($base_url) ? $base_url : $config['url'])
-                         .(($apiVersion) ? $apiVersion : $config['apiVersion']),
+            'base_uri' => ($base_url ?: $config['url'])
+                         . ($apiVersion ?: $config['apiVersion']),
 
-            'timeout'   => ($timeout) ? $timeout : $config['timeoutForEachRequests'],
-            'auth'      => [
-                ($login) ? $login : $config['DATAFORSEO_LOGIN'],
+            'timeout' => $timeout ?: $config['timeoutForEachRequests'],
+            'auth'    => [
+                $login ?: $config['DATAFORSEO_LOGIN'],
                 ($login) ? $password : $config['DATAFORSEO_PASSWORD'],
             ],
         ]);
@@ -57,13 +55,14 @@ class HttpClient implements HttpContract
      *
      * @return \Handlers\Responses
      */
+    #[\Override]
     public function sendSingleRequest($method, $url, $params): Responses
     {
-        $result = null;
+        $result  = null;
         $content = null;
 
         try {
-            $send = $this->client->request($method, $url.$this->typeResponse, $params);
+            $send    = $this->client->request($method, $url . $this->typeResponse, $params);
             $content = $send->getBody()->getContents();
 
             $checkError = json_decode($content, false, 512, JSON_BIGINT_AS_STRING);
@@ -72,14 +71,17 @@ class HttpClient implements HttpContract
             if (isset($checkError->error)) {
                 $result = new Responses(false, 'DFS api returned an error, for more information check $completed->errorResponse ', $checkError, null);
             } else {
-                $result = new Responses(true, null, $content,
+                $result = new Responses(
+                    true,
+                    null,
+                    $content,
                     $send->getHeaders()
                 );
             }
         } catch (BadResponseException $e) {
             $result = new Responses(false, $e->getMessage(), $e->getResponse()->getBody()->getContents(), null);
         } catch (GuzzleException $er) {
-            $result = new Responses(false, $er->getMessage(), json_encode(['status_message'=>$er->getMessage(), 'status_code' => 50000]), null);
+            $result = new Responses(false, $er->getMessage(), json_encode(['status_message' => $er->getMessage(), 'status_code' => 50000]), null);
         }
 
         unset($content);
@@ -105,33 +107,36 @@ class HttpClient implements HttpContract
      *
      * @return array
      */
-    public function sendAsyncRequests(array $args, $someData):array
+    #[\Override]
+    public function sendAsyncRequests(array $args, $someData): array
     {
-
         // array with requests
         $promises = [];
 
         $results = [];
 
         // creating task for Promise
-        foreach ($args as $key=>$arg) {
+        foreach ($args as $key => $arg) {
             // checking variable from args array
             if (isset($arg['method']) and isset($arg['url'])) {
-                $promises[$key] = $this->client->requestAsync($arg['method'], $arg['url'].$this->typeResponse, (isset($arg['params'])) ? $arg['params'] : []);
+                $promises[$key] = $this->client->requestAsync($arg['method'], $arg['url'] . $this->typeResponse, $arg['params'] ?? []);
             }
         }
 
         // waiting and processing requests
-        $waitingFinish = Promise\settle($promises)->wait();
+        $waitingFinish = settle($promises)->wait();
 
         //creating results array
-        foreach ($waitingFinish as $key=>$finished) {
+        foreach ($waitingFinish as $key => $finished) {
             // if request is ok
             if ($finished['state'] == 'fulfilled' and isset($finished['value'])) {
                 // init and add new object to results
-                $results[$key] = new Responses(true, null, $finished['value']->getBody()->getContents(),
-                   $finished['value']->getHeaders()
-               );
+                $results[$key] = new Responses(
+                    true,
+                    null,
+                    $finished['value']->getBody()->getContents(),
+                    $finished['value']->getHeaders()
+                );
             } else {
                 // init and add new object to results
                 $results[$key] = new Responses(false, $finished['reason']->getMessage(), null, null);

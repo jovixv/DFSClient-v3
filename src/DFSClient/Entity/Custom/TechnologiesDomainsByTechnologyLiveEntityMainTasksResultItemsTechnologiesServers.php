@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesServers 
-{    
+class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesServers
+{
     /**
-    * @var null|array $web_servers;
-    */
+     * @var null|array;
+     */
     public $web_servers = null;
 
     /**
-    * @var null|array $reverse_proxies;
-    */
+     * @var null|array;
+     */
     public $reverse_proxies = null;
 
     /**
-    * @var null|array $databases;
-    */
+     * @var null|array;
+     */
     public $databases = null;
- 
 }

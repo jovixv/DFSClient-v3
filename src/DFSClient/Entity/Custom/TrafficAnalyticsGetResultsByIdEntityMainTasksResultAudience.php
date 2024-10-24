@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience
+{
     /**
-    * @var null|integer $visits;
-    */
+     * @var null|integer;
+     */
     public $visits = null;
 
     /**
-    * @var null|string $time_on_site_avg;
-    */
+     * @var null|string;
+     */
     public $time_on_site_avg = null;
 
     /**
-    * @var null|double $page_views_avg;
-    */
+     * @var null|double;
+     */
     public $page_views_avg = null;
 
     /**
-    * @var null|double $bounce_rate;
-    */
+     * @var null|double;
+     */
     public $bounce_rate = null;
- 
 }

@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrors;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_data;
 
-class UserEntityMainTasksResultPriceAppendix 
-{    
+class UserEntityMainTasksResultPriceAppendix
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixErrors $errors;
-    */
+     * @var null|UserEntityMainTasksResultPriceAppendixErrors;
+     */
     public $errors = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendixUser_data $user_data;
-    */
+     * @var null|UserEntityMainTasksResultPriceAppendixUser_data;
+     */
     public $user_data = null;
- 
 }

@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsGoogle 
-{    
-
+class DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsGoogle
+{
 }

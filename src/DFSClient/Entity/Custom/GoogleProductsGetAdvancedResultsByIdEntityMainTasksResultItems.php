@@ -2,97 +2,95 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleProductsGetAdvancedResultsByIdEntityMainTasksResultItems 
-{    
+class GoogleProductsGetAdvancedResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $shopping_url;
-    */
+     * @var null|null;
+     */
     public $shopping_url = null;
 
     /**
-    * @var null|array $tags;
-    */
+     * @var null|array;
+     */
     public $tags = null;
 
     /**
-    * @var null|double $price;
-    */
+     * @var null|double;
+     */
     public $price = null;
 
     /**
-    * @var null|string $currency;
-    */
+     * @var null|string;
+     */
     public $currency = null;
 
     /**
-    * @var null|NULL $product_id;
-    */
+     * @var null|null;
+     */
     public $product_id = null;
 
     /**
-    * @var null|NULL $reviews_count;
-    */
+     * @var null|null;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|boolean $is_best_match;
-    */
+     * @var null|boolean;
+     */
     public $is_best_match = null;
 
     /**
-    * @var null|NULL $product_rating;
-    */
+     * @var null|null;
+     */
     public $product_rating = null;
 
     /**
-    * @var null|NULL $shop_rating;
-    */
+     * @var null|null;
+     */
     public $shop_rating = null;
- 
 }

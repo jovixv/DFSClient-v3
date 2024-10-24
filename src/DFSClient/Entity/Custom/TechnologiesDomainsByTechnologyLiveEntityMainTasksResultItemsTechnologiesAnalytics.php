@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAnalytics 
-{    
+class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAnalytics
+{
     /**
-    * @var null|array $analytics;
-    */
+     * @var null|array;
+     */
     public $analytics = null;
- 
 }

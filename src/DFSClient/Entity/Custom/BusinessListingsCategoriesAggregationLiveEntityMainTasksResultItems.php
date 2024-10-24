@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregation;
 
-class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItems 
-{    
+class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|array $categoiries;
-    */
+     * @var null|array;
+     */
     public $categoiries = null;
 
     /**
-    * @var null|BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregation $aggregation;
-    */
+     * @var null|BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregation;
+     */
     public $aggregation = null;
- 
 }

@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesOther 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesOther
+{
     /**
-    * @var null|array $widgets;
-    */
+     * @var null|array;
+     */
     public $widgets = null;
- 
 }

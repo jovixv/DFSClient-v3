@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultMetricsOrganic;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultMetricsPaid;
 
-class RankedKeywordsLiveEntityMainTasksResultMetrics 
-{    
+class RankedKeywordsLiveEntityMainTasksResultMetrics
+{
     /**
-    * @var null|RankedKeywordsLiveEntityMainTasksResultMetricsOrganic $organic;
-    */
+     * @var null|RankedKeywordsLiveEntityMainTasksResultMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|RankedKeywordsLiveEntityMainTasksResultMetricsPaid $paid;
-    */
+     * @var null|RankedKeywordsLiveEntityMainTasksResultMetricsPaid;
+     */
     public $paid = null;
- 
 }

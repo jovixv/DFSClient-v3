@@ -4,36 +4,35 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TopGoogleSearchesLiveEntityMainTasksResultItems;
 
-class TopGoogleSearchesLiveEntityMainTasksResult 
-{    
+class TopGoogleSearchesLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $offset_token;
-    */
+     * @var null|string;
+     */
     public $offset_token = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|TopGoogleSearchesLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|TopGoogleSearchesLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

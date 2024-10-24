@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesDisplay_adTop_ad_networks 
-{    
+class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesDisplay_adTop_ad_networks
+{
     /**
-    * @var null|string $site;
-    */
+     * @var null|string;
+     */
     public $site = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
- 
 }

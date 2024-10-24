@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AudienceEstimationJobFunctionsEntityMainTasksResult 
-{    
+class AudienceEstimationJobFunctionsEntityMainTasksResult
+{
     /**
-    * @var null|integer $job_function_id;
-    */
+     * @var null|integer;
+     */
     public $job_function_id = null;
 
     /**
-    * @var null|string $job_function_name;
-    */
+     * @var null|string;
+     */
     public $job_function_name = null;
- 
 }

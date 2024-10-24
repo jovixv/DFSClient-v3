@@ -2,31 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsFeatured_snippet;
+use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsLocal_pack;
 use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsOrganic;
 use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsPaid;
-use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsLocal_pack;
-use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsFeatured_snippet;
 
-class BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics 
-{    
+class BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics
+{
     /**
-    * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsOrganic $organic;
-    */
+     * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsPaid $paid;
-    */
+     * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsPaid;
+     */
     public $paid = null;
 
     /**
-    * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsLocal_pack $local_pack;
-    */
+     * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsLocal_pack;
+     */
     public $local_pack = null;
 
     /**
-    * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsFeatured_snippet $featured_snippet;
-    */
+     * @var null|BingCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metricsFeatured_snippet;
+     */
     public $featured_snippet = null;
- 
 }

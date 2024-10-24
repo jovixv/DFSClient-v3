@@ -2,25 +2,32 @@
 
 namespace DFSClientV3\Models\BacklinksApi;
 
-
 use DFSClientV3\Entity\Custom\BacklinksBacklinksLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class BacklinksBacklinksLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'backlinks/backlinks/live';
+
     protected $resultShouldBeTransformedToArray = true;
+
     protected $jsonContainVariadicType = true;
+
     protected $pathsToVariadicTypesAndValue = [
-        'tasks->(:number)->result->(:number)->items->(:number)' => 'type'
+        'tasks->(:number)->result->(:number)->items->(:number)' => 'type',
     ];
+
     protected $useNewMapper = true;
 
     /**
      * @param string $target
+     *
      * @return $this
      */
     public function setTarget(string $target)
@@ -30,19 +37,21 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
-		/**
-		 * @param string $search_after_token
-		 * @return $this
-		 */
-		public function setSearchAfterToken(string $search_after_token)
-		{
-			$this->payload['search_after_token'] = $search_after_token;
+    /**
+     * @param string $search_after_token
+     *
+     * @return $this
+     */
+    public function setSearchAfterToken(string $search_after_token)
+    {
+        $this->payload['search_after_token'] = $search_after_token;
 
-			return $this;
-		}
+        return $this;
+    }
 
     /**
      * @param string $mode
+     *
      * @return $this
      */
     public function setMode(string $mode)
@@ -52,19 +61,21 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param array $customMode
-	 * @return $this
-	 */
-	public function setCustomMode(array $customMode)
-	{
-		$this->payload['custom_mode'] = $customMode;
+    /**
+     * @param array $customMode
+     *
+     * @return $this
+     */
+    public function setCustomMode(array $customMode)
+    {
+        $this->payload['custom_mode'] = $customMode;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -76,6 +87,7 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -87,6 +99,7 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -98,6 +111,7 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -109,6 +123,7 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param int $internalListLimit
+     *
      * @return $this
      */
     public function setInternalListLimit(int $internalListLimit)
@@ -120,6 +135,7 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param string $backlinksStatusType
+     *
      * @return $this
      */
     public function setBacklinksStatusType(string $backlinksStatusType)
@@ -131,6 +147,7 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param bool $includeSubdomains
+     *
      * @return $this
      */
     public function setIncludeSubdomains(bool $includeSubdomains)
@@ -140,29 +157,33 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param bool $includeIndirectLinks
-	 * @return $this
-	 */
-	public function setIncludeIndirectLinks(bool $includeIndirectLinks)
-	{
-		$this->payload['include_indirect_links'] = $includeIndirectLinks;
+    /**
+     * @param bool $includeIndirectLinks
+     *
+     * @return $this
+     */
+    public function setIncludeIndirectLinks(bool $includeIndirectLinks)
+    {
+        $this->payload['include_indirect_links'] = $includeIndirectLinks;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $excludeInternalBackLinks
-	 * @return $this
-	 */
-	public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
-	{
-		$this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
-		return $this;
-	}
+    /**
+     * @param bool $excludeInternalBackLinks
+     *
+     * @return $this
+     */
+    public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
+    {
+        $this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
+
+        return $this;
+    }
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
@@ -172,10 +193,10 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
-
     /**
      * @return BacklinksBacklinksLiveEntityMain
      */
+    #[\Override]
     public function get(): BacklinksBacklinksLiveEntityMain
     {
         return parent::get();
@@ -183,12 +204,14 @@ class BacklinksBacklinksLive extends AbstractModel
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub
     }
-
 }

@@ -4,26 +4,25 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_elementLinks;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_element 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_element
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_elementLinks[] $links;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_elementLinks[];
+     */
     public $links = [];
- 
 }

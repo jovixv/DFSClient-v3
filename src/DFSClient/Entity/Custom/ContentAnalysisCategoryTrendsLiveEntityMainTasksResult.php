@@ -2,75 +2,74 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultTop_domains;
-use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultSentiment_connotations;
 use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultConnotation_types;
-use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultText_categories;
-use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_categories;
-use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_types;
 use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultCountries;
 use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultLanguages;
+use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_categories;
+use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_types;
+use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultSentiment_connotations;
+use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultText_categories;
+use DFSClientV3\Entity\Custom\ContentAnalysisCategoryTrendsLiveEntityMainTasksResultTop_domains;
 
-class ContentAnalysisCategoryTrendsLiveEntityMainTasksResult 
-{    
+class ContentAnalysisCategoryTrendsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $rank;
-    */
+     * @var null|integer;
+     */
     public $rank = null;
 
     /**
-    * @var array|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultTop_domains[] $top_domains;
-    */
+     * @var array|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultTop_domains[];
+     */
     public $top_domains = [];
 
     /**
-    * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultSentiment_connotations $sentiment_connotations;
-    */
+     * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultSentiment_connotations;
+     */
     public $sentiment_connotations = null;
 
     /**
-    * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultConnotation_types $connotation_types;
-    */
+     * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultConnotation_types;
+     */
     public $connotation_types = null;
 
     /**
-    * @var array|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultText_categories[] $text_categories;
-    */
+     * @var array|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultText_categories[];
+     */
     public $text_categories = [];
 
     /**
-    * @var array|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_categories[] $page_categories;
-    */
+     * @var array|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_categories[];
+     */
     public $page_categories = [];
 
     /**
-    * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_types $page_types;
-    */
+     * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultPage_types;
+     */
     public $page_types = null;
 
     /**
-    * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultCountries $countries;
-    */
+     * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultCountries;
+     */
     public $countries = null;
 
     /**
-    * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultLanguages $languages;
-    */
+     * @var null|ContentAnalysisCategoryTrendsLiveEntityMainTasksResultLanguages;
+     */
     public $languages = null;
- 
 }

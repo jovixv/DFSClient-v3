@@ -7,37 +7,37 @@ use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsM
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsMaps_paid_item
 {
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsMaps_paid_itemRating $rating;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsMaps_paid_itemRating;
+     */
     public $rating = null;
 }

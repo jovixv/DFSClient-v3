@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack 
-{    
+class BulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack
+{
     /**
-    * @var null|double $etv;
-    */
+     * @var null|double;
+     */
     public $etv = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

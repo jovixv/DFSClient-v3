@@ -1,48 +1,46 @@
 <?php
 
-
 namespace DFSClientV3\Services\EntityCreator;
-
 
 use DFSClientV3\Entity\Custom\DictionaryEntity;
 
 class ClassCreatorOptions
 {
     /**
-     * @var string|null $json
+     * @var string|null
      */
     protected $json = null;
 
     /**
-     * @var string|null $filePath
+     * @var string|null
      */
     protected $filePath = null;
 
     /**
-     * @var string|null $className;
+     * @var string|null;
      */
     protected $className = null;
 
     /**
-     * @var string $suffix
+     * @var string
      */
     protected $suffix = 'Main';
 
     /**
-     * @var boolean $resultCanBeTransformedToArray
+     * @var boolean
      */
     protected $resultCanBeTransformedToArray = false;
 
     /**
-     * @var boolean $isFileRequired
+     * @var boolean
      */
     protected $isFileRequired = true;
 
     /**
      * Json contain variable types in structure.
-     * Example: items: [{type: 'firstType'}, {type: 'secondType'}]
+     * Example: items: [{type: 'firstType'}, {type: 'secondType'}].
      *
-     * @var bool $jsonContainVariadicType
+     * @var bool
      */
     protected $jsonContainVariadicType = false;
 
@@ -58,10 +56,10 @@ class ClassCreatorOptions
      *    }
      * [
      *
-     * @var array $pathsToVariadicTypesAndValue
+     * @var array
      */
     protected $pathsToVariadicTypesAndValue = [
-        'tasks->(:number)->result->(:number)->items' => 'fieldName'
+        'tasks->(:number)->result->(:number)->items' => 'fieldName',
     ];
 
     /**
@@ -74,9 +72,8 @@ class ClassCreatorOptions
     ];
 
     protected $pathsToDictionary = [
-        'tasks->(:number)->result->(:number)->items->number' => DictionaryEntity::class
+        'tasks->(:number)->result->(:number)->items->number' => DictionaryEntity::class,
     ];
-
 
     /**
      * @param bool $jsonContainVariadicType
@@ -110,14 +107,14 @@ class ClassCreatorOptions
         $this->pathsToDictionary = $pathsToDictionary;
     }
 
-
     /**
      * @return array
      */
-    public function getPathsToDictionary():array
+    public function getPathsToDictionary(): array
     {
         return $this->pathsToDictionary;
     }
+
     /**
      * @return string
      */
@@ -224,6 +221,7 @@ class ClassCreatorOptions
 
     /**
      * @param string $path
+     *
      * @return callable|null
      */
     public function getCustomFunctionForPath(string $path): ?callable
@@ -234,7 +232,7 @@ class ClassCreatorOptions
     /**
      * @return array
      */
-    public function getCustomFunctionsForPaths():array
+    public function getCustomFunctionsForPaths(): array
     {
         return $this->customFunctionForPaths;
     }
@@ -246,5 +244,4 @@ class ClassCreatorOptions
     {
         $this->customFunctionForPaths = $customFunctionForPaths;
     }
-
 }

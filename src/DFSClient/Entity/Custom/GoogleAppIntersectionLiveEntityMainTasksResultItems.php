@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data;
 
-class GoogleAppIntersectionLiveEntityMainTasksResultItems 
-{    
+class GoogleAppIntersectionLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|GoogleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data $keyword_data;
-    */
+     * @var null|GoogleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data;
+     */
     public $keyword_data = null;
 
     /**
-    * @var null|array $intersection_result;
-    */
+     * @var null|array;
+     */
     public $intersection_result = null;
- 
 }

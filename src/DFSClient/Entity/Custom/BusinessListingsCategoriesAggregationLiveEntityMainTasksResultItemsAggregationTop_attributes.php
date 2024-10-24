@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_attributes 
-{    
+class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_attributes
+{
     /**
-    * @var null|integer $has_delivery;
-    */
+     * @var null|integer;
+     */
     public $has_delivery = null;
 
     /**
-    * @var null|integer $has_takeout;
-    */
+     * @var null|integer;
+     */
     public $has_takeout = null;
 
     /**
-    * @var null|integer $feels_casual;
-    */
+     * @var null|integer;
+     */
     public $feels_casual = null;
 
     /**
-    * @var null|integer $pay_debit_card;
-    */
+     * @var null|integer;
+     */
     public $pay_debit_card = null;
 
     /**
-    * @var null|integer $pay_mobile_nfc;
-    */
+     * @var null|integer;
+     */
     public $pay_mobile_nfc = null;
 
     /**
-    * @var null|integer $has_no_contact_delivery;
-    */
+     * @var null|integer;
+     */
     public $has_no_contact_delivery = null;
 
     /**
-    * @var null|integer $serves_dessert;
-    */
+     * @var null|integer;
+     */
     public $serves_dessert = null;
 
     /**
-    * @var null|integer $serves_dinner;
-    */
+     * @var null|integer;
+     */
     public $serves_dinner = null;
 
     /**
-    * @var null|integer $accepts_reservations;
-    */
+     * @var null|integer;
+     */
     public $accepts_reservations = null;
 
     /**
-    * @var null|integer $has_wheelchair_accessible_entrance;
-    */
+     * @var null|integer;
+     */
     public $has_wheelchair_accessible_entrance = null;
- 
 }

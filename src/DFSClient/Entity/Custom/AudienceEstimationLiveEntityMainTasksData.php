@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AudienceEstimationLiveEntityMainTasksData 
-{    
+class AudienceEstimationLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|array $age;
-    */
+     * @var null|array;
+     */
     public $age = null;
 
     /**
-    * @var null|double $bid;
-    */
+     * @var null|double;
+     */
     public $bid = null;
 
     /**
-    * @var null|integer $daily_budget;
-    */
+     * @var null|integer;
+     */
     public $daily_budget = null;
 
     /**
-    * @var null|array $gender;
-    */
+     * @var null|array;
+     */
     public $gender = null;
 
     /**
-    * @var null|array $industry;
-    */
+     * @var null|array;
+     */
     public $industry = null;
 
     /**
-    * @var null|array $job_function;
-    */
+     * @var null|array;
+     */
     public $job_function = null;
- 
 }

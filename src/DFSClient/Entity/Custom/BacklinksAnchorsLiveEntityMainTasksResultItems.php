@@ -7,98 +7,97 @@ use DFSClientV3\Entity\Custom\BacklinksAnchorsLiveEntityMainTasksResultItemsRefe
 class BacklinksAnchorsLiveEntityMainTasksResultItems
 {
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $anchor;
-    */
+     * @var null|string;
+     */
     public $anchor = null;
 
     /**
-    * @var null|integer $rank;
-    */
+     * @var null|integer;
+     */
     public $rank = null;
 
     /**
-    * @var null|integer $backlinks;
-    */
+     * @var null|integer;
+     */
     public $backlinks = null;
 
     /**
-    * @var null|string $first_seen;
-    */
+     * @var null|string;
+     */
     public $first_seen = null;
 
     /**
-    * @var null|string $lost_date;
-    */
+     * @var null|string;
+     */
     public $lost_date = null;
 
     /**
-    * @var null|integer $broken_backlinks;
-    */
+     * @var null|integer;
+     */
     public $broken_backlinks = null;
 
     /**
-    * @var null|integer $broken_pages;
-    */
+     * @var null|integer;
+     */
     public $broken_pages = null;
 
     /**
-    * @var null|integer $referring_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_domains = null;
 
     /**
-    * @var null|integer $referring_main_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_main_domains = null;
 
     /**
-    * @var null|integer $referring_ips;
-    */
+     * @var null|integer;
+     */
     public $referring_ips = null;
 
     /**
-    * @var null|integer $referring_subnets;
-    */
+     * @var null|integer;
+     */
     public $referring_subnets = null;
 
     /**
-    * @var null|integer $referring_pages;
-    */
+     * @var null|integer;
+     */
     public $referring_pages = null;
 
     /**
-    * @var null|array $referring_links_tld;
-    */
+     * @var null|array;
+     */
     public $referring_links_tld = null;
 
     /**
-    * @var null|BacklinksAnchorsLiveEntityMainTasksResultItemsReferring_links_types $referring_links_types;
-    */
+     * @var null|BacklinksAnchorsLiveEntityMainTasksResultItemsReferring_links_types;
+     */
     public $referring_links_types = null;
 
     /**
-    * @var null|array $referring_links_attributes;
-    */
+     * @var null|array;
+     */
     public $referring_links_attributes = null;
 
     /**
-    * @var null|array $referring_links_platform_types;
-    */
+     * @var null|array;
+     */
     public $referring_links_platform_types = null;
 
     /**
-    * @var null|array $referring_links_semantic_locations;
-    */
+     * @var null|array;
+     */
     public $referring_links_semantic_locations = null;
 
-		/**
-		 * @var null|array $referring_links_countries;
-		 */
-		public $referring_links_countries = null;
-
+    /**
+     * @var null|array;
+     */
+    public $referring_links_countries = null;
 }

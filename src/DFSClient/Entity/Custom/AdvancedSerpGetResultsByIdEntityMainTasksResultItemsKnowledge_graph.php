@@ -4,76 +4,75 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|NULL $xpath;
-    */
+     * @var null|null;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $sub_title;
-    */
+     * @var null|string;
+     */
     public $sub_title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $card_id;
-    */
+     * @var null|string;
+     */
     public $card_id = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $image_url;
-    */
+     * @var null|null;
+     */
     public $image_url = null;
 
     /**
-    * @var null|NULL $cid;
-    */
+     * @var null|null;
+     */
     public $cid = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|NULL $rectangle;
-    */
+     * @var null|null;
+     */
     public $rectangle = null;
- 
 }

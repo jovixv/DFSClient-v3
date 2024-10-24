@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGenderValues 
-{    
+class DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGenderValues
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
- 
 }

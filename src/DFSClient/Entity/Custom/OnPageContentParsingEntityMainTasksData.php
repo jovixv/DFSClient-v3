@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageContentParsingEntityMainTasksData 
-{    
+class OnPageContentParsingEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $max_crawl_pages;
-    */
+     * @var null|integer;
+     */
     public $max_crawl_pages = null;
 
     /**
-    * @var null|boolean $enable_content_parsing;
-    */
+     * @var null|boolean;
+     */
     public $enable_content_parsing = null;
 
     /**
-    * @var null|string $pingback_url;
-    */
+     * @var null|string;
+     */
     public $pingback_url = null;
- 
 }

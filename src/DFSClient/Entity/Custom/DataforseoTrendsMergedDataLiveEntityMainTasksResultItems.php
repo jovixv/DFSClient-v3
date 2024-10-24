@@ -4,31 +4,30 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DataforseoTrendsMergedDataLiveEntityMainTasksResultItemsData;
 
-class DataforseoTrendsMergedDataLiveEntityMainTasksResultItems 
-{    
+class DataforseoTrendsMergedDataLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|integer $position;
-    */
+     * @var null|integer;
+     */
     public $position = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
 
     /**
-    * @var array|DataforseoTrendsMergedDataLiveEntityMainTasksResultItemsData[] $data;
-    */
+     * @var array|DataforseoTrendsMergedDataLiveEntityMainTasksResultItemsData[];
+     */
     public $data = [];
 
     /**
-    * @var null|array $averages;
-    */
+     * @var null|array;
+     */
     public $averages = null;
- 
 }
