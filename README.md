@@ -6,7 +6,7 @@ This is a PHP client library for the DataForSEO API. The library describes model
 
 ### Requirements
 
-PHP 7.3 and later
+PHP 8.3 and later
 
 ### Installation
 

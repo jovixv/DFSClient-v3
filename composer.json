@@ -1,18 +1,18 @@
 {
-    "name": "jovix/dataforseo-clientv3",
+    "name": "simonfunk/dataforseo-clientv3",
     "description": "PHP Client for DataForSeo",
     "minimum-stability": "dev",
     "license": "Apache-2.0",
     "require": {
-        "php": ">=7.2",
+        "php": ">=8.3.2",
         "guzzlehttp/guzzle": ">=7.0",
         "symfony/var-dumper": ">=5.0",
         "ext-json": "*"
     },
     "authors": [
         {
-            "name": "Vitaliy Lyabakh",
-            "email": "igrolan@gmail.com"
+            "name": "Simon Funk",
+            "email": "simon.funk@creaitor.ai"
         }
     ],
 
