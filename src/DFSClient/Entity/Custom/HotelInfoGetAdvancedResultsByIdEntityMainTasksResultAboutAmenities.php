@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenitiesItems;
 
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenities 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenities
+{
     /**
-    * @var null|string $category;
-    */
+     * @var null|string;
+     */
     public $category = null;
 
     /**
-    * @var null|string $category_label;
-    */
+     * @var null|string;
+     */
     public $category_label = null;
 
     /**
-    * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenitiesItems[] $items;
-    */
+     * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenitiesItems[];
+     */
     public $items = [];
- 
 }

@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TopGoogleSearchesLiveEntityMainTasksData 
-{    
+class TopGoogleSearchesLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
- 
 }

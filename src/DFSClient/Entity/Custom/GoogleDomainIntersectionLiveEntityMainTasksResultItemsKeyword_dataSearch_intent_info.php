@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info 
-{    
+class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $main_intent;
-    */
+     * @var null|string;
+     */
     public $main_intent = null;
 
     /**
-    * @var null|NULL $foreign_intent;
-    */
+     * @var null|null;
+     */
     public $foreign_intent = null;
 
     /**
-    * @var null|string $last_updated_time;
-    */
+     * @var null|string;
+     */
     public $last_updated_time = null;
- 
 }

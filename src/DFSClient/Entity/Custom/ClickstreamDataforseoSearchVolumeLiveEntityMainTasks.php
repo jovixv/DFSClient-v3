@@ -5,51 +5,50 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ClickstreamDataforseoSearchVolumeLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResult;
 
-class ClickstreamDataforseoSearchVolumeLiveEntityMainTasks 
-{    
+class ClickstreamDataforseoSearchVolumeLiveEntityMainTasks
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|double $cost;
-    */
+     * @var null|double;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $result_count;
-    */
+     * @var null|integer;
+     */
     public $result_count = null;
 
     /**
-    * @var null|array $path;
-    */
+     * @var null|array;
+     */
     public $path = null;
 
     /**
-    * @var null|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksData $data;
-    */
+     * @var null|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksData;
+     */
     public $data = null;
 
     /**
-    * @var array|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResult[] $result;
-    */
+     * @var array|ClickstreamDataforseoSearchVolumeLiveEntityMainTasksResult[];
+     */
     public $result = [];
- 
 }

@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationTextSummaryLiveEntityMainTasksResultKeyword_density 
-{    
+class ContentGenerationTextSummaryLiveEntityMainTasksResultKeyword_density
+{
     /**
-    * @var null|integer $the;
-    */
+     * @var null|integer;
+     */
     public $the = null;
 
     /**
-    * @var null|integer $https;
-    */
+     * @var null|integer;
+     */
     public $https = null;
 
     /**
-    * @var null|integer $is;
-    */
+     * @var null|integer;
+     */
     public $is = null;
 
     /**
-    * @var null|integer $to;
-    */
+     * @var null|integer;
+     */
     public $to = null;
 
     /**
-    * @var null|integer $and;
-    */
+     * @var null|integer;
+     */
     public $and = null;
 
     /**
-    * @var null|integer $an;
-    */
+     * @var null|integer;
+     */
     public $an = null;
 
     /**
-    * @var null|integer $url;
-    */
+     * @var null|integer;
+     */
     public $url = null;
 
     /**
-    * @var null|integer $my;
-    */
+     * @var null|integer;
+     */
     public $my = null;
 
     /**
-    * @var null|integer $one;
-    */
+     * @var null|integer;
+     */
     public $one = null;
 
     /**
-    * @var null|integer $method;
-    */
+     * @var null|integer;
+     */
     public $method = null;
- 
 }

@@ -2,19 +2,18 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionGoogle;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionBing;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionGoogle;
 
-class DFSLabsAvailableFiltersEntityMainTasksResultPage_intersection 
-{    
+class DFSLabsAvailableFiltersEntityMainTasksResultPage_intersection
+{
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionGoogle $google;
-    */
+     * @var null|DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionGoogle;
+     */
     public $google = null;
 
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionBing $bing;
-    */
+     * @var null|DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionBing;
+     */
     public $bing = null;
- 
 }

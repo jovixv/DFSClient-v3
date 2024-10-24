@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebLiveEntityMainTasksResultTrafficSourcesReferral_destination 
-{    
+class SimilarwebLiveEntityMainTasksResultTrafficSourcesReferral_destination
+{
     /**
-    * @var null|NULL $top_destinations;
-    */
+     * @var null|null;
+     */
     public $top_destinations = null;
- 
 }

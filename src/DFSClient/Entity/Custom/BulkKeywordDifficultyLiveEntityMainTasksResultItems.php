@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BulkKeywordDifficultyLiveEntityMainTasksResultItems 
-{    
+class BulkKeywordDifficultyLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $keyword_difficulty;
-    */
+     * @var null|integer;
+     */
     public $keyword_difficulty = null;
- 
 }

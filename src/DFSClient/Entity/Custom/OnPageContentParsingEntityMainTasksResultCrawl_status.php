@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageContentParsingEntityMainTasksResultCrawl_status 
-{    
+class OnPageContentParsingEntityMainTasksResultCrawl_status
+{
     /**
-    * @var null|integer $max_crawl_pages;
-    */
+     * @var null|integer;
+     */
     public $max_crawl_pages = null;
 
     /**
-    * @var null|integer $pages_in_queue;
-    */
+     * @var null|integer;
+     */
     public $pages_in_queue = null;
 
     /**
-    * @var null|integer $pages_crawled;
-    */
+     * @var null|integer;
+     */
     public $pages_crawled = null;
- 
 }

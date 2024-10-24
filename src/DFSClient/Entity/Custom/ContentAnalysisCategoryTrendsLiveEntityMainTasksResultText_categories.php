@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisCategoryTrendsLiveEntityMainTasksResultText_categories 
-{    
+class ContentAnalysisCategoryTrendsLiveEntityMainTasksResultText_categories
+{
     /**
-    * @var null|array $category;
-    */
+     * @var null|array;
+     */
     public $category = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

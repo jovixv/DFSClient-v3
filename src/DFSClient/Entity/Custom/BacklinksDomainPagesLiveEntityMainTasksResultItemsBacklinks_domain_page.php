@@ -5,95 +5,94 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary;
 
 class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_page
-{    
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $main_domain;
-    */
+     * @var null|string;
+     */
     public $main_domain = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $tld;
-    */
+     * @var null|string;
+     */
     public $tld = null;
 
     /**
-    * @var null|string $page;
-    */
+     * @var null|string;
+     */
     public $page = null;
 
     /**
-    * @var null|string $ip;
-    */
+     * @var null|string;
+     */
     public $ip = null;
 
     /**
-    * @var null|NULL $first_visited;
-    */
+     * @var null|null;
+     */
     public $first_visited = null;
 
     /**
-    * @var null|NULL $prev_visited;
-    */
+     * @var null|null;
+     */
     public $prev_visited = null;
 
     /**
-    * @var null|string $fetch_time;
-    */
+     * @var null|string;
+     */
     public $fetch_time = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|NULL $location;
-    */
+     * @var null|null;
+     */
     public $location = null;
 
     /**
-    * @var null|integer $size;
-    */
+     * @var null|integer;
+     */
     public $size = null;
 
     /**
-    * @var null|integer $encoded_size;
-    */
+     * @var null|integer;
+     */
     public $encoded_size = null;
 
     /**
-    * @var null|NULL $content_encoding;
-    */
+     * @var null|null;
+     */
     public $content_encoding = null;
 
     /**
-    * @var null|string $media_type;
-    */
+     * @var null|string;
+     */
     public $media_type = null;
 
     /**
-    * @var null|NULL $server;
-    */
+     * @var null|null;
+     */
     public $server = null;
 
     /**
-    * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta $meta;
-    */
+     * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pageMeta;
+     */
     public $meta = null;
 
     /**
-    * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary $page_summary;
-    */
+     * @var null|BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summary;
+     */
     public $page_summary = null;
- 
 }

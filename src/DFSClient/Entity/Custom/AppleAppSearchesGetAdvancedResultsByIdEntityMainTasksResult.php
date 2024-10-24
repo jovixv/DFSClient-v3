@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AppleAppSearchesGetAdvancedResultsByIdEntityMainTasksResult 
-{    
+class AppleAppSearchesGetAdvancedResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|NULL $check_url;
-    */
+     * @var null|null;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|integer $se_results_count;
-    */
+     * @var null|integer;
+     */
     public $se_results_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|AppleAppSearchesGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|AppleAppSearchesGetAdvancedResultsByIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

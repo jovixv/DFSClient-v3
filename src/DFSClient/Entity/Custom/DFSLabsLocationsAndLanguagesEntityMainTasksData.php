@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsLocationsAndLanguagesEntityMainTasksData 
-{    
+class DFSLabsLocationsAndLanguagesEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
- 
 }

@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItemsCountry_distribution;
 
-class ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItems 
-{    
+class ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var array|ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItemsCountry_distribution[] $country_distribution;
-    */
+     * @var array|ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItemsCountry_distribution[];
+     */
     public $country_distribution = [];
- 
 }

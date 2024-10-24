@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesTechnologyStatsLiveEntityMainTasksData 
-{    
+class TechnologiesTechnologyStatsLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $technology;
-    */
+     * @var null|string;
+     */
     public $technology = null;
 
     /**
-    * @var null|string $date_from;
-    */
+     * @var null|string;
+     */
     public $date_from = null;
 
     /**
-    * @var null|string $date_to;
-    */
+     * @var null|string;
+     */
     public $date_to = null;
- 
 }

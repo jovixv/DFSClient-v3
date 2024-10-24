@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultDomain_intersectionGoogle 
-{    
-    
+class DFSLabsAvailableFiltersEntityMainTasksResultDomain_intersectionGoogle
+{
 }

@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_data;
 
-class GoogleRelatedKeywordsLiveEntityMainTasksResult 
-{    
+class GoogleRelatedKeywordsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $seed_keyword;
-    */
+     * @var null|string;
+     */
     public $seed_keyword = null;
 
     /**
-    * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_data $seed_keyword_data;
-    */
+     * @var null|GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_data;
+     */
     public $seed_keyword_data = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleRelatedKeywordsLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleRelatedKeywordsLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

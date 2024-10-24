@@ -8,16 +8,24 @@ use DFSClientV3\Models\AbstractModel;
 class BacklinksReferringNetworksLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'backlinks/referring_networks/live';
+
     protected $resultShouldBeTransformedToArray = true;
+
     protected $jsonContainVariadicType = false;
+
     protected $pathsToVariadicTypesAndValue = ['tasks->(:number)->result->(:number)->items->(:number)' => 'type'];
+
     protected $useNewMapper = true;
 
     /**
      * @param string $target
+     *
      * @return $this
      */
     public function setTarget(string $target)
@@ -27,19 +35,21 @@ class BacklinksReferringNetworksLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param string $networkAddressType
-	 * @return $this
-	 */
-	public function setNetworkAddressType(string $networkAddressType)
-	{
-		$this->payload['network_address_type'] = $networkAddressType;
+    /**
+     * @param string $networkAddressType
+     *
+     * @return $this
+     */
+    public function setNetworkAddressType(string $networkAddressType)
+    {
+        $this->payload['network_address_type'] = $networkAddressType;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -51,6 +61,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -62,6 +73,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -73,6 +85,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -84,6 +97,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param int $internalListLimit
+     *
      * @return $this
      */
     public function setInternalListLimit(int $internalListLimit)
@@ -95,6 +109,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param string $backlinksStatusType
+     *
      * @return $this
      */
     public function setBacklinksStatusType(string $backlinksStatusType)
@@ -106,6 +121,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param array $backlinksFilters
+     *
      * @return $this
      */
     public function setBacklinksFilters(array $backlinksFilters)
@@ -117,6 +133,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param bool $includeSubdomains
+     *
      * @return $this
      */
     public function setIncludeSubdomains(bool $includeSubdomains)
@@ -128,6 +145,7 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param bool $excludeInternalBacklinks
+     *
      * @return $this
      */
     public function setExcludeInternalBacklinks(bool $excludeInternalBacklinks)
@@ -137,19 +155,21 @@ class BacklinksReferringNetworksLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param bool $includeIndirectLinks
-	 * @return $this
-	 */
-	public function setIncludeIndirectLinks(bool $includeIndirectLinks)
-	{
-		$this->payload['include_indirect_links'] = $includeIndirectLinks;
+    /**
+     * @param bool $includeIndirectLinks
+     *
+     * @return $this
+     */
+    public function setIncludeIndirectLinks(bool $includeIndirectLinks)
+    {
+        $this->payload['include_indirect_links'] = $includeIndirectLinks;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
@@ -159,33 +179,23 @@ class BacklinksReferringNetworksLive extends AbstractModel
         return $this;
     }
 
+    #[\Override]
     protected function initCustomFunctionForPaths(): array
     {
         return [
-            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_tld' => function($key, $value){
-                return (array) $value;
-            },
-            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_attributes' => function($key, $value){
-                return (array) $value;
-            },
-		        'tasks->(:number)->result->(:number)->items->(:number)->referring_links_types' => function($key, $value){
-			        return (array) $value;
-		        },
-            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_platform_types' => function($key, $value){
-                return (array) $value;
-            },
-            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_semantic_locations' => function($key, $value){
-                return (array) $value;
-            },
-		        'tasks->(:number)->result->(:number)->items->(:number)->referring_links_countries' => function($key, $value){
-			        return (array) $value;
-		        },
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_tld'                => fn ($key, $value) => (array) $value,
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_attributes'         => fn ($key, $value) => (array) $value,
+                'tasks->(:number)->result->(:number)->items->(:number)->referring_links_types'          => fn ($key, $value) => (array) $value,
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_platform_types'     => fn ($key, $value) => (array) $value,
+            'tasks->(:number)->result->(:number)->items->(:number)->referring_links_semantic_locations' => fn ($key, $value) => (array) $value,
+                'tasks->(:number)->result->(:number)->items->(:number)->referring_links_countries'      => fn ($key, $value) => (array) $value,
         ];
     }
 
     /**
      * @return BacklinksReferringNetworksLiveEntityMain
      */
+    #[\Override]
     public function get(): BacklinksReferringNetworksLiveEntityMain
     {
         return parent::get();
@@ -193,12 +203,14 @@ class BacklinksReferringNetworksLive extends AbstractModel
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub
     }
-
 }

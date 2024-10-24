@@ -2,102 +2,100 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info 
-{    
+class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $last_updated_time;
-    */
+     * @var null|string;
+     */
     public $last_updated_time = null;
 
     /**
-    * @var null|integer $bid;
-    */
+     * @var null|integer;
+     */
     public $bid = null;
 
     /**
-    * @var null|string $match_type;
-    */
+     * @var null|string;
+     */
     public $match_type = null;
 
     /**
-    * @var null|NULL $ad_position_min;
-    */
+     * @var null|null;
+     */
     public $ad_position_min = null;
 
     /**
-    * @var null|NULL $ad_position_max;
-    */
+     * @var null|null;
+     */
     public $ad_position_max = null;
 
     /**
-    * @var null|NULL $ad_position_average;
-    */
+     * @var null|null;
+     */
     public $ad_position_average = null;
 
     /**
-    * @var null|NULL $cpc_min;
-    */
+     * @var null|null;
+     */
     public $cpc_min = null;
 
     /**
-    * @var null|NULL $cpc_max;
-    */
+     * @var null|null;
+     */
     public $cpc_max = null;
 
     /**
-    * @var null|NULL $cpc_average;
-    */
+     * @var null|null;
+     */
     public $cpc_average = null;
 
     /**
-    * @var null|NULL $daily_impressions_min;
-    */
+     * @var null|null;
+     */
     public $daily_impressions_min = null;
 
     /**
-    * @var null|NULL $daily_impressions_max;
-    */
+     * @var null|null;
+     */
     public $daily_impressions_max = null;
 
     /**
-    * @var null|NULL $daily_impressions_average;
-    */
+     * @var null|null;
+     */
     public $daily_impressions_average = null;
 
     /**
-    * @var null|NULL $daily_clicks_min;
-    */
+     * @var null|null;
+     */
     public $daily_clicks_min = null;
 
     /**
-    * @var null|NULL $daily_clicks_max;
-    */
+     * @var null|null;
+     */
     public $daily_clicks_max = null;
 
     /**
-    * @var null|NULL $daily_clicks_average;
-    */
+     * @var null|null;
+     */
     public $daily_clicks_average = null;
 
     /**
-    * @var null|NULL $daily_cost_min;
-    */
+     * @var null|null;
+     */
     public $daily_cost_min = null;
 
     /**
-    * @var null|NULL $daily_cost_max;
-    */
+     * @var null|null;
+     */
     public $daily_cost_max = null;
 
     /**
-    * @var null|NULL $daily_cost_average;
-    */
+     * @var null|null;
+     */
     public $daily_cost_average = null;
- 
 }

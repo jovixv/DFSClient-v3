@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpCompetitorsLiveEntityMainTasksResultItems 
-{    
+class SerpCompetitorsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|integer $avg_position;
-    */
+     * @var null|integer;
+     */
     public $avg_position = null;
 
     /**
-    * @var null|integer $median_position;
-    */
+     * @var null|integer;
+     */
     public $median_position = null;
 
     /**
-    * @var null|integer $rating;
-    */
+     * @var null|integer;
+     */
     public $rating = null;
 
     /**
-    * @var null|double $etv;
-    */
+     * @var null|double;
+     */
     public $etv = null;
 
     /**
-    * @var null|integer $keywords_count;
-    */
+     * @var null|integer;
+     */
     public $keywords_count = null;
 
     /**
-    * @var null|integer $visibility;
-    */
+     * @var null|integer;
+     */
     public $visibility = null;
 
     /**
-    * @var null|integer $relevant_serp_items;
-    */
+     * @var null|integer;
+     */
     public $relevant_serp_items = null;
 
     /**
-    * @var null|array $keywords_positions;
-    */
+     * @var null|array;
+     */
     public $keywords_positions = null;
- 
 }

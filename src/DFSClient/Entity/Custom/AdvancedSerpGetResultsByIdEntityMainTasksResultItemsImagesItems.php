@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesItems 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $alt;
-    */
+     * @var null|string;
+     */
     public $alt = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
- 
 }

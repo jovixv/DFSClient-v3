@@ -1,30 +1,36 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Google;
 
-
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class GoogleRankedKeywordsLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'dataforseo_labs/google/ranked_keywords/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $useNewMapper = true;
+
+    protected $requestToFunction = 'dataforseo_labs/google/ranked_keywords/live';
+
+    protected $resultShouldBeTransformedToArray = true;
+
+    protected $useNewMapper = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMain
+     * @return GoogleRankedKeywordsLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMain
+    #[\Override]
+    public function get(): GoogleRankedKeywordsLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $target
+     *
      * @return $this
      */
     public function setTarget(string $target)
@@ -36,6 +42,7 @@ class GoogleRankedKeywordsLive extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -47,26 +54,31 @@ class GoogleRankedKeywordsLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -76,62 +88,69 @@ class GoogleRankedKeywordsLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param array $itemTypes
-	 * @return $this
-	 */
-	public function setItemTypes(array $itemTypes)
-	{
-		$this->payload['item_types'] = $itemTypes;
+    /**
+     * @param array $itemTypes
+     *
+     * @return $this
+     */
+    public function setItemTypes(array $itemTypes)
+    {
+        $this->payload['item_types'] = $itemTypes;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $loadRankAbsolute
-	 * @return $this
-	 */
-	public function setLoadRankAbsolute(bool $loadRankAbsolute)
-	{
-		$this->payload['load_rank_absolute'] = $loadRankAbsolute;
+    /**
+     * @param bool $loadRankAbsolute
+     *
+     * @return $this
+     */
+    public function setLoadRankAbsolute(bool $loadRankAbsolute)
+    {
+        $this->payload['load_rank_absolute'] = $loadRankAbsolute;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $historicalSerpMode
-	 * @return $this
-	 */
-	public function setHistoricalSerpMode(string $historicalSerpMode)
-	{
-		$this->payload['historical_serp_mode'] = $historicalSerpMode;
-		return $this;
-	}
+    /**
+     * @param string $historicalSerpMode
+     *
+     * @return $this
+     */
+    public function setHistoricalSerpMode(string $historicalSerpMode)
+    {
+        $this->payload['historical_serp_mode'] = $historicalSerpMode;
 
-	/**
-	 * @param bool $ignoreSynonyms
-	 * @return $this
-	 */
-	public function setIgnoreSynonyms(bool $ignoreSynonyms)
-	{
-		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param bool $ignoreSynonyms
+     *
+     * @return $this
+     */
+    public function setIgnoreSynonyms(bool $ignoreSynonyms)
+    {
+        $this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
-	/**
-	 * @param bool $includeClickstreamData
-	 * @return $this
-	 */
-	public function setIncludeClickstreamData(bool $includeClickstreamData)
-	{
-		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param bool $includeClickstreamData
+     *
+     * @return $this
+     */
+    public function setIncludeClickstreamData(bool $includeClickstreamData)
+    {
+        $this->payload['include_clickstream_data'] = $includeClickstreamData;
+
+        return $this;
+    }
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -143,6 +162,7 @@ class GoogleRankedKeywordsLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -154,6 +174,7 @@ class GoogleRankedKeywordsLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -165,6 +186,7 @@ class GoogleRankedKeywordsLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -176,19 +198,24 @@ class GoogleRankedKeywordsLive extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

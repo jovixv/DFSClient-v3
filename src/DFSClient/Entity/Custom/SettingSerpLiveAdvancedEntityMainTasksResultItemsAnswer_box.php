@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_box 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_box
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|array $text;
-    */
+     * @var null|array;
+     */
     public $text = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxLinks[] $links;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxLinks[];
+     */
     public $links = [];
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsAnswer_boxRectangle;
+     */
     public $rectangle = null;
- 
 }

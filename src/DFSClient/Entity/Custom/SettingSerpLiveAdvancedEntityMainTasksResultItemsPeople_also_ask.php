@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_ask 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_ask
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItems[] $items;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askRectangle;
+     */
     public $rectangle = null;
- 
 }

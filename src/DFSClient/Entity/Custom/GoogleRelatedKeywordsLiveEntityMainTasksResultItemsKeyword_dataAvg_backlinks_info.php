@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info 
-{    
+class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|double $backlinks;
-    */
+     * @var null|double;
+     */
     public $backlinks = null;
 
     /**
-    * @var null|double $dofollow;
-    */
+     * @var null|double;
+     */
     public $dofollow = null;
 
     /**
-    * @var null|double $referring_pages;
-    */
+     * @var null|double;
+     */
     public $referring_pages = null;
 
     /**
-    * @var null|double $referring_domains;
-    */
+     * @var null|double;
+     */
     public $referring_domains = null;
 
     /**
-    * @var null|double $referring_main_domains;
-    */
+     * @var null|double;
+     */
     public $referring_main_domains = null;
 
     /**
-    * @var null|double $rank;
-    */
+     * @var null|double;
+     */
     public $rank = null;
 
     /**
-    * @var null|double $main_domain_rank;
-    */
+     * @var null|double;
+     */
     public $main_domain_rank = null;
 
     /**
-    * @var null|string $last_updated_time;
-    */
+     * @var null|string;
+     */
     public $last_updated_time = null;
- 
 }

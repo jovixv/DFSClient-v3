@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BackLinksDomainIntersectionEntityMainTasksDataTargets;
 
-class BackLinksDomainIntersectionEntityMainTasksData 
-{    
+class BackLinksDomainIntersectionEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|BackLinksDomainIntersectionEntityMainTasksDataTargets $targets;
-    */
+     * @var null|BackLinksDomainIntersectionEntityMainTasksDataTargets;
+     */
     public $targets = null;
- 
 }

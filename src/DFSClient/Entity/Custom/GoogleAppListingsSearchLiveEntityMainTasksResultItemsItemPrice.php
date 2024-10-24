@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice 
-{    
+class GoogleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice
+{
     /**
-    * @var null|integer $current;
-    */
+     * @var null|integer;
+     */
     public $current = null;
 
     /**
-    * @var null|NULL $regular;
-    */
+     * @var null|null;
+     */
     public $regular = null;
 
     /**
-    * @var null|NULL $max_value;
-    */
+     * @var null|null;
+     */
     public $max_value = null;
 
     /**
-    * @var null|string $currency;
-    */
+     * @var null|string;
+     */
     public $currency = null;
 
     /**
-    * @var null|boolean $is_price_range;
-    */
+     * @var null|boolean;
+     */
     public $is_price_range = null;
 
     /**
-    * @var null|NULL $displayed_price;
-    */
+     * @var null|null;
+     */
     public $displayed_price = null;
- 
 }

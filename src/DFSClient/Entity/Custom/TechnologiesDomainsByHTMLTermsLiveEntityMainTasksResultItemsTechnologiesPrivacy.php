@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesPrivacy 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesPrivacy
+{
     /**
-    * @var null|array $cookie_compliance;
-    */
+     * @var null|array;
+     */
     public $cookie_compliance = null;
- 
 }

@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultMetrics;
 
-class RankedKeywordsLiveEntityMainTasksResult 
-{    
+class RankedKeywordsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var null|RankedKeywordsLiveEntityMainTasksResultMetrics $metrics;
-    */
+     * @var null|RankedKeywordsLiveEntityMainTasksResultMetrics;
+     */
     public $metrics = null;
 
     /**
-    * array|RankedKeywordsLiveEntityMainTasksResultItems[] $items;
-    */
+     * array|RankedKeywordsLiveEntityMainTasksResultItems[] $items;.
+     */
     public $items = [];
- 
 }

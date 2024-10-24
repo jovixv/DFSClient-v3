@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisLocationsEntityMainTasksResult 
-{    
+class ContentAnalysisLocationsEntityMainTasksResult
+{
     /**
-    * @var null|string $location_name;
-    */
+     * @var null|string;
+     */
     public $location_name = null;
 
     /**
-    * @var null|string $country_iso_code;
-    */
+     * @var null|string;
+     */
     public $country_iso_code = null;
- 
 }

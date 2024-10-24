@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetCompletedTasksEntityMainTasksResult 
-{    
+class OnPageGetCompletedTasksEntityMainTasksResult
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|string $date_posted;
-    */
+     * @var null|string;
+     */
     public $date_posted = null;
 
     /**
-    * @var null|string $tag;
-    */
+     * @var null|string;
+     */
     public $tag = null;
- 
 }

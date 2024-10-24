@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile 
-{    
+class GoogleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile
+{
     /**
-    * @var null|string $profile_name;
-    */
+     * @var null|string;
+     */
     public $profile_name = null;
 
     /**
-    * @var null|string $profile_image_url;
-    */
+     * @var null|string;
+     */
     public $profile_image_url = null;
- 
 }

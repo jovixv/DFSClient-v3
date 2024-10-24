@@ -4,51 +4,50 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingPageIntersectionLiveEntityMainTasksDataPages;
 
-class BingPageIntersectionLiveEntityMainTasksData 
-{    
+class BingPageIntersectionLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|BingPageIntersectionLiveEntityMainTasksDataPages $pages;
-    */
+     * @var null|BingPageIntersectionLiveEntityMainTasksDataPages;
+     */
     public $pages = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|array $item_types;
-    */
+     * @var null|array;
+     */
     public $item_types = null;
 
     /**
-    * @var null|boolean $include_serp_info;
-    */
+     * @var null|boolean;
+     */
     public $include_serp_info = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
- 
 }

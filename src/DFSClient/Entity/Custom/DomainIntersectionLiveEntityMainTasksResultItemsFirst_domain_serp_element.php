@@ -2,134 +2,133 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementLinks;
+use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating;
 
-class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element 
-{    
+class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $breadcrumb;
-    */
+     * @var null|string;
+     */
     public $breadcrumb = null;
 
     /**
-    * @var null|boolean $is_image;
-    */
+     * @var null|boolean;
+     */
     public $is_image = null;
 
     /**
-    * @var null|boolean $is_video;
-    */
+     * @var null|boolean;
+     */
     public $is_video = null;
 
     /**
-    * @var null|boolean $is_featured_snippet;
-    */
+     * @var null|boolean;
+     */
     public $is_featured_snippet = null;
 
     /**
-    * @var null|boolean $is_malicious;
-    */
+     * @var null|boolean;
+     */
     public $is_malicious = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $pre_snippet;
-    */
+     * @var null|string;
+     */
     public $pre_snippet = null;
 
     /**
-    * @var null|string $extended_snippet;
-    */
+     * @var null|string;
+     */
     public $extended_snippet = null;
 
     /**
-    * @var null|boolean $amp_version;
-    */
+     * @var null|boolean;
+     */
     public $amp_version = null;
 
     /**
-    * @var null|DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating $rating;
-    */
+     * @var null|DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|array $highlighted;
-    */
+     * @var null|array;
+     */
     public $highlighted = null;
 
     /**
-    * @var null|DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementLinks $links;
-    */
+     * @var null|DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementLinks;
+     */
     public $links = null;
 
     /**
-    * @var null|string $main_domain;
-    */
+     * @var null|string;
+     */
     public $main_domain = null;
 
     /**
-    * @var null|string $relative_url;
-    */
+     * @var null|string;
+     */
     public $relative_url = null;
 
     /**
-    * @var null|double $etv;
-    */
+     * @var null|double;
+     */
     public $etv = null;
 
     /**
-    * @var null|double $impressions_etv;
-    */
+     * @var null|double;
+     */
     public $impressions_etv = null;
 
     /**
-    * @var null|double $estimated_paid_traffic_cost;
-    */
+     * @var null|double;
+     */
     public $estimated_paid_traffic_cost = null;
- 
 }

@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebLiveEntityMainTasksResultSitesSimilar_sites 
-{    
+class SimilarwebLiveEntityMainTasksResultSitesSimilar_sites
+{
     /**
-    * @var null|string $site;
-    */
+     * @var null|string;
+     */
     public $site = null;
 
     /**
-    * @var null|integer $rank;
-    */
+     * @var null|integer;
+     */
     public $rank = null;
- 
 }

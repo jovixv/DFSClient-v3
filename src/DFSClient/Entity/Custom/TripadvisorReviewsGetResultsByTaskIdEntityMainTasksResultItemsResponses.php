@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TripadvisorReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses 
-{    
+class TripadvisorReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses
+{
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $text;
-    */
+     * @var null|string;
+     */
     public $text = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
- 
 }

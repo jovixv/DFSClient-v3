@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisCategoryTrendsLiveEntityMainTasksData 
-{    
+class ContentAnalysisCategoryTrendsLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $category_code;
-    */
+     * @var null|string;
+     */
     public $category_code = null;
 
     /**
-    * @var null|string $date_from;
-    */
+     * @var null|string;
+     */
     public $date_from = null;
 
     /**
-    * @var null|string $date_group;
-    */
+     * @var null|string;
+     */
     public $date_group = null;
 
     /**
-    * @var null|double $positive_connotation_threshold;
-    */
+     * @var null|double;
+     */
     public $positive_connotation_threshold = null;
 
     /**
-    * @var null|integer $sentiments_connotation_threshold;
-    */
+     * @var null|integer;
+     */
     public $sentiments_connotation_threshold = null;
- 
 }

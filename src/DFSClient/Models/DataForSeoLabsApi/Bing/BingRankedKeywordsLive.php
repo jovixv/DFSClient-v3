@@ -1,29 +1,34 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Bing;
 
-
+use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class BingRankedKeywordsLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'dataforseo_labs/bing/ranked_keywords/live';
+
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMain
+     * @return BingRankedKeywordsLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMain
+    #[\Override]
+    public function get(): BingRankedKeywordsLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $target
+     *
      * @return $this
      */
     public function setTarget(string $target)
@@ -35,6 +40,7 @@ class BingRankedKeywordsLive extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -46,26 +52,31 @@ class BingRankedKeywordsLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -75,52 +86,57 @@ class BingRankedKeywordsLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param array $itemTypes
-	 * @return $this
-	 */
-	public function setItemTypes(array $itemTypes)
-	{
-		$this->payload['item_types'] = $itemTypes;
+    /**
+     * @param array $itemTypes
+     *
+     * @return $this
+     */
+    public function setItemTypes(array $itemTypes)
+    {
+        $this->payload['item_types'] = $itemTypes;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $loadRankAbsolute
-	 * @return $this
-	 */
-	public function setLoadRankAbsolute(bool $loadRankAbsolute)
-	{
-		$this->payload['load_rank_absolute'] = $loadRankAbsolute;
+    /**
+     * @param bool $loadRankAbsolute
+     *
+     * @return $this
+     */
+    public function setLoadRankAbsolute(bool $loadRankAbsolute)
+    {
+        $this->payload['load_rank_absolute'] = $loadRankAbsolute;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $ignoreSynonyms
-	 * @return $this
-	 */
-	public function setIgnoreSynonyms(bool $ignoreSynonyms)
-	{
-		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+    /**
+     * @param bool $ignoreSynonyms
+     *
+     * @return $this
+     */
+    public function setIgnoreSynonyms(bool $ignoreSynonyms)
+    {
+        $this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $historicalSerpMode
-	 * @return $this
-	 */
-	public function setHistoricalSerpMode(string $historicalSerpMode)
-	{
-		$this->payload['historical_serp_mode'] = $historicalSerpMode;
+    /**
+     * @param string $historicalSerpMode
+     *
+     * @return $this
+     */
+    public function setHistoricalSerpMode(string $historicalSerpMode)
+    {
+        $this->payload['historical_serp_mode'] = $historicalSerpMode;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -132,6 +148,7 @@ class BingRankedKeywordsLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -143,6 +160,7 @@ class BingRankedKeywordsLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -154,6 +172,7 @@ class BingRankedKeywordsLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -165,19 +184,24 @@ class BingRankedKeywordsLive extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

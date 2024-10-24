@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultMoneyStatisticsMinuteAppendix 
-{    
+class UserEntityMainTasksResultMoneyStatisticsMinuteAppendix
+{
     /**
-    * @var null|integer $errors;
-    */
+     * @var null|integer;
+     */
     public $errors = null;
 
     /**
-    * @var null|integer $user_data;
-    */
+     * @var null|integer;
+     */
     public $user_data = null;
- 
 }

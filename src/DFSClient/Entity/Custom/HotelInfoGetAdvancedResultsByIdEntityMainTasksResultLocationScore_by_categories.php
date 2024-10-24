@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocationScore_by_categories 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocationScore_by_categories
+{
     /**
-    * @var null|double $overall;
-    */
+     * @var null|double;
+     */
     public $overall = null;
 
     /**
-    * @var null|integer $things_to_do;
-    */
+     * @var null|integer;
+     */
     public $things_to_do = null;
 
     /**
-    * @var null|double $restaurants;
-    */
+     * @var null|double;
+     */
     public $restaurants = null;
 
     /**
-    * @var null|double $transit;
-    */
+     * @var null|double;
+     */
     public $transit = null;
 
     /**
-    * @var null|integer $airport_access;
-    */
+     * @var null|integer;
+     */
     public $airport_access = null;
- 
 }

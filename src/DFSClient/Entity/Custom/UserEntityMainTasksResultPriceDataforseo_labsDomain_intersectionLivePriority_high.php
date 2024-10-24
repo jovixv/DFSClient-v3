@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultPriceDataforseo_labsDomain_intersectionLivePriority_high 
-{    
+class UserEntityMainTasksResultPriceDataforseo_labsDomain_intersectionLivePriority_high
+{
     /**
-    * @var null|string $cost_type;
-    */
+     * @var null|string;
+     */
     public $cost_type = null;
 
     /**
-    * @var null|double $cost;
-    */
+     * @var null|double;
+     */
     public $cost = null;
- 
 }

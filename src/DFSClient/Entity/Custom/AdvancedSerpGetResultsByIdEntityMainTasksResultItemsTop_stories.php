@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_stories 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_stories
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|boolean $amp_version;
-    */
+     * @var null|boolean;
+     */
     public $amp_version = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesRectangle;
+     */
     public $rectangle = null;
- 
 }

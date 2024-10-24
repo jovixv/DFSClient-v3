@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisCategoriesEntityMainTasksResult 
-{    
+class ContentAnalysisCategoriesEntityMainTasksResult
+{
     /**
-    * @var null|integer $category_code;
-    */
+     * @var null|integer;
+     */
     public $category_code = null;
 
     /**
-    * @var null|string $category_name;
-    */
+     * @var null|string;
+     */
     public $category_name = null;
 
     /**
-    * @var null|NULL $category_code_parent;
-    */
+     * @var null|null;
+     */
     public $category_code_parent = null;
- 
 }

@@ -5,31 +5,30 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficCountries;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSources;
 
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $percent;
-    */
+     * @var null|integer;
+     */
     public $percent = null;
 
     /**
-    * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficCountries[] $countries;
-    */
+     * array|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficCountries[] $countries;.
+     */
     public $countries = [];
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSources $sources;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSources;
+     */
     public $sources = null;
 
     /**
-    * @var null|array $estimated;
-    */
+     * @var null|array;
+     */
     public $estimated = null;
- 
 }

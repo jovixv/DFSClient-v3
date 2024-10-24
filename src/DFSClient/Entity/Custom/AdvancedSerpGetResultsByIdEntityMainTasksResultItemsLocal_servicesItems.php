@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItemsRating;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItems 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItemsRating $rating;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsLocal_servicesItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|string $profile_image_url;
-    */
+     * @var null|string;
+     */
     public $profile_image_url = null;
- 
 }

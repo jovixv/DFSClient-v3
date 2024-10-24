@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleHistoricalSERPsLiveEntityMainTasksResult 
-{    
+class GoogleHistoricalSERPsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleHistoricalSERPsLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleHistoricalSERPsLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

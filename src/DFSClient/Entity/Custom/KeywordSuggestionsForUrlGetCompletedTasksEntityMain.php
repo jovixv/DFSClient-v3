@@ -3,54 +3,56 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasks;
+use DFSClientV3\Models\ResponseModel;
 
-class KeywordSuggestionsForUrlGetCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
-{    
+class KeywordSuggestionsForUrlGetCompletedTasksEntityMain extends ResponseModel
+{
     /**
-    * @var null|string $version;
-    */
+     * @var null|string;
+     */
     public $version = '0.1.20240801';
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $tasks_count;
-    */
+     * @var null|integer;
+     */
     public $tasks_count = null;
 
     /**
-    * @var null|integer $tasks_error;
-    */
+     * @var null|integer;
+     */
     public $tasks_error = null;
 
     /**
-    * @var array|KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasks[] $tasks;
-    */
+     * @var array|KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasks[];
+     */
     public $tasks = [];
- 
 
-	/**
-	* @return \DFSClientV3\Entity\Custom\KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasksResult[]|null
-	*/
-	public function getResultsByPostID($postID): ?array {
-		return parent::getResultsByPostID($postID);
-	}
+    /**
+     * @return KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasksResult[]|null
+     */
+    #[\Override]
+    public function getResultsByPostID($postID): ?array
+    {
+        return parent::getResultsByPostID($postID);
+    }
 }

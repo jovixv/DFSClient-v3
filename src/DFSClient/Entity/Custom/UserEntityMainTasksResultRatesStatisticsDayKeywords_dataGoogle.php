@@ -9,41 +9,40 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayKeyword
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleSearch_volume;
 
-class UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogle 
-{    
+class UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogle
+{
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleAd_traffic_by_keywords $ad_traffic_by_keywords;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleAd_traffic_by_keywords;
+     */
     public $ad_traffic_by_keywords = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleAd_traffic_by_platforms $ad_traffic_by_platforms;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleAd_traffic_by_platforms;
+     */
     public $ad_traffic_by_platforms = null;
 
     /**
-    * @var null|integer $adwords_status;
-    */
+     * @var null|integer;
+     */
     public $adwords_status = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_category $keywords_for_category;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_category;
+     */
     public $keywords_for_category = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_keywords $keywords_for_keywords;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_keywords;
+     */
     public $keywords_for_keywords = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_site $keywords_for_site;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleKeywords_for_site;
+     */
     public $keywords_for_site = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleSearch_volume $search_volume;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsDayKeywords_dataGoogleSearch_volume;
+     */
     public $search_volume = null;
- 
 }

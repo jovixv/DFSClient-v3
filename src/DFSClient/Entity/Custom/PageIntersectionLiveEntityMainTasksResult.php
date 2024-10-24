@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMainTasksResultPages;
 
-class PageIntersectionLiveEntityMainTasksResult 
-{    
+class PageIntersectionLiveEntityMainTasksResult
+{
     /**
-    * @var null|PageIntersectionLiveEntityMainTasksResultPages $pages;
-    */
+     * @var null|PageIntersectionLiveEntityMainTasksResultPages;
+     */
     public $pages = null;
 
     /**
-    * @var null|NULL $exclude_pages;
-    */
+     * @var null|null;
+     */
     public $exclude_pages = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|PageIntersectionLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|PageIntersectionLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

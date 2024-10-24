@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BulkTrafficEstimationLiveEntityMainTasksResult 
-{    
+class BulkTrafficEstimationLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BulkTrafficEstimationLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BulkTrafficEstimationLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

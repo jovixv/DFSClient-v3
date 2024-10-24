@@ -1,8 +1,6 @@
 <?php
 
-
 namespace DFSClientV3\Services\Logger;
-
 
 class LoggerMessageEntity
 {

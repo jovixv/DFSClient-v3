@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesAggregationTechnologiesLiveEntityMainTasksResultItems 
-{    
+class TechnologiesAggregationTechnologiesLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $group;
-    */
+     * @var null|string;
+     */
     public $group = null;
 
     /**
-    * @var null|string $category;
-    */
+     * @var null|string;
+     */
     public $category = null;
 
     /**
-    * @var null|string $technology;
-    */
+     * @var null|string;
+     */
     public $technology = null;
 
     /**
-    * @var null|integer $groups_count;
-    */
+     * @var null|integer;
+     */
     public $groups_count = null;
 
     /**
-    * @var null|integer $categories_count;
-    */
+     * @var null|integer;
+     */
     public $categories_count = null;
 
     /**
-    * @var null|integer $technologies_count;
-    */
+     * @var null|integer;
+     */
     public $technologies_count = null;
- 
 }

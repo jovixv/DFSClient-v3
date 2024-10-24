@@ -4,71 +4,70 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultRating;
 
-class YelpReviewsGetResultsByTaskIdEntityMainTasksResult 
-{    
+class YelpReviewsGetResultsByTaskIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $alias;
-    */
+     * @var null|string;
+     */
     public $alias = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|int $location_code;
-    */
+     * @var null|int;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultRating $rating;
-    */
+     * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

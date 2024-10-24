@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimits;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatistics;
 
-class UserEntityMainTasksResultRates 
-{    
+class UserEntityMainTasksResultRates
+{
     /**
-    * @var null|UserEntityMainTasksResultRatesLimits $limits;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimits;
+     */
     public $limits = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatistics $statistics;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatistics;
+     */
     public $statistics = null;
- 
 }

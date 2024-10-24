@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsLiveEntityMainTasksResultRevenue 
-{    
+class TrafficAnalyticsLiveEntityMainTasksResultRevenue
+{
     /**
-    * @var null|integer $revenue_min;
-    */
+     * @var null|integer;
+     */
     public $revenue_min = null;
 
     /**
-    * @var null|integer $revenue_max;
-    */
+     * @var null|integer;
+     */
     public $revenue_max = null;
- 
 }

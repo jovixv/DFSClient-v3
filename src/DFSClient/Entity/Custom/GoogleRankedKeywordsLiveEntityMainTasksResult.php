@@ -5,51 +5,50 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolute;
 
-class GoogleRankedKeywordsLiveEntityMainTasksResult 
-{    
+class GoogleRankedKeywordsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics $metrics;
-    */
+     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics;
+     */
     public $metrics = null;
 
     /**
-    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolute $metrics_absolute;
-    */
+     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absolute;
+     */
     public $metrics_absolute = null;
 
     /**
-    * @var array|GoogleRankedKeywordsLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleRankedKeywordsLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

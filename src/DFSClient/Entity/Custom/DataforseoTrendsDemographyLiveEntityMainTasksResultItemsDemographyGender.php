@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGenderValues;
 
-class DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGender 
-{    
+class DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGender
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var array|DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGenderValues[] $values;
-    */
+     * @var array|DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemographyGenderValues[];
+     */
     public $values = [];
- 
 }

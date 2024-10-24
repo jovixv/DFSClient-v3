@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_searchRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_search 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_search
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|array $items;
-    */
+     * @var null|array;
+     */
     public $items = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_searchRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_searchRectangle;
+     */
     public $rectangle = null;
- 
 }

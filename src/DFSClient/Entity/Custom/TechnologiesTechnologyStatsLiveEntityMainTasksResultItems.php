@@ -2,36 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-class TechnologiesTechnologyStatsLiveEntityMainTasksResultItems 
-{    
+class TechnologiesTechnologyStatsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|integer $domains_count;
-    */
+     * @var null|integer;
+     */
     public $domains_count = null;
 
     /**
-    * @var null|array $countries;
-    */
+     * @var null|array;
+     */
     public $countries = null;
 
     /**
-    * @var null|array $languages;
-    */
+     * @var null|array;
+     */
     public $languages = null;
 
     /**
-    * @var null|array $domains_rank;
-    */
+     * @var null|array;
+     */
     public $domains_rank = null;
- 
 }

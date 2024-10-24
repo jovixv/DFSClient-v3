@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesSecurity 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesSecurity
+{
     /**
-    * @var null|array $security;
-    */
+     * @var null|array;
+     */
     public $security = null;
- 
 }

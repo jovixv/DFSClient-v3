@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DomainRankOverviewLiveEntityMainTasksResult 
-{    
+class DomainRankOverviewLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * array|DomainRankOverviewLiveEntityMainTasksResultItems[] $items;
-    */
+     * array|DomainRankOverviewLiveEntityMainTasksResultItems[] $items;.
+     */
     public $items = [];
- 
 }

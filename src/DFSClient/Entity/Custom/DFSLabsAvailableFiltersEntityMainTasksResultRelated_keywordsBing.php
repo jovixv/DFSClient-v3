@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultRelated_keywordsBing 
-{    
-
+class DFSLabsAvailableFiltersEntityMainTasksResultRelated_keywordsBing
+{
 }

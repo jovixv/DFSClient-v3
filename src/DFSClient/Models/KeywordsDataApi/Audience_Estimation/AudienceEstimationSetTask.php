@@ -1,167 +1,199 @@
 <?php
 
-
 namespace DFSClientV3\Models\KeywordsDataApi\Audience_Estimation;
 
-
+use DFSClientV3\Entity\Custom\AudienceEstimationSetTaskEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class AudienceEstimationSetTask extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'keywords_data/{$se}/audience_estimation/task_post';
+
     protected $resultShouldBeTransformedToArray = false;
 
-	/**
-	 * @param string $locationName
-	 * @return $this
-	 */
-	public function setLocationName(string $locationName)
-	{
-		$this->payload['location_name'] = $locationName;
+    /**
+     * @param string $locationName
+     *
+     * @return $this
+     */
+    public function setLocationName(string $locationName)
+    {
+        $this->payload['location_name'] = $locationName;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $locationCode
-	 * @return $this
-	 */
-	public function setLocationCode(int $locationCode)
-	{
-		$this->payload['location_code'] = $locationCode;
-		return $this;
-	}
+    /**
+     * @param int $locationCode
+     *
+     * @return $this
+     */
+    public function setLocationCode(int $locationCode)
+    {
+        $this->payload['location_code'] = $locationCode;
 
-	/**
-	 * @param string $locationCoordinate
-	 * @return $this
-	 */
-	public function setLocationCoordinate(string $locationCoordinate)
-	{
-		$this->payload['location_coordinate'] = $locationCoordinate;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $age
-	 * @return $this
-	 */
-	public function setAge(array $age)
-	{
-		$this->payload['age'] = $age;
-		return $this;
-	}
+    /**
+     * @param string $locationCoordinate
+     *
+     * @return $this
+     */
+    public function setLocationCoordinate(string $locationCoordinate)
+    {
+        $this->payload['location_coordinate'] = $locationCoordinate;
 
-	/**
-	 * @param array $gender
-	 * @return $this
-	 */
-	public function setGender(array $gender)
-	{
-		$this->payload['gender'] = $gender;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $industry
-	 * @return $this
-	 */
-	public function setIndustry(array $industry)
-	{
-		$this->payload['industry'] = $industry;
-		return $this;
-	}
+    /**
+     * @param array $age
+     *
+     * @return $this
+     */
+    public function setAge(array $age)
+    {
+        $this->payload['age'] = $age;
 
-	/**
-	 * @param array $jobFunction
-	 * @return $this
-	 */
-	public function setJobFunction(array $jobFunction)
-	{
-		$this->payload['job_function'] = $jobFunction;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param float $bid
-	 * @return $this
-	 */
-	public function setBid(float $bid)
-	{
-		$this->payload['bid'] = $bid;
-		return $this;
-	}
+    /**
+     * @param array $gender
+     *
+     * @return $this
+     */
+    public function setGender(array $gender)
+    {
+        $this->payload['gender'] = $gender;
 
-	/**
-	 * @param float $dailyBudget
-	 * @return $this
-	 */
-	public function setDailyBudget(float $dailyBudget)
-	{
-		$this->payload['daily_budget'] = $dailyBudget;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $postbackUrl
-	 * @return $this
-	 */
-	public function setPostbackUrl(string $postbackUrl)
-	{
-		$this->payload['postback_url'] = $postbackUrl;
-		return $this;
-	}
+    /**
+     * @param array $industry
+     *
+     * @return $this
+     */
+    public function setIndustry(array $industry)
+    {
+        $this->payload['industry'] = $industry;
 
-	/**
-	 * @param string $pingbackUrl
-	 * @return $this
-	 */
-	public function setPingbackUrl(string $pingbackUrl)
-	{
-		$this->payload['pingback_url'] = $pingbackUrl;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $tag
-	 * @return $this
-	 */
-	public function setTag(string $tag)
-	{
-		$this->payload['tag'] = $tag;
-		return $this;
-	}
+    /**
+     * @param array $jobFunction
+     *
+     * @return $this
+     */
+    public function setJobFunction(array $jobFunction)
+    {
+        $this->payload['job_function'] = $jobFunction;
 
-	/**
-	 * 'bing' only
-	 * @param string $seName
-	 * @return $this
-	 */
-	public function setSe(string $seName)
-	{
-		$this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @return \DFSClientV3\Entity\Custom\AudienceEstimationSetTaskEntityMain
-	 */
-	public function get(): \DFSClientV3\Entity\Custom\AudienceEstimationSetTaskEntityMain
-	{
-		return parent::get();
-	}
+    /**
+     * @param float $bid
+     *
+     * @return $this
+     */
+    public function setBid(float $bid)
+    {
+        $this->payload['bid'] = $bid;
 
-	/**
-	 * @param array $modelPool
-	 * @return array
-	 * @throws \Exception
-	 */
-	public static function getAfterMerge(array $modelPool)
-	{
-		return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub
-	}
+        return $this;
+    }
 
+    /**
+     * @param float $dailyBudget
+     *
+     * @return $this
+     */
+    public function setDailyBudget(float $dailyBudget)
+    {
+        $this->payload['daily_budget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * @param string $postbackUrl
+     *
+     * @return $this
+     */
+    public function setPostbackUrl(string $postbackUrl)
+    {
+        $this->payload['postback_url'] = $postbackUrl;
+
+        return $this;
+    }
+
+    /**
+     * @param string $pingbackUrl
+     *
+     * @return $this
+     */
+    public function setPingbackUrl(string $pingbackUrl)
+    {
+        $this->payload['pingback_url'] = $pingbackUrl;
+
+        return $this;
+    }
+
+    /**
+     * @param string $tag
+     *
+     * @return $this
+     */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+
+        return $this;
+    }
+
+    /**
+     * 'bing' only.
+     *
+     * @param string $seName
+     *
+     * @return $this
+     */
+    public function setSe(string $seName)
+    {
+        $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
+
+        return $this;
+    }
+
+    /**
+     * @return AudienceEstimationSetTaskEntityMain
+     */
+    #[\Override]
+    public function get(): AudienceEstimationSetTaskEntityMain
+    {
+        return parent::get();
+    }
+
+    /**
+     * @param array $modelPool
+     *
+     * @throws \Exception
+     *
+     * @return array
+     */
+    #[\Override]
+    public static function getAfterMerge(array $modelPool)
+    {
+        return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub
+    }
 }

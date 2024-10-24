@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_place_topics 
-{    
+class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_place_topics
+{
     /**
-    * @var null|integer $price;
-    */
+     * @var null|integer;
+     */
     public $price = null;
 
     /**
-    * @var null|integer $order;
-    */
+     * @var null|integer;
+     */
     public $order = null;
 
     /**
-    * @var null|integer $money;
-    */
+     * @var null|integer;
+     */
     public $money = null;
 
     /**
-    * @var null|integer $atmosphere;
-    */
+     * @var null|integer;
+     */
     public $atmosphere = null;
 
     /**
-    * @var null|integer $dominos;
-    */
+     * @var null|integer;
+     */
     public $dominos = null;
 
     /**
-    * @var null|integer $vegan;
-    */
+     * @var null|integer;
+     */
     public $vegan = null;
 
     /**
-    * @var null|integer $cold;
-    */
+     * @var null|integer;
+     */
     public $cold = null;
 
     /**
-    * @var null|integer $kids;
-    */
+     * @var null|integer;
+     */
     public $kids = null;
 
     /**
-    * @var null|integer $phone;
-    */
+     * @var null|integer;
+     */
     public $phone = null;
 
     /**
-    * @var null|integer $dough;
-    */
+     * @var null|integer;
+     */
     public $dough = null;
- 
 }

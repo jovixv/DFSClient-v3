@@ -2,104 +2,103 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations;
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoConnotation_types;
+use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations;
 
-class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_info 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_info
+{
     /**
-    * @var null|string $content_type;
-    */
+     * @var null|string;
+     */
     public $content_type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|NULL $main_title;
-    */
+     * @var null|null;
+     */
     public $main_title = null;
 
     /**
-    * @var null|NULL $previous_title;
-    */
+     * @var null|null;
+     */
     public $previous_title = null;
 
     /**
-    * @var null|integer $level;
-    */
+     * @var null|integer;
+     */
     public $level = null;
 
     /**
-    * @var null|string $author;
-    */
+     * @var null|string;
+     */
     public $author = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|integer $snippet_length;
-    */
+     * @var null|integer;
+     */
     public $snippet_length = null;
 
     /**
-    * @var null|NULL $social_metrics;
-    */
+     * @var null|null;
+     */
     public $social_metrics = null;
 
     /**
-    * @var null|NULL $highlighted_text;
-    */
+     * @var null|null;
+     */
     public $highlighted_text = null;
 
     /**
-    * @var null|string $language;
-    */
+     * @var null|string;
+     */
     public $language = null;
 
     /**
-    * @var null|ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations $sentiment_connotations;
-    */
+     * @var null|ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations;
+     */
     public $sentiment_connotations = null;
 
     /**
-    * @var null|ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoConnotation_types $connotation_types;
-    */
+     * @var null|ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoConnotation_types;
+     */
     public $connotation_types = null;
 
     /**
-    * @var null|array $text_category;
-    */
+     * @var null|array;
+     */
     public $text_category = null;
 
     /**
-    * @var null|string $date_published;
-    */
+     * @var null|string;
+     */
     public $date_published = null;
 
     /**
-    * @var null|integer $content_quality_score;
-    */
+     * @var null|integer;
+     */
     public $content_quality_score = null;
 
     /**
-    * @var null|NULL $semantic_location;
-    */
+     * @var null|null;
+     */
     public $semantic_location = null;
 
     /**
-    * @var null|NULL $rating;
-    */
+     * @var null|null;
+     */
     public $rating = null;
 
     /**
-    * @var null|string $group_date;
-    */
+     * @var null|string;
+     */
     public $group_date = null;
- 
 }

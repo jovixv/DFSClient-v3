@@ -2,72 +2,70 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetLinksEntityMainTasksResultItemsAnchor 
-{    
+class OnPageGetLinksEntityMainTasksResultItemsAnchor
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $domain_from;
-    */
+     * @var null|string;
+     */
     public $domain_from = null;
 
     /**
-    * @var null|string $domain_to;
-    */
+     * @var null|string;
+     */
     public $domain_to = null;
 
     /**
-    * @var null|string $page_from;
-    */
+     * @var null|string;
+     */
     public $page_from = null;
 
     /**
-    * @var null|string $page_to;
-    */
+     * @var null|string;
+     */
     public $page_to = null;
 
     /**
-    * @var null|string $link_from;
-    */
+     * @var null|string;
+     */
     public $link_from = null;
 
     /**
-    * @var null|string $link_to;
-    */
+     * @var null|string;
+     */
     public $link_to = null;
 
     /**
-    * @var null|boolean $dofollow;
-    */
+     * @var null|boolean;
+     */
     public $dofollow = null;
 
     /**
-    * @var null|string $page_from_scheme;
-    */
+     * @var null|string;
+     */
     public $page_from_scheme = null;
 
     /**
-    * @var null|string $page_to_scheme;
-    */
+     * @var null|string;
+     */
     public $page_to_scheme = null;
 
     /**
-    * @var null|string $direction;
-    */
+     * @var null|string;
+     */
     public $direction = null;
 
     /**
-    * @var null|boolean $is_broken;
-    */
+     * @var null|boolean;
+     */
     public $is_broken = null;
 
     /**
-    * @var null|string $text;
-    */
+     * @var null|string;
+     */
     public $text = null;
- 
 }

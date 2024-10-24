@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsPaidClickstream_age_distribution 
-{    
-
+class GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsPaidClickstream_age_distribution
+{
 }

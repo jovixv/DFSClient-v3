@@ -4,51 +4,50 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsRating;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItems 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsPrice $rating;
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsPrice;
      */
     public $price = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-     * @var null|string $hotel_identifier;
+     * @var null|string;
      */
     public $hotel_identifier = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|boolean $is_paid;
-    */
+     * @var null|boolean;
+     */
     public $is_paid = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsRating $rating;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsRating;
+     */
     public $rating = null;
- 
 }

@@ -4,86 +4,85 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsImageChecks;
 
-class OnPageGetResourcesEntityMainTasksResultItemsImage 
-{    
+class OnPageGetResourcesEntityMainTasksResultItemsImage
+{
     /**
-    * @var null|string $resource_type;
-    */
+     * @var null|string;
+     */
     public $resource_type = null;
 
     /**
-    * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageMeta $meta;
-    */
+     * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageMeta;
+     */
     public $meta = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|NULL $location;
-    */
+     * @var null|null;
+     */
     public $location = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|integer $size;
-    */
+     * @var null|integer;
+     */
     public $size = null;
 
     /**
-    * @var null|integer $encoded_size;
-    */
+     * @var null|integer;
+     */
     public $encoded_size = null;
 
     /**
-    * @var null|integer $total_transfer_size;
-    */
+     * @var null|integer;
+     */
     public $total_transfer_size = null;
 
     /**
-    * @var null|string $fetch_time;
-    */
+     * @var null|string;
+     */
     public $fetch_time = null;
 
     /**
-    * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageFetch_timing $fetch_timing;
-    */
+     * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageFetch_timing;
+     */
     public $fetch_timing = null;
 
     /**
-    * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageCache_control $cache_control;
-    */
+     * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageCache_control;
+     */
     public $cache_control = null;
 
     /**
-    * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageChecks $checks;
-    */
+     * @var null|OnPageGetResourcesEntityMainTasksResultItemsImageChecks;
+     */
     public $checks = null;
 
     /**
-    * @var null|NULL $content_encoding;
-    */
+     * @var null|null;
+     */
     public $content_encoding = null;
 
     /**
-    * @var null|string $media_type;
-    */
+     * @var null|string;
+     */
     public $media_type = null;
 
     /**
-     * @var null|string $accept_type;
+     * @var null|string;
      */
     public $accept_type = null;
 
     /**
-    * @var null|string $server;
-    */
+     * @var null|string;
+     */
     public $server = null;
- 
 }

@@ -5,25 +5,11 @@ namespace DFSClientV3\Services\HttpClient\Handlers;
 class Responses
 {
     /**
-     * @var bool $status
+     * @param bool        $status
+     * @param null|string $response
      */
-    private $status;
-
-    /**
-     * @var null|string $response
-     */
-    private $response;
-
-    private $errorMessage;
-
-    private $headers;
-
-    public function __construct($status, $errorMessage = null, $response = null, $headers = null)
+    public function __construct(private $status, private $errorMessage = null, private $response = null, private $headers = null)
     {
-        $this->status = $status;
-        $this->errorMessage = $errorMessage;
-        $this->response = $response;
-        $this->headers = $headers;
     }
 
     /*

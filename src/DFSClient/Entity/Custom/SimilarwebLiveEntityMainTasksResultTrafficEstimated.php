@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebLiveEntityMainTasksResultTrafficEstimated 
-{    
+class SimilarwebLiveEntityMainTasksResultTrafficEstimated
+{
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
- 
 }

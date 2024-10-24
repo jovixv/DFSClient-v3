@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpScreenshotEntityMainTasksResultItems 
-{    
+class SerpScreenshotEntityMainTasksResultItems
+{
     /**
-    * @var null|string $image;
-    */
+     * @var null|string;
+     */
     public $image = null;
- 
 }

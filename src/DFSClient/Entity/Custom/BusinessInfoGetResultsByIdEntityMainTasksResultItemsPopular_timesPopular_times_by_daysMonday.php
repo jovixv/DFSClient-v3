@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMondayTime;
 
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMonday 
-{    
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMonday
+{
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMondayTime $time;
-    */
+     * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMondayTime;
+     */
     public $time = null;
 
     /**
-    * @var null|integer $popular_index;
-    */
+     * @var null|integer;
+     */
     public $popular_index = null;
- 
 }

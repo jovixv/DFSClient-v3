@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataGoogle_trendsExplore 
-{    
+class UserEntityMainTasksResultMoneyLimitsMinuteKeywords_dataGoogle_trendsExplore
+{
     /**
-    * @var null|integer $live;
-    */
+     * @var null|integer;
+     */
     public $live = null;
 
     /**
-    * @var null|integer $task_get;
-    */
+     * @var null|integer;
+     */
     public $task_get = null;
 
     /**
-    * @var null|integer $task_post;
-    */
+     * @var null|integer;
+     */
     public $task_post = null;
- 
 }

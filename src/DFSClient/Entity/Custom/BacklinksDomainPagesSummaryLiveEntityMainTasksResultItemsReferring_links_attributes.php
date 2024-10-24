@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksDomainPagesSummaryLiveEntityMainTasksResultItemsReferring_links_attributes 
-{    
+class BacklinksDomainPagesSummaryLiveEntityMainTasksResultItemsReferring_links_attributes
+{
     /**
-    * @var null|integer $nofollow;
-    */
+     * @var null|integer;
+     */
     public $nofollow = null;
 
     /**
-    * @var null|integer $noreferrer;
-    */
+     * @var null|integer;
+     */
     public $noreferrer = null;
 
     /**
-    * @var null|integer $noopener;
-    */
+     * @var null|integer;
+     */
     public $noopener = null;
 
     /**
-    * @var null|integer $external;
-    */
+     * @var null|integer;
+     */
     public $external = null;
 
     /**
-    * @var null|integer $ugc;
-    */
+     * @var null|integer;
+     */
     public $ugc = null;
 
     /**
-    * @var null|integer $alternate;
-    */
+     * @var null|integer;
+     */
     public $alternate = null;
 
     /**
-    * @var null|integer $generator;
-    */
+     * @var null|integer;
+     */
     public $generator = null;
 
     /**
-    * @var null|integer $tag;
-    */
+     * @var null|integer;
+     */
     public $tag = null;
 
     /**
-    * @var null|integer $bookmark;
-    */
+     * @var null|integer;
+     */
     public $bookmark = null;
- 
 }

@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_categories 
-{    
+class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_categories
+{
     /**
-    * @var null|integer $pizza_restaurant;
-    */
+     * @var null|integer;
+     */
     public $pizza_restaurant = null;
 
     /**
-    * @var null|integer $pizzatakeaway;
-    */
+     * @var null|integer;
+     */
     public $pizzatakeaway = null;
 
     /**
-    * @var null|integer $restaurant;
-    */
+     * @var null|integer;
+     */
     public $restaurant = null;
 
     /**
-    * @var null|integer $pizza_delivery_service;
-    */
+     * @var null|integer;
+     */
     public $pizza_delivery_service = null;
 
     /**
-    * @var null|integer $delivery_service;
-    */
+     * @var null|integer;
+     */
     public $delivery_service = null;
 
     /**
-    * @var null|integer $italian_restaurant;
-    */
+     * @var null|integer;
+     */
     public $italian_restaurant = null;
 
     /**
-    * @var null|integer $neapolitan_restaurant;
-    */
+     * @var null|integer;
+     */
     public $neapolitan_restaurant = null;
 
     /**
-    * @var null|integer $fast_food_restaurant;
-    */
+     * @var null|integer;
+     */
     public $fast_food_restaurant = null;
 
     /**
-    * @var null|integer $meal_takeaway;
-    */
+     * @var null|integer;
+     */
     public $meal_takeaway = null;
 
     /**
-    * @var null|integer $vegan_restaurant;
-    */
+     * @var null|integer;
+     */
     public $vegan_restaurant = null;
- 
 }

@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesSales 
-{    
+class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesSales
+{
     /**
-    * @var null|array $ecommerce;
-    */
+     * @var null|array;
+     */
     public $ecommerce = null;
- 
 }

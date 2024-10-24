@@ -2,31 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
-use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack;
+use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
+use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
 
-class GoogleSubdomainsLiveEntityMainTasksResultItemsMetrics 
-{    
+class GoogleSubdomainsLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
 
     /**
-    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet $featured_snippet;
-    */
+     * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
+     */
     public $featured_snippet = null;
 
     /**
-    * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack $local_pack;
-    */
+     * @var null|GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack;
+     */
     public $local_pack = null;
- 
 }

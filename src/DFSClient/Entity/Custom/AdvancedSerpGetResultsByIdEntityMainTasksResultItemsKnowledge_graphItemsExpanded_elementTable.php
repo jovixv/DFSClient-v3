@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsExpanded_elementTable 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsExpanded_elementTable
+{
     /**
-    * @var null|string $table_element;
-    */
+     * @var null|string;
+     */
     public $table_element = null;
 
     /**
-    * @var null|array $table_header;
-    */
+     * @var null|array;
+     */
     public $table_header = null;
 
     /**
-    * @var null|array $table_content;
-    */
+     * @var null|array;
+     */
     public $table_content = null;
- 
 }

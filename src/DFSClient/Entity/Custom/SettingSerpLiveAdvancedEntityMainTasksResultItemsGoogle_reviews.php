@@ -4,56 +4,55 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_reviewsRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_reviews 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_reviews
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|string $place_id;
-    */
+     * @var null|string;
+     */
     public $place_id = null;
 
     /**
-    * @var null|string $feature;
-    */
+     * @var null|string;
+     */
     public $feature = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_reviewsRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_reviewsRectangle;
+     */
     public $rectangle = null;
- 
 }

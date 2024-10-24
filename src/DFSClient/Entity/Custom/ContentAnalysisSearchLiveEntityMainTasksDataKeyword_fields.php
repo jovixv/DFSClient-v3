@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSearchLiveEntityMainTasksDataKeyword_fields 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksDataKeyword_fields
+{
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
- 
 }

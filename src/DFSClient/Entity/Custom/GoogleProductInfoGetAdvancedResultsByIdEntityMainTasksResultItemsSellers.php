@@ -2,45 +2,44 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersSeller_rating;
-use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersPrice;
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersDelivery_info;
+use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersPrice;
+use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersSeller_rating;
 
-class GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellers 
-{    
+class GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellers
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersSeller_rating $seller_rating;
-    */
+     * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersSeller_rating;
+     */
     public $seller_rating = null;
 
     /**
-    * @var null|integer $seller_review_count;
-    */
+     * @var null|integer;
+     */
     public $seller_review_count = null;
 
     /**
-    * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersPrice $price;
-    */
+     * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersPrice;
+     */
     public $price = null;
 
     /**
-    * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersDelivery_info $delivery_info;
-    */
+     * @var null|GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersDelivery_info;
+     */
     public $delivery_info = null;
- 
 }

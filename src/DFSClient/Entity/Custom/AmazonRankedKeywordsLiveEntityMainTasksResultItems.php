@@ -5,21 +5,20 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data;
 use DFSClientV3\Entity\Custom\AmazonRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_element;
 
-class AmazonRankedKeywordsLiveEntityMainTasksResultItems 
-{    
+class AmazonRankedKeywordsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|AmazonRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data $keyword_data;
-    */
+     * @var null|AmazonRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data;
+     */
     public $keyword_data = null;
 
     /**
-    * @var null|AmazonRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_element $ranked_serp_element;
-    */
+     * @var null|AmazonRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_element;
+     */
     public $ranked_serp_element = null;
- 
 }

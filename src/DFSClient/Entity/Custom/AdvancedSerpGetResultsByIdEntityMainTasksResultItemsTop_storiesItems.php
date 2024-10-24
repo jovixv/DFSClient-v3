@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesItems 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $source;
-    */
+     * @var null|string;
+     */
     public $source = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|boolean $amp_version;
-    */
+     * @var null|boolean;
+     */
     public $amp_version = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
- 
 }

@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsVideo 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsVideo
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoItems[] $items;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsVideoRectangle;
+     */
     public $rectangle = null;
- 
 }

@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DomainIntersectionLiveEntityMainTasksResult 
-{    
+class DomainIntersectionLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $target1;
-    */
+     * @var null|string;
+     */
     public $target1 = null;
 
     /**
-    * @var null|string $target2;
-    */
+     * @var null|string;
+     */
     public $target2 = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * array|DomainIntersectionLiveEntityMainTasksResultItems[] $items;
-    */
+     * array|DomainIntersectionLiveEntityMainTasksResultItems[] $items;.
+     */
     public $items = [];
- 
 }

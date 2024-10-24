@@ -2,31 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
+use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack;
 use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsPaid;
-use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack;
-use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 
-class BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics 
-{    
+class BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsOrganic[] $organic;
-    */
+     * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsOrganic[];
+     */
     public $organic = [];
 
     /**
-    * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsPaid[] $paid;
-    */
+     * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsPaid[];
+     */
     public $paid = [];
 
     /**
-    * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack[] $local_pack;
-    */
+     * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack[];
+     */
     public $local_pack = [];
 
     /**
-    * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet[] $featured_snippet;
-    */
+     * @var array|BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet[];
+     */
     public $featured_snippet = [];
- 
 }

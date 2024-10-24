@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksReferringNetworksLiveEntityMainTasksResultItemsReferring_links_tld 
-{    
+class BacklinksReferringNetworksLiveEntityMainTasksResultItemsReferring_links_tld
+{
     /**
-    * @var null|integer $net;
-    */
+     * @var null|integer;
+     */
     public $net = null;
- 
 }

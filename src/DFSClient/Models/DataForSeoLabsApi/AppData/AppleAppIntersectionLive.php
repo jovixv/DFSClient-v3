@@ -1,149 +1,173 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\AppData;
 
+use DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
-class AppleAppIntersectionLive extends AbstractModel {
+class AppleAppIntersectionLive extends AbstractModel
+{
+    protected $method = 'POST';
 
-	protected $method = 'POST';
-	protected $isSupportedMerge = true;
-	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'dataforseo_labs/apple/app_intersection/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $useNewMapper = true;
+    protected $isSupportedMerge = true;
 
-	/**
-	 * @return \DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMain
-	 */
-	public function get(): \DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMain
-	{
-		return parent::get();
-	}
+    protected $pathToMainData = 'tasks->{$postID}->result';
 
-	/**
-	 * @param array $appIds
-	 * @return $this
-	 */
-	public function setAppIds(array $appIds) {
-		$this->payload['app_ids'] = $appIds;
+    protected $requestToFunction = 'dataforseo_labs/apple/app_intersection/live';
 
-		return $this;
-	}
+    protected $resultShouldBeTransformedToArray = true;
 
-	/**
-	 * @param string $locationName
-	 * @return $this
-	 */
-	public function setLocationName(string $locationName)
-	{
-		$this->payload['location_name'] = $locationName;
+    protected $useNewMapper = true;
 
-		return $this;
-	}
+    /**
+     * @return AppleAppIntersectionLiveEntityMain
+     */
+    #[\Override]
+    public function get(): AppleAppIntersectionLiveEntityMain
+    {
+        return parent::get();
+    }
 
-	/**
-	 * @param int $locationCode
-	 * @return $this
-	 */
-	public function setLocationCode(int $locationCode)
-	{
-		$this->payload['location_code'] = $locationCode;
-		return $this;
-	}
+    /**
+     * @param array $appIds
+     *
+     * @return $this
+     */
+    public function setAppIds(array $appIds)
+    {
+        $this->payload['app_ids'] = $appIds;
 
-	/**
-	 * @param string $languageName
-	 * @return $this
-	 */
-	public function setLanguageName(string $languageName)
-	{
-		$this->payload['language_name'] = $languageName;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $languageCode
-	 * @return $this
-	 */
-	public function setLanguageCode(string $languageCode)
-	{
-		$this->payload['language_code'] = $languageCode;
+    /**
+     * @param string $locationName
+     *
+     * @return $this
+     */
+    public function setLocationName(string $locationName)
+    {
+        $this->payload['location_name'] = $locationName;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $filters
-	 * @return $this
-	 */
-	public function setFilters(array $filters)
-	{
-		$this->payload['filters'] = $filters;
+    /**
+     * @param int $locationCode
+     *
+     * @return $this
+     */
+    public function setLocationCode(int $locationCode)
+    {
+        $this->payload['location_code'] = $locationCode;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $orderBy
-	 * @return $this
-	 */
-	public function setOrderBy(array $orderBy)
-	{
-		$this->payload['order_by'] = $orderBy;
+    /**
+     * @param string $languageName
+     *
+     * @return $this
+     */
+    public function setLanguageName(string $languageName)
+    {
+        $this->payload['language_name'] = $languageName;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $limit
-	 * @return $this
-	 */
-	public function setLimit(int $limit)
-	{
-		$this->payload['limit'] = $limit;
+    /**
+     * @param string $languageCode
+     *
+     * @return $this
+     */
+    public function setLanguageCode(string $languageCode)
+    {
+        $this->payload['language_code'] = $languageCode;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $offset
-	 * @return $this
-	 */
-	public function setOffset(int $offset)
-	{
-		$this->payload['offset'] = $offset;
+    /**
+     * @param array $filters
+     *
+     * @return $this
+     */
+    public function setFilters(array $filters)
+    {
+        $this->payload['filters'] = $filters;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $tag
-	 * @return $this
-	 */
-	public function setTag(string $tag)
-	{
-		$this->payload['tag'] = $tag;
-		return $this;
-	}
+    /**
+     * @param array $orderBy
+     *
+     * @return $this
+     */
+    public function setOrderBy(array $orderBy)
+    {
+        $this->payload['order_by'] = $orderBy;
 
-	protected function initCustomFunctionForPaths(): array
-	{
-		return [
-			'tasks->(:number)->data->app_ids' => function($key, $value){return (array)$value;},
-			'tasks->(:number)->result->(:number)->app_ids' => function($key, $value){return (array)$value;},
-			'tasks->(:number)->result->(:number)->items->(:number)->intersection_result' => function($key, $value){return json_decode(json_encode($value), true);},
-		];
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $modelPool
-	 * @return array
-	 * @throws \Exception
-	 */
-	public static function getAfterMerge(array $modelPool)
-	{
-		return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub
-	}
+    /**
+     * @param int $limit
+     *
+     * @return $this
+     */
+    public function setLimit(int $limit)
+    {
+        $this->payload['limit'] = $limit;
+
+        return $this;
+    }
+
+    /**
+     * @param int $offset
+     *
+     * @return $this
+     */
+    public function setOffset(int $offset)
+    {
+        $this->payload['offset'] = $offset;
+
+        return $this;
+    }
+
+    /**
+     * @param string $tag
+     *
+     * @return $this
+     */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+
+        return $this;
+    }
+
+    #[\Override]
+    protected function initCustomFunctionForPaths(): array
+    {
+        return [
+            'tasks->(:number)->data->app_ids'                                            => fn ($key, $value) => (array) $value,
+            'tasks->(:number)->result->(:number)->app_ids'                               => fn ($key, $value) => (array) $value,
+            'tasks->(:number)->result->(:number)->items->(:number)->intersection_result' => fn ($key, $value) => json_decode(json_encode($value), true),
+        ];
+    }
+
+    /**
+     * @param array $modelPool
+     *
+     * @throws \Exception
+     *
+     * @return array
+     */
+    #[\Override]
+    public static function getAfterMerge(array $modelPool)
+    {
+        return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub
+    }
 }

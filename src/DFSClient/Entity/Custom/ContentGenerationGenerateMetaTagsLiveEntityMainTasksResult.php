@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationGenerateMetaTagsLiveEntityMainTasksResult 
-{    
+class ContentGenerationGenerateMetaTagsLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $input_tokens;
-    */
+     * @var null|integer;
+     */
     public $input_tokens = null;
 
     /**
-    * @var null|integer $output_tokens;
-    */
+     * @var null|integer;
+     */
     public $output_tokens = null;
 
     /**
-    * @var null|integer $new_tokens;
-    */
+     * @var null|integer;
+     */
     public $new_tokens = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
- 
 }

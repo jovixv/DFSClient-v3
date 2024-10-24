@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSearchLiveEntityMainTasksResult 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $offset_token;
-    */
+     * @var null|string;
+     */
     public $offset_token = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|ContentAnalysisSearchLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|ContentAnalysisSearchLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

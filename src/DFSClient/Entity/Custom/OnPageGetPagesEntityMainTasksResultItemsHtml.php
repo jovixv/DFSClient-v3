@@ -4,126 +4,125 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetPagesEntityMainTasksResultItemsHtmlChecks;
 
-class OnPageGetPagesEntityMainTasksResultItemsHtml 
-{    
+class OnPageGetPagesEntityMainTasksResultItemsHtml
+{
     /**
-    * @var null|string $resource_type;
-    */
+     * @var null|string;
+     */
     public $resource_type = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|NULL $location;
-    */
+     * @var null|null;
+     */
     public $location = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMeta $meta;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMeta;
+     */
     public $meta = null;
 
     /**
-    * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlPage_timing $page_timing;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlPage_timing;
+     */
     public $page_timing = null;
 
     /**
-    * @var null|integer $total_dom_size;
-    */
+     * @var null|integer;
+     */
     public $total_dom_size = null;
 
     /**
-    * @var null|NULL $custom_js_response;
-    */
+     * @var null|null;
+     */
     public $custom_js_response = null;
 
     /**
-    * @var null|boolean $broken_resources;
-    */
+     * @var null|boolean;
+     */
     public $broken_resources = null;
 
     /**
-    * @var null|boolean $broken_links;
-    */
+     * @var null|boolean;
+     */
     public $broken_links = null;
 
     /**
-    * @var null|boolean $duplicate_title;
-    */
+     * @var null|boolean;
+     */
     public $duplicate_title = null;
 
     /**
-    * @var null|boolean $duplicate_description;
-    */
+     * @var null|boolean;
+     */
     public $duplicate_description = null;
 
     /**
-    * @var null|boolean $duplicate_content;
-    */
+     * @var null|boolean;
+     */
     public $duplicate_content = null;
 
     /**
-    * @var null|integer $click_depth;
-    */
+     * @var null|integer;
+     */
     public $click_depth = null;
 
     /**
-    * @var null|integer $size;
-    */
+     * @var null|integer;
+     */
     public $size = null;
 
     /**
-    * @var null|integer $encoded_size;
-    */
+     * @var null|integer;
+     */
     public $encoded_size = null;
 
     /**
-    * @var null|integer $total_transfer_size;
-    */
+     * @var null|integer;
+     */
     public $total_transfer_size = null;
 
     /**
-    * @var null|string $fetch_time;
-    */
+     * @var null|string;
+     */
     public $fetch_time = null;
 
     /**
-    * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlCache_control $cache_control;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlCache_control;
+     */
     public $cache_control = null;
 
     /**
-    * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlChecks $checks;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlChecks;
+     */
     public $checks = null;
 
     /**
-    * @var null|string $content_encoding;
-    */
+     * @var null|string;
+     */
     public $content_encoding = null;
 
     /**
-    * @var null|string $media_type;
-    */
+     * @var null|string;
+     */
     public $media_type = null;
 
     /**
-    * @var null|string $server;
-    */
+     * @var null|string;
+     */
     public $server = null;
 
     /**
-    * @var null|boolean $is_resource;
-    */
+     * @var null|boolean;
+     */
     public $is_resource = null;
- 
 }

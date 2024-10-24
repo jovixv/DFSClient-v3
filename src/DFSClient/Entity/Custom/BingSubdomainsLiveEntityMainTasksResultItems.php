@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetrics;
 
-class BingSubdomainsLiveEntityMainTasksResultItems 
-{    
+class BingSubdomainsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $subdomain;
-    */
+     * @var null|string;
+     */
     public $subdomain = null;
 
     /**
-    * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

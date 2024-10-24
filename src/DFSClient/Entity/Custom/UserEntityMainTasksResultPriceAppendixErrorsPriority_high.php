@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultPriceAppendixErrorsPriority_high 
-{    
+class UserEntityMainTasksResultPriceAppendixErrorsPriority_high
+{
     /**
-    * @var null|string $cost_type;
-    */
+     * @var null|string;
+     */
     public $cost_type = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
- 
 }

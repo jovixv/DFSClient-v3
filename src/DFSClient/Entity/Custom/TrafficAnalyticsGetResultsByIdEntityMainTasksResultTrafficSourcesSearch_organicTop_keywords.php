@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_organicTop_keywords 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_organicTop_keywords
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
- 
 }

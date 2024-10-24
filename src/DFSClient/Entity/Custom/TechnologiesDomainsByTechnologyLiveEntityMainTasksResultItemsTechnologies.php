@@ -4,47 +4,46 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAdd_ons;
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAnalytics;
-use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesWeb_development;
-use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesServers;
-use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesSales;
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesContent;
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesMarketing;
+use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesSales;
+use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesServers;
+use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesWeb_development;
 
-class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologies 
-{    
+class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologies
+{
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAdd_ons $add_ons;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAdd_ons;
+     */
     public $add_ons = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAnalytics $analytics;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesAnalytics;
+     */
     public $analytics = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesWeb_development $web_development;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesWeb_development;
+     */
     public $web_development = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesServers $servers;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesServers;
+     */
     public $servers = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesSales $sales;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesSales;
+     */
     public $sales = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesContent $content;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesContent;
+     */
     public $content = null;
 
     /**
-    * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesMarketing $marketing;
-    */
+     * @var null|TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesMarketing;
+     */
     public $marketing = null;
- 
 }

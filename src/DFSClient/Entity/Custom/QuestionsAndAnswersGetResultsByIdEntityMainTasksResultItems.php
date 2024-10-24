@@ -2,72 +2,70 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class QuestionsAndAnswersGetResultsByIdEntityMainTasksResultItems 
-{    
+class QuestionsAndAnswersGetResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $question_id;
-    */
+     * @var null|string;
+     */
     public $question_id = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $profile_image_url;
-    */
+     * @var null|string;
+     */
     public $profile_image_url = null;
 
     /**
-    * @var null|string $profile_url;
-    */
+     * @var null|string;
+     */
     public $profile_url = null;
 
     /**
-    * @var null|string $profile_name;
-    */
+     * @var null|string;
+     */
     public $profile_name = null;
 
     /**
-    * @var null|string $question_text;
-    */
+     * @var null|string;
+     */
     public $question_text = null;
 
     /**
-    * @var null|NULL $original_question_text;
-    */
+     * @var null|null;
+     */
     public $original_question_text = null;
 
     /**
-    * @var null|string $time_ago;
-    */
+     * @var null|string;
+     */
     public $time_ago = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var array|QuestionsAndAnswersGetResultsByIdEntityMainTasksResultItemsItems[] $items;
-    */
+     * @var array|QuestionsAndAnswersGetResultsByIdEntityMainTasksResultItemsItems[];
+     */
     public $items = [];
- 
 }

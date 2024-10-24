@@ -4,91 +4,90 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
 
-class GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItems 
-{    
+class GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $review_text;
-    */
+     * @var null|string;
+     */
     public $review_text = null;
 
     /**
-    * @var null|string $time_ago;
-    */
+     * @var null|string;
+     */
     public $time_ago = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|GoogleReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|integer $photos_count;
-    */
+     * @var null|integer;
+     */
     public $photos_count = null;
 
     /**
-    * @var null|boolean $local_guide;
-    */
+     * @var null|boolean;
+     */
     public $local_guide = null;
 
     /**
-    * @var null|string $profile_name;
-    */
+     * @var null|string;
+     */
     public $profile_name = null;
 
     /**
-    * @var null|string $profile_url;
-    */
+     * @var null|string;
+     */
     public $profile_url = null;
 
     /**
-    * @var null|string $profile_image_url;
-    */
+     * @var null|string;
+     */
     public $profile_image_url = null;
 
     /**
-    * @var null|NULL $owner_answer;
-    */
+     * @var null|null;
+     */
     public $owner_answer = null;
 
     /**
-    * @var null|NULL $owner_time_ago;
-    */
+     * @var null|null;
+     */
     public $owner_time_ago = null;
- 
 }

@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesMail 
-{    
+class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesMail
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
- 
 }

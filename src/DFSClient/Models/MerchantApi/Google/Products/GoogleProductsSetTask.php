@@ -1,119 +1,142 @@
 <?php
 
-
 namespace DFSClientV3\Models\MerchantApi\Google\Products;
 
-
+use DFSClientV3\Entity\Custom\GoogleProductsSetTaskEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class GoogleProductsSetTask extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'merchant/google/products/task_post';
+
     protected $resultShouldBeTransformedToArray = true;
 
     /**
      * @return \DFSClientV3\Entity\Custom\GoogleProductsSetTaskEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleProductsSetTaskEntityMain
+    #[\Override]
+    public function get(): GoogleProductsSetTaskEntityMain
     {
         return parent::get();
     }
 
-	/**
-	 * @param string $keyword
-	 * @return $this
-	 */
-	public function setKeyword(string $keyword)
-	{
-		$this->payload['keyword'] = $keyword;
-		return $this;
-	}
+    /**
+     * @param string $keyword
+     *
+     * @return $this
+     */
+    public function setKeyword(string $keyword)
+    {
+        $this->payload['keyword'] = $keyword;
 
-	/**
-	 * @param string $url
-	 * @return $this
-	 */
-	public function setUrl(string $url)
-	{
-		$this->payload['url'] = $url;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $priority
-	 * @return $this
-	 */
-	public function setPriority(int $priority)
-	{
-		$this->payload['priority'] = $priority;
-		return $this;
-	}
+    /**
+     * @param string $url
+     *
+     * @return $this
+     */
+    public function setUrl(string $url)
+    {
+        $this->payload['url'] = $url;
 
-	/**
-	 * @param string $seDomain
-	 * @return $this
-	 */
-	public function setSeDomain(string $seDomain)
-	{
-		$this->payload['se_domain'] = $seDomain;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $depth
-	 * @return $this
-	 */
-	public function setDepth(int $depth)
-	{
-		$this->payload['depth'] = $depth;
-		return $this;
-	}
+    /**
+     * @param int $priority
+     *
+     * @return $this
+     */
+    public function setPriority(int $priority)
+    {
+        $this->payload['priority'] = $priority;
 
-	/**
-	 * @param string $searchParam
-	 * @return $this
-	 */
-	public function setSearchParam(string $searchParam)
-	{
-		$this->payload['search_param'] = $searchParam;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $priceMin
-	 * @return $this
-	 */
-	public function setPriceMin(int $priceMin)
-	{
-		$this->payload['price_min'] = $priceMin;
-		return $this;
-	}
+    /**
+     * @param string $seDomain
+     *
+     * @return $this
+     */
+    public function setSeDomain(string $seDomain)
+    {
+        $this->payload['se_domain'] = $seDomain;
 
-	/**
-	 * @param int $priceMin
-	 * @return $this
-	 */
-	public function setPriceMax(int $priceMax)
-	{
-		$this->payload['price_max'] = $priceMax;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $sortBy
-	 * @return $this
-	 */
-	public function setSortBy(string $sortBy)
-	{
-		$this->payload['sort_by'] = $sortBy;
-		return $this;
-	}
+    /**
+     * @param int $depth
+     *
+     * @return $this
+     */
+    public function setDepth(int $depth)
+    {
+        $this->payload['depth'] = $depth;
+
+        return $this;
+    }
+
+    /**
+     * @param string $searchParam
+     *
+     * @return $this
+     */
+    public function setSearchParam(string $searchParam)
+    {
+        $this->payload['search_param'] = $searchParam;
+
+        return $this;
+    }
+
+    /**
+     * @param int $priceMin
+     *
+     * @return $this
+     */
+    public function setPriceMin(int $priceMin)
+    {
+        $this->payload['price_min'] = $priceMin;
+
+        return $this;
+    }
+
+    /**
+     * @param int $priceMin
+     *
+     * @return $this
+     */
+    public function setPriceMax(int $priceMax)
+    {
+        $this->payload['price_max'] = $priceMax;
+
+        return $this;
+    }
+
+    /**
+     * @param string $sortBy
+     *
+     * @return $this
+     */
+    public function setSortBy(string $sortBy)
+    {
+        $this->payload['sort_by'] = $sortBy;
+
+        return $this;
+    }
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -125,36 +148,43 @@ class GoogleProductsSetTask extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $locationCoordinate
+     *
      * @return $this
      */
     public function setLocationCoordinate(string $locationCoordinate)
     {
         $this->payload['location_coordinate'] = $locationCoordinate;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $langCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $langCode)
@@ -166,39 +196,48 @@ class GoogleProductsSetTask extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param string $postbackUrl
+     *
      * @return $this
      */
     public function setPostbackUrl(string $postbackUrl)
     {
         $this->payload['postback_url'] = $postbackUrl;
+
         return $this;
     }
 
     /**
      * @param string $pingbackUrl
+     *
      * @return $this
      */
     public function setPingbackUrl(string $pingbackUrl)
     {
         $this->payload['pingback_url'] = $pingbackUrl;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

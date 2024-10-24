@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AppleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation 
-{    
-
+class AppleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation
+{
 }

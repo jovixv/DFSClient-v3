@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppListingsCategoriesEntityMainTasksResult 
-{    
+class GoogleAppListingsCategoriesEntityMainTasksResult
+{
     /**
-    * @var null|string $category;
-    */
+     * @var null|string;
+     */
     public $category = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

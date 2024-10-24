@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoConnotation_types 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoConnotation_types
+{
     /**
-    * @var null|double $positive;
-    */
+     * @var null|double;
+     */
     public $positive = null;
 
     /**
-    * @var null|double $negative;
-    */
+     * @var null|double;
+     */
     public $negative = null;
 
     /**
-    * @var null|double $neutral;
-    */
+     * @var null|double;
+     */
     public $neutral = null;
- 
 }

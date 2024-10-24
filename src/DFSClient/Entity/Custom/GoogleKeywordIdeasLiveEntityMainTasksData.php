@@ -2,62 +2,60 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleKeywordIdeasLiveEntityMainTasksData 
-{    
+class GoogleKeywordIdeasLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|array $order_by;
-    */
+     * @var null|array;
+     */
     public $order_by = null;
 
     /**
-    * @var null|boolean $include_serp_info;
-    */
+     * @var null|boolean;
+     */
     public $include_serp_info = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|array $filters;
-    */
+     * @var null|array;
+     */
     public $filters = null;
 
     /**
-    * @var null|boolean $include_clickstream_data;
-    */
+     * @var null|boolean;
+     */
     public $include_clickstream_data = null;
- 
 }

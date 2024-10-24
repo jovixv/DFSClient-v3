@@ -2,16 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class GetSerpResultsByTaskIdEntityMainTasksResultSpell
 {
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-     * @var null|string $type;
+     * @var null|string;
      */
     public $type = null;
 }

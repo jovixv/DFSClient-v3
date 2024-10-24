@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegativePage_types 
-{    
-
+class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegativePage_types
+{
 }

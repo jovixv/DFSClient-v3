@@ -4,66 +4,65 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\QuestionsAndAnswersLiveEntityMainTasksResultItems_without_answers;
 
-class QuestionsAndAnswersLiveEntityMainTasksResult 
-{    
+class QuestionsAndAnswersLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|string $feature_id;
-    */
+     * @var null|string;
+     */
     public $feature_id = null;
 
     /**
-    * @var null|array $item_types;
-    */
+     * @var null|array;
+     */
     public $item_types = null;
 
     /**
-    * @var array|QuestionsAndAnswersLiveEntityMainTasksResultItems_without_answers[] $items_without_answers;
-    */
+     * @var array|QuestionsAndAnswersLiveEntityMainTasksResultItems_without_answers[];
+     */
     public $items_without_answers = [];
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|QuestionsAndAnswersLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|QuestionsAndAnswersLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

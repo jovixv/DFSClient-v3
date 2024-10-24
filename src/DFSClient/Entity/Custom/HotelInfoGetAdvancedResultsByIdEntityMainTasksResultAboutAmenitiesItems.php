@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenitiesItems 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAboutAmenitiesItems
+{
     /**
-    * @var null|string $amenity;
-    */
+     * @var null|string;
+     */
     public $amenity = null;
 
     /**
-    * @var null|string $amenity_label;
-    */
+     * @var null|string;
+     */
     public $amenity_label = null;
 
     /**
-    * @var null|NULL $hint;
-    */
+     * @var null|null;
+     */
     public $hint = null;
 
     /**
-    * @var null|NULL $hint_label;
-    */
+     * @var null|null;
+     */
     public $hint_label = null;
- 
 }

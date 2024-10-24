@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageMicrodataEntityMainTasksResultItemsInspection_infoFields 
-{    
+class OnPageMicrodataEntityMainTasksResultItemsInspection_infoFields
+{
     /**
-    * @var null|string $name;
-    */
+     * @var null|string;
+     */
     public $name = null;
 
     /**
-    * @var null|NULL $types;
-    */
+     * @var null|null;
+     */
     public $types = null;
 
     /**
-    * @var null|string $value;
-    */
+     * @var null|string;
+     */
     public $value = null;
 
     /**
-    * @var null|NULL $test_results;
-    */
+     * @var null|null;
+     */
     public $test_results = null;
 
     /**
-    * @var null|NULL $fields;
-    */
+     * @var null|null;
+     */
     public $fields = null;
- 
 }

@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageLighthouseVersionsEntityMainTasksResultAvailible_versions 
-{    
+class OnPageLighthouseVersionsEntityMainTasksResultAvailible_versions
+{
     /**
-    * @var null|string $version;
-    */
+     * @var null|string;
+     */
     public $version = null;
 
     /**
-    * @var null|boolean $default;
-    */
+     * @var null|boolean;
+     */
     public $default = null;
- 
 }

@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultPriceSerpLiveHtmlPriority_low 
-{    
+class UserEntityMainTasksResultPriceSerpLiveHtmlPriority_low
+{
     /**
-    * @var null|string $cost_type;
-    */
+     * @var null|string;
+     */
     public $cost_type = null;
 
     /**
-    * @var null|double $cost;
-    */
+     * @var null|double;
+     */
     public $cost = null;
- 
 }

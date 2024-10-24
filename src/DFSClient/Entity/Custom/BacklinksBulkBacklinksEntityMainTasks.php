@@ -4,51 +4,50 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BacklinksBulkBacklinksEntityMainTasksResult;
 
-class BacklinksBulkBacklinksEntityMainTasks 
-{    
+class BacklinksBulkBacklinksEntityMainTasks
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|double $cost;
-    */
+     * @var null|double;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $result_count;
-    */
+     * @var null|integer;
+     */
     public $result_count = null;
 
     /**
-    * @var null|array $path;
-    */
+     * @var null|array;
+     */
     public $path = null;
 
     /**
-    * @var null|BacklinksBulkBacklinksEntityMainTasksData $data;
-    */
+     * @var null|BacklinksBulkBacklinksEntityMainTasksData;
+     */
     public $data = null;
 
     /**
-    * @var array|BacklinksBulkBacklinksEntityMainTasksResult[] $result;
-    */
+     * @var array|BacklinksBulkBacklinksEntityMainTasksResult[];
+     */
     public $result = [];
- 
 }

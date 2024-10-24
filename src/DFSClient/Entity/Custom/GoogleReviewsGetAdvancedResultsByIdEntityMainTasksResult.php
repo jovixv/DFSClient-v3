@@ -6,96 +6,95 @@ use DFSClientV3\Entity\Custom\GoogleReviewsGetAdvancedResultsByIdEntityMainTasks
 use DFSClientV3\Entity\Custom\GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultRating_groups;
 use DFSClientV3\Entity\Custom\GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultTop_keywords;
 
-class GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResult 
-{    
+class GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $product_id;
-    */
+     * @var null|string;
+     */
     public $product_id = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|NULL $spell;
-    */
+     * @var null|null;
+     */
     public $spell = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $image_url;
-    */
+     * @var null|string;
+     */
     public $image_url = null;
 
     /**
-    * @var null|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultRating $rating;
-    */
+     * @var null|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultRating;
+     */
     public $rating = null;
 
     /**
-    * @var array|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultRating_groups[] $rating_groups;
-    */
+     * @var array|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultRating_groups[];
+     */
     public $rating_groups = [];
 
     /**
-    * @var array|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultTop_keywords[] $top_keywords;
-    */
+     * @var array|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultTop_keywords[];
+     */
     public $top_keywords = [];
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|array $item_types;
-    */
+     * @var null|array;
+     */
     public $item_types = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

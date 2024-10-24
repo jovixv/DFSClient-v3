@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsAppItemsApp_element 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsAppItemsApp_element
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $price;
-    */
+     * @var null|string;
+     */
     public $price = null;
- 
 }

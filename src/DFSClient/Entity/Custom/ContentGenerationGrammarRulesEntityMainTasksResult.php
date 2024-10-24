@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationGrammarRulesEntityMainTasksResult 
-{    
+class ContentGenerationGrammarRulesEntityMainTasksResult
+{
     /**
-    * @var null|array $rules;
-    */
+     * @var null|array;
+     */
     public $rules = null;
- 
 }

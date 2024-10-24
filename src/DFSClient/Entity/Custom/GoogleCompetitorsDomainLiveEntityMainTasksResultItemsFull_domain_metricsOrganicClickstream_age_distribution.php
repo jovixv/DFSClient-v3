@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsOrganicClickstream_age_distribution 
-{    
-
+class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsOrganicClickstream_age_distribution
+{
 }

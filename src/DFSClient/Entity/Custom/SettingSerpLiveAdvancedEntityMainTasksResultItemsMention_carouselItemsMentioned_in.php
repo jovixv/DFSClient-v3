@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMentioned_in 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMentioned_in
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
- 
 }
