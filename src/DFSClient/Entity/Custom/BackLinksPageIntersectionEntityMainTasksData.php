@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksPageIntersectionEntityMainTasksData 
-{    
+class BackLinksPageIntersectionEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|array $targets;
-    */
+     * @var null|array;
+     */
     public $targets = null;
 
     /**
-    * @var null|array $exclude_targets;
-    */
+     * @var null|array;
+     */
     public $exclude_targets = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|array $order_by;
-    */
+     * @var null|array;
+     */
     public $order_by = null;
 
     /**
-    * @var null|array $filters;
-    */
+     * @var null|array;
+     */
     public $filters = null;
- 
 }

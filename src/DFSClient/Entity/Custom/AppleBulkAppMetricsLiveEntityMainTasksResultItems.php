@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AppleBulkAppMetricsLiveEntityMainTasksResultItemsMetrics;
 
-class AppleBulkAppMetricsLiveEntityMainTasksResultItems 
-{    
+class AppleBulkAppMetricsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|AppleBulkAppMetricsLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|AppleBulkAppMetricsLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

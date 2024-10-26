@@ -6,21 +6,20 @@ use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetResultsByIdEntityMainTasks
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultMobile;
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultTablet;
 
-class AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResult 
-{    
+class AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultDesktop $desktop;
-    */
+     * @var null|AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultDesktop;
+     */
     public $desktop = null;
 
     /**
-    * @var null|AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultMobile $mobile;
-    */
+     * @var null|AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultMobile;
+     */
     public $mobile = null;
 
     /**
-    * @var null|AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultTablet $tablet;
-    */
+     * @var null|AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultTablet;
+     */
     public $tablet = null;
- 
 }

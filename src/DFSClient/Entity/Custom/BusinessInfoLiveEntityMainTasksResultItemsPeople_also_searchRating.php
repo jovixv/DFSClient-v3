@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessInfoLiveEntityMainTasksResultItemsPeople_also_searchRating 
-{    
+class BusinessInfoLiveEntityMainTasksResultItemsPeople_also_searchRating
+{
     /**
-    * @var null|string $rating_type;
-    */
+     * @var null|string;
+     */
     public $rating_type = null;
 
     /**
-    * @var null|double $value;
-    */
+     * @var null|double;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $votes_count;
-    */
+     * @var null|integer;
+     */
     public $votes_count = null;
 
     /**
-    * @var null|NULL $rating_max;
-    */
+     * @var null|null;
+     */
     public $rating_max = null;
- 
 }

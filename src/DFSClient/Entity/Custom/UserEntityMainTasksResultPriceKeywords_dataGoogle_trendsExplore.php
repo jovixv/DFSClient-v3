@@ -6,21 +6,20 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_post;
 
-class UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExplore 
-{    
+class UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExplore
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreLive $live;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreLive;
+     */
     public $live = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_get $task_get;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_get;
+     */
     public $task_get = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_post $task_post;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_post;
+     */
     public $task_post = null;
- 
 }

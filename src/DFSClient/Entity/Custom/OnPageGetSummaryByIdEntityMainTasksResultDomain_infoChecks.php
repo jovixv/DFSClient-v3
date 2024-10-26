@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetSummaryByIdEntityMainTasksResultDomain_infoChecks 
-{    
+class OnPageGetSummaryByIdEntityMainTasksResultDomain_infoChecks
+{
     /**
-    * @var null|boolean $sitemap;
-    */
+     * @var null|boolean;
+     */
     public $sitemap = null;
 
     /**
-    * @var null|boolean $start_page_deny_flag;
-    */
+     * @var null|boolean;
+     */
     public $start_page_deny_flag = null;
 
     /**
-    * @var null|boolean $robots_txt;
-    */
+     * @var null|boolean;
+     */
     public $robots_txt = null;
 
     /**
-    * @var null|boolean $ssl;
-    */
+     * @var null|boolean;
+     */
     public $ssl = null;
 
     /**
-    * @var null|boolean $test_canonicalization;
-    */
+     * @var null|boolean;
+     */
     public $test_canonicalization = null;
 
     /**
-    * @var null|boolean $test_hidden_server_signature;
-    */
+     * @var null|boolean;
+     */
     public $test_hidden_server_signature = null;
 
     /**
-    * @var null|boolean $test_404_page;
-    */
+     * @var null|boolean;
+     */
     public $test_404_page = null;
 
     /**
-    * @var null|boolean $test_directory_browsing;
-    */
+     * @var null|boolean;
+     */
     public $test_directory_browsing = null;
- 
 }

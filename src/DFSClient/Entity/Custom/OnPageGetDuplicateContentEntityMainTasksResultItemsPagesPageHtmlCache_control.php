@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlCache_control 
-{    
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtmlCache_control
+{
     /**
-    * @var null|boolean $cachable;
-    */
+     * @var null|boolean;
+     */
     public $cachable = null;
 
     /**
-    * @var null|integer $ttl;
-    */
+     * @var null|integer;
+     */
     public $ttl = null;
- 
 }

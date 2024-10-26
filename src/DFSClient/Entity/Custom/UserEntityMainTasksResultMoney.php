@@ -5,26 +5,25 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimits;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatistics;
 
-class UserEntityMainTasksResultMoney 
-{    
+class UserEntityMainTasksResultMoney
+{
     /**
-    * @var null|integer $total;
-    */
+     * @var null|integer;
+     */
     public $total = null;
 
     /**
-    * @var null|double $balance;
-    */
+     * @var null|double;
+     */
     public $balance = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimits $limits;
-    */
+     * @var null|UserEntityMainTasksResultMoneyLimits;
+     */
     public $limits = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatistics $statistics;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatistics;
+     */
     public $statistics = null;
- 
 }

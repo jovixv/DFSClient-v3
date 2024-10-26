@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultRatesStatisticsMinuteSerpLive 
-{    
+class UserEntityMainTasksResultRatesStatisticsMinuteSerpLive
+{
     /**
-    * @var null|integer $advanced;
-    */
+     * @var null|integer;
+     */
     public $advanced = null;
 
     /**
-    * @var null|integer $html;
-    */
+     * @var null|integer;
+     */
     public $html = null;
 
     /**
-    * @var null|integer $regular;
-    */
+     * @var null|integer;
+     */
     public $regular = null;
- 
 }

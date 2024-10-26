@@ -8,61 +8,60 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinuteKeywords
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinuteSerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinuteTraffic_analytics;
 
-class UserEntityMainTasksResultMoneyLimitsMinute 
-{    
+class UserEntityMainTasksResultMoneyLimitsMinute
+{
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteAppendix $appendix;
-    */
+     * @var null|UserEntityMainTasksResultMoneyLimitsMinuteAppendix;
+     */
     public $appendix = null;
 
     /**
-    * @var null|integer $total;
-    */
+     * @var null|integer;
+     */
     public $total = null;
 
     /**
-    * @var null|integer $total_appendix;
-    */
+     * @var null|integer;
+     */
     public $total_appendix = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteDataforseo_labs $dataforseo_labs;
-    */
+     * @var null|UserEntityMainTasksResultMoneyLimitsMinuteDataforseo_labs;
+     */
     public $dataforseo_labs = null;
 
     /**
-    * @var null|integer $total_dataforseo_labs;
-    */
+     * @var null|integer;
+     */
     public $total_dataforseo_labs = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_data $keywords_data;
-    */
+     * @var null|UserEntityMainTasksResultMoneyLimitsMinuteKeywords_data;
+     */
     public $keywords_data = null;
 
     /**
-    * @var null|integer $total_keywords_data;
-    */
+     * @var null|integer;
+     */
     public $total_keywords_data = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteSerp $serp;
-    */
+     * @var null|UserEntityMainTasksResultMoneyLimitsMinuteSerp;
+     */
     public $serp = null;
 
     /**
-    * @var null|integer $total_serp;
-    */
+     * @var null|integer;
+     */
     public $total_serp = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyLimitsMinuteTraffic_analytics $traffic_analytics;
-    */
+     * @var null|UserEntityMainTasksResultMoneyLimitsMinuteTraffic_analytics;
+     */
     public $traffic_analytics = null;
 
     /**
-    * @var null|integer $total_traffic_analytics;
-    */
+     * @var null|integer;
+     */
     public $total_traffic_analytics = null;
- 
 }

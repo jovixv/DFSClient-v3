@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsSearchLiveEntityMainTasksResult 
-{    
+class BusinessListingsSearchLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
 
     /**
-    * @var array|BusinessListingsSearchLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BusinessListingsSearchLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

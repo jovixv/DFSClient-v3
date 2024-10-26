@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideasGoogle 
-{    
-
+class DFSLabsAvailableFiltersEntityMainTasksResultKeyword_ideasGoogle
+{
 }

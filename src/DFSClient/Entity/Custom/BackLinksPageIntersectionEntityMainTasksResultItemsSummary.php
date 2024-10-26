@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksPageIntersectionEntityMainTasksResultItemsSummary 
-{    
+class BackLinksPageIntersectionEntityMainTasksResultItemsSummary
+{
     /**
-    * @var null|integer $intersections_count;
-    */
+     * @var null|integer;
+     */
     public $intersections_count = null;
- 
 }

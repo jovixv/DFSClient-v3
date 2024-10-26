@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableWednesdayClose 
-{    
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableWednesdayClose
+{
     /**
-    * @var null|integer $hour;
-    */
+     * @var null|integer;
+     */
     public $hour = null;
 
     /**
-    * @var null|integer $minute;
-    */
+     * @var null|integer;
+     */
     public $minute = null;
- 
 }

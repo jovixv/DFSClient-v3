@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SubdomainsLiveEntityMainTasksResultItemsMetrics;
 
-class SubdomainsLiveEntityMainTasksResultItems 
-{    
+class SubdomainsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $subdomain;
-    */
+     * @var null|string;
+     */
     public $subdomain = null;
 
     /**
-    * @var null|SubdomainsLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|SubdomainsLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

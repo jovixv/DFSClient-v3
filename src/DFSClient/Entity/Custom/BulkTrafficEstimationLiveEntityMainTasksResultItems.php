@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics;
 
-class BulkTrafficEstimationLiveEntityMainTasksResultItems 
-{    
+class BulkTrafficEstimationLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|BulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|BulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

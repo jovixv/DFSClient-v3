@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMarketing 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMarketing
+{
     /**
-    * @var null|array $seo;
-    */
+     * @var null|array;
+     */
     public $seo = null;
- 
 }

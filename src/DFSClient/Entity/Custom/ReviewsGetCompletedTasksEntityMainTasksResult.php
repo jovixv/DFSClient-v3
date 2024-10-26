@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ReviewsGetCompletedTasksEntityMainTasksResult 
-{    
+class ReviewsGetCompletedTasksEntityMainTasksResult
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $date_posted;
-    */
+     * @var null|string;
+     */
     public $date_posted = null;
 
     /**
-    * @var null|string $endpoint;
-    */
+     * @var null|string;
+     */
     public $endpoint = null;
- 
 }

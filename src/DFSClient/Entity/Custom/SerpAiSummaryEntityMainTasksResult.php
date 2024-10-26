@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpAiSummaryEntityMainTasksResult 
-{    
+class SerpAiSummaryEntityMainTasksResult
+{
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|SerpAiSummaryEntityMainTasksResultItems[] $items;
-    */
+     * @var array|SerpAiSummaryEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

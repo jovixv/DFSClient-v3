@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionBing 
-{    
-
+class DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionBing
+{
 }

@@ -2,58 +2,57 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultGlobal_rank;
-use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultCountry_rank;
-use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultCategory_rank;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience;
-use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic;
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultCategory_rank;
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultCountry_rank;
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultGlobal_rank;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultSites;
+use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic;
 
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResult 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $site_url;
-    */
+     * @var null|string;
+     */
     public $site_url = null;
 
     /**
-    * @var null|string $site_description;
-    */
+     * @var null|string;
+     */
     public $site_description = null;
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultGlobal_rank $global_rank;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultGlobal_rank;
+     */
     public $global_rank = null;
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultCountry_rank $country_rank;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultCountry_rank;
+     */
     public $country_rank = null;
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultCategory_rank $category_rank;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultCategory_rank;
+     */
     public $category_rank = null;
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience $audience;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultAudience;
+     */
     public $audience = null;
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic $traffic;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic;
+     */
     public $traffic = null;
 
     /**
-    * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultSites $sites;
-    */
+     * @var null|TrafficAnalyticsGetResultsByIdEntityMainTasksResultSites;
+     */
     public $sites = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
- 
 }

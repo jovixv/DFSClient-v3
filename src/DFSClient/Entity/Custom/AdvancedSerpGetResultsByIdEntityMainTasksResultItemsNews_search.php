@@ -4,66 +4,65 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsNews_searchRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsNews_search 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsNews_search
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $image_url;
-    */
+     * @var null|null;
+     */
     public $image_url = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $time_published;
-    */
+     * @var null|string;
+     */
     public $time_published = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsNews_searchRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsNews_searchRectangle;
+     */
     public $rectangle = null;
- 
 }

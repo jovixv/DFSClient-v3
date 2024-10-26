@@ -3,25 +3,24 @@
 namespace DFSClientV3\Entity\Custom;
 
 class BackLinksPageIntersectionEntityMainTasksResult
-{    
+{
     /**
-    * @var null|array $targets;
-    */
+     * @var null|array;
+     */
     public $targets = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BackLinksPageIntersectionEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BackLinksPageIntersectionEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

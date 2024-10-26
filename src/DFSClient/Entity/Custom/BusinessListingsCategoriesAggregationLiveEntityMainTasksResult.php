@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsCategoriesAggregationLiveEntityMainTasksResult 
-{    
+class BusinessListingsCategoriesAggregationLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
 
     /**
-    * @var array|BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

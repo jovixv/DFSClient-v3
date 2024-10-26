@@ -2,25 +2,24 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveAdvanced;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveHtml;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveRegular;
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveAdvanced;
 
-class UserEntityMainTasksResultPriceSerpLive 
-{    
+class UserEntityMainTasksResultPriceSerpLive
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLiveHtml $html;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpLiveHtml;
+     */
     public $html = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLiveRegular $regular;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpLiveRegular;
+     */
     public $regular = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLiveAdvanced $advanced;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpLiveAdvanced;
+     */
     public $advanced = null;
- 
 }

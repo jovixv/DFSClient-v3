@@ -6,41 +6,40 @@ use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultItemsK
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
-class BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
-{    
+class BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info $keyword_info;
-    */
+     * @var null|BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+     */
     public $keyword_info = null;
 
     /**
-    * @var null|BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties $keyword_properties;
-    */
+     * @var null|BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
+     */
     public $keyword_properties = null;
 
     /**
-    * @var null|BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info $serp_info;
-    */
+     * @var null|BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
+     */
     public $serp_info = null;
- 
 }

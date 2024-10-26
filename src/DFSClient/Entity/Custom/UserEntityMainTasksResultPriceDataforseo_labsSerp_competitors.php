@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLive;
 
-class UserEntityMainTasksResultPriceDataforseo_labsSerp_competitors 
-{    
+class UserEntityMainTasksResultPriceDataforseo_labsSerp_competitors
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLive $live;
-    */
+     * @var null|UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLive;
+     */
     public $live = null;
- 
 }

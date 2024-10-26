@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ContentAnalysisRatingDistributionLiveEntityMainTasksDataKeyword_fields;
 
-class ContentAnalysisRatingDistributionLiveEntityMainTasksData 
-{    
+class ContentAnalysisRatingDistributionLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|ContentAnalysisRatingDistributionLiveEntityMainTasksDataKeyword_fields $keyword_fields;
-    */
+     * @var null|ContentAnalysisRatingDistributionLiveEntityMainTasksDataKeyword_fields;
+     */
     public $keyword_fields = null;
 
     /**
-    * @var null|integer $internal_list_limit;
-    */
+     * @var null|integer;
+     */
     public $internal_list_limit = null;
 
     /**
-    * @var null|double $positive_connotation_threshold;
-    */
+     * @var null|double;
+     */
     public $positive_connotation_threshold = null;
 
     /**
-    * @var null|integer $sentiments_connotation_threshold;
-    */
+     * @var null|integer;
+     */
     public $sentiments_connotation_threshold = null;
- 
 }

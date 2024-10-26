@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\SubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
 
-class SubdomainsLiveEntityMainTasksResultItemsMetrics 
-{    
+class SubdomainsLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|SubdomainsLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|SubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|SubdomainsLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|SubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
- 
 }

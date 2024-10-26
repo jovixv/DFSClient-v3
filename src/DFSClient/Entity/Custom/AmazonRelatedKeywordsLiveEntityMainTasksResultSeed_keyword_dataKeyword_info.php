@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AmazonRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info 
-{    
+class AmazonRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $last_updated_time;
-    */
+     * @var null|string;
+     */
     public $last_updated_time = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
- 
 }

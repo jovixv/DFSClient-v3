@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordPerformanceGetLocationsAndLanguagesEntityMainTasksResultAvailable_locations;
 
-class KeywordPerformanceGetLocationsAndLanguagesEntityMainTasksResult 
-{    
+class KeywordPerformanceGetLocationsAndLanguagesEntityMainTasksResult
+{
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var array|KeywordPerformanceGetLocationsAndLanguagesEntityMainTasksResultAvailable_locations[] $available_locations;
-    */
+     * @var array|KeywordPerformanceGetLocationsAndLanguagesEntityMainTasksResultAvailable_locations[];
+     */
     public $available_locations = [];
- 
 }

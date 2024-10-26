@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultAudienceTop_categories;
 
-class TrafficAnalyticsLiveEntityMainTasksResultAudience 
-{    
+class TrafficAnalyticsLiveEntityMainTasksResultAudience
+{
     /**
-    * @var null|integer $visits;
-    */
+     * @var null|integer;
+     */
     public $visits = null;
 
     /**
-    * @var null|string $time_on_site_avg;
-    */
+     * @var null|string;
+     */
     public $time_on_site_avg = null;
 
     /**
-    * @var null|double $page_views_avg;
-    */
+     * @var null|double;
+     */
     public $page_views_avg = null;
 
     /**
-    * @var null|double $bounce_rate;
-    */
+     * @var null|double;
+     */
     public $bounce_rate = null;
 
     /**
-    * @var array|TrafficAnalyticsLiveEntityMainTasksResultAudienceTop_categories[] $top_categories;
-    */
+     * @var array|TrafficAnalyticsLiveEntityMainTasksResultAudienceTop_categories[];
+     */
     public $top_categories = [];
 
     /**
-    * @var null|array $other_visited_websites;
-    */
+     * @var null|array;
+     */
     public $other_visited_websites = null;
 
     /**
-    * @var null|array $top_topics;
-    */
+     * @var null|array;
+     */
     public $top_topics = null;
- 
 }

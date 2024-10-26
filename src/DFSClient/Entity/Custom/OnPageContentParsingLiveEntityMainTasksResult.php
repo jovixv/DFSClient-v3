@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageContentParsingLiveEntityMainTasksResult 
-{    
+class OnPageContentParsingLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $crawl_progress;
-    */
+     * @var null|string;
+     */
     public $crawl_progress = null;
 
     /**
-    * @var null|NULL $crawl_status;
-    */
+     * @var null|null;
+     */
     public $crawl_status = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|OnPageContentParsingLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|OnPageContentParsingLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

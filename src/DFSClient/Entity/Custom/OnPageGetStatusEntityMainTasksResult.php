@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetStatusEntityMainTasksResult 
-{    
+class OnPageGetStatusEntityMainTasksResult
+{
     /**
-    * @var null|string $crawl_progress;
-    */
+     * @var null|string;
+     */
     public $crawl_progress = null;
 
     /**
-    * @var null|NULL $current_page;
-    */
+     * @var null|null;
+     */
     public $current_page = null;
- 
 }

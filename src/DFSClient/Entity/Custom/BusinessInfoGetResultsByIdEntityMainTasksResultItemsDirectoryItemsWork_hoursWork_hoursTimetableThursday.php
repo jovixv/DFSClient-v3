@@ -2,19 +2,18 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayOpen;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayClose;
+use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayOpen;
 
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursday 
-{    
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursday
+{
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayOpen $open;
-    */
+     * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayOpen;
+     */
     public $open = null;
 
     /**
-    * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayClose $close;
-    */
+     * @var null|BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hoursWork_hoursTimetableThursdayClose;
+     */
     public $close = null;
- 
 }

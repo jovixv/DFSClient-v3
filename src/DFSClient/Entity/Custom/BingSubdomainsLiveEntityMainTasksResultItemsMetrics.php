@@ -2,31 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
-use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
 use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack;
+use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
+use DFSClientV3\Entity\Custom\BingSubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
 
-class BingSubdomainsLiveEntityMainTasksResultItemsMetrics 
-{    
+class BingSubdomainsLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
 
     /**
-    * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet $featured_snippet;
-    */
+     * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
+     */
     public $featured_snippet = null;
 
     /**
-    * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack $local_pack;
-    */
+     * @var null|BingSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack;
+     */
     public $local_pack = null;
- 
 }

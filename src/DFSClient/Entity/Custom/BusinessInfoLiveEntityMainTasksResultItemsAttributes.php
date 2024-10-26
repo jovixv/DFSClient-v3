@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsAttributesAvailable_attributes;
 
-class BusinessInfoLiveEntityMainTasksResultItemsAttributes 
-{    
+class BusinessInfoLiveEntityMainTasksResultItemsAttributes
+{
     /**
-    * @var null|BusinessInfoLiveEntityMainTasksResultItemsAttributesAvailable_attributes $available_attributes;
-    */
+     * @var null|BusinessInfoLiveEntityMainTasksResultItemsAttributesAvailable_attributes;
+     */
     public $available_attributes = null;
 
     /**
-    * @var null|NULL $unavailable_attributes;
-    */
+     * @var null|null;
+     */
     public $unavailable_attributes = null;
- 
 }

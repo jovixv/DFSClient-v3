@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trendsExplore;
 
-class UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trends 
-{    
+class UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trends
+{
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trendsExplore $explore;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trendsExplore;
+     */
     public $explore = null;
- 
 }

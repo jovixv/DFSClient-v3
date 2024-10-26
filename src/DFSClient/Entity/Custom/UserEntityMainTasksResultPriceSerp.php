@@ -9,36 +9,35 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
 
-class UserEntityMainTasksResultPriceSerp 
-{    
+class UserEntityMainTasksResultPriceSerp
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLanguages $languages;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpLanguages;
+     */
     public $languages = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLive $live;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpLive;
+     */
     public $live = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpLocations $locations;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpLocations;
+     */
     public $locations = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_get $task_get;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpTask_get;
+     */
     public $task_get = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTask_post $task_post;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpTask_post;
+     */
     public $task_post = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerpTasks_ready $tasks_ready;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerpTasks_ready;
+     */
     public $tasks_ready = null;
- 
 }

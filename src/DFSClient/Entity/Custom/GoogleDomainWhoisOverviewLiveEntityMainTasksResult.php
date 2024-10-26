@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleDomainWhoisOverviewLiveEntityMainTasksResult 
-{    
+class GoogleDomainWhoisOverviewLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

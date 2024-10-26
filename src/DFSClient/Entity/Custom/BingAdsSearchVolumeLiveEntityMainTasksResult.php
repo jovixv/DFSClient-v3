@@ -4,56 +4,55 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingAdsSearchVolumeLiveEntityMainTasksResultMonthly_searches;
 
-class BingAdsSearchVolumeLiveEntityMainTasksResult 
-{    
+class BingAdsSearchVolumeLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|boolean $search_partners;
-    */
+     * @var null|boolean;
+     */
     public $search_partners = null;
 
     /**
-    * @var null|string $device;
-    */
+     * @var null|string;
+     */
     public $device = null;
 
     /**
-    * @var null|double $competition;
-    */
+     * @var null|double;
+     */
     public $competition = null;
 
     /**
-    * @var null|double $cpc;
-    */
+     * @var null|double;
+     */
     public $cpc = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var null|NULL $categories;
-    */
+     * @var null|null;
+     */
     public $categories = null;
 
     /**
-    * @var array|BingAdsSearchVolumeLiveEntityMainTasksResultMonthly_searches[] $monthly_searches;
-    */
+     * @var array|BingAdsSearchVolumeLiveEntityMainTasksResultMonthly_searches[];
+     */
     public $monthly_searches = [];
- 
 }

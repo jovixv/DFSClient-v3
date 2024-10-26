@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_list_itemLink 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_list_itemLink
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $domain;
-    */
+     * @var null|null;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
- 
 }

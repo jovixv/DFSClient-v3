@@ -2,66 +2,65 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessUpdatesGetResultsByIdEntityMainTasksResultItems 
-{    
+class BusinessUpdatesGetResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $author;
-    */
+     * @var null|string;
+     */
     public $author = null;
 
     /**
-    * @var null|NULL $snippet;
-    */
+     * @var null|null;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $post_text;
-    */
+     * @var null|string;
+     */
     public $post_text = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $images_url;
-    */
+     * @var null|string;
+     */
     public $images_url = null;
 
     /**
-    * @var null|string $post_date;
-    */
+     * @var null|string;
+     */
     public $post_date = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 }

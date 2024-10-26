@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleBulkAppMetricsLiveEntityMainTasksResultItemsMetricsGoogle_play_search_organic 
-{    
+class GoogleBulkAppMetricsLiveEntityMainTasksResultItemsMetricsGoogle_play_search_organic
+{
     /**
-    * @var null|integer $pos_1;
-    */
+     * @var null|integer;
+     */
     public $pos_1 = null;
 
     /**
-    * @var null|integer $pos_2_3;
-    */
+     * @var null|integer;
+     */
     public $pos_2_3 = null;
 
     /**
-    * @var null|integer $pos_4_10;
-    */
+     * @var null|integer;
+     */
     public $pos_4_10 = null;
 
     /**
-    * @var null|integer $pos_11_100;
-    */
+     * @var null|integer;
+     */
     public $pos_11_100 = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
- 
 }

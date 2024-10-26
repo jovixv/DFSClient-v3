@@ -2,64 +2,63 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunSentiment_connotations;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunConnotation_types;
+use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunSentiment_connotations;
 
-class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFun 
-{    
+class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFun
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $rank;
-    */
+     * @var null|integer;
+     */
     public $rank = null;
 
     /**
-    * @var null|NULL $top_domains;
-    */
+     * @var null|null;
+     */
     public $top_domains = null;
 
     /**
-    * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunSentiment_connotations $sentiment_connotations;
-    */
+     * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunSentiment_connotations;
+     */
     public $sentiment_connotations = null;
 
     /**
-    * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunConnotation_types $connotation_types;
-    */
+     * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFunConnotation_types;
+     */
     public $connotation_types = null;
 
     /**
-    * @var null|NULL $text_categories;
-    */
+     * @var null|null;
+     */
     public $text_categories = null;
 
     /**
-    * @var null|NULL $page_categories;
-    */
+     * @var null|null;
+     */
     public $page_categories = null;
 
     /**
-    * @var null|NULL $page_types;
-    */
+     * @var null|null;
+     */
     public $page_types = null;
 
     /**
-    * @var null|NULL $countries;
-    */
+     * @var null|null;
+     */
     public $countries = null;
 
     /**
-    * @var null|NULL $languages;
-    */
+     * @var null|null;
+     */
     public $languages = null;
- 
 }

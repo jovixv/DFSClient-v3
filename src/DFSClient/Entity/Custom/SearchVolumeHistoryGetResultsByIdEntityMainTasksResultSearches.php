@@ -3,30 +3,29 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesDesktop;
-use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesNon_smartphones;
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesMobile;
+use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesNon_smartphones;
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesTablet;
 
-class SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearches 
-{    
+class SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearches
+{
     /**
-    * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesDesktop[] $desktop;
-    */
+     * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesDesktop[];
+     */
     public $desktop = [];
 
     /**
-    * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesNon_smartphones[] $non_smartphones;
-    */
+     * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesNon_smartphones[];
+     */
     public $non_smartphones = [];
 
     /**
-    * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesMobile[] $mobile;
-    */
+     * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesMobile[];
+     */
     public $mobile = [];
 
     /**
-    * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesTablet[] $tablet;
-    */
+     * @var array|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesTablet[];
+     */
     public $tablet = [];
- 
 }

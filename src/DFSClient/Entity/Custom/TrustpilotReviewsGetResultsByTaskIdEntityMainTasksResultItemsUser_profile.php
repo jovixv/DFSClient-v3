@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrustpilotReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile 
-{    
+class TrustpilotReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile
+{
     /**
-    * @var null|string $name;
-    */
+     * @var null|string;
+     */
     public $name = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $image_url;
-    */
+     * @var null|null;
+     */
     public $image_url = null;
 
     /**
-    * @var null|string $location;
-    */
+     * @var null|string;
+     */
     public $location = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
- 
 }

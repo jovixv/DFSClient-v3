@@ -5,36 +5,35 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trends;
 
-class UserEntityMainTasksResultMoneyStatisticsDayKeywords_data 
-{    
+class UserEntityMainTasksResultMoneyStatisticsDayKeywords_data
+{
     /**
-    * @var null|integer $categories;
-    */
+     * @var null|integer;
+     */
     public $categories = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle $google;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle;
+     */
     public $google = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trends $google_trends;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle_trends;
+     */
     public $google_trends = null;
 
     /**
-    * @var null|integer $languages;
-    */
+     * @var null|integer;
+     */
     public $languages = null;
 
     /**
-    * @var null|integer $locations;
-    */
+     * @var null|integer;
+     */
     public $locations = null;
 
     /**
-    * @var null|integer $tasks_ready;
-    */
+     * @var null|integer;
+     */
     public $tasks_ready = null;
- 
 }

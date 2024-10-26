@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordSuggestionsForUrlLiveEntityMainTasksData 
-{    
+class KeywordSuggestionsForUrlLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|boolean $exclude_brands;
-    */
+     * @var null|boolean;
+     */
     public $exclude_brands = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
- 
 }

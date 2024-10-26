@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesReferral_destinationTop_destinations 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesReferral_destinationTop_destinations
+{
     /**
-    * @var null|string $site;
-    */
+     * @var null|string;
+     */
     public $site = null;
- 
 }

@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleTrendsLiveEntityMainTasksResult 
-{    
+class GoogleTrendsLiveEntityMainTasksResult
+{
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * array|GoogleTrendsLiveEntityMainTasksResultItems[] $items;
-    */
+     * array|GoogleTrendsLiveEntityMainTasksResultItems[] $items;.
+     */
     public $items = [];
- 
 }

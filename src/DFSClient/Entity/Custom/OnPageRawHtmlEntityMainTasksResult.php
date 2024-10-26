@@ -4,26 +4,25 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageRawHtmlEntityMainTasksResultItems;
 
-class OnPageRawHtmlEntityMainTasksResult 
-{    
+class OnPageRawHtmlEntityMainTasksResult
+{
     /**
-    * @var null|string $crawl_progress;
-    */
+     * @var null|string;
+     */
     public $crawl_progress = null;
 
     /**
-    * @var null|OnPageRawHtmlEntityMainTasksResultCrawl_status $crawl_status;
-    */
+     * @var null|OnPageRawHtmlEntityMainTasksResultCrawl_status;
+     */
     public $crawl_status = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var null|OnPageRawHtmlEntityMainTasksResultItems $items;
-    */
+     * @var null|OnPageRawHtmlEntityMainTasksResultItems;
+     */
     public $items = null;
- 
 }

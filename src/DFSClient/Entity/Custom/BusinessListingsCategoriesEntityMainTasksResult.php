@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsCategoriesEntityMainTasksResult 
-{    
+class BusinessListingsCategoriesEntityMainTasksResult
+{
     /**
-    * @var null|string $category_name;
-    */
+     * @var null|string;
+     */
     public $category_name = null;
 
     /**
-    * @var null|integer $business_count;
-    */
+     * @var null|integer;
+     */
     public $business_count = null;
- 
 }

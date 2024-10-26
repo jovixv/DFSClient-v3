@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksBulkBacklinksEntityMainTasksResultItems 
-{    
+class BacklinksBulkBacklinksEntityMainTasksResultItems
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $backlinks;
-    */
+     * @var null|integer;
+     */
     public $backlinks = null;
- 
 }

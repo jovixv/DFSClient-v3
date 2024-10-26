@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebLiveEntityMainTasksResultRevenue 
-{    
+class SimilarwebLiveEntityMainTasksResultRevenue
+{
     /**
-    * @var null|NULL $revenue_min;
-    */
+     * @var null|null;
+     */
     public $revenue_min = null;
 
     /**
-    * @var null|NULL $revenue_max;
-    */
+     * @var null|null;
+     */
     public $revenue_max = null;
- 
 }

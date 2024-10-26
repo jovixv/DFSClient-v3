@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesMobile_appsGoogle_play_store 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesMobile_appsGoogle_play_store
+{
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|string $app_title;
-    */
+     * @var null|string;
+     */
     public $app_title = null;
 
     /**
-    * @var null|string $app_price;
-    */
+     * @var null|string;
+     */
     public $app_price = null;
 
     /**
-    * @var null|string $app_rating;
-    */
+     * @var null|string;
+     */
     public $app_rating = null;
 
     /**
-    * @var null|string $app_link;
-    */
+     * @var null|string;
+     */
     public $app_link = null;
- 
 }

@@ -4,96 +4,95 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\YelpSearchGetResultsByTaskIdEntityMainTasksResultItemsRating;
 
-class YelpSearchGetResultsByTaskIdEntityMainTasksResultItems 
-{    
+class YelpSearchGetResultsByTaskIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $yelp_business_id;
-    */
+     * @var null|string;
+     */
     public $yelp_business_id = null;
 
     /**
-    * @var null|string $business_url;
-    */
+     * @var null|string;
+     */
     public $business_url = null;
 
     /**
-    * @var null|string $alias;
-    */
+     * @var null|string;
+     */
     public $alias = null;
 
     /**
-    * @var null|string $name;
-    */
+     * @var null|string;
+     */
     public $name = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|YelpSearchGetResultsByTaskIdEntityMainTasksResultItemsLocation $location;
-    */
+     * @var null|YelpSearchGetResultsByTaskIdEntityMainTasksResultItemsLocation;
+     */
     public $location = null;
 
     /**
-    * @var null|integer $price_range;
-    */
+     * @var null|integer;
+     */
     public $price_range = null;
 
     /**
-    * @var null|string $phone;
-    */
+     * @var null|string;
+     */
     public $phone = null;
 
     /**
-    * @var null|boolean $is_guaranteed;
-    */
+     * @var null|boolean;
+     */
     public $is_guaranteed = null;
 
     /**
-    * @var null|YelpSearchGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|YelpSearchGetResultsByTaskIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|array $categories;
-    */
+     * @var null|array;
+     */
     public $categories = null;
 
     /**
-    * @var null|array $photos;
-    */
+     * @var null|array;
+     */
     public $photos = null;
 
     /**
-    * @var null|NULL $tags;
-    */
+     * @var null|null;
+     */
     public $tags = null;
 
     /**
-    * @var null|NULL $business_highlights;
-    */
+     * @var null|null;
+     */
     public $business_highlights = null;
 
     /**
-    * @var null|NULL $service_offerings;
-    */
+     * @var null|null;
+     */
     public $service_offerings = null;
- 
 }

@@ -4,81 +4,80 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HotelInfoGetAdvancedResultsByIdEntityMainTasksResultPrices;
 
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResult 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $hotel_identifier;
-    */
+     * @var null|string;
+     */
     public $hotel_identifier = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|integer $stars;
-    */
+     * @var null|integer;
+     */
     public $stars = null;
 
     /**
-    * @var null|string $stars_description;
-    */
+     * @var null|string;
+     */
     public $stars_description = null;
 
     /**
-    * @var null|string $address;
-    */
+     * @var null|string;
+     */
     public $address = null;
 
     /**
-    * @var null|string $phone;
-    */
+     * @var null|string;
+     */
     public $phone = null;
 
     /**
-    * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAbout $about;
-    */
+     * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultAbout;
+     */
     public $about = null;
 
     /**
-    * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocation $location;
-    */
+     * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocation;
+     */
     public $location = null;
 
     /**
-    * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviews $reviews;
-    */
+     * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviews;
+     */
     public $reviews = null;
 
     /**
-    * @var null|NULL $overview_images;
-    */
+     * @var null|null;
+     */
     public $overview_images = null;
 
     /**
-    * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultPrices $prices;
-    */
+     * @var null|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultPrices;
+     */
     public $prices = null;
- 
 }

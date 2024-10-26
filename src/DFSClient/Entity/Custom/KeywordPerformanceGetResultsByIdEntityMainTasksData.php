@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordPerformanceGetResultsByIdEntityMainTasksData 
-{    
+class KeywordPerformanceGetResultsByIdEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $location_name;
-    */
+     * @var null|string;
+     */
     public $location_name = null;
 
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
- 
 }

@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleCategoriesForKeywordsLiveEntityMainTasksResult 
-{    
+class GoogleCategoriesForKeywordsLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleCategoriesForKeywordsLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleCategoriesForKeywordsLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

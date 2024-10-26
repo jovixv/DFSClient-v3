@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated 
-{    
+class TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated
+{
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
- 
 }

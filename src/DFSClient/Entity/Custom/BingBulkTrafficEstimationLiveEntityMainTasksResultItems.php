@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics;
 
-class BingBulkTrafficEstimationLiveEntityMainTasksResultItems 
-{    
+class BingBulkTrafficEstimationLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|BingBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|BingBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

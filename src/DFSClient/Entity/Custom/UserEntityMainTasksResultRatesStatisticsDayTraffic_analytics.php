@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultRatesStatisticsDayTraffic_analytics 
-{    
+class UserEntityMainTasksResultRatesStatisticsDayTraffic_analytics
+{
     /**
-    * @var null|integer $live;
-    */
+     * @var null|integer;
+     */
     public $live = null;
 
     /**
-    * @var null|integer $task_get;
-    */
+     * @var null|integer;
+     */
     public $task_get = null;
 
     /**
-    * @var null|integer $task_post;
-    */
+     * @var null|integer;
+     */
     public $task_post = null;
 
     /**
-    * @var null|integer $tasks_ready;
-    */
+     * @var null|integer;
+     */
     public $tasks_ready = null;
- 
 }

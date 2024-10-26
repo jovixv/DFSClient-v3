@@ -6,12 +6,6 @@ use DFSClientV3\Models\AbstractModel;
 
 class EntityCreator
 {
-
-    /**
-     * @var string $path
-     */
-    private $path;
-
     /**
      * @var ClassGenerator
      */
@@ -19,11 +13,11 @@ class EntityCreator
 
     /**
      * EntityCreator constructor.
+     *
      * @param string $path
      */
-    public function __construct(string $path)
+    public function __construct(private readonly string $path)
     {
-        $this->path = $path;
         $this->classGenerator = new ClassGenerator();
     }
 
@@ -39,14 +33,15 @@ class EntityCreator
 
     /**
      * @param object $model
+     *
      * @return void
      */
     public function generateByModelNew(object $model): void
     {
-        if ($model instanceof AbstractModel){
+        if ($model instanceof AbstractModel) {
             $pathToMainEntityData = $model->getPathToMainData();
-            $modelName = $model->getCalledClass();
-            $json = $model->getAsJson();
+            $modelName            = $model->getCalledClass();
+            $json                 = $model->getAsJson();
 
             $classCreatorOptions = new ClassCreatorOptions();
             $classCreatorOptions->setClassName($modelName);
@@ -67,21 +62,17 @@ class EntityCreator
      */
     public function createEntityByJson(string $json, string $className, ?bool $resultCanBeTransformedToArray)
     {
-        $file =  $this->classGenerator->createClass($className, $this->path);
+        $file = $this->classGenerator->createClass($className, $this->path);
         $this->classGenerator->recursiveCreator($json, $this->path, $className, 'Main', $resultCanBeTransformedToArray);
     }
 
-
     public function generateByModel(object $model)
     {
-
-        if ($model instanceof AbstractModel)
-        {
-           $pathToMainEntityData = $model->getPathToMainData();
-           $modelName = $model->getCalledClass();
-           $json = $model->getAsJson();
-           $this->classGenerator->recursiveCreator($json, $this->path, $modelName, 'Main', $model->resultShouldBeTransformedToArray());
+        if ($model instanceof AbstractModel) {
+            $pathToMainEntityData = $model->getPathToMainData();
+            $modelName            = $model->getCalledClass();
+            $json                 = $model->getAsJson();
+            $this->classGenerator->recursiveCreator($json, $this->path, $modelName, 'Main', $model->resultShouldBeTransformedToArray());
         }
     }
-
 }

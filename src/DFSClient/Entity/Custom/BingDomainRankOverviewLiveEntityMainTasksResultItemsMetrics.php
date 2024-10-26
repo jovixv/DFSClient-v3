@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingDomainRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\BingDomainRankOverviewLiveEntityMainTasksResultItemsMetricsPaid;
 
-class BingDomainRankOverviewLiveEntityMainTasksResultItemsMetrics 
-{    
+class BingDomainRankOverviewLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|BingDomainRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|BingDomainRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|BingDomainRankOverviewLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|BingDomainRankOverviewLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
- 
 }

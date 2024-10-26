@@ -5,141 +5,172 @@ namespace DFSClientV3\Models\ContentGenerationApi;
 use DFSClientV3\Entity\Custom\ContentGenerationGenerateLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
-class ContentGenerationGenerateLive extends AbstractModel {
+class ContentGenerationGenerateLive extends AbstractModel
+{
+    protected $method = 'POST';
 
-	protected $method = 'POST';
-	protected $isSupportedMerge = true;
-	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'content_generation/generate/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $jsonContainVariadicType = false;
-	protected $useNewMapper = true;
+    protected $isSupportedMerge = true;
 
-	/**
-	 * @param string $text
-	 * @return $this
-	 */
-	public function setText(string $text) {
-		$this->payload['text'] = $text;
+    protected $pathToMainData = 'tasks->{$postID}->result';
 
-		return $this;
-	}
+    protected $requestToFunction = 'content_generation/generate/live';
 
-	/**
-	 * @param int $max_tokens
-	 * @return $this
-	 */
-	public function setMaxTokens(int $max_tokens) {
-		$this->payload['max_tokens'] = $max_tokens;
+    protected $resultShouldBeTransformedToArray = true;
 
-		return $this;
-	}
+    protected $jsonContainVariadicType = false;
 
-	/**
-	 * @param int $max_new_tokens
-	 * @return $this
-	 */
-	public function setMaxNewTokens(int $max_new_tokens) {
-		$this->payload['max_new_tokens'] = $max_new_tokens;
+    protected $useNewMapper = true;
 
-		return $this;
-	}
+    /**
+     * @param string $text
+     *
+     * @return $this
+     */
+    public function setText(string $text)
+    {
+        $this->payload['text'] = $text;
 
-	/**
-	 * @param float $creativity_index
-	 * @return $this
-	 */
-	public function setCreativityIndex(float $creativity_index) {
-		$this->payload['creativity_index'] = $creativity_index;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param int $max_tokens
+     *
+     * @return $this
+     */
+    public function setMaxTokens(int $max_tokens)
+    {
+        $this->payload['max_tokens'] = $max_tokens;
 
-	/**
-	 * @param float $token_repetition_penalty
-	 * @return $this
-	 */
-	public function setTokenRepetitionPenalty(float $token_repetition_penalty) {
-		$this->payload['token_repetition_penalty'] = $token_repetition_penalty;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param int $max_new_tokens
+     *
+     * @return $this
+     */
+    public function setMaxNewTokens(int $max_new_tokens)
+    {
+        $this->payload['max_new_tokens'] = $max_new_tokens;
 
-	/**
-	 * @param float $top_p
-	 * @return $this
-	 */
-	public function setTopP(float $top_p) {
-		$this->payload['top_p'] = $top_p;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param float $creativity_index
+     *
+     * @return $this
+     */
+    public function setCreativityIndex(float $creativity_index)
+    {
+        $this->payload['creativity_index'] = $creativity_index;
 
-	/**
-	 * @param int $top_k
-	 * @return $this
-	 */
-	public function setTopK(int $top_k) {
-		$this->payload['top_k'] = $top_k;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param float $token_repetition_penalty
+     *
+     * @return $this
+     */
+    public function setTokenRepetitionPenalty(float $token_repetition_penalty)
+    {
+        $this->payload['token_repetition_penalty'] = $token_repetition_penalty;
 
-	/**
-	 * @param float $temperature
-	 * @return $this
-	 */
-	public function setTemperature(float $temperature) {
-		$this->payload['temperature'] = $temperature;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param float $top_p
+     *
+     * @return $this
+     */
+    public function setTopP(float $top_p)
+    {
+        $this->payload['top_p'] = $top_p;
 
-	/**
-	 * @param array $avoid_words
-	 * @return $this
-	 */
-	public function setAvoidWords(array $avoid_words) {
-		$this->payload['avoid_words'] = $avoid_words;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param int $top_k
+     *
+     * @return $this
+     */
+    public function setTopK(int $top_k)
+    {
+        $this->payload['top_k'] = $top_k;
 
-	/**
-	 * @param array $avoid_starting_words
-	 * @return $this
-	 */
-	public function setAvoidStartingWords(array $avoid_starting_words) {
-		$this->payload['avoid_starting_words'] = $avoid_starting_words;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param float $temperature
+     *
+     * @return $this
+     */
+    public function setTemperature(float $temperature)
+    {
+        $this->payload['temperature'] = $temperature;
 
-	/**
-	 * @param array $stop_words
-	 * @return $this
-	 */
-	public function setStopWords(array $stop_words) {
-		$this->payload['stop_words'] = $stop_words;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param array $avoid_words
+     *
+     * @return $this
+     */
+    public function setAvoidWords(array $avoid_words)
+    {
+        $this->payload['avoid_words'] = $avoid_words;
 
-	/**
-	 * @param string $supplement_token
-	 * @return $this
-	 */
-	public function setSupplementToken(string $supplement_token) {
-		$this->payload['supplement_token'] = $supplement_token;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param array $avoid_starting_words
+     *
+     * @return $this
+     */
+    public function setAvoidStartingWords(array $avoid_starting_words)
+    {
+        $this->payload['avoid_starting_words'] = $avoid_starting_words;
 
-	/**
-	 * @return ContentGenerationGenerateLiveEntityMain
-	 */
-	public function get(): ContentGenerationGenerateLiveEntityMain
-	{
-		return parent::get(); // TODO: Change the autogenerated stub
-	}
+        return $this;
+    }
+
+    /**
+     * @param array $stop_words
+     *
+     * @return $this
+     */
+    public function setStopWords(array $stop_words)
+    {
+        $this->payload['stop_words'] = $stop_words;
+
+        return $this;
+    }
+
+    /**
+     * @param string $supplement_token
+     *
+     * @return $this
+     */
+    public function setSupplementToken(string $supplement_token)
+    {
+        $this->payload['supplement_token'] = $supplement_token;
+
+        return $this;
+    }
+
+    /**
+     * @return ContentGenerationGenerateLiveEntityMain
+     */
+    #[\Override]
+    public function get(): ContentGenerationGenerateLiveEntityMain
+    {
+        return parent::get(); // TODO: Change the autogenerated stub
+    }
 }

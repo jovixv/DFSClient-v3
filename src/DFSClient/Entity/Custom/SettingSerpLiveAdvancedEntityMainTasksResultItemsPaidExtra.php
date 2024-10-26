@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsPaidExtra 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsPaidExtra
+{
     /**
-    * @var null|string $ad_aclk;
-    */
+     * @var null|string;
+     */
     public $ad_aclk = null;
- 
 }

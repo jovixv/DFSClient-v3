@@ -1,30 +1,36 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Google;
 
-
+use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class GoogleCompetitorsDomainLive extends AbstractModel
 {
-	protected $method = 'POST';
-	protected $isSupportedMerge = true;
-	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'dataforseo_labs/google/competitors_domain/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $useNewMapper = true;
+    protected $method = 'POST';
+
+    protected $isSupportedMerge = true;
+
+    protected $pathToMainData = 'tasks->{$postID}->result';
+
+    protected $requestToFunction = 'dataforseo_labs/google/competitors_domain/live';
+
+    protected $resultShouldBeTransformedToArray = true;
+
+    protected $useNewMapper = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMain
+     * @return GoogleCompetitorsDomainLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMain
+    #[\Override]
+    public function get(): GoogleCompetitorsDomainLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $target
+     *
      * @return $this
      */
     public function setTarget(string $target)
@@ -36,6 +42,7 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -47,26 +54,31 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -76,60 +88,69 @@ class GoogleCompetitorsDomainLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param int $maxRankGroup
-	 * @return $this
-	 */
-	public function setMaxRankGroup(int $maxRankGroup)
-	{
-		$this->payload['max_rank_group'] = $maxRankGroup;
-		return $this;
-	}
+    /**
+     * @param int $maxRankGroup
+     *
+     * @return $this
+     */
+    public function setMaxRankGroup(int $maxRankGroup)
+    {
+        $this->payload['max_rank_group'] = $maxRankGroup;
 
-	/**
-	 * @param bool $excludeTopDomains
-	 * @return $this
-	 */
-	public function setExcludeTopDomains(bool $excludeTopDomains)
-	{
-		$this->payload['exclude_top_domains'] = $excludeTopDomains;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $intersectingDomains
-	 * @return $this
-	 */
-	public function setIntersectingDomains(array $intersectingDomains)
-	{
-		$this->payload['intersecting_domains'] = $intersectingDomains;
-		return $this;
-	}
+    /**
+     * @param bool $excludeTopDomains
+     *
+     * @return $this
+     */
+    public function setExcludeTopDomains(bool $excludeTopDomains)
+    {
+        $this->payload['exclude_top_domains'] = $excludeTopDomains;
 
-	/**
-	 * @param bool $includeClickstreamData
-	 * @return $this
-	 */
-	public function setIncludeClickstreamData(bool $includeClickstreamData)
-	{
-		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param array $intersectingDomains
+     *
+     * @return $this
+     */
+    public function setIntersectingDomains(array $intersectingDomains)
+    {
+        $this->payload['intersecting_domains'] = $intersectingDomains;
 
-	/**
-	 * @param array $itemTypes
-	 * @return $this
-	 */
-	public function setItemTypes(array $itemTypes)
-	{
-		$this->payload['item_types'] = $itemTypes;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param bool $includeClickstreamData
+     *
+     * @return $this
+     */
+    public function setIncludeClickstreamData(bool $includeClickstreamData)
+    {
+        $this->payload['include_clickstream_data'] = $includeClickstreamData;
+
+        return $this;
+    }
+
+    /**
+     * @param array $itemTypes
+     *
+     * @return $this
+     */
+    public function setItemTypes(array $itemTypes)
+    {
+        $this->payload['item_types'] = $itemTypes;
+
+        return $this;
+    }
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -141,6 +162,7 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -152,6 +174,7 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -163,6 +186,7 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -174,19 +198,24 @@ class GoogleCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

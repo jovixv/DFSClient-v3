@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TechnologiesTechnologiesEntityMainTasksResultGroups;
 
-class TechnologiesTechnologiesEntityMainTasksResult 
-{    
+class TechnologiesTechnologiesEntityMainTasksResult
+{
     /**
-    * @var array|TechnologiesTechnologiesEntityMainTasksResultGroups[] $groups;
-    */
+     * @var array|TechnologiesTechnologiesEntityMainTasksResultGroups[];
+     */
     public $groups = [];
- 
 }

@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterestsValues 
-{    
+class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterestsValues
+{
     /**
-    * @var null|string $geo_id;
-    */
+     * @var null|string;
+     */
     public $geo_id = null;
 
     /**
-    * @var null|string $geo_name;
-    */
+     * @var null|string;
+     */
     public $geo_name = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
- 
 }

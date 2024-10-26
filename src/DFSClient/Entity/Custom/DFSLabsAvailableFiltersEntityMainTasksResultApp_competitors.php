@@ -2,19 +2,18 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsGoogle;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsApple;
+use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsGoogle;
 
-class DFSLabsAvailableFiltersEntityMainTasksResultApp_competitors 
-{    
+class DFSLabsAvailableFiltersEntityMainTasksResultApp_competitors
+{
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsGoogle $google;
-    */
+     * @var null|DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsGoogle;
+     */
     public $google = null;
 
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsApple $apple;
-    */
+     * @var null|DFSLabsAvailableFiltersEntityMainTasksResultApp_competitorsApple;
+     */
     public $apple = null;
- 
 }

@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksReferringNetworksLiveEntityMainTasksResult 
-{    
+class BacklinksReferringNetworksLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BacklinksReferringNetworksLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BacklinksReferringNetworksLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

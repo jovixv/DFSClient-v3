@@ -2,25 +2,24 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionPositive;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegative;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNeutral;
+use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionPositive;
 
-class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distribution 
-{    
+class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distribution
+{
     /**
-    * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionPositive $positive;
-    */
+     * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionPositive;
+     */
     public $positive = null;
 
     /**
-    * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegative $negative;
-    */
+     * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegative;
+     */
     public $negative = null;
 
     /**
-    * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNeutral $neutral;
-    */
+     * @var null|ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNeutral;
+     */
     public $neutral = null;
- 
 }

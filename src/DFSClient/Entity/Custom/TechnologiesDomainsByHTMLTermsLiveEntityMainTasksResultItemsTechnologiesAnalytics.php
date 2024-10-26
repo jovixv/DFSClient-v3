@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesAnalytics 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesAnalytics
+{
     /**
-    * @var null|array $form_builders;
-    */
+     * @var null|array;
+     */
     public $form_builders = null;
- 
 }

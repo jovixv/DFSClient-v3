@@ -2,62 +2,60 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class YelpReviewsGetResultsByTaskIdEntityMainTasksData 
-{    
+class YelpReviewsGetResultsByTaskIdEntityMainTasksData
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|string $alias;
-    */
+     * @var null|string;
+     */
     public $alias = null;
 
     /**
-    * @var null|integer $depth;
-    */
+     * @var null|integer;
+     */
     public $depth = null;
 
     /**
-    * @var null|string $sort_by;
-    */
+     * @var null|string;
+     */
     public $sort_by = null;
 
     /**
-    * @var null|integer $priority;
-    */
+     * @var null|integer;
+     */
     public $priority = null;
 
     /**
-    * @var null|string $device;
-    */
+     * @var null|string;
+     */
     public $device = null;
 
     /**
-    * @var null|string $os;
-    */
+     * @var null|string;
+     */
     public $os = null;
- 
 }

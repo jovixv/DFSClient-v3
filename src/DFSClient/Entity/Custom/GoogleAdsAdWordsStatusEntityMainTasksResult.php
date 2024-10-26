@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAdsAdWordsStatusEntityMainTasksResult 
-{    
+class GoogleAdsAdWordsStatusEntityMainTasksResult
+{
     /**
-    * @var null|boolean $actual_data;
-    */
+     * @var null|boolean;
+     */
     public $actual_data = null;
- 
 }

@@ -2,54 +2,53 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_history;
 use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_difference;
+use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_history;
 
-class DomainMetricsByCategoriesLiveEntityMainTasksResultItems 
-{    
+class DomainMetricsByCategoriesLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|array $top_categories;
-    */
+     * @var null|array;
+     */
     public $top_categories = null;
 
     /**
-    * @var null|double $organic_etv;
-    */
+     * @var null|double;
+     */
     public $organic_etv = null;
 
     /**
-    * @var null|integer $organic_count;
-    */
+     * @var null|integer;
+     */
     public $organic_count = null;
 
     /**
-    * @var null|integer $organic_is_lost;
-    */
+     * @var null|integer;
+     */
     public $organic_is_lost = null;
 
     /**
-    * @var null|integer $organic_is_new;
-    */
+     * @var null|integer;
+     */
     public $organic_is_new = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $main_domain;
-    */
+     * @var null|string;
+     */
     public $main_domain = null;
 
     /**
-    * @var null|array $metrics_history;
-    */
+     * @var null|array;
+     */
     public $metrics_history = null;
 
     /**
-    * @var null|DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_difference $metrics_difference;
-    */
+     * @var null|DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_difference;
+     */
     public $metrics_difference = null;
- 
 }

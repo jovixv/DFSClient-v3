@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ClickstreamBulkSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches;
 
-class ClickstreamBulkSearchVolumeLiveEntityMainTasksResultItems 
-{    
+class ClickstreamBulkSearchVolumeLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var array|ClickstreamBulkSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches[] $monthly_searches;
-    */
+     * @var array|ClickstreamBulkSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches[];
+     */
     public $monthly_searches = [];
- 
 }

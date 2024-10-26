@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesContent 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesContent
+{
     /**
-    * @var null|array $cms;
-    */
+     * @var null|array;
+     */
     public $cms = null;
 
     /**
-    * @var null|array $blogs;
-    */
+     * @var null|array;
+     */
     public $blogs = null;
- 
 }

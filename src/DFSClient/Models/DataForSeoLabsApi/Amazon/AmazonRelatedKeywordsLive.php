@@ -1,196 +1,221 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Amazon;
 
-
+use DFSClientV3\Entity\Custom\AmazonRelatedKeywordsLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class AmazonRelatedKeywordsLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'dataforseo_labs/amazon/related_keywords/live';
+
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\AmazonRelatedKeywordsLiveEntityMain
+     * @return AmazonRelatedKeywordsLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\AmazonRelatedKeywordsLiveEntityMain
+    #[\Override]
+    public function get(): AmazonRelatedKeywordsLiveEntityMain
     {
         return parent::get();
     }
 
-	/**
-	 * @param string $keyword
-	 * @return $this
-	 */
-	public function setKeyword(string $keyword)
-	{
-		$this->payload['keyword'] = $keyword;
+    /**
+     * @param string $keyword
+     *
+     * @return $this
+     */
+    public function setKeyword(string $keyword)
+    {
+        $this->payload['keyword'] = $keyword;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $locationName
-	 * @return $this
-	 */
-	public function setLocationName(string $locationName)
-	{
-		$this->payload['location_name'] = $locationName;
+    /**
+     * @param string $locationName
+     *
+     * @return $this
+     */
+    public function setLocationName(string $locationName)
+    {
+        $this->payload['location_name'] = $locationName;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $locationCode
-	 * @return $this
-	 */
-	public function setLocationCode(int $locationCode)
-	{
-		$this->payload['location_code'] = $locationCode;
-		return $this;
-	}
+    /**
+     * @param int $locationCode
+     *
+     * @return $this
+     */
+    public function setLocationCode(int $locationCode)
+    {
+        $this->payload['location_code'] = $locationCode;
 
-	/**
-	 * @param string $languageName
-	 * @return $this
-	 */
-	public function setLanguageName(string $languageName)
-	{
-		$this->payload['language_name'] = $languageName;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $languageCode
-	 * @return $this
-	 */
-	public function setLanguageCode(string $languageCode)
-	{
-		$this->payload['language_code'] = $languageCode;
+    /**
+     * @param string $languageName
+     *
+     * @return $this
+     */
+    public function setLanguageName(string $languageName)
+    {
+        $this->payload['language_name'] = $languageName;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $depth
-	 * @return $this
-	 */
-	public function setDepth(int $depth)
-	{
-		$this->payload['depth'] = $depth;
+    /**
+     * @param string $languageCode
+     *
+     * @return $this
+     */
+    public function setLanguageCode(string $languageCode)
+    {
+        $this->payload['language_code'] = $languageCode;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $includeSeedKeyword
-	 * @return $this
-	 */
-	public function setIncludeSeedKeyword(bool $includeSeedKeyword)
-	{
-		$this->payload['include_seed_keyword'] = $includeSeedKeyword;
+    /**
+     * @param int $depth
+     *
+     * @return $this
+     */
+    public function setDepth(int $depth)
+    {
+        $this->payload['depth'] = $depth;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * not supported for 'amazon'
-	 *
-	 * @param bool $includeSerpInfo
-	 * @return $this
-	 */
-	public function setIncludeSerpInfo(bool $includeSerpInfo)
-	{
-		//$this->payload['include_serp_info'] = $includeSerpInfo;
+    /**
+     * @param bool $includeSeedKeyword
+     *
+     * @return $this
+     */
+    public function setIncludeSeedKeyword(bool $includeSeedKeyword)
+    {
+        $this->payload['include_seed_keyword'] = $includeSeedKeyword;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $replaceWithCoreKeyword
-	 * @return $this
-	 */
-	public function setReplaceWithCoreKeyword(bool $replaceWithCoreKeyword)
-	{
-		$this->payload['replace_with_core_keyword'] = $replaceWithCoreKeyword;
+    /**
+     * not supported for 'amazon'.
+     *
+     * @param bool $includeSerpInfo
+     *
+     * @return $this
+     */
+    public function setIncludeSerpInfo(bool $includeSerpInfo)
+    {
+        //$this->payload['include_serp_info'] = $includeSerpInfo;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $ignoreSynonyms
-	 * @return $this
-	 */
-	public function setIgnoreSynonyms(bool $ignoreSynonyms)
-	{
-		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+    /**
+     * @param bool $replaceWithCoreKeyword
+     *
+     * @return $this
+     */
+    public function setReplaceWithCoreKeyword(bool $replaceWithCoreKeyword)
+    {
+        $this->payload['replace_with_core_keyword'] = $replaceWithCoreKeyword;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $filters
-	 * @return $this
-	 */
-	public function setFilters(array $filters)
-	{
-		$this->payload['filters'] = $filters;
+    /**
+     * @param bool $ignoreSynonyms
+     *
+     * @return $this
+     */
+    public function setIgnoreSynonyms(bool $ignoreSynonyms)
+    {
+        $this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $orderBy
-	 * @return $this
-	 */
-	public function setOrderBy(array $orderBy)
-	{
-		$this->payload['order_by'] = $orderBy;
+    /**
+     * @param array $filters
+     *
+     * @return $this
+     */
+    public function setFilters(array $filters)
+    {
+        $this->payload['filters'] = $filters;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $limit
-	 * @return $this
-	 */
-	public function setLimit(int $limit)
-	{
-		$this->payload['limit'] = $limit;
+    /**
+     * @param array $orderBy
+     *
+     * @return $this
+     */
+    public function setOrderBy(array $orderBy)
+    {
+        $this->payload['order_by'] = $orderBy;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param int $offset
-	 * @return $this
-	 */
-	public function setOffset(int $offset)
-	{
-		$this->payload['offset'] = $offset;
+    /**
+     * @param int $limit
+     *
+     * @return $this
+     */
+    public function setLimit(int $limit)
+    {
+        $this->payload['limit'] = $limit;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param string $tag
-	 * @return $this
-	 */
-	public function setTag(string $tag)
-	{
-		$this->payload['tag'] = $tag;
-		return $this;
-	}
+    /**
+     * @param int $offset
+     *
+     * @return $this
+     */
+    public function setOffset(int $offset)
+    {
+        $this->payload['offset'] = $offset;
+
+        return $this;
+    }
+
+    /**
+     * @param string $tag
+     *
+     * @return $this
+     */
+    public function setTag(string $tag)
+    {
+        $this->payload['tag'] = $tag;
+
+        return $this;
+    }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

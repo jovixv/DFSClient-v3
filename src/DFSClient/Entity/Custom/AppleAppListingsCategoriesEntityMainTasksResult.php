@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AppleAppListingsCategoriesEntityMainTasksResult 
-{    
+class AppleAppListingsCategoriesEntityMainTasksResult
+{
     /**
-    * @var null|string $category;
-    */
+     * @var null|string;
+     */
     public $category = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

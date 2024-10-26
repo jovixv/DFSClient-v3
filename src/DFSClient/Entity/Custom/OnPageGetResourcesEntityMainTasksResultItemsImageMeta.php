@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetResourcesEntityMainTasksResultItemsImageMeta 
-{    
+class OnPageGetResourcesEntityMainTasksResultItemsImageMeta
+{
     /**
-    * @var null|string $alternative_text;
-    */
+     * @var null|string;
+     */
     public $alternative_text = null;
 
     /**
-    * @var null|NULL $title;
-    */
+     * @var null|null;
+     */
     public $title = null;
 
     /**
-    * @var null|integer $original_width;
-    */
+     * @var null|integer;
+     */
     public $original_width = null;
 
     /**
-    * @var null|integer $original_height;
-    */
+     * @var null|integer;
+     */
     public $original_height = null;
 
     /**
-    * @var null|integer $width;
-    */
+     * @var null|integer;
+     */
     public $width = null;
 
     /**
-    * @var null|integer $height;
-    */
+     * @var null|integer;
+     */
     public $height = null;
- 
 }

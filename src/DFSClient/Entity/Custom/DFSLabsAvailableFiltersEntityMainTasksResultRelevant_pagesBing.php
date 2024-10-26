@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultRelevant_pagesBing 
-{    
-
+class DFSLabsAvailableFiltersEntityMainTasksResultRelevant_pagesBing
+{
 }

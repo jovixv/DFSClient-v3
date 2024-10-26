@@ -4,71 +4,70 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
 
-class AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItems 
-{    
+class AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|double $price_from;
-    */
+     * @var null|double;
+     */
     public $price_from = null;
 
     /**
-    * @var null|NULL $price_to;
-    */
+     * @var null|null;
+     */
     public $price_to = null;
 
     /**
-    * @var null|string $currency;
-    */
+     * @var null|string;
+     */
     public $currency = null;
 
     /**
-    * @var null|string $data_asin;
-    */
+     * @var null|string;
+     */
     public $data_asin = null;
 
     /**
-    * @var null|AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|AmazonProductsGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|boolean $is_amazon_choice;
-    */
+     * @var null|boolean;
+     */
     public $is_amazon_choice = null;
- 
 }

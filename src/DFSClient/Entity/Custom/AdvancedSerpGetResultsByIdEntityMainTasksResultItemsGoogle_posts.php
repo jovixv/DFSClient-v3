@@ -5,50 +5,49 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_reviewsRectangle;
 
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_posts
-{    
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-     * @var null|string $posts_id;
+     * @var null|string;
      */
     public $posts_id = null;
 
     /**
-    * @var null|string $feature;
-    */
+     * @var null|string;
+     */
     public $feature = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_postsRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_postsRectangle;
+     */
     public $rectangle = null;
- 
 }

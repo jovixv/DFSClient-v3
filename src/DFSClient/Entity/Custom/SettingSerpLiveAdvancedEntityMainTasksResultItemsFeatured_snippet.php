@@ -4,71 +4,70 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippet 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippet
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $featured_title;
-    */
+     * @var null|string;
+     */
     public $featured_title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetTable $table;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetTable;
+     */
     public $table = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsFeatured_snippetRectangle;
+     */
     public $rectangle = null;
- 
 }

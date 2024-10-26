@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordsForCategoriesLiveEntityMainTasksData 
-{    
+class KeywordsForCategoriesLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|array $category_codes;
-    */
+     * @var null|array;
+     */
     public $category_codes = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
- 
 }

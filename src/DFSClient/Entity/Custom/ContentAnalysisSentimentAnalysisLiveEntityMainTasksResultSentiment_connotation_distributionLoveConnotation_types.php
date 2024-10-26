@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionLoveConnotation_types 
-{    
+class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionLoveConnotation_types
+{
     /**
-    * @var null|integer $positive;
-    */
+     * @var null|integer;
+     */
     public $positive = null;
 
     /**
-    * @var null|integer $negative;
-    */
+     * @var null|integer;
+     */
     public $negative = null;
 
     /**
-    * @var null|integer $neutral;
-    */
+     * @var null|integer;
+     */
     public $neutral = null;
- 
 }

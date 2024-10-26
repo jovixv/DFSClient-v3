@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksBulkPagesSummaryEntityMainTasksResultItemsReferring_links_platform_types 
-{    
-
+class BackLinksBulkPagesSummaryEntityMainTasksResultItemsReferring_links_platform_types
+{
 }

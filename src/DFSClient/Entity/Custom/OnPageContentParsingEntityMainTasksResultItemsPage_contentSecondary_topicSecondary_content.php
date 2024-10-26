@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageContentParsingEntityMainTasksResultItemsPage_contentSecondary_topicSecondary_content 
-{    
+class OnPageContentParsingEntityMainTasksResultItemsPage_contentSecondary_topicSecondary_content
+{
     /**
-    * @var null|string $text;
-    */
+     * @var null|string;
+     */
     public $text = null;
 
     /**
-    * @var null|NULL $url;
-    */
+     * @var null|null;
+     */
     public $url = null;
- 
 }

@@ -1,24 +1,22 @@
 <?php
 
-
 namespace DFSClientV3\Entity\Custom;
-
 
 class TagsData
 {
     /**
-     * @var
-     */
-    protected $tagContent;
-
-    /**
      * TagsData constructor.
+     *
      * @param $tagContent
      */
-    public function __construct($tagContent)
-    {
-        $this->tagContent = $tagContent;
+    public function __construct(
+        /**
+         * @var
+         */
+        protected $tagContent
+    ) {
     }
+
     /**
      * @return mixed
      */
@@ -26,5 +24,4 @@ class TagsData
     {
         return $this->tagContent;
     }
-
 }

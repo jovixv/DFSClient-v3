@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics;
 
-class GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItems 
-{    
+class GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

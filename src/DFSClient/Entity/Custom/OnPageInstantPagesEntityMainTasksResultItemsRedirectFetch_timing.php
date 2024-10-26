@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class OnPageInstantPagesEntityMainTasksResultItemsRedirectFetch_timing
-{    
+{
     /**
-    * @var null|integer $duration_time;
-    */
+     * @var null|integer;
+     */
     public $duration_time = null;
 
     /**
-    * @var null|integer $fetch_start;
-    */
+     * @var null|integer;
+     */
     public $fetch_start = null;
 
     /**
-    * @var null|integer $fetch_end;
-    */
+     * @var null|integer;
+     */
     public $fetch_end = null;
- 
 }

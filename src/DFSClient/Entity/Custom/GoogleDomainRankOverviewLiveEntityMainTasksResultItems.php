@@ -4,26 +4,25 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleDomainRankOverviewLiveEntityMainTasksResultItemsMetrics;
 
-class GoogleDomainRankOverviewLiveEntityMainTasksResultItems 
-{    
+class GoogleDomainRankOverviewLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|GoogleDomainRankOverviewLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|GoogleDomainRankOverviewLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

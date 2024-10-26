@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetable;
 
-class BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hours 
-{    
+class BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hours
+{
     /**
-    * @var null|BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetable $timetable;
-    */
+     * @var null|BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetable;
+     */
     public $timetable = null;
 
     /**
-    * @var null|string $current_status;
-    */
+     * @var null|string;
+     */
     public $current_status = null;
- 
 }

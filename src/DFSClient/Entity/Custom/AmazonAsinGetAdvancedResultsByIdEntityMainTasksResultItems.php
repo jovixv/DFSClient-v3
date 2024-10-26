@@ -4,91 +4,90 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
 
-class AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItems 
-{    
+class AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $details;
-    */
+     * @var null|string;
+     */
     public $details = null;
 
     /**
-    * @var null|string $image_url;
-    */
+     * @var null|string;
+     */
     public $image_url = null;
 
     /**
-    * @var null|string $author;
-    */
+     * @var null|string;
+     */
     public $author = null;
 
     /**
-    * @var null|string $data_asin;
-    */
+     * @var null|string;
+     */
     public $data_asin = null;
 
     /**
-    * @var null|string $parent_asin;
-    */
+     * @var null|string;
+     */
     public $parent_asin = null;
 
     /**
-    * @var null|array $product_asins;
-    */
+     * @var null|array;
+     */
     public $product_asins = null;
 
     /**
-    * @var null|double $price_from;
-    */
+     * @var null|double;
+     */
     public $price_from = null;
 
     /**
-    * @var null|double $price_to;
-    */
+     * @var null|double;
+     */
     public $price_to = null;
 
     /**
-    * @var null|string $currency;
-    */
+     * @var null|string;
+     */
     public $currency = null;
 
     /**
-    * @var null|boolean $is_amazon_choice;
-    */
+     * @var null|boolean;
+     */
     public $is_amazon_choice = null;
 
     /**
-    * @var null|AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
- 
 }

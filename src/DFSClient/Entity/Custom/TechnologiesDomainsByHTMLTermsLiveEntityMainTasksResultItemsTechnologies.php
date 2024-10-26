@@ -4,26 +4,25 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMedia;
 
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologies 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologies
+{
     /**
-    * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesWeb_development $web_development;
-    */
+     * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesWeb_development;
+     */
     public $web_development = null;
 
     /**
-    * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesSecurity $security;
-    */
+     * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesSecurity;
+     */
     public $security = null;
 
     /**
-    * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesServers $servers;
-    */
+     * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesServers;
+     */
     public $servers = null;
 
     /**
-    * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMedia $media;
-    */
+     * @var null|TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMedia;
+     */
     public $media = null;
- 
 }

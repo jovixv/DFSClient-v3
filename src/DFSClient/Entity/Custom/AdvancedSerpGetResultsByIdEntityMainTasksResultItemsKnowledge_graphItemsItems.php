@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $price;
-    */
+     * @var null|string;
+     */
     public $price = null;
 
     /**
-    * @var null|string $source;
-    */
+     * @var null|string;
+     */
     public $source = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $marketplace;
-    */
+     * @var null|string;
+     */
     public $marketplace = null;
 
     /**
-    * @var null|string $marketplace_url;
-    */
+     * @var null|string;
+     */
     public $marketplace_url = null;
- 
 }

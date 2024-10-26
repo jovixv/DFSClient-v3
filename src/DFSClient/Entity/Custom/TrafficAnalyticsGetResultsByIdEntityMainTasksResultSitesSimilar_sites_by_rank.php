@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsGetResultsByIdEntityMainTasksResultSitesSimilar_sites_by_rank 
-{    
+class TrafficAnalyticsGetResultsByIdEntityMainTasksResultSitesSimilar_sites_by_rank
+{
     /**
-    * @var null|string $site;
-    */
+     * @var null|string;
+     */
     public $site = null;
- 
 }

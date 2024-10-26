@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info 
-{    
+class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info
+{
     /**
-    * @var null|integer $referring_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_domains = null;
 
     /**
-    * @var null|integer $referring_main_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_main_domains = null;
 
     /**
-    * @var null|integer $referring_pages;
-    */
+     * @var null|integer;
+     */
     public $referring_pages = null;
 
     /**
-    * @var null|integer $dofollow;
-    */
+     * @var null|integer;
+     */
     public $dofollow = null;
 
     /**
-    * @var null|integer $backlinks;
-    */
+     * @var null|integer;
+     */
     public $backlinks = null;
 
     /**
-    * @var null|string $time_update;
-    */
+     * @var null|string;
+     */
     public $time_update = null;
- 
 }

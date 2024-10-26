@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating 
-{    
+class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating
+{
     /**
-    * @var null|string $rating_type;
-    */
+     * @var null|string;
+     */
     public $rating_type = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|NULL $votes_count;
-    */
+     * @var null|null;
+     */
     public $votes_count = null;
 
     /**
-    * @var null|NULL $rating_max;
-    */
+     * @var null|null;
+     */
     public $rating_max = null;
- 
 }

@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_stories 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_stories
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesItems[] $items;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsTop_storiesRectangle;
+     */
     public $rectangle = null;
- 
 }

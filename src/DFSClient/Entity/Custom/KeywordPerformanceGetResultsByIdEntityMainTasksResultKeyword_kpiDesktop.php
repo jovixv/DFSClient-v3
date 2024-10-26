@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpiDesktop 
-{    
+class KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpiDesktop
+{
     /**
-    * @var null|string $ad_position;
-    */
+     * @var null|string;
+     */
     public $ad_position = null;
 
     /**
-    * @var null|integer $clicks;
-    */
+     * @var null|integer;
+     */
     public $clicks = null;
 
     /**
-    * @var null|integer $impressions;
-    */
+     * @var null|integer;
+     */
     public $impressions = null;
 
     /**
-    * @var null|double $average_cpc;
-    */
+     * @var null|double;
+     */
     public $average_cpc = null;
 
     /**
-    * @var null|double $ctr;
-    */
+     * @var null|double;
+     */
     public $ctr = null;
 
     /**
-    * @var null|double $total_cost;
-    */
+     * @var null|double;
+     */
     public $total_cost = null;
 
     /**
-    * @var null|double $average_bid;
-    */
+     * @var null|double;
+     */
     public $average_bid = null;
- 
 }

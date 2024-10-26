@@ -4,31 +4,30 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsOther_sites_reviews;
 
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviews 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviews
+{
     /**
-    * @var null|double $value;
-    */
+     * @var null|double;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $votes_count;
-    */
+     * @var null|integer;
+     */
     public $votes_count = null;
 
     /**
-    * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsMentions[] $mentions;
-    */
+     * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsMentions[];
+     */
     public $mentions = [];
 
     /**
-    * @var null|array $rating_distribution;
-    */
+     * @var null|array;
+     */
     public $rating_distribution = null;
 
     /**
-    * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsOther_sites_reviews[] $other_sites_reviews;
-    */
+     * @var array|HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsOther_sites_reviews[];
+     */
     public $other_sites_reviews = [];
- 
 }

@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\CategoriesForDomainLiveEntityMainTasksResultItemsMetrics;
 
-class CategoriesForDomainLiveEntityMainTasksResultItems 
-{    
+class CategoriesForDomainLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|array $categories;
-    */
+     * @var null|array;
+     */
     public $categories = null;
 
     /**
-    * @var null|CategoriesForDomainLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|CategoriesForDomainLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

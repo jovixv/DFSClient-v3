@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps 
-{    
+class GoogleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps
+{
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
- 
 }

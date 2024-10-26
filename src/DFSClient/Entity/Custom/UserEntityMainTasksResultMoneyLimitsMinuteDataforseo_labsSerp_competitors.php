@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultMoneyLimitsMinuteDataforseo_labsSerp_competitors 
-{    
+class UserEntityMainTasksResultMoneyLimitsMinuteDataforseo_labsSerp_competitors
+{
     /**
-    * @var null|integer $live;
-    */
+     * @var null|integer;
+     */
     public $live = null;
- 
 }

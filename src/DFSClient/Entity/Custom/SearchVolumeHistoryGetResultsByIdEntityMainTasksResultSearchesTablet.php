@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesTablet 
-{    
+class SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearchesTablet
+{
     /**
-    * @var null|integer $year;
-    */
+     * @var null|integer;
+     */
     public $year = null;
 
     /**
-    * @var null|integer $month;
-    */
+     * @var null|integer;
+     */
     public $month = null;
 
     /**
-    * @var null|integer $day;
-    */
+     * @var null|integer;
+     */
     public $day = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
- 
 }

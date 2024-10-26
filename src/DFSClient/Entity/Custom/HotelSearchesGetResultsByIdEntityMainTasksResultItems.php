@@ -4,51 +4,50 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HotelSearchesGetResultsByIdEntityMainTasksResultItemsPrices;
 
-class HotelSearchesGetResultsByIdEntityMainTasksResultItems 
-{    
+class HotelSearchesGetResultsByIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $hotel_identifier;
-    */
+     * @var null|string;
+     */
     public $hotel_identifier = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|integer $stars;
-    */
+     * @var null|integer;
+     */
     public $stars = null;
 
     /**
-    * @var null|boolean $is_paid;
-    */
+     * @var null|boolean;
+     */
     public $is_paid = null;
 
     /**
-    * @var null|HotelSearchesGetResultsByIdEntityMainTasksResultItemsLocation $location;
-    */
+     * @var null|HotelSearchesGetResultsByIdEntityMainTasksResultItemsLocation;
+     */
     public $location = null;
 
     /**
-    * @var null|HotelSearchesGetResultsByIdEntityMainTasksResultItemsReviews $reviews;
-    */
+     * @var null|HotelSearchesGetResultsByIdEntityMainTasksResultItemsReviews;
+     */
     public $reviews = null;
 
     /**
-    * @var null|NULL $overview_images;
-    */
+     * @var null|null;
+     */
     public $overview_images = null;
 
     /**
-    * @var null|HotelSearchesGetResultsByIdEntityMainTasksResultItemsPrices $prices;
-    */
+     * @var null|HotelSearchesGetResultsByIdEntityMainTasksResultItemsPrices;
+     */
     public $prices = null;
- 
 }

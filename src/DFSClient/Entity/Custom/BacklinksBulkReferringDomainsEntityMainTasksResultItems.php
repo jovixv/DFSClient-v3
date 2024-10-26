@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksBulkReferringDomainsEntityMainTasksResultItems 
-{    
+class BacklinksBulkReferringDomainsEntityMainTasksResultItems
+{
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $referring_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_domains = null;
- 
 }

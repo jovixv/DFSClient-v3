@@ -4,126 +4,125 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetPagesEntityMainTasksResultItemsHtmlMetaContent;
 
-class OnPageGetPagesEntityMainTasksResultItemsHtmlMeta 
-{    
+class OnPageGetPagesEntityMainTasksResultItemsHtmlMeta
+{
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|integer $charset;
-    */
+     * @var null|integer;
+     */
     public $charset = null;
 
     /**
-    * @var null|boolean $follow;
-    */
+     * @var null|boolean;
+     */
     public $follow = null;
 
     /**
-    * @var null|NULL $generator;
-    */
+     * @var null|null;
+     */
     public $generator = null;
 
     /**
-    * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaHtags $htags;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaHtags;
+     */
     public $htags = null;
 
     /**
-    * @var null|NULL $description;
-    */
+     * @var null|null;
+     */
     public $description = null;
 
     /**
-    * @var null|string $favicon;
-    */
+     * @var null|string;
+     */
     public $favicon = null;
 
     /**
-    * @var null|NULL $meta_keywords;
-    */
+     * @var null|null;
+     */
     public $meta_keywords = null;
 
     /**
-    * @var null|string $canonical;
-    */
+     * @var null|string;
+     */
     public $canonical = null;
 
     /**
-    * @var null|integer $internal_links_count;
-    */
+     * @var null|integer;
+     */
     public $internal_links_count = null;
 
     /**
-    * @var null|integer $external_links_count;
-    */
+     * @var null|integer;
+     */
     public $external_links_count = null;
 
     /**
-    * @var null|integer $inbound_links_count;
-    */
+     * @var null|integer;
+     */
     public $inbound_links_count = null;
 
     /**
-    * @var null|integer $images_count;
-    */
+     * @var null|integer;
+     */
     public $images_count = null;
 
     /**
-    * @var null|integer $images_size;
-    */
+     * @var null|integer;
+     */
     public $images_size = null;
 
     /**
-    * @var null|integer $scripts_count;
-    */
+     * @var null|integer;
+     */
     public $scripts_count = null;
 
     /**
-    * @var null|integer $scripts_size;
-    */
+     * @var null|integer;
+     */
     public $scripts_size = null;
 
     /**
-    * @var null|integer $stylesheets_count;
-    */
+     * @var null|integer;
+     */
     public $stylesheets_count = null;
 
     /**
-    * @var null|integer $stylesheets_size;
-    */
+     * @var null|integer;
+     */
     public $stylesheets_size = null;
 
     /**
-    * @var null|integer $title_length;
-    */
+     * @var null|integer;
+     */
     public $title_length = null;
 
     /**
-    * @var null|integer $description_length;
-    */
+     * @var null|integer;
+     */
     public $description_length = null;
 
     /**
-    * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaContent $content;
-    */
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaContent;
+     */
     public $content = null;
 
     /**
-    * @var null|NULL $deprecated_tags;
-    */
+     * @var null|null;
+     */
     public $deprecated_tags = null;
 
     /**
-    * @var null|NULL $duplicate_meta_tags;
-    */
+     * @var null|null;
+     */
     public $duplicate_meta_tags = null;
 
     /**
-     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaSpell $spell;
+     * @var null|OnPageGetPagesEntityMainTasksResultItemsHtmlMetaSpell;
      */
     public $spell = null;
- 
 }

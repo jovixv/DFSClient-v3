@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesReferring 
-{    
+class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesReferring
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
 
     /**
-    * @var null|NULL $top_referring;
-    */
+     * @var null|null;
+     */
     public $top_referring = null;
- 
 }

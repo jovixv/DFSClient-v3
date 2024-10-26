@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info 
-{    
+class AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|NULL $check_url;
-    */
+     * @var null|null;
+     */
     public $check_url = null;
 
     /**
-    * @var null|NULL $serp_item_types;
-    */
+     * @var null|null;
+     */
     public $serp_item_types = null;
 
     /**
-    * @var null|integer $se_results_count;
-    */
+     * @var null|integer;
+     */
     public $se_results_count = null;
 
     /**
-    * @var null|string $last_updated_time;
-    */
+     * @var null|string;
+     */
     public $last_updated_time = null;
 
     /**
-    * @var null|NULL $previous_updated_time;
-    */
+     * @var null|null;
+     */
     public $previous_updated_time = null;
- 
 }

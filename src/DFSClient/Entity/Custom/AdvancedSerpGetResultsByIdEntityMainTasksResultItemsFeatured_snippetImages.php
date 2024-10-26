@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsFeatured_snippetImages
-{    
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-     * @var null|string $alt;
+     * @var null|string;
      */
-    public $alt= null;
+    public $alt = null;
 
     /**
-     * @var null|string $url;
+     * @var null|string;
      */
     public $url = null;
 
     /**
-     * @var null|string $image_url;
+     * @var null|string;
      */
     public $image_url = null;
- 
 }

@@ -4,36 +4,35 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearches;
 
-class SearchVolumeHistoryGetResultsByIdEntityMainTasksResult 
-{    
+class SearchVolumeHistoryGetResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|array $device;
-    */
+     * @var null|array;
+     */
     public $device = null;
 
     /**
-    * @var null|string $period;
-    */
+     * @var null|string;
+     */
     public $period = null;
 
     /**
-    * @var null|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearches $searches;
-    */
+     * @var null|SearchVolumeHistoryGetResultsByIdEntityMainTasksResultSearches;
+     */
     public $searches = null;
- 
 }

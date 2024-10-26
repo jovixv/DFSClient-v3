@@ -4,61 +4,60 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\WhoisOverviewLiveEntityMainTasksResultItemsMetrics;
 
-class WhoisOverviewLiveEntityMainTasksResultItems 
-{    
+class WhoisOverviewLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $created_datetime;
-    */
+     * @var null|string;
+     */
     public $created_datetime = null;
 
     /**
-    * @var null|string $changed_datetime;
-    */
+     * @var null|string;
+     */
     public $changed_datetime = null;
 
     /**
-    * @var null|string $expiration_datetime;
-    */
+     * @var null|string;
+     */
     public $expiration_datetime = null;
 
     /**
-    * @var null|string $updated_datetime;
-    */
+     * @var null|string;
+     */
     public $updated_datetime = null;
 
     /**
-    * @var null|string $first_seen;
-    */
+     * @var null|string;
+     */
     public $first_seen = null;
 
     /**
-    * @var null|array $epp_status_codes;
-    */
+     * @var null|array;
+     */
     public $epp_status_codes = null;
 
     /**
-    * @var null|string $tld;
-    */
+     * @var null|string;
+     */
     public $tld = null;
 
     /**
-    * @var null|boolean $registered;
-    */
+     * @var null|boolean;
+     */
     public $registered = null;
 
     /**
-    * @var null|string $registrar;
-    */
+     * @var null|string;
+     */
     public $registrar = null;
 
     /**
-    * @var null|WhoisOverviewLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|WhoisOverviewLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

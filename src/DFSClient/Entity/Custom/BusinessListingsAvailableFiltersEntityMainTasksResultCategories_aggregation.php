@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsAvailableFiltersEntityMainTasksResultCategories_aggregation 
+class BusinessListingsAvailableFiltersEntityMainTasksResultCategories_aggregation
 {
-
 }

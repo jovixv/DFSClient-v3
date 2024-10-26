@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDay;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinute;
 
-class UserEntityMainTasksResultRatesLimits 
-{    
+class UserEntityMainTasksResultRatesLimits
+{
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDay $day;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDay;
+     */
     public $day = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsMinute $minute;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsMinute;
+     */
     public $minute = null;
- 
 }

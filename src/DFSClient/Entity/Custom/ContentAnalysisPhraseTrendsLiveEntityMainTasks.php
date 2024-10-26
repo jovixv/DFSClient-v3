@@ -5,51 +5,50 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksResult;
 
-class ContentAnalysisPhraseTrendsLiveEntityMainTasks 
-{    
+class ContentAnalysisPhraseTrendsLiveEntityMainTasks
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|double $cost;
-    */
+     * @var null|double;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $result_count;
-    */
+     * @var null|integer;
+     */
     public $result_count = null;
 
     /**
-    * @var null|array $path;
-    */
+     * @var null|array;
+     */
     public $path = null;
 
     /**
-    * @var null|ContentAnalysisPhraseTrendsLiveEntityMainTasksData $data;
-    */
+     * @var null|ContentAnalysisPhraseTrendsLiveEntityMainTasksData;
+     */
     public $data = null;
 
     /**
-    * @var array|ContentAnalysisPhraseTrendsLiveEntityMainTasksResult[] $result;
-    */
+     * @var array|ContentAnalysisPhraseTrendsLiveEntityMainTasksResult[];
+     */
     public $result = [];
- 
 }

@@ -2,227 +2,225 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks 
-{    
+class OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks
+{
     /**
-    * @var null|integer $canonical;
-    */
+     * @var null|integer;
+     */
     public $canonical = null;
 
     /**
-    * @var null|integer $duplicate_meta_tags;
-    */
+     * @var null|integer;
+     */
     public $duplicate_meta_tags = null;
 
     /**
-    * @var null|integer $no_description;
-    */
+     * @var null|integer;
+     */
     public $no_description = null;
 
     /**
-    * @var null|integer $frame;
-    */
+     * @var null|integer;
+     */
     public $frame = null;
 
     /**
-    * @var null|integer $large_page_size;
-    */
+     * @var null|integer;
+     */
     public $large_page_size = null;
 
     /**
-    * @var null|integer $irrelevant_description;
-    */
+     * @var null|integer;
+     */
     public $irrelevant_description = null;
 
     /**
-    * @var null|integer $irrelevant_meta_keywords;
-    */
+     * @var null|integer;
+     */
     public $irrelevant_meta_keywords = null;
 
     /**
-    * @var null|integer $is_https;
-    */
+     * @var null|integer;
+     */
     public $is_https = null;
 
     /**
-    * @var null|integer $is_http;
-    */
+     * @var null|integer;
+     */
     public $is_http = null;
 
     /**
-    * @var null|integer $title_too_long;
-    */
+     * @var null|integer;
+     */
     public $title_too_long = null;
 
     /**
-    * @var null|integer $low_content_rate;
-    */
+     * @var null|integer;
+     */
     public $low_content_rate = null;
 
     /**
-    * @var null|integer $small_page_size;
-    */
+     * @var null|integer;
+     */
     public $small_page_size = null;
 
     /**
-    * @var null|integer $no_h1_tag;
-    */
+     * @var null|integer;
+     */
     public $no_h1_tag = null;
 
     /**
-    * @var null|integer $recursive_canonical;
-    */
+     * @var null|integer;
+     */
     public $recursive_canonical = null;
 
     /**
-    * @var null|integer $no_favicon;
-    */
+     * @var null|integer;
+     */
     public $no_favicon = null;
 
     /**
-    * @var null|integer $no_image_alt;
-    */
+     * @var null|integer;
+     */
     public $no_image_alt = null;
 
     /**
-    * @var null|integer $no_image_title;
-    */
+     * @var null|integer;
+     */
     public $no_image_title = null;
 
     /**
-    * @var null|integer $seo_friendly_url;
-    */
+     * @var null|integer;
+     */
     public $seo_friendly_url = null;
 
     /**
-    * @var null|integer $seo_friendly_url_characters_check;
-    */
+     * @var null|integer;
+     */
     public $seo_friendly_url_characters_check = null;
 
     /**
-    * @var null|integer $seo_friendly_url_dynamic_check;
-    */
+     * @var null|integer;
+     */
     public $seo_friendly_url_dynamic_check = null;
 
     /**
-    * @var null|integer $seo_friendly_url_keywords_check;
-    */
+     * @var null|integer;
+     */
     public $seo_friendly_url_keywords_check = null;
 
     /**
-    * @var null|integer $seo_friendly_url_relative_length_check;
-    */
+     * @var null|integer;
+     */
     public $seo_friendly_url_relative_length_check = null;
 
     /**
-    * @var null|integer $title_too_short;
-    */
+     * @var null|integer;
+     */
     public $title_too_short = null;
 
     /**
-    * @var null|integer $no_content_encoding;
-    */
+     * @var null|integer;
+     */
     public $no_content_encoding = null;
 
     /**
-    * @var null|integer $high_waiting_time;
-    */
+     * @var null|integer;
+     */
     public $high_waiting_time = null;
 
     /**
-    * @var null|integer $high_loading_time;
-    */
+     * @var null|integer;
+     */
     public $high_loading_time = null;
 
     /**
-    * @var null|integer $is_redirect;
-    */
+     * @var null|integer;
+     */
     public $is_redirect = null;
 
     /**
-    * @var null|integer $is_broken;
-    */
+     * @var null|integer;
+     */
     public $is_broken = null;
 
     /**
-     * @var null|integer $is_4xx_code;
+     * @var null|integer;
      */
     public $is_4xx_code = null;
 
     /**
-     * @var null|integer $is_5xx_code;
+     * @var null|integer;
      */
     public $is_5xx_code = null;
 
     /**
-    * @var null|integer $is_www;
-    */
+     * @var null|integer;
+     */
     public $is_www = null;
 
     /**
-    * @var null|integer $no_doctype;
-    */
+     * @var null|integer;
+     */
     public $no_doctype = null;
 
     /**
-    * @var null|integer $no_encoding_meta_tag;
-    */
+     * @var null|integer;
+     */
     public $no_encoding_meta_tag = null;
 
     /**
-    * @var null|integer $high_content_rate;
-    */
+     * @var null|integer;
+     */
     public $high_content_rate = null;
 
     /**
-    * @var null|integer $low_character_count;
-    */
+     * @var null|integer;
+     */
     public $low_character_count = null;
 
     /**
-    * @var null|integer $high_character_count;
-    */
+     * @var null|integer;
+     */
     public $high_character_count = null;
 
     /**
-    * @var null|integer $low_readability_rate;
-    */
+     * @var null|integer;
+     */
     public $low_readability_rate = null;
 
     /**
-    * @var null|integer $irrelevant_title;
-    */
+     * @var null|integer;
+     */
     public $irrelevant_title = null;
 
     /**
-    * @var null|integer $deprecated_html_tags;
-    */
+     * @var null|integer;
+     */
     public $deprecated_html_tags = null;
 
     /**
-    * @var null|integer $duplicate_title_tag;
-    */
+     * @var null|integer;
+     */
     public $duplicate_title_tag = null;
 
     /**
-    * @var null|integer $no_title;
-    */
+     * @var null|integer;
+     */
     public $no_title = null;
 
     /**
-    * @var null|integer $flash;
-    */
+     * @var null|integer;
+     */
     public $flash = null;
 
     /**
-    * @var null|integer $lorem_ipsum;
-    */
+     * @var null|integer;
+     */
     public $lorem_ipsum = null;
 
     /**
-     * @var null|integer $has_misspelling;
+     * @var null|integer;
      */
     public $has_misspelling = null;
- 
 }

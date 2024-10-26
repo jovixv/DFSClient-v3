@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrustpilotSearchGetResultsByTaskIdEntityMainTasksResult 
-{    
+class TrustpilotSearchGetResultsByTaskIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|TrustpilotSearchGetResultsByTaskIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|TrustpilotSearchGetResultsByTaskIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

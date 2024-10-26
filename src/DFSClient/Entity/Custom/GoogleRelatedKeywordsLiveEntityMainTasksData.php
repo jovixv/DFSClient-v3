@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleRelatedKeywordsLiveEntityMainTasksData 
-{    
+class GoogleRelatedKeywordsLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|boolean $include_seed_keyword;
-    */
+     * @var null|boolean;
+     */
     public $include_seed_keyword = null;
 
     /**
-    * @var null|boolean $include_serp_info;
-    */
+     * @var null|boolean;
+     */
     public $include_serp_info = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|boolean $include_clickstream_data;
-    */
+     * @var null|boolean;
+     */
     public $include_clickstream_data = null;
- 
 }

@@ -2,202 +2,200 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksPageIntersectionEntityMainTasksResultItemsPageIntersectionDictionaryItem 
-{    
+class BackLinksPageIntersectionEntityMainTasksResultItemsPageIntersectionDictionaryItem
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $domain_from;
-    */
+     * @var null|string;
+     */
     public $domain_from = null;
 
     /**
-    * @var null|string $url_from;
-    */
+     * @var null|string;
+     */
     public $url_from = null;
 
     /**
-    * @var null|boolean $url_from_https;
-    */
+     * @var null|boolean;
+     */
     public $url_from_https = null;
 
     /**
-    * @var null|string $domain_to;
-    */
+     * @var null|string;
+     */
     public $domain_to = null;
 
     /**
-    * @var null|string $url_to;
-    */
+     * @var null|string;
+     */
     public $url_to = null;
 
     /**
-    * @var null|boolean $url_to_https;
-    */
+     * @var null|boolean;
+     */
     public $url_to_https = null;
 
     /**
-    * @var null|string $tld_from;
-    */
+     * @var null|string;
+     */
     public $tld_from = null;
 
     /**
-    * @var null|boolean $is_new;
-    */
+     * @var null|boolean;
+     */
     public $is_new = null;
 
     /**
-    * @var null|boolean $is_lost;
-    */
+     * @var null|boolean;
+     */
     public $is_lost = null;
 
     /**
-    * @var null|integer $rank;
-    */
+     * @var null|integer;
+     */
     public $rank = null;
 
     /**
-    * @var null|integer $page_from_rank;
-    */
+     * @var null|integer;
+     */
     public $page_from_rank = null;
 
     /**
-    * @var null|integer $domain_from_rank;
-    */
+     * @var null|integer;
+     */
     public $domain_from_rank = null;
 
     /**
-    * @var null|array $domain_from_platform_type;
-    */
+     * @var null|array;
+     */
     public $domain_from_platform_type = null;
 
     /**
-    * @var null|boolean $domain_from_is_ip;
-    */
+     * @var null|boolean;
+     */
     public $domain_from_is_ip = null;
 
     /**
-    * @var null|string $domain_from_ip;
-    */
+     * @var null|string;
+     */
     public $domain_from_ip = null;
 
     /**
-    * @var null|integer $page_from_external_links;
-    */
+     * @var null|integer;
+     */
     public $page_from_external_links = null;
 
     /**
-    * @var null|integer $page_from_internal_links;
-    */
+     * @var null|integer;
+     */
     public $page_from_internal_links = null;
 
     /**
-    * @var null|integer $page_from_size;
-    */
+     * @var null|integer;
+     */
     public $page_from_size = null;
 
     /**
-    * @var null|string $page_from_encoding;
-    */
+     * @var null|string;
+     */
     public $page_from_encoding = null;
 
     /**
-    * @var null|string $page_from_language;
-    */
+     * @var null|string;
+     */
     public $page_from_language = null;
 
     /**
-    * @var null|string $page_from_title;
-    */
+     * @var null|string;
+     */
     public $page_from_title = null;
 
     /**
-    * @var null|integer $page_from_status_code;
-    */
+     * @var null|integer;
+     */
     public $page_from_status_code = null;
 
     /**
-    * @var null|string $first_seen;
-    */
+     * @var null|string;
+     */
     public $first_seen = null;
 
     /**
-    * @var null|NULL $prev_seen;
-    */
+     * @var null|null;
+     */
     public $prev_seen = null;
 
     /**
-    * @var null|string $last_seen;
-    */
+     * @var null|string;
+     */
     public $last_seen = null;
 
     /**
-    * @var null|string $item_type;
-    */
+     * @var null|string;
+     */
     public $item_type = null;
 
     /**
-    * @var null|array $flags;
-    */
+     * @var null|array;
+     */
     public $flags = null;
 
     /**
-    * @var null|boolean $dofollow;
-    */
+     * @var null|boolean;
+     */
     public $dofollow = null;
 
     /**
-    * @var null|boolean $original;
-    */
+     * @var null|boolean;
+     */
     public $original = null;
 
     /**
-    * @var null|NULL $alt;
-    */
+     * @var null|null;
+     */
     public $alt = null;
 
     /**
-    * @var null|string $anchor;
-    */
+     * @var null|string;
+     */
     public $anchor = null;
 
     /**
-    * @var null|string $text_pre;
-    */
+     * @var null|string;
+     */
     public $text_pre = null;
 
     /**
-    * @var null|string $text_post;
-    */
+     * @var null|string;
+     */
     public $text_post = null;
 
     /**
-    * @var null|string $semantic_location;
-    */
+     * @var null|string;
+     */
     public $semantic_location = null;
 
     /**
-    * @var null|integer $links_count;
-    */
+     * @var null|integer;
+     */
     public $links_count = null;
 
     /**
-    * @var null|integer $group_count;
-    */
+     * @var null|integer;
+     */
     public $group_count = null;
 
     /**
-    * @var null|boolean $is_broken;
-    */
+     * @var null|boolean;
+     */
     public $is_broken = null;
 
     /**
-    * @var null|NULL $url_to_status_code;
-    */
+     * @var null|null;
+     */
     public $url_to_status_code = null;
- 
 }

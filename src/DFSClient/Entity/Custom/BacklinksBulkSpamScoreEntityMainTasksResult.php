@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksBulkSpamScoreEntityMainTasksResult 
-{    
+class BacklinksBulkSpamScoreEntityMainTasksResult
+{
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|BacklinksBulkSpamScoreEntityMainTasksResultItems[] $items;
-    */
+     * @var array|BacklinksBulkSpamScoreEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

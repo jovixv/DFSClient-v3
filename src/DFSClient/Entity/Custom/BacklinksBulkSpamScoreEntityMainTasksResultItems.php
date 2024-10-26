@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksBulkSpamScoreEntityMainTasksResultItems 
-{    
+class BacklinksBulkSpamScoreEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|integer $spam_score;
-    */
+     * @var null|integer;
+     */
     public $spam_score = null;
- 
 }

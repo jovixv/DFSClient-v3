@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsRecipesItemsRating;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsRecipesItems 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsRecipesItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $source;
-    */
+     * @var null|string;
+     */
     public $source = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsRecipesItemsRating $rating;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsRecipesItemsRating;
+     */
     public $rating = null;
- 
 }

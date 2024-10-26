@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BingBulkKeywordDifficultyLiveEntityMainTasksResultItems 
-{    
+class BingBulkKeywordDifficultyLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $keyword_difficulty;
-    */
+     * @var null|integer;
+     */
     public $keyword_difficulty = null;
- 
 }

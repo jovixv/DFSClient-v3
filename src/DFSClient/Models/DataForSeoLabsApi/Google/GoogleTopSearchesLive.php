@@ -1,30 +1,36 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Google;
 
-
+use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class GoogleTopSearchesLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'dataforseo_labs/google/top_searches/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $useNewMapper = true;
+
+    protected $resultShouldBeTransformedToArray = true;
+
+    protected $useNewMapper = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMain
+     * @return GoogleTopSearchesLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMain
+    #[\Override]
+    public function get(): GoogleTopSearchesLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -36,26 +42,31 @@ class GoogleTopSearchesLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -65,10 +76,11 @@ class GoogleTopSearchesLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param bool $includeSerpInfo
-	 * @return $this
-	 */
+    /**
+     * @param bool $includeSerpInfo
+     *
+     * @return $this
+     */
     public function setIncludeSerpInfo(bool $includeSerpInfo)
     {
         $this->payload['include_serp_info'] = $includeSerpInfo;
@@ -76,30 +88,33 @@ class GoogleTopSearchesLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param bool $ignoreSynonyms
-	 * @return $this
-	 */
-	public function setIgnoreSynonyms(bool $ignoreSynonyms)
-	{
-		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+    /**
+     * @param bool $ignoreSynonyms
+     *
+     * @return $this
+     */
+    public function setIgnoreSynonyms(bool $ignoreSynonyms)
+    {
+        $this->payload['ignore_synonyms'] = $ignoreSynonyms;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $includeClickstreamData
-	 * @return $this
-	 */
-	public function setIncludeClickstreamData(bool $includeClickstreamData)
-	{
-		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+    /**
+     * @param bool $includeClickstreamData
+     *
+     * @return $this
+     */
+    public function setIncludeClickstreamData(bool $includeClickstreamData)
+    {
+        $this->payload['include_clickstream_data'] = $includeClickstreamData;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
+    /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -111,6 +126,7 @@ class GoogleTopSearchesLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -122,6 +138,7 @@ class GoogleTopSearchesLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -131,22 +148,23 @@ class GoogleTopSearchesLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param int $offset
-	 * @return $this
-	 */
-	public function setOffset(int $offset)
-	{
-		$this->payload['offset'] = $offset;
+    /**
+     * @param int $offset
+     *
+     * @return $this
+     */
+    public function setOffset(int $offset)
+    {
+        $this->payload['offset'] = $offset;
 
-		return $this;
-	}
+        return $this;
+    }
 
-
-	/**
-	 * @param string $offsetToken
-	 * @return $this
-	 */
+    /**
+     * @param string $offsetToken
+     *
+     * @return $this
+     */
     public function setOffsetToken(string $offsetToken)
     {
         $this->payload['offset_token'] = $offsetToken;
@@ -156,19 +174,24 @@ class GoogleTopSearchesLive extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

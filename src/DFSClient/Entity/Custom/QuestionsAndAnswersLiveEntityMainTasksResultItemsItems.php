@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class QuestionsAndAnswersLiveEntityMainTasksResultItemsItems 
-{    
+class QuestionsAndAnswersLiveEntityMainTasksResultItemsItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $answer_id;
-    */
+     * @var null|string;
+     */
     public $answer_id = null;
 
     /**
-    * @var null|string $profile_image_url;
-    */
+     * @var null|string;
+     */
     public $profile_image_url = null;
 
     /**
-    * @var null|string $profile_url;
-    */
+     * @var null|string;
+     */
     public $profile_url = null;
 
     /**
-    * @var null|string $profile_name;
-    */
+     * @var null|string;
+     */
     public $profile_name = null;
 
     /**
-    * @var null|string $answer_text;
-    */
+     * @var null|string;
+     */
     public $answer_text = null;
 
     /**
-    * @var null|NULL $original_answer_text;
-    */
+     * @var null|null;
+     */
     public $original_answer_text = null;
 
     /**
-    * @var null|string $time_ago;
-    */
+     * @var null|string;
+     */
     public $time_ago = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
- 
 }

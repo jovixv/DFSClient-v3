@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationGenerateSubTopicsLiveEntityMainTasksResult 
-{    
+class ContentGenerationGenerateSubTopicsLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $input_tokens;
-    */
+     * @var null|integer;
+     */
     public $input_tokens = null;
 
     /**
-    * @var null|integer $output_tokens;
-    */
+     * @var null|integer;
+     */
     public $output_tokens = null;
 
     /**
-    * @var null|integer $new_tokens;
-    */
+     * @var null|integer;
+     */
     public $new_tokens = null;
 
     /**
-    * @var null|array $sub_topics;
-    */
+     * @var null|array;
+     */
     public $sub_topics = null;
- 
 }

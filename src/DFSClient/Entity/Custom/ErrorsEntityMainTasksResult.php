@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ErrorsEntityMainTasksResult 
-{    
+class ErrorsEntityMainTasksResult
+{
     /**
-    * @var null|integer $code;
-    */
+     * @var null|integer;
+     */
     public $code = null;
 
     /**
-    * @var null|string $message;
-    */
+     * @var null|string;
+     */
     public $message = null;
- 
 }

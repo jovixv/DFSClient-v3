@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesTechnologiesEntityMainTasksResultGroupsCategories 
-{    
+class TechnologiesTechnologiesEntityMainTasksResultGroupsCategories
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|array $technologies;
-    */
+     * @var null|array;
+     */
     public $technologies = null;
- 
 }

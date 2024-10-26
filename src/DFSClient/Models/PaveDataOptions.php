@@ -1,8 +1,6 @@
 <?php
 
-
 namespace DFSClientV3\Models;
-
 
 class PaveDataOptions
 {
@@ -16,9 +14,9 @@ class PaveDataOptions
 
     /**
      * Json contain variable types in structure.
-     * Example: items: [{type: 'firstType'}, {type: 'secondType'}]
+     * Example: items: [{type: 'firstType'}, {type: 'secondType'}].
      *
-     * @var bool $jsonContainVariadicType
+     * @var bool
      */
     protected $jsonContainVariadicType = false;
 
@@ -26,7 +24,7 @@ class PaveDataOptions
      * @var array
      */
     protected $pathsToVariadicTypesAndValue = [
-        'tasks->(:number)->result->(:number)->items' => 'fieldName'
+        'tasks->(:number)->result->(:number)->items' => 'fieldName',
     ];
 
     protected $pathsToDictionary = [
@@ -41,8 +39,6 @@ class PaveDataOptions
 //            return $value;
 //        }
     ];
-
-
 
     /**
      * @return bool
@@ -71,7 +67,7 @@ class PaveDataOptions
     /**
      * @return mixed
      */
-    public function getJson():string
+    public function getJson(): string
     {
         return $this->json;
     }
@@ -135,7 +131,7 @@ class PaveDataOptions
     /**
      * @return array
      */
-    public function getPathsToDictionary():array
+    public function getPathsToDictionary(): array
     {
         return $this->pathsToDictionary;
     }
@@ -166,6 +162,7 @@ class PaveDataOptions
 
     /**
      * @param string $path
+     *
      * @return callable|null
      */
     public function getCustomFunctionForPath(string $path): ?callable
@@ -176,7 +173,7 @@ class PaveDataOptions
     /**
      * @return array
      */
-    public function getCustomFunctionsForPaths():array
+    public function getCustomFunctionsForPaths(): array
     {
         return $this->customFunctionForPaths;
     }

@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleSearchIntentLiveEntityMainTasksResultItems;
 
-class GoogleSearchIntentLiveEntityMainTasksResult 
-{    
+class GoogleSearchIntentLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleSearchIntentLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleSearchIntentLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

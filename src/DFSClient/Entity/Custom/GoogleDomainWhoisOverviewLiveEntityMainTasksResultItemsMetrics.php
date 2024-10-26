@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetricsPaid;
 
-class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics 
-{    
+class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
- 
 }

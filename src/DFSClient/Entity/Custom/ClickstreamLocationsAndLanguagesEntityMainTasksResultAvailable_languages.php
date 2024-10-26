@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ClickstreamLocationsAndLanguagesEntityMainTasksResultAvailable_languages 
-{    
+class ClickstreamLocationsAndLanguagesEntityMainTasksResultAvailable_languages
+{
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
- 
 }

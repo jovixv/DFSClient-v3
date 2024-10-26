@@ -8,31 +8,30 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analytics;
 
-class UserEntityMainTasksResultPrice 
-{    
+class UserEntityMainTasksResultPrice
+{
     /**
-    * @var null|UserEntityMainTasksResultPriceAppendix $appendix;
-    */
+     * @var null|UserEntityMainTasksResultPriceAppendix;
+     */
     public $appendix = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceDataforseo_labs $dataforseo_labs;
-    */
+     * @var null|UserEntityMainTasksResultPriceDataforseo_labs;
+     */
     public $dataforseo_labs = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceKeywords_data $keywords_data;
-    */
+     * @var null|UserEntityMainTasksResultPriceKeywords_data;
+     */
     public $keywords_data = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceSerp $serp;
-    */
+     * @var null|UserEntityMainTasksResultPriceSerp;
+     */
     public $serp = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPriceTraffic_analytics $traffic_analytics;
-    */
+     * @var null|UserEntityMainTasksResultPriceTraffic_analytics;
+     */
     public $traffic_analytics = null;
- 
 }

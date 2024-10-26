@@ -2,36 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItemsPrice
-{    
+{
     /**
-    * @var null|float $current;
-    */
+     * @var null|float;
+     */
     public $current = null;
 
     /**
-     * @var null|float $regular;
+     * @var null|float;
      */
     public $regular = null;
 
     /**
-     * @var null|float $max_value;
+     * @var null|float;
      */
     public $max_value = null;
 
     /**
-     * @var null|string $currency;
+     * @var null|string;
      */
     public $currency = null;
 
     /**
-     * @var null|boolean $is_price_range;
+     * @var null|boolean;
      */
     public $is_price_range = null;
 
     /**
-     * @var null|string $displayed_price;
+     * @var null|string;
      */
     public $displayed_price = null;
 }

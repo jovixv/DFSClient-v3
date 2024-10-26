@@ -6,7 +6,6 @@ use DFSClientV3\Entity\Custom\TestModelEntityMain;
 
 class TestModel extends AbstractModel
 {
-
     protected $pathToMainData = 'tasks->{$postID}->result';
 
     protected $requestToFunction = 'keywords_data/{$se}/live/search_volume';
@@ -37,6 +36,7 @@ class TestModel extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -49,12 +49,14 @@ class TestModel extends AbstractModel
     public function setSe(string $seName)
     {
         $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
+
         return $this;
     }
 
     /**
      * @return TestModelEntityMain
      */
+    #[\Override]
     public function get(): TestModelEntityMain
     {
         return parent::get();

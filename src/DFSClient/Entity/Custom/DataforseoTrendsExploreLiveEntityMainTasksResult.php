@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DataforseoTrendsExploreLiveEntityMainTasksResult 
-{    
+class DataforseoTrendsExploreLiveEntityMainTasksResult
+{
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|NULL $location_code;
-    */
+     * @var null|null;
+     */
     public $location_code = null;
 
     /**
-    * @var null|NULL $language_code;
-    */
+     * @var null|null;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|DataforseoTrendsExploreLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|DataforseoTrendsExploreLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemPrice 
-{    
+class GoogleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemPrice
+{
     /**
-    * @var null|integer $current;
-    */
+     * @var null|integer;
+     */
     public $current = null;
 
     /**
-    * @var null|integer $regular;
-    */
+     * @var null|integer;
+     */
     public $regular = null;
 
     /**
-    * @var null|integer $max_value;
-    */
+     * @var null|integer;
+     */
     public $max_value = null;
 
     /**
-    * @var null|string $currency;
-    */
+     * @var null|string;
+     */
     public $currency = null;
 
     /**
-    * @var null|boolean $is_price_range;
-    */
+     * @var null|boolean;
+     */
     public $is_price_range = null;
 
     /**
-    * @var null|string $displayed_price;
-    */
+     * @var null|string;
+     */
     public $displayed_price = null;
- 
 }

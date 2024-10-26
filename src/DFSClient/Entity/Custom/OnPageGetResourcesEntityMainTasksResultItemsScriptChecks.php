@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetResourcesEntityMainTasksResultItemsScriptChecks 
-{    
+class OnPageGetResourcesEntityMainTasksResultItemsScriptChecks
+{
     /**
-    * @var null|boolean $no_content_encoding;
-    */
+     * @var null|boolean;
+     */
     public $no_content_encoding = null;
 
     /**
-    * @var null|boolean $high_loading_time;
-    */
+     * @var null|boolean;
+     */
     public $high_loading_time = null;
 
     /**
-    * @var null|boolean $is_redirect;
-    */
+     * @var null|boolean;
+     */
     public $is_redirect = null;
 
     /**
-    * @var null|boolean $is_broken;
-    */
+     * @var null|boolean;
+     */
     public $is_broken = null;
 
     /**
-    * @var null|boolean $is_www;
-    */
+     * @var null|boolean;
+     */
     public $is_www = null;
 
     /**
-    * @var null|boolean $is_https;
-    */
+     * @var null|boolean;
+     */
     public $is_https = null;
 
     /**
-    * @var null|boolean $is_http;
-    */
+     * @var null|boolean;
+     */
     public $is_http = null;
- 
 }

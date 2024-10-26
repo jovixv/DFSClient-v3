@@ -9,41 +9,40 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeyw
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleSearch_volume;
 
-class UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogle 
-{    
+class UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogle
+{
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleAd_traffic_by_keywords $ad_traffic_by_keywords;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleAd_traffic_by_keywords;
+     */
     public $ad_traffic_by_keywords = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleAd_traffic_by_platforms $ad_traffic_by_platforms;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleAd_traffic_by_platforms;
+     */
     public $ad_traffic_by_platforms = null;
 
     /**
-    * @var null|integer $adwords_status;
-    */
+     * @var null|integer;
+     */
     public $adwords_status = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_category $keywords_for_category;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_category;
+     */
     public $keywords_for_category = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_keywords $keywords_for_keywords;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_keywords;
+     */
     public $keywords_for_keywords = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_site $keywords_for_site;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleKeywords_for_site;
+     */
     public $keywords_for_site = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleSearch_volume $search_volume;
-    */
+     * @var null|UserEntityMainTasksResultMoneyStatisticsMinuteKeywords_dataGoogleSearch_volume;
+     */
     public $search_volume = null;
- 
 }

@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ContentAnalysisAvailableFiltersEntityMainTasksResultSearch;
 
-class ContentAnalysisAvailableFiltersEntityMainTasksResult 
-{    
+class ContentAnalysisAvailableFiltersEntityMainTasksResult
+{
     /**
-    * @var null|ContentAnalysisAvailableFiltersEntityMainTasksResultSearch $search;
-    */
+     * @var null|ContentAnalysisAvailableFiltersEntityMainTasksResultSearch;
+     */
     public $search = null;
- 
 }

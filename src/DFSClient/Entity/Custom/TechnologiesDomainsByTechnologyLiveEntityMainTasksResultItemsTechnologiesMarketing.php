@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesMarketing 
-{    
+class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesMarketing
+{
     /**
-    * @var null|array $marketing_automation;
-    */
+     * @var null|array;
+     */
     public $marketing_automation = null;
- 
 }

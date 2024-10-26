@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpAiSummaryEntityMainTasksResultItems 
-{    
+class SerpAiSummaryEntityMainTasksResultItems
+{
     /**
-    * @var null|string $summary;
-    */
+     * @var null|string;
+     */
     public $summary = null;
- 
 }

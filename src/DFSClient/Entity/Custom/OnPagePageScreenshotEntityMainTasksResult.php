@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPagePageScreenshotEntityMainTasksResult 
-{    
+class OnPagePageScreenshotEntityMainTasksResult
+{
     /**
-    * @var null|string $crawl_progress;
-    */
+     * @var null|string;
+     */
     public $crawl_progress = null;
 
     /**
-    * @var null|NULL $error_message;
-    */
+     * @var null|null;
+     */
     public $error_message = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|OnPagePageScreenshotEntityMainTasksResultItems[] $items;
-    */
+     * @var array|OnPagePageScreenshotEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksDataKeyword_fields;
 
-class ContentAnalysisSearchLiveEntityMainTasksData 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|ContentAnalysisSearchLiveEntityMainTasksDataKeyword_fields $keyword_fields;
-    */
+     * @var null|ContentAnalysisSearchLiveEntityMainTasksDataKeyword_fields;
+     */
     public $keyword_fields = null;
 
     /**
-    * @var null|integer $internal_list_limit;
-    */
+     * @var null|integer;
+     */
     public $internal_list_limit = null;
 
     /**
-    * @var null|array $filters;
-    */
+     * @var null|array;
+     */
     public $filters = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
- 
 }

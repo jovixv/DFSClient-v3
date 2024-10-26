@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeLiveEntityMainTasksResultMonthly_searches;
 
-class SearchVolumeLiveEntityMainTasksResult 
-{    
+class SearchVolumeLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|double $competition;
-    */
+     * @var null|double;
+     */
     public $competition = null;
 
     /**
-    * @var null|integer $cpc;
-    */
+     * @var null|integer;
+     */
     public $cpc = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var null|array $categories;
-    */
+     * @var null|array;
+     */
     public $categories = null;
 
     /**
-    * array|SearchVolumeLiveEntityMainTasksResultMonthly_searches[] $monthly_searches;
-    */
+     * array|SearchVolumeLiveEntityMainTasksResultMonthly_searches[] $monthly_searches;.
+     */
     public $monthly_searches = [];
- 
 }

@@ -1,29 +1,34 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Bing;
 
-
+use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class BingCompetitorsDomainLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
+
     protected $pathToMainData = 'tasks->{$postID}->result';
+
     protected $requestToFunction = 'dataforseo_labs/bing/competitors_domain/live';
+
     protected $resultShouldBeTransformedToArray = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMain
+     * @return BingCompetitorsDomainLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMain
+    #[\Override]
+    public function get(): BingCompetitorsDomainLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $target
+     *
      * @return $this
      */
     public function setTarget(string $target)
@@ -35,6 +40,7 @@ class BingCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -46,26 +52,31 @@ class BingCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -75,49 +86,57 @@ class BingCompetitorsDomainLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param int $maxRankGroup
-	 * @return $this
-	 */
-	public function setMaxRankGroup(int $maxRankGroup)
-	{
-		$this->payload['max_rank_group'] = $maxRankGroup;
-		return $this;
-	}
+    /**
+     * @param int $maxRankGroup
+     *
+     * @return $this
+     */
+    public function setMaxRankGroup(int $maxRankGroup)
+    {
+        $this->payload['max_rank_group'] = $maxRankGroup;
 
-	/**
-	 * @param bool $excludeTopDomains
-	 * @return $this
-	 */
-	public function setExcludeTopDomains(bool $excludeTopDomains)
-	{
-		$this->payload['exclude_top_domains'] = $excludeTopDomains;
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param array $intersectingDomains
-	 * @return $this
-	 */
-	public function setIntersectingDomains(array $intersectingDomains)
-	{
-		$this->payload['intersecting_domains'] = $intersectingDomains;
-		return $this;
-	}
+    /**
+     * @param bool $excludeTopDomains
+     *
+     * @return $this
+     */
+    public function setExcludeTopDomains(bool $excludeTopDomains)
+    {
+        $this->payload['exclude_top_domains'] = $excludeTopDomains;
 
-	/**
-	 * @param array $itemTypes
-	 * @return $this
-	 */
-	public function setItemTypes(array $itemTypes)
-	{
-		$this->payload['item_types'] = $itemTypes;
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * @param array $intersectingDomains
+     *
+     * @return $this
+     */
+    public function setIntersectingDomains(array $intersectingDomains)
+    {
+        $this->payload['intersecting_domains'] = $intersectingDomains;
+
+        return $this;
+    }
+
+    /**
+     * @param array $itemTypes
+     *
+     * @return $this
+     */
+    public function setItemTypes(array $itemTypes)
+    {
+        $this->payload['item_types'] = $itemTypes;
+
+        return $this;
+    }
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -129,6 +148,7 @@ class BingCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -140,6 +160,7 @@ class BingCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -151,6 +172,7 @@ class BingCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -162,19 +184,24 @@ class BingCompetitorsDomainLive extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

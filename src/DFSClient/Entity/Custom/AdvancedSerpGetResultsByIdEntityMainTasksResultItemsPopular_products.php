@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_products 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_products
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsRectangle;
+     */
     public $rectangle = null;
- 
 }

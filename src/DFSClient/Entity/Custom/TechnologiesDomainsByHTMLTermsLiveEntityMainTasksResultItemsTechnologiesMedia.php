@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMedia 
-{    
+class TechnologiesDomainsByHTMLTermsLiveEntityMainTasksResultItemsTechnologiesMedia
+{
     /**
-    * @var null|array $video_players;
-    */
+     * @var null|array;
+     */
     public $video_players = null;
- 
 }

@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\CategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\CategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid;
 
-class CategoriesForDomainLiveEntityMainTasksResultItemsMetrics 
-{    
+class CategoriesForDomainLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|CategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|CategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|CategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|CategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
- 
 }

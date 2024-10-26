@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterestsValues;
 
-class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests 
-{    
+class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var array|DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterestsValues[] $values;
-    */
+     * @var array|DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterestsValues[];
+     */
     public $values = [];
- 
 }

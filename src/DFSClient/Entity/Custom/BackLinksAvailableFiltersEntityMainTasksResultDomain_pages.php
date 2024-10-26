@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksAvailableFiltersEntityMainTasksResultDomain_pages 
-{    
-
+class BackLinksAvailableFiltersEntityMainTasksResultDomain_pages
+{
 }

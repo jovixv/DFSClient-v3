@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring;
 
-class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferring 
-{    
+class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferring
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
 
     /**
-    * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring[] $top_referring;
-    */
+     * @var array|TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring[];
+     */
     public $top_referring = [];
- 
 }

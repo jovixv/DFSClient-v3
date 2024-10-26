@@ -2,11 +2,10 @@
 
 namespace DFSClientV3\Bootstrap;
 
-use \Exception as ApplicationException;
+use Exception as ApplicationException;
 
 class Application
 {
-
     /**
      * @var Application|null
      */
@@ -38,21 +37,23 @@ class Application
      */
     public static function getInstance(): Application
     {
-        if (!self::$instance)
+        if (!self::$instance) {
             self::$instance = new static();
+        }
 
         return self::$instance;
     }
 
     /**
      * @param $config
+     *
      * @throws ApplicationException
      */
     public function setConfig($config): void
     {
-
-        if (empty($config))
+        if (empty($config)) {
             throw new ApplicationException('Config array can not be empty');
+        }
 
         $this->config = $config;
     }
@@ -64,6 +65,4 @@ class Application
     {
         return $this->config;
     }
-
-
 }

@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data;
 
-class AppleAppIntersectionLiveEntityMainTasksResultItems 
-{    
+class AppleAppIntersectionLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data $keyword_data;
-    */
+     * @var null|AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data;
+     */
     public $keyword_data = null;
 
     /**
-    * @var null|array $intersection_result;
-    */
+     * @var null|array;
+     */
     public $intersection_result = null;
- 
 }

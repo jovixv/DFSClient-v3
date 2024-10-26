@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppListingsSearchLiveEntityMainTasksResult 
-{    
+class GoogleAppListingsSearchLiveEntityMainTasksResult
+{
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
 
     /**
-    * @var null|integer $offset;
-    */
+     * @var null|integer;
+     */
     public $offset = null;
 
     /**
-    * @var null|string $offset_token;
-    */
+     * @var null|string;
+     */
     public $offset_token = null;
 
     /**
-    * @var array|GoogleAppListingsSearchLiveEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleAppListingsSearchLiveEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

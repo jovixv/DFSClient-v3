@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesRectangle 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsScholarly_articlesRectangle
+{
     /**
-    * @var null|integer $x;
-    */
+     * @var null|integer;
+     */
     public $x = null;
 
     /**
-    * @var null|integer $y;
-    */
+     * @var null|integer;
+     */
     public $y = null;
 
     /**
-    * @var null|integer $width;
-    */
+     * @var null|integer;
+     */
     public $width = null;
 
     /**
-    * @var null|integer $height;
-    */
+     * @var null|integer;
+     */
     public $height = null;
- 
 }

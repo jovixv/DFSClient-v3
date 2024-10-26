@@ -2,19 +2,18 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksResultSearch;
 use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksResultCategories_aggregation;
+use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksResultSearch;
 
-class BusinessListingsAvailableFiltersEntityMainTasksResult 
-{    
+class BusinessListingsAvailableFiltersEntityMainTasksResult
+{
     /**
-    * @var null|BusinessListingsAvailableFiltersEntityMainTasksResultSearch $search;
-    */
+     * @var null|BusinessListingsAvailableFiltersEntityMainTasksResultSearch;
+     */
     public $search = null;
 
     /**
-    * @var null|BusinessListingsAvailableFiltersEntityMainTasksResultCategories_aggregation $categories_aggregation;
-    */
+     * @var null|BusinessListingsAvailableFiltersEntityMainTasksResultCategories_aggregation;
+     */
     public $categories_aggregation = null;
- 
 }

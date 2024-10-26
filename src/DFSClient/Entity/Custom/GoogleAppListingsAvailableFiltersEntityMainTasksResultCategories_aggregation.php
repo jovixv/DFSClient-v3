@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation 
+class GoogleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation
 {
-
 }

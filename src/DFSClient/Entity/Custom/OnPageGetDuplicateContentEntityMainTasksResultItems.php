@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPages;
 
-class OnPageGetDuplicateContentEntityMainTasksResultItems 
-{    
+class OnPageGetDuplicateContentEntityMainTasksResultItems
+{
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var array|OnPageGetDuplicateContentEntityMainTasksResultItemsPages[] $pages;
-    */
+     * @var array|OnPageGetDuplicateContentEntityMainTasksResultItemsPages[];
+     */
     public $pages = [];
- 
 }

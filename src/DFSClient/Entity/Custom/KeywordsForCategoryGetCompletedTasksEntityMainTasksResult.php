@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordsForCategoryGetCompletedTasksEntityMainTasksResult 
-{    
+class KeywordsForCategoryGetCompletedTasksEntityMainTasksResult
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $date_posted;
-    */
+     * @var null|string;
+     */
     public $date_posted = null;
 
     /**
-    * @var null|string $endpoint;
-    */
+     * @var null|string;
+     */
     public $endpoint = null;
- 
 }

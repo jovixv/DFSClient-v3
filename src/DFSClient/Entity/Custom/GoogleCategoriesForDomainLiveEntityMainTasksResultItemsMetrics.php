@@ -2,31 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic;
-use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid;
 use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_pack;
+use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic;
+use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid;
 
-class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetrics 
-{    
+class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
 
     /**
-    * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsFeatured_snippet $featured_snippet;
-    */
+     * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
+     */
     public $featured_snippet = null;
 
     /**
-    * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_pack $local_pack;
-    */
+     * @var null|GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_pack;
+     */
     public $local_pack = null;
- 
 }

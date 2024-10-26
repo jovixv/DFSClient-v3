@@ -1,26 +1,27 @@
 <?php
 
-
 namespace DFSClientV3\Services\Logger\Message;
-
 
 interface MessageInterface
 {
     /**
      * LoggerMessage constructor.
-     * @param $messageBody
+     *
+     * @param        $messageBody
      * @param string $messageTitle
      * @param string $file
      * @param string $level
      * @param string $dfsVersion
      * @param string $localVersion
      */
-    public function __construct($messageBody,
-                                string $messageTitle = '',
-                                string $file = '',
-                                string $level = 'INFO',
-                                string $dfsVersion = '',
-                                string $localVersion = '');
+    public function __construct(
+        $messageBody,
+        string $messageTitle = '',
+        string $file = '',
+        string $level = 'INFO',
+        string $dfsVersion = '',
+        string $localVersion = ''
+    );
 
     /**
      * @return mixed

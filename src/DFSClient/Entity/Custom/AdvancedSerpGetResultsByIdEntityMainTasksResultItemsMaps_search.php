@@ -4,96 +4,95 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMaps_searchRating;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMaps_search 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMaps_search
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMaps_searchRating $rating;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMaps_searchRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $address;
-    */
+     * @var null|string;
+     */
     public $address = null;
 
     /**
-    * @var null|NULL $place_id;
-    */
+     * @var null|null;
+     */
     public $place_id = null;
 
     /**
-    * @var null|string $phone;
-    */
+     * @var null|string;
+     */
     public $phone = null;
 
     /**
-    * @var null|string $main_image;
-    */
+     * @var null|string;
+     */
     public $main_image = null;
 
     /**
-    * @var null|string $category;
-    */
+     * @var null|string;
+     */
     public $category = null;
 
     /**
-    * @var null|NULL $work_hours;
-    */
+     * @var null|null;
+     */
     public $work_hours = null;
 
     /**
-    * @var null|string $feature_id;
-    */
+     * @var null|string;
+     */
     public $feature_id = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|double $latitude;
-    */
+     * @var null|double;
+     */
     public $latitude = null;
 
     /**
-    * @var null|double $longitude;
-    */
+     * @var null|double;
+     */
     public $longitude = null;
- 
 }

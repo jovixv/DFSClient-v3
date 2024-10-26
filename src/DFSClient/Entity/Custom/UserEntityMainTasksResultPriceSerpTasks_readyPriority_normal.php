@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultPriceSerpTasks_readyPriority_normal 
-{    
+class UserEntityMainTasksResultPriceSerpTasks_readyPriority_normal
+{
     /**
-    * @var null|string $cost_type;
-    */
+     * @var null|string;
+     */
     public $cost_type = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
- 
 }

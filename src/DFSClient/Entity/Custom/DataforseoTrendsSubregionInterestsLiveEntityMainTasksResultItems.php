@@ -5,31 +5,30 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests;
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests_comparison;
 
-class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItems 
-{    
+class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|integer $position;
-    */
+     * @var null|integer;
+     */
     public $position = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|array $keywords;
-    */
+     * @var null|array;
+     */
     public $keywords = null;
 
     /**
-    * @var array|DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests[] $interests;
-    */
+     * @var array|DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests[];
+     */
     public $interests = [];
 
     /**
-    * @var null|DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests_comparison $interests_comparison;
-    */
+     * @var null|DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests_comparison;
+     */
     public $interests_comparison = null;
- 
 }

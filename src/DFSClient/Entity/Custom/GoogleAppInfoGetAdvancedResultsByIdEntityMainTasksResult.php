@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleAppInfoGetAdvancedResultsByIdEntityMainTasksResult 
-{    
+class GoogleAppInfoGetAdvancedResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|integer $se_results_count;
-    */
+     * @var null|integer;
+     */
     public $se_results_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|GoogleAppInfoGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|GoogleAppInfoGetAdvancedResultsByIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

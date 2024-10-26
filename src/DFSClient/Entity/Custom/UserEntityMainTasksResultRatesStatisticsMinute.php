@@ -8,66 +8,65 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeyw
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteSerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteTraffic_analytics;
 
-class UserEntityMainTasksResultRatesStatisticsMinute 
-{    
+class UserEntityMainTasksResultRatesStatisticsMinute
+{
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteAppendix $appendix;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteAppendix;
+     */
     public $appendix = null;
 
     /**
-    * @var null|integer $total;
-    */
+     * @var null|integer;
+     */
     public $total = null;
 
     /**
-    * @var null|integer $total_appendix;
-    */
+     * @var null|integer;
+     */
     public $total_appendix = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteDataforseo_labs $dataforseo_labs;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteDataforseo_labs;
+     */
     public $dataforseo_labs = null;
 
     /**
-    * @var null|integer $total_dataforseo_labs;
-    */
+     * @var null|integer;
+     */
     public $total_dataforseo_labs = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data $keywords_data;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data;
+     */
     public $keywords_data = null;
 
     /**
-    * @var null|integer $total_keywords_data;
-    */
+     * @var null|integer;
+     */
     public $total_keywords_data = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerp $serp;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteSerp;
+     */
     public $serp = null;
 
     /**
-    * @var null|integer $total_serp;
-    */
+     * @var null|integer;
+     */
     public $total_serp = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesStatisticsMinuteTraffic_analytics $traffic_analytics;
-    */
+     * @var null|UserEntityMainTasksResultRatesStatisticsMinuteTraffic_analytics;
+     */
     public $traffic_analytics = null;
 
     /**
-    * @var null|integer $total_traffic_analytics;
-    */
+     * @var null|integer;
+     */
     public $total_traffic_analytics = null;
 
     /**
-    * @var null|string $value;
-    */
+     * @var null|string;
+     */
     public $value = null;
- 
 }

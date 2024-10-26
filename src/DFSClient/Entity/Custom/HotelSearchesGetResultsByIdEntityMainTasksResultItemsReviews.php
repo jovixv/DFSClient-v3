@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelSearchesGetResultsByIdEntityMainTasksResultItemsReviews 
-{    
+class HotelSearchesGetResultsByIdEntityMainTasksResultItemsReviews
+{
     /**
-    * @var null|double $value;
-    */
+     * @var null|double;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $votes_count;
-    */
+     * @var null|integer;
+     */
     public $votes_count = null;
 
     /**
-    * @var null|NULL $mentions;
-    */
+     * @var null|null;
+     */
     public $mentions = null;
 
     /**
-    * @var null|NULL $rating_distribution;
-    */
+     * @var null|null;
+     */
     public $rating_distribution = null;
 
     /**
-    * @var null|NULL $other_sites_reviews;
-    */
+     * @var null|null;
+     */
     public $other_sites_reviews = null;
- 
 }

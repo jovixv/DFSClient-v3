@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordIdeasLiveEntityMainTasksResult 
-{    
+class KeywordIdeasLiveEntityMainTasksResult
+{
     /**
-    * @var null|array $seed_keywords;
-    */
+     * @var null|array;
+     */
     public $seed_keywords = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * array|KeywordIdeasLiveEntityMainTasksResultItems[] $items;
-    */
+     * array|KeywordIdeasLiveEntityMainTasksResultItems[] $items;.
+     */
     public $items = [];
- 
 }

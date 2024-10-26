@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TripadvisorReviewsSetTaskEntityMainTasksData 
-{    
+class TripadvisorReviewsSetTaskEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $url_path;
-    */
+     * @var null|string;
+     */
     public $url_path = null;
 
     /**
-    * @var null|string $language_name;
-    */
+     * @var null|string;
+     */
     public $language_name = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $device;
-    */
+     * @var null|string;
+     */
     public $device = null;
 
     /**
-    * @var null|string $os;
-    */
+     * @var null|string;
+     */
     public $os = null;
- 
 }

@@ -2,67 +2,65 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksDomainPagesSummaryLiveEntityMainTasksData 
-{    
+class BacklinksDomainPagesSummaryLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $target;
-    */
+     * @var null|string;
+     */
     public $target = null;
 
     /**
-    * @var null|array $order_by;
-    */
+     * @var null|array;
+     */
     public $order_by = null;
 
     /**
-    * @var null|boolean $exclude_internal_backlinks;
-    */
+     * @var null|boolean;
+     */
     public $exclude_internal_backlinks = null;
 
     /**
-    * @var null|array $filters;
-    */
+     * @var null|array;
+     */
     public $filters = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|integer $offset;
-    */
+     * @var null|integer;
+     */
     public $offset = null;
 
     /**
-    * @var null|integer $internal_list_limit;
-    */
+     * @var null|integer;
+     */
     public $internal_list_limit = null;
 
     /**
-    * @var null|string $backlinks_status_type;
-    */
+     * @var null|string;
+     */
     public $backlinks_status_type = null;
 
     /**
-    * @var null|boolean $include_subdomains;
-    */
+     * @var null|boolean;
+     */
     public $include_subdomains = null;
 
     /**
-    * @var null|string $tag;
-    */
+     * @var null|string;
+     */
     public $tag = null;
- 
 }

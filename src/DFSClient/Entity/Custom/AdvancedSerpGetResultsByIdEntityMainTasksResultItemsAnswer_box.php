@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_boxRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_box 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_box
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|array $text;
-    */
+     * @var null|array;
+     */
     public $text = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_boxLinks[] $links;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_boxLinks[];
+     */
     public $links = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_boxRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_boxRectangle;
+     */
     public $rectangle = null;
- 
 }

@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpScreenshotEntityMainTasksResult 
-{    
+class SerpScreenshotEntityMainTasksResult
+{
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|SerpScreenshotEntityMainTasksResultItems[] $items;
-    */
+     * @var array|SerpScreenshotEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationGenerateSubTopicsLiveEntityMainTasksData 
-{    
+class ContentGenerationGenerateSubTopicsLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $topic;
-    */
+     * @var null|string;
+     */
     public $topic = null;
 
     /**
-    * @var null|double $creativity_index;
-    */
+     * @var null|double;
+     */
     public $creativity_index = null;
- 
 }

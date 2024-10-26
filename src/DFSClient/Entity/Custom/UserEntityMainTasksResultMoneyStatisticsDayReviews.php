@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultMoneyStatisticsDayReviews 
-{    
+class UserEntityMainTasksResultMoneyStatisticsDayReviews
+{
     /**
-    * @var null|double $task_post;
-    */
+     * @var null|double;
+     */
     public $task_post = null;
- 
 }

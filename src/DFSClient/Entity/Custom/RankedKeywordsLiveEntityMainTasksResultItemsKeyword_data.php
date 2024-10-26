@@ -2,34 +2,33 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
+use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 
-class RankedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
-{    
+class RankedKeywordsLiveEntityMainTasksResultItemsKeyword_data
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location;
-    */
+     * @var null|integer;
+     */
     public $location = null;
 
     /**
-    * @var null|string $language;
-    */
+     * @var null|string;
+     */
     public $language = null;
 
     /**
-    * @var null|RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info $keyword_info;
-    */
+     * @var null|RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+     */
     public $keyword_info = null;
 
     /**
-    * @var null|RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info $impressions_info;
-    */
+     * @var null|RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
+     */
     public $impressions_info = null;
- 
 }

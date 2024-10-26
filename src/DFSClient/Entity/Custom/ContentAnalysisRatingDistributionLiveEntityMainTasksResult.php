@@ -4,26 +4,25 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ContentAnalysisRatingDistributionLiveEntityMainTasksResultMetrics;
 
-class ContentAnalysisRatingDistributionLiveEntityMainTasksResult 
-{    
+class ContentAnalysisRatingDistributionLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $min;
-    */
+     * @var null|integer;
+     */
     public $min = null;
 
     /**
-    * @var null|double $max;
-    */
+     * @var null|double;
+     */
     public $max = null;
 
     /**
-    * @var null|ContentAnalysisRatingDistributionLiveEntityMainTasksResultMetrics $metrics;
-    */
+     * @var null|ContentAnalysisRatingDistributionLiveEntityMainTasksResultMetrics;
+     */
     public $metrics = null;
- 
 }

@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
 class OnPageGetPagesEntityMainTasksResultItemsHtmlMetaSpellMisspelled
-{    
+{
     /**
-    * @var null|string $word;
-    */
+     * @var null|string;
+     */
     public $word = null;
- 
 }

@@ -4,31 +4,30 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMentioned_in;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItems 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $price;
-    */
+     * @var null|string;
+     */
     public $price = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsRating $rating;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMentioned_in[] $mentioned_in;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsMention_carouselItemsMentioned_in[];
+     */
     public $mentioned_in = [];
- 
 }

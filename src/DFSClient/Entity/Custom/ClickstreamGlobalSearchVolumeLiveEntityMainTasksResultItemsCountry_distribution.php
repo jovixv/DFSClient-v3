@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItemsCountry_distribution 
-{    
+class ClickstreamGlobalSearchVolumeLiveEntityMainTasksResultItemsCountry_distribution
+{
     /**
-    * @var null|string $country_iso_code;
-    */
+     * @var null|string;
+     */
     public $country_iso_code = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var null|double $percentage;
-    */
+     * @var null|double;
+     */
     public $percentage = null;
- 
 }

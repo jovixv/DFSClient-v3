@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile 
-{    
+class AmazonReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile
+{
     /**
-    * @var null|string $name;
-    */
+     * @var null|string;
+     */
     public $name = null;
 
     /**
-    * @var null|string $avatar;
-    */
+     * @var null|string;
+     */
     public $avatar = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $reviews_count;
-    */
+     * @var null|null;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|NULL $locations;
-    */
+     * @var null|null;
+     */
     public $locations = null;
- 
 }

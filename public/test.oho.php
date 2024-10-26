@@ -1,13 +1,12 @@
 <?php
+
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include_once '../vendor/autoload.php';
 
 use DFSClientV3\DFSClient;
-use DFSClientV3\Services\EntityCreator\EntityCreator;
 use DFSClientV3\Models\CommonApi\User;
+use DFSClientV3\Services\EntityCreator\EntityCreator;
 use DFSClientV3\Services\Logger\Logger;
-
-
 
 $client = new DFSClient();
 $client->setConfig('C:\OSPanel\domains\dfs-v3\public\config.php');
@@ -32,13 +31,9 @@ dd($res);
 //    dd($item);
 //}
 
-
-
 //$logger->pushMessage('Test message');
 
 //$res = $model->get();//->setTaskId('10111513-2974-0066-0000-26927c31ec39')->setSeType('organic')->setSe('google');
-
-
 
 // Create tasks with range postID.
 //for($i=1; $i<10; $i++)
@@ -54,11 +49,7 @@ dd($res);
 //}
 //$res = \DFSClientV3\Models\SERP_API\SettingSerpTasks::getAfterMerge($pool);
 
-
-
 //dd($res);
-
-
 
 //foreach ($res->tasks as $task)
 //{

@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations 
-{    
+class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations
+{
     /**
-    * @var null|double $anger;
-    */
+     * @var null|double;
+     */
     public $anger = null;
 
     /**
-    * @var null|double $happiness;
-    */
+     * @var null|double;
+     */
     public $happiness = null;
 
     /**
-    * @var null|double $love;
-    */
+     * @var null|double;
+     */
     public $love = null;
 
     /**
-    * @var null|double $sadness;
-    */
+     * @var null|double;
+     */
     public $sadness = null;
 
     /**
-    * @var null|double $share;
-    */
+     * @var null|double;
+     */
     public $share = null;
 
     /**
-    * @var null|double $fun;
-    */
+     * @var null|double;
+     */
     public $fun = null;
- 
 }

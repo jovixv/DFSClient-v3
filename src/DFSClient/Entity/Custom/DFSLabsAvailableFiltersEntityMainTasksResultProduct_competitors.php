@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitorsAmazon;
 
-class DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitors 
-{    
+class DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitors
+{
     /**
-    * @var null|DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitorsAmazon $amazon;
-    */
+     * @var null|DFSLabsAvailableFiltersEntityMainTasksResultProduct_competitorsAmazon;
+     */
     public $amazon = null;
- 
 }

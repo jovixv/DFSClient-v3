@@ -2,35 +2,34 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRates;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoney;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPrice;
+use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRates;
 
-class UserEntityMainTasksResult 
-{    
+class UserEntityMainTasksResult
+{
     /**
-    * @var null|string $login;
-    */
+     * @var null|string;
+     */
     public $login = null;
 
     /**
-    * @var null|string $timezone;
-    */
+     * @var null|string;
+     */
     public $timezone = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRates $rates;
-    */
+     * @var null|UserEntityMainTasksResultRates;
+     */
     public $rates = null;
 
     /**
-    * @var null|UserEntityMainTasksResultMoney $money;
-    */
+     * @var null|UserEntityMainTasksResultMoney;
+     */
     public $money = null;
 
     /**
-    * @var null|UserEntityMainTasksResultPrice $price;
-    */
+     * @var null|UserEntityMainTasksResultPrice;
+     */
     public $price = null;
- 
 }

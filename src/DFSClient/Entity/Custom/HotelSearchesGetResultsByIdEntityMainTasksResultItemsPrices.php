@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelSearchesGetResultsByIdEntityMainTasksResultItemsPrices 
-{    
+class HotelSearchesGetResultsByIdEntityMainTasksResultItemsPrices
+{
     /**
-    * @var null|integer $price;
-    */
+     * @var null|integer;
+     */
     public $price = null;
 
     /**
-    * @var null|NULL $price_without_discount;
-    */
+     * @var null|null;
+     */
     public $price_without_discount = null;
 
     /**
-    * @var null|NULL $currency;
-    */
+     * @var null|null;
+     */
     public $currency = null;
 
     /**
-    * @var null|NULL $discount_text;
-    */
+     * @var null|null;
+     */
     public $discount_text = null;
 
     /**
-    * @var null|string $check_in;
-    */
+     * @var null|string;
+     */
     public $check_in = null;
 
     /**
-    * @var null|string $check_out;
-    */
+     * @var null|string;
+     */
     public $check_out = null;
 
     /**
-    * @var null|integer $visitors;
-    */
+     * @var null|integer;
+     */
     public $visitors = null;
 
     /**
-    * @var null|NULL $items;
-    */
+     * @var null|null;
+     */
     public $items = null;
- 
 }

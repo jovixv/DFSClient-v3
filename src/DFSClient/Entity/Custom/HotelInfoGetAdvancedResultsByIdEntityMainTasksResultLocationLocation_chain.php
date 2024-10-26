@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocationLocation_chain 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocationLocation_chain
+{
     /**
-    * @var null|NULL $card_id;
-    */
+     * @var null|null;
+     */
     public $card_id = null;
 
     /**
-    * @var null|string $feature_id;
-    */
+     * @var null|string;
+     */
     public $feature_id = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
- 
 }

@@ -4,36 +4,35 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ClickstreamLocationsAndLanguagesEntityMainTasksResultAvailable_languages;
 
-class ClickstreamLocationsAndLanguagesEntityMainTasksResult 
-{    
+class ClickstreamLocationsAndLanguagesEntityMainTasksResult
+{
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $location_name;
-    */
+     * @var null|string;
+     */
     public $location_name = null;
 
     /**
-    * @var null|NULL $location_code_parent;
-    */
+     * @var null|null;
+     */
     public $location_code_parent = null;
 
     /**
-    * @var null|string $country_iso_code;
-    */
+     * @var null|string;
+     */
     public $country_iso_code = null;
 
     /**
-    * @var null|string $location_type;
-    */
+     * @var null|string;
+     */
     public $location_type = null;
 
     /**
-    * @var array|ClickstreamLocationsAndLanguagesEntityMainTasksResultAvailable_languages[] $available_languages;
-    */
+     * @var array|ClickstreamLocationsAndLanguagesEntityMainTasksResultAvailable_languages[];
+     */
     public $available_languages = [];
- 
 }

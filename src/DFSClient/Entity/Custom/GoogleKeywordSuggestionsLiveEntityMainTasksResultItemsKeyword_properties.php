@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_properties 
-{    
+class GoogleKeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_properties
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|NULL $core_keyword;
-    */
+     * @var null|null;
+     */
     public $core_keyword = null;
 
     /**
-    * @var null|string $synonym_clustering_algorithm;
-    */
+     * @var null|string;
+     */
     public $synonym_clustering_algorithm = null;
 
     /**
-    * @var null|integer $keyword_difficulty;
-    */
+     * @var null|integer;
+     */
     public $keyword_difficulty = null;
 
     /**
-    * @var null|string $detected_language;
-    */
+     * @var null|string;
+     */
     public $detected_language = null;
 
     /**
-    * @var null|boolean $is_another_language;
-    */
+     * @var null|boolean;
+     */
     public $is_another_language = null;
- 
 }

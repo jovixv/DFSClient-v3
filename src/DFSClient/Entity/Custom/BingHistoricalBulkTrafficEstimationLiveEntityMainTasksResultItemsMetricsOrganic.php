@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsOrganic 
-{    
+class BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsOrganic
+{
     /**
-    * @var null|integer $year;
-    */
+     * @var null|integer;
+     */
     public $year = null;
 
     /**
-    * @var null|integer $month;
-    */
+     * @var null|integer;
+     */
     public $month = null;
 
     /**
-    * @var null|double $etv;
-    */
+     * @var null|double;
+     */
     public $etv = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

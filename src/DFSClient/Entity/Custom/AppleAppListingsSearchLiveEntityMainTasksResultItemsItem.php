@@ -2,156 +2,155 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemRating;
-use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice;
-use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps;
 use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemMore_apps_by_developer;
+use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice;
+use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemRating;
+use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps;
 
-class AppleAppListingsSearchLiveEntityMainTasksResultItemsItem 
-{    
+class AppleAppListingsSearchLiveEntityMainTasksResultItemsItem
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $icon;
-    */
+     * @var null|string;
+     */
     public $icon = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemRating $rating;
-    */
+     * @var null|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice $price;
-    */
+     * @var null|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice;
+     */
     public $price = null;
 
     /**
-    * @var null|boolean $is_free;
-    */
+     * @var null|boolean;
+     */
     public $is_free = null;
 
     /**
-    * @var null|string $main_category;
-    */
+     * @var null|string;
+     */
     public $main_category = null;
 
     /**
-    * @var null|array $categories;
-    */
+     * @var null|array;
+     */
     public $categories = null;
 
     /**
-    * @var null|array $languages;
-    */
+     * @var null|array;
+     */
     public $languages = null;
 
     /**
-    * @var null|array $advisories;
-    */
+     * @var null|array;
+     */
     public $advisories = null;
 
     /**
-    * @var null|string $developer;
-    */
+     * @var null|string;
+     */
     public $developer = null;
 
     /**
-    * @var null|string $developer_id;
-    */
+     * @var null|string;
+     */
     public $developer_id = null;
 
     /**
-    * @var null|string $developer_url;
-    */
+     * @var null|string;
+     */
     public $developer_url = null;
 
     /**
-    * @var null|string $version;
-    */
+     * @var null|string;
+     */
     public $version = '1.39.4';
 
     /**
-    * @var null|string $minimum_os_version;
-    */
+     * @var null|string;
+     */
     public $minimum_os_version = null;
 
     /**
-    * @var null|string $size;
-    */
+     * @var null|string;
+     */
     public $size = null;
 
     /**
-    * @var null|string $released_date;
-    */
+     * @var null|string;
+     */
     public $released_date = null;
 
     /**
-    * @var null|string $last_update_date;
-    */
+     * @var null|string;
+     */
     public $last_update_date = null;
 
     /**
-    * @var null|string $update_notes;
-    */
+     * @var null|string;
+     */
     public $update_notes = null;
 
     /**
-    * @var null|array $images;
-    */
+     * @var null|array;
+     */
     public $images = null;
 
     /**
-    * @var array|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps[] $similar_apps;
-    */
+     * @var array|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps[];
+     */
     public $similar_apps = [];
 
     /**
-    * @var array|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemMore_apps_by_developer[] $more_apps_by_developer;
-    */
+     * @var array|AppleAppListingsSearchLiveEntityMainTasksResultItemsItemMore_apps_by_developer[];
+     */
     public $more_apps_by_developer = [];
- 
 }

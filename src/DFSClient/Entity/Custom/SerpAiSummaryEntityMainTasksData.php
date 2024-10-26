@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SerpAiSummaryEntityMainTasksData 
-{    
+class SerpAiSummaryEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $task_id;
-    */
+     * @var null|string;
+     */
     public $task_id = null;
 
     /**
-    * @var null|string $prompt;
-    */
+     * @var null|string;
+     */
     public $prompt = null;
 
     /**
-    * @var null|boolean $include_links;
-    */
+     * @var null|boolean;
+     */
     public $include_links = null;
 
     /**
-    * @var null|boolean $fetch_content;
-    */
+     * @var null|boolean;
+     */
     public $fetch_content = null;
 
     /**
-    * @var null|boolean $suport_extra;
-    */
+     * @var null|boolean;
+     */
     public $suport_extra = null;
- 
 }

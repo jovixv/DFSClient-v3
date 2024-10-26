@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\RelevantPagesLiveEntityMainTasksResultItemsMetrics;
 
-class RelevantPagesLiveEntityMainTasksResultItems 
-{    
+class RelevantPagesLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $page_address;
-    */
+     * @var null|string;
+     */
     public $page_address = null;
 
     /**
-    * @var null|RelevantPagesLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|RelevantPagesLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

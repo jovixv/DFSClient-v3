@@ -8,61 +8,60 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayKeywords_da
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDaySerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayTraffic_analytics;
 
-class UserEntityMainTasksResultRatesLimitsDay 
-{    
+class UserEntityMainTasksResultRatesLimitsDay
+{
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDayAppendix $appendix;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDayAppendix;
+     */
     public $appendix = null;
 
     /**
-    * @var null|integer $total;
-    */
+     * @var null|integer;
+     */
     public $total = null;
 
     /**
-    * @var null|integer $total_appendix;
-    */
+     * @var null|integer;
+     */
     public $total_appendix = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDayDataforseo_labs $dataforseo_labs;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDayDataforseo_labs;
+     */
     public $dataforseo_labs = null;
 
     /**
-    * @var null|integer $total_dataforseo_labs;
-    */
+     * @var null|integer;
+     */
     public $total_dataforseo_labs = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDayKeywords_data $keywords_data;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDayKeywords_data;
+     */
     public $keywords_data = null;
 
     /**
-    * @var null|integer $total_keywords_data;
-    */
+     * @var null|integer;
+     */
     public $total_keywords_data = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDaySerp $serp;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDaySerp;
+     */
     public $serp = null;
 
     /**
-    * @var null|integer $total_serp;
-    */
+     * @var null|integer;
+     */
     public $total_serp = null;
 
     /**
-    * @var null|UserEntityMainTasksResultRatesLimitsDayTraffic_analytics $traffic_analytics;
-    */
+     * @var null|UserEntityMainTasksResultRatesLimitsDayTraffic_analytics;
+     */
     public $traffic_analytics = null;
 
     /**
-    * @var null|integer $total_traffic_analytics;
-    */
+     * @var null|integer;
+     */
     public $total_traffic_analytics = null;
- 
 }

@@ -4,56 +4,55 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HistoricalSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches;
 
-class HistoricalSearchVolumeLiveEntityMainTasksResultItems 
-{    
+class HistoricalSearchVolumeLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|boolean $search_partners;
-    */
+     * @var null|boolean;
+     */
     public $search_partners = null;
 
     /**
-    * @var null|string $last_updated_time;
-    */
+     * @var null|string;
+     */
     public $last_updated_time = null;
 
     /**
-    * @var null|NULL $competition;
-    */
+     * @var null|null;
+     */
     public $competition = null;
 
     /**
-    * @var null|NULL $cpc;
-    */
+     * @var null|null;
+     */
     public $cpc = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var null|NULL $categories;
-    */
+     * @var null|null;
+     */
     public $categories = null;
 
     /**
-    * @var array|HistoricalSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches[] $monthly_searches;
-    */
+     * @var array|HistoricalSearchVolumeLiveEntityMainTasksResultItemsMonthly_searches[];
+     */
     public $monthly_searches = [];
- 
 }

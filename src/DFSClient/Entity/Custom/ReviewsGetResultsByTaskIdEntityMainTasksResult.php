@@ -4,86 +4,85 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\ReviewsGetResultsByTaskIdEntityMainTasksResultItems;
 
-class ReviewsGetResultsByTaskIdEntityMainTasksResult 
-{    
+class ReviewsGetResultsByTaskIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $se_domain;
-    */
+     * @var null|string;
+     */
     public $se_domain = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|string $check_url;
-    */
+     * @var null|string;
+     */
     public $check_url = null;
 
     /**
-    * @var null|string $datetime;
-    */
+     * @var null|string;
+     */
     public $datetime = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $sub_title;
-    */
+     * @var null|string;
+     */
     public $sub_title = null;
 
     /**
-    * @var null|ReviewsGetResultsByTaskIdEntityMainTasksResultRating $rating;
-    */
+     * @var null|ReviewsGetResultsByTaskIdEntityMainTasksResultRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|string $feature_id;
-    */
+     * @var null|string;
+     */
     public $feature_id = null;
 
     /**
-    * @var null|string $place_id;
-    */
+     * @var null|string;
+     */
     public $place_id = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|integer $items_count;
-    */
+     * @var null|integer;
+     */
     public $items_count = null;
 
     /**
-    * @var array|ReviewsGetResultsByTaskIdEntityMainTasksResultItems[] $items;
-    */
+     * @var array|ReviewsGetResultsByTaskIdEntityMainTasksResultItems[];
+     */
     public $items = [];
- 
 }

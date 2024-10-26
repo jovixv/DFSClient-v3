@@ -4,197 +4,196 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsAddress_info;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsAttributes;
+use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPlace_topics;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsRating;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsRating_distribution;
-use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsWork_time;
 
-class BusinessInfoLiveEntityMainTasksResultItems 
-{    
+class BusinessInfoLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|NULL $description;
-    */
+     * @var null|null;
+     */
     public $description = null;
 
     /**
-    * @var null|string $category;
-    */
+     * @var null|string;
+     */
     public $category = null;
 
     /**
-    * @var null|array $category_ids;
-    */
+     * @var null|array;
+     */
     public $category_ids = null;
 
     /**
-    * @var null|NULL $additional_categories;
-    */
+     * @var null|null;
+     */
     public $additional_categories = null;
 
     /**
-    * @var null|string $cid;
-    */
+     * @var null|string;
+     */
     public $cid = null;
 
     /**
-    * @var null|string $feature_id;
-    */
+     * @var null|string;
+     */
     public $feature_id = null;
 
     /**
-    * @var null|string $address;
-    */
+     * @var null|string;
+     */
     public $address = null;
 
     /**
-    * @var null|BusinessInfoLiveEntityMainTasksResultItemsAddress_info $address_info;
-    */
+     * @var null|BusinessInfoLiveEntityMainTasksResultItemsAddress_info;
+     */
     public $address_info = null;
 
     /**
-    * @var null|string $place_id;
-    */
+     * @var null|string;
+     */
     public $place_id = null;
 
     /**
-    * @var null|string $phone;
-    */
+     * @var null|string;
+     */
     public $phone = null;
 
     /**
-    * @var null|NULL $url;
-    */
+     * @var null|null;
+     */
     public $url = null;
 
     /**
-    * @var null|NULL $contact_url;
-    */
+     * @var null|null;
+     */
     public $contact_url = null;
 
     /**
-    * @var null|NULL $domain;
-    */
+     * @var null|null;
+     */
     public $domain = null;
 
     /**
-    * @var null|NULL $logo;
-    */
+     * @var null|null;
+     */
     public $logo = null;
 
     /**
-    * @var null|string $main_image;
-    */
+     * @var null|string;
+     */
     public $main_image = null;
 
     /**
-    * @var null|integer $total_photos;
-    */
+     * @var null|integer;
+     */
     public $total_photos = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|double $latitude;
-    */
+     * @var null|double;
+     */
     public $latitude = null;
 
     /**
-    * @var null|double $longitude;
-    */
+     * @var null|double;
+     */
     public $longitude = null;
 
     /**
-    * @var null|boolean $is_claimed;
-    */
+     * @var null|boolean;
+     */
     public $is_claimed = null;
 
     /**
-    * @var null|BusinessInfoLiveEntityMainTasksResultItemsAttributes $attributes;
-    */
+     * @var null|BusinessInfoLiveEntityMainTasksResultItemsAttributes;
+     */
     public $attributes = null;
 
     /**
-    * @var null $place_topics;
-    */
+     * @var null;
+     */
     public $place_topics = null;
 
     /**
-    * @var null|BusinessInfoLiveEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|BusinessInfoLiveEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|NULL $hotel_rating;
-    */
+     * @var null|null;
+     */
     public $hotel_rating = null;
 
     /**
-    * @var null|string $price_level;
-    */
+     * @var null|string;
+     */
     public $price_level = null;
 
     /**
-    * @var null $rating_distribution;
-    */
+     * @var null;
+     */
     public $rating_distribution = null;
 
     /**
-    * @var array|BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search[] $people_also_search;
-    */
+     * @var array|BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search[];
+     */
     public $people_also_search = [];
 
     /**
-    * @var null|BusinessInfoLiveEntityMainTasksResultItemsWork_time $work_time;
-    */
+     * @var null|BusinessInfoLiveEntityMainTasksResultItemsWork_time;
+     */
     public $work_time = null;
 
     /**
-    * @var null|NULL $popular_times;
-    */
+     * @var null|null;
+     */
     public $popular_times = null;
 
     /**
-    * @var null|NULL $local_business_links;
-    */
+     * @var null|null;
+     */
     public $local_business_links = null;
 
     /**
-    * @var null|boolean $is_directory_item;
-    */
+     * @var null|boolean;
+     */
     public $is_directory_item = null;
 
     /**
-    * @var null|NULL $directory;
-    */
+     * @var null|null;
+     */
     public $directory = null;
- 
 }

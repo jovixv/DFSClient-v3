@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleSearchIntentLiveEntityMainTasksResultItemsSecondary_keyword_intents 
-{    
+class GoogleSearchIntentLiveEntityMainTasksResultItemsSecondary_keyword_intents
+{
     /**
-    * @var null|string $label;
-    */
+     * @var null|string;
+     */
     public $label = null;
 
     /**
-    * @var null|double $probability;
-    */
+     * @var null|double;
+     */
     public $probability = null;
- 
 }

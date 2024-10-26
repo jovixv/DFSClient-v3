@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsCategoriesAggregationLiveEntityMainTasksData 
-{    
+class BusinessListingsCategoriesAggregationLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|array $categories;
-    */
+     * @var null|array;
+     */
     public $categories = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|boolean $is_claimed;
-    */
+     * @var null|boolean;
+     */
     public $is_claimed = null;
 
     /**
-    * @var null|string $location_coordinate;
-    */
+     * @var null|string;
+     */
     public $location_coordinate = null;
 
     /**
-    * @var null|array $initial_dataset_filters;
-    */
+     * @var null|array;
+     */
     public $initial_dataset_filters = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
- 
 }

@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_itemRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_item 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_item
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $text;
-    */
+     * @var null|string;
+     */
     public $text = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_itemLinks[] $links;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_itemLinks[];
+     */
     public $links = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_itemRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_description_itemRectangle;
+     */
     public $rectangle = null;
- 
 }

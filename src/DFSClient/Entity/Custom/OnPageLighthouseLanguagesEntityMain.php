@@ -3,54 +3,56 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageLighthouseLanguagesEntityMainTasks;
+use DFSClientV3\Models\ResponseModel;
 
-class OnPageLighthouseLanguagesEntityMain extends \DFSClientV3\Models\ResponseModel 
-{    
+class OnPageLighthouseLanguagesEntityMain extends ResponseModel
+{
     /**
-    * @var null|string $version;
-    */
+     * @var null|string;
+     */
     public $version = '0.1.20240514';
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $tasks_count;
-    */
+     * @var null|integer;
+     */
     public $tasks_count = null;
 
     /**
-    * @var null|integer $tasks_error;
-    */
+     * @var null|integer;
+     */
     public $tasks_error = null;
 
     /**
-    * @var array|OnPageLighthouseLanguagesEntityMainTasks[] $tasks;
-    */
+     * @var array|OnPageLighthouseLanguagesEntityMainTasks[];
+     */
     public $tasks = [];
- 
 
-	/**
-	* @return \DFSClientV3\Entity\Custom\OnPageLighthouseLanguagesEntityMainTasksResult|null
-	*/
-	public function getResultsByPostID($postID): ?\DFSClientV3\Entity\Custom\OnPageLighthouseLanguagesEntityMainTasksResult {
-		return parent::getResultsByPostID($postID);
-	}
+    /**
+     * @return OnPageLighthouseLanguagesEntityMainTasksResult|null
+     */
+    #[\Override]
+    public function getResultsByPostID($postID): ?OnPageLighthouseLanguagesEntityMainTasksResult
+    {
+        return parent::getResultsByPostID($postID);
+    }
 }

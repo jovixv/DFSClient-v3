@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessListingsSearchLiveEntityMainTasksResultItemsAttributesUnavailable_attributes 
-{    
+class BusinessListingsSearchLiveEntityMainTasksResultItemsAttributesUnavailable_attributes
+{
     /**
-    * @var null|array $accessibility;
-    */
+     * @var null|array;
+     */
     public $accessibility = null;
- 
 }

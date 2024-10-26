@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet 
-{    
+class BulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet
+{
     /**
-    * @var null|double $etv;
-    */
+     * @var null|double;
+     */
     public $etv = null;
 
     /**
-    * @var null|integer $count;
-    */
+     * @var null|integer;
+     */
     public $count = null;
- 
 }

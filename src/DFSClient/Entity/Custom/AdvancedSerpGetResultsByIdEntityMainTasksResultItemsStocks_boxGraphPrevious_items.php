@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxGraphPrevious_items 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxGraphPrevious_items
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
- 
 }

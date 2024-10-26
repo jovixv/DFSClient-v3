@@ -5,16 +5,15 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsPaid;
 
-class GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetrics 
-{    
+class GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetrics
+{
     /**
-    * @var null|GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic $organic;
-    */
+     * @var null|GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
+     */
     public $organic = null;
 
     /**
-    * @var null|GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsPaid $paid;
-    */
+     * @var null|GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsPaid;
+     */
     public $paid = null;
- 
 }

@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessInfoLiveEntityMainTasksResultItemsAddress_info 
-{    
+class BusinessInfoLiveEntityMainTasksResultItemsAddress_info
+{
     /**
-    * @var null|string $borough;
-    */
+     * @var null|string;
+     */
     public $borough = null;
 
     /**
-    * @var null|string $address;
-    */
+     * @var null|string;
+     */
     public $address = null;
 
     /**
-    * @var null|string $city;
-    */
+     * @var null|string;
+     */
     public $city = null;
 
     /**
-    * @var null|string $zip;
-    */
+     * @var null|string;
+     */
     public $zip = null;
 
     /**
-    * @var null|NULL $region;
-    */
+     * @var null|null;
+     */
     public $region = null;
 
     /**
-    * @var null|string $country_code;
-    */
+     * @var null|string;
+     */
     public $country_code = null;
- 
 }

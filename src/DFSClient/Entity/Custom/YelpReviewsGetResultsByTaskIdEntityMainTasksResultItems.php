@@ -3,64 +3,63 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
-use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile;
 use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses;
+use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile;
 
-class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems 
-{    
+class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $review_id;
-    */
+     * @var null|string;
+     */
     public $review_id = null;
 
     /**
-    * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|string $review_text;
-    */
+     * @var null|string;
+     */
     public $review_text = null;
 
     /**
-    * @var null|NULL $review_images;
-    */
+     * @var null|null;
+     */
     public $review_images = null;
 
     /**
-    * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile $user_profile;
-    */
+     * @var null|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile;
+     */
     public $user_profile = null;
 
     /**
-    * @var array|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses[] $responses;
-    */
+     * @var array|YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses[];
+     */
     public $responses = [];
- 
 }

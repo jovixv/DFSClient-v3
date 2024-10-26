@@ -3,54 +3,56 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasks;
+use DFSClientV3\Models\ResponseModel;
 
-class OnPageGetSummaryByIdEntityMain extends \DFSClientV3\Models\ResponseModel 
-{    
+class OnPageGetSummaryByIdEntityMain extends ResponseModel
+{
     /**
-    * @var null|string $version;
-    */
+     * @var null|string;
+     */
     public $version = '0.1.20200717';
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $tasks_count;
-    */
+     * @var null|integer;
+     */
     public $tasks_count = null;
 
     /**
-    * @var null|integer $tasks_error;
-    */
+     * @var null|integer;
+     */
     public $tasks_error = null;
 
     /**
-    * array|OnPageGetSummaryByIdEntityMainTasks[] $tasks;
-    */
+     * array|OnPageGetSummaryByIdEntityMainTasks[] $tasks;.
+     */
     public $tasks = [];
- 
 
-	/**
-	* @return \DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksResult[]|null
-	*/
-	public function getResultsByPostID($postID): ?array {
-		return parent::getResultsByPostID($postID);
-	}
+    /**
+     * @return OnPageGetSummaryByIdEntityMainTasksResult[]|null
+     */
+    #[\Override]
+    public function getResultsByPostID($postID): ?array
+    {
+        return parent::getResultsByPostID($postID);
+    }
 }

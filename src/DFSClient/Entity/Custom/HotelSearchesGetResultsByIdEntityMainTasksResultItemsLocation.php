@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelSearchesGetResultsByIdEntityMainTasksResultItemsLocation 
-{    
+class HotelSearchesGetResultsByIdEntityMainTasksResultItemsLocation
+{
     /**
-    * @var null|double $latitude;
-    */
+     * @var null|double;
+     */
     public $latitude = null;
 
     /**
-    * @var null|double $longitude;
-    */
+     * @var null|double;
+     */
     public $longitude = null;
- 
 }

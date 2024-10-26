@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks;
 
-class OnPageGetSummaryByIdEntityMainTasksResultPage_metrics 
-{    
+class OnPageGetSummaryByIdEntityMainTasksResultPage_metrics
+{
     /**
-    * @var null|integer $links_external;
-    */
+     * @var null|integer;
+     */
     public $links_external = null;
 
     /**
-    * @var null|integer $links_internal;
-    */
+     * @var null|integer;
+     */
     public $links_internal = null;
 
     /**
-    * @var null|integer $duplicate_title;
-    */
+     * @var null|integer;
+     */
     public $duplicate_title = null;
 
     /**
-    * @var null|integer $duplicate_description;
-    */
+     * @var null|integer;
+     */
     public $duplicate_description = null;
 
     /**
-    * @var null|integer $duplicate_content;
-    */
+     * @var null|integer;
+     */
     public $duplicate_content = null;
 
     /**
-    * @var null|integer $broken_links;
-    */
+     * @var null|integer;
+     */
     public $broken_links = null;
 
     /**
-    * @var null|integer $broken_resources;
-    */
+     * @var null|integer;
+     */
     public $broken_resources = null;
 
     /**
-    * @var null|OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks $checks;
-    */
+     * @var null|OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks;
+     */
     public $checks = null;
- 
 }

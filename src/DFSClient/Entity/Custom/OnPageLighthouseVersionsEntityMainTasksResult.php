@@ -4,11 +4,10 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageLighthouseVersionsEntityMainTasksResultAvailible_versions;
 
-class OnPageLighthouseVersionsEntityMainTasksResult 
-{    
+class OnPageLighthouseVersionsEntityMainTasksResult
+{
     /**
-    * @var array|OnPageLighthouseVersionsEntityMainTasksResultAvailible_versions[] $availible_versions;
-    */
+     * @var array|OnPageLighthouseVersionsEntityMainTasksResultAvailible_versions[];
+     */
     public $availible_versions = [];
- 
 }

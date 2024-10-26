@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesMedia 
-{    
+class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesMedia
+{
     /**
-    * @var null|array $photo_galleries;
-    */
+     * @var null|array;
+     */
     public $photo_galleries = null;
- 
 }

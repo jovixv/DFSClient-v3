@@ -2,52 +2,50 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsItemsJobs_element 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsJobsItemsJobs_element
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $author;
-    */
+     * @var null|string;
+     */
     public $author = null;
 
     /**
-    * @var null|string $job_posted_time;
-    */
+     * @var null|string;
+     */
     public $job_posted_time = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|string $contract_type;
-    */
+     * @var null|string;
+     */
     public $contract_type = null;
 
     /**
-    * @var null|string $salary;
-    */
+     * @var null|string;
+     */
     public $salary = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
- 
 }

@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class AudienceEstimationLiveEntityMainTasksResultEst_impressions 
-{    
+class AudienceEstimationLiveEntityMainTasksResultEst_impressions
+{
     /**
-    * @var null|integer $high;
-    */
+     * @var null|integer;
+     */
     public $high = null;
 
     /**
-    * @var null|integer $low;
-    */
+     * @var null|integer;
+     */
     public $low = null;
- 
 }

@@ -18,5 +18,5 @@ interface HttpContract
     /*
      *
      */
-    public function sendAsyncRequests(array $args, $someData):array;
+    public function sendAsyncRequests(array $args, $someData): array;
 }

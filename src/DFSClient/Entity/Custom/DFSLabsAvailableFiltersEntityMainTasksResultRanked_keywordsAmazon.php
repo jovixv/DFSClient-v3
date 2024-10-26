@@ -2,8 +2,6 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsAvailableFiltersEntityMainTasksResultRanked_keywordsAmazon 
-{    
-
+class DFSLabsAvailableFiltersEntityMainTasksResultRanked_keywordsAmazon
+{
 }

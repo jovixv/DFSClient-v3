@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class UserEntityMainTasksResultRatesStatisticsDayDataforseo_labsRelated_keywords 
-{    
+class UserEntityMainTasksResultRatesStatisticsDayDataforseo_labsRelated_keywords
+{
     /**
-    * @var null|integer $live;
-    */
+     * @var null|integer;
+     */
     public $live = null;
- 
 }

@@ -2,222 +2,220 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class OnPageGetPagesEntityMainTasksResultItemsHtmlChecks 
-{    
+class OnPageGetPagesEntityMainTasksResultItemsHtmlChecks
+{
     /**
-    * @var null|boolean $no_content_encoding;
-    */
+     * @var null|boolean;
+     */
     public $no_content_encoding = null;
 
     /**
-    * @var null|boolean $high_loading_time;
-    */
+     * @var null|boolean;
+     */
     public $high_loading_time = null;
 
     /**
-    * @var null|boolean $is_redirect;
-    */
+     * @var null|boolean;
+     */
     public $is_redirect = null;
 
     /**
-     * @var null|boolean $is_4xx_code;
+     * @var null|boolean;
      */
     public $is_4xx_code = null;
 
     /**
-     * @var null|boolean $is_5xx_code;
+     * @var null|boolean;
      */
     public $is_5xx_code = null;
 
     /**
-    * @var null|boolean $is_broken;
-    */
+     * @var null|boolean;
+     */
     public $is_broken = null;
 
     /**
-    * @var null|boolean $is_www;
-    */
+     * @var null|boolean;
+     */
     public $is_www = null;
 
     /**
-    * @var null|boolean $is_https;
-    */
+     * @var null|boolean;
+     */
     public $is_https = null;
 
     /**
-    * @var null|boolean $is_http;
-    */
+     * @var null|boolean;
+     */
     public $is_http = null;
 
     /**
-    * @var null|boolean $high_waiting_time;
-    */
+     * @var null|boolean;
+     */
     public $high_waiting_time = null;
 
     /**
-    * @var null|boolean $no_doctype;
-    */
+     * @var null|boolean;
+     */
     public $no_doctype = null;
 
     /**
-    * @var null|boolean $canonical;
-    */
+     * @var null|boolean;
+     */
     public $canonical = null;
 
     /**
-    * @var null|boolean $no_encoding_meta_tag;
-    */
+     * @var null|boolean;
+     */
     public $no_encoding_meta_tag = null;
 
     /**
-    * @var null|boolean $no_h1_tag;
-    */
+     * @var null|boolean;
+     */
     public $no_h1_tag = null;
 
     /**
-    * @var null|boolean $low_content_rate;
-    */
+     * @var null|boolean;
+     */
     public $low_content_rate = null;
 
     /**
-    * @var null|boolean $high_content_rate;
-    */
+     * @var null|boolean;
+     */
     public $high_content_rate = null;
 
     /**
-    * @var null|boolean $low_character_count;
-    */
+     * @var null|boolean;
+     */
     public $low_character_count = null;
 
     /**
-    * @var null|boolean $high_character_count;
-    */
+     * @var null|boolean;
+     */
     public $high_character_count = null;
 
     /**
-    * @var null|boolean $small_page_size;
-    */
+     * @var null|boolean;
+     */
     public $small_page_size = null;
 
     /**
-    * @var null|boolean $large_page_size;
-    */
+     * @var null|boolean;
+     */
     public $large_page_size = null;
 
     /**
-    * @var null|boolean $low_readability_rate;
-    */
+     * @var null|boolean;
+     */
     public $low_readability_rate = null;
 
     /**
-    * @var null|boolean $irrelevant_description;
-    */
+     * @var null|boolean;
+     */
     public $irrelevant_description = null;
 
     /**
-    * @var null|boolean $irrelevant_title;
-    */
+     * @var null|boolean;
+     */
     public $irrelevant_title = null;
 
     /**
-    * @var null|boolean $irrelevant_meta_keywords;
-    */
+     * @var null|boolean;
+     */
     public $irrelevant_meta_keywords = null;
 
     /**
-    * @var null|boolean $title_too_long;
-    */
+     * @var null|boolean;
+     */
     public $title_too_long = null;
 
     /**
-    * @var null|boolean $title_too_short;
-    */
+     * @var null|boolean;
+     */
     public $title_too_short = null;
 
     /**
-    * @var null|boolean $deprecated_html_tags;
-    */
+     * @var null|boolean;
+     */
     public $deprecated_html_tags = null;
 
     /**
-    * @var null|boolean $duplicate_meta_tags;
-    */
+     * @var null|boolean;
+     */
     public $duplicate_meta_tags = null;
 
     /**
-    * @var null|boolean $duplicate_title_tag;
-    */
+     * @var null|boolean;
+     */
     public $duplicate_title_tag = null;
 
     /**
-    * @var null|boolean $no_image_alt;
-    */
+     * @var null|boolean;
+     */
     public $no_image_alt = null;
 
     /**
-    * @var null|boolean $no_image_title;
-    */
+     * @var null|boolean;
+     */
     public $no_image_title = null;
 
     /**
-    * @var null|boolean $no_description;
-    */
+     * @var null|boolean;
+     */
     public $no_description = null;
 
     /**
-    * @var null|boolean $no_title;
-    */
+     * @var null|boolean;
+     */
     public $no_title = null;
 
     /**
-    * @var null|boolean $no_favicon;
-    */
+     * @var null|boolean;
+     */
     public $no_favicon = null;
 
     /**
-    * @var null|boolean $seo_friendly_url;
-    */
+     * @var null|boolean;
+     */
     public $seo_friendly_url = null;
 
     /**
-    * @var null|boolean $flash;
-    */
+     * @var null|boolean;
+     */
     public $flash = null;
 
     /**
-    * @var null|boolean $frame;
-    */
+     * @var null|boolean;
+     */
     public $frame = null;
 
     /**
-    * @var null|boolean $lorem_ipsum;
-    */
+     * @var null|boolean;
+     */
     public $lorem_ipsum = null;
 
     /**
-    * @var null|boolean $seo_friendly_url_characters_check;
-    */
+     * @var null|boolean;
+     */
     public $seo_friendly_url_characters_check = null;
 
     /**
-    * @var null|boolean $seo_friendly_url_dynamic_check;
-    */
+     * @var null|boolean;
+     */
     public $seo_friendly_url_dynamic_check = null;
 
     /**
-    * @var null|boolean $seo_friendly_url_keywords_check;
-    */
+     * @var null|boolean;
+     */
     public $seo_friendly_url_keywords_check = null;
 
     /**
-    * @var null|boolean $seo_friendly_url_relative_length_check;
-    */
+     * @var null|boolean;
+     */
     public $seo_friendly_url_relative_length_check = null;
 
     /**
-    * @var null|boolean $recursive_canonical;
-    */
+     * @var null|boolean;
+     */
     public $recursive_canonical = null;
- 
 }

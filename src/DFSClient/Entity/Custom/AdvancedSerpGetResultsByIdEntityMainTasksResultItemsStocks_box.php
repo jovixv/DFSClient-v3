@@ -4,76 +4,75 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxGraph;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_box 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_box
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $source;
-    */
+     * @var null|string;
+     */
     public $source = null;
 
     /**
-    * @var null|string $snippet;
-    */
+     * @var null|string;
+     */
     public $snippet = null;
 
     /**
-    * @var null|string $price;
-    */
+     * @var null|string;
+     */
     public $price = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxRectangle;
+     */
     public $rectangle = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxTable $table;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxTable;
+     */
     public $table = null;
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxGraph $graph;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsStocks_boxGraph;
+     */
     public $graph = null;
- 
 }

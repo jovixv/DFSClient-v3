@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectory 
-{    
+class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectory
+{
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItems[] $items;
-    */
+     * @var array|BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItems[];
+     */
     public $items = [];
- 
 }

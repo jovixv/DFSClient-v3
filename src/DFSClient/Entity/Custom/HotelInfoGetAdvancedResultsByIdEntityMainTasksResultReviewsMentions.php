@@ -2,37 +2,35 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsMentions 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsMentions
+{
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|integer $positive_score;
-    */
+     * @var null|integer;
+     */
     public $positive_score = null;
 
     /**
-    * @var null|integer $positive_count;
-    */
+     * @var null|integer;
+     */
     public $positive_count = null;
 
     /**
-    * @var null|integer $negative_count;
-    */
+     * @var null|integer;
+     */
     public $negative_count = null;
 
     /**
-    * @var null|integer $total_count;
-    */
+     * @var null|integer;
+     */
     public $total_count = null;
 
     /**
-    * @var null|boolean $visible_by_default;
-    */
+     * @var null|boolean;
+     */
     public $visible_by_default = null;
- 
 }

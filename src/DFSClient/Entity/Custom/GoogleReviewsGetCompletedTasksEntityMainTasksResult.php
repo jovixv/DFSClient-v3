@@ -2,42 +2,40 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleReviewsGetCompletedTasksEntityMainTasksResult 
-{    
+class GoogleReviewsGetCompletedTasksEntityMainTasksResult
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|string $se;
-    */
+     * @var null|string;
+     */
     public $se = null;
 
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $date_posted;
-    */
+     * @var null|string;
+     */
     public $date_posted = null;
 
     /**
-    * @var null|string $tag;
-    */
+     * @var null|string;
+     */
     public $tag = null;
 
     /**
-    * @var null|string $endpoint_advanced;
-    */
+     * @var null|string;
+     */
     public $endpoint_advanced = null;
 
     /**
-    * @var null|NULL $endpoint_html;
-    */
+     * @var null|null;
+     */
     public $endpoint_html = null;
- 
 }

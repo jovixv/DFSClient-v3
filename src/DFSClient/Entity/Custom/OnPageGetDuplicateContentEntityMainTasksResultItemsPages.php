@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtml;
 
-class OnPageGetDuplicateContentEntityMainTasksResultItemsPages 
-{    
+class OnPageGetDuplicateContentEntityMainTasksResultItemsPages
+{
     /**
-    * @var null|integer $similarity;
-    */
+     * @var null|integer;
+     */
     public $similarity = null;
 
     /**
-    * @var array|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtml[] $page;
-    */
+     * @var array|OnPageGetDuplicateContentEntityMainTasksResultItemsPagesPageHtml[];
+     */
     public $page = [];
- 
 }

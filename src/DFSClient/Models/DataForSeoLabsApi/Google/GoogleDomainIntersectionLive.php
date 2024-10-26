@@ -1,30 +1,36 @@
 <?php
 
-
 namespace DFSClientV3\Models\DataForSeoLabsApi\Google;
 
-
+use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMain;
 use DFSClientV3\Models\AbstractModel;
 
 class GoogleDomainIntersectionLive extends AbstractModel
 {
     protected $method = 'POST';
+
     protected $isSupportedMerge = true;
-	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'dataforseo_labs/google/domain_intersection/live';
-	protected $resultShouldBeTransformedToArray = true;
-	protected $useNewMapper = true;
+
+    protected $pathToMainData = 'tasks->{$postID}->result';
+
+    protected $requestToFunction = 'dataforseo_labs/google/domain_intersection/live';
+
+    protected $resultShouldBeTransformedToArray = true;
+
+    protected $useNewMapper = true;
 
     /**
-     * @return \DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMain
+     * @return GoogleDomainIntersectionLiveEntityMain
      */
-    public function get(): \DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMain
+    #[\Override]
+    public function get(): GoogleDomainIntersectionLiveEntityMain
     {
         return parent::get();
     }
 
     /**
      * @param string $target1
+     *
      * @return $this
      */
     public function setTarget1(string $target1)
@@ -36,6 +42,7 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param string $target2
+     *
      * @return $this
      */
     public function setTarget2(string $target2)
@@ -47,6 +54,7 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param string $locationName
+     *
      * @return $this
      */
     public function setLocationName(string $locationName)
@@ -58,26 +66,31 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param int $locationCode
+     *
      * @return $this
      */
     public function setLocationCode(int $locationCode)
     {
         $this->payload['location_code'] = $locationCode;
+
         return $this;
     }
 
     /**
      * @param string $languageName
+     *
      * @return $this
      */
     public function setLanguageName(string $languageName)
     {
         $this->payload['language_name'] = $languageName;
+
         return $this;
     }
 
     /**
      * @param string $languageCode
+     *
      * @return $this
      */
     public function setLanguageCode(string $languageCode)
@@ -89,6 +102,7 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param bool $intersections
+     *
      * @return $this
      */
     public function setIntersections(bool $intersections)
@@ -98,41 +112,45 @@ class GoogleDomainIntersectionLive extends AbstractModel
         return $this;
     }
 
-	/**
-	 * @param array $itemTypes
-	 * @return $this
-	 */
-	public function setItemTypes(array $itemTypes)
-	{
-		$this->payload['item_types'] = $itemTypes;
+    /**
+     * @param array $itemTypes
+     *
+     * @return $this
+     */
+    public function setItemTypes(array $itemTypes)
+    {
+        $this->payload['item_types'] = $itemTypes;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $includeSerpInfo
-	 * @return $this
-	 */
-	public function setIncludeSerpInfo(bool $includeSerpInfo)
-	{
-		$this->payload['include_serp_info'] = $includeSerpInfo;
+    /**
+     * @param bool $includeSerpInfo
+     *
+     * @return $this
+     */
+    public function setIncludeSerpInfo(bool $includeSerpInfo)
+    {
+        $this->payload['include_serp_info'] = $includeSerpInfo;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	/**
-	 * @param bool $includeClickstreamData
-	 * @return $this
-	 */
-	public function setIncludeClickstreamData(bool $includeClickstreamData)
-	{
-		$this->payload['include_clickstream_data'] = $includeClickstreamData;
+    /**
+     * @param bool $includeClickstreamData
+     *
+     * @return $this
+     */
+    public function setIncludeClickstreamData(bool $includeClickstreamData)
+    {
+        $this->payload['include_clickstream_data'] = $includeClickstreamData;
 
-		return $this;
-	}
+        return $this;
+    }
 
     /**
      * @param array $filters
+     *
      * @return $this
      */
     public function setFilters(array $filters)
@@ -144,6 +162,7 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param array $orderBy
+     *
      * @return $this
      */
     public function setOrderBy(array $orderBy)
@@ -155,6 +174,7 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param int $limit
+     *
      * @return $this
      */
     public function setLimit(int $limit)
@@ -166,6 +186,7 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param int $offset
+     *
      * @return $this
      */
     public function setOffset(int $offset)
@@ -177,19 +198,24 @@ class GoogleDomainIntersectionLive extends AbstractModel
 
     /**
      * @param string $tag
+     *
      * @return $this
      */
     public function setTag(string $tag)
     {
         $this->payload['tag'] = $tag;
+
         return $this;
     }
 
     /**
      * @param array $modelPool
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
+    #[\Override]
     public static function getAfterMerge(array $modelPool)
     {
         return parent::getAfterMerge($modelPool); // TODO: Change the autogenerated stub

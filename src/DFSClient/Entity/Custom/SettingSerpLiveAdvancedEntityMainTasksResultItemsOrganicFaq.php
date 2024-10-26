@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaqItems;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaqItems[] $items;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaqItems[];
+     */
     public $items = [];
- 
 }

@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordsForKeywordsGetResultsByIdEntityMainTasksResultMonthly_searches;
 
-class KeywordsForKeywordsGetResultsByIdEntityMainTasksResult 
-{    
+class KeywordsForKeywordsGetResultsByIdEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $competition;
-    */
+     * @var null|integer;
+     */
     public $competition = null;
 
     /**
-    * @var null|double $cpc;
-    */
+     * @var null|double;
+     */
     public $cpc = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
 
     /**
-    * @var null|array $categories;
-    */
+     * @var null|array;
+     */
     public $categories = null;
 
     /**
-    * array|KeywordsForKeywordsGetResultsByIdEntityMainTasksResultMonthly_searches[] $monthly_searches;
-    */
+     * array|KeywordsForKeywordsGetResultsByIdEntityMainTasksResultMonthly_searches[] $monthly_searches;.
+     */
     public $monthly_searches = [];
- 
 }

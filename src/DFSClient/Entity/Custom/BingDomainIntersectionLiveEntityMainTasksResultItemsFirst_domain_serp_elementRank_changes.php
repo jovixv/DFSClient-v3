@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BingDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRank_changes 
-{    
+class BingDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRank_changes
+{
     /**
-    * @var null|NULL $previous_rank_absolute;
-    */
+     * @var null|null;
+     */
     public $previous_rank_absolute = null;
 
     /**
-    * @var null|boolean $is_new;
-    */
+     * @var null|boolean;
+     */
     public $is_new = null;
 
     /**
-    * @var null|boolean $is_up;
-    */
+     * @var null|boolean;
+     */
     public $is_up = null;
 
     /**
-    * @var null|boolean $is_down;
-    */
+     * @var null|boolean;
+     */
     public $is_down = null;
- 
 }

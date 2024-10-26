@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class ContentGenerationGenerateTextLiveEntityMainTasksData 
-{    
+class ContentGenerationGenerateTextLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|string $topic;
-    */
+     * @var null|string;
+     */
     public $topic = null;
 
     /**
-    * @var null|array $sub_topics;
-    */
+     * @var null|array;
+     */
     public $sub_topics = null;
 
     /**
-    * @var null|double $creativity_index;
-    */
+     * @var null|double;
+     */
     public $creativity_index = null;
 
     /**
-    * @var null|integer $word_count;
-    */
+     * @var null|integer;
+     */
     public $word_count = null;
 
     /**
-    * @var null|boolean $include_conclusion;
-    */
+     * @var null|boolean;
+     */
     public $include_conclusion = null;
 
-		/**
-		 * @var null|string $supplement_token;
-		 */
-		public $supplement_token = null;
- 
+    /**
+     * @var null|string;
+     */
+    public $supplement_token = null;
 }

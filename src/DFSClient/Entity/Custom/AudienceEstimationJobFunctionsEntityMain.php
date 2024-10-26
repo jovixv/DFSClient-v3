@@ -3,54 +3,56 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AudienceEstimationJobFunctionsEntityMainTasks;
+use DFSClientV3\Models\ResponseModel;
 
-class AudienceEstimationJobFunctionsEntityMain extends \DFSClientV3\Models\ResponseModel 
-{    
+class AudienceEstimationJobFunctionsEntityMain extends ResponseModel
+{
     /**
-    * @var null|string $version;
-    */
+     * @var null|string;
+     */
     public $version = '0.1.20240801';
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|integer $cost;
-    */
+     * @var null|integer;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $tasks_count;
-    */
+     * @var null|integer;
+     */
     public $tasks_count = null;
 
     /**
-    * @var null|integer $tasks_error;
-    */
+     * @var null|integer;
+     */
     public $tasks_error = null;
 
     /**
-    * @var array|AudienceEstimationJobFunctionsEntityMainTasks[] $tasks;
-    */
+     * @var array|AudienceEstimationJobFunctionsEntityMainTasks[];
+     */
     public $tasks = [];
- 
 
-	/**
-	* @return \DFSClientV3\Entity\Custom\AudienceEstimationJobFunctionsEntityMainTasksResult[]|null
-	*/
-	public function getResultsByPostID($postID): ?array {
-		return parent::getResultsByPostID($postID);
-	}
+    /**
+     * @return AudienceEstimationJobFunctionsEntityMainTasksResult[]|null
+     */
+    #[\Override]
+    public function getResultsByPostID($postID): ?array
+    {
+        return parent::getResultsByPostID($postID);
+    }
 }

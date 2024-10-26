@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMainTasksResultItemsPage_content;
 
-class OnPageContentParsingEntityMainTasksResultItems 
-{    
+class OnPageContentParsingEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $fetch_time;
-    */
+     * @var null|string;
+     */
     public $fetch_time = null;
 
     /**
-    * @var null|OnPageContentParsingEntityMainTasksResultItemsPage_content $page_content;
-    */
+     * @var null|OnPageContentParsingEntityMainTasksResultItemsPage_content;
+     */
     public $page_content = null;
- 
 }

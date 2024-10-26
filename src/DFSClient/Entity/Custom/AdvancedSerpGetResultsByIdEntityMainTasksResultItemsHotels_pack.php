@@ -4,56 +4,55 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_pack 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_pack
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $date_from;
-    */
+     * @var null|string;
+     */
     public $date_from = null;
 
     /**
-    * @var null|string $date_to;
-    */
+     * @var null|string;
+     */
     public $date_to = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsHotels_packRectangle;
+     */
     public $rectangle = null;
- 
 }

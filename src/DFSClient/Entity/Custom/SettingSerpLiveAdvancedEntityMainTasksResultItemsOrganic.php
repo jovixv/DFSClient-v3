@@ -4,131 +4,130 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRectangle;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganic 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganic
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var null|string $domain;
-    */
+     * @var null|string;
+     */
     public $domain = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $cache_url;
-    */
+     * @var null|string;
+     */
     public $cache_url = null;
 
     /**
-    * @var null|string $breadcrumb;
-    */
+     * @var null|string;
+     */
     public $breadcrumb = null;
 
     /**
-    * @var null|boolean $is_image;
-    */
+     * @var null|boolean;
+     */
     public $is_image = null;
 
     /**
-    * @var null|boolean $is_video;
-    */
+     * @var null|boolean;
+     */
     public $is_video = null;
 
     /**
-    * @var null|boolean $is_featured_snippet;
-    */
+     * @var null|boolean;
+     */
     public $is_featured_snippet = null;
 
     /**
-    * @var null|boolean $is_malicious;
-    */
+     * @var null|boolean;
+     */
     public $is_malicious = null;
 
     /**
-    * @var null|boolean $is_web_story;
-    */
+     * @var null|boolean;
+     */
     public $is_web_story = null;
 
     /**
-    * @var null|string $description;
-    */
+     * @var null|string;
+     */
     public $description = null;
 
     /**
-    * @var null|string $pre_snippet;
-    */
+     * @var null|string;
+     */
     public $pre_snippet = null;
 
     /**
-    * @var null|string $extended_snippet;
-    */
+     * @var null|string;
+     */
     public $extended_snippet = null;
 
     /**
-    * @var null|boolean $amp_version;
-    */
+     * @var null|boolean;
+     */
     public $amp_version = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRating $rating;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|array $highlighted;
-    */
+     * @var null|array;
+     */
     public $highlighted = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicLinks[] $links;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicLinks[];
+     */
     public $links = [];
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq $faq;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq;
+     */
     public $faq = null;
 
     /**
-    * @var null|string $timestamp;
-    */
+     * @var null|string;
+     */
     public $timestamp = null;
 
     /**
-    * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRectangle $rectangle;
-    */
+     * @var null|SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicRectangle;
+     */
     public $rectangle = null;
- 
 }

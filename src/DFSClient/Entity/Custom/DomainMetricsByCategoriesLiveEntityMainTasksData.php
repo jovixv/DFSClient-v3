@@ -2,82 +2,80 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DomainMetricsByCategoriesLiveEntityMainTasksData 
-{    
+class DomainMetricsByCategoriesLiveEntityMainTasksData
+{
     /**
-    * @var null|string $api;
-    */
+     * @var null|string;
+     */
     public $api = null;
 
     /**
-    * @var null|string $function;
-    */
+     * @var null|string;
+     */
     public $function = null;
 
     /**
-    * @var null|array $category_codes;
-    */
+     * @var null|array;
+     */
     public $category_codes = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|integer $top_categories_count;
-    */
+     * @var null|integer;
+     */
     public $top_categories_count = null;
 
     /**
-    * @var null|string $first_date;
-    */
+     * @var null|string;
+     */
     public $first_date = null;
 
     /**
-    * @var null|string $second_date;
-    */
+     * @var null|string;
+     */
     public $second_date = null;
 
     /**
-    * @var null|boolean $include_subdomains;
-    */
+     * @var null|boolean;
+     */
     public $include_subdomains = null;
 
     /**
-    * @var null|array $order_by;
-    */
+     * @var null|array;
+     */
     public $order_by = null;
 
     /**
-    * @var null|integer $etv_min;
-    */
+     * @var null|integer;
+     */
     public $etv_min = null;
 
     /**
-    * @var null|integer $etv_max;
-    */
+     * @var null|integer;
+     */
     public $etv_max = null;
 
     /**
-    * @var null|integer $limit;
-    */
+     * @var null|integer;
+     */
     public $limit = null;
 
     /**
-    * @var null|boolean $correlate;
-    */
+     * @var null|boolean;
+     */
     public $correlate = null;
 
     /**
-    * @var null|array $item_types;
-    */
+     * @var null|array;
+     */
     public $item_types = null;
- 
 }

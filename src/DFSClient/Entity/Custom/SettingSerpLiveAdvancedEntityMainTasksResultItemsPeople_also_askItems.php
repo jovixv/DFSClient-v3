@@ -4,26 +4,25 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItemsExpanded_element;
 
-class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItems 
-{    
+class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItemsExpanded_element[] $expanded_element;
-    */
+     * @var array|SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItemsExpanded_element[];
+     */
     public $expanded_element = [];
- 
 }

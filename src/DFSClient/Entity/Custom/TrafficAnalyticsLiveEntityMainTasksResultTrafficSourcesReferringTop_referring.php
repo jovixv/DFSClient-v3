@@ -2,27 +2,25 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring 
-{    
+class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesReferringTop_referring
+{
     /**
-    * @var null|string $site;
-    */
+     * @var null|string;
+     */
     public $site = null;
 
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|double $percent;
-    */
+     * @var null|double;
+     */
     public $percent = null;
 
     /**
-    * @var null|integer $percentage_change;
-    */
+     * @var null|integer;
+     */
     public $percentage_change = null;
- 
 }

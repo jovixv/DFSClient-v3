@@ -4,46 +4,45 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TripadvisorSearchGetResultsByTaskIdEntityMainTasksResultItemsRating;
 
-class TripadvisorSearchGetResultsByTaskIdEntityMainTasksResultItems 
-{    
+class TripadvisorSearchGetResultsByTaskIdEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url_path;
-    */
+     * @var null|string;
+     */
     public $url_path = null;
 
     /**
-    * @var null|boolean $is_sponsored;
-    */
+     * @var null|boolean;
+     */
     public $is_sponsored = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|TripadvisorSearchGetResultsByTaskIdEntityMainTasksResultItemsRating $rating;
-    */
+     * @var null|TripadvisorSearchGetResultsByTaskIdEntityMainTasksResultItemsRating;
+     */
     public $rating = null;
- 
 }

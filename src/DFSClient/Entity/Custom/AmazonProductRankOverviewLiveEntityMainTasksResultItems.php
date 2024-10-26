@@ -4,21 +4,20 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AmazonProductRankOverviewLiveEntityMainTasksResultItemsMetrics;
 
-class AmazonProductRankOverviewLiveEntityMainTasksResultItems 
-{    
+class AmazonProductRankOverviewLiveEntityMainTasksResultItems
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $asin;
-    */
+     * @var null|string;
+     */
     public $asin = null;
 
     /**
-    * @var null|AmazonProductRankOverviewLiveEntityMainTasksResultItemsMetrics $metrics;
-    */
+     * @var null|AmazonProductRankOverviewLiveEntityMainTasksResultItemsMetrics;
+     */
     public $metrics = null;
- 
 }

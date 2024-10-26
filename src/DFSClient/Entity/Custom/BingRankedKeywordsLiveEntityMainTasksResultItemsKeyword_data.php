@@ -5,41 +5,40 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
-class BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
-{    
+class BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data
+{
     /**
-    * @var null|string $se_type;
-    */
+     * @var null|string;
+     */
     public $se_type = null;
 
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|integer $location_code;
-    */
+     * @var null|integer;
+     */
     public $location_code = null;
 
     /**
-    * @var null|string $language_code;
-    */
+     * @var null|string;
+     */
     public $language_code = null;
 
     /**
-    * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info $keyword_info;
-    */
+     * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
+     */
     public $keyword_info = null;
 
     /**
-    * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info $serp_info;
-    */
+     * @var null|BingRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
+     */
     public $serp_info = null;
 
     /**
-    * @var null|NULL $avg_backlinks_info;
-    */
+     * @var null|null;
+     */
     public $avg_backlinks_info = null;
- 
 }

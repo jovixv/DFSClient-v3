@@ -4,16 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicFaqItems;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicFaq 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicFaq
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicFaqItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicFaqItems[];
+     */
     public $items = [];
- 
 }

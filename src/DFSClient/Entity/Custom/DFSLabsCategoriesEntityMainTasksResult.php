@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class DFSLabsCategoriesEntityMainTasksResult 
-{    
+class DFSLabsCategoriesEntityMainTasksResult
+{
     /**
-    * @var null|integer $category_code;
-    */
+     * @var null|integer;
+     */
     public $category_code = null;
 
     /**
-    * @var null|string $category_name;
-    */
+     * @var null|string;
+     */
     public $category_name = null;
 
     /**
-    * @var null|integer $category_code_parent;
-    */
+     * @var null|integer;
+     */
     public $category_code_parent = null;
- 
 }

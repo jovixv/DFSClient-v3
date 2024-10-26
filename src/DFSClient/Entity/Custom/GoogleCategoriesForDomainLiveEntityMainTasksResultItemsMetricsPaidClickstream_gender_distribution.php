@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaidClickstream_gender_distribution 
-{    
+class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsPaidClickstream_gender_distribution
+{
     /**
-    * @var null|integer $female;
-    */
+     * @var null|integer;
+     */
     public $female = null;
 
     /**
-    * @var null|integer $male;
-    */
+     * @var null|integer;
+     */
     public $male = null;
- 
 }

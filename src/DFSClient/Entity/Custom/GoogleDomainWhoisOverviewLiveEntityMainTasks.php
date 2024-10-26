@@ -5,51 +5,50 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResult;
 
-class GoogleDomainWhoisOverviewLiveEntityMainTasks 
-{    
+class GoogleDomainWhoisOverviewLiveEntityMainTasks
+{
     /**
-    * @var null|string $id;
-    */
+     * @var null|string;
+     */
     public $id = null;
 
     /**
-    * @var null|integer $status_code;
-    */
+     * @var null|integer;
+     */
     public $status_code = null;
 
     /**
-    * @var null|string $status_message;
-    */
+     * @var null|string;
+     */
     public $status_message = null;
 
     /**
-    * @var null|string $time;
-    */
+     * @var null|string;
+     */
     public $time = null;
 
     /**
-    * @var null|double $cost;
-    */
+     * @var null|double;
+     */
     public $cost = null;
 
     /**
-    * @var null|integer $result_count;
-    */
+     * @var null|integer;
+     */
     public $result_count = null;
 
     /**
-    * @var null|array $path;
-    */
+     * @var null|array;
+     */
     public $path = null;
 
     /**
-    * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksData $data;
-    */
+     * @var null|GoogleDomainWhoisOverviewLiveEntityMainTasksData;
+     */
     public $data = null;
 
     /**
-    * @var array|GoogleDomainWhoisOverviewLiveEntityMainTasksResult[] $result;
-    */
+     * @var array|GoogleDomainWhoisOverviewLiveEntityMainTasksResult[];
+     */
     public $result = [];
- 
 }

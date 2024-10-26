@@ -3,34 +3,33 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficCountries;
-use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSources;
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficEstimated;
+use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSources;
 
-class SimilarwebGetResultsByIdEntityMainTasksResultTraffic 
-{    
+class SimilarwebGetResultsByIdEntityMainTasksResultTraffic
+{
     /**
-    * @var null|integer $value;
-    */
+     * @var null|integer;
+     */
     public $value = null;
 
     /**
-    * @var null|integer $percent;
-    */
+     * @var null|integer;
+     */
     public $percent = null;
 
     /**
-    * @var array|SimilarwebGetResultsByIdEntityMainTasksResultTrafficCountries[] $countries;
-    */
+     * @var array|SimilarwebGetResultsByIdEntityMainTasksResultTrafficCountries[];
+     */
     public $countries = [];
 
     /**
-    * @var null|SimilarwebGetResultsByIdEntityMainTasksResultTrafficSources $sources;
-    */
+     * @var null|SimilarwebGetResultsByIdEntityMainTasksResultTrafficSources;
+     */
     public $sources = null;
 
     /**
-    * @var array|SimilarwebGetResultsByIdEntityMainTasksResultTrafficEstimated[] $estimated;
-    */
+     * @var array|SimilarwebGetResultsByIdEntityMainTasksResultTrafficEstimated[];
+     */
     public $estimated = [];
- 
 }

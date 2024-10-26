@@ -2,12 +2,10 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BacklinksReferringNetworksLiveEntityMainTasksResultItemsReferring_links_semantic_locations 
-{    
+class BacklinksReferringNetworksLiveEntityMainTasksResultItemsReferring_links_semantic_locations
+{
     /**
-    * @var null|integer $main;
-    */
+     * @var null|integer;
+     */
     public $main = null;
- 
 }

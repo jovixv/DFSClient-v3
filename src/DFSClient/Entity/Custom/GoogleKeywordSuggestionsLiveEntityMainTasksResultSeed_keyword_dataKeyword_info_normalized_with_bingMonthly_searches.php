@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info_normalized_with_bingMonthly_searches 
-{    
+class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info_normalized_with_bingMonthly_searches
+{
     /**
-    * @var null|integer $year;
-    */
+     * @var null|integer;
+     */
     public $year = null;
 
     /**
-    * @var null|integer $month;
-    */
+     * @var null|integer;
+     */
     public $month = null;
 
     /**
-    * @var null|integer $search_volume;
-    */
+     * @var null|integer;
+     */
     public $search_volume = null;
- 
 }

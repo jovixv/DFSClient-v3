@@ -2,57 +2,55 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class BackLinksTimeseriesSummaryEntityMainTasksResultItems 
-{    
+class BackLinksTimeseriesSummaryEntityMainTasksResultItems
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|integer $rank;
-    */
+     * @var null|integer;
+     */
     public $rank = null;
 
     /**
-    * @var null|integer $backlinks;
-    */
+     * @var null|integer;
+     */
     public $backlinks = null;
 
     /**
-    * @var null|integer $backlinks_nofollow;
-    */
+     * @var null|integer;
+     */
     public $backlinks_nofollow = null;
 
     /**
-    * @var null|integer $referring_pages;
-    */
+     * @var null|integer;
+     */
     public $referring_pages = null;
 
     /**
-    * @var null|integer $referring_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_domains = null;
 
     /**
-    * @var null|integer $referring_main_domains;
-    */
+     * @var null|integer;
+     */
     public $referring_main_domains = null;
 
     /**
-    * @var null|integer $referring_ips;
-    */
+     * @var null|integer;
+     */
     public $referring_ips = null;
 
     /**
-    * @var null|integer $referring_subnets;
-    */
+     * @var null|integer;
+     */
     public $referring_subnets = null;
- 
 }

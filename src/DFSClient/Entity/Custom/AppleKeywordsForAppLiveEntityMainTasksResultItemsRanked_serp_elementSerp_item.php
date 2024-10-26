@@ -2,69 +2,68 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-use DFSClientV3\Entity\Custom\AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating;
 use DFSClientV3\Entity\Custom\AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemPrice;
+use DFSClientV3\Entity\Custom\AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating;
 
-class AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item 
-{    
+class AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $app_id;
-    */
+     * @var null|string;
+     */
     public $app_id = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $icon;
-    */
+     * @var null|string;
+     */
     public $icon = null;
 
     /**
-    * @var null|integer $reviews_count;
-    */
+     * @var null|integer;
+     */
     public $reviews_count = null;
 
     /**
-    * @var null|AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating $rating;
-    */
+     * @var null|AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating;
+     */
     public $rating = null;
 
     /**
-    * @var null|boolean $is_free;
-    */
+     * @var null|boolean;
+     */
     public $is_free = null;
 
     /**
-    * @var null|AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemPrice $price;
-    */
+     * @var null|AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemPrice;
+     */
     public $price = null;
- 
 }

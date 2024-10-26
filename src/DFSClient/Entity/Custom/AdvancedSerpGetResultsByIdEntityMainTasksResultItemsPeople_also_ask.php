@@ -4,41 +4,40 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_askRectangle;
 
-class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_ask 
-{    
+class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_ask
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|integer $rank_group;
-    */
+     * @var null|integer;
+     */
     public $rank_group = null;
 
     /**
-    * @var null|integer $rank_absolute;
-    */
+     * @var null|integer;
+     */
     public $rank_absolute = null;
 
     /**
-    * @var null|string $position;
-    */
+     * @var null|string;
+     */
     public $position = null;
 
     /**
-    * @var null|string $xpath;
-    */
+     * @var null|string;
+     */
     public $xpath = null;
 
     /**
-    * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_askItems[] $items;
-    */
+     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_askItems[];
+     */
     public $items = [];
 
     /**
-    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_askRectangle $rectangle;
-    */
+     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_askRectangle;
+     */
     public $rectangle = null;
- 
 }

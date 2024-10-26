@@ -2,32 +2,30 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile 
-{    
+class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile
+{
     /**
-    * @var null|string $name;
-    */
+     * @var null|string;
+     */
     public $name = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|string $image_url;
-    */
+     * @var null|string;
+     */
     public $image_url = null;
 
     /**
-    * @var null|string $location;
-    */
+     * @var null|string;
+     */
     public $location = null;
 
     /**
-    * @var null|int $reviews_count;
-    */
+     * @var null|int;
+     */
     public $reviews_count = null;
- 
 }

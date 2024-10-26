@@ -2,47 +2,45 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultPricesItemsOffers 
-{    
+class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultPricesItemsOffers
+{
     /**
-    * @var null|string $type;
-    */
+     * @var null|string;
+     */
     public $type = null;
 
     /**
-    * @var null|string $title;
-    */
+     * @var null|string;
+     */
     public $title = null;
 
     /**
-    * @var null|integer $price;
-    */
+     * @var null|integer;
+     */
     public $price = null;
 
     /**
-    * @var null|string $currency;
-    */
+     * @var null|string;
+     */
     public $currency = null;
 
     /**
-    * @var null|string $url;
-    */
+     * @var null|string;
+     */
     public $url = null;
 
     /**
-    * @var null|integer $max_visitors;
-    */
+     * @var null|integer;
+     */
     public $max_visitors = null;
 
     /**
-    * @var null|array $offer_images;
-    */
+     * @var null|array;
+     */
     public $offer_images = null;
 
     /**
-    * @var null|NULL $free_cancellation_until;
-    */
+     * @var null|null;
+     */
     public $free_cancellation_until = null;
- 
 }

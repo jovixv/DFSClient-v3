@@ -2,22 +2,20 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class SettingSerpLiveHtmlEntityMainTasksResultItems 
-{    
+class SettingSerpLiveHtmlEntityMainTasksResultItems
+{
     /**
-    * @var null|integer $page;
-    */
+     * @var null|integer;
+     */
     public $page = null;
 
     /**
-    * @var null|string $date;
-    */
+     * @var null|string;
+     */
     public $date = null;
 
     /**
-    * @var null|string $html;
-    */
+     * @var null|string;
+     */
     public $html = null;
- 
 }

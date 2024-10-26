@@ -2,17 +2,15 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
-class KeywordSuggestionsForUrlLiveEntityMainTasksResult 
-{    
+class KeywordSuggestionsForUrlLiveEntityMainTasksResult
+{
     /**
-    * @var null|string $keyword;
-    */
+     * @var null|string;
+     */
     public $keyword = null;
 
     /**
-    * @var null|double $confidence_score;
-    */
+     * @var null|double;
+     */
     public $confidence_score = null;
- 
 }
