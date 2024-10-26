@@ -202,32 +202,7 @@ class DataMapper
         } else {
             // Use the dynamic property setter
             $entity->__set($key, $value);
-            
-            // Log that we're using a dynamic property
-            $this->logDynamicProperty(get_class($entity), $key, $value);
         }
-    }
-
-    /**
-     * Handle cases where a property is not declared in the entity class.
-     *
-     * @param string $className
-     * @param string $key
-     * @param mixed $value
-     */
-    private function handleUndeclaredProperty(string $className, string $key, $value): void
-    {
-        // Log the undeclared property
-        $this->logUndeclaredProperty($className, $key, $value);
-
-        // Optionally, you could dynamically add the property to the class
-        // but this is generally not recommended as it bypasses type checking
-        // and can lead to inconsistencies. Instead, consider updating your
-        // entity classes to include all possible properties.
-
-        // If you absolutely need to set the property dynamically, you can use:
-        // $entity->$key = $value;
-        // But be aware this will trigger the deprecation warning.
     }
 
     /**
@@ -694,7 +669,7 @@ class DataMapper
 
     /**
      * Creates an entity object based on the given class name.
-     * 
+     *
      * If the class doesn't exist, creates a new anonymous class with DynamicPropertyTrait.
      * If the class exists but doesn't have __set method, creates a new class that extends it and uses the trait.
      * Otherwise, creates an instance of the existing class.
@@ -706,53 +681,38 @@ class DataMapper
     {
         if (!class_exists($fullClassName)) {
             // Create a new class dynamically
-            $newClass = new class() {
+            return new class() {
                 use DynamicPropertyTrait;
             };
-            return $newClass;
         }
 
         $reflection = new \ReflectionClass($fullClassName);
         if (!$reflection->hasMethod('__set')) {
             // If the class doesn't have __set method, create a new class that extends it and uses the trait
-            $newClassName = $fullClassName . 'Dynamic';
-            if (!class_exists($newClassName)) {
-                eval("class $newClassName extends $fullClassName { use DynamicPropertyTrait; }");
+            $newClassName = $reflection->getShortName() . 'Dynamic';
+            $newFullClassName = $reflection->getNamespaceName() . '\\' . $newClassName;
+            if (!class_exists($newFullClassName)) {
+                $namespace = $reflection->getNamespaceName();
+                $code = "namespace $namespace; class $newClassName extends \\" . $fullClassName . " { use \\DFSClientV3\\Entity\\Custom\\DynamicPropertyTrait; }";
+                eval($code);
             }
-            return new $newClassName();
+            return $this->instantiateClass($newFullClassName);
         }
 
         // If the class already has __set method, create it normally
-        return new $fullClassName();
+        return $this->instantiateClass($fullClassName);
     }
 
-    /**
-     * Logs information about a dynamic property being set on an entity.
-     *
-     * This method is called when a property that doesn't exist in the original
-     * class definition is set on an entity. It logs this information both to
-     * the error log and to the custom logger if it's available.
-     *
-     * @param string $className The name of the class on which the dynamic property is being set.
-     * @param string $key The name of the dynamic property being set.
-     * @param mixed $value The value being assigned to the dynamic property.
-     *
-     * @return void
-     */
-    private function logDynamicProperty(string $className, string $key, $value): void
+    private function instantiateClass(string $className)
     {
-        // Implement logging logic here
-        error_log("Dynamic property '$key' set in class '$className'. Value: " . json_encode($value));
+        $reflection = new \ReflectionClass($className);
 
-        if ($this->logger !== false) {
-            $messageEntity = new LoggerMessageEntity();
-            $messageEntity->messagesWithNewLine[] = "Dynamic property '$key' set in class '$className'";
-            $this->logger->pushMessage(
-                $messageEntity,
-                'Dynamic property set',
-                $className,
-                'INFO'
-            );
+        if ($reflection->isSubclassOf(\DFSClientV3\Models\ResponseModel::class)) {
+            // If it's a subclass of ResponseModel, pass the required arguments
+            return new $className($this->requestStatus, $this->pathToMainData);
         }
+
+        // For other classes, create without arguments
+        return new $className();
     }
 }
