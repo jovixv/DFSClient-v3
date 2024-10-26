@@ -8,6 +8,7 @@ use DFSClientV3\Entity\Custom\TagsData;
 use DFSClientV3\Services\EntityCreator\ClassGenerator;
 use DFSClientV3\Services\Logger\Logger;
 use DFSClientV3\Services\Logger\LoggerMessageEntity;
+use DFSClientV3\Entity\Custom\DynamicPropertyTrait;
 
 class DataMapper
 {
@@ -101,12 +102,13 @@ class DataMapper
         $dictionaryPaths            = $paveDataOptions->getPathsToDictionary();
 
         // root of json. Use main entity
-        if (class_exists($fullClassName) && empty($paveDataOptions->getPrevPath())) {
-            $entity = new $fullClassName($this->requestStatus, $this->pathToMainData);
-        }
-
-        if (class_exists($fullClassName) && !empty($paveDataOptions->getPrevPath())) {
-            $entity = new $fullClassName();
+        if (empty($paveDataOptions->getPrevPath())) {
+            $entity = $this->createEntity($fullClassName);
+            if (method_exists($entity, 'setRequestStatus')) {
+                $entity->setRequestStatus($this->requestStatus, $this->pathToMainData);
+            }
+        } elseif (!empty($paveDataOptions->getPrevPath())) {
+            $entity = $this->createEntity($fullClassName);
         }
 
         if (isset($dictionaryPaths[$this->currentIterationPath])) {
@@ -174,7 +176,7 @@ class DataMapper
 
             if ($this->isValueFinalized($value)) {
                 if ($entity !== null) {
-                    $entity->$key = $value;
+                    $this->setEntityProperty($entity, $key, $value);
                 }
             }
         }
@@ -184,6 +186,74 @@ class DataMapper
         }
 
         return $entity;
+    }
+
+    /**
+     * Safely set a property on an entity, handling cases where the property might not be declared.
+     *
+     * @param object $entity
+     * @param string $key
+     * @param mixed $value
+     */
+    private function setEntityProperty($entity, $key, $value): void
+    {
+        if (property_exists($entity, $key)) {
+            $entity->$key = $value;
+        } else {
+            // Use the dynamic property setter
+            $entity->__set($key, $value);
+            
+            // Log that we're using a dynamic property
+            $this->logDynamicProperty(get_class($entity), $key, $value);
+        }
+    }
+
+    /**
+     * Handle cases where a property is not declared in the entity class.
+     *
+     * @param string $className
+     * @param string $key
+     * @param mixed $value
+     */
+    private function handleUndeclaredProperty(string $className, string $key, $value): void
+    {
+        // Log the undeclared property
+        $this->logUndeclaredProperty($className, $key, $value);
+
+        // Optionally, you could dynamically add the property to the class
+        // but this is generally not recommended as it bypasses type checking
+        // and can lead to inconsistencies. Instead, consider updating your
+        // entity classes to include all possible properties.
+
+        // If you absolutely need to set the property dynamically, you can use:
+        // $entity->$key = $value;
+        // But be aware this will trigger the deprecation warning.
+    }
+
+    /**
+     * Log information about undeclared properties.
+     *
+     * @param string $className
+     * @param string $key
+     * @param mixed $value
+     */
+    private function logUndeclaredProperty(string $className, string $key, $value): void
+    {
+        // Implement logging logic here
+        // For example:
+        error_log("Undeclared property '$key' in class '$className'. Value: " . json_encode($value));
+
+        // You might want to add this to your existing logging mechanism
+        if ($this->logger !== false) {
+            $messageEntity = new LoggerMessageEntity();
+            $messageEntity->messagesWithNewLine[] = "Undeclared property '$key' in class '$className'";
+            $this->logger->pushMessage(
+                $messageEntity,
+                'Undeclared property detected',
+                $className,
+                'WARNING'
+            );
+        }
     }
 
     /**
@@ -580,9 +650,10 @@ class DataMapper
     }
 
     /**
-     * @param $value
+     * Determines if a value is in its final form and doesn't need further processing.
      *
-     * @return bool
+     * @param mixed $value The value to check.
+     * @return bool True if the value is finalized, false otherwise.
      */
     private function isValueFinalized($value): bool
     {
@@ -598,9 +669,10 @@ class DataMapper
     }
 
     /**
-     * @param string $value
+     * Prepares a structure path by replacing numeric indices with a placeholder.
      *
-     * @return string
+     * @param string $value The original structure path.
+     * @return string The prepared structure path.
      */
     private function prepareStructurePath(string $value): string
     {
@@ -614,9 +686,73 @@ class DataMapper
             }
         }, $explodedPath);
 
-        // delete last element if it is empty. It can ba empty if last element was ->
+        // delete last element if it is empty. It can be empty if last element was ->
         $result = array_filter($result, fn ($value) => !empty($value) ? true : false);
 
         return implode('->', $result);
+    }
+
+    /**
+     * Creates an entity object based on the given class name.
+     * 
+     * If the class doesn't exist, creates a new anonymous class with DynamicPropertyTrait.
+     * If the class exists but doesn't have __set method, creates a new class that extends it and uses the trait.
+     * Otherwise, creates an instance of the existing class.
+     *
+     * @param string $fullClassName The full name (including namespace) of the class to create.
+     * @return object The created entity object.
+     */
+    private function createEntity(string $fullClassName)
+    {
+        if (!class_exists($fullClassName)) {
+            // Create a new class dynamically
+            $newClass = new class() {
+                use DynamicPropertyTrait;
+            };
+            return $newClass;
+        }
+
+        $reflection = new \ReflectionClass($fullClassName);
+        if (!$reflection->hasMethod('__set')) {
+            // If the class doesn't have __set method, create a new class that extends it and uses the trait
+            $newClassName = $fullClassName . 'Dynamic';
+            if (!class_exists($newClassName)) {
+                eval("class $newClassName extends $fullClassName { use DynamicPropertyTrait; }");
+            }
+            return new $newClassName();
+        }
+
+        // If the class already has __set method, create it normally
+        return new $fullClassName();
+    }
+
+    /**
+     * Logs information about a dynamic property being set on an entity.
+     *
+     * This method is called when a property that doesn't exist in the original
+     * class definition is set on an entity. It logs this information both to
+     * the error log and to the custom logger if it's available.
+     *
+     * @param string $className The name of the class on which the dynamic property is being set.
+     * @param string $key The name of the dynamic property being set.
+     * @param mixed $value The value being assigned to the dynamic property.
+     *
+     * @return void
+     */
+    private function logDynamicProperty(string $className, string $key, $value): void
+    {
+        // Implement logging logic here
+        error_log("Dynamic property '$key' set in class '$className'. Value: " . json_encode($value));
+
+        if ($this->logger !== false) {
+            $messageEntity = new LoggerMessageEntity();
+            $messageEntity->messagesWithNewLine[] = "Dynamic property '$key' set in class '$className'";
+            $this->logger->pushMessage(
+                $messageEntity,
+                'Dynamic property set',
+                $className,
+                'INFO'
+            );
+        }
     }
 }
