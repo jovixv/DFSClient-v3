@@ -34,6 +34,26 @@ class GoogleReviewsSetTask extends AbstractModel
 	}
 
 	/**
+	 * @param string $cid
+	 * @return $this
+	 */
+	public function setCid(string $cid)
+	{
+		$this->payload['cid'] = $cid;
+		return $this;
+	}
+
+	/**
+	 * @param string $placeId
+	 * @return $this
+	 */
+	public function setPlaceId(string $placeId)
+	{
+		$this->payload['place_id'] = $placeId;
+		return $this;
+	}
+
+	/**
 	 * @param int $priority
 	 * @return $this
 	 */
