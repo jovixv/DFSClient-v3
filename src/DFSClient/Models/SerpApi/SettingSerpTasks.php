@@ -514,6 +514,17 @@ class SettingSerpTasks extends AbstractModel
 	}
 
 	/**
+	 * for google/ads_search
+	 * @param string $target
+	 * @return $this
+	 */
+	public function setTarget(string $target)
+	{
+		$this->payload['target'] = $target;
+		return $this;
+	}
+
+	/**
 	 * @param string $seType
 	 * @return $this
 	 * @throws \Exception
