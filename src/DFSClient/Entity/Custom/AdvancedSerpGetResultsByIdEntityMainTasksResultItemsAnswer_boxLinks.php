@@ -20,6 +20,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsAnswer_boxLinks
     */
     public $description = null;
 
+	/**
+	 * @var null|string $domain;
+	 */
+	public $domain = null;
+
     /**
     * @var null|string $url;
     */

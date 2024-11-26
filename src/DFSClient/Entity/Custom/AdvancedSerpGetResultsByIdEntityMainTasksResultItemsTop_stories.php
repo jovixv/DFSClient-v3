@@ -26,6 +26,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_stories
     */
     public $position = null;
 
+	/**
+	 * @var null|string $title;
+	 */
+	public $title = null;
+
     /**
     * @var null|string $xpath;
     */

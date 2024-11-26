@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expanded_itemExpanded_elementImages;
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expanded_itemExpanded_elementTable;
 
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expanded_itemExpanded_element 
@@ -35,6 +36,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expand
     * @var null|string $snippet;
     */
     public $snippet = null;
+
+	/**
+	 * @var null|string $timestamp;
+	 */
+	public $timestamp = null;
+
+	/**
+	 * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expanded_itemExpanded_elementImages $images;
+	 */
+	public $images = null;
 
     /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expanded_itemExpanded_elementTable $table;

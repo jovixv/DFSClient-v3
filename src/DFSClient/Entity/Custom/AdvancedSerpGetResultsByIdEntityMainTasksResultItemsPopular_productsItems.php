@@ -26,6 +26,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItems
     */
     public $price = null;
 
+	/**
+	 * @var null|string $image_url;
+	 */
+	public $image_url  = null;
+
+	/**
+	 * @var null|string $iseller;
+	 */
+	public $seller  = null;
+
     /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItemsRating $rating;
     */

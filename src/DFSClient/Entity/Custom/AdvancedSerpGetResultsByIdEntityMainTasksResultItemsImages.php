@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRectangle;
+use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRelated_image_searches_element;
 
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImages 
 {    
@@ -45,6 +46,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImages
     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesItems[] $items;
     */
     public $items = [];
+
+	/**
+	 * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRelated_image_searches_element[] $related_image_searches;
+	 */
+	public $related_image_searches = [];
 
     /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRectangle $rectangle;

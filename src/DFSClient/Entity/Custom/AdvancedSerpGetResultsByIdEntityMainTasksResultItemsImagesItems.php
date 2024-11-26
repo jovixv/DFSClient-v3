@@ -19,5 +19,10 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesItems
     * @var null|string $url;
     */
     public $url = null;
+
+	/**
+	 * @var null|string $image_url;
+	 */
+	public $image_url = null;
  
 }

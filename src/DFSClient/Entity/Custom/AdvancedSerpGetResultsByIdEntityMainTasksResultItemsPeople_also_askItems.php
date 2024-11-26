@@ -16,6 +16,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_askItems
     */
     public $title = null;
 
+	/**
+	 * @var null|string $seed_question;
+	 */
+	public $seed_question = null;
+
     /**
     * @var null|string $xpath;
     */

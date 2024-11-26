@@ -21,7 +21,7 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_images
     public $url = null;
 
     /**
-    * @var null|NULL $domain;
+    * @var null|string $domain;
     */
     public $domain = null;
 
@@ -29,6 +29,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_images
     * @var null|string $snippet;
     */
     public $snippet = null;
+
+	/**
+	 * @var null|string $description;
+	 */
+	public $description = null;
 
     /**
     * @var null|string $xpath;

@@ -30,6 +30,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_carous
     */
     public $snippet = null;
 
+	/**
+	 * @var null|string $description;
+	 */
+	public $description = null;
+
     /**
     * @var null|string $xpath;
     */

@@ -44,5 +44,15 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsTop_storiesItems
     * @var null|string $url;
     */
     public $url = null;
+
+	/**
+	 * @var null|string $image_url;
+	 */
+	public $image_url = null;
+
+	/**
+	 * @var null|array $badges;
+	 */
+	public $badges = null;
  
 }

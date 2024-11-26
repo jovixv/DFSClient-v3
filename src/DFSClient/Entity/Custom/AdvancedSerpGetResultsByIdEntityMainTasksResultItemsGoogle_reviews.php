@@ -55,5 +55,10 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_reviews
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_reviewsRectangle $rectangle;
     */
     public $rectangle = null;
+
+	/**
+	 * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_reviewsRating $rating;
+	 */
+	public $rating = null;
  
 }

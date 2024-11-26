@@ -61,6 +61,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems
 	 */
 	public $date_to = null;
 
+	/**
+	 * @var null|bool $asynchronous_ai_overview;
+	 */
+	public $asynchronous_ai_overview = null;
+
     /**
     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems[] $items;
     */
