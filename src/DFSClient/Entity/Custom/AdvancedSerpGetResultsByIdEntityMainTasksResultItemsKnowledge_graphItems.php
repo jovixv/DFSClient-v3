@@ -41,6 +41,26 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems
     */
     public $data_attrid = null;
 
+	/**
+	 * @var null|string $link;
+	 */
+	public $link = null;
+
+	/**
+	 * @var null|string $text;
+	 */
+	public $text = null;
+
+	/**
+	 * @var null|string $date_from;
+	 */
+	public $date_from = null;
+
+	/**
+	 * @var null|string $date_to;
+	 */
+	public $date_to = null;
+
     /**
     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsItems[] $items;
     */

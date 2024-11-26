@@ -101,6 +101,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganic
     */
     public $amp_version = null;
 
+	/**
+	 * @var null|string $related_search_url;
+	 */
+	public $related_search_url = null;
+
+	/**
+	 * @var null|string $related_search_url;
+	 */
+	public $website_name = null;
+
     /**
      * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicImages $images;
      */

@@ -24,5 +24,9 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsOrganicLinks
     * @var null|string $url;
     */
     public $url = null;
- 
+
+	/**
+	 * @var null|string $domain;
+	 */
+	public $domain = null;
 }

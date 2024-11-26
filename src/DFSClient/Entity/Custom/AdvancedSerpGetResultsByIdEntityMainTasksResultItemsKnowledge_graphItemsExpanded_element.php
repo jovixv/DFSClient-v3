@@ -36,6 +36,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsEx
     */
     public $snippet = null;
 
+	/**
+	 * @var null|string $timestamp;
+	 */
+	public $timestamp = null;
+
     /**
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsExpanded_elementTable $table;
     */

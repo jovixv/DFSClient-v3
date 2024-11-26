@@ -66,7 +66,18 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph
     */
     public $cid = null;
 
-    /**
+	/**
+	 * @var null|string $subtitle;
+	 */
+	public $subtitle  = null;
+
+	/**
+	 * @var null|string $logo_url;
+	 */
+	public $logo_url  = null;
+
+
+	/**
     * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItems[] $items;
     */
     public $items = [];

@@ -40,6 +40,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsIt
     */
     public $snippet = null;
 
+	/**
+	 * @var null|string $subtitle;
+	 */
+	public $subtitle = null;
+
+	/**
+	 * @var null|string $image_url;
+	 */
+	public $image_url = null;
+
     /**
     * @var null|string $marketplace;
     */
@@ -49,5 +59,30 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graphItemsIt
     * @var null|string $marketplace_url;
     */
     public $marketplace_url = null;
+
+	/**
+	 * @var null|string $text;
+	 */
+	public $text = null;
+
+	/**
+	 * @var null|string $alt;
+	 */
+	public $alt = null;
+
+	/**
+	 * @var null|string $description;
+	 */
+	public $description = null;
+
+	/**
+	 * @var null|bool $is_paid;
+	 */
+	public $is_paid = null;
+
+	/**
+	 * @var null|string $xpath;
+	 */
+	public $xpath = null;
  
 }

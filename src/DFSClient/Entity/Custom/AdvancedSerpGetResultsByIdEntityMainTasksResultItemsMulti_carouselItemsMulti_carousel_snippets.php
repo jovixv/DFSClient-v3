@@ -14,5 +14,15 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMulti_carouselItemsMul
     * @var null|string $title;
     */
     public $title = null;
+
+	/**
+	 * @var null|string $subtitle;
+	 */
+	public $subtitle = null;
+
+	/**
+	 * @var null|string $image_url;
+	 */
+	public $image_url = null;
  
 }

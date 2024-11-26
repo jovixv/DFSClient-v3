@@ -51,6 +51,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPaid
     */
     public $url = null;
 
+	/**
+	 * @var null|bool $is_image;
+	 */
+	public $is_image = null;
+
+	/**
+	 * @var null|bool $is_video;
+	 */
+	public $is_video = null;
+
     /**
     * @var null|array $highlighted;
     */
