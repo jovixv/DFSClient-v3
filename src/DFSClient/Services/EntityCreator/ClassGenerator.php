@@ -408,6 +408,7 @@ class ClassGenerator
                 PHP_EOL."namespace DFSClientV3\Entity\Custom;".
                 PHP_EOL.
                 PHP_EOL.'%s'.
+	            PHP_EOL.'#[\AllowDynamicProperties]'.
                 PHP_EOL."class %s extends \DFSClientV3\Models\ResponseModel ".
                 PHP_EOL."{"."    %s ".
                 PHP_EOL."%s".
@@ -418,6 +419,7 @@ class ClassGenerator
                 PHP_EOL."namespace DFSClientV3\Entity\Custom;".
                 PHP_EOL.
                 PHP_EOL.'%s'.
+	            PHP_EOL.'#[\AllowDynamicProperties]'.
                 PHP_EOL."class %s ".
                 PHP_EOL."{"."    %s ".
                 PHP_EOL."}", $stringNameSpaces, $fileName, $string);
