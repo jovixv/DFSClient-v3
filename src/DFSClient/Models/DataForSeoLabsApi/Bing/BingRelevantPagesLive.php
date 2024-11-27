@@ -97,6 +97,17 @@ class BingRelevantPagesLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param bool $ignoreSynonyms
+	 * @return $this
+	 */
+	public function setIgnoreSynonyms(bool $ignoreSynonyms)
+	{
+		$this->payload['ignore_synonyms'] = $ignoreSynonyms;
+
+		return $this;
+	}
+
     /**
      * @param array $filters
      * @return $this
