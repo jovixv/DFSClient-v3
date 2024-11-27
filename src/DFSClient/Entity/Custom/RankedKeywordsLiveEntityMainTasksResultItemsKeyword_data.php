@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 
+#[\AllowDynamicProperties]
 class RankedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

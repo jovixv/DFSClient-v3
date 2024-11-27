@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleBulkAppMetricsLiveEntityMainTasksResultItemsMetricsGoogle_play_search_organic;
 
+#[\AllowDynamicProperties]
 class GoogleBulkAppMetricsLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetResultsByIdEntityMainTasks
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultMobile;
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResultTablet;
 
+#[\AllowDynamicProperties]
 class AdsTrafficByPlatformsGetResultsByIdEntityMainTasksResult 
 {    
     /**

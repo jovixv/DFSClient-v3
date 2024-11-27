@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsMetrics;
 use DFSClientV3\Entity\Custom\GoogleDomainWhoisOverviewLiveEntityMainTasksResultItemsBacklinks_info;
 
+#[\AllowDynamicProperties]
 class GoogleDomainWhoisOverviewLiveEntityMainTasksResultItems 
 {    
     /**

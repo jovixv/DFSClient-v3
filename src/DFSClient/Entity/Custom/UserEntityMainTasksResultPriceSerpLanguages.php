@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriorit
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLanguagesPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpLanguages 
 {    
     /**

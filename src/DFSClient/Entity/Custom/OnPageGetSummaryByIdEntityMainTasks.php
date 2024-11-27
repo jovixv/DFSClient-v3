@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class OnPageGetSummaryByIdEntityMainTasks 
 {    
     /**

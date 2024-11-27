@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsRanked_domains_by_categoryLive;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsRanked_domains_by_category 
 {    
     /**

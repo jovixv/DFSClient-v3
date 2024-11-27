@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResul
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTraffic;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultSites;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResult 
 {    
     /**

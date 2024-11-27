@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrors;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_data;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceAppendix 
 {    
     /**

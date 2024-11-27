@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class OnPageInstantPagesEntityMain extends \DFSClientV3\Models\ResponseModel
 {    
     /**

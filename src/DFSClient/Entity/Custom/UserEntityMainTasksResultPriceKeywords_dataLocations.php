@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocatio
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocationsPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataLocations 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AdsTrafficByKeywordsGetResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AdsTrafficByKeywordsGetResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AdsTrafficByKeywordsGetResultsByIdEntityMainTasks 
 {    
     /**

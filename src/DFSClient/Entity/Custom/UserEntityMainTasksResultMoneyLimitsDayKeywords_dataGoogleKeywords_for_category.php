@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoneyLimitsDayKeywords_dataGoogleKeywords_for_category 
 {    
     /**

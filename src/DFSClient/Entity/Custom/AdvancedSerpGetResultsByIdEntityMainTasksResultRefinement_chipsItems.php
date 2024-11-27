@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItemsOptions;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultRefinement_chipsItems 
 {    
     /**

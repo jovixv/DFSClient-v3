@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTas
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTask_post;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTasks_ready;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceTraffic_analytics 
 {    
     /**

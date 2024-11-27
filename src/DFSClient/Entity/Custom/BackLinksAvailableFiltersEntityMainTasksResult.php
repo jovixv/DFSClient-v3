@@ -13,6 +13,7 @@ use DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMainTasksResultRefe
 use DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMainTasksResultDomain_pages_summary;
 use DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMainTasksResultCompetitors;
 
+#[\AllowDynamicProperties]
 class BackLinksAvailableFiltersEntityMainTasksResult 
 {    
     /**

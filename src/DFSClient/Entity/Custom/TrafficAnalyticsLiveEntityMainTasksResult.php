@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultAudience;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTraffic;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultSites;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsLiveEntityMainTasksResult 
 {    
     /**

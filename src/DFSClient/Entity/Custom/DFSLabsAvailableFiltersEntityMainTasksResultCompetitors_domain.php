@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultCompetitors_domainGoogle;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultCompetitors_domainBing;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasksResultCompetitors_domain 
 {    
     /**

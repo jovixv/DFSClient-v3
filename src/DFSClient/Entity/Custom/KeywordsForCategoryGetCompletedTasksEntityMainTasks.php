@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\KeywordsForCategoryGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\KeywordsForCategoryGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class KeywordsForCategoryGetCompletedTasksEntityMainTasks 
 {    
     /**

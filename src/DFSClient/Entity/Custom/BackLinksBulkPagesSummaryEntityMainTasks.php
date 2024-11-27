@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BackLinksBulkPagesSummaryEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BackLinksBulkPagesSummaryEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BackLinksBulkPagesSummaryEntityMainTasks 
 {    
     /**

@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class GetSerpCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

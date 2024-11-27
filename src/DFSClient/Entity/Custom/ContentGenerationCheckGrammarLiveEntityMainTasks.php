@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentGenerationCheckGrammarLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentGenerationCheckGrammarLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentGenerationCheckGrammarLiveEntityMainTasks 
 {    
     /**

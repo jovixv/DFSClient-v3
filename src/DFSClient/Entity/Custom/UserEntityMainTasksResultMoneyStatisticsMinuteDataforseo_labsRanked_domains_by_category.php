@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoneyStatisticsMinuteDataforseo_labsRanked_domains_by_category 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageLighthouseAuditsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\OnPageLighthouseAuditsEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class OnPageLighthouseAuditsEntityMainTasks 
 {    
     /**

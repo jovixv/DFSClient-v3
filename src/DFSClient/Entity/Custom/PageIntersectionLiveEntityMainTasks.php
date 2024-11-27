@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class PageIntersectionLiveEntityMainTasks 
 {    
     /**

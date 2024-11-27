@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps;
 use DFSClientV3\Entity\Custom\AppleAppListingsSearchLiveEntityMainTasksResultItemsItemMore_apps_by_developer;
 
+#[\AllowDynamicProperties]
 class AppleAppListingsSearchLiveEntityMainTasksResultItemsItem 
 {    
     /**

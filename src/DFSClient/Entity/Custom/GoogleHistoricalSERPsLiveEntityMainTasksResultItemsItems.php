@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleHistoricalSERPsLiveEntityMainTasksResultItem
 use DFSClientV3\Entity\Custom\GoogleHistoricalSERPsLiveEntityMainTasksResultItemsItemsBacklinks_info;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSERPsLiveEntityMainTasksResultItemsItemsRank_info;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalSERPsLiveEntityMainTasksResultItemsItems 
 {    
     /**

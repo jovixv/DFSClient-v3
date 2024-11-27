@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetri
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetricsLocal_pack;
 
+#[\AllowDynamicProperties]
 class GoogleRankedKeywordsLiveEntityMainTasksResultMetrics 
 {    
     /**

@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataGoogleAd_traffic_by_platforms 
 {    
     /**

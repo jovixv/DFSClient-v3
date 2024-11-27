@@ -11,6 +11,7 @@ use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
+#[\AllowDynamicProperties]
 class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords_dataGoogleKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords_dataGoogleSearch_volume;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesLimitsMinuteKeywords_dataGoogle 
 {    
     /**

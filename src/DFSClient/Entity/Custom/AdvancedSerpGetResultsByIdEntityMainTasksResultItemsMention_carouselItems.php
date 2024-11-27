@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMention_carouselItemsMentioned_in;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMention_carouselItems 
 {    
     /**

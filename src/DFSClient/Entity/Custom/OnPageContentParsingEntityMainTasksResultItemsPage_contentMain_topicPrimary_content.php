@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class OnPageContentParsingEntityMainTasksResultItemsPage_contentMain_topicPrimary_content 
 {    
     /**

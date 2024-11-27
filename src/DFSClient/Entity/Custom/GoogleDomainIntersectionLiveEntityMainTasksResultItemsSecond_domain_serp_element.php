@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_changes;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_info;
 
+#[\AllowDynamicProperties]
 class GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_element 
 {    
     /**

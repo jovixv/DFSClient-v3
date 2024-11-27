@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\TechnologiesDomainTechnologiesLiveEntityMainTasksR
 use DFSClientV3\Entity\Custom\TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesMedia;
 use DFSClientV3\Entity\Custom\TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologiesLocation;
 
+#[\AllowDynamicProperties]
 class TechnologiesDomainTechnologiesLiveEntityMainTasksResultTechnologies 
 {    
     /**

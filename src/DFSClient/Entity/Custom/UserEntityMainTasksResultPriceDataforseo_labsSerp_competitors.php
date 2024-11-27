@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLive;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsSerp_competitors 
 {    
     /**

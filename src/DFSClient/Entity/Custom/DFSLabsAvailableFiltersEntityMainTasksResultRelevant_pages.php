@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultRelevant_pagesGoogle;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultRelevant_pagesBing;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasksResultRelevant_pages 
 {    
     /**

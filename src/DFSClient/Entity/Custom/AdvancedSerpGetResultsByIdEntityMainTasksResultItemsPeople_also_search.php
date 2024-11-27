@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_searchRectangle;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPeople_also_search 
 {    
     /**

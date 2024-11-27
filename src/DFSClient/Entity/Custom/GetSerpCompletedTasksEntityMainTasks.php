@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GetSerpCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GetSerpCompletedTasksEntityMainTasks 
 {    
     /**

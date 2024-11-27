@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
+#[\AllowDynamicProperties]
 class AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

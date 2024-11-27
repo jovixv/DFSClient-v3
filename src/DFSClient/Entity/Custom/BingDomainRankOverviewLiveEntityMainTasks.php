@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingDomainRankOverviewLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingDomainRankOverviewLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingDomainRankOverviewLiveEntityMainTasks 
 {    
     /**

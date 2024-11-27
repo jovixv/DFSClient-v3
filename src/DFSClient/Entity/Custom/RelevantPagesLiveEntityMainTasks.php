@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\RelevantPagesLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\RelevantPagesLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class RelevantPagesLiveEntityMainTasks 
 {    
     /**

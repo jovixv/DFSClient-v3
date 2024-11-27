@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleReviewsGetAdvancedResultsByIdEntityMainTasks
 use DFSClientV3\Entity\Custom\GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultRating_groups;
 use DFSClientV3\Entity\Custom\GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResultTop_keywords;
 
+#[\AllowDynamicProperties]
 class GoogleReviewsGetAdvancedResultsByIdEntityMainTasksResult 
 {    
     /**

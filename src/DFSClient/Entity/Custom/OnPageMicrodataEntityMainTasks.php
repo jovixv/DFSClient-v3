@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksData;
 use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class OnPageMicrodataEntityMainTasks 
 {    
     /**

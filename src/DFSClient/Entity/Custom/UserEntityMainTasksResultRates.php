@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimits;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatistics;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRates 
 {    
     /**

@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResult
 use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile;
 use DFSClientV3\Entity\Custom\YelpReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses;
 
+#[\AllowDynamicProperties]
 class YelpReviewsGetResultsByTaskIdEntityMainTasksResultItems 
 {    
     /**

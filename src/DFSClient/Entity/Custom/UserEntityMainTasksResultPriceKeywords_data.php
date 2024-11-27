@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguag
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLocations;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_trends;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_data 
 {    
     /**

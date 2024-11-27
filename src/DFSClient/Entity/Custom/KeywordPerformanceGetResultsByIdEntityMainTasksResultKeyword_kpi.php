@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\KeywordPerformanceGetResultsByIdEntityMainTasksRes
 use DFSClientV3\Entity\Custom\KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpiMobile;
 use DFSClientV3\Entity\Custom\KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpiTablet;
 
+#[\AllowDynamicProperties]
 class KeywordPerformanceGetResultsByIdEntityMainTasksResultKeyword_kpi 
 {    
     /**

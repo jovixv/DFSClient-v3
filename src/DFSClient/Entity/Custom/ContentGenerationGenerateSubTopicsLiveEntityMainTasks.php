@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentGenerationGenerateSubTopicsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentGenerationGenerateSubTopicsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentGenerationGenerateSubTopicsLiveEntityMainTasks 
 {    
     /**

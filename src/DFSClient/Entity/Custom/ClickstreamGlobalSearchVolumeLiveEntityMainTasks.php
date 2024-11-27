@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ClickstreamGlobalSearchVolumeLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ClickstreamGlobalSearchVolumeLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ClickstreamGlobalSearchVolumeLiveEntityMainTasks 
 {    
     /**

@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItem
 use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsMetricsLocal_pack;
 use DFSClientV3\Entity\Custom\BingCompetitorsDomainLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 
+#[\AllowDynamicProperties]
 class BingCompetitorsDomainLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

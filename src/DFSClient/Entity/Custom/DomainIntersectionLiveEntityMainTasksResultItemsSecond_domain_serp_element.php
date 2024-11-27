@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRating;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementLinks;
 
+#[\AllowDynamicProperties]
 class DomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_element 
 {    
     /**

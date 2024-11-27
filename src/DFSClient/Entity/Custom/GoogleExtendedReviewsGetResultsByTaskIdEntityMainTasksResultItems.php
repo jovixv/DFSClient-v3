@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleExtendedReviewsGetResultsByTaskIdEntityMainT
 use DFSClientV3\Entity\Custom\GoogleExtendedReviewsGetResultsByTaskIdEntityMainTasksResultItemsReview_highlights;
 use DFSClientV3\Entity\Custom\GoogleExtendedReviewsGetResultsByTaskIdEntityMainTasksResultItemsSource;
 
+#[\AllowDynamicProperties]
 class GoogleExtendedReviewsGetResultsByTaskIdEntityMainTasksResultItems 
 {    
     /**

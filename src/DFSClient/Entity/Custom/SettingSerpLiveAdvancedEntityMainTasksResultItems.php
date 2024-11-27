@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsE
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsLinks;
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsRectangle;
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResultItems 
 {    
     /**

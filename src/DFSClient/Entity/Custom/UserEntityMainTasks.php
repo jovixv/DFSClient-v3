@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksData;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasks 
 {    
     /**

@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordsForCategoryLiveEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class KeywordsForCategoryLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

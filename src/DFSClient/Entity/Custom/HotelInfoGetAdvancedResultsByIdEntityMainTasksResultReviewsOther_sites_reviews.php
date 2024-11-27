@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsOther_sites_reviewsRating;
 
+#[\AllowDynamicProperties]
 class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultReviewsOther_sites_reviews 
 {    
     /**

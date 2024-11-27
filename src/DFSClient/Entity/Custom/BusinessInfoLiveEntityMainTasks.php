@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BusinessInfoLiveEntityMainTasks 
 {    
     /**

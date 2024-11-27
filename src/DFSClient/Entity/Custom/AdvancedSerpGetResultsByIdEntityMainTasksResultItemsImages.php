@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRectangle;
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRelated_image_searches_element;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImages 
 {    
     /**

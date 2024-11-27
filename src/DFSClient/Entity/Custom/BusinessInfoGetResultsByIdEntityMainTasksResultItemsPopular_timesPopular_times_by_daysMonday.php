@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMondayTime;
 
+#[\AllowDynamicProperties]
 class BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_timesPopular_times_by_daysMonday 
 {    
     /**

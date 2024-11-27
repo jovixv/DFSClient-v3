@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\LanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\LanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class LanguagesEntityMainTasks 
 {    
     /**

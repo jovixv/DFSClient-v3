@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksResultDomain_infoSsl_info;
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksResultDomain_infoChecks;
 
+#[\AllowDynamicProperties]
 class OnPageGetSummaryByIdEntityMainTasksResultDomain_info 
 {    
     /**

@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksRes
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsClickstream_keyword_infoAge_distribution;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsClickstream_keyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsClickstream_keyword_info 
 {    
     /**

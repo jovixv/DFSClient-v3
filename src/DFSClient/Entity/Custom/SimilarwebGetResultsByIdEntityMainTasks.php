@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SimilarwebGetResultsByIdEntityMainTasks 
 {    
     /**

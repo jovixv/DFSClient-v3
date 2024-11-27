@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPagePageScreenshotEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class OnPagePageScreenshotEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

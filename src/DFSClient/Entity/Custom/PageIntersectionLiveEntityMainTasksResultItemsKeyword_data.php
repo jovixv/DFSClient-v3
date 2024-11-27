@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMainTasksResultItemsKeyw
 use DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\PageIntersectionLiveEntityMainTasksResultItemsKeyword_dataBing_keyword_info;
 
+#[\AllowDynamicProperties]
 class PageIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

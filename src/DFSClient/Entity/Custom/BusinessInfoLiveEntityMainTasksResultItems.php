@@ -10,6 +10,7 @@ use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsRating_d
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsWork_time;
 
+#[\AllowDynamicProperties]
 class BusinessInfoLiveEntityMainTasksResultItems 
 {    
     /**

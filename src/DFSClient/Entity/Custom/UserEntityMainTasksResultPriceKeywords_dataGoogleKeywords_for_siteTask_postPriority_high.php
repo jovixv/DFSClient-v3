@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_siteTask_postPriority_high 
 {    
     /**

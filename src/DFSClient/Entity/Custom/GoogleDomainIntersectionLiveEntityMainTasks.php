@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleDomainIntersectionLiveEntityMainTasks 
 {    
     /**

@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSourcesD
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSourcesMobile_apps;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSourcesMail;
 
+#[\AllowDynamicProperties]
 class SimilarwebLiveEntityMainTasksResultTrafficSources 
 {    
     /**

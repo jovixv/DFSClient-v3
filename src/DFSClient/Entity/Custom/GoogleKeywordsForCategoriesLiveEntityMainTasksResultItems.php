@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResu
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GoogleKeywordsForCategoriesLiveEntityMainTasksResultItemsSearch_intent_info;
 
+#[\AllowDynamicProperties]
 class GoogleKeywordsForCategoriesLiveEntityMainTasksResultItems 
 {    
     /**

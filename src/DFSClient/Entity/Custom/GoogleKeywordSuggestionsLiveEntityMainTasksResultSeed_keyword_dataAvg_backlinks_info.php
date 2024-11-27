@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataAvg_backlinks_info 
 {    
     /**

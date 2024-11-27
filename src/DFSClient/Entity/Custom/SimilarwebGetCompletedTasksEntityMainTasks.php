@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SimilarwebGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SimilarwebGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SimilarwebGetCompletedTasksEntityMainTasks 
 {    
     /**

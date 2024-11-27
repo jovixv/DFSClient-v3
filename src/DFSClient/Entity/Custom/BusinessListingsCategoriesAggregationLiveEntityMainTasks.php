@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessListingsCategoriesAggregationLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BusinessListingsCategoriesAggregationLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BusinessListingsCategoriesAggregationLiveEntityMainTasks 
 {    
     /**

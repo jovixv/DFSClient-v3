@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BulkTrafficEstimationLiveEntityMainTasksResultItem
 use DFSClientV3\Entity\Custom\BulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack;
 use DFSClientV3\Entity\Custom\BulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 
+#[\AllowDynamicProperties]
 class BulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

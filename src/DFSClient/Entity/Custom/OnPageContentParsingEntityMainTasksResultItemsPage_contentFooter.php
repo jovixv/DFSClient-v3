@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMainTasksResultItemsPage_contentFooterPrimary_content;
 use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMainTasksResultItemsPage_contentFooterSecondary_content;
 
+#[\AllowDynamicProperties]
 class OnPageContentParsingEntityMainTasksResultItemsPage_contentFooter 
 {    
     /**

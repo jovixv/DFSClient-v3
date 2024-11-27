@@ -11,6 +11,7 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResul
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesMobile_apps;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesMail;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSources 
 {    
     /**

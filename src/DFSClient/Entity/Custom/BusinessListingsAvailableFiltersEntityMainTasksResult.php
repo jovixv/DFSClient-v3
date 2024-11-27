@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksResultSearch;
 use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksResultCategories_aggregation;
 
+#[\AllowDynamicProperties]
 class BusinessListingsAvailableFiltersEntityMainTasksResult 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AdsTrafficForKeywordsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AdsTrafficForKeywordsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AdsTrafficForKeywordsLiveEntityMainTasks 
 {    
     /**

@@ -10,6 +10,7 @@ use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsCanonical;
 use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsMeta;
 use DFSClientV3\Entity\Custom\OnPageGetLinksEntityMainTasksResultItemsLink;
 
+#[\AllowDynamicProperties]
 class OnPageGetLinksEntityMainTasksResult
 {
     /**

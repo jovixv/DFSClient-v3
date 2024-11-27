@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleA
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platformsTask_post;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataGoogleAd_traffic_by_platforms 
 {    
     /**

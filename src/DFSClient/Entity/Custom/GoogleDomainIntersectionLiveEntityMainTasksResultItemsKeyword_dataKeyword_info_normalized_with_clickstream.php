@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info_normalized_with_clickstreamMonthly_searches;
 
+#[\AllowDynamicProperties]
 class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info_normalized_with_clickstream 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\KeywordsForCategoriesLiveEntityMainTasksResultItemsKeyword_info;
 use DFSClientV3\Entity\Custom\KeywordsForCategoriesLiveEntityMainTasksResultItemsImpressions_info;
 
+#[\AllowDynamicProperties]
 class KeywordsForCategoriesLiveEntityMainTasksResultItems 
 {    
     /**

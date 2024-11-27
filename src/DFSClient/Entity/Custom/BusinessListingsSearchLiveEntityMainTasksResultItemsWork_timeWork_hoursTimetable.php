@@ -10,6 +10,7 @@ use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetableFriday;
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetableSaturday;
 
+#[\AllowDynamicProperties]
 class BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetable 
 {    
     /**

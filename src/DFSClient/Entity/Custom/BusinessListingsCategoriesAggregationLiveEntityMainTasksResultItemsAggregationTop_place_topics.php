@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_place_topics 
 {    
     /**

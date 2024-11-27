@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class KeywordIdeasLiveEntityMainTasksResultItemsKeyword_infoMonthly_searches 
 {    
     /**

@@ -11,6 +11,7 @@ use DFSClientV3\Entity\Custom\ContentAnalysisSummaryLiveEntityMainTasksResultPag
 use DFSClientV3\Entity\Custom\ContentAnalysisSummaryLiveEntityMainTasksResultCountries;
 use DFSClientV3\Entity\Custom\ContentAnalysisSummaryLiveEntityMainTasksResultLanguages;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSummaryLiveEntityMainTasksResult 
 {    
     /**

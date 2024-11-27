@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests;
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItemsInterests_comparison;
 
+#[\AllowDynamicProperties]
 class DataforseoTrendsSubregionInterestsLiveEntityMainTasksResultItems 
 {    
     /**

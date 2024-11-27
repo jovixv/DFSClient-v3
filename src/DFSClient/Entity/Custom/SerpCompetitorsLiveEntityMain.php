@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SerpCompetitorsLiveEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class SerpCompetitorsLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

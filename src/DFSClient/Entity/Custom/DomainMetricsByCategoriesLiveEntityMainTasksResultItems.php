@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_history;
 use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_difference;
 
+#[\AllowDynamicProperties]
 class DomainMetricsByCategoriesLiveEntityMainTasksResultItems 
 {    
     /**

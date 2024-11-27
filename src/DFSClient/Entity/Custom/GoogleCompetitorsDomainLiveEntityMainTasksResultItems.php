@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultIt
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsMetrics;
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsCompetitor_metrics;
 
+#[\AllowDynamicProperties]
 class GoogleCompetitorsDomainLiveEntityMainTasksResultItems 
 {    
     /**

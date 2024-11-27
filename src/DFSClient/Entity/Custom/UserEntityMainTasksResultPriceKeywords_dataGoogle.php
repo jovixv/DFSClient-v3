@@ -10,6 +10,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleK
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleSearch_volume;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataGoogle 
 {    
     /**

@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguag
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataLanguagesPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataLanguages 
 {    
     /**

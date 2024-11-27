@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BacklinksCompetitorsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BacklinksCompetitorsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BacklinksCompetitorsLiveEntityMainTasks 
 {    
     /**

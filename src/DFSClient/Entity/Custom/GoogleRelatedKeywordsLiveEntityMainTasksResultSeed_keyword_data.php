@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataSearch_intent_info;
 
+#[\AllowDynamicProperties]
 class GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_data 
 {    
     /**

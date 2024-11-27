@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAdsLocationsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleAdsLocationsEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleAdsLocationsEntityMainTasks 
 {    
     /**

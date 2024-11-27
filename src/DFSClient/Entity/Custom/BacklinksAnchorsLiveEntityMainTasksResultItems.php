@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BacklinksAnchorsLiveEntityMainTasksResultItemsReferring_links_types;
 
+#[\AllowDynamicProperties]
 class BacklinksAnchorsLiveEntityMainTasksResultItems
 {
     /**

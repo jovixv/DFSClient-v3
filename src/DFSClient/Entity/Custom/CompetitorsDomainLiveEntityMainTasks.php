@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\CompetitorsDomainLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\CompetitorsDomainLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class CompetitorsDomainLiveEntityMainTasks 
 {    
     /**

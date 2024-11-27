@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultTrafficSourcesMobile_appsGoogle_play_store 
 {    
     /**

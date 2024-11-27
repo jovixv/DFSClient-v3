@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataCategor
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataCategoriesPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataCategoriesPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataCategories 
 {    
     /**

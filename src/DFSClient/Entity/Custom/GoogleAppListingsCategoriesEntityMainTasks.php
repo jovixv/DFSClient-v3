@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppListingsCategoriesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleAppListingsCategoriesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleAppListingsCategoriesEntityMainTasks 
 {    
     /**

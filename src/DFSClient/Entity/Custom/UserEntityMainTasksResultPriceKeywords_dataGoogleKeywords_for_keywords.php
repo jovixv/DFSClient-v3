@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleK
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_keywordsTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_keywordsTask_post;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataGoogleKeywords_for_keywords 
 {    
     /**

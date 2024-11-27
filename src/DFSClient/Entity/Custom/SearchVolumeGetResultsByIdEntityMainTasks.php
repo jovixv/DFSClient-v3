@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SearchVolumeGetResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SearchVolumeGetResultsByIdEntityMainTasks 
 {    
     /**

@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayKeywords_dataGoogle_trendsExplore;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesLimitsDayKeywords_dataGoogle_trends 
 {    
     /**

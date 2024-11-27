@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SearchVolumeHistoryGetLocationsAndLanguagesEntityMainTasks 
 {    
     /**

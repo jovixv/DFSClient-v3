@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleAppListingsSearchLiveEntityMainTasksResultIt
 use DFSClientV3\Entity\Custom\GoogleAppListingsSearchLiveEntityMainTasksResultItemsItemPrice;
 use DFSClientV3\Entity\Custom\GoogleAppListingsSearchLiveEntityMainTasksResultItemsItemSimilar_apps;
 
+#[\AllowDynamicProperties]
 class GoogleAppListingsSearchLiveEntityMainTasksResultItemsItem 
 {    
     /**

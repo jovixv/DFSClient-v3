@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingPageIntersectionLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingPageIntersectionLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingPageIntersectionLiveEntityMainTasks 
 {    
     /**

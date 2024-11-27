@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppInfoGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
 use DFSClientV3\Entity\Custom\AppleAppInfoGetAdvancedResultsByIdEntityMainTasksResultItemsPrice;
 
+#[\AllowDynamicProperties]
 class AppleAppInfoGetAdvancedResultsByIdEntityMainTasksResultItems 
 {    
     /**

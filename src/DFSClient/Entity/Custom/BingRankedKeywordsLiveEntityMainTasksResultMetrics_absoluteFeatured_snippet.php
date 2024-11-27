@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class BingRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteFeatured_snippet 
 {    
     /**

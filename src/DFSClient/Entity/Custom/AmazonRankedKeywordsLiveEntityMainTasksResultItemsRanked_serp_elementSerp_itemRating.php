@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class AmazonRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRating 
 {    
     /**

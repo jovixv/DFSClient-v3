@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegularP
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegularPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegularPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpTask_getRegular 
 {    
     /**

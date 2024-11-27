@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultItemsK
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_properties;
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
+#[\AllowDynamicProperties]
 class BingRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

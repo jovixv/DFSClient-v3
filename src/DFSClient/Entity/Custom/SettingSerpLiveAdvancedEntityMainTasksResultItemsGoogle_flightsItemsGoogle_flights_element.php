@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsGoogle_flightsItemsGoogle_flights_element 
 {    
     /**

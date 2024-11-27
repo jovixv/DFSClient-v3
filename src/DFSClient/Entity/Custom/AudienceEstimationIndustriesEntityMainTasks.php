@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AudienceEstimationIndustriesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AudienceEstimationIndustriesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AudienceEstimationIndustriesEntityMainTasks 
 {    
     /**

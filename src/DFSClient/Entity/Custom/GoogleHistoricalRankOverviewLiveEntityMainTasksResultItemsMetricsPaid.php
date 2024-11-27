@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsPaidClickstream_gender_distribution;
 use DFSClientV3\Entity\Custom\GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsPaidClickstream_age_distribution;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalRankOverviewLiveEntityMainTasksResultItemsMetricsPaid 
 {    
     /**

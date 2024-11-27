@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemography_comparisonAge;
 use DFSClientV3\Entity\Custom\DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemography_comparisonGender;
 
+#[\AllowDynamicProperties]
 class DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemography_comparison 
 {    
     /**

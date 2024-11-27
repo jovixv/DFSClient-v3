@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_getPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_getPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataGoogle_trendsExploreTask_get 
 {    
     /**

@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class HotelInfoGetAdvancedResultsByIdEntityMainTasksResultLocationScore_by_categories 
 {    
     /**

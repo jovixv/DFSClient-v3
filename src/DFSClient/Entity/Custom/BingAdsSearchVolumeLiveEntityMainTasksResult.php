@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingAdsSearchVolumeLiveEntityMainTasksResultMonthly_searches;
 
+#[\AllowDynamicProperties]
 class BingAdsSearchVolumeLiveEntityMainTasksResult 
 {    
     /**

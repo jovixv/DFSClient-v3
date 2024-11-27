@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_productsItemsPopular_products_elementRating 
 {    
     /**

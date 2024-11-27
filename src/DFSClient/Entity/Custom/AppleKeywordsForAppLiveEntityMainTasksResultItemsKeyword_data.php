@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AppleKeywordsForAppLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 
+#[\AllowDynamicProperties]
 class AppleKeywordsForAppLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

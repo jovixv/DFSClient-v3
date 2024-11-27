@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsDemographyLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DataforseoTrendsDemographyLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DataforseoTrendsDemographyLiveEntityMainTasks 
 {    
     /**

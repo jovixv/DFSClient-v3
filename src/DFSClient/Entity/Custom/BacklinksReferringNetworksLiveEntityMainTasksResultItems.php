@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BacklinksReferringNetworksLiveEntityMainTasksResul
 use DFSClientV3\Entity\Custom\BacklinksReferringNetworksLiveEntityMainTasksResultItemsReferring_links_platform_types;
 use DFSClientV3\Entity\Custom\BacklinksReferringNetworksLiveEntityMainTasksResultItemsReferring_links_semantic_locations;
 
+#[\AllowDynamicProperties]
 class BacklinksReferringNetworksLiveEntityMainTasksResultItems 
 {    
     /**

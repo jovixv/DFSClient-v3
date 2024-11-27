@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 
+#[\AllowDynamicProperties]
 class DomainIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

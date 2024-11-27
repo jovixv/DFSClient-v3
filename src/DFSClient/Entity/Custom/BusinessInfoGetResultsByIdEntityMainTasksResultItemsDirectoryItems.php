@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsAddress_info;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItemsWork_hours;
 
+#[\AllowDynamicProperties]
 class BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectoryItems 
 {    
     /**

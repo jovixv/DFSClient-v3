@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BackLinksAvailableFiltersEntityMainTasks 
 {    
     /**

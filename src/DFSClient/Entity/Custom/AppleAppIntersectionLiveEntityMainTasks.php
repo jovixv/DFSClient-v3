@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AppleAppIntersectionLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AppleAppIntersectionLiveEntityMainTasks 
 {    
     /**

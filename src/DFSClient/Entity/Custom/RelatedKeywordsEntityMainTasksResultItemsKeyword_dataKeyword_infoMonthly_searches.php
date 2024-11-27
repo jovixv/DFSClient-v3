@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class RelatedKeywordsEntityMainTasksResultItemsKeyword_dataKeyword_infoMonthly_searches 
 {    
     /**

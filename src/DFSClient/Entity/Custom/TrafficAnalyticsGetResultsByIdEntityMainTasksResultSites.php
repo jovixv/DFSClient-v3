@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultSitesSimilar_sites;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetResultsByIdEntityMainTasksResultSitesSimilar_sites_by_rank;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsGetResultsByIdEntityMainTasksResultSites 
 {    
     /**

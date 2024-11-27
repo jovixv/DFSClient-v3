@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRelated_image_searches_element {
 	/**
 	 * @var null|string $type;

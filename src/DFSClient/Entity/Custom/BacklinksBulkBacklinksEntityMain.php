@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BacklinksBulkBacklinksEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class BacklinksBulkBacklinksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

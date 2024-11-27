@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganicClickstream_gender_distribution;
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganicClickstream_age_distribution;
 
+#[\AllowDynamicProperties]
 class GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsOrganic 
 {    
     /**

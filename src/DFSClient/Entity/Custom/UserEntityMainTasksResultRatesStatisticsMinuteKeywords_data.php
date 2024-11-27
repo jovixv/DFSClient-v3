@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataGoogle;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteKeywords_dataGoogle_trends;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesStatisticsMinuteKeywords_data 
 {    
     /**

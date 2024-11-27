@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DFSLabsLocationsAndLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DFSLabsLocationsAndLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DFSLabsLocationsAndLanguagesEntityMainTasks 
 {    
     /**

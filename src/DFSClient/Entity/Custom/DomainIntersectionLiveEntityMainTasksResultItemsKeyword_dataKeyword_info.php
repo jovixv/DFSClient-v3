@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info 
 {    
     /**

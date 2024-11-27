@@ -8,6 +8,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_data;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analytics;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPrice 
 {    
     /**

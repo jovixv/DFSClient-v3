@@ -10,6 +10,7 @@ use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetableSaturday;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetableSunday;
 
+#[\AllowDynamicProperties]
 class BusinessInfoGetResultsByIdEntityMainTasksResultItemsWork_timeWork_hoursTimetable
 {    
     /**

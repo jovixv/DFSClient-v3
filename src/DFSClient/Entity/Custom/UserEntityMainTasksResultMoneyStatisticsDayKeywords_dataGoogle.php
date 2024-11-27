@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeyword
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogleKeywords_for_site;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogleSearch_volume;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoneyStatisticsDayKeywords_dataGoogle 
 {    
     /**

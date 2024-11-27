@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteLocal_packClickstream_gender_distribution;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteLocal_packClickstream_age_distribution;
 
+#[\AllowDynamicProperties]
 class GoogleRankedKeywordsLiveEntityMainTasksResultMetrics_absoluteLocal_pack 
 {    
     /**

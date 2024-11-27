@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTraff
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesMobile_apps;
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesMail;
 
+#[\AllowDynamicProperties]
 class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSources 
 {    
     /**

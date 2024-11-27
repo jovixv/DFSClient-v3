@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class AudienceEstimationGetResultsByIdEntityMainTasksResultEst_cost_per_event 
 {    
     /**

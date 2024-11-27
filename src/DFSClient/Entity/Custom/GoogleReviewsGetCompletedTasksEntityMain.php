@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleReviewsGetCompletedTasksEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class GoogleReviewsGetCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

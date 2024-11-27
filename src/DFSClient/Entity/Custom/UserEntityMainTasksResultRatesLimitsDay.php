@@ -8,6 +8,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayKeywords_da
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDaySerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsDayTraffic_analytics;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesLimitsDay 
 {    
     /**

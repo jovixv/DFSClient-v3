@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetableSaturdayOpen;
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetableSaturdayClose;
 
+#[\AllowDynamicProperties]
 class BusinessListingsSearchLiveEntityMainTasksResultItemsWork_timeWork_hoursTimetableSaturday 
 {    
     /**

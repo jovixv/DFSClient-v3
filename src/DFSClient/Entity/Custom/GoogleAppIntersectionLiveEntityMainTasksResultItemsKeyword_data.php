@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\GoogleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
+#[\AllowDynamicProperties]
 class GoogleAppIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

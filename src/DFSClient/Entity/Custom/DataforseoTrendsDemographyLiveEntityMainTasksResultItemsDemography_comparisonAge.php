@@ -11,6 +11,7 @@ namespace DFSClientV3\Entity\Custom;
  * @property array $45-54 Age group 45-54
  * @property array $55-64 Age group 55-64
  */
+#[\AllowDynamicProperties]
 class DataforseoTrendsDemographyLiveEntityMainTasksResultItemsDemography_comparisonAge 
 {
 	private $data = [];

@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetr
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleSubdomainsLiveEntityMainTasksResultItemsMetricsLocal_pack;
 
+#[\AllowDynamicProperties]
 class GoogleSubdomainsLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

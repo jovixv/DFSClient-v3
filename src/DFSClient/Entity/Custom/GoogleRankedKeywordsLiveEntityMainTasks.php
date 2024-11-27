@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleRankedKeywordsLiveEntityMainTasks 
 {    
     /**

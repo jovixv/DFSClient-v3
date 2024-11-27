@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRating 
 {    
     /**

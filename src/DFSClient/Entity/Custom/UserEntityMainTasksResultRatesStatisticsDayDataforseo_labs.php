@@ -16,6 +16,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayDatafor
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayDataforseo_labsSerp_competitors;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDayDataforseo_labsSubdomains;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesStatisticsDayDataforseo_labs 
 {    
     /**

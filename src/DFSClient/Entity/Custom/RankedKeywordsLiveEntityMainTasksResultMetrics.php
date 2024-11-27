@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultMetricsOrganic;
 use DFSClientV3\Entity\Custom\RankedKeywordsLiveEntityMainTasksResultMetricsPaid;
 
+#[\AllowDynamicProperties]
 class RankedKeywordsLiveEntityMainTasksResultMetrics 
 {    
     /**

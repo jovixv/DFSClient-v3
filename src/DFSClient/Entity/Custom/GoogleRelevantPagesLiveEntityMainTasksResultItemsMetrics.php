@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleRelevantPagesLiveEntityMainTasksResultItemsM
 use DFSClientV3\Entity\Custom\GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsLocal_pack;
 
+#[\AllowDynamicProperties]
 class GoogleRelevantPagesLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

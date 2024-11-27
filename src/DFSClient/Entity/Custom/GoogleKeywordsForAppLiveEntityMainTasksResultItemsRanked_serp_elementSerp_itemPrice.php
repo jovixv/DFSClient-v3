@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class GoogleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemPrice 
 {    
     /**

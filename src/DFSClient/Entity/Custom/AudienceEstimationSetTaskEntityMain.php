@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AudienceEstimationSetTaskEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class AudienceEstimationSetTaskEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics;
 use DFSClientV3\Entity\Custom\AppleAppCompetitorsLiveEntityMainTasksResultItemsFull_metrics;
 
+#[\AllowDynamicProperties]
 class AppleAppCompetitorsLiveEntityMainTasksResultItems 
 {    
     /**

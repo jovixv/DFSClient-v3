@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BingBulkTrafficEstimationLiveEntityMainTasksResult
 use DFSClientV3\Entity\Custom\BingBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack;
 use DFSClientV3\Entity\Custom\BingBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 
+#[\AllowDynamicProperties]
 class BingBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

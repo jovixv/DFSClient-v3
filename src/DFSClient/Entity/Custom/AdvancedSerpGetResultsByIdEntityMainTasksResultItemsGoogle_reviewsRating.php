@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_reviewsRating {
 	/**
 	 * @var null|string $rating_type;

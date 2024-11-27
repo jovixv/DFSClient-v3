@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_hotelsRectangle {
 	/**
 	 * @var null|integer $x;

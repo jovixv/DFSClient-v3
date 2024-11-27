@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\AudienceEstimationLiveEntityMainTasksResultEst_spe
 use DFSClientV3\Entity\Custom\AudienceEstimationLiveEntityMainTasksResultEst_cost_per_event;
 use DFSClientV3\Entity\Custom\AudienceEstimationLiveEntityMainTasksResultEst_ctr;
 
+#[\AllowDynamicProperties]
 class AudienceEstimationLiveEntityMainTasksResult 
 {    
     /**

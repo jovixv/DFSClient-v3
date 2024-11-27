@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionGoogle;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultPage_intersectionBing;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasksResultPage_intersection 
 {    
     /**

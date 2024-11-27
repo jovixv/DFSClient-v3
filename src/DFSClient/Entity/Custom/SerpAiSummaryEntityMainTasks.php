@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SerpAiSummaryEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SerpAiSummaryEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SerpAiSummaryEntityMainTasks 
 {    
     /**

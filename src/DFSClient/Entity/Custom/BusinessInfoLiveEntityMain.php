@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class BusinessInfoLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

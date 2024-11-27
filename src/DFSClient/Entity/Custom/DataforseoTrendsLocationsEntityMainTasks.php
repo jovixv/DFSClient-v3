@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsLocationsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DataforseoTrendsLocationsEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DataforseoTrendsLocationsEntityMainTasks 
 {    
     /**

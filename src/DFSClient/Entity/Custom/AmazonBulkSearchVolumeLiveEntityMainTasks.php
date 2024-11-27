@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonBulkSearchVolumeLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AmazonBulkSearchVolumeLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AmazonBulkSearchVolumeLiveEntityMainTasks 
 {    
     /**

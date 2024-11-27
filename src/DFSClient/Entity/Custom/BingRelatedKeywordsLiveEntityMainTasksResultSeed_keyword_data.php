@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info;
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataSerp_info;
 
+#[\AllowDynamicProperties]
 class BingRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_data 
 {    
     /**

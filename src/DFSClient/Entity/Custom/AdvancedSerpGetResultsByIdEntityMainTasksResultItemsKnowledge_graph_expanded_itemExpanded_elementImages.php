@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+#[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_expanded_itemExpanded_elementImages {
 	/**
 	 * @var null|string $type;

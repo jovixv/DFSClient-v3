@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonProductCompetitorsLiveEntityMainTasksResultItemsCompetitor_metricsAmazon_serp;
 use DFSClientV3\Entity\Custom\AmazonProductCompetitorsLiveEntityMainTasksResultItemsCompetitor_metricsAmazon_paid;
 
+#[\AllowDynamicProperties]
 class AmazonProductCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics 
 {    
     /**

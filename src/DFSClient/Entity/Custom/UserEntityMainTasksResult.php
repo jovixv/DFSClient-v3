@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRates;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoney;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPrice;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResult 
 {    
     /**

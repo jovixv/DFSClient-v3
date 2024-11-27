@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSourcesSocialTop_socials;
 
+#[\AllowDynamicProperties]
 class SimilarwebLiveEntityMainTasksResultTrafficSourcesSocial 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentGenerationGrammarRulesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentGenerationGrammarRulesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentGenerationGrammarRulesEntityMainTasks 
 {    
     /**

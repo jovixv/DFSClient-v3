@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSERPsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSERPsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalSERPsLiveEntityMainTasks 
 {    
     /**

@@ -11,6 +11,7 @@ use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksRes
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsSerp_info;
 use DFSClientV3\Entity\Custom\GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsAvg_backlinks_info;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItems 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoSentiment_connotations;
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_infoConnotation_types;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSearchLiveEntityMainTasksResultItemsContent_info 
 {    
     /**

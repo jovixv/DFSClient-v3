@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\QuestionsAndAnswersGetResultsByIdEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class QuestionsAndAnswersGetResultsByIdEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

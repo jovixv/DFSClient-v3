@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsPaidClickstream_gender_distribution;
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsPaidClickstream_age_distribution;
 
+#[\AllowDynamicProperties]
 class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsPaid 
 {    
     /**

@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class BacklinksDomainPagesLiveEntityMainTasksResultItemsBacklinks_domain_pagePage_summaryReferring_links_types
 {    
     /**

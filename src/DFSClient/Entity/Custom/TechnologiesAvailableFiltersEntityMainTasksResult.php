@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\TechnologiesAvailableFiltersEntityMainTasksResultD
 use DFSClientV3\Entity\Custom\TechnologiesAvailableFiltersEntityMainTasksResultAggregation_technologies;
 use DFSClientV3\Entity\Custom\TechnologiesAvailableFiltersEntityMainTasksResultTechnologies_summary;
 
+#[\AllowDynamicProperties]
 class TechnologiesAvailableFiltersEntityMainTasksResult 
 {    
     /**

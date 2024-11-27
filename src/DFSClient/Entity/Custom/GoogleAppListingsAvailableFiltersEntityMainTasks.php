@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppListingsAvailableFiltersEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleAppListingsAvailableFiltersEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleAppListingsAvailableFiltersEntityMainTasks 
 {    
     /**

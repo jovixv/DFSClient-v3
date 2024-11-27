@@ -8,6 +8,7 @@ use DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasksResu
 use DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasksResultItemsReferring_links_platform_types;
 use DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasksResultItemsReferring_links_semantic_locations;
 
+#[\AllowDynamicProperties]
 class BacklinksDomainPagesSummaryLiveEntityMainTasksResultItems 
 {    
     /**

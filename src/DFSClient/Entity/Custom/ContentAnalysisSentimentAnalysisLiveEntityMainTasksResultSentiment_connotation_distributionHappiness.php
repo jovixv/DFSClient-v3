@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionHappinessSentiment_connotations;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionHappinessConnotation_types;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionHappiness 
 {    
     /**

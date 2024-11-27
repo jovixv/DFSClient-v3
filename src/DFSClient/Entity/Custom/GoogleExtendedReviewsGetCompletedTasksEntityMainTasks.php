@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleExtendedReviewsGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleExtendedReviewsGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleExtendedReviewsGetCompletedTasksEntityMainTasks 
 {    
     /**

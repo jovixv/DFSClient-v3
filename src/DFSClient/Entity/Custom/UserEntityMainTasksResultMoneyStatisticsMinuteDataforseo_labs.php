@@ -16,6 +16,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteData
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteDataforseo_labsSerp_competitors;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsMinuteDataforseo_labsSubdomains;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoneyStatisticsMinuteDataforseo_labs 
 {    
     /**

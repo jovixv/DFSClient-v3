@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryGetCompletedTasksEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class SearchVolumeHistoryGetCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

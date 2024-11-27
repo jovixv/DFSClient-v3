@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BulkTrafficEstimationLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BulkTrafficEstimationLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BulkTrafficEstimationLiveEntityMainTasks 
 {    
     /**

@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultMetrics
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultMetricsLocal_pack;
 
+#[\AllowDynamicProperties]
 class BingRankedKeywordsLiveEntityMainTasksResultMetrics 
 {    
     /**

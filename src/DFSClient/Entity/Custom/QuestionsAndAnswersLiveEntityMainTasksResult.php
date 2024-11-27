@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\QuestionsAndAnswersLiveEntityMainTasksResultItems_without_answers;
 
+#[\AllowDynamicProperties]
 class QuestionsAndAnswersLiveEntityMainTasksResult 
 {    
     /**

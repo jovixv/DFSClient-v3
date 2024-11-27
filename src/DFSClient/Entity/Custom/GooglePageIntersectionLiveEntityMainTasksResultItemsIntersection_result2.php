@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result2Backlinks_info;
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result2Rank_info;
 
+#[\AllowDynamicProperties]
 class GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result2 
 {    
     /**

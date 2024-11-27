@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppListGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
 use DFSClientV3\Entity\Custom\GoogleAppListGetAdvancedResultsByIdEntityMainTasksResultItemsPrice;
 
+#[\AllowDynamicProperties]
 class GoogleAppListGetAdvancedResultsByIdEntityMainTasksResultItems 
 {    
     /**

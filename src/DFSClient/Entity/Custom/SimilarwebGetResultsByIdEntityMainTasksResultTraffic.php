@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTraff
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSources;
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficEstimated;
 
+#[\AllowDynamicProperties]
 class SimilarwebGetResultsByIdEntityMainTasksResultTraffic 
 {    
     /**

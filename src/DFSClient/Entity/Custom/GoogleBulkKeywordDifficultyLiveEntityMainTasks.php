@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleBulkKeywordDifficultyLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleBulkKeywordDifficultyLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleBulkKeywordDifficultyLiveEntityMainTasks 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinuteSerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimitsMinuteSerpTask_get;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoneyLimitsMinuteSerp 
 {    
     /**

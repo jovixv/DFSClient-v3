@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BulkKeywordDifficultyLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BulkKeywordDifficultyLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BulkKeywordDifficultyLiveEntityMainTasks 
 {    
     /**

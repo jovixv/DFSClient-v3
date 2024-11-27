@@ -25,6 +25,7 @@ use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultApp_co
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_app;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultDatabase_rows_count;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasksResult 
 {    
     /**

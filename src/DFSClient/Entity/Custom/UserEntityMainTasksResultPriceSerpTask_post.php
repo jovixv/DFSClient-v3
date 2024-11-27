@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_postPriorit
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_postPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_postPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpTask_post 
 {    
     /**

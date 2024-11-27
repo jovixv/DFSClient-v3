@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyLimits;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatistics;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoney 
 {    
     /**

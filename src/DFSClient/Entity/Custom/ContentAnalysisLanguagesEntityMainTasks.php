@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentAnalysisLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisLanguagesEntityMainTasks 
 {    
     /**

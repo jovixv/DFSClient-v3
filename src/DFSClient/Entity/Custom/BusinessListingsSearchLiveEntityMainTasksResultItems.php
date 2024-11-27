@@ -13,6 +13,7 @@ use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsLocal_business_links;
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResultItemsContact_info;
 
+#[\AllowDynamicProperties]
 class BusinessListingsSearchLiveEntityMainTasksResultItems 
 {    
     /**

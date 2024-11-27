@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisLocationsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentAnalysisLocationsEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisLocationsEntityMainTasks 
 {    
     /**

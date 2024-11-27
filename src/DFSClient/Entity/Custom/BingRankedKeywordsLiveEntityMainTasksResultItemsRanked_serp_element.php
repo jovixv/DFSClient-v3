@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item;
 
+#[\AllowDynamicProperties]
 class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_element 
 {    
     /**

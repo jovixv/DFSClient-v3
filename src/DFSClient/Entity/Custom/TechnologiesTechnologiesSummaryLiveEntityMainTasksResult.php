@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\TechnologiesTechnologiesSummaryLiveEntityMainTasks
 use DFSClientV3\Entity\Custom\TechnologiesTechnologiesSummaryLiveEntityMainTasksResultContent_languages;
 use DFSClientV3\Entity\Custom\TechnologiesTechnologiesSummaryLiveEntityMainTasksResultKeywords;
 
+#[\AllowDynamicProperties]
 class TechnologiesTechnologiesSummaryLiveEntityMainTasksResult 
 {    
     /**

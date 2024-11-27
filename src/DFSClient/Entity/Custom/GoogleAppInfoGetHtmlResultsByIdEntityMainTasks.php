@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppInfoGetHtmlResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleAppInfoGetHtmlResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleAppInfoGetHtmlResultsByIdEntityMainTasks 
 {    
     /**

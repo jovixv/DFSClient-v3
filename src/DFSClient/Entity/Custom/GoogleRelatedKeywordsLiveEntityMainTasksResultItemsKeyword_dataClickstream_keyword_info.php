@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItem
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_infoAge_distribution;
 use DFSClientV3\Entity\Custom\GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class GoogleRelatedKeywordsLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info 
 {    
     /**

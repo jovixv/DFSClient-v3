@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeywo
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeywords_for_categoriesLivePriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeywords_for_categoriesLivePriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsKeywords_for_categoriesLive 
 {    
     /**

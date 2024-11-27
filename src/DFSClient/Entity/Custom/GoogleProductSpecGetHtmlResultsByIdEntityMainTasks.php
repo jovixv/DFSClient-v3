@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleProductSpecGetHtmlResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleProductSpecGetHtmlResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleProductSpecGetHtmlResultsByIdEntityMainTasks 
 {    
     /**

@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AppleAppInfoGetAdvancedResultsByIdEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class AppleAppInfoGetAdvancedResultsByIdEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

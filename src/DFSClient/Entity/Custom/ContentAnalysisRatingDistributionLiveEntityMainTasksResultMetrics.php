@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisRatingDistributionLiveEntityMainTasksResultMetricsSentiment_connotations;
 use DFSClientV3\Entity\Custom\ContentAnalysisRatingDistributionLiveEntityMainTasksResultMetricsConnotation_types;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisRatingDistributionLiveEntityMainTasksResultMetrics 
 {    
     /**

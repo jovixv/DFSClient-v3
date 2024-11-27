@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BusinessListingsCategoriesAggregationLiveEntityMai
 use DFSClientV3\Entity\Custom\BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_attributes;
 use DFSClientV3\Entity\Custom\BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregationTop_place_topics;
 
+#[\AllowDynamicProperties]
 class BusinessListingsCategoriesAggregationLiveEntityMainTasksResultItemsAggregation 
 {    
     /**

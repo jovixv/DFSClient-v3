@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveHtmlPriority
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveHtmlPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveHtmlPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpLiveHtml 
 {    
     /**

@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTask
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionShare;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distributionFun;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultSentiment_connotation_distribution 
 {    
     /**

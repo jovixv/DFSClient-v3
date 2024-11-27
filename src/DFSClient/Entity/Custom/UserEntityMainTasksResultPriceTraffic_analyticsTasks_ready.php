@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTas
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTasks_readyPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTasks_readyPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceTraffic_analyticsTasks_ready 
 {    
     /**

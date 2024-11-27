@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSearch_organicTop_keywords;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsLiveEntityMainTasksResultTrafficSourcesSearch_organic 
 {    
     /**

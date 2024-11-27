@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageGetSummaryByIdEntityMainTasksResultPage_metricsChecks;
 
+#[\AllowDynamicProperties]
 class OnPageGetSummaryByIdEntityMainTasksResultPage_metrics 
 {    
     /**

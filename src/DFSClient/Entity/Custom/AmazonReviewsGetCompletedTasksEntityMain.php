@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AmazonReviewsGetCompletedTasksEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class AmazonReviewsGetCompletedTasksEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

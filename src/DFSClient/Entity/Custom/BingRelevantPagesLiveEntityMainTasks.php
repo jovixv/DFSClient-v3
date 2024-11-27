@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingRelevantPagesLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingRelevantPagesLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingRelevantPagesLiveEntityMainTasks 
 {    
     /**

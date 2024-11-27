@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsLocat
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsLocations_and_languagesPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsLocations_and_languagesPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsLocations_and_languages 
 {    
     /**

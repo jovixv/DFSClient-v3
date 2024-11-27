@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\OnPageGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class OnPageGetCompletedTasksEntityMainTasks 
 {    
     /**

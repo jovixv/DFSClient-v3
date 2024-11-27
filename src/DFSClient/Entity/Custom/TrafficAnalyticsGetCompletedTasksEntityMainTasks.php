@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsGetCompletedTasksEntityMainTasks 
 {    
     /**

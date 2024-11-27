@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class BingDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info 
 {    
     /**

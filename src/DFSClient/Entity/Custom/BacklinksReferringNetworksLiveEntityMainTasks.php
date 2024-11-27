@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BacklinksReferringNetworksLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BacklinksReferringNetworksLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BacklinksReferringNetworksLiveEntityMainTasks 
 {    
     /**

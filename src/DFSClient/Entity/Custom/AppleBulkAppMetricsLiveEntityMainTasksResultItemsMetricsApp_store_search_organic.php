@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class AppleBulkAppMetricsLiveEntityMainTasksResultItemsMetricsApp_store_search_organic 
 {    
     /**

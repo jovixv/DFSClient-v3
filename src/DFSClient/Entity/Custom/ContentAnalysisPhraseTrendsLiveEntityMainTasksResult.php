@@ -11,6 +11,7 @@ use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksResu
 use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksResultCountries;
 use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksResultLanguages;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisPhraseTrendsLiveEntityMainTasksResult 
 {    
     /**

@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsSer
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsSearch_intent_info;
 
+#[\AllowDynamicProperties]
 class GoogleTopSearchesLiveEntityMainTasksResultItems 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonAsinGetHtmlResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AmazonAsinGetHtmlResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AmazonAsinGetHtmlResultsByIdEntityMainTasks 
 {    
     /**

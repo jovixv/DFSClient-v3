@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\RelatedKeywordsEntityMainTasksResultItemsKeyword_dataKeyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class RelatedKeywordsEntityMainTasksResultItemsKeyword_dataKeyword_info 
 {    
     /**

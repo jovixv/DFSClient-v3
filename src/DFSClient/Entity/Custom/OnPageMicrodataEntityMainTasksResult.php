@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksResultCrawl_status;
 use DFSClientV3\Entity\Custom\OnPageMicrodataEntityMainTasksResultTest_summary;
 
+#[\AllowDynamicProperties]
 class OnPageMicrodataEntityMainTasksResult 
 {    
     /**

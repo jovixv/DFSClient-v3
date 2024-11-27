@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTasks_r
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTasks_readyPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceKeywords_dataTasks_readyPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceKeywords_dataTasks_ready 
 {    
     /**

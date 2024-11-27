@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrorsPriori
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrorsPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixErrorsPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceAppendixErrors 
 {    
     /**

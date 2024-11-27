@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPeople_also_searchRating;
 
+#[\AllowDynamicProperties]
 class BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search 
 {    
     /**

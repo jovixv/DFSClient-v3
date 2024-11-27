@@ -16,6 +16,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteDatafors
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteDataforseo_labsSerp_competitors;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteDataforseo_labsSubdomains;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesLimitsMinuteDataforseo_labs 
 {    
     /**

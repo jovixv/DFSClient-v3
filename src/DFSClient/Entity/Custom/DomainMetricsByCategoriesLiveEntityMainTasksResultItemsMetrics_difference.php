@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResult
 use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_differenceFeatured_snippet;
 use DFSClientV3\Entity\Custom\DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_differenceLocal_pack;
 
+#[\AllowDynamicProperties]
 class DomainMetricsByCategoriesLiveEntityMainTasksResultItemsMetrics_difference 
 {    
     /**

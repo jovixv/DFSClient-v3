@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultAudience;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTraffic;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultSites;
 
+#[\AllowDynamicProperties]
 class SimilarwebLiveEntityMainTasksResult 
 {    
     /**

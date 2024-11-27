@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficCo
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficSources;
 use DFSClientV3\Entity\Custom\TrafficAnalyticsLiveEntityMainTasksResultTrafficEstimated;
 
+#[\AllowDynamicProperties]
 class TrafficAnalyticsLiveEntityMainTasksResultTraffic 
 {    
     /**

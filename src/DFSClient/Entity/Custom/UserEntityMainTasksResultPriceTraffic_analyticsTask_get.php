@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTas
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTask_getPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceTraffic_analyticsTask_getPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceTraffic_analyticsTask_get 
 {    
     /**

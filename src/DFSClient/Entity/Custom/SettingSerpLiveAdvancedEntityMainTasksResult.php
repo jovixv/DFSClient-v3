@@ -31,6 +31,7 @@ use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsS
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPopular_products;
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsPodcasts;
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResult 
 {    
     /**

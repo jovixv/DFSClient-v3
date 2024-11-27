@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingAdsSearchVolumeLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingAdsSearchVolumeLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingAdsSearchVolumeLiveEntityMainTasks 
 {    
     /**

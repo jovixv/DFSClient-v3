@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleBulkAppMetricsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AppleBulkAppMetricsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AppleBulkAppMetricsLiveEntityMainTasks 
 {    
     /**

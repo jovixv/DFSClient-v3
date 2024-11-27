@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class GoogleTopSearchesLiveEntityMainTasksResultItemsKeyword_info 
 {    
     /**

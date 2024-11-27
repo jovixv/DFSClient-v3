@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\KeywordSuggestionsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\KeywordSuggestionsEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class KeywordSuggestionsEntityMainTasks 
 {    
     /**

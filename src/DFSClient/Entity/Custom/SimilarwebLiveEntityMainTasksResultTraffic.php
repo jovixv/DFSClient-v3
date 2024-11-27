@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficCountrie
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficSources;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResultTrafficEstimated;
 
+#[\AllowDynamicProperties]
 class SimilarwebLiveEntityMainTasksResultTraffic 
 {    
     /**

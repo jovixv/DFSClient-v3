@@ -10,6 +10,7 @@ use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasks
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesContent;
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologiesMarketing;
 
+#[\AllowDynamicProperties]
 class TechnologiesDomainsByTechnologyLiveEntityMainTasksResultItemsTechnologies 
 {    
     /**

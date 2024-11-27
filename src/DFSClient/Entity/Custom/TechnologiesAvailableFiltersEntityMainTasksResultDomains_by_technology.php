@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class TechnologiesAvailableFiltersEntityMainTasksResultDomains_by_technology 
 {    
     /**

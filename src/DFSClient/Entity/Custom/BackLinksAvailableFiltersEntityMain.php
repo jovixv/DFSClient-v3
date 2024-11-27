@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BackLinksAvailableFiltersEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class BackLinksAvailableFiltersEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

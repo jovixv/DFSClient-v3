@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItems
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info;
 
+#[\AllowDynamicProperties]
 class GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item 
 {    
     /**

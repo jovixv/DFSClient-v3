@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ReviewsLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ReviewsLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ReviewsLanguagesEntityMainTasks 
 {    
     /**

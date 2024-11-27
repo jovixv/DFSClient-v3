@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\CompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsOrganic;
 use DFSClientV3\Entity\Custom\CompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsPaid;
 
+#[\AllowDynamicProperties]
 class CompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metrics 
 {    
     /**

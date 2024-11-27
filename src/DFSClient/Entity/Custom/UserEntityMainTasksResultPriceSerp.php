@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_get;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_post;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTasks_ready;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerp 
 {    
     /**

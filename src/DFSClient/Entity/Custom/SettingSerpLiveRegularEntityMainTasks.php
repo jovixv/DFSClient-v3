@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SettingSerpLiveRegularEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SettingSerpLiveRegularEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveRegularEntityMainTasks 
 {    
     /**

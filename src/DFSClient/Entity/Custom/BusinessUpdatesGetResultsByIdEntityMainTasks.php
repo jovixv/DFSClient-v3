@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessUpdatesGetResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BusinessUpdatesGetResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BusinessUpdatesGetResultsByIdEntityMainTasks 
 {    
     /**

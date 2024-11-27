@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TechnologiesTechnologiesSummaryLiveEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class TechnologiesTechnologiesSummaryLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

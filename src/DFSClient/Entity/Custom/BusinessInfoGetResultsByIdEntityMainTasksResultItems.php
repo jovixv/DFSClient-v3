@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsPopular_times;
 use DFSClientV3\Entity\Custom\BusinessInfoGetResultsByIdEntityMainTasksResultItemsDirectory;
 
+#[\AllowDynamicProperties]
 class BusinessInfoGetResultsByIdEntityMainTasksResultItems 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ExploreGetResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ExploreGetResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ExploreGetResultsByIdEntityMainTasks 
 {    
     /**

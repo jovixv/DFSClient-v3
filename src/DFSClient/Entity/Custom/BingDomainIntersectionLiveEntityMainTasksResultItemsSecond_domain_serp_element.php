@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_elementRank_changes;
 
+#[\AllowDynamicProperties]
 class BingDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_element 
 {    
     /**

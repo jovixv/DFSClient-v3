@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_gender_distribution;
 use DFSClientV3\Entity\Custom\GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsLocal_packClickstream_age_distribution;
 
+#[\AllowDynamicProperties]
 class GoogleRelevantPagesLiveEntityMainTasksResultItemsMetricsLocal_pack 
 {    
     /**

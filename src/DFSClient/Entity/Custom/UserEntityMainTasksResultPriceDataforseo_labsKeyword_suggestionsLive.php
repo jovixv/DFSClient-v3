@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeywo
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeyword_suggestionsLivePriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsKeyword_suggestionsLivePriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsKeyword_suggestionsLive 
 {    
     /**

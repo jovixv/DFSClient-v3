@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultIte
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_infoAge_distribution;
 use DFSClientV3\Entity\Custom\GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataClickstream_keyword_info 
 {    
     /**

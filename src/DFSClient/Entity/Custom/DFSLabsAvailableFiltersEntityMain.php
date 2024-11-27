@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

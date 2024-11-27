@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\TechnologiesDomainsByTechnologyLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class TechnologiesDomainsByTechnologyLiveEntityMainTasks 
 {    
     /**

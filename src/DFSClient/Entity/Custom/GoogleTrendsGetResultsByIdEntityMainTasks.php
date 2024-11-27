@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleTrendsGetResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleTrendsGetResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleTrendsGetResultsByIdEntityMainTasks 
 {    
     /**

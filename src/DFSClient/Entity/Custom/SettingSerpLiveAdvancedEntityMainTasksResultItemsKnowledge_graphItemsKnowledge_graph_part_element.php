@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graphItemsKnowledge_graph_part_elementLinks;
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsKnowledge_graphItemsKnowledge_graph_part_element 
 {    
     /**

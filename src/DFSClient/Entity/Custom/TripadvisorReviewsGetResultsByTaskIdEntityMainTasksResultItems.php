@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\TripadvisorReviewsGetResultsByTaskIdEntityMainTask
 use DFSClientV3\Entity\Custom\TripadvisorReviewsGetResultsByTaskIdEntityMainTasksResultItemsUser_profile;
 use DFSClientV3\Entity\Custom\TripadvisorReviewsGetResultsByTaskIdEntityMainTasksResultItemsResponses;
 
+#[\AllowDynamicProperties]
 class TripadvisorReviewsGetResultsByTaskIdEntityMainTasksResultItems 
 {    
     /**

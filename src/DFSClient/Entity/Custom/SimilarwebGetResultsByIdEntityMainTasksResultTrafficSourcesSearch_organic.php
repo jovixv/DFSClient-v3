@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_organicTop_keywords;
 
+#[\AllowDynamicProperties]
 class SimilarwebGetResultsByIdEntityMainTasksResultTrafficSourcesSearch_organic 
 {    
     /**

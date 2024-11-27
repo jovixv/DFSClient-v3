@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsDomai
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsDomain_rank_overviewLivePriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsDomain_rank_overviewLivePriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsDomain_rank_overviewLive 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasks 
 {    
     /**

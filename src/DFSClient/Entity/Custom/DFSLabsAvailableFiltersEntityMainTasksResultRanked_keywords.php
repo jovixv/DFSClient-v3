@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultRanked
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultRanked_keywordsBing;
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultRanked_keywordsAmazon;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasksResultRanked_keywords 
 {    
     /**

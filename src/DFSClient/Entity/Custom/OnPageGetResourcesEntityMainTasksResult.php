@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsScript
 use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsImage;
 use DFSClientV3\Entity\Custom\OnPageGetResourcesEntityMainTasksResultItemsBroken;
 
+#[\AllowDynamicProperties]
 class OnPageGetResourcesEntityMainTasksResult
 {
     /**

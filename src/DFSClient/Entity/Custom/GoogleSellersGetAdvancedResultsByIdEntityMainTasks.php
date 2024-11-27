@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleSellersGetAdvancedResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleSellersGetAdvancedResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleSellersGetAdvancedResultsByIdEntityMainTasks 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BusinessListingsSearchLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BusinessListingsSearchLiveEntityMainTasks 
 {    
     /**

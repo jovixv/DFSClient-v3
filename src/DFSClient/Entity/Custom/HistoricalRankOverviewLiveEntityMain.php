@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\HistoricalRankOverviewLiveEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class HistoricalRankOverviewLiveEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

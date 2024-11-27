@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BackLinksPageIntersectionEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class BackLinksPageIntersectionEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

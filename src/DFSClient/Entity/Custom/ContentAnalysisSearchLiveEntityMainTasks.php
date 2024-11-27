@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentAnalysisSearchLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSearchLiveEntityMainTasks 
 {    
     /**

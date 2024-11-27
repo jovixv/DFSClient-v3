@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMai
 use DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsLocal_pack;
 use DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

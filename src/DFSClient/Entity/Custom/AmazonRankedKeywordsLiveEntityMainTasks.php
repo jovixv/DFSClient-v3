@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonRankedKeywordsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AmazonRankedKeywordsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AmazonRankedKeywordsLiveEntityMainTasks 
 {    
     /**

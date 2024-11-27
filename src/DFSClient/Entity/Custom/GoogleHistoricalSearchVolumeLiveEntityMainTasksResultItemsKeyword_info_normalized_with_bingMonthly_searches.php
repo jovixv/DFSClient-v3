@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalSearchVolumeLiveEntityMainTasksResultItemsKeyword_info_normalized_with_bingMonthly_searches 
 {    
     /**

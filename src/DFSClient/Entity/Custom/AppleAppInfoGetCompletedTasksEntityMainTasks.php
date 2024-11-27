@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppInfoGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AppleAppInfoGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AppleAppInfoGetCompletedTasksEntityMainTasks 
 {    
     /**

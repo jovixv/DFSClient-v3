@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class OnPageContentParsingLiveEntityMainTasks 
 {    
     /**

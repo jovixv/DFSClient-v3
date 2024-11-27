@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
 use DFSClientV3\Entity\Custom\AppleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile;
 
+#[\AllowDynamicProperties]
 class AppleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItems 
 {    
     /**

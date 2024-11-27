@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRa
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemBacklinks_info;
 use DFSClientV3\Entity\Custom\BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_itemRank_info;
 
+#[\AllowDynamicProperties]
 class BingRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item 
 {    
     /**

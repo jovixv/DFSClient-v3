@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics;
 use DFSClientV3\Entity\Custom\GoogleAppCompetitorsLiveEntityMainTasksResultItemsFull_metrics;
 
+#[\AllowDynamicProperties]
 class GoogleAppCompetitorsLiveEntityMainTasksResultItems 
 {    
     /**

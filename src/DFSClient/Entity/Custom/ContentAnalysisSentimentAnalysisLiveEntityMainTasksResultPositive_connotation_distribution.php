@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTask
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegative;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNeutral;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distribution 
 {    
     /**

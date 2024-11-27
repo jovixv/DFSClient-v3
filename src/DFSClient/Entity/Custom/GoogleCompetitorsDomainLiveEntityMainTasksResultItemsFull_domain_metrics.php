@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultIt
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsLocal_pack;
 use DFSClientV3\Entity\Custom\GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metricsFeatured_snippet;
 
+#[\AllowDynamicProperties]
 class GoogleCompetitorsDomainLiveEntityMainTasksResultItemsFull_domain_metrics 
 {    
     /**

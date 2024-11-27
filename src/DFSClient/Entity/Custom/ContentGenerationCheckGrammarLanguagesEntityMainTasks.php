@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentGenerationCheckGrammarLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentGenerationCheckGrammarLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentGenerationCheckGrammarLanguagesEntityMainTasks 
 {    
     /**

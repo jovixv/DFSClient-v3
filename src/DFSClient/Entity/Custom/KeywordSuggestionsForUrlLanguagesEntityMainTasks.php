@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\KeywordSuggestionsForUrlLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\KeywordSuggestionsForUrlLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class KeywordSuggestionsForUrlLanguagesEntityMainTasks 
 {    
     /**

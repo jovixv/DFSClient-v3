@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleCategoriesForKeywordsLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleCategoriesForKeywordsLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleCategoriesForKeywordsLanguagesEntityMainTasks 
 {    
     /**

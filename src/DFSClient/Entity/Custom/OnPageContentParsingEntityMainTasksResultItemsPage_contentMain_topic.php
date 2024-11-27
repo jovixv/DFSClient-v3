@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMainTasksResultItemsPage_contentMain_topicPrimary_content;
 use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMainTasksResultItemsPage_contentMain_topicSecondary_content;
 
+#[\AllowDynamicProperties]
 class OnPageContentParsingEntityMainTasksResultItemsPage_contentMain_topic 
 {    
     /**

@@ -18,6 +18,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsRelev
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSerp_competitors;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSubdomains;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labs 
 {    
     /**

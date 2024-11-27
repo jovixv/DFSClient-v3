@@ -11,6 +11,7 @@ use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTask
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegativeCountries;
 use DFSClientV3\Entity\Custom\ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegativeLanguages;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisSentimentAnalysisLiveEntityMainTasksResultPositive_connotation_distributionNegative 
 {    
     /**

@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsMergedDataLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DataforseoTrendsMergedDataLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DataforseoTrendsMergedDataLiveEntityMainTasks 
 {    
     /**

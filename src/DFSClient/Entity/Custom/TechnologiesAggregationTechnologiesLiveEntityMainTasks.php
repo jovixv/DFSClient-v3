@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\TechnologiesAggregationTechnologiesLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\TechnologiesAggregationTechnologiesLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class TechnologiesAggregationTechnologiesLiveEntityMainTasks 
 {    
     /**

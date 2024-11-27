@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class KeywordSuggestionsForUrlGetCompletedTasksEntityMainTasks 
 {    
     /**

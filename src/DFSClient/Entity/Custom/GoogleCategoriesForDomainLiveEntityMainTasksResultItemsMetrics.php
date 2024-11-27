@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResult
 use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetricsLocal_pack;
 
+#[\AllowDynamicProperties]
 class GoogleCategoriesForDomainLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

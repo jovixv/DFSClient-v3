@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteSerpLive;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinuteSerpTask_get;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesStatisticsMinuteSerp 
 {    
     /**

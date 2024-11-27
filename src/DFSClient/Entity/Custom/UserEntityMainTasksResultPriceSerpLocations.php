@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocationsPriorit
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocationsPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLocationsPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpLocations 
 {    
     /**

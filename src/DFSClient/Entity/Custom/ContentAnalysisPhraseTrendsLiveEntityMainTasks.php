@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentAnalysisPhraseTrendsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentAnalysisPhraseTrendsLiveEntityMainTasks 
 {    
     /**

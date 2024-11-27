@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\WhoisAvailableFiltersEntityMainTasksData;
 use DFSClientV3\Entity\Custom\WhoisAvailableFiltersEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class WhoisAvailableFiltersEntityMainTasks 
 {    
     /**

@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDaySerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayTraffic_analytics;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultMoneyStatisticsDayReviews;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultMoneyStatisticsDay 
 {    
     /**

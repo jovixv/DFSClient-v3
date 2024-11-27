@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\BackLinksBulkPagesSummaryEntityMainTasksResultItem
 use DFSClientV3\Entity\Custom\BackLinksBulkPagesSummaryEntityMainTasksResultItemsReferring_links_semantic_locations;
 use DFSClientV3\Entity\Custom\BackLinksBulkPagesSummaryEntityMainTasksResultItemsReferring_links_countries;
 
+#[\AllowDynamicProperties]
 class BackLinksBulkPagesSummaryEntityMainTasksResultItems 
 {    
     /**

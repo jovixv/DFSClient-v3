@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingRelatedKeywordsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingRelatedKeywordsLiveEntityMainTasks 
 {    
     /**

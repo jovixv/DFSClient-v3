@@ -9,6 +9,7 @@ use DFSClientV3\Entity\Custom\AudienceEstimationGetResultsByIdEntityMainTasksRes
 use DFSClientV3\Entity\Custom\AudienceEstimationGetResultsByIdEntityMainTasksResultEst_cost_per_event;
 use DFSClientV3\Entity\Custom\AudienceEstimationGetResultsByIdEntityMainTasksResultEst_ctr;
 
+#[\AllowDynamicProperties]
 class AudienceEstimationGetResultsByIdEntityMainTasksResult 
 {    
     /**

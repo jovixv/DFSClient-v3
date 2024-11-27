@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsRating;
 use DFSClientV3\Entity\Custom\GoogleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItemsUser_profile;
 
+#[\AllowDynamicProperties]
 class GoogleAppReviewsGetAdvancedResultsByIdEntityMainTasksResultItems 
 {    
     /**

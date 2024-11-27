@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AppleAppInfoSetTaskEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class AppleAppInfoSetTaskEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItems
 use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topic;
 use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentSecondary_topic;
 
+#[\AllowDynamicProperties]
 class OnPageContentParsingLiveEntityMainTasksResultItemsPage_content 
 {    
     /**

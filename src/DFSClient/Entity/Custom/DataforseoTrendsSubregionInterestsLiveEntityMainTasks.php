@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DataforseoTrendsSubregionInterestsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DataforseoTrendsSubregionInterestsLiveEntityMainTasks 
 {    
     /**

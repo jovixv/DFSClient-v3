@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GetSerpResultsByTaskIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GetSerpResultsByTaskIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GetSerpResultsByTaskIdEntityMainTasks 
 {    
     /**

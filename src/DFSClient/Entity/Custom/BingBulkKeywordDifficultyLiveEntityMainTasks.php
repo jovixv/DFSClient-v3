@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingBulkKeywordDifficultyLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingBulkKeywordDifficultyLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingBulkKeywordDifficultyLiveEntityMainTasks 
 {    
     /**

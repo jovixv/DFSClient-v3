@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\WhoisOverviewLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\WhoisOverviewLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class WhoisOverviewLiveEntityMainTasks 
 {    
     /**

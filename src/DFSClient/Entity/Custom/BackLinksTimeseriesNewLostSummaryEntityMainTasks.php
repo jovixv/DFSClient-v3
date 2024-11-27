@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BackLinksTimeseriesNewLostSummaryEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BackLinksTimeseriesNewLostSummaryEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BackLinksTimeseriesNewLostSummaryEntityMainTasks 
 {    
     /**

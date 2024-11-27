@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSerp_
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLivePriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLivePriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceDataforseo_labsSerp_competitorsLive 
 {    
     /**

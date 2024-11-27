@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleDomainRankOverviewLiveEntityMainTasksResultItemsMetricsOrganic;
 use DFSClientV3\Entity\Custom\GoogleDomainRankOverviewLiveEntityMainTasksResultItemsMetricsPaid;
 
+#[\AllowDynamicProperties]
 class GoogleDomainRankOverviewLiveEntityMainTasksResultItemsMetrics 
 {    
     /**

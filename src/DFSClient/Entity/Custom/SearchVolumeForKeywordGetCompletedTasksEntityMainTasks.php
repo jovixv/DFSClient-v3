@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SearchVolumeForKeywordGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SearchVolumeForKeywordGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SearchVolumeForKeywordGetCompletedTasksEntityMainTasks 
 {    
     /**

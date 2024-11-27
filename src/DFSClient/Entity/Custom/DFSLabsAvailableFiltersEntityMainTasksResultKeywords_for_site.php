@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_siteGoogle;
 
+#[\AllowDynamicProperties]
 class DFSLabsAvailableFiltersEntityMainTasksResultKeywords_for_site 
 {    
     /**

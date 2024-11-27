@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ErrorsEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ErrorsEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ErrorsEntityMainTasks 
 {    
     /**

@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class GoogleRelatedKeywordsLiveEntityMainTasksResultSeed_keyword_dataKeyword_info_normalized_with_bingMonthly_searches 
 {    
     /**

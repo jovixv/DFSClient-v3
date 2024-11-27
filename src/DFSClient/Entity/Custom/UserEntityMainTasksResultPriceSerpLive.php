@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveHtml;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveRegular;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpLiveAdvanced;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpLive 
 {    
     /**

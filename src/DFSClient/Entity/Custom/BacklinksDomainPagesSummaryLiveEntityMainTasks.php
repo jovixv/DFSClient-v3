@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BacklinksDomainPagesSummaryLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BacklinksDomainPagesSummaryLiveEntityMainTasks 
 {    
     /**

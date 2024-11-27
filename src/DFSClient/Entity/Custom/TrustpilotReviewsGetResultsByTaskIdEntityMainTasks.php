@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\TrustpilotReviewsGetResultsByTaskIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\TrustpilotReviewsGetResultsByTaskIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class TrustpilotReviewsGetResultsByTaskIdEntityMainTasks 
 {    
     /**

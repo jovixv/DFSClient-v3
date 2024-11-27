@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleHistoricalBulkTrafficEstimationLiveEntityMainTasks 
 {    
     /**

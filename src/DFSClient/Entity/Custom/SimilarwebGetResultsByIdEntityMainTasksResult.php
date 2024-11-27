@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultAudie
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultTraffic;
 use DFSClientV3\Entity\Custom\SimilarwebGetResultsByIdEntityMainTasksResultSites;
 
+#[\AllowDynamicProperties]
 class SimilarwebGetResultsByIdEntityMainTasksResult 
 {    
     /**

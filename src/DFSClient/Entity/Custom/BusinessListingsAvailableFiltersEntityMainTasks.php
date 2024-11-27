@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BusinessListingsAvailableFiltersEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BusinessListingsAvailableFiltersEntityMainTasks 
 {    
     /**

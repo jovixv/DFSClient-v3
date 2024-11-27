@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\BingHistoricalBulkTrafficEstimationLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class BingHistoricalBulkTrafficEstimationLiveEntityMainTasks 
 {    
     /**

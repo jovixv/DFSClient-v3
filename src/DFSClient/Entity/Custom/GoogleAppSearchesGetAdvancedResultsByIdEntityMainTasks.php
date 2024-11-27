@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleAppSearchesGetAdvancedResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleAppSearchesGetAdvancedResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleAppSearchesGetAdvancedResultsByIdEntityMainTasks 
 {    
     /**

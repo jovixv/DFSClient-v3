@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonReviewsGetHtmlResultsByIdEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AmazonReviewsGetHtmlResultsByIdEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AmazonReviewsGetHtmlResultsByIdEntityMainTasks 
 {    
     /**

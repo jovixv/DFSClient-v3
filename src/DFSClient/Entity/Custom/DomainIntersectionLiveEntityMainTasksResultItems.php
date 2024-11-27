@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKe
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_element;
 
+#[\AllowDynamicProperties]
 class DomainIntersectionLiveEntityMainTasksResultItems 
 {    
     /**

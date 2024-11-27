@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageContentParsingEntityMainTasksResultItemsPage_contentHeaderSecondary_content;
 
+#[\AllowDynamicProperties]
 class OnPageContentParsingEntityMainTasksResultItemsPage_contentHeader 
 {    
     /**

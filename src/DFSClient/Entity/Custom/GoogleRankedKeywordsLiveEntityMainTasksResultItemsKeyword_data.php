@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItems
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
+#[\AllowDynamicProperties]
 class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

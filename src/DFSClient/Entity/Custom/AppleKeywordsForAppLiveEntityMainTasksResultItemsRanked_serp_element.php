@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item;
 
+#[\AllowDynamicProperties]
 class AppleKeywordsForAppLiveEntityMainTasksResultItemsRanked_serp_element 
 {    
     /**

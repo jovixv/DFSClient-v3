@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SerpAiSummaryEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class SerpAiSummaryEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

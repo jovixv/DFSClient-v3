@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AdsTrafficByPlatformsGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AdsTrafficByPlatformsGetCompletedTasksEntityMainTasks 
 {    
     /**

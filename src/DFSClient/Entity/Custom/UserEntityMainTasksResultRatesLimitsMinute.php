@@ -8,6 +8,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteKeywords
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteSerp;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesLimitsMinuteTraffic_analytics;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesLimitsMinute 
 {    
     /**

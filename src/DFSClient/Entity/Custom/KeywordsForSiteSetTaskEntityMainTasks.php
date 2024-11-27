@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\KeywordsForSiteSetTaskEntityMainTasksData;
 
+#[\AllowDynamicProperties]
 class KeywordsForSiteSetTaskEntityMainTasks 
 {    
     /**

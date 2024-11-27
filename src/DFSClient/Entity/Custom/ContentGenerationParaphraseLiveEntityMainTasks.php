@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentGenerationParaphraseLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentGenerationParaphraseLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentGenerationParaphraseLiveEntityMainTasks 
 {    
     /**

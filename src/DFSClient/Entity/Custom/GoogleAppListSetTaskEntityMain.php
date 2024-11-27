@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleAppListSetTaskEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class GoogleAppListSetTaskEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

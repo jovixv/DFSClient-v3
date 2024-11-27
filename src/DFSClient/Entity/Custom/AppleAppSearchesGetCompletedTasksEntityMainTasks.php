@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppSearchesGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AppleAppSearchesGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AppleAppSearchesGetCompletedTasksEntityMainTasks 
 {    
     /**

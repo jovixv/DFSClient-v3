@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SerpScreenshotEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SerpScreenshotEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SerpScreenshotEntityMainTasks 
 {    
     /**

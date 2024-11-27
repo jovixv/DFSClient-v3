@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AppleAppListingsAvailableFiltersEntityMainTasksResultSearch;
 use DFSClientV3\Entity\Custom\AppleAppListingsAvailableFiltersEntityMainTasksResultCategories_aggregation;
 
+#[\AllowDynamicProperties]
 class AppleAppListingsAvailableFiltersEntityMainTasksResult 
 {    
     /**

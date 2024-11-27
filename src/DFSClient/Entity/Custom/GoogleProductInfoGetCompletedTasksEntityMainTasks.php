@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetCompletedTasksEntityMainTasksData;
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetCompletedTasksEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class GoogleProductInfoGetCompletedTasksEntityMainTasks 
 {    
     /**

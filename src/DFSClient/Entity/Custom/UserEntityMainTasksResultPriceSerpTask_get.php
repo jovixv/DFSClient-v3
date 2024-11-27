@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getAdvanced
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getHtml;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceSerpTask_getRegular;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceSerpTask_get 
 {    
     /**

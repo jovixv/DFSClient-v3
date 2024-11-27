@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class BingDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_elementRank_changes 
 {    
     /**

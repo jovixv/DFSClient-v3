@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\OnPageGetPagesEntityMainTasksResultItemsBroken;
 use DFSClientV3\Entity\Custom\OnPageGetPagesEntityMainTasksResultItemsRedirect;
 use DFSClientV3\Entity\Custom\OnPageGetPagesEntityMainTasksResultItemsHtml;
 
+#[\AllowDynamicProperties]
 class OnPageGetPagesEntityMainTasksResult
 {
     /**

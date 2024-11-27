@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BingPageIntersectionLiveEntityMainTasksResultItemsIntersection_result1Rank_changes;
 
+#[\AllowDynamicProperties]
 class BingPageIntersectionLiveEntityMainTasksResultItemsIntersection_result1 
 {    
     /**

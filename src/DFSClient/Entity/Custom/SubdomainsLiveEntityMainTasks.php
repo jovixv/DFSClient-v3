@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SubdomainsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SubdomainsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SubdomainsLiveEntityMainTasks 
 {    
     /**

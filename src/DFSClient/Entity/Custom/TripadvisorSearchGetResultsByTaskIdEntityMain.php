@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\TripadvisorSearchGetResultsByTaskIdEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class TripadvisorSearchGetResultsByTaskIdEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**

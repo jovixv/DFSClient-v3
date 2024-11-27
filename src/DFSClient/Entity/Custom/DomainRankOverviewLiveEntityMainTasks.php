@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\DomainRankOverviewLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\DomainRankOverviewLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class DomainRankOverviewLiveEntityMainTasks 
 {    
     /**

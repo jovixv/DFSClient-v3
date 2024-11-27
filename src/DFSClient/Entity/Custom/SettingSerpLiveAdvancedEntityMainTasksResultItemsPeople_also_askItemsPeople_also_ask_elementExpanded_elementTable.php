@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsPeople_also_askItemsPeople_also_ask_elementExpanded_elementTable 
 {    
     /**

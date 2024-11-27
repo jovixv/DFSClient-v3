@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SearchVolumeLiveEntityMainTasksResultMonthly_searches;
 
+#[\AllowDynamicProperties]
 class SearchVolumeLiveEntityMainTasksResult 
 {    
     /**

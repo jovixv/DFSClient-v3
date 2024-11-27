@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ContentGenerationGenerateMetaTagsLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ContentGenerationGenerateMetaTagsLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ContentGenerationGenerateMetaTagsLiveEntityMainTasks 
 {    
     /**

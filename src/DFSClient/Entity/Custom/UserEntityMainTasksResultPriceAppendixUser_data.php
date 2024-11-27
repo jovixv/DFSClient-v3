@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_dataPri
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_dataPriority_normal;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultPriceAppendixUser_dataPriority_high;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultPriceAppendixUser_data 
 {    
     /**

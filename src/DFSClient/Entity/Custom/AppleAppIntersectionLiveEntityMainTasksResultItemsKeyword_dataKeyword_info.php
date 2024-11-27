@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class AppleAppIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_info 
 {    
     /**

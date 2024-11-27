@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsCli
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_infoAge_distribution;
 use DFSClientV3\Entity\Custom\GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_infoMonthly_searches;
 
+#[\AllowDynamicProperties]
 class GoogleTopSearchesLiveEntityMainTasksResultItemsClickstream_keyword_info 
 {    
     /**

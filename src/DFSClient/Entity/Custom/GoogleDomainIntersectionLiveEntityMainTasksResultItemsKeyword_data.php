@@ -12,6 +12,7 @@ use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultI
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataAvg_backlinks_info;
 use DFSClientV3\Entity\Custom\GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSearch_intent_info;
 
+#[\AllowDynamicProperties]
 class GoogleDomainIntersectionLiveEntityMainTasksResultItemsKeyword_data 
 {    
     /**

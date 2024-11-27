@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\AmazonProductRankOverviewLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\AmazonProductRankOverviewLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class AmazonProductRankOverviewLiveEntityMainTasks 
 {    
     /**

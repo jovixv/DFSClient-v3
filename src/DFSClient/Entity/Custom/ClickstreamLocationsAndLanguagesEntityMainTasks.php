@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\ClickstreamLocationsAndLanguagesEntityMainTasksData;
 use DFSClientV3\Entity\Custom\ClickstreamLocationsAndLanguagesEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class ClickstreamLocationsAndLanguagesEntityMainTasks 
 {    
     /**

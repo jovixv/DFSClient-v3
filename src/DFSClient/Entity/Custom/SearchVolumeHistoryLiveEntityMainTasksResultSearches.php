@@ -7,6 +7,7 @@ use DFSClientV3\Entity\Custom\SearchVolumeHistoryLiveEntityMainTasksResultSearch
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryLiveEntityMainTasksResultSearchesMobile;
 use DFSClientV3\Entity\Custom\SearchVolumeHistoryLiveEntityMainTasksResultSearchesTablet;
 
+#[\AllowDynamicProperties]
 class SearchVolumeHistoryLiveEntityMainTasksResultSearches 
 {    
     /**

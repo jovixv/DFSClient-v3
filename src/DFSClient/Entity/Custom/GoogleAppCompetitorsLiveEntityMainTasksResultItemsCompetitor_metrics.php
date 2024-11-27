@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\GoogleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metricsGoogle_play_search_organic;
 
+#[\AllowDynamicProperties]
 class GoogleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metrics 
 {    
     /**

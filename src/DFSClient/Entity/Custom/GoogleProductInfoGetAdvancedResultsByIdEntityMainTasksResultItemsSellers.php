@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainT
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersPrice;
 use DFSClientV3\Entity\Custom\GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellersDelivery_info;
 
+#[\AllowDynamicProperties]
 class GoogleProductInfoGetAdvancedResultsByIdEntityMainTasksResultItemsSellers 
 {    
     /**

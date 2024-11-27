@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsDay;
 use DFSClientV3\Entity\Custom\UserEntityMainTasksResultRatesStatisticsMinute;
 
+#[\AllowDynamicProperties]
 class UserEntityMainTasksResultRatesStatistics 
 {    
     /**

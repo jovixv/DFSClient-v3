@@ -5,6 +5,7 @@ namespace DFSClientV3\Entity\Custom;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksData;
 use DFSClientV3\Entity\Custom\SimilarwebLiveEntityMainTasksResult;
 
+#[\AllowDynamicProperties]
 class SimilarwebLiveEntityMainTasks 
 {    
     /**

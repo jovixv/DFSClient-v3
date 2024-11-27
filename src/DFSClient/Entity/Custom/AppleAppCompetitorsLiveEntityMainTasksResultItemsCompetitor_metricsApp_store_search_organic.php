@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 
+#[\AllowDynamicProperties]
 class AppleAppCompetitorsLiveEntityMainTasksResultItemsCompetitor_metricsApp_store_search_organic 
 {    
     /**

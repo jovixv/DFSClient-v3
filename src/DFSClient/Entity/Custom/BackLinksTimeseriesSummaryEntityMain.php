@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BackLinksTimeseriesSummaryEntityMainTasks;
 
+#[\AllowDynamicProperties]
 class BackLinksTimeseriesSummaryEntityMain extends \DFSClientV3\Models\ResponseModel 
 {    
     /**
