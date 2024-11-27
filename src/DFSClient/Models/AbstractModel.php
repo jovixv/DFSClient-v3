@@ -413,7 +413,7 @@ abstract class AbstractModel
         if ($this->postId != null)
             $payload['json'][$this->postId] = $this->payload;
 
-        $payload['headers'] = $this->config['headers'];
+	    $payload['headers'] = $this->config['headers'] ?? null;
 
         $res = $http->sendSingleRequest($this->method, $this->requestToFunction, $payload);
         return $res;
