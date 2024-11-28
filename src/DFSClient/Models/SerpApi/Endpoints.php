@@ -11,11 +11,12 @@ class Endpoints extends AbstractModel
 	protected $pathToMainData = 'tasks->{$postID}->result';
 	protected $requestToFunction = 'serp/endpoints';
 	protected $resultShouldBeTransformedToArray = true;
-	
-	public function get(): \DFSClientV3\Entity\Custom\EndpointsModelEntityMain
+
+	/**
+	 * @return \DFSClientV3\Entity\Custom\EndpointsEntityMain
+	 */
+	public function get(): \DFSClientV3\Entity\Custom\EndpointsEntityMain
 	{
 		return parent::get();
 	}
-	
-	
 }
