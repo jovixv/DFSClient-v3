@@ -80,6 +80,7 @@ class OnPageGetDuplicateContent extends AbstractModel
     }
 
     /**
+     * @deprecated Not supported.
      * @param array $filter
      * @return $this
      */
