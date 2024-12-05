@@ -6,7 +6,8 @@ use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKe
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataImpressions_info;
 use DFSClientV3\Entity\Custom\DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info;
 
-class DomainIntersectionLiveEntityMainTasksResultItemsKeyword_data 
+#[\AllowDynamicProperties]
+class DomainIntersectionLiveEntityMainTasksResultItemsKeyword_data
 {    
     /**
     * @var null|string $keyword;

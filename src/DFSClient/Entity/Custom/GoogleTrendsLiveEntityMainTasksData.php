@@ -3,7 +3,8 @@
 namespace DFSClientV3\Entity\Custom;
 
 
-class GoogleTrendsLiveEntityMainTasksData 
+#[\AllowDynamicProperties]
+class GoogleTrendsLiveEntityMainTasksData
 {    
     /**
     * @var null|string $api;

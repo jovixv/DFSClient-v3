@@ -2,7 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
-
+#[\AllowDynamicProperties]
 class DomainIntersectionLiveEntityMainTasksResultItemsKeyword_dataSerp_info 
 {    
     /**
