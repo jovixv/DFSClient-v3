@@ -28,7 +28,7 @@ class SearchVolumeLiveEntityMainTasksResult
     public $competition = null;
 
     /**
-    * @var null|integer $cpc;
+    * @var null|double $cpc;
     */
     public $cpc = null;
 
