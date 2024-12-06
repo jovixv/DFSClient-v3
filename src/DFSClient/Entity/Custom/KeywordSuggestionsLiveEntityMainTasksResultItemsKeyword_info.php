@@ -18,6 +18,11 @@ class KeywordSuggestionsLiveEntityMainTasksResultItemsKeyword_info
     public $competition = null;
 
     /**
+    * @var null|sting $competition_level;
+    */
+    public $competition_level = null;
+
+    /**
     * @var null|double $cpc;
     */
     public $cpc = null;
