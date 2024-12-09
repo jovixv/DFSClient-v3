@@ -272,6 +272,7 @@ class SettingSerpLiveAdvanced extends AbstractModel
 
 	/**
 	 * for google/organic/live
+	 * for google/ads_search - has a different logic then google/organic/live
 	 * @param string $target
 	 * @return $this
 	 */
@@ -370,6 +371,61 @@ class SettingSerpLiveAdvanced extends AbstractModel
         $this->payload['tag'] = $tag;
         return $this;
     }
+
+	/**
+	 * for google/ads_search
+	 * @param string $platform
+	 * @return $this
+	 */
+	public function setPlatform(string $platform)
+	{
+		$this->payload['platform'] = $platform;
+		return $this;
+	}
+
+	/**
+	 * for google/ads_search
+	 * @param string $format
+	 * @return $this
+	 */
+	public function setFormat(string $format)
+	{
+		$this->payload['format'] = $format;
+		return $this;
+	}
+
+	/**
+	 * for google/ads_search
+	 * @param string $dateFrom
+	 * @return $this
+	 */
+	public function setDateFrom(string $dateFrom)
+	{
+		$this->payload['date_from'] = $dateFrom;
+		return $this;
+	}
+
+	/**
+	 * for google/ads_search
+	 * @param string $dateTo
+	 * @return $this
+	 */
+	public function setDateTo(string $dateTo)
+	{
+		$this->payload['date_to'] = $dateTo;
+		return $this;
+	}
+
+	/**
+	 * for google/ads_search
+	 * @param array $advertiserIds
+	 * @return $this
+	 */
+	public function setAdvertiserIds(array $advertiserIds)
+	{
+		$this->payload['advertiser_ids'] = $advertiserIds;
+		return $this;
+	}
 
     /**
      * @param string $seType
