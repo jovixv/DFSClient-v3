@@ -56,5 +56,10 @@ class GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_
     * @var array|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_infoMonthly_searches[] $monthly_searches;
     */
     public $monthly_searches = [];
+
+	/**
+	 * @var null|GoogleKeywordSuggestionsLiveEntityMainTasksResultSeed_keyword_dataKeyword_infoSearch_volume_trend $search_volume_trend;
+	 */
+	public $search_volume_trend = null;
  
 }

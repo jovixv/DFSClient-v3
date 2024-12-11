@@ -56,5 +56,10 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_info
     * @var array|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_infoMonthly_searches[] $monthly_searches;
     */
     public $monthly_searches = [];
+
+	/**
+	 * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultItemsKeyword_dataKeyword_infoSearch_volume_trend $search_volume_trend;
+	 */
+	public $search_volume_trend = null;
  
 }

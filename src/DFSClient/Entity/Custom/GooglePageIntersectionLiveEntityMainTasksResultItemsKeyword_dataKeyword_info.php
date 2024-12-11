@@ -56,5 +56,10 @@ class GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_in
     * @var array|GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_infoMonthly_searches[] $monthly_searches;
     */
     public $monthly_searches = [];
+
+	/**
+	 * @var null|GooglePageIntersectionLiveEntityMainTasksResultItemsKeyword_dataKeyword_infoSearch_volume_trend $search_volume_trend;
+	 */
+	public $search_volume_trend = null;
  
 }
