@@ -10,7 +10,7 @@ class AmazonAsinGetAdvancedResultsByIdEntityMain extends \DFSClientV3\Models\Res
     /**
     * @var null|string $version;
     */
-    public $version = '0.1.20200421';
+    public $version = '0.1.20241217';
 
     /**
     * @var null|integer $status_code;
@@ -43,7 +43,7 @@ class AmazonAsinGetAdvancedResultsByIdEntityMain extends \DFSClientV3\Models\Res
     public $tasks_error = null;
 
     /**
-    * array|AmazonAsinGetAdvancedResultsByIdEntityMainTasks[] $tasks;
+    * @var array|AmazonAsinGetAdvancedResultsByIdEntityMainTasks[] $tasks;
     */
     public $tasks = [];
  

@@ -52,7 +52,7 @@ class AmazonAsinGetAdvancedResultsByIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
+    * @var array|AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  

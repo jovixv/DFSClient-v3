@@ -4,25 +4,15 @@ namespace DFSClientV3\Entity\Custom;
 
 
 #[\AllowDynamicProperties]
-class AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItemsRating 
+class AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItemsTop_local_reviewsRating 
 {    
-    /**
-    * @var null|string $type;
-    */
-    public $type = null;
-
-    /**
-    * @var null|string $position;
-    */
-    public $position = null;
-
     /**
     * @var null|string $rating_type;
     */
     public $rating_type = null;
 
     /**
-    * @var null|string $value;
+    * @var null|integer $value;
     */
     public $value = null;
 
@@ -32,7 +22,7 @@ class AmazonAsinGetAdvancedResultsByIdEntityMainTasksResultItemsRating
     public $votes_count = null;
 
     /**
-    * @var null|string $rating_max;
+    * @var null|integer $rating_max;
     */
     public $rating_max = null;
  

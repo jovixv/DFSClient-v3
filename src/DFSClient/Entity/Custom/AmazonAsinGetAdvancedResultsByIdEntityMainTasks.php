@@ -49,7 +49,7 @@ class AmazonAsinGetAdvancedResultsByIdEntityMainTasks
     public $data = null;
 
     /**
-    * array|AmazonAsinGetAdvancedResultsByIdEntityMainTasksResult[] $result;
+    * @var array|AmazonAsinGetAdvancedResultsByIdEntityMainTasksResult[] $result;
     */
     public $result = [];
  
