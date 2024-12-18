@@ -23,12 +23,22 @@ class GoogleReviewsSetTask extends AbstractModel
     }
 
 	/**
-	 * @param string $url
+	 * @param string $productId
 	 * @return $this
 	 */
 	public function setProductId(string $productId)
 	{
 		$this->payload['product_id'] = $productId;
+		return $this;
+	}
+
+	/**
+	 * @param string $dataDocid
+	 * @return $this
+	 */
+	public function setDataDocid(string $dataDocid)
+	{
+		$this->payload['data_docid'] = $dataDocid;
 		return $this;
 	}
 

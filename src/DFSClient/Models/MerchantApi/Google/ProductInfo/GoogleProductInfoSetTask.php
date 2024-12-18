@@ -33,6 +33,16 @@ class GoogleProductInfoSetTask extends AbstractModel
 	}
 
 	/**
+	 * @param string $dataDocid
+	 * @return $this
+	 */
+	public function setDataDocid(string $dataDocid)
+	{
+		$this->payload['data_docid'] = $dataDocid;
+		return $this;
+	}
+
+	/**
 	 * @param int $priority
 	 * @return $this
 	 */
