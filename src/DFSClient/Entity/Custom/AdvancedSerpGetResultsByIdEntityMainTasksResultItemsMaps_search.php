@@ -32,6 +32,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsMaps_search
     */
     public $title = null;
 
+	/**
+	 * @var null|string $original_title;
+	 */
+	public $original_title = null;
+
     /**
     * @var null|string $url;
     */

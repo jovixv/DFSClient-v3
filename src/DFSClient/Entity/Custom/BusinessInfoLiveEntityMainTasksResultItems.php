@@ -4,9 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsAddress_info;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsAttributes;
-use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPlace_topics;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsRating;
-use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsRating_distribution;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsPeople_also_search;
 use DFSClientV3\Entity\Custom\BusinessInfoLiveEntityMainTasksResultItemsWork_time;
 
@@ -37,6 +35,11 @@ class BusinessInfoLiveEntityMainTasksResultItems
     * @var null|string $title;
     */
     public $title = null;
+
+	/**
+	 * @var null|string $original_title;
+	 */
+	public $original_title = null;
 
     /**
     * @var null|NULL $description;
