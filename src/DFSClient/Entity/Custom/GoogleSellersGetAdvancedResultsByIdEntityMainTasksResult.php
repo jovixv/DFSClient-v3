@@ -52,7 +52,7 @@ class GoogleSellersGetAdvancedResultsByIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|GoogleSellersGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
+    * @var array|GoogleSellersGetAdvancedResultsByIdEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  

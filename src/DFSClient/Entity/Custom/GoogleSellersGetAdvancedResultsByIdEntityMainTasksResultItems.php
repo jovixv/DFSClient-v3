@@ -61,6 +61,11 @@ class GoogleSellersGetAdvancedResultsByIdEntityMainTasksResultItems
     */
     public $tax = null;
 
+	/**
+	 * @var null|double $shipping_price;
+	 */
+	public $shipping_price = null;
+
     /**
     * @var null|double $total_price;
     */
@@ -70,6 +75,11 @@ class GoogleSellersGetAdvancedResultsByIdEntityMainTasksResultItems
     * @var null|string $currency;
     */
     public $currency = null;
+
+	/**
+	 * @var null|integer $price_multiplier;
+	 */
+	public $price_multiplier = null;
 
     /**
     * @var null|string $seller_name;
@@ -85,5 +95,15 @@ class GoogleSellersGetAdvancedResultsByIdEntityMainTasksResultItems
     * @var null|string $shop_ad_aclk;
     */
     public $shop_ad_aclk = null;
+
+	/**
+	 * @var null|string $product_condition;
+	 */
+	public $product_condition = null;
+
+	/**
+	 * @var null|string $product_annotation;
+	 */
+	public $product_annotation = null;
  
 }
