@@ -13,6 +13,7 @@ class GoogleSellersGetAdvancedResultsById extends AbstractModel
 	protected $pathToMainData = 'tasks->0->result';
 	protected $requestToFunction = 'merchant/google/sellers/task_get/advanced/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param string $taskUUID
