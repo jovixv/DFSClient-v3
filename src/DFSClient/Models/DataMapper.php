@@ -4,6 +4,7 @@ namespace DFSClientV3\Models;
 use DFSClientV3\Bootstrap\Application;
 use DFSClientV3\Entity\Custom\DictionaryEntity;
 use DFSClientV3\Entity\Custom\TagsData;
+use DFSClientV3\Entity\Typed\Factories\EntityFactory;
 use DFSClientV3\Services\EntityCreator\ClassGenerator;
 use DFSClientV3\Services\Logger\Logger;
 use DFSClientV3\Services\Logger\LoggerMessageEntity;
@@ -97,6 +98,10 @@ class DataMapper
         $variadicTypes              = $paveDataOptions->getPathsToVariadicTypesAndValue();
         $this->currentIterationPath = $this->prepareStructurePath($paveDataOptions->getPrevPath());
         $dictionaryPaths = $paveDataOptions->getPathsToDictionary();
+
+	    if (isset($content->type)) {
+		    $entity = EntityFactory::create($content->type);
+	    }
 
         // root of json. Use main entity
         if (class_exists($fullClassName) && empty($paveDataOptions->getPrevPath()))
