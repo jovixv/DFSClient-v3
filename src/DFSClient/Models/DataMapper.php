@@ -104,11 +104,13 @@ class DataMapper
 	    }
 
         // root of json. Use main entity
-        if (class_exists($fullClassName) && empty($paveDataOptions->getPrevPath()))
-            $entity = new $fullClassName($this->requestStatus, $this->pathToMainData);
-
-        if (class_exists($fullClassName) && !empty($paveDataOptions->getPrevPath()))
-            $entity = new $fullClassName();
+	    if (!$entity && class_exists($fullClassName)) {
+		    if (empty($paveDataOptions->getPrevPath())) {
+			    $entity = new $fullClassName($this->requestStatus, $this->pathToMainData);
+		    } else {
+			    $entity = new $fullClassName();
+		    }
+	    }
 
         if (isset($dictionaryPaths[$this->currentIterationPath])){
             $dictionaryName = $dictionaryPaths[$this->currentIterationPath];
