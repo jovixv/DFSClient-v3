@@ -8,11 +8,11 @@ use DFSClientV3\Entity\Typed\Interfaces\EntityWithTypeInterface;
 abstract class EntityWithType implements EntityWithTypeInterface
 {
 	/**
-	 * @var string $type
+	 * @var null|string $type
 	 */
 	public $type = null;
 
-	public function getType(): string
+	public function getType(): ?string
 	{
 		return $this->type;
 	}
