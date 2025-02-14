@@ -99,7 +99,7 @@ class DataMapper
         $this->currentIterationPath = $this->prepareStructurePath($paveDataOptions->getPrevPath());
         $dictionaryPaths = $paveDataOptions->getPathsToDictionary();
 
-	    if (isset($content->type)) {
+	    if (is_object($content) && isset($content->type)) {
 		    $entity = EntityFactory::create($content->type);
 	    }
 
