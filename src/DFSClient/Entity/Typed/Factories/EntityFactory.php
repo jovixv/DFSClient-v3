@@ -15,13 +15,13 @@ class EntityFactory
 
 	public static function create(string $type): ?EntityWithType
 	{
-		if (isset(self::$typeMap[$type])) {
-			return new self::$typeMap[$type]();
+		if (isset(static::$typeMap[$type])) {
+			return new static::$typeMap[$type]();
 		}
 
 		$className = 'DFSClientV3\\Entity\\Typed\\Entities\\' . ucfirst($type);
 
-		if (class_exists($className)) {
+		if (class_exists($className) && is_subclass_of($className, EntityWithType::class)) {
 			return new $className();
 		}
 
