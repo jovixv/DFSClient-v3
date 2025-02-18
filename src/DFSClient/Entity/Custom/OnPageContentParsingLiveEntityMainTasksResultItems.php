@@ -18,6 +18,11 @@ class OnPageContentParsingLiveEntityMainTasksResultItems
     public $fetch_time = null;
 
     /**
+    * @var null|integer $status_code;
+    */
+    public $status_code = null;
+
+    /**
     * @var null|OnPageContentParsingLiveEntityMainTasksResultItemsPage_content $page_content;
     */
     public $page_content = null;

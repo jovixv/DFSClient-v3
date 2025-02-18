@@ -4,6 +4,7 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topicPrimary_content;
 use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topicSecondary_content;
+use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topicTable_content;
 
 #[\AllowDynamicProperties]
 class OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topic 
@@ -19,7 +20,7 @@ class OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topic
     public $main_title = null;
 
     /**
-    * @var null|NULL $author;
+    * @var null|string $author;
     */
     public $author = null;
 
@@ -42,5 +43,10 @@ class OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topic
     * @var array|OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topicSecondary_content[] $secondary_content;
     */
     public $secondary_content = [];
+
+    /**
+    * @var array|OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentMain_topicTable_content[] $table_content;
+    */
+    public $table_content = [];
  
 }

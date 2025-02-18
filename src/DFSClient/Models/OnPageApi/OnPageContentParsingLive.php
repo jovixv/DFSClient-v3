@@ -12,6 +12,7 @@ class OnPageContentParsingLive extends AbstractModel
     protected $pathToMainData = 'tasks->0->result';
     protected $requestToFunction = 'on_page/content_parsing/live';
     protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
     /**
      * @param string $url

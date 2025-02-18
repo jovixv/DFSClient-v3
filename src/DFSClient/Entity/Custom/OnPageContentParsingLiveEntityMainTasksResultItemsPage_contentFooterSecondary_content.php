@@ -2,6 +2,7 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+use DFSClientV3\Entity\Custom\OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentFooterSecondary_contentUrls;
 
 #[\AllowDynamicProperties]
 class OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentFooterSecondary_content 
@@ -12,8 +13,13 @@ class OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentFooterSecond
     public $text = null;
 
     /**
-    * @var null|NULL $url;
+    * @var null|string $url;
     */
     public $url = null;
+
+    /**
+    * @var array|OnPageContentParsingLiveEntityMainTasksResultItemsPage_contentFooterSecondary_contentUrls[] $urls;
+    */
+    public $urls = [];
  
 }
