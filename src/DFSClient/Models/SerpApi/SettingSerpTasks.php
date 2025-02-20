@@ -525,6 +525,39 @@ class SettingSerpTasks extends AbstractModel
 	}
 
 	/**
+	 * for google/finance_explore
+	 * @param string $news_type
+	 * @return $this
+	 */
+	public function setNewsType(string $news_type)
+	{
+		$this->payload['news_type'] = $news_type;
+		return $this;
+	}
+
+	/**
+	 * for google/finance_markets
+	 * @param string $market_type
+	 * @return $this
+	 */
+	public function setMarketType(string $market_type)
+	{
+		$this->payload['market_type'] = $market_type;
+		return $this;
+	}
+
+	/**
+	 * for google/finance_quote
+	 * @param string $window
+	 * @return $this
+	 */
+	public function setWindow(string $window)
+	{
+		$this->payload['window'] = $window;
+		return $this;
+	}
+
+	/**
 	 * @param string $seType
 	 * @return $this
 	 * @throws \Exception
