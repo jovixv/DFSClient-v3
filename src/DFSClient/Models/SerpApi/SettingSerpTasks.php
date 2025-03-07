@@ -558,6 +558,17 @@ class SettingSerpTasks extends AbstractModel
 	}
 
 	/**
+	 * for google/finance_ticker_search
+	 * @param string $category
+	 * @return $this
+	 */
+	public function setCategory(string $category)
+	{
+		$this->payload['category'] = $category;
+		return $this;
+	}
+
+	/**
 	 * @param string $seType
 	 * @return $this
 	 * @throws \Exception
