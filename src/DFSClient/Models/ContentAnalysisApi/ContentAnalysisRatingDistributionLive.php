@@ -87,6 +87,16 @@ class ContentAnalysisRatingDistributionLive extends AbstractModel {
 	}
 
 	/**
+	 * @param string $rankScale
+	 * @return $this
+	 */
+	public function setRankScale(string $rankScale)
+	{
+		$this->payload['rank_scale'] = $rankScale;
+		return $this;
+	}
+
+	/**
 	 * @return ContentAnalysisRatingDistributionLiveEntityMain
 	 */
 	public function get(): ContentAnalysisRatingDistributionLiveEntityMain {

@@ -101,6 +101,15 @@ class BacklinksCompetitorsLive extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $rankScale
+	 * @return $this
+	 */
+	public function setRankScale(string $rankScale)
+	{
+		$this->payload['rank_scale'] = $rankScale;
+		return $this;
+	}
 
     /**
      * @param string $tag

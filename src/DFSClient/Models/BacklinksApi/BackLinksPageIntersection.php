@@ -14,9 +14,8 @@ class BackLinksPageIntersection extends AbstractModel
     protected $pathToMainData = 'tasks->{$postID}->result';
     protected $requestToFunction = 'backlinks/page_intersection/live';
     protected $resultShouldBeTransformedToArray = true;
-
     protected $jsonContainVariadicType = false;
-//
+
     protected $pathsToDictionary = [
         'tasks->(:number)->result->(:number)->items->(:number)->page_intersection' => PageIntersectionDictionary::class
     ];
@@ -151,6 +150,16 @@ class BackLinksPageIntersection extends AbstractModel
 	public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
 	{
 		$this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
+		return $this;
+	}
+
+	/**
+	 * @param string $rankScale
+	 * @return $this
+	 */
+	public function setRankScale(string $rankScale)
+	{
+		$this->payload['rank_scale'] = $rankScale;
 		return $this;
 	}
 

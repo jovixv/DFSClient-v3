@@ -30,16 +30,16 @@ class BacklinksBacklinksLive extends AbstractModel
         return $this;
     }
 
-		/**
-		 * @param string $search_after_token
-		 * @return $this
-		 */
-		public function setSearchAfterToken(string $search_after_token)
-		{
-			$this->payload['search_after_token'] = $search_after_token;
+	/**
+	 * @param string $search_after_token
+	 * @return $this
+	 */
+	public function setSearchAfterToken(string $search_after_token)
+	{
+		$this->payload['search_after_token'] = $search_after_token;
 
-			return $this;
-		}
+		return $this;
+	}
 
     /**
      * @param string $mode
@@ -158,6 +158,16 @@ class BacklinksBacklinksLive extends AbstractModel
 	public function setExcludeInternalBackLinks(bool $excludeInternalBackLinks)
 	{
 		$this->payload['exclude_internal_backlinks'] = $excludeInternalBackLinks;
+		return $this;
+	}
+
+	/**
+	 * @param string $rankScale
+	 * @return $this
+	 */
+	public function setRankScale(string $rankScale)
+	{
+		$this->payload['rank_scale'] = $rankScale;
 		return $this;
 	}
 

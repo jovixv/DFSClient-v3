@@ -114,6 +114,16 @@ class ContentAnalysisPhraseTrendsLive extends AbstractModel {
 	}
 
 	/**
+	 * @param string $rankScale
+	 * @return $this
+	 */
+	public function setRankScale(string $rankScale)
+	{
+		$this->payload['rank_scale'] = $rankScale;
+		return $this;
+	}
+
+	/**
 	 * @return ContentAnalysisPhraseTrendsLiveEntityMain
 	 */
 	public function get(): ContentAnalysisPhraseTrendsLiveEntityMain {
