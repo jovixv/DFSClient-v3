@@ -99,13 +99,20 @@ class DFSClient
      */
     public function isLaravelInstalled(): ?string
     {
-        $isLaravelVersion = null;
-
-        if (function_exists('app')){
-            $isLaravelVersion = app()->version();
-        }
-
-        return $isLaravelVersion;
+	    if (!function_exists('app') || !class_exists(\Illuminate\Foundation\Application::class)) {
+		    return null;
+	    }
+	    try {
+		    if (defined('\Illuminate\Foundation\Application::VERSION')) {
+			    return \Illuminate\Foundation\Application::VERSION;
+		    }
+		    $app = app();
+		    if (method_exists($app, 'version')) {
+			    return $app->version();
+		    }
+	    } catch (\Throwable $e) {
+		    return null;
+	    }
     }
 
 }
