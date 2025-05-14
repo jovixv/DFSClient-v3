@@ -10,7 +10,7 @@ class HotelInfoLive extends AbstractModel
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'business_data/google/hotel_info/live/{resultType}';
+	protected $requestToFunction = 'business_data/google/hotel_info/live/{$resultType}';
 	protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 
@@ -160,6 +160,46 @@ class HotelInfoLive extends AbstractModel
 	public function setChildren(array $children)
 	{
 		$this->payload['children'] = $children;
+		return $this;
+	}
+
+	/**
+	 * @param bool $loadPricesByDates
+	 * @return $this
+	 */
+	public function setLoadPricesByDates(bool $loadPricesByDates)
+	{
+		$this->payload['load_prices_by_dates'] = $loadPricesByDates;
+		return $this;
+	}
+
+	/**
+	 * @param string $pricesStartDate
+	 * @return $this
+	 */
+	public function setPricesStartDate(string $pricesStartDate)
+	{
+		$this->payload['prices_start_date'] = $pricesStartDate;
+		return $this;
+	}
+
+	/**
+	 * @param string $pricesEndDate
+	 * @return $this
+	 */
+	public function setPricesEndDate(string $pricesEndDate)
+	{
+		$this->payload['prices_end_date'] = $pricesEndDate;
+		return $this;
+	}
+
+	/**
+	 * @param string $pricesDateRange
+	 * @return $this
+	 */
+	public function setPricesDateRange(string $pricesDateRange)
+	{
+		$this->payload['prices_date_range'] = $pricesDateRange;
 		return $this;
 	}
 

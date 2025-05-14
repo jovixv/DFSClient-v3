@@ -154,6 +154,46 @@ class HotelInfoSetTask extends AbstractModel
 	}
 
 	/**
+	 * @param bool $loadPricesByDates
+	 * @return $this
+	 */
+	public function setLoadPricesByDates(bool $loadPricesByDates)
+	{
+		$this->payload['load_prices_by_dates'] = $loadPricesByDates;
+		return $this;
+	}
+
+	/**
+	 * @param string $pricesStartDate
+	 * @return $this
+	 */
+	public function setPricesStartDate(string $pricesStartDate)
+	{
+		$this->payload['prices_start_date'] = $pricesStartDate;
+		return $this;
+	}
+
+	/**
+	 * @param string $pricesEndDate
+	 * @return $this
+	 */
+	public function setPricesEndDate(string $pricesEndDate)
+	{
+		$this->payload['prices_end_date'] = $pricesEndDate;
+		return $this;
+	}
+
+	/**
+	 * @param string $pricesDateRange
+	 * @return $this
+	 */
+	public function setPricesDateRange(string $pricesDateRange)
+	{
+		$this->payload['prices_date_range'] = $pricesDateRange;
+		return $this;
+	}
+
+	/**
 	 * @param string $tag
 	 * @return $this
 	 */
