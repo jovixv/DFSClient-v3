@@ -11,9 +11,9 @@ class GoogleReviewsSetTask extends AbstractModel
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'business_data/google/reviews/task_post';
-    protected $resultShouldBeTransformedToArray = true;
-    protected $useNewMapper = true;
+	protected $requestToFunction = 'business_data/google/reviews/task_post';
+	protected $resultShouldBeTransformedToArray = true;
+	protected $useNewMapper = true;
 
 	/**
 	 * @return \DFSClientV3\Entity\Custom\GoogleReviewsSetTaskEntityMain
@@ -161,6 +161,23 @@ class GoogleReviewsSetTask extends AbstractModel
 	public function setPingbackUrl(string $pingbackUrl)
 	{
 		$this->payload['pingback_url'] = $pingbackUrl;
+		return $this;
+	}
+
+	/**
+	 * @param string $url_path
+	 * @return $this
+	 * 
+	 * @see https://dataforseo.com/help-center/what-is-cid-place-id-feature-id?#business_data_cid
+	 */
+	public function setUrlPath(string $url_path)
+	{
+		$pattern = '#:0x([0-9a-f]+)!#i';
+
+		if (preg_match($pattern, $url_path, $matches)) {
+			$this->setCid(hexdec($matches[1]));
+		}
+
 		return $this;
 	}
 
