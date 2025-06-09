@@ -172,10 +172,17 @@ class GoogleReviewsSetTask extends AbstractModel
 	 */
 	public function setUrlPath(string $url_path)
 	{
-		$pattern = '#:0x([0-9a-f]+)!#i';
+		$pattern = '#:0x([0-9a-f]+)[\?\!]#i';
 
 		if (preg_match($pattern, $url_path, $matches)) {
 			$this->setCid(hexdec($matches[1]));
+		}
+
+		$pattern = '#@(\d+.\d+),(\d+.\d+),(\d+)z#i';
+
+		if (preg_match($pattern, $url_path, $matches)) {
+			$radius = round(591657550.5 / pow(2, (int)$matches[3]));
+			$this->setLocationCoordinate($matches[1] . ',' . $matches[2] . ',' . $radius);
 		}
 
 		return $this;
