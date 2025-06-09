@@ -10,7 +10,7 @@ class HotelInfoGetAdvancedResultsById extends AbstractModel
 	protected $method = 'GET';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->0->result';
-	protected $requestToFunction = 'business_data/{$se}/hotel_info/task_get/advanced/{$taskUUID}';
+	protected $requestToFunction = 'business_data/google/hotel_info/task_get/advanced/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 
@@ -23,8 +23,9 @@ class HotelInfoGetAdvancedResultsById extends AbstractModel
 		$this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);
 		return $this;
 	}
-	
+
 	/**
+	 * @deprecated This method is not necessary, only 'google'.
 	 * @param string $seName
 	 * @return $this
 	 */

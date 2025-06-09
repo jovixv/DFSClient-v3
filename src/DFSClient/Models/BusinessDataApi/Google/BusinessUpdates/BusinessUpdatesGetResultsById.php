@@ -10,7 +10,7 @@ class BusinessUpdatesGetResultsById extends AbstractModel
 	protected $method = 'GET';
 	protected $isSupportedMerge = false;
 	protected $pathToMainData = 'tasks->0->result';
-	protected $requestToFunction = 'business_data/{$se}/my_business_updates/task_get/{$taskUUID}';
+	protected $requestToFunction = 'business_data/google/my_business_updates/task_get/{$taskUUID}';
 	protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 	
@@ -23,8 +23,9 @@ class BusinessUpdatesGetResultsById extends AbstractModel
 		$this->requestToFunction = str_replace('{$taskUUID}', $taskUUID, $this->requestToFunction);
 		return $this;
 	}
-	
+
 	/**
+	 * @deprecated This method is not necessary, only 'google'.
 	 * @param string $seName
 	 * @return $this
 	 */
