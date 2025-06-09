@@ -11,19 +11,20 @@ class TripadvisorReviewsGetResultsByTaskId extends AbstractModel
     protected $method = 'GET';
     protected $isSupportedMerge = false;
     protected $pathToMainData = 'tasks->{$postID}->result';
-    protected $requestToFunction = 'business_data/{$se}/reviews/task_get/{$taskUID}';
+    protected $requestToFunction = 'business_data/tripadvisor/reviews/task_get/{$taskUID}';
     protected $resultShouldBeTransformedToArray = true;
     protected $useNewMapper = true;
 
-		/**
-		 * @param string $seName
-		 * @return $this
-		 */
-		public function setSe(string $seName)
-		{
-			$this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
-			return $this;
-		}
+    /**
+     * @deprecated This method is not necessary, only 'tripadvisor'.
+     * @param string $seName
+     * @return $this
+     */
+    public function setSe(string $seName)
+    {
+        $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
+        return $this;
+    }
 
     /**
      * @param string $taskUID
@@ -42,5 +43,4 @@ class TripadvisorReviewsGetResultsByTaskId extends AbstractModel
     {
         return parent::get();
     }
-
 }
