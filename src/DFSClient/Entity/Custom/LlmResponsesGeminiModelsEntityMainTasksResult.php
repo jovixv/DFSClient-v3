@@ -15,5 +15,10 @@ class LlmResponsesGeminiModelsEntityMainTasksResult
     * @var null|boolean $web_search_supported;
     */
     public $web_search_supported = null;
+
+	/**
+	 * @var null|boolean $task_post_supported;
+	 */
+	public $task_post_supported = null;
  
 }
