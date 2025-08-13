@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Perplexity;
+namespace DFSClientV3\Models\AiOptimizationApi\Perplexity\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 

@@ -1,20 +1,20 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Perplexity;
+namespace DFSClientV3\Models\AiOptimizationApi\Claude\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 
-class LlmResponsesPerplexityLive extends AbstractModel {
+class LlmResponsesClaudeSetTask extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'ai_optimization/perplexity/llm_responses/live';
+	protected $requestToFunction = 'ai_optimization/claude/llm_responses/task_post';
 	protected $resultShouldBeTransformedToArray = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\LlmResponsesPerplexityLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\LlmResponsesClaudeSetTaskEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesPerplexityLiveEntityMain {
+	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesClaudeSetTaskEntityMain {
 		return parent::get();
 	}
 
@@ -82,11 +82,56 @@ class LlmResponsesPerplexityLive extends AbstractModel {
 	}
 
 	/**
+	 * @param bool $web_search
+	 * @return $this
+	 */
+	public function setWebSearch(bool $web_search) {
+		$this->payload['web_search'] = $web_search;
+		return $this;
+	}
+
+	/**
+	 * @param bool $force_web_search
+	 * @return $this
+	 */
+	public function setForceWebSearch(bool $force_web_search) {
+		$this->payload['force_web_search'] = $force_web_search;
+		return $this;
+	}
+
+	/**
 	 * @param string $web_search_country_iso_code
 	 * @return $this
 	 */
 	public function setWebSearchCountryIsoCode(string $web_search_country_iso_code) {
 		$this->payload['web_search_country_iso_code'] = $web_search_country_iso_code;
+		return $this;
+	}
+
+	/**
+	 * @param string $web_search_city
+	 * @return $this
+	 */
+	public function setWebSearchCity(string $web_search_city) {
+		$this->payload['web_search_city'] = $web_search_city;
+		return $this;
+	}
+
+	/**
+	 * @param string $postbackUrl
+	 * @return $this
+	 */
+	public function setPostbackUrl(string $postbackUrl) {
+		$this->payload['postback_url'] = $postbackUrl;
+		return $this;
+	}
+
+	/**
+	 * @param string $pingbackUrl
+	 * @return $this
+	 */
+	public function setPingbackUrl(string $pingbackUrl) {
+		$this->payload['pingback_url'] = $pingbackUrl;
 		return $this;
 	}
 

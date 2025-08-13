@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Gemini;
+namespace DFSClientV3\Models\AiOptimizationApi\Gemini\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 

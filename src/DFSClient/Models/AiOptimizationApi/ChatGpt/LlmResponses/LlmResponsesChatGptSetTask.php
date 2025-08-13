@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\ChatGpt;
+namespace DFSClientV3\Models\AiOptimizationApi\ChatGpt\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 

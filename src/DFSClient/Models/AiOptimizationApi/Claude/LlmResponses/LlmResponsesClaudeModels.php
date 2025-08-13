@@ -1,6 +1,6 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Claude;
+namespace DFSClientV3\Models\AiOptimizationApi\Claude\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 

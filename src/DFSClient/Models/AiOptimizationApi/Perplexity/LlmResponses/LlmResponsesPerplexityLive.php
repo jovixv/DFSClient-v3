@@ -1,20 +1,20 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Gemini;
+namespace DFSClientV3\Models\AiOptimizationApi\Perplexity\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 
-class LlmResponsesGeminiLive extends AbstractModel {
+class LlmResponsesPerplexityLive extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'ai_optimization/gemini/llm_responses/live';
+	protected $requestToFunction = 'ai_optimization/perplexity/llm_responses/live';
 	protected $resultShouldBeTransformedToArray = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\LlmResponsesGeminiLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\LlmResponsesPerplexityLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesGeminiLiveEntityMain {
+	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesPerplexityLiveEntityMain {
 		return parent::get();
 	}
 
@@ -82,11 +82,11 @@ class LlmResponsesGeminiLive extends AbstractModel {
 	}
 
 	/**
-	 * @param bool $web_search
+	 * @param string $web_search_country_iso_code
 	 * @return $this
 	 */
-	public function setWebSearch(bool $web_search) {
-		$this->payload['web_search'] = $web_search;
+	public function setWebSearchCountryIsoCode(string $web_search_country_iso_code) {
+		$this->payload['web_search_country_iso_code'] = $web_search_country_iso_code;
 		return $this;
 	}
 

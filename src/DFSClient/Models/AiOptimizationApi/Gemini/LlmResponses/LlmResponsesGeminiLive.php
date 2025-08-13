@@ -1,20 +1,20 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Claude;
+namespace DFSClientV3\Models\AiOptimizationApi\Gemini\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 
-class LlmResponsesClaudeLive extends AbstractModel {
+class LlmResponsesGeminiLive extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'ai_optimization/claude/llm_responses/live';
+	protected $requestToFunction = 'ai_optimization/gemini/llm_responses/live';
 	protected $resultShouldBeTransformedToArray = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\LlmResponsesClaudeLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\LlmResponsesGeminiLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesClaudeLiveEntityMain {
+	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesGeminiLiveEntityMain {
 		return parent::get();
 	}
 
@@ -87,33 +87,6 @@ class LlmResponsesClaudeLive extends AbstractModel {
 	 */
 	public function setWebSearch(bool $web_search) {
 		$this->payload['web_search'] = $web_search;
-		return $this;
-	}
-
-	/**
-	 * @param bool $force_web_search
-	 * @return $this
-	 */
-	public function setForceWebSearch(bool $force_web_search) {
-		$this->payload['force_web_search'] = $force_web_search;
-		return $this;
-	}
-
-	/**
-	 * @param string $web_search_country_iso_code
-	 * @return $this
-	 */
-	public function setWebSearchCountryIsoCode(string $web_search_country_iso_code) {
-		$this->payload['web_search_country_iso_code'] = $web_search_country_iso_code;
-		return $this;
-	}
-
-	/**
-	 * @param string $web_search_city
-	 * @return $this
-	 */
-	public function setWebSearchCity(string $web_search_city) {
-		$this->payload['web_search_city'] = $web_search_city;
 		return $this;
 	}
 

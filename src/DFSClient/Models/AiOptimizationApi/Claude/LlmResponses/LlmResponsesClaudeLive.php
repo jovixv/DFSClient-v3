@@ -1,20 +1,20 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\ChatGpt;
+namespace DFSClientV3\Models\AiOptimizationApi\Claude\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 
-class LlmResponsesChatGptLive extends AbstractModel {
+class LlmResponsesClaudeLive extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'ai_optimization/chat_gpt/llm_responses/live';
+	protected $requestToFunction = 'ai_optimization/claude/llm_responses/live';
 	protected $resultShouldBeTransformedToArray = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\LlmResponsesChatGptLiveEntityMain
+	 * @return \DFSClientV3\Entity\Custom\LlmResponsesClaudeLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesChatGptLiveEntityMain {
+	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesClaudeLiveEntityMain {
 		return parent::get();
 	}
 

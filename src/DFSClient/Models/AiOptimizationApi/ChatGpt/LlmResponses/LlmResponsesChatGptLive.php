@@ -1,20 +1,20 @@
 <?php
 
-namespace DFSClientV3\Models\AiOptimizationApi\LlmResponses\Claude;
+namespace DFSClientV3\Models\AiOptimizationApi\ChatGpt\LlmResponses;
 
 use DFSClientV3\Models\AbstractModel;
 
-class LlmResponsesClaudeSetTask extends AbstractModel {
+class LlmResponsesChatGptLive extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
 	protected $pathToMainData = 'tasks->{$postID}->result';
-	protected $requestToFunction = 'ai_optimization/claude/llm_responses/task_post';
+	protected $requestToFunction = 'ai_optimization/chat_gpt/llm_responses/live';
 	protected $resultShouldBeTransformedToArray = true;
 
 	/**
-	 * @return \DFSClientV3\Entity\Custom\LlmResponsesClaudeSetTaskEntityMain
+	 * @return \DFSClientV3\Entity\Custom\LlmResponsesChatGptLiveEntityMain
 	 */
-	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesClaudeSetTaskEntityMain {
+	public function get(): \DFSClientV3\Entity\Custom\LlmResponsesChatGptLiveEntityMain {
 		return parent::get();
 	}
 
@@ -114,24 +114,6 @@ class LlmResponsesClaudeSetTask extends AbstractModel {
 	 */
 	public function setWebSearchCity(string $web_search_city) {
 		$this->payload['web_search_city'] = $web_search_city;
-		return $this;
-	}
-
-	/**
-	 * @param string $postbackUrl
-	 * @return $this
-	 */
-	public function setPostbackUrl(string $postbackUrl) {
-		$this->payload['postback_url'] = $postbackUrl;
-		return $this;
-	}
-
-	/**
-	 * @param string $pingbackUrl
-	 * @return $this
-	 */
-	public function setPingbackUrl(string $pingbackUrl) {
-		$this->payload['pingback_url'] = $pingbackUrl;
 		return $this;
 	}
 
