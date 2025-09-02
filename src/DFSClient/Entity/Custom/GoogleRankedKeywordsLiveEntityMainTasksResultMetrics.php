@@ -6,6 +6,7 @@ use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetri
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetricsPaid;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetricsFeatured_snippet;
 use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetricsLocal_pack;
+use DFSClientV3\Entity\Custom\GoogleRankedKeywordsLiveEntityMainTasksResultMetricsAi_overview_reference;
 
 #[\AllowDynamicProperties]
 class GoogleRankedKeywordsLiveEntityMainTasksResultMetrics 
@@ -29,5 +30,10 @@ class GoogleRankedKeywordsLiveEntityMainTasksResultMetrics
     * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetricsLocal_pack $local_pack;
     */
     public $local_pack = null;
+
+    /**
+    * @var null|GoogleRankedKeywordsLiveEntityMainTasksResultMetricsAi_overview_reference $ai_overview_reference;
+    */
+    public $ai_overview_reference = null;
  
 }
