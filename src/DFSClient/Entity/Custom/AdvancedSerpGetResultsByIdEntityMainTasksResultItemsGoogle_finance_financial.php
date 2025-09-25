@@ -23,6 +23,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_financi
 	public $rank_absolute = null;
 
 	/**
+	 * @var null|integer $page;
+	 */
+	public $page = null;
+
+	/**
 	 * @var null|Google_finance_financial_element[] $quarterly_metrics;
 	 */
 	public $quarterly_metrics = null;

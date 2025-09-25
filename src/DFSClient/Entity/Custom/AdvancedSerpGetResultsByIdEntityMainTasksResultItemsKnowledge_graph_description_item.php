@@ -22,6 +22,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsKnowledge_graph_descri
     */
     public $rank_absolute = null;
 
+		/**
+		 * @var null|integer $page;
+		 */
+		public $page = null;
+
     /**
     * @var null|string $position;
     */

@@ -56,6 +56,11 @@ class SettingSerpLiveRegularEntityMainTasksResult
     */
     public $se_results_count = null;
 
+		/**
+		 * @var null|integer $pages_count;
+		 */
+		public $pages_count = null;
+
     /**
     * @var null|integer $items_count;
     */

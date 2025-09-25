@@ -23,6 +23,11 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsMaps_paid_item
     public $rank_absolute = null;
 
     /**
+    * @var null|integer $page;
+    */
+    public $page = null;
+
+    /**
     * @var null|string $domain;
     */
     public $domain = null;
