@@ -21,6 +21,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_earning
 	public $rank_absolute = null;
 
 	/**
+	 * @var null|integer $page;
+	 */
+	public $page = null;
+
+	/**
 	 * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_earnings_calendarItems[] $items;
 	 */
 	public $items = null;

@@ -25,6 +25,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_compare
 	public $rank_absolute = null;
 
 	/**
+	 * @var null|integer $page;
+	 */
+	public $page = null;
+
+	/**
 	 * @var null|Google_finance_asset_pair_element[]|Google_finance_market_index_element[]|Google_finance_market_instrument_element[] $items;
 	 */
 	public $items = null;

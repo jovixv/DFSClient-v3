@@ -21,6 +21,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_details
 	public $rank_absolute = null;
 
 	/**
+	 * @var null|integer $page;
+	 */
+	public $page = null;
+
+	/**
 	 * @var null|array $badges;
 	 */
 	public $badges = null;

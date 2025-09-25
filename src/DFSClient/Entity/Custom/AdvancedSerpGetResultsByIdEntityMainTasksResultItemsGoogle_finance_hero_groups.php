@@ -21,6 +21,11 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_hero_gr
 	public $rank_absolute = null;
 
 	/**
+	 * @var null|integer $page;
+	 */
+	public $page = null;
+
+	/**
 	 * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_finance_hero_groupsMarkets[] $markets;
 	 */
 	public $markets = null;

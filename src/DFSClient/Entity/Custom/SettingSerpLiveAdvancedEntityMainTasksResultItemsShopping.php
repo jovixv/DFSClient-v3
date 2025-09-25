@@ -23,6 +23,11 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsShopping
     public $rank_absolute = null;
 
     /**
+    * @var null|integer $page;
+    */
+    public $page = null;
+
+    /**
     * @var null|string $position;
     */
     public $position = null;
