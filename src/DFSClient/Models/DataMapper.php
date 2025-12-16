@@ -268,6 +268,7 @@ class DataMapper
             }
         }
 
+	    $returnModel = null;
 
         if ($classNameWithNameSpace !== null)
             $returnModel = $this->paveDummyData($classNameWithNameSpace, $notMappedObjectVars, $model);
