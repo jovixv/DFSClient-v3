@@ -526,6 +526,51 @@ class SettingSerpLiveAdvanced extends AbstractModel
 		return $this;
 	}
 
+	/**
+	 * @param string $match_type
+	 * @param string $match_value
+	 * @return $this
+	 */
+	public function setStopCrawlOnMatch(string $match_type, string $match_value) {
+		if (!isset($this->payload['stop_crawl_on_match'])) {
+			$this->payload['stop_crawl_on_match'] = [];
+		}
+
+		$this->payload['stop_crawl_on_match'][] = [
+			"match_type" => $match_type,
+			"match_value" => $match_value
+		];
+
+		return $this;
+	}
+
+	/**
+	 * @param string $mode
+	 * @return $this
+	 */
+	public function setTargetSearchMode(string $mode) {
+		$this->payload['target_search_mode'] = $mode;
+		return $this;
+	}
+
+	/**
+	 * @param array $targets
+	 * @return $this
+	 */
+	public function setFindTargetsIn(array $targets) {
+		$this->payload['find_targets_in'] = $targets;
+		return $this;
+	}
+
+	/**
+	 * @param array $targets
+	 * @return $this
+	 */
+	public function setIgnoreTargetsIn(array $targets) {
+		$this->payload['ignore_targets_in'] = $targets;
+		return $this;
+	}
+
     /**
      * @param string $seName
      * @return $this
