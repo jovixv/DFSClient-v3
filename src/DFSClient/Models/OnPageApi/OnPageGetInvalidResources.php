@@ -56,4 +56,11 @@ class OnPageGetInvalidResources extends AbstractModel {
 		$this->payload['filters'] = $filter;
 		return $this;
 	}
+
+	/**
+	 * @return \DFSClientV3\Entity\Custom\OnPageGetInvalidResourcesEntityMain
+	 */
+	public function get(): \DFSClientV3\Entity\Custom\OnPageGetInvalidResourcesEntityMain {
+		return parent::get();
+	}
 }
