@@ -27,6 +27,66 @@ class OnPageLighthouseSetTask extends AbstractModel
 	}
 
 	/**
+	 * @param string $customUserAgent
+	 * @return $this
+	 */
+	public function setCustomUserAgent(string $customUserAgent)
+	{
+		$this->payload['custom_user_agent'] = $customUserAgent;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenWidth
+	 * @return $this
+	 */
+	public function setBrowserScreenWidth(int $browserScreenWidth)
+	{
+		$this->payload['browser_screen_width'] = $browserScreenWidth;
+		return $this;
+	}
+
+	/**
+	 * @param int $browserScreenHeight
+	 * @return $this
+	 */
+	public function setBrowserScreenHeight(int $browserScreenHeight)
+	{
+		$this->payload['browser_screen_height'] = $browserScreenHeight;
+		return $this;
+	}
+
+	/**
+	 * @param float $browserScreenScaleFactor
+	 * @return $this
+	 */
+	public function setBrowserScreenScaleFactor(float $browserScreenScaleFactor)
+	{
+		$this->payload['browser_screen_scale_factor'] = $browserScreenScaleFactor;
+		return $this;
+	}
+
+	/**
+	 * @param float $browserCpuThrottlingMultiplier
+	 * @return $this
+	 */
+	public function setBrowserCpuThrottlingMultiplier(float $browserCpuThrottlingMultiplier)
+	{
+		$this->payload['browser_cpu_throttling_multiplier'] = $browserCpuThrottlingMultiplier;
+		return $this;
+	}
+
+	/**
+	 * @param string $browserNetworkThrottling
+	 * @return $this
+	 */
+	public function setBrowserNetworkThrottling(string $browserNetworkThrottling)
+	{
+		$this->payload['browser_network_throttling'] = $browserNetworkThrottling;
+		return $this;
+	}
+
+	/**
 	 * @param bool $forMobile
 	 * @return $this
 	 */
