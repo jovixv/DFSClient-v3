@@ -87,6 +87,16 @@ class OnPageLighthouseSetTask extends AbstractModel
 	}
 
 	/**
+	 * @param string $browserNetworkThrottlingMethod
+	 * @return $this
+	 */
+	public function setBrowserNetworkThrottlingMethod(string $browserNetworkThrottlingMethod)
+	{
+		$this->payload['browser_network_throttling_method'] = $browserNetworkThrottlingMethod;
+		return $this;
+	}
+
+	/**
 	 * @param bool $forMobile
 	 * @return $this
 	 */

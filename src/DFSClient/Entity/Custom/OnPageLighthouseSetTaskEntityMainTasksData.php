@@ -55,5 +55,10 @@ class OnPageLighthouseSetTaskEntityMainTasksData
     * @var null|boolean $for_mobile;
     */
     public $for_mobile = null;
+
+    /**
+    * @var null|string $browser_network_throttling_method;
+    */
+    public $browser_network_throttling_method = null;
  
 }
