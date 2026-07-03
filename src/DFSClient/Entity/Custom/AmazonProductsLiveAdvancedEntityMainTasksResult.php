@@ -4,12 +4,12 @@ namespace DFSClientV3\Entity\Custom;
 
 
 #[\AllowDynamicProperties]
-class AmazonAsinGetHtmlResultsByIdEntityMainTasksResult 
+class AmazonProductsLiveAdvancedEntityMainTasksResult 
 {    
     /**
-    * @var null|string $asin;
+    * @var null|string $keyword;
     */
-    public $asin = null;
+    public $keyword = null;
 
     /**
     * @var null|string $type;
@@ -32,9 +32,34 @@ class AmazonAsinGetHtmlResultsByIdEntityMainTasksResult
     public $language_code = null;
 
     /**
+    * @var null|string $check_url;
+    */
+    public $check_url = null;
+
+    /**
     * @var null|string $datetime;
     */
     public $datetime = null;
+
+    /**
+    * @var null|NULL $spell;
+    */
+    public $spell = null;
+
+    /**
+    * @var null|array $item_types;
+    */
+    public $item_types = null;
+
+    /**
+    * @var null|integer $se_results_count;
+    */
+    public $se_results_count = null;
+
+    /**
+    * @var null|NULL $categories;
+    */
+    public $categories = null;
 
     /**
     * @var null|integer $items_count;
@@ -42,7 +67,7 @@ class AmazonAsinGetHtmlResultsByIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|AmazonAsinGetHtmlResultsByIdEntityMainTasksResultItems[] $items;
+    * @var array|AmazonProductsLiveAdvancedEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  

@@ -4,12 +4,12 @@ namespace DFSClientV3\Entity\Custom;
 
 
 #[\AllowDynamicProperties]
-class AmazonAsinGetHtmlResultsByIdEntityMainTasksResult 
+class AmazonProductsLiveHtmlEntityMainTasksResult 
 {    
     /**
-    * @var null|string $asin;
+    * @var null|string $keyword;
     */
-    public $asin = null;
+    public $keyword = null;
 
     /**
     * @var null|string $type;
@@ -42,7 +42,7 @@ class AmazonAsinGetHtmlResultsByIdEntityMainTasksResult
     public $items_count = null;
 
     /**
-    * array|AmazonAsinGetHtmlResultsByIdEntityMainTasksResultItems[] $items;
+    * @var array|AmazonProductsLiveHtmlEntityMainTasksResultItems[] $items;
     */
     public $items = [];
  
