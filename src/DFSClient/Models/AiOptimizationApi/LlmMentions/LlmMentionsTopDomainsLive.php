@@ -4,6 +4,9 @@ namespace DFSClientV3\Models\AiOptimizationApi\LlmMentions;
 
 use DFSClientV3\Models\AbstractModel;
 
+/**
+ * @deprecated Use LlmMentionsTopMentionedDomainsLive.
+ */
 class LlmMentionsTopDomainsLive extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;

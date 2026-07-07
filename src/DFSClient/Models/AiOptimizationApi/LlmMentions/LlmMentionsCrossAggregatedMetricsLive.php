@@ -4,6 +4,9 @@ namespace DFSClientV3\Models\AiOptimizationApi\LlmMentions;
 
 use DFSClientV3\Models\AbstractModel;
 
+/**
+ * @deprecated Use LlmMentionsMultiTargetMetricsLive.
+ */
 class LlmMentionsCrossAggregatedMetricsLive extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;

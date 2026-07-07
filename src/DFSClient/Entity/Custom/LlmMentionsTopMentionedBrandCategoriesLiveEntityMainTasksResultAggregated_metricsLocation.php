@@ -1,0 +1,24 @@
+<?php
+
+namespace DFSClientV3\Entity\Custom;
+
+
+#[\AllowDynamicProperties]
+class LlmMentionsTopMentionedBrandCategoriesLiveEntityMainTasksResultAggregated_metricsLocation 
+{    
+    /**
+    * @var null|integer $key;
+    */
+    public $key = null;
+
+    /**
+    * @var null|integer $mentions;
+    */
+    public $mentions = null;
+
+    /**
+    * @var null|integer $ai_search_volume;
+    */
+    public $ai_search_volume = null;
+ 
+}
