@@ -2,6 +2,9 @@
 
 namespace DFSClientV3\Entity\Custom;
 
+/**
+ * @deprecated Always returns null. Do not rely on this field.
+ */
 #[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRelated_image_searches_element {
 	/**

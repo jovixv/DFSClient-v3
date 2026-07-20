@@ -4,6 +4,9 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_elementLinks;
 
+/**
+ * @deprecated Always returns null. Do not rely on this field.
+ */
 #[\AllowDynamicProperties]
 class SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganicFaq_boxItemsFaq_box_element 
 {    

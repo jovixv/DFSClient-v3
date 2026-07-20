@@ -54,6 +54,7 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImages
     public $items = [];
 
 	/**
+	 * @deprecated Always returns null. Do not rely on this field.
 	 * @var array|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsImagesRelated_image_searches_element[] $related_image_searches;
 	 */
 	public $related_image_searches = [];

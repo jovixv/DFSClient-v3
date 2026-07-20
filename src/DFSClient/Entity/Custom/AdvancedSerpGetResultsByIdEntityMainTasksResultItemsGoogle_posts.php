@@ -4,6 +4,9 @@ namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_reviewsRectangle;
 
+/**
+ * @deprecated Removed from SERP API. Will be deleted in 1.3.0 (2027-01-20).
+ */
 #[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_posts
 {    
