@@ -58,14 +58,21 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPaid
     public $url = null;
 
 	/**
-	 * @var null|bool $is_image;
+	 * @var null|bool $is_image
+	 * @deprecated Will be removed from SERP API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
 	 */
 	public $is_image = null;
 
 	/**
-	 * @var null|bool $is_video;
+	 * @var null|bool $is_video
+	 * @deprecated Will be removed from SERP API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
 	 */
 	public $is_video = null;
+
+	/**
+	 * @var null|array $checks
+	 */
+	public $checks = null;
 
     /**
     * @var null|array $highlighted;

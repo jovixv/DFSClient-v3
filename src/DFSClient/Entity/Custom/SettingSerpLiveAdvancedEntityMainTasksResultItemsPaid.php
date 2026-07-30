@@ -57,6 +57,11 @@ class SettingSerpLiveAdvancedEntityMainTasksResultItemsPaid
     */
     public $url = null;
 
+	/**
+	 * @var null|array $checks
+	 */
+	public $checks = null;
+
     /**
     * @var null|array $highlighted;
     */
