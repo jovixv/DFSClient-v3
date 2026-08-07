@@ -3,6 +3,7 @@
 namespace DFSClientV3\Entity\Custom;
 
 use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItemsRating;
+use DFSClientV3\Entity\Custom\AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItemsProduct_identifiers;
 
 #[\AllowDynamicProperties]
 class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItems 
@@ -16,6 +17,16 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItems
     * @var null|string $title;
     */
     public $title = null;
+
+    /**
+    * @var null|string $url;
+    */
+    public $url = null;
+
+    /**
+    * @var null|string $domain;
+    */
+    public $domain = null;
 
     /**
     * @var null|string $description;
@@ -41,5 +52,10 @@ class AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItems
     * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItemsRating $rating;
     */
     public $rating = null;
+
+    /**
+    * @var null|AdvancedSerpGetResultsByIdEntityMainTasksResultItemsPopular_productsItemsProduct_identifiers $product_identifiers;
+    */
+    public $product_identifiers = null;
  
 }
