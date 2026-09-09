@@ -26,6 +26,8 @@ class AdvancedSerpGetResultsById extends AbstractModel
         return $this;
     }
     /**
+     * The 'events' se type ('serp/{$se}/events/...' endpoints) is deprecated and will be removed in a future release.
+     *
      * @param string $seType
      * @return $this
      * @throws \Exception
@@ -34,6 +36,9 @@ class AdvancedSerpGetResultsById extends AbstractModel
     {
         if (!in_array($seType,$this->seTypes))
             throw new \Exception('Provided se type not allowed');
+
+        if ($seType === 'events')
+            trigger_error("The 'serp/google/events' endpoints are deprecated and will be removed in a future release. Do not use the 'events' se type.", E_USER_DEPRECATED);
 
         $this->requestToFunction = str_replace('{$seType}', $seType, $this->requestToFunction);
 

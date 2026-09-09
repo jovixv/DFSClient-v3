@@ -5,6 +5,9 @@ namespace DFSClientV3\Models\BusinessDataApi\SocialMedia;
 
 use DFSClientV3\Models\AbstractModel;
 
+/**
+ * @deprecated The 'business_data/social_media/pinterest/live' endpoint is deprecated and will be removed in a future release. Do not use this model.
+ */
 class SocialMediaPinterestLive extends AbstractModel
 {
 	protected $method = 'POST';

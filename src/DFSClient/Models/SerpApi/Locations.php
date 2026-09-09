@@ -15,11 +15,16 @@ class Locations extends AbstractModel
     protected $resultShouldBeTransformedToArray = true;
 
     /**
+     * The 'google/events' se name ('serp/google/events/locations' endpoints) is deprecated and will be removed in a future release.
+     *
      * @param string $seName
      * @return $this
      */
     public function setSe(string $seName)
     {
+        if ($seName === 'google/events')
+            trigger_error("The 'serp/google/events' endpoints are deprecated and will be removed in a future release. Do not use the 'google/events' se name.", E_USER_DEPRECATED);
+
         $this->requestToFunction = str_replace('{$se}', $seName, $this->requestToFunction);
         return $this;
     }
