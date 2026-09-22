@@ -170,6 +170,17 @@ abstract class AbstractModel
         return $this;
     }
 
+    /**
+     * Appends the `.ai` suffix, returning API responses optimized for LLMs and AI applications
+     *
+     * @see https://docs.dataforseo.com/v3/appendix/ai_optimized_response/
+     * @return $this
+     */
+    public function withAIResponse() {
+      $this->requestToFunction = rtrim($this->requestToFunction, '/') . '.ai';
+      return $this;
+    }
+
 	/**
 	 * @param $headers array
 	 */
