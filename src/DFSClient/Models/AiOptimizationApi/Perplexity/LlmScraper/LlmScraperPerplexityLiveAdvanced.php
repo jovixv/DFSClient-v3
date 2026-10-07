@@ -4,6 +4,9 @@ namespace DFSClientV3\Models\AiOptimizationApi\Perplexity\LlmScraper;
 
 use DFSClientV3\Models\AbstractModel;
 
+/**
+ * @experimental The endpoint is not yet available in the DataForSEO API and may not work. It will be enabled in future releases.
+ */
 class LlmScraperPerplexityLiveAdvanced extends AbstractModel {
 	protected $method = 'POST';
 	protected $isSupportedMerge = true;
