@@ -64,24 +64,33 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_el
     public $website_name = null;
 
     /**
-    * @var null|boolean $is_image;
-    */
+     * @var null|boolean $is_image
+     * @deprecated Will be removed from DataForSEO Labs API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
+     */
     public $is_image = null;
 
     /**
-    * @var null|boolean $is_video;
-    */
+     * @var null|boolean $is_video
+     * @deprecated Will be removed from DataForSEO Labs API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
+     */
     public $is_video = null;
 
     /**
-    * @var null|boolean $is_featured_snippet;
-    */
+     * @var null|boolean $is_featured_snippet
+     * @deprecated Will be removed from DataForSEO Labs API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
+     */
     public $is_featured_snippet = null;
 
     /**
-    * @var null|boolean $is_malicious;
-    */
+     * @var null|boolean $is_malicious
+     * @deprecated Will be removed from DataForSEO Labs API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
+     */
     public $is_malicious = null;
+
+	/**
+	 * @var null|array $checks
+	 */
+	public $checks = null;
 
     /**
     * @var null|string $description;
@@ -99,8 +108,9 @@ class GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_el
     public $extended_snippet = null;
 
     /**
-    * @var null|boolean $amp_version;
-    */
+     * @var null|boolean $amp_version
+     * @deprecated Will be removed from DataForSEO Labs API and deleted in 1.3.0 (2027-01-20). Use checks array instead.
+     */
     public $amp_version = null;
 
     /**

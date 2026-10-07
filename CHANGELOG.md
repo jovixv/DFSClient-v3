@@ -37,8 +37,23 @@ Scheduled release. Entity classes for SERP elements removed from the DataForSeo 
   - `SettingSerpLiveAdvancedEntityMainTasksResultItemsOrganic`
   - `SettingSerpLiveAdvancedEntityMainTasksResultItemsPaid`
 
+- The following boolean fields on Google `organic` and `paid` serp items in DataForSEO Labs endpoints are deprecated and will be deleted in `1.3.0`. Use the `checks` array instead:
+  - `is_image`
+  - `is_video`
+  - `is_featured_snippet`
+  - `is_malicious`
+  - `amp_version`
+
+  Affected entity classes:
+  - `GoogleRankedKeywordsLiveEntityMainTasksResultItemsRanked_serp_elementSerp_item`
+  - `GoogleDomainIntersectionLiveEntityMainTasksResultItemsFirst_domain_serp_element`
+  - `GoogleDomainIntersectionLiveEntityMainTasksResultItemsSecond_domain_serp_element`
+  - `GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result1`
+  - `GooglePageIntersectionLiveEntityMainTasksResultItemsIntersection_result2`
+  - `GoogleHistoricalSERPsLiveEntityMainTasksResultItemsItems`
+
 If your code references entity classes for the removed SERP item types (for example `AdvancedSerpGetResultsByIdEntityMainTasksResultItemsGoogle_posts`), or reads any of the deprecated boolean fields above, update it before upgrading to `1.3.0`.
 
-## [1.2.18] - 2026-07-30
+## [1.2.19] - 2026-10-07
 
 Previous stable release. See [GitHub releases](https://github.com/jovixv/DFSClient-v3/releases) for earlier history.
