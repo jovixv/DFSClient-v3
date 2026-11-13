@@ -170,6 +170,28 @@ class SettingSerpLiveHtml extends AbstractModel
 	}
 
 	/**
+	 * for google/organic, google/search_by_image, google/news, google/local_finder
+	 * @param bool $resolve_goto_urls
+	 * @return $this
+	 */
+	public function setResolveGotoUrls(bool $resolve_goto_urls)
+	{
+		$this->payload['resolve_goto_urls'] = $resolve_goto_urls;
+		return $this;
+	}
+
+	/**
+	 * for google/organic
+	 * @param bool $resolve_poisoned_results
+	 * @return $this
+	 */
+	public function setResolvePoisonedResults(bool $resolve_poisoned_results)
+	{
+		$this->payload['resolve_poisoned_results'] = $resolve_poisoned_results;
+		return $this;
+	}
+
+	/**
 	 * for google/finance_explore
 	 * @param string $news_type
 	 * @return $this
